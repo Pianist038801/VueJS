@@ -1,0 +1,110 @@
+/* sidebar */
+/***********************************************/
+.sidebar {
+  width: 100%;
+  padding: em(36) em(18);
+  position: relative;
+}
+
+.sidebar__title {
+  text-align: center;
+  color: rgba($bodyColor, 0.5);
+  font-size: em(14px);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: em(2.8px, 14);
+  margin-bottom: em(26, 14);
+}
+
+
+.l-sidebar__userpic {
+  display: flex;
+  justify-content: center;
+  margin-bottom: em(40);
+}
+.sidebar__userpic {
+  border-radius: 50%;
+  border: em(6) solid #fff;
+  position: relative;
+}
+.sidebar__userpic-image {
+  width: em(100);
+  height: em(100);
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+}
+
+.sidebar__userpic-info {
+  border-radius: 50%;
+  border: em(6) solid #fff;
+  vertical-align: top;
+  position: absolute;
+  bottom: em(6);
+  right: em(-16);
+  .ico-svg__info {
+    width: em(28px);
+    height: em(28px);
+    use {
+      fill: #1db7e9;
+    }
+  }
+  &:hover {
+    use {
+      fill: darken(#1db7e9, 10%);
+    }
+  }
+}
+
+
+.sidebar__note-userpic {
+  text-align: center;
+  margin-bottom: em(44);
+}
+//.l-sidebar__section
+.sidebar__section {
+  margin-top: em(14);
+  padding: em(10);
+  //border-bottom: 1px solid #cdcdcd;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.sidebar__section--note {
+  color: rgba(#202020, .5);
+  font-size: em(14px);
+  margin-bottom: em(10);
+}
+.sidebar__section--info {
+}
+
+.sidebar__section--info-select {
+  margin-bottom: em(10);
+  position: relative;
+  .ico-svg__down {
+    use {
+      fill: #000;
+    }
+    width: em(12px);
+    height: em(8px);
+    position: absolute;
+    right: 0;
+    top: em(6);
+  }
+}
+
+.sidebar__success {
+  margin-top: em(20);
+  text-align: center;
+  padding: 0 em(10);
+}
+
+.sidebar__section--info-link {
+  text-decoration: none;
+  color: #202020;
+  @extend %tr-all;
+  &:hover {
+    color: #1db7e9;
+  }
+}

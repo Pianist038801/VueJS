@@ -1,0 +1,42 @@
+// media
+
+$xs-step: 35.9375em; // 575px;
+$sm-step: 36em; // 576px;
+$md-step: 48em; // 768px;
+$lg-step: 62em; // 992px;
+$xl-step: 75em; // 1200px;
+$xxl-step: 90em; // 1440px;
+$hd-step: 120em; // 1440px;
+
+
+@mixin res($media) {
+     @if $media == xs {
+        @media screen and (max-width: $xs-step) {
+            @content;
+        }
+    } @if $media == sm {
+        @media screen and (min-width: $sm-step) {
+            @content;
+        }
+    } @else if $media == md {
+        @media screen and (min-width: $md-step) {
+            @content;
+        }
+    }   @else if $media == lg {
+        @media screen and (min-width: $lg-step) {
+            @content;
+        }
+    } @else if $media == xl {
+        @media (min-width: $xl-step) {
+            @content;
+        }
+    }@else if $media == xxl {
+        @media (min-width: $xxl-step) {
+            @content;
+        }
+    }@else if $media == hd {
+        @media (min-width: $hd-step) {
+            @content;
+        }
+    }
+}

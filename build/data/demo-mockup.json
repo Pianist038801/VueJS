@@ -1,0 +1,366 @@
+{
+  "Patients": [
+    {
+      "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=3",
+      "Name": "Johns Sarah",
+      "DateOfBirth": "2007-12-25 00:00:00",
+      "SSN": "***-**-5428",
+      "PhoneNumber": "+1 214 701 5489",
+      "PhotoUrl": "img/user2.png",
+      "PrimaryCareProvider": {
+        "Name": "Kiran Potaraju, MD",
+        "Phone": "+1 555 555 5555"
+      },
+      "Address": {
+        "Line1": "3453 T Ave",
+        "Line2": "Fort Worth, TX 76179, USA"
+      },
+      "TreatmentTeam": [
+        {
+          "Name": "David Steve",
+          "PhoneNumber": "+1 404 418 1212"
+        }
+      ],
+      "Provider": [
+        {
+          "Name": "United Healthcare (UHC Parkway, GA,66552)",
+          "PhoneNumber": "+1 216 411 8765"
+        }
+      ],
+      "Billing":{
+        "Provider": "United HealthCare",
+        "Plan": "Choice",
+        "Subscriber": "Self",
+        "Street": "3453 T Ave",
+        "City": "Fort Worth",
+        "State": "TX",
+        "ZipCode": "76179",
+        "GroupNum": "555664422",
+        "PolicyNum": "334422456"
+      },
+      "BillHistory":[
+        {
+          "status": "Unpaid",
+          "StatementId": "01534125",
+          "PatientName": "Johns Sarah",
+          "PatientId": "28724351",
+          "Payer": "United",
+          "ClaimType": "eClaims",
+          "Date": "2007-12-25 00:00:00",
+          "TotalAmount": "3200.00",
+          "TotalPaidAmount": "1200.00"
+        },
+        {
+          "status": "Paid",
+          "StatementId": "01534125",
+          "PatientName": "Johns Sarah",
+          "PatientId": "28724351",
+          "Payer": "United",
+          "ClaimType": "eClaims",
+          "Date": "2005-11-25 00:00:00",
+          "TotalAmount": "1200.00",
+          "TotalPaidAmount": "1200.00"
+        },
+        {
+          "status": "Unpaid",
+          "StatementId": "01534125",
+          "PatientName": "Johns Sarah",
+          "PatientId": "28724351",
+          "Payer": "United",
+          "ClaimType": "eClaims",
+          "Date": "2007-12-25 00:00:00",
+          "TotalAmount": "3500.00",
+          "TotalPaidAmount": "1100.00"
+        }
+      ],
+      "InsuranceVerification": {
+        "InsuranceName": "John Jacobs",
+        "GroupNum": "#555664422",
+        "NetworkNum": "#45ABC",
+        "PolicyNum": "#334422456",
+        "IssueDate": "20-Aug-2016 00:00:00"
+      },
+      "Vitals": {
+        "Height": 110,
+        "Weight": 30,
+        "RespirationRate": 53,
+        "BMI": 18.9,
+        "Pulse": 175,
+        "BloodPressureLo": 130,
+        "BloodPressureHi": 148
+      },
+      "Physician": {
+        "Name": "Rohit Potaraju, MD",
+        "Clinic": "Clarit Clinic",
+        "Specialty": "PCP",
+        "EmergencyPhone": "+1 800 111 2222",
+        "PrimaryPhone": "+1 212 234 5678"
+      },
+      "Status": {
+        "Email": "salsa.dancer.87@aol.com",
+        "Race": "Declined to Specify",
+        "Ethnicity": "Declined to Specify",
+        "Religion": "Cyberculture Religions",
+        "MaritalStatus": "Married",
+        "EmergencyContact": {
+          "Relation": "Friend",
+          "Name": "Mr Nobody",
+          "Phone": "+1 215 882 1126"
+        }
+      },
+      "Location": {
+        "DropdownRecords": [
+          {
+            "Name": "Patient Geo Location",
+            "Address": "1272 Belt Line Rd, Garland TX 75040",
+            "Position": {"lat": 32.944827, "lng": -96.645879},
+            "Phone": "+1 202 456 7890",
+            "Hours": "N / A",
+            "Markers":[
+              {
+                "Name": "Patient Geo Location"
+              , "Address": "1272 Belt Line Rd, Garland TX 75040"
+              , "Position": {"lat": 32.944827, "lng": -96.645879}
+              }
+            ]
+          },
+          {
+            "Name": "Pharmacies In Area",
+            "Address": "1272 Belt Line Rd, Garland TX 75040",
+            "Position": {"lat": 32.944827, "lng": -96.645879},
+            "Phone": "+1 (972) 495-1933",
+            "Hours": "Open 9 AM to 10 PM",
+            "Markers":[
+              {
+                "Name": "CVS Pharmacy"
+              , "Address": "1372 Belt Line Rd"
+              , "Position": {"lat": 32.944527, "lng": -96.646960}
+              } ,
+              {
+                "Name": "Walmart Pharmacy"
+              , "Address": "101 W Buckingham Rd"
+              , "Position": {"lat": 32.932013, "lng": -96.631611}
+              } ,
+              {
+                "Name": "Walgreens"
+              , "Address": "2614 Lavon Dr"
+              , "Position": {"lat": 32.939566, "lng": -96.621946}
+              } ,
+              {
+                "Name": "Walgreens"
+              , "Address": "1902 N Jupiter Rd"
+              , "Position": {"lat": 32.930183, "lng": -96.682285}
+              } ,
+              {
+                "Name": "CVS Pharmacy - Target"
+              , "Address": "5301 N Garland Ave"
+              , "Position": {"lat": 32.965650, "lng": -96.646806}
+              } ,
+              {
+                "Name": "Walmart Pharmacy"
+              , "Address": "5302 N Garland Ave"
+              , "Position": {"lat": 32.962346, "lng": -96.642499}
+              }
+            ]
+          },
+          {
+            "Name": "Hospitals In Area",
+            "Address": "7 Medical Pkwy, Dallas, TX 75234",
+            "Position": {"lat": 32.944827, "lng": -96.645879},
+            "Phone": "+(972) 888-7000",
+            "Hours": "Open 9AM to 9PM",
+            "Markers":[
+              {
+                "Name": "Baylor Scott & White Medical Center"
+              , "Address": "2300 Marie Curie Blvd"
+              , "Position": {"lat": 32.918755, "lng": -96.661963}
+              } ,
+              {
+                "Name": "Select Specialty Hospital - Dallas Garland"
+              , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
+              , "Position": {"lat": 32.918793, "lng": -96.662041}
+              } ,
+              {
+                "Name": "Children's Health Pediatric Group Garland"
+              , "Address": "455 N Garland Ave"
+              , "Position": {"lat": 28.548467, "lng": -81.381385}
+              } ,
+              {
+                "Name": "Sundance Hospital Dallas"
+              , "Address": "2696 W Walnut St"
+              , "Position": {"lat": 32.913402, "lng": -96.670117}
+              }
+            ]
+          }
+        ]
+      },
+      "PastAppointments": [
+        {
+          "Date": "9-20-2015 15:00:00",
+          "Time": "12:00:00",
+          "Department": "SpinSci Clinic",
+          "Provider": "Administrator",
+          "VisitType": "Office Visit",
+          "VisitReason": "New Patient",
+          "Appointment Details": {
+            "Interpreter Required": "No",
+            "IsRequired": "false",
+            "Interpreter Language": "None",
+            "Status": "Arrived Late"
+          }
+        },
+        {
+          "Date": "8-25-2017 14:30:00",
+          "Time": "15:00:00",
+          "Department": "SpinSci Clinic",
+          "Provider": "Administrator",
+          "VisitType": "Office Visit",
+          "VisitReason": "Perscription Clarification",
+          "Appointment Details": {
+            "Interpreter Required": "Yes",
+            "IsRequired": "True",
+            "Interpreter Language": "Mandarin",
+            "Status": "Checked Out"
+          }
+        }
+      ]
+    }
+  ],
+  "MakeAppointmentDropDownOptions": {
+    "Department": [
+      "Select Department...",
+      "Emergency",
+      "Outpatient",
+      "Radiology",
+      "General"
+    ],
+    "Facility": [
+      "Select Facility...",
+      "Clarit",
+      "Imaging Center"
+    ],
+    "Provider": [
+      "Select Provider...",
+      "SpinSci",
+      "Administrator"
+    ],
+    "Physician": [
+      "Select Physician...",
+      "Dr. John",
+      "Dr. Steve",
+      "Dr. Phil"
+    ]
+  },
+  "ExistingAppointmentSlots": [
+    {
+      "StartTime": "20-Oct-2017 08:00:00",
+      "EndTime": "20-Oct-2017 08:30:00",
+      "Name": "Open Schedule",
+      "IsOpen": true,
+      "Facility": "---",
+      "Provider": "---",
+      "Physician": "---",
+      "Status": "Available"
+    },
+    {
+      "StartTime": "20-Oct-2017 08:30:00",
+      "EndTime": "20-Oct-2017 09:00:00",
+      "Name": "Open Schedule",
+      "IsOpen": true,
+      "Facility": "---",
+      "Provider": "---",
+      "Physician": "---",
+      "Status": "Available"
+    },
+    {
+      "StartTime": "20-Oct-2017 09:00:00",
+      "EndTime": "20-Oct-2017 09:30:00",
+      "Name": "Open Schedule",
+      "IsOpen": true,
+      "Facility": "---",
+      "Provider": "---",
+      "Physician": "---",
+      "Status": "Available"
+    },
+    {
+      "StartTime": "20-Oct-2017 09:30:00",
+      "EndTime": "20-Oct-2017 10:00:00",
+      "Name": "Jean Jacobs",
+      "IsOpen": false,
+      "Facility": "Imaging Center",
+      "Provider": "Dr. Steve",
+      "Physician": "---",
+      "Status": "On Hold"
+    },
+    {
+      "StartTime": "20-Oct-2017 10:00:00",
+      "EndTime": "20-Oct-2017 10:30:00",
+      "Name": "Open Schedule",
+      "IsOpen": true,
+      "Facility": "---",
+      "Provider": "---",
+      "Physician": "---",
+      "Status": "Available"
+    },
+    {
+      "StartTime": "20-Oct-2017 10:30:00",
+      "EndTime": "20-Oct-2017 11:00:00",
+      "Name": "Open Schedule",
+      "IsOpen": true,
+      "Facility": "---",
+      "Provider": "---",
+      "Physician": "---",
+      "Status": "Available"
+    },
+    {
+      "StartTime": "20-Oct-2017 11:00:00",
+      "EndTime": "20-Oct-2017 11:30:00",
+      "Name": "Open Schedule",
+      "IsOpen": true,
+      "Facility": "---",
+      "Provider": "---",
+      "Physician": "---",
+      "Status": "Available"
+    },
+    {
+      "StartTime": "20-Oct-2017 11:30:00",
+      "EndTime": "20-Oct-2017 12:00:00",
+      "Name": "Open Schedule",
+      "IsOpen": true,
+      "Facility": "---",
+      "Provider": "---",
+      "Physician": "---",
+      "Status": "Available"
+    },
+    {
+      "StartTime": "20-Oct-2017 12:00:00",
+      "EndTime": "20-Oct-2017 12:30:00",
+      "Name": "Thomas Smith",
+      "IsOpen": false,
+      "Facility": "Imaging Center",
+      "Provider": "Dr. John",
+      "Physician": "---",
+      "Status": "On Hold"
+    }
+  ],
+  "NewAppointment": {
+    "StartTime": "20-Oct-2017 10:00:00",
+    "EndTime": "20-Oct-2017 10:30:00",
+    "Name": "John Jacobs",
+    "IsOpen": false,
+    "Facility": "SpinSci Clinic",
+    "Provider": "United Healthcare(UHC Parkway, GA,66552)",
+    "Physician": "Rohit Potaraju, MD",
+    "Status": "On Hold"
+  },
+  "BookNowData": {
+    "InterpreterLanguages": [
+      "Spanish",
+      "French",
+      "Mandarin"
+    ],
+    "GoogleMapIMG": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Google_maps_screenshot.png/300px-Google_maps_screenshot.png",
+    "SmsConfirmTemplate": "Dear [PATIENTNAME] , we have scheduled an appointment with you for [APPTDATE] at [FACILITY]. Regards, [DRNAME]",
+    "EmailConfirmTemplate": "Dear [PATIENTNAME]: This letter is to confirm your appointment at [APPTDATE]. Please plan to arrive approximately 30 minutes prior to your scheduled appointment to allow time for you and your significant other to sign consent forms that are required for your treatment. It is important that your significant other is able to accompany you to your appointments as much as possible. With the type of care we provide, we may be unable to schedule/perform certain procedures without their signature.\n\nPlease complete the following informational forms and return to our office prior to your appointment.\n+ Patient Information Page \n+ Medical History Form\nThis will enable us to thoroughly review your medical background and provide you with the best possible care. If you have been seen by another physician, please request that your medical records be forwarded to our office prior to your appointment, as well. \n\nIn an effort to be HIPAA compliant and to protect your private health information and identity, we require that you bring your photo I.D. and insurance card to your first visit.\n\nAs a courtesy to you we will submit your insurance claims for you; however any copayments will be collected at time of service. For any non insured patients, fees for all office visits and related charges are payable at the time of service. \n\nMy staff and I appreciate your selecting our office for your health care. We recognize the trust and responsibility placed in us and we will do everything possible to provide for those needs. \n\nWe look forward to seeing you!\nSincerely,\n[DRNAME]"
+  }
+}

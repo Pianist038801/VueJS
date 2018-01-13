@@ -1,0 +1,121 @@
+/* header */
+/***********************************************/
+.header {
+  height: em(80px);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  margin: 0;
+  position: absolute;
+  font-size: 1em;
+  left: em(46);
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+
+}
+
+.logo__link {
+  text-indent: -9999px;
+  white-space: nowrap;
+  display: inline-flex;
+  width: em(154);
+  height: em(55);
+  background:  url('../img/logo_orange.png') 0 0 no-repeat;
+  background-size: cover;
+}
+
+
+//  .header__tabs
+.header__tabs {
+  height: em(80);
+  display: flex;
+}
+.header__tabs-item  {
+  font-size: em(18);
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  margin: 0 em(10, 18);
+}
+.header__tabs-item-link {
+  color: $bodyColor;
+  @extend %tr-all;
+  .header__tabs-item.state--active & {
+    border-color: #1db7e9;
+  }
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 em(18, 18);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid lighten(#1db7e9, 30%);
+  }
+}
+
+
+
+
+// .header__action
+.header__action {
+  position: absolute;
+  right: em(60);
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  margin-left: em(23);
+}
+
+.header__action-item {
+  margin-left: em(24);
+  use {
+    @extend %tr-all;
+    fill: #c4c4c4;
+  }
+  &:hover {
+    use {
+      fill: darken(#c4c4c4, 20%);
+    }
+  }
+  .ico-svg__search {
+    width: em(18);
+    height: em(18);
+  }
+  .ico-svg__settings {
+    width: em(20);
+    height: em(20);
+  }
+}
+
+.header__action-link {
+  text-decoration: none;
+  outline: none;
+}
+
+// .userpic-header
+.userpic-header {
+  border-radius: 50%;
+  margin-right: em(6);
+  @extend %tr-all;
+  &:hover {
+    box-shadow: 0 0 em(2) em(2) rgba(#17b8ea, 1);
+  }
+}
+.userpic-header__img {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  width: em(40);
+  height: em(40);
+}

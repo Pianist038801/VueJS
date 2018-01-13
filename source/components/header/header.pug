@@ -1,0 +1,32 @@
+// Begin header
+header.header
+    h1.logo
+        a.logo__link(href="#3") SpinSci
+
+    .header__tabs
+        .header__tabs-item(:class="{'state--active': $root.currentShowBox ==='scheduling'}")
+            a(href="#", @click.prevent="$root.currentShowBox = 'scheduling'").header__tabs-item-link Scheduling
+        .header__tabs-item(:class="{'state--active': $root.currentShowBox ==='case-managment'}")
+            a(href="#", @click.prevent="$root.currentShowBox = 'case-managment'").header__tabs-item-link Case Management
+        .header__tabs-item()
+            a(href="#", @click.prevent="$root.currentShowBox = 'billing'").header__tabs-item-link Billing
+        .header__tabs-item()
+            a(href="#", @click.prevent="$root.currentShowBox = 'Referrals'").header__tabs-item-link Referrals
+        .header__tabs-item()
+            a(href="#", v-on:click = "$root.showSpaceWidget()").header__tabs-item-link Huddle Room
+
+
+    .header__action
+        .header__action-item
+            a(href="#3").header__action-link
+                svg.ico-svg.ico-svg__search
+                    use(xlink:href="#search")
+        .header__action-item
+            a(href="#3").header__action-link
+                svg.ico-svg.ico-svg__settings
+                    use(xlink:href="#settings")
+        .header__action-item
+            a(href="#3").header__action-link
+                .userpic-header
+                    img(src=require('img/userpic.png')).userpic-header__img
+// End header

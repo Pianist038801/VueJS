@@ -1,0 +1,76 @@
+/* inputs */
+/***********************************************/
+// reset input style
+%reset-input {
+  &::-ms-clear {
+    display: none;
+  }
+  appearance: none;
+  align-items: center;
+  display: inline-block;
+  box-shadow: none;
+  position: relative;
+  vertical-align: top;
+  max-width: 100%;
+  width: 100%;
+}
+
+.ui-input {
+  @extend %reset-input;
+  &.mod--no-spin {
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
+
+// input skins
+.ui-input--skin-default {
+  font-weight: 400;
+  $borderWidth: 1px;
+  $borderRadius: 0;
+  $height: em(30,14);
+  $fontSize: em(14);
+  padding: em(5,14) 0;
+  border: $borderWidth solid transparent;
+  border-radius: 0;
+  font-size: $fontSize;
+  height: $height;
+  line-height: 1.5;
+  outline: none;
+}
+
+
+
+// input color schemes
+.ui-input--theme-default {
+  $borderColor: #dcdcdc;
+  $backgroundColor: #fff;
+  $textColor: #55697c;
+  $focusColor: #02a9db;
+  $errorColor: red;
+
+  @include placeholder() {
+    color: rgba($textColor, .5);
+  }
+
+  border-color: $borderColor;
+  background-color: $backgroundColor;
+  color: $textColor;
+  outline: none;
+  &:hover {
+    border-color: $focusColor;
+  }
+  &:focus {
+    border-color: $focusColor;
+  }
+  &.state--error {
+    border-color: $errorColor;
+    outline: none;
+    color: $textColor;
+  }
+}
+
+

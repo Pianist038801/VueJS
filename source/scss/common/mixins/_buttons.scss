@@ -1,0 +1,103 @@
+%image-loading {
+  // size 45*7
+  background-image: url('data:image/gif;base64,R0lGODlhLQAHAPEAAKqnperq6b+9u9TT0iH/C05FVFNDQVBFMi4wAwEAAAAh/wtYTVAgRGF0YVhNUAE/ACH5BAUKAAAALAAAAAAtAAcAQAIfjI8Hm20LnJyP0Rqvxhvubl3eJ4bUSE7oaabNqrZSAQAh+QQFCgABACwAAAAADQAHAAACCISPqcvtD2MBACH5BAUKAAEALAAAAAAdAAcAAAIdlI8XC+3vkjQrwNumrPjqxHXPh4RiRlLMiabmWQAAIfkEBQoAAQAsAAAAAC0ABwAAAjKcjxcr7e9WALTamrKRsDd5hZSWcR4EiheZmGe0qCurMC88yRi92beQ0gF4vcDvExMCCgAh+QQFCgAAACwAAAAALQAHAAACMoyPBzvt7xYQtNqaspGwN3mFlJZxHgSKF5mYZ7SoK6swLzzJGL3Z95DSCXg9wO8TEwoKACH5BAUKAAAALBAAAAAdAAcAAAIdjI8HO+3vkjQLwNumrPjqxHXPh4RiRlLMiabmWQAAOw==');
+}
+
+%btn {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  border-right: 0;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  @extend %tr-all;
+  border-style: solid;
+  background-clip: border-box;
+  text-align: center;
+  font-family: inherit;
+  &.style--wide {
+    width: 100%;
+  }
+
+  &.state--disabled {
+    opacity: .5 !important;
+  }
+
+  &.state--loading {
+    color: transparent !important;
+    &:after {
+      opacity: 1;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      @extend %image-loading;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@mixin  btn-size($paddings, $fontSize: inherit, $borders: 0, $radius: 0) {
+  @if $fontSize == inherit {
+    padding: em($paddings);
+  } @else {
+    font-size: $fontSize + px;
+    padding: em($paddings, $fontSize);
+  }
+  line-height: 1.4;
+  border-width: $borders;
+  border-radius: $radius;
+}
+
+
+@mixin  btn-color($fone, $text, $border:null, $foneHover:null, $foneActive:null, $textHover:null, $textActive:null, $borderHover:null, $borderActive:null) {
+  @if $border == null {
+    $border: $fone;
+  }
+  color: $text;
+  background-color: $fone;
+  border-color: $border;
+  &:hover {
+    @if $foneHover == null {
+      background-color: darken($fone, 5);
+    } @else {
+      background-color: $foneHover;
+    }
+    @if $textHover != null {
+      color: $textHover;
+    }
+    @if $borderHover != null {
+      border-color: $borderHover;
+    } @else {
+      border-color: darken($border, 5);
+    }
+  }
+  &:active {
+    @if $foneActive == null {
+      background-color: darken($fone, 10);
+    } @else {
+      background-color: $foneActive;
+    }
+    @if $textActive != null {
+      color: $textActive;
+    }
+    @if $borderActive != null {
+      border-color: $borderActive;
+    } @else {
+      border-color: darken($border, 10);
+    }
+  }
+  &.state--loading,
+  &.state--disabled {
+    background-color: $fone !important;
+    cursor: not-allowed;
+  }
+}
+
+.btn {
+  @extend %btn;
+}

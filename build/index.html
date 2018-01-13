@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="l-html" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16-orange.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32-orange.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96-orange.png" sizes="96x96">
+    <link rel="apple-touch-icon" href="favicons/older-iPhone-orange.png">
+    <link rel="apple-touch-icon" href="favicons/iPhone-6-Plus-orange.png" sizes="180x180">
+    <link rel="apple-touch-icon" href="favicons/iPad-Retina-orange.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="favicons/iPad-Pro-orange.png" sizes="167x167">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="spark-widget/widget-space/main.css" rel="stylesheet">
+    <script src="spark-widget/bundle.js"></script>
+    <title>Home page</title>
+  <link href="css/style.css?4e544e21f7badcb46824" rel="stylesheet"></head>
+  <body class="l-body ">
+    <!-- page-->
+    <div class="l-page" id="app">
+<!-- Begin header-->
+<header class="header">
+  <h1 class="logo"><a class="logo__link" href="#3">SpinSci</a></h1>
+  <div class="header__tabs">
+    <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='scheduling'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'scheduling'">Scheduling</a></div>
+    <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='case-managment'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'case-managment'">Case Management</a></div>
+    <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'billing'">Billing</a></div>
+    <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'Referrals'">Referrals</a></div>
+    <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" v-on:click="$root.showSpaceWidget()">Huddle Room</a></div>
+  </div>
+  <div class="header__action">
+    <div class="header__action-item"><a class="header__action-link" href="#3">
+        <svg class="ico-svg ico-svg__search">
+          <use xlink:href="#search"></use>
+        </svg></a></div>
+    <div class="header__action-item"><a class="header__action-link" href="#3">
+        <svg class="ico-svg ico-svg__settings">
+          <use xlink:href="#settings"></use>
+        </svg></a></div>
+    <div class="header__action-item"><a class="header__action-link" href="#3">
+        <div class="userpic-header"><img class="userpic-header__img" src="img/cd6083.png"></div></a></div>
+  </div>
+</header>
+<!-- End header-->
+      <div id="huddle-room-mount"></div>
+      <div class="layout">
+        <div class="layout__sidebar">
+          <div class="layout__sidebar-scrolling">
+            <sidebar-pacient :pacients="$root._data.Patients" :active="activePacient"></sidebar-pacient>
+          </div>
+        </div>
+        <div class="layout__content">
+          <div class="layout__content-scrolling">
+            <transition name="fade" mode="out-in">
+              <div class="content" v-if="$root.currentShowBox ==='scheduling' &amp;&amp; !currentShowSubBox" key="scheduling">
+                <div class="content__top-line">
+                  <h1 class="title">Patient Schedule</h1><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = 'make-appointment'">
+                    <svg class="ico-svg ico-svg__plus-round">
+                      <use xlink:href="#plus-round"></use>
+                    </svg></a>
+                </div>
+                <div class="content__box">
+                  <appointment :patients="$root._data.Patients[$root.activePacient]"></appointment>
+                  <journey-map :info="$root._data.Patients[$root.activePacient]"></journey-map>
+                </div>
+              </div>
+              <div class="content" v-if="$root.currentShowBox ==='case-managment' &amp;&amp; !currentShowSubBox" key="case-managment">
+                <div class="content__top-line">
+                  <h1 class="title">Case Managment</h1>
+                </div>
+                <div class="content__box">
+                  <c-managment></c-managment>
+                  <c-managment-incidents></c-managment-incidents>
+                  <c-managment-incident></c-managment-incident>
+                </div>
+              </div>
+              <div class="content" v-if="$root.currentShowBox ==='billing' &amp;&amp; !currentShowSubBox" key="billing">
+                <div class="content__top-line">
+                  <h1 class="title">Patient Billing </h1><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = 'add-billing'">
+                    <svg class="ico-svg ico-svg__plus-round">
+                      <use xlink:href="#plus-round"></use>
+                    </svg></a>
+                </div>
+                <div class="content__box">
+                  <patient-billing :patient="$root._data.Patients[$root.activePacient]"></patient-billing>
+                  <billing-history :history="$root._data.Patients[$root.activePacient].BillHistory"></billing-history>
+                </div>
+              </div>
+              <div class="content" v-if="$root.currentShowBox ==='huddle-room' &amp;&amp; !currentShowSubBox" key="huddle-room">
+                <div class="content__top-line">
+                  <h1 class="title">Huddle Room</h1>
+                </div>
+                <div class="content__box"></div>
+              </div>
+              <div class="content" v-if="$root.currentShowSubBox ==='patient-info'" key="patient-info">
+                <div class="content__top-line">
+                  <h1 class="title">Patient Information</h1><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = null">
+                    <svg class="ico-svg ico-svg__close"> 
+                      <use xlink:href="#close"></use>
+                    </svg></a>
+                </div>
+                <div class="content__box">
+                  <patient-info :info="$root._data.Patients[$root.activePacient]"></patient-info>
+                  <pharmacy :info="$root._data.Patients[$root.activePacient]"></pharmacy>
+                  <journey-map :info="$root._data.Patients[$root.activePacient]"></journey-map>
+                </div>
+              </div>
+              <div class="content" v-if="$root.currentShowSubBox ==='make-appointment'" key="make-appointment">
+                <div class="content__top-line mod--appointment"><a class="content__top-appointment-close" href="#3" @click.prevent="$root.currentShowSubBox = null">
+                    <svg class="ico-svg ico-svg__close">
+                      <use xlink:href="#close"></use>
+                    </svg></a></div>
+                <div class="content__box">
+                  <insurance-verification></insurance-verification>
+                  <make-appointment :dropdowns="$root._data.MakeAppointmentDropDownOptions" :existing-apointment-slots="$root._data.ExistingAppointmentSlots" :book-now-data="$root._data.BookNowData"></make-appointment>
+                </div>
+              </div>
+            </transition>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End page-->
+  <script type="text/javascript" src="js/app.js?4e544e21f7badcb46824"></script></body>
+</html>

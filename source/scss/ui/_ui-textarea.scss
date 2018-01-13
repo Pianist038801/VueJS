@@ -1,0 +1,68 @@
+/* textarea */
+/***********************************************/
+// reset textarea style
+%reset-textarea {
+  &::-ms-clear {
+    display: none;
+  }
+  appearance: none;
+  align-items: center;
+  display: inline-flex;
+  justify-content: flex-start;
+  position: relative;
+  vertical-align: top;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.ui-textarea {
+  @extend %reset-textarea;
+}
+
+
+// textarea skins
+.ui-textarea--skin-default {
+  font-weight: 400;
+  font-size: em(14);
+  padding: em(20, 14);
+
+  height: em(160, 14);
+  min-height: em(160, 14);
+
+  border-radius: 0;
+  border: .1rem solid transparent;
+  line-height: 1.5;
+}
+
+// input color schemes
+.ui-textarea--theme-default {
+  $borderColor: #ececec;
+  $backgroundColor: #fff;
+  $textColor: #55697c;
+  $focusColor: #02a9db;
+  $errorColor: red;
+
+  @include placeholder() {
+    color: rgba($textColor, .5);
+  }
+
+  border-color: $borderColor;
+  background-color: $backgroundColor;
+  color: $textColor;
+  outline: none;
+  &:hover {
+    border-color: $focusColor;
+  }
+  &:focus {
+    border-color: $focusColor;
+  }
+  &.state--error {
+    border-color: $errorColor;
+    outline: none;
+    color: $textColor;
+  }
+}

@@ -1,0 +1,70 @@
+/* form */
+/***********************************************/
+.form {
+  display: block;
+  margin: 0;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+// form row
+.form__row {
+  margin-top: 3rem;
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &.mod--add {
+    margin-top: 4rem;
+  }
+  &.mod--less {
+    margin-top: 2rem;
+  }
+
+}
+
+legend + .form__row {
+  margin-top: 0;
+}
+
+.form__group {
+  position: relative;
+
+  &.mod--line {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+// .form__field-control
+.form__field-control {
+  position: relative;
+}
+
+// form label
+.form__label {
+  color: #566d81;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 2rem;
+}
+
+.form__group-label {
+  display: flex;
+  align-items: flex-end;
+  &.mod--row {
+    flex-flow: column;
+    align-items: flex-start;
+    .form__input-error {
+      padding-left: 2rem;
+    }
+  }
+}
+

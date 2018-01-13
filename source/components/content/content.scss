@@ -1,0 +1,75 @@
+/* content */
+/***********************************************/
+.content__top-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: em(30);
+  min-height: em(50);
+
+  &.mod--appointment {
+    position: relative;
+    min-height: 1px;
+    margin-bottom: em(10);
+  }
+}
+.content__top-appointment-close {
+  width: em(50);
+  height: em(50);
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  //right: em(60);
+  //top: em(40);
+  opacity: .4;
+  .ico-svg__close {
+    width: em(18px);
+    height: em(18px);
+    position: absolute;
+    top: em(16);
+    left: em(16);
+    use {
+      fill: #fff;
+    }
+  }
+  @extend %tr-all;
+  &:hover {
+    opacity: 1;
+  }
+
+}
+
+.content__top-action {
+  .ico-svg__plus-round {
+    width: em(50);
+    height: em(50);
+    use {
+      @extend %tr-all;
+      fill: #1db7e9;
+    }
+    border-radius: 50%;
+    box-shadow: 0.5px 0.8px 5px rgba(0, 0, 0, 0.2);
+  }
+  &:hover {
+    use {
+      fill: darken(#1db7e9, 10%)
+    }
+  }
+
+  .ico-svg__close {
+    width: em(28px);
+    height: em(28px);
+    opacity: 0.2;
+    @extend %tr-all;
+    use {
+      fill: #000;
+    }
+    &:hover {
+      opacity: 1;
+    }
+
+  }
+
+}

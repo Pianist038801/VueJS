@@ -1,0 +1,52 @@
+// Begin
+aside.sidebar
+    .sidebar__title Patient Information
+
+    .l-sidebar__userpic
+        .sidebar__userpic
+            img.sidebar__userpic-image(src=require('img/user.png'))
+            a(href="#3").sidebar__userpic-info
+                svg.ico-svg.ico-svg__info
+                    use(xlink:href="#info")
+    .sidebar__note-userpic Num. of Matches (<b>3</b>)
+
+    .l-sidebar__section
+        .sidebar__section
+            .sidebar__section--note Patient Name
+            .sidebar__section--info-select
+                | John Doe
+                svg.ico-svg.ico-svg__down
+                    use(xlink:href="#down")
+        .sidebar__section
+            .sidebar__section--note Date of Birth
+            .sidebar__section--info Jan 20, 1976
+        .sidebar__section
+            .sidebar__section--note SSN
+            .sidebar__section--info ***-**-2002
+        .sidebar__section
+            .sidebar__section--note Phone Number
+            .sidebar__section--info +1 202 232 7121
+        .sidebar__section
+            .sidebar__section--note Rohit Potaraju, MD.
+            .sidebar__section--info +1 202 232 7121
+        .sidebar__section
+            .sidebar__section--note Address
+            .sidebar__section--info 3100 NW College Dr, Forth Worth, TX 76179 USA
+        .sidebar__section
+            .sidebar__section--note Treatment Team
+            .sidebar__section--info-select
+                | Betsy Nancy
+                svg.ico-svg.ico-svg__down
+                    use(xlink:href="#down")
+            .sidebar__section--info 214-211-2222
+        .sidebar__section
+            .sidebar__section--note Provider
+            .sidebar__section--info-select
+                | Mercy SSM
+                svg.ico-svg.ico-svg__down
+                    use(xlink:href="#down")
+            .sidebar__section--info 214-211-2222
+
+    .sidebar__success
+        a(href="#3").ui-btn.ui-btn--skin-default.ui-btn--theme-primary.mod--block  Screen pop
+// End

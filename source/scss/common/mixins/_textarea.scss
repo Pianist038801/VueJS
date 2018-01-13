@@ -1,0 +1,107 @@
+%textarea {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  font-family: inherit;
+  color: inherit;
+  line-height: 1;
+  outline: none;
+  background-color: transparent;
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+%textarea-size-default {
+  font-size: 1.4rem;
+  font-weight: 400;
+  border-width: .1rem;
+  border-style: solid;
+  border-radius: .5rem;
+}
+
+%textarea-size-default {
+  font-size: 1.4rem;
+  font-weight: 400;
+  border-width: .1rem;
+  border-style: solid;
+  border-radius: .5rem;
+  height: 11rem;
+  min-height: 11rem;
+}
+
+%textarea-color-default {
+
+  $borderColor: #e3e3e3;
+  $textColor: #252525;
+  $focusColor: #498bff;
+  $errorColor: #d3000b;
+
+  border-color: $borderColor;
+  background-color: #fff;
+  color: $textColor;
+  outline: none;
+  &:hover {
+    box-shadow: 0 0 .4rem .1rem rgba($borderColor, .5);
+  }
+  &.state--focus {
+    border-color: $focusColor;
+    box-shadow: 0 0 .4rem .1rem rgba($focusColor, .3);
+  }
+  &.state--error {
+    border-color: $errorColor;
+    outline: none;
+    color: $textColor;
+    &.state--focus {
+      box-shadow: 0 0 .4rem .1rem rgba($errorColor, .3);
+    }
+  }
+}
+
+/* textarea */
+/***********************************************/
+.field-textarea {
+  position: relative;
+  @extend %tr-all;
+
+  &.theme--default {
+    @extend %textarea-size-default;
+    padding-top: 1.4rem;
+    .field-textarea__main {
+      padding: 0 2rem 1.4rem 2rem;
+    }
+  }
+  &.skin--default {
+    @extend %textarea-color-default;
+  }
+}
+
+.field-textarea__label {
+    position: absolute;
+    line-height: 1;
+    @extend %tr-all;
+
+    .field-textarea.theme--default & {
+      $size: 1.4rem;
+      left: 2rem;
+      font-size: $size;
+      top: 1.8rem;
+      &.state--info {
+        top: .3rem;
+        font-size: $size*.7;
+      }
+    }
+}
+
+.field-textarea__main {
+  outline: none;
+  width: 100%;
+  resize: none;
+  height: 100%;
+  background: none;
+  border: none;
+}

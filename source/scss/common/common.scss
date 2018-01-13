@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// for vue.js elements
+[v-cloak] {
+  display: none;
+}
+
+
+/* vue transition */
+/***********************************************/
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
+
+
+// svg sprite icons
+.ico-svg {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1em;
+  line-height: 100%;
+  use {
+    @extend %tr-all;
+  }
+}
+
+// for lazy load images
+.b-lazy-fone {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #98c6ff;
+}
+img.b-lazy {
+  @extend %tr-opacity;
+  max-width: 100%;
+  opacity: 0;
+  vertical-align: top;
+}
+img.b-lazy.b-loaded {
+  opacity: 1;
+}
+
+// for lost grid - default flex
+@lost flexbox flex;
+
+// hide
+.hide {
+  @extend %hide;
+}
+
+.hidden {
+  @extend %hidden;
+}

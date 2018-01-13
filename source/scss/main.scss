@@ -1,0 +1,131 @@
+@import "variable";
+@import "common/mixins/mixin";
+@import "common/normalized";
+@import "common/common";
+@import "typograph";
+@import "ui/ui";
+
+//***************************************
+/* Base  */
+/***********************************************/
+.l-body {
+  font-family: $fontBody;
+  color: $bodyColor;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 1.6rem;
+
+  @include res(xxl) {
+    font-size: 1.6rem;
+  }
+}
+
+.l-html, .l-body {
+  height: 100%;
+  position: relative;
+}
+
+.l-page {
+  min-width: 1280px;
+}
+
+.layout {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 5em);
+}
+.layout__sidebar {
+  width: em(280);
+  min-width: em(280);
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  background-color: #f9f9f9;
+}
+.layout__sidebar-scrolling {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.layout__content {
+  flex-grow: 1;
+  position: relative;
+}
+.layout__content-scrolling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: em(40 60);
+}
+
+
+/* .sub-popup-menu */
+.appointment__table td.more-action {
+  text-align: center;
+}
+.sub-popup-menu {
+  text-align: left;
+  position: relative;
+  padding: 0 em(5);
+  display: inline-block;
+  vertical-align: top;
+  &:hover {
+    .sub-popup-menu__list {
+      display: block;
+    }
+  }
+}
+.sub-popup-menu__action {
+  position: relative;
+  .ico-svg__dot-v {
+    width: em(4px);
+    height: em(16px);
+  }
+  .ico-svg__more {
+    margin-top: em(10);
+    width: em(16px);
+    height: em(4px);
+  }
+  @include link-out(1, .5);
+}
+.sub-popup-menu__list {
+  display: none;
+  z-index: 400;
+  position: absolute;
+  top: em(20);
+  right: 0;
+  width: em(220px);
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  padding: em(15 0);
+}
+.sub-popup-menu__item {
+  display: block;
+  padding: em(14 30);
+  text-decoration: none;
+  color: #202020;
+  &:hover {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+//***************************************
+/* Partials  */
+/***********************************************/
+@import "../vendor/stf-select.scss";
+@import "../vendor/Multiselect.scss";
+@import "../components/header/header";
+@import "../components/sidebar/sidebar";
+@import "../components/content/content";
+
