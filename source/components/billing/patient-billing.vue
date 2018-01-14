@@ -40,19 +40,19 @@
                 .patient-billing__top-item2
                     .patient-billing__top-item-label  Group Number:
                     .patient-billing__top-item-box
-                        .patient-billing__top-item-box-note STL  {{patient.Billing.GroupNum}}
+                        .patient-billing__top-item-box-note   {{patient.Billing.GroupNum}}
                 .patient-billing__top-item
                     .patient-billing__top-item-label  City
                     .patient-billing__top-item-box
-                        .patient-billing__top-item-box-note STL  {{patient.Billing.City}}
+                        .patient-billing__top-item-box-note   {{patient.Billing.City}}
                 .patient-billing__top-item
                     .patient-billing__top-item-label  State
                     .patient-billing__top-item-box
-                        .patient-billing__top-item-box-note STL  {{patient.Billing.State}}
+                        .patient-billing__top-item-box-note   {{patient.Billing.State}}
                 .patient-billing__top-item
                     .patient-billing__top-item-label  Zip Code
                     .patient-billing__top-item-box
-                        .patient-billing__top-item-box-note STL  {{patient.Billing.GroupNum}}
+                        .patient-billing__top-item-box-note   {{patient.Billing.ZipCode}}
 
 
   

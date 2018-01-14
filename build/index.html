@@ -136,7 +136,7 @@
                     </svg></a>
                 </div>
                 <div class="content__box">
-                  <payment-result :item="$root._data.paymentResult" @return="$root.currentShowSubBox='billing'"></payment-result>
+                  <payment-result :item="$root._data.paymentResult" @go-back="$root.goBack"></payment-result>
                 </div>
               </div>
               <div class="content" v-if="$root.currentShowBox ==='huddle-room' &amp;&amp; !currentShowSubBox" key="huddle-room">

@@ -38,6 +38,7 @@ let appData = {
   currentShowBox: null,
   currentShowSubBox: null,
   billItem: null,
+  paymentResult: null,
   userIsVerify: false,
 };
 
@@ -78,6 +79,10 @@ let App = new Vue({
       this.currentShowBox = 'payment_result';
       console.log('SDFSDF', item);
       this.paymentResult = item;
+    },
+    goBack: function (item) {
+      this.currentShowBox = 'billing';
+       
     }
   },
   components: {

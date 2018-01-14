@@ -90,7 +90,7 @@ block content
                                 svg.ico-svg.ico-svg__plus-round
                                     use(xlink:href="#plus-round")
                         .content__box
-                            payment-result(:item="$root._data.paymentResult", @return="$root.currentShowSubBox='billing'")
+                            payment-result(:item="$root._data.paymentResult", @go-back="$root.goBack")
 
                     //-show huddle-room
                     .content(v-if="$root.currentShowBox ==='huddle-room' && !currentShowSubBox", key="huddle-room")

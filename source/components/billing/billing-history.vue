@@ -87,17 +87,23 @@
                 td {{ item.TotalPaidAmount }}
                 td {{ item.Date }}
                 td
-                    .sub-popup-menu
+                    .sub-popup-menu-special(@mouseover="overMenu(index)", @mouseout="outMenu()")
                         .sub-popup-menu__action
                             svg.ico-svg.ico-svg__dot-v
                                 use(xlink:href="#dot-v")
-                        .sub-popup-menu__list
+                        .sub-popup-menu__list-special(v-if="showMenu==index")
                             a(href="#3", @click.prevent="viewBill(index)").sub-popup-menu__item View Bill
                             a(href="#3", @click.prevent="payBill(index)").sub-popup-menu__item Pay Bill
-                            a(href="#3").sub-popup-menu__item View in Invision
+                            .sub-popup-menu
+                                .sub-popup-menu__action
+                                    a(href="#3",@mouseover.prevent="overInvision()", @mouseout.prevent="outInvision()").sub-popup-menu__item View in Invision
+                                .sub-popup-menu__list 
+                                    a(href="#3", @click.prevent="openNewWindow('http://10.1.74.36:2230/EPIC_InPatient/patient_scheduling/search.html')").sub-popup-menu__item Patient Search
+                                    a(href="#3", @click.prevent="openNewWindow('http://10.1.74.36:2230/EPIC_InPatient/patient_scheduling/patient_demog.html')").sub-popup-menu__item Patient Information
+                                    a(href="#3", @click.prevent="openNewWindow('http://10.1.74.36:2230/EPIC_InPatient/patient_scheduling/make_appt.html')").sub-popup-menu__item Appointments Create
                             a(href="#3", @click.prevent="showReminder(index)").sub-popup-menu__item Send Reminder
                             a(href="#3").sub-popup-menu__item Print
-                            a(href="#3").sub-popup-menu__item Download as PDF
+                            a(href="#3", @click.prevent="openNewWindow('http://uhealthsystem.com/images/content/UMH-statement.jpg')").sub-popup-menu__item Download as PDF
         modal(ref="modalbook")
             .modal__content
 
@@ -168,11 +174,30 @@
                 reminderDate: '2000/10/10',
                 showEmailTemplate: false,
                 showSmsRemind: false,
-                showSmsTemplate: false
+                showSmsTemplate: false,
+                showInvision: false,
+                showMenu: -1
             }
         },
         methods: {
-            open() {
+            openNewWindow(url) {
+                let strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+                window.open(url, "CNN_WindowName", strWindowFeatures);
+            },
+            overInvision(){
+                this.showInvision = true;
+                console.log('Toggle');
+            },
+            outInvision(){
+                this.showInvision = false;
+                console.log('Out');
+            },
+            overMenu(index){
+                this.showMenu=index;
+            },
+            outMenu(){
+                if(this.showInvision == false)
+                    this.showMenu=-1;
             },
             visible(item){
                 console.log('BILLSTATUS', this.cre_bill_status)
@@ -359,9 +384,5 @@
             }
         }
 
-    }
-
-
-
-
+    } 
 </style>

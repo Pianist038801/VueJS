@@ -57,7 +57,7 @@
                 .payment-confirmation__top-active-title
                     .span Payment Amount: 
  
-        a(href="#3", @click="confirmPayment").ui-btn.ui-btn--skin-default.ui-btn--theme-primary CONFIRM PAYMENT 
+        a(href="#3", @click="confirmPayment").ui-btn.ui-btn--skin-default.ui-btn--theme-primary {{"CONFIRM PAYMENT"}} 
 </template>
 <script>
     import Multiselect from 'vue-multiselect';
@@ -79,7 +79,7 @@
         },
         methods: {
             confirmPayment(){
-                this.$emit('show-payment-result',{username: this.username, cardType: this.cardType, cardNumber: this.cardNumber, month: this.month, year: this.year,cvv: this.cvv});
+                this.$emit('show-payment-result',{statementId: '209920923', payDate:'01/05/2018', username: this.username, cardType: this.cardType, cardNumber: this.cardNumber, month: this.month, year: this.year,cvv: this.cvv});
             }
         },
         mounted() {

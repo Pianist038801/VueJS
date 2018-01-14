@@ -86,7 +86,7 @@
 .sub-popup-menu {
   text-align: left;
   position: relative;
-  padding: 0 em(5);
+  padding: 0;
   display: inline-block;
   vertical-align: top;
   &:hover {
@@ -94,6 +94,25 @@
       display: block;
     }
   }
+}
+.sub-popup-menu-special {
+  text-align: left;
+  position: relative;
+  padding: 0 em(5);
+  display: inline-block;
+  vertical-align: top;
+
+}
+.sub-popup-menu__list-special {
+   
+  z-index: 400;
+  position: absolute;
+  top: em(20);
+  right: 0;
+  width: em(220px);
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  padding: em(15 0);
 }
 svg.ico-svg.ico-svg__more.svg-blue {
   use {
