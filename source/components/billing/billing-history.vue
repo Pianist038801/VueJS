@@ -92,25 +92,72 @@
                             svg.ico-svg.ico-svg__dot-v
                                 use(xlink:href="#dot-v")
                         .sub-popup-menu__list
-                            a(href="#3").sub-popup-menu__item Details
-                            a(href="#3").sub-popup-menu__item Share
-                            a(href="#3").sub-popup-menu__item Transfer
-                            a(href="#3").sub-popup-menu__item Archive
-                    
-        
+                            a(href="#3", @click.prevent="viewBill(index)").sub-popup-menu__item View Bill
+                            a(href="#3", @click.prevent="payBill(index)").sub-popup-menu__item Pay Bill
+                            a(href="#3").sub-popup-menu__item View in Invision
+                            a(href="#3", @click.prevent="showReminder(index)").sub-popup-menu__item Send Reminder
+                            a(href="#3").sub-popup-menu__item Print
+                            a(href="#3").sub-popup-menu__item Download as PDF
+        modal(ref="modalbook")
+            .modal__content
+
+                .modal__content-row
+                    .modal__content-col
+
+                        .modal-appointment__title
+                            .title.mod--modal-appointment Payment Reminder
+
+                            .modal-appointment__info
+                                svg.ico-svg.ico-svg__calendar
+                                    use(xlink:href="#calendar")
+                                | {{history[activeBookItem].Date |  moment("MMM DD, YYYY") }} 
+
+                .modal-appointment__templates-messages
+                    .modal-appointment__templates-checkbox
+                        .ui-checkbox
+                            input#checkbox-sms(name="checkbox-sms" type="checkbox" v-model="showSmsTemplate").ui-checkbox__input
+                            label.ui-checkbox__label(for='checkbox-sms') Send Text Reminder
+                    transition(name="fade")
+                        textarea(v-if="showSmsTemplate").ui-textarea.ui-textarea--skin-default.ui-textarea--theme-default.mod--sms
+                            Dear [PATIENTNAME] , we have scheduled an appointment with you for [APPTDATE] at [FACILITY]. Regards, [DRNAME]
+
+                .modal-appointment__templates-messages 
+                    .modal-appointment__templates-checkbox
+                        .ui-checkbox
+                            input#checkbox-email(name="checkbox-email" type="checkbox" v-model="showEmailTemplate").ui-checkbox__input
+                            label.ui-checkbox__label(for='checkbox-email') Send Email Reminder
+                    transition(name="fade")
+                        textarea(v-if="showEmailTemplate").ui-textarea.ui-textarea--skin-default.ui-textarea--theme-default
+                            | Email Confirmation Template
+ 
+                .modal-appointment__remind
+                    .ui-checkbox
+                        input#checkbox-smsremind(name="checkbox-smsremind" type="checkbox" v-model="showSmsRemind").ui-checkbox__input
+                        label.ui-checkbox__label(for='checkbox-smsremind') Send SMS reminder
+                    transition(name="fade")
+                        .modal-appointment__remind-days(v-if="showSmsRemind")
+                            input(type="text", value="2").ui-input.ui-input--skin-default.ui-input--theme-default
+                            | days before bill is due.
+
+                .modal-appointment__row
+                    a(href="#3", @click="$refs.modalbook.close()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border CANCEL
+                    a(href="#3", @click="sendReminder").ui-btn.ui-btn--skin-default.ui-btn--theme-primary SEND 
 </template>
 <script>
     import Multiselect from 'vue-multiselect';
+    import modal from "../modal-component/modal.vue";
     export default {
         props: 
 			 {
             history: Array,
             },
         components: {
-            Multiselect
+            Multiselect,
+            modal
         },
         data() {
             return {
+                activeBookItem: 0,
 				cre_bill_status: '',
 				cre_batch_id: '',
 				cre_patient_name: '',
@@ -118,6 +165,10 @@
 				cre_payer: '',                        
 				cre_claim_type: '',
 				cre_date: '',
+                reminderDate: '2000/10/10',
+                showEmailTemplate: false,
+                showSmsRemind: false,
+                showSmsTemplate: false
             }
         },
         methods: {
@@ -136,9 +187,23 @@
                 
                 return false;
             },
-			viewBill(item){
-
-			}
+            showReminder(index) {
+                this.activeBookItem = index;
+                this.$refs.modalbook.open();
+                this.reminderDate = history[index].Date;
+            },
+            sendReminder(){
+                this.$refs.modalbook.close()
+            },
+			viewBill(index){                  
+                var item = this.history[index]; 
+                this.$emit('show-statement-review',item);
+			},
+            payBill(index){                  
+                var item = this.history[index]; 
+                this.$emit('pay-bill',item);
+			},
+            
         },
         mounted() {
         },

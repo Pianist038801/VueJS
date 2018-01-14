@@ -29,13 +29,15 @@ import cManagmentIncidents from "../components/case-managment/case-managment-inc
 import cManagmentIncident from "../components/case-managment/case-managment-incident.vue";
 import patientBilling from "../components/billing/patient-billing.vue";
 import billingHistory from "../components/billing/billing-history.vue";
-
+import statementReview from "../components/billing/statement-review.vue";
+import paymentConfirmation from "../components/billing/payment-confirmation.vue";
+import paymentResult from "../components/billing/payment-result.vue";
 let appData = {
   activePacient: null,
 
   currentShowBox: null,
   currentShowSubBox: null,
-
+  billItem: null,
   userIsVerify: false,
 };
 
@@ -62,6 +64,20 @@ let App = new Vue({
       if($el){
         vm.spaceWidget.render($el);
       }
+    },
+    showStatementReview: function(item) {
+      this.currentShowBox = 'statement_review';
+      console.log('*&&**&(*&(*&*(&', item);
+      this.billItem = item;  
+    },
+    payBill: function(item) {
+      this.currentShowBox = 'payment_confirmation'; 
+      this.billItem = item;  
+    },
+    showPaymentResult: function (item) {
+      this.currentShowBox = 'payment_result';
+      console.log('SDFSDF', item);
+      this.paymentResult = item;
     }
   },
   components: {
@@ -76,7 +92,10 @@ let App = new Vue({
     cManagmentIncidents,
     cManagmentIncident,
     patientBilling,
-    billingHistory
+    billingHistory,
+    statementReview,
+    paymentConfirmation,
+    paymentResult
   },
   watch: {
     currentShowBox: function () {

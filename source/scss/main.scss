@@ -72,6 +72,17 @@
 .appointment__table td.more-action {
   text-align: center;
 }
+.sub-popup-menu__list {
+  display: none;
+  z-index: 400;
+  position: absolute;
+  top: em(20);
+  right: 0;
+  width: em(220px);
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  padding: em(15 0);
+}
 .sub-popup-menu {
   text-align: left;
   position: relative;
@@ -84,6 +95,11 @@
     }
   }
 }
+svg.ico-svg.ico-svg__more.svg-blue {
+  use {
+    fill: rgb(31,168,227);
+  }
+} 
 .sub-popup-menu__action {
   position: relative;
   .ico-svg__dot-v {
@@ -96,8 +112,29 @@
     height: em(4px);
   }
   @include link-out(1, .5);
+} 
+.sub-popup-menu__item {
+  display: block;
+  padding: em(14 30);
+  text-decoration: none;
+  color: #202020;
+  &:hover {
+    background-color: #f9f9f9;
+  }
 }
-.sub-popup-menu__list {
+.sub-popup-menu__item1 {
+   
+  display: block;
+  padding: em(14 30);
+  font-size: em(15);
+  text-decoration: none;
+  color: #202020;
+  &:hover {
+    background-color: #f9f9f9;
+  } 
+}
+
+.sub-popup-menu__list1 {
   display: none;
   z-index: 400;
   position: absolute;
@@ -108,17 +145,31 @@
   background-color: #ffffff;
   padding: em(15 0);
 }
-.sub-popup-menu__item {
-  display: block;
-  padding: em(14 30);
-  text-decoration: none;
-  color: #202020;
+.sub-popup-menu1 {
+  text-align: left;
+  position: relative;
+  padding: 0 em(5);
+  display: inline-block;
+  vertical-align: top;
   &:hover {
-    background-color: #f9f9f9;
+    .sub-popup-menu__list {
+      display: block;
+    }
   }
 }
-
-
+.sub-popup-menu__action1 {
+  position: relative;
+  .ico-svg__dot-v {
+    width: em(4px);
+    height: em(16px);
+  }
+  .ico-svg__more {
+    margin-top: em(10);
+    width: em(16px);
+    height: em(4px);
+  }
+  @include link-out(1, .5);
+} 
 
 //***************************************
 /* Partials  */

@@ -27,7 +27,7 @@
           "PhoneNumber": "+1 216 411 8765"
         }
       ],
-      "Billing":{
+      "Billing": {
         "Provider": "United HealthCare",
         "Plan": "Choice",
         "Subscriber": "Self",
@@ -38,17 +38,58 @@
         "GroupNum": "555664422",
         "PolicyNum": "334422456"
       },
-      "BillHistory":[
+      "BillHistory": [
         {
+          "name": " JACOBS,JOHN ",
           "status": "Unpaid",
           "StatementId": "01534125",
           "PatientName": "Johns Sarah",
           "PatientId": "28724351",
           "Payer": "United",
           "ClaimType": "eClaims",
-          "Date": "2007-12-25 00:00:00",
+          "Date": "12/03/2017",
           "TotalAmount": "3200.00",
-          "TotalPaidAmount": "1200.00"
+          "TotalPaidAmount": "1200.00",
+          "reviews": [
+            {
+              "date": "12/03/2017",
+              "description": "ENCOUNTER 209523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "12/03/2017",
+              "description": "815235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "12/03/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "12/18/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$38.04",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
+          }
         },
         {
           "status": "Paid",
@@ -113,82 +154,124 @@
           {
             "Name": "Patient Geo Location",
             "Address": "1272 Belt Line Rd, Garland TX 75040",
-            "Position": {"lat": 32.944827, "lng": -96.645879},
+            "Position": {
+              "lat": 32.944827,
+              "lng": -96.645879
+            },
             "Phone": "+1 202 456 7890",
             "Hours": "N / A",
-            "Markers":[
+            "Markers": [
               {
-                "Name": "Patient Geo Location"
-              , "Address": "1272 Belt Line Rd, Garland TX 75040"
-              , "Position": {"lat": 32.944827, "lng": -96.645879}
+                "Name": "Patient Geo Location",
+                "Address": "1272 Belt Line Rd, Garland TX 75040",
+                "Position": {
+                  "lat": 32.944827,
+                  "lng": -96.645879
+                }
               }
             ]
           },
           {
             "Name": "Pharmacies In Area",
             "Address": "1272 Belt Line Rd, Garland TX 75040",
-            "Position": {"lat": 32.944827, "lng": -96.645879},
+            "Position": {
+              "lat": 32.944827,
+              "lng": -96.645879
+            },
             "Phone": "+1 (972) 495-1933",
             "Hours": "Open 9 AM to 10 PM",
-            "Markers":[
+            "Markers": [
               {
-                "Name": "CVS Pharmacy"
-              , "Address": "1372 Belt Line Rd"
-              , "Position": {"lat": 32.944527, "lng": -96.646960}
-              } ,
+                "Name": "CVS Pharmacy",
+                "Address": "1372 Belt Line Rd",
+                "Position": {
+                  "lat": 32.944527,
+                  "lng": -96.646960
+                }
+              },
               {
-                "Name": "Walmart Pharmacy"
-              , "Address": "101 W Buckingham Rd"
-              , "Position": {"lat": 32.932013, "lng": -96.631611}
-              } ,
+                "Name": "Walmart Pharmacy",
+                "Address": "101 W Buckingham Rd",
+                "Position": {
+                  "lat": 32.932013,
+                  "lng": -96.631611
+                }
+              },
               {
-                "Name": "Walgreens"
-              , "Address": "2614 Lavon Dr"
-              , "Position": {"lat": 32.939566, "lng": -96.621946}
-              } ,
+                "Name": "Walgreens",
+                "Address": "2614 Lavon Dr",
+                "Position": {
+                  "lat": 32.939566,
+                  "lng": -96.621946
+                }
+              },
               {
-                "Name": "Walgreens"
-              , "Address": "1902 N Jupiter Rd"
-              , "Position": {"lat": 32.930183, "lng": -96.682285}
-              } ,
+                "Name": "Walgreens",
+                "Address": "1902 N Jupiter Rd",
+                "Position": {
+                  "lat": 32.930183,
+                  "lng": -96.682285
+                }
+              },
               {
-                "Name": "CVS Pharmacy - Target"
-              , "Address": "5301 N Garland Ave"
-              , "Position": {"lat": 32.965650, "lng": -96.646806}
-              } ,
+                "Name": "CVS Pharmacy - Target",
+                "Address": "5301 N Garland Ave",
+                "Position": {
+                  "lat": 32.965650,
+                  "lng": -96.646806
+                }
+              },
               {
-                "Name": "Walmart Pharmacy"
-              , "Address": "5302 N Garland Ave"
-              , "Position": {"lat": 32.962346, "lng": -96.642499}
+                "Name": "Walmart Pharmacy",
+                "Address": "5302 N Garland Ave",
+                "Position": {
+                  "lat": 32.962346,
+                  "lng": -96.642499
+                }
               }
             ]
           },
           {
             "Name": "Hospitals In Area",
             "Address": "7 Medical Pkwy, Dallas, TX 75234",
-            "Position": {"lat": 32.944827, "lng": -96.645879},
+            "Position": {
+              "lat": 32.944827,
+              "lng": -96.645879
+            },
             "Phone": "+(972) 888-7000",
             "Hours": "Open 9AM to 9PM",
-            "Markers":[
+            "Markers": [
               {
-                "Name": "Baylor Scott & White Medical Center"
-              , "Address": "2300 Marie Curie Blvd"
-              , "Position": {"lat": 32.918755, "lng": -96.661963}
-              } ,
+                "Name": "Baylor Scott & White Medical Center",
+                "Address": "2300 Marie Curie Blvd",
+                "Position": {
+                  "lat": 32.918755,
+                  "lng": -96.661963
+                }
+              },
               {
-                "Name": "Select Specialty Hospital - Dallas Garland"
-              , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
-              , "Position": {"lat": 32.918793, "lng": -96.662041}
-              } ,
+                "Name": "Select Specialty Hospital - Dallas Garland",
+                "Address": "2300 Marie Curie Drive Floors 3E & 3W",
+                "Position": {
+                  "lat": 32.918793,
+                  "lng": -96.662041
+                }
+              },
               {
-                "Name": "Children's Health Pediatric Group Garland"
-              , "Address": "455 N Garland Ave"
-              , "Position": {"lat": 28.548467, "lng": -81.381385}
-              } ,
+                "Name": "Children's Health Pediatric Group Garland",
+                "Address": "455 N Garland Ave",
+                "Position": {
+                  "lat": 28.548467,
+                  "lng": -81.381385
+                }
+              },
               {
-                "Name": "Sundance Hospital Dallas"
-              , "Address": "2696 W Walnut St"
-              , "Position": {"lat": 32.913402, "lng": -96.670117}
+                "Name": "Sundance Hospital Dallas",
+                "Address": "2696 W Walnut St",
+                "Position": {
+                  "lat": 32.913402,
+                  "lng": -96.670117
+                }
               }
             ]
           }
