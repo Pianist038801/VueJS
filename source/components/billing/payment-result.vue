@@ -19,7 +19,7 @@
                 .payment-result__top-item
                     .payment-result__top-item-label  Payment Date:
                 .payment-result__top-item2
-                    .payment-result__top-item-label2  {{item.paymentDate}}
+                    .payment-result__top-item-label2  {{ new Date() |  moment("MMM DD, YYYY") }} 
             .payment-result__top 
                 .payment-result__top-item
                     .payment-result__top-item-label  Billed to:
@@ -27,9 +27,9 @@
                     .payment-result__top-item-label2  {{item.username}}
             .payment-result__top 
                 .payment-result__top-item
-                    .payment-result__top-item-label  Payed via:
+                    .payment-result__top-item-label  Payed via: 
                 .payment-result__top-item2
-                    .payment-result__top-item-label2  {{item.cardType}} 
+                    .payment-result__top-item-label2  {{item.cardNumber}}
             .payment-result__top 
                 .payment-result__top-item3
                     .payment-result__top-item-label  Outstanding Balance:

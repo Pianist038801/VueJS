@@ -90,7 +90,8 @@
               </div>
               <div class="content" v-if="$root.currentShowBox ==='statement_review' &amp;&amp; !currentShowSubBox" key="statement_review">
                 <div class="content__top-line">
-                  <h1 class="title">Statement Review for {{$root._data.billItem.name}} {{$root._data.billItem.Date}}
+                  <div class="div">
+                    <h1 class="title">Statement Review for {{$root._data.billItem.name}} {{$root._data.billItem.Date}}</h1>
                     <div class="sub-popup-menu">
                       <div class="sub-popup-menu__action">
                         <svg class="ico-svg ico-svg__more svg-blue">
@@ -99,7 +100,7 @@
                       </div>
                       <div class="sub-popup-menu__list"><a class="sub-popup-menu__item1" href="#3" @click.prevent="showImage()">Expand Details</a><a class="sub-popup-menu__item1" href="#3">View in Invision</a><a class="sub-popup-menu__item1" href="#3" @click.prevent="payBill($root._data.billItem)">Pay Bill</a><a class="sub-popup-menu__item1" href="#3">Adjust</a><a class="sub-popup-menu__item1" href="#3">Print</a><a class="sub-popup-menu__item1" href="#3">Download as PDF</a></div>
                     </div>
-                  </h1><a class="content__top-action" href="#3" @click.prevent="$root.goBack">
+                  </div><a class="content__top-action" href="#3" @click.prevent="$root.goBack">
                     <svg class="ico-svg ico-svg__plus-round">
                       <use xlink:href="#close"></use>
                     </svg></a>
@@ -121,7 +122,8 @@
               </div>
               <div class="content" v-if="$root.currentShowBox ==='payment_result' &amp;&amp; !currentShowSubBox" key="payment_result">
                 <div class="content__top-line">
-                  <h1 class="title">Payment Confirmed
+                  <div class="div">
+                    <h1 class="title">Payment Confirmed</h1>
                     <div class="sub-popup-menu">
                       <div class="sub-popup-menu__action">
                         <svg class="ico-svg ico-svg__more svg-blue">
@@ -130,7 +132,7 @@
                       </div>
                       <div class="sub-popup-menu__list"><a class="sub-popup-menu__item1" href="#3">Send Confirmation</a><a class="sub-popup-menu__item1" href="#3">View Another Bill </a></div>
                     </div>
-                  </h1><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = 'dollar'">
+                  </div><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = 'dollar'">
                     <svg class="ico-svg ico-svg__plus-round">
                       <use xlink:href="#plus-round"></use>
                     </svg></a>

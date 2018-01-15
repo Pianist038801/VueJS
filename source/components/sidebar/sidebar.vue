@@ -90,10 +90,8 @@
     // End
 </template>
 <script>
-//    import { StfSelect, StfSelectOption } from "stf-vue-select";
 
-    import Multiselect from 'vue-multiselect';
-
+    import Multiselect from '../name-select/src/Multiselect.vue';
     export default {
         props: ['pacients', 'active'],
         components: {
@@ -147,9 +145,16 @@
             },
             namesPacient: function () {
                 let vm = this;
-                let array = [];
+                let array = ['INVISION'];
+
                 vm.pacients.forEach((item, i) => {
-                    array.push(item.Name);
+                    if(item.Category=='INVISION')
+                        array.push(item.Name);
+                });
+                array.push('SORIEN');
+                vm.pacients.forEach((item, i) => {
+                    if(item.Category=='SORIEN')
+                        array.push(item.Name);
                 });
                 return array;
             }

@@ -125,7 +125,7 @@
         display: flex;
         margin-bottom: em(15);
 		.filterString {
-			color: rgb(197,197,197);
+			color: rgb(139,155,171);
 		}
 		
     }

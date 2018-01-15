@@ -5,23 +5,9 @@
             .payment-confirmation__top-active-left
                 .payment-confirmation__top-active-title
                     .span Payment Information
- 
-        .payment-confirmation__top-active
-            .payment-confirmation__top-active-left
-                .payment-confirmation__top-active-title
-                    .span Card Type
-                        multiselect(
-                        v-model="cardType",
-                        :options="['Visa', 'Mastercard','Discover', 'American Exp']",
-                        :searchable="false",
-                        :allowEmpty="false",
-                        :showLabels="false",
-                        placeholder="Select"
-                        ).ui-multiselect.ui-multiselect--border
- 
+  
         .payment-confirmation__top-active 
-            form.payment-card
-                .bank-card
+            form.payment-card 
                 .bank-card__side.bank-card__side_front
                     .bank-card__inner
                     label.bank-card__label.bank-card__label_holder
@@ -190,7 +176,7 @@
         display: flex;
         margin-bottom: em(15);
 		.filterString {
-			color: rgb(197,197,197);
+			color: rgb(139,155,171);
 		}
 		
     }
@@ -207,8 +193,8 @@
         align-items: center;
         .payment-confirmation__top-active-title{  
         .span{
-            color: #c3c3c3;
-            font-size: em(25);
+            color: rgb(139,155,171);
+            font-size: em(20);
         }
         }
 

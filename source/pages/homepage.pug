@@ -48,7 +48,8 @@ block content
                     //-show statement review
                     .content(v-if="$root.currentShowBox ==='statement_review' && !currentShowSubBox", key="statement_review")
                         .content__top-line
-                            h1.title Statement Review for {{$root._data.billItem.name}} {{$root._data.billItem.Date}}
+                            .div
+                                h1.title Statement Review for {{$root._data.billItem.name}} {{$root._data.billItem.Date}}
                                 .sub-popup-menu
                                     .sub-popup-menu__action
                                         svg.ico-svg.ico-svg__more.svg-blue
@@ -78,7 +79,8 @@ block content
                     //-show payment result
                     .content(v-if="$root.currentShowBox ==='payment_result' && !currentShowSubBox", key="payment_result")
                         .content__top-line
-                            h1.title Payment Confirmed
+                            .div
+                                h1.title Payment Confirmed
                                 .sub-popup-menu
                                     .sub-popup-menu__action
                                         svg.ico-svg.ico-svg__more.svg-blue
@@ -87,8 +89,8 @@ block content
                                         a(href="#3").sub-popup-menu__item1 Send Confirmation
                                         a(href="#3").sub-popup-menu__item1 View Another Bill 
                             a(href="#3", @click.prevent="$root.currentShowSubBox = 'dollar'").content__top-action
-                                svg.ico-svg.ico-svg__plus-round
-                                    use(xlink:href="#plus-round")
+                                    svg.ico-svg.ico-svg__plus-round
+                                        use(xlink:href="#plus-round")
                         .content__box
                             payment-result(:item="$root._data.paymentResult", @go-back="$root.goBack")
 

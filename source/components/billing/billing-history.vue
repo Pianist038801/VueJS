@@ -98,9 +98,9 @@
                                 .sub-popup-menu__action
                                     a(href="#3",@mouseover.prevent="overInvision()", @mouseout.prevent="outInvision()").sub-popup-menu__item View in Invision
                                 .sub-popup-menu__list 
-                                    a(href="#3", @click.prevent="openNewWindow('http://10.1.74.36:2230/EPIC_InPatient/patient_scheduling/search.html')").sub-popup-menu__item Patient Search
-                                    a(href="#3", @click.prevent="openNewWindow('http://10.1.74.36:2230/EPIC_InPatient/patient_scheduling/patient_demog.html')").sub-popup-menu__item Patient Information
-                                    a(href="#3", @click.prevent="openNewWindow('http://10.1.74.36:2230/EPIC_InPatient/patient_scheduling/make_appt.html')").sub-popup-menu__item Appointments Create
+                                    a(href="#3", @click.prevent="openNewWindow('http://www.spinsci.com')").sub-popup-menu__item Patient Search
+                                    a(href="#3", @click.prevent="openNewWindow('http://www.spinsci.com')").sub-popup-menu__item Patient Information
+                                    a(href="#3", @click.prevent="openNewWindow('http://www.spinsci.com')").sub-popup-menu__item Appointments Create
                             a(href="#3", @click.prevent="showReminder(index)").sub-popup-menu__item Send Reminder
                             a(href="#3").sub-popup-menu__item Print
                             a(href="#3", @click.prevent="openNewWindow('http://uhealthsystem.com/images/content/UMH-statement.jpg')").sub-popup-menu__item Download as PDF
@@ -354,7 +354,7 @@
         display: flex;
         margin-bottom: em(15);
 		.filterString {
-			color: rgb(197,197,197);
+			color: rgb(139,155,171);
 		}
 		
     }

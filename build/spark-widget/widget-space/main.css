@@ -3659,7 +3659,9 @@
   align-items: center;
   flex-grow: 2;
 }
-
+h1.mytitle{
+  display: inline-block;
+}
 .menu-container--2yZIB {
   display: flex;
   width: 40px;
