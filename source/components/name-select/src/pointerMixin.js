@@ -39,9 +39,9 @@ export default {
   methods: {
     optionHighlight (index, option) {
       return {
-        'multiselect__option--category': option=='INVISION' || option=='SORIEN',
-        'multiselect__option--highlight': option!='INVISION' && option!='SORIEN' && index === this.pointer && this.showPointer,
-        'multiselect__option--selected': option!='INVISION' && option!='SORIEN' && this.isSelected(option)
+        'multiselect__option--category': option=='SOARIAN' || option=='INVISION',
+        'multiselect__option--highlight': option!='SOARIAN' && option!='INVISION' && index === this.pointer && this.showPointer,
+        'multiselect__option--selected': option!='SOARIAN' && option!='INVISION' && this.isSelected(option)
       }
     },
     addPointerElement ({ key } = 'Enter') {

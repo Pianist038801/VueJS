@@ -151,9 +151,9 @@
                     if(item.Category=='INVISION')
                         array.push(item.Name);
                 });
-                array.push('SORIEN');
+                array.push('SOARIAN');
                 vm.pacients.forEach((item, i) => {
-                    if(item.Category=='SORIEN')
+                    if(item.Category=='SOARIAN')
                         array.push(item.Name);
                 });
                 return array;

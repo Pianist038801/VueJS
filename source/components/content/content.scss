@@ -52,9 +52,20 @@
     border-radius: 50%;
     box-shadow: 0.5px 0.8px 5px rgba(0, 0, 0, 0.2);
   }
+  .ico-svg__plus-close {
+    width: em(25);
+    height: em(25);
+    use {
+      @extend %tr-all;
+      fill: white;
+    }
+    background-color: grey;
+    border-radius: 50%;
+    box-shadow: 0.5px 0.8px 5px rgba(0, 0, 0, 0.2);
+  }
   &:hover {
     use {
-      fill: darken(#1db7e9, 10%)
+      fill: darken(white, 10%)
     }
   }
 

@@ -94,13 +94,7 @@
                         .sub-popup-menu__list-special(v-if="showMenu==index")
                             a(href="#3", @click.prevent="viewBill(index)").sub-popup-menu__item View Bill
                             a(href="#3", @click.prevent="payBill(index)").sub-popup-menu__item Pay Bill
-                            .sub-popup-menu
-                                .sub-popup-menu__action
-                                    a(href="#3",@mouseover.prevent="overInvision()", @mouseout.prevent="outInvision()").sub-popup-menu__item View in Invision
-                                .sub-popup-menu__list 
-                                    a(href="#3", @click.prevent="openNewWindow('http://www.spinsci.com')").sub-popup-menu__item Patient Search
-                                    a(href="#3", @click.prevent="openNewWindow('http://www.spinsci.com')").sub-popup-menu__item Patient Information
-                                    a(href="#3", @click.prevent="openNewWindow('http://www.spinsci.com')").sub-popup-menu__item Appointments Create
+                            a(href="#3", @click.prevent="openNewWindow('http://www.spinsci.com')").sub-popup-menu__item View in {{$root._data.Patients[$root.activePacient].Category=='INVISION'?'Invision':"Soarian"}}
                             a(href="#3", @click.prevent="showReminder(index)").sub-popup-menu__item Send Reminder
                             a(href="#3").sub-popup-menu__item Print
                             a(href="#3", @click.prevent="openNewWindow('http://uhealthsystem.com/images/content/UMH-statement.jpg')").sub-popup-menu__item Download as PDF
@@ -125,7 +119,7 @@
                             label.ui-checkbox__label(for='checkbox-sms') Send Text Reminder
                     transition(name="fade")
                         textarea(v-if="showSmsTemplate").ui-textarea.ui-textarea--skin-default.ui-textarea--theme-default.mod--sms
-                            Dear [Patient Name], we are sending this message to remind of a payment.  Your payemnt is due in two weeks from now.. Regards. [DRNAME]
+                            | Dear [Patient Name], we are sending this message to remind of a payment.  Your payment is due in two weeks from now.. Regards. 
 
                 .modal-appointment__templates-messages 
                     .modal-appointment__templates-checkbox
@@ -235,11 +229,10 @@
                             dialCommand = '&numberToDial=' ,
                             msgCommand = '&msgToSend=' ;
                         
-                        let msg = '<Dear> [Patient Name], we are sending this message to remind of a payment.  Your payemnt is due in two weeks from now.. Regards. [DRNAME]';
-
-                        msg = msg.replace ( '[DRNAME]' , vm.physicianSelect ) ; 
-                        msg = msg.replace ( '[PATIENT NAME]' , vm.$root._data. Patients[vm.$root.activePacient] . Name ) ;
-
+                        let msg = 'Dear [PATIENT NAME], we are sending this message to remind of a payment.  Your payemnt is due in two weeks from now.. Regards.';
+ 
+                        msg = msg.replace ( '[PATIENT NAME]' , vm.$root._data.Patients[vm.$root.activePacient].Name ) ;
+                        
                         console . log ( msg ) ;
 
                         const HttpClient = function() {

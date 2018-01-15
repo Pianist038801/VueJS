@@ -78,10 +78,7 @@
               </div>
               <div class="content" v-if="$root.currentShowBox ==='billing' &amp;&amp; !currentShowSubBox" key="billing">
                 <div class="content__top-line">
-                  <h1 class="title">Patient Billing </h1><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = 'add-billing'">
-                    <svg class="ico-svg ico-svg__plus-round">
-                      <use xlink:href="#plus-round"></use>
-                    </svg></a>
+                  <h1 class="title">Patient Billing  </h1>
                 </div>
                 <div class="content__box">
                   <patient-billing :patient="$root._data.Patients[$root.activePacient]"></patient-billing>
@@ -98,10 +95,10 @@
                           <use xlink:href="#more"></use>
                         </svg>
                       </div>
-                      <div class="sub-popup-menu__list"><a class="sub-popup-menu__item1" href="#3" @click.prevent="showImage()">Expand Details</a><a class="sub-popup-menu__item1" href="#3">View in Invision</a><a class="sub-popup-menu__item1" href="#3" @click.prevent="payBill($root._data.billItem)">Pay Bill</a><a class="sub-popup-menu__item1" href="#3">Adjust</a><a class="sub-popup-menu__item1" href="#3">Print</a><a class="sub-popup-menu__item1" href="#3">Download as PDF</a></div>
+                      <div class="sub-popup-menu__list"><a class="sub-popup-menu__item1" href="#3" @click.prevent="showImage()">Expand Details</a><a class="sub-popup-menu__item" href="#3" @click.prevent="openNewWindow('http://www.spinsci.com')">View in {{$root._data.Patients[$root.activePacient].Category=='INVISION'?'Invision':"Soarian"}}</a><a class="sub-popup-menu__item1" href="#3" @click.prevent="payBill($root._data.billItem)">Pay Bill</a><a class="sub-popup-menu__item1" href="#3">Adjust</a><a class="sub-popup-menu__item1" href="#3">Print</a><a class="sub-popup-menu__item" href="#3" @click.prevent="openNewWindow('http://uhealthsystem.com/images/content/UMH-statement.jpg')">Download as PDF</a></div>
                     </div>
                   </div><a class="content__top-action" href="#3" @click.prevent="$root.goBack">
-                    <svg class="ico-svg ico-svg__plus-round">
+                    <svg class="ico-svg ico-svg__plus-close">
                       <use xlink:href="#close"></use>
                     </svg></a>
                 </div>
@@ -112,7 +109,7 @@
               <div class="content" v-if="$root.currentShowBox ==='payment_confirmation' &amp;&amp; !currentShowSubBox" key="payment_confirmation">
                 <div class="content__top-line">
                   <h1 class="title">Payment Confirmation</h1><a class="content__top-action" href="#3" @click.prevent="$root.goBack">
-                    <svg class="ico-svg ico-svg__plus-round">
+                    <svg class="ico-svg ico-svg__plus-close">
                       <use xlink:href="#close"></use>
                     </svg></a>
                 </div>
@@ -133,7 +130,7 @@
                       <div class="sub-popup-menu__list"><a class="sub-popup-menu__item1" href="#3">Send Confirmation</a><a class="sub-popup-menu__item1" href="#3">View Another Bill </a></div>
                     </div>
                   </div><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = 'dollar'">
-                    <svg class="ico-svg ico-svg__plus-round">
+                    <svg class="ico-svg ico-svg__plus-close">
                       <use xlink:href="#plus-round"></use>
                     </svg></a>
                 </div>

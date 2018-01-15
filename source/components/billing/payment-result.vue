@@ -9,7 +9,7 @@
                 .payment-result__top-item
                     .payment-result__top-item-label  Amount:
                 .payment-result__top-item2
-                    .payment-result__top-item-label2  $325
+                    .payment-result__top-item-label2  {{item.amount}}
             .payment-result__top 
                 .payment-result__top-item
                     .payment-result__top-item-label  Statement Number:

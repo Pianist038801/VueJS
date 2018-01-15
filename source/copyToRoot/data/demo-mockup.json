@@ -1,7 +1,7 @@
 {
   "Patients": [{
     "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
-    "Category": "INVISION",
+    "Category": "SOARIAN",
     "Name": "John Jacobs",
     "DateOfBirth": "1981-07-01 00:00:00",
     "SSN": "***-**-6789",
@@ -204,12 +204,12 @@
         "name": " JACOBS,JOHN ",
         "status": "Unpaid",
         "StatementId": "06642326",
-        "PatientName": "Johns Sarah",
+        "PatientName": "Johns Jacobs",
         "PatientId": "28724351",
         "Payer": "United",
         "ClaimType": "eClaims",
         "Date": "12/03/2017",
-        "TotalAmount": "3200.00",
+        "TotalAmount": "848.09",
         "TotalPaidAmount": "1200.00",
         "reviews": [
           {
@@ -246,7 +246,7 @@
           }
         ],
         "total": {
-          "amount": "$38.04",
+          "amount": "$848.09",
           "insurance": "$0.00",
           "currentBalance": "$38.04",
           "lineItem": "$38.04"
@@ -255,12 +255,12 @@
       {
         "status": "Paid",
         "StatementId": "02534126",
-        "PatientName": "Johns Sarah",
+        "PatientName": "John Jacobs",
         "PatientId": "28724351",
         "Payer": "United",
         "ClaimType": "eClaims",
         "Date": "11/02/2016",
-        "TotalAmount": "1200.00",
+        "TotalAmount": "848.09",
         "TotalPaidAmount": "1200.00",
         "reviews": [
           {
@@ -297,7 +297,7 @@
           }
         ],
         "total": {
-          "amount": "$38.04",
+          "amount": "$848.09",
           "insurance": "$0.00",
           "currentBalance": "$38.04",
           "lineItem": "$38.04"
@@ -306,12 +306,12 @@
       {
         "status": "Unpaid",
         "StatementId": "02512426",
-        "PatientName": "Johns Sarah",
+        "PatientName": "John Jacobs",
         "PatientId": "48724351",
         "Payer": "United",
         "ClaimType": "eClaims",
         "Date": "04/04/2015",
-        "TotalAmount": "3500.00",
+        "TotalAmount": "848.09",
         "TotalPaidAmount": "1100.00",
         "reviews": [
           {
@@ -348,7 +348,7 @@
           }
         ],
         "total": {
-          "amount": "$38.04",
+          "amount": "$848.09",
           "insurance": "$0.00",
           "currentBalance": "$38.04",
           "lineItem": "$38.04"
@@ -358,7 +358,7 @@
   },
     {
       "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=3",
-      "Category": "SORIEN",
+      "Category": "INVISION",
       "Name": "Johns Sarah",
       "DateOfBirth": "2007-12-25 00:00:00",
       "SSN": "***-**-5428",
@@ -405,7 +405,7 @@
           "Payer": "United",
           "ClaimType": "eClaims",
           "Date": "12/03/2017",
-          "TotalAmount": "3200.00",
+          "TotalAmount": "848.09",
           "TotalPaidAmount": "1200.00",
           "reviews": [
             {
@@ -442,7 +442,7 @@
             }
           ],
           "total": {
-            "amount": "$38.04",
+            "amount": "$848.09",
             "insurance": "$0.00",
             "currentBalance": "$38.04",
             "lineItem": "$38.04"
@@ -456,7 +456,7 @@
           "Payer": "United",
           "ClaimType": "eClaims",
           "Date": "11/02/2016",
-          "TotalAmount": "1200.00",
+          "TotalAmount": "848.09",
           "TotalPaidAmount": "1200.00",
           "reviews": [
             {
@@ -493,7 +493,7 @@
             }
           ],
           "total": {
-            "amount": "$38.04",
+            "amount": "$848.09",
             "insurance": "$0.00",
             "currentBalance": "$38.04",
             "lineItem": "$38.04"
@@ -507,7 +507,7 @@
           "Payer": "United",
           "ClaimType": "eClaims",
           "Date": "08/02/2015",
-          "TotalAmount": "3500.00",
+          "TotalAmount": "848.09",
           "TotalPaidAmount": "1100.00",
           "reviews": [
             {
@@ -544,7 +544,7 @@
             }
           ],
           "total": {
-            "amount": "$38.04",
+            "amount": "$848.09",
             "insurance": "$0.00",
             "currentBalance": "$38.04",
             "lineItem": "$38.04"

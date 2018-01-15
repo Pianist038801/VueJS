@@ -37,10 +37,7 @@ block content
                     //-show billing
                     .content(v-if="$root.currentShowBox ==='billing' && !currentShowSubBox", key="billing")
                         .content__top-line
-                            h1.title Patient Billing 
-                            a(href="#3", @click.prevent="$root.currentShowSubBox = 'add-billing'").content__top-action
-                                svg.ico-svg.ico-svg__plus-round
-                                    use(xlink:href="#plus-round")
+                            h1.title Patient Billing  
                         .content__box
                             patient-billing(:patient="$root._data.Patients[$root.activePacient]")
                             billing-history(:history="$root._data.Patients[$root.activePacient].BillHistory",@pay-bill="$root.payBill",@show-statement-review="$root.showStatementReview")
@@ -56,13 +53,13 @@ block content
                                             use(xlink:href="#more")
                                     .sub-popup-menu__list
                                         a(href="#3", @click.prevent="showImage()").sub-popup-menu__item1 Expand Details
-                                        a(href="#3").sub-popup-menu__item1 View in Invision
+                                        a(href="#3", @click.prevent="openNewWindow('http://www.spinsci.com')").sub-popup-menu__item View in {{$root._data.Patients[$root.activePacient].Category=='INVISION'?'Invision':"Soarian"}}
                                         a(href="#3", @click.prevent="payBill($root._data.billItem)").sub-popup-menu__item1 Pay Bill
                                         a(href="#3").sub-popup-menu__item1 Adjust
                                         a(href="#3").sub-popup-menu__item1 Print
-                                        a(href="#3").sub-popup-menu__item1 Download as PDF
+                                        a(href="#3", @click.prevent="openNewWindow('http://uhealthsystem.com/images/content/UMH-statement.jpg')").sub-popup-menu__item Download as PDF
                             a(href="#3", @click.prevent="$root.goBack").content__top-action
-                                svg.ico-svg.ico-svg__plus-round
+                                svg.ico-svg.ico-svg__plus-close
                                     use(xlink:href="#close")
                         .content__box
                             statement-review(:item="$root._data.billItem",:showimagemodal="$root._data.showImageModal")
@@ -71,7 +68,7 @@ block content
                         .content__top-line
                             h1.title Payment Confirmation
                             a(href="#3", @click.prevent="$root.goBack").content__top-action
-                                svg.ico-svg.ico-svg__plus-round
+                                svg.ico-svg.ico-svg__plus-close
                                     use(xlink:href="#close")
                         .content__box
                             payment-confirmation(:item="$root._data.billItem", @show-payment-result="$root.showPaymentResult")
@@ -89,7 +86,7 @@ block content
                                         a(href="#3").sub-popup-menu__item1 Send Confirmation
                                         a(href="#3").sub-popup-menu__item1 View Another Bill 
                             a(href="#3", @click.prevent="$root.currentShowSubBox = 'dollar'").content__top-action
-                                    svg.ico-svg.ico-svg__plus-round
+                                    svg.ico-svg.ico-svg__plus-close
                                         use(xlink:href="#plus-round")
                         .content__box
                             payment-result(:item="$root._data.paymentResult", @go-back="$root.goBack")

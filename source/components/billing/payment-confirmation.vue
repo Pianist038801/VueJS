@@ -9,6 +9,7 @@
         .payment-confirmation__top-active 
             form.payment-card 
                 .bank-card__side.bank-card__side_front
+                    .title HealthPay24
                     .bank-card__inner
                     label.bank-card__label.bank-card__label_holder
                         span.bank-card__hint Holder of card
@@ -52,6 +53,9 @@
             .payment-confirmation__top-active-left
                 .payment-confirmation__top-active-title
                     .span Payment Amount:
+                    label.bank-card__label.bank-card__cvc
+                        span.bank-card__hint CVC
+                        input.bank-card__field(type="text" v-model="amount" placeholder="CVC" maxlength="3" pattern="[0-9]{3}" name="cvc-card" required="")
         a(href="#3", @click="confirmPayment").ui-btn.ui-btn--skin-default.ui-btn--theme-primary {{"CONFIRM PAYMENT"}}
 </template>
 <script>
@@ -74,7 +78,7 @@
         },
         methods: {
             confirmPayment(){
-                this.$emit('show-payment-result',{statementId: '209920923', payDate:'01/05/2018', username: this.username, cardType: this.cardType, cardNumber: this.cardNumber, month: this.month, year: this.year,cvv: this.cvv});
+                this.$emit('show-payment-result',{amount: amount, statementId: '209920923', payDate:'01/05/2018', username: this.username, cardType: this.cardType, cardNumber: this.cardNumber, month: this.month, year: this.year,cvv: this.cvv});
             }
         },
         mounted() {

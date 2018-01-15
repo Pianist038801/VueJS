@@ -482,7 +482,7 @@ export default {
      * @param  {Boolean} block removing
      */
     select(option, key) { 
-      if (option == 'INVISION' || option == 'SORIEN') return;
+      if (option == 'SOARIAN' || option == 'INVISION') return;
       /* istanbul ignore else */
       if (this.blockKeys.indexOf(key) !== -1 || this.disabled || option.$isLabel || option.$isDisabled) return
       /* istanbul ignore else */

@@ -1,7 +1,7 @@
 {
   "Patients": [{
     "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
-    "Category": "INVISION",
+    "Category": "SOARIAN",
     "Name": "John Jacobs",
     "DateOfBirth": "1981-07-01 00:00:00",
     "SSN": "***-**-6789",
@@ -246,7 +246,7 @@
           }
         ],
         "total": {
-          "amount": "$38.04",
+          "amount": "$848.09",
           "insurance": "$0.00",
           "currentBalance": "$38.04",
           "lineItem": "$38.04"
@@ -297,7 +297,7 @@
           }
         ],
         "total": {
-          "amount": "$38.04",
+          "amount": "$848.09",
           "insurance": "$0.00",
           "currentBalance": "$38.04",
           "lineItem": "$38.04"
@@ -348,7 +348,7 @@
           }
         ],
         "total": {
-          "amount": "$38.04",
+          "amount": "$848.09",
           "insurance": "$0.00",
           "currentBalance": "$38.04",
           "lineItem": "$38.04"
@@ -358,7 +358,7 @@
   },
     {
       "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=3",
-      "Category": "SORIEN",
+      "Category": "rON",
       "Name": "Johns Sarah",
       "DateOfBirth": "2007-12-25 00:00:00",
       "SSN": "***-**-5428",
@@ -442,7 +442,7 @@
             }
           ],
           "total": {
-            "amount": "$38.04",
+            "amount": "$848.09",
             "insurance": "$0.00",
             "currentBalance": "$38.04",
             "lineItem": "$38.04"
@@ -493,7 +493,7 @@
             }
           ],
           "total": {
-            "amount": "$38.04",
+            "amount": "$848.09",
             "insurance": "$0.00",
             "currentBalance": "$38.04",
             "lineItem": "$38.04"
@@ -544,7 +544,7 @@
             }
           ],
           "total": {
-            "amount": "$38.04",
+            "amount": "$848.09",
             "insurance": "$0.00",
             "currentBalance": "$38.04",
             "lineItem": "$38.04"
