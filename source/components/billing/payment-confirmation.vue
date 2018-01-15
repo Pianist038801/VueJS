@@ -5,10 +5,7 @@
             .payment-confirmation__top-active-left
                 .payment-confirmation__top-active-title
                     .span Payment Information
-        .payment-confirmation__top-item
-            .payment-confirmation__top-item-label  Card Holder Name
-            .payment-confirmation__top-item-box
-                input(placeholder="", v-model="username").ui-input
+ 
         .payment-confirmation__top-active
             .payment-confirmation__top-active-left
                 .payment-confirmation__top-active-title
@@ -21,33 +18,46 @@
                         :showLabels="false",
                         placeholder="Select"
                         ).ui-multiselect.ui-multiselect--border
-        .payment-confirmation__top-item
-            .payment-confirmation__top-item-label  Card Number
-            .payment-confirmation__top-item-box
-                input(placeholder="", v-model="cardNumber").ui-input
-        .payment-confirmation__top-item
-            .payment-confirmation__top-item-label  Expiration Date
-            .payment-confirmation__top-item-box
-                multiselect(
+ 
+        .payment-confirmation__top-active 
+            form.payment-card
+                .bank-card
+                .bank-card__side.bank-card__side_front
+                    .bank-card__inner
+                    label.bank-card__label.bank-card__label_holder
+                        span.bank-card__hint Holder of card
+                        input.bank-card__field(type="text" placeholder="Holder of card" pattern="[A-Za-z, ]{2,}"  v-model="username" name="holder-card" required="")
+                    .bank-card__inner
+                    label.bank-card__label.bank-card__label_number
+                        span.bank-card__hint Number of card
+                        input.bank-card__field(type="text" placeholder="Number of card" pattern="[0-9]{16}" v-model="cardNumber" name="number-card" required="")
+                    .bank-card__inner
+                    span.bank-card__caption valid thru
+                    .bank-card__inner.bank-card__footer
+                    label.bank-card__label.bank-card__month
+                        span.bank-card__hint Month
+                        multiselect(
                         v-model="month",
                         :options="['1', '2','3', '4','5', '6','7', '8','9', '10','11', '12',]",
                         :searchable="false",
                         :allowEmpty="false",
                         :showLabels="false",
-                        placeholder="Month"
-                        ).ui-multiselect.ui-multiselect--border
-                multiselect(
+                        placeholder="MM"
+                        ).ui-multiselect.ui-multiselect--border 
+                    span.bank-card__separator /
+                    label.bank-card__label.bank-card__year
+                        span.bank-card__hint Year
+                        multiselect(
                         v-model="year",
                         :options="['2016', '2017','2018', '2019']",
                         :searchable="false",
                         :allowEmpty="false",
                         :showLabels="false",
-                        placeholder="Year"
+                        placeholder="YY"
                         ).ui-multiselect.ui-multiselect--border
-        .payment-confirmation__top-item
-            .payment-confirmation__top-item-label  CVV
-            .payment-confirmation__top-item-box
-                input(placeholder="", v-model="cvv").ui-input
+                    label.bank-card__label.bank-card__cvc
+                        span.bank-card__hint CVC
+                        input.bank-card__field(type="text" v-model="cvv" placeholder="CVC" maxlength="3" pattern="[0-9]{3}" name="cvc-card" required="")
         .payment-confirmation__top-active
             .payment-confirmation__top-active-left
                 .payment-confirmation__top-active-title
@@ -55,9 +65,8 @@
         .payment-confirmation__top-active
             .payment-confirmation__top-active-left
                 .payment-confirmation__top-active-title
-                    .span Payment Amount: 
- 
-        a(href="#3", @click="confirmPayment").ui-btn.ui-btn--skin-default.ui-btn--theme-primary {{"CONFIRM PAYMENT"}} 
+                    .span Payment Amount:
+        a(href="#3", @click="confirmPayment").ui-btn.ui-btn--skin-default.ui-btn--theme-primary {{"CONFIRM PAYMENT"}}
 </template>
 <script>
     import Multiselect from 'vue-multiselect';
@@ -276,6 +285,197 @@
         }
 
     }
+ 
+body {
+	 
+	font-size: 1.6rem;
+	margin: 0;
+}
+.demo {
+	min-height: 470px;
+	box-sizing: border-box;
+	position: relative;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer {
+	padding: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+a {
+	color: #000;
+	&:focus {
+		outline: 2px solid #fdde60;
+	}
+	&:hover {
+		text-decoration: none;
+	}
+}
+.melnik909 {
+	margin-left: 2rem;
+}
+.payment-card {
+	width: 60rem;
+}
+.payment-card__footer {
+	text-align: center;
+	margin-top: 2rem;
+}
+.bank-card {
+	position: relative;
+}
+.bank-card__inner {
+	margin-bottom: 4%;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.bank-card__label {
+	display: inline-block;
+	vertical-align: middle;
+}
+.bank-card__label_holder {
+	width: 100%;
+}
+.bank-card__label_number {
+	width: 100%;
+}
+.bank-card__hint {
+	position: absolute;
+	left: -9999px;
+}
+.bank-card__caption {
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	margin-left: 1%;
+}
+.bank-card__field {
+	box-sizing: border-box;
+	border: 3px solid #d0d0ce;
+	width: 100%;
+	padding: 1rem;
+	font-family: inherit;
+	font-size: 100%;
+	&:focus {
+		outline: none;
+		border-color: #fdde60;
+	}
+}
+.bank-card__separator {
+	font-size: 3.2rem;
+	color: #c4c4c3;
+	margin-left: 3%;
+	margin-right: 3%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.payment-card__button {
+	background-color: #ada093;
+	transition: background-color .4s ease-out;
+	border-radius: 5px;
+	border: 3px solid transparent;
+	cursor: pointer;
+	padding: 1rem 6.5rem;
+	font-size: 100%;
+	font-family: inherit;
+	color: #fff;
+	&:focus {
+		outline: none;
+		border-color: #fdde60;
+		background-color: #8e8b85;
+	}
+	&:hover {
+		background-color: #8e8b85;
+	}
+}
+@media screen and (min-width: 201px) {
+	.bank-card {
+		height: 30rem;
+	}
+	.bank-card__side {
+		border-radius: 10px;
+		border: 1px solid transparent;
+		position: relative;
+		width: 65%;
+	}
+	.bank-card__side_front {
+		background-color: #f0f0ee;
+		padding: 5%;
+		box-shadow: 0 0 10px #f4f4f2;
+		border-color: #a29e97;
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
+	.bank-card__side_back {
+		background-color: #e0ddd7;
+		padding: 24.5% 5% 11%;
+		box-shadow: 0 0 2rem #f3f3f3;
+		text-align: right;
+		border-color: #dad9d6;
+		top: 12%;
+		right: 0;
+		&:before {
+			content: "";
+			width: 100%;
+			height: 25%;
+			background-color: #8e8b85;
+			position: absolute;
+			top: 14%;
+			right: 0;
+		}
+	}
+	.bank-card__month {
+		width: 25%;
+	}
+	.bank-card__year {
+		width: 25%;
+	}
+	.bank-card__cvc {
+        margin-left: 40px;
+		width: 25%;
+	}
+}
+@media screen and (max-width: 480px) {
+	.bank-card__side {
+		border: 1px solid #a29e97;
+		background-color: #f0f0ee;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.bank-card__side_front {
+		border-radius: 10px 10px 0 0;
+		border-bottom: none;
+		padding-top: 5%;
+	}
+	.bank-card__side_back {
+		border-radius: 0 0 10px 10px;
+		border-top: none;
+		padding-bottom: 5%;
+	}
+	.bank-card__month {
+		width: 48%;
+	}
+	.bank-card__year {
+		width: 48%;
+	}
+	.bank-card__cvc {
+		width: 100%;
+		margin-top: 4%;
+	}
+	.bank-card__separator {
+		display: none;
+	}
+	.bank-card__footer {
+		display: flex;
+		justify-content: space-between;
+	}
+}
 
 
 
