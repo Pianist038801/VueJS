@@ -1,7 +1,364 @@
 {
-  "Patients": [
+  "Patients": [{
+    "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
+    "Category": "INVISION",
+    "Name": "John Jacobs",
+    "DateOfBirth": "1981-07-01 00:00:00",
+    "SSN": "***-**-6789",
+    "PhoneNumber": "+1 214 701 5489",
+    "PhotoUrl": "img/user.png",
+    "PrimaryCareProvider": {
+      "Name": "Rohit Potaraju, MD",
+      "Phone": "+1 202 456 7890"
+    },
+    "Address": {
+      "Line1": "3453 T Ave",
+      "Line2": "Fort Worth, TX 76179, USA"
+    },
+    "TreatmentTeam": [
+    ],
+    "Provider": [
+      {
+        "Name": "United Healthcare (UHC Parkway, GA,66552)",
+        "PhoneNumber": "+1 216 411 8765"
+      }
+    ],
+    "InsuranceVerification": {
+      "InsuranceName": "John Jacobs",
+      "GroupNum": "#45ABC",
+      "NetworkNum": "#45ABC",
+      "PolicyNum": "#022141242",
+      "IssueDate": "20-Aug-2016 00:00:00"
+    },
+    "Vitals": {
+      "Height": 168,
+      "Weight": 78,
+      "RespirationRate": 58,
+      "BMI": 18.9,
+      "Pulse": 210,
+      "BloodPressureLo": 127,
+      "BloodPressureHi": 145
+    },
+    "Physician": {
+      "Name": "Rohit Potaraju, MD",
+      "Clinic": "Clarit Clinic",
+      "Specialty": "PCP",
+      "EmergencyPhone": "+1 800 111 2222",
+      "PrimaryPhone": "+1 212 234 5678"
+    },
+    "Status": {
+      "Email": "john.doe@gmail.com",
+      "Race": "White",
+      "Ethnicity": "Not Hispanic Or Latino",
+      "Religion": "Christian (non-Catholic, non-Specific)",
+      "MaritalStatus": "Married",
+      "EmergencyContact": {
+        "Relation": "Wife",
+        "Name": "Sarah Doe",
+        "Phone": "+1 214 701 5489"
+      }
+    },
+    "Location": {
+      "DropdownRecords": [
+        {
+          "Name": "Patient Geo Location",
+          "Address": "1272 Belt Line Rd, Garland TX 75040",
+          "Position": {"lat": 32.944827, "lng": -96.645879},
+          "Phone": "+1 202 456 7890",
+          "Hours": "N / A",
+          "Markers":[
+            {
+              "Name": "Patient Geo Location"
+            , "Address": "1272 Belt Line Rd, Garland TX 75040"
+            , "Position": {"lat": 32.944827, "lng": -96.645879}
+            }
+          ]
+        },
+        {
+          "Name": "Pharmacies In Area",
+          "Address": "1272 Belt Line Rd, Garland TX 75040",
+          "Position": {"lat": 32.944827, "lng": -96.645879},
+          "Phone": "+1 (972) 495-1933",
+          "Hours": "Open 9 AM to 10 PM",
+          "Markers":[
+            {
+              "Name": "CVS Pharmacy"
+            , "Address": "1372 Belt Line Rd"
+            , "Position": {"lat": 32.944527, "lng": -96.646960}
+            } ,
+            {
+              "Name": "Walmart Pharmacy"
+            , "Address": "101 W Buckingham Rd"
+            , "Position": {"lat": 32.932013, "lng": -96.631611}
+            } ,
+            {
+              "Name": "Walgreens"
+            , "Address": "2614 Lavon Dr"
+            , "Position": {"lat": 32.939566, "lng": -96.621946}
+            } ,
+            {
+              "Name": "Walgreens"
+            , "Address": "1902 N Jupiter Rd"
+            , "Position": {"lat": 32.930183, "lng": -96.682285}
+            } ,
+            {
+              "Name": "CVS Pharmacy - Target"
+            , "Address": "5301 N Garland Ave"
+            , "Position": {"lat": 32.965650, "lng": -96.646806}
+            } ,
+            {
+              "Name": "Walmart Pharmacy"
+            , "Address": "5302 N Garland Ave"
+            , "Position": {"lat": 32.962346, "lng": -96.642499}
+            }
+          ]
+        },
+        {
+          "Name": "Hospitals In Area",
+          "Address": "7 Medical Pkwy, Dallas, TX 75234",
+          "Position": {"lat": 32.944827, "lng": -96.645879},
+          "Phone": "+(972) 888-7000",
+          "Hours": "Open 9AM to 9PM",
+          "Markers":[
+            {
+              "Name": "Baylor Scott & White Medical Center"
+            , "Address": "2300 Marie Curie Blvd"
+            , "Position": {"lat": 32.918755, "lng": -96.661963}
+            } ,
+            {
+              "Name": "Select Specialty Hospital - Dallas Garland"
+            , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
+            , "Position": {"lat": 32.918793, "lng": -96.662041}
+            } ,
+            {
+              "Name": "Children's Health Pediatric Group Garland"
+            , "Address": "455 N Garland Ave"
+            , "Position": {"lat": 28.548467, "lng": -81.381385}
+            } ,
+            {
+              "Name": "Sundance Hospital Dallas"
+            , "Address": "2696 W Walnut St"
+            , "Position": {"lat": 32.913402, "lng": -96.670117}
+            }
+          ]
+        }
+      ]
+    },
+    "PastAppointments": [
+      {
+        "Date": "9-20-2017 15:00:00",
+        "Time": "15:00:00",
+        "Department": "Radiology",
+        "Provider": "Dr. Steve",
+        "VisitType": "Office Visit",
+        "VisitReason": "No Comments",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "false",
+          "Interpreter Language": "None",
+          "Status": "Arrived Late"
+        }
+      },
+      {
+        "Date": "9-25-2017 14:30:00",
+        "Time": "15:00:00",
+        "Department": "General",
+        "Provider": "Dr. Steve",
+        "VisitType": "Office Visit",
+        "VisitReason": "Knee Pain",
+        "Appointment Details": {
+          "Interpreter Required": "Yes",
+          "IsRequired": "True",
+          "Interpreter Language": "Mandarin",
+          "Status": "Checked Out"
+        }
+      },
+      {
+        "Date": "10-13-2017 14:00:00",
+        "Time": "14:00:00",
+        "Department": "Kent Health Center",
+        "Provider": "Dr. Smith",
+        "VisitType": "Physical",
+        "VisitReason": "No Comments",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "True",
+          "Interpreter Language": "None",
+          "Status": "Checked Out"
+        }
+      }
+    ],
+    "Billing": {
+      "Provider": "United HealthCare",
+      "Plan": "Choice",
+      "Subscriber": "Self",
+      "Street": "3153 T Ave",
+      "City": "Fort Worth",
+      "State": "TX",
+      "ZipCode": "75038",
+      "GroupNum": "52534422",
+      "PolicyNum": "112222456"
+    },
+    "BillHistory": [
+      {
+        "name": " JACOBS,JOHN ",
+        "status": "Unpaid",
+        "StatementId": "06642326",
+        "PatientName": "Johns Sarah",
+        "PatientId": "28724351",
+        "Payer": "United",
+        "ClaimType": "eClaims",
+        "Date": "12/03/2017",
+        "TotalAmount": "3200.00",
+        "TotalPaidAmount": "1200.00",
+        "reviews": [
+          {
+            "date": "07/07/2017",
+            "description": "ENCOUNTER 209523",
+            "amount": "",
+            "insurance": "",
+            "currentBalance": "",
+            "lineItem": ""
+          },
+          {
+            "date": "07/07/2017",
+            "description": "815235 OFFICE/OUTPATIENT VISIT",
+            "amount": "$70.00",
+            "insurance": "",
+            "currentBalance": "$38.04",
+            "lineItem": ""
+          },
+          {
+            "date": "07/07/2017",
+            "description": "Adjustment UNITED",
+            "amount": "$31.96",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          },
+          {
+            "date": "07/07/2017",
+            "description": "Payment UNITED",
+            "amount": "$0.00",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          }
+        ],
+        "total": {
+          "amount": "$38.04",
+          "insurance": "$0.00",
+          "currentBalance": "$38.04",
+          "lineItem": "$38.04"
+        }
+      },
+      {
+        "status": "Paid",
+        "StatementId": "02534126",
+        "PatientName": "Johns Sarah",
+        "PatientId": "28724351",
+        "Payer": "United",
+        "ClaimType": "eClaims",
+        "Date": "11/02/2016",
+        "TotalAmount": "1200.00",
+        "TotalPaidAmount": "1200.00",
+        "reviews": [
+          {
+            "date": "11/11/2017",
+            "description": "ENCOUNTER 109523",
+            "amount": "",
+            "insurance": "",
+            "currentBalance": "",
+            "lineItem": ""
+          },
+          {
+            "date": "11/11/2017",
+            "description": "163235 OFFICE/OUTPATIENT VISIT",
+            "amount": "$70.00",
+            "insurance": "",
+            "currentBalance": "$38.04",
+            "lineItem": ""
+          },
+          {
+            "date": "11/11/2017",
+            "description": "Adjustment UNITED",
+            "amount": "$31.96",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          },
+          {
+            "date": "11/11/2017",
+            "description": "Payment UNITED",
+            "amount": "$0.00",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          }
+        ],
+        "total": {
+          "amount": "$38.04",
+          "insurance": "$0.00",
+          "currentBalance": "$38.04",
+          "lineItem": "$38.04"
+        }
+      },
+      {
+        "status": "Unpaid",
+        "StatementId": "02512426",
+        "PatientName": "Johns Sarah",
+        "PatientId": "48724351",
+        "Payer": "United",
+        "ClaimType": "eClaims",
+        "Date": "04/04/2015",
+        "TotalAmount": "3500.00",
+        "TotalPaidAmount": "1100.00",
+        "reviews": [
+          {
+            "date": "03/03/2017",
+            "description": "ENCOUNTER 209523",
+            "amount": "",
+            "insurance": "",
+            "currentBalance": "",
+            "lineItem": ""
+          },
+          {
+            "date": "02/02/2017",
+            "description": "815235 OFFICE/OUTPATIENT VISIT",
+            "amount": "$70.00",
+            "insurance": "",
+            "currentBalance": "$38.04",
+            "lineItem": ""
+          },
+          {
+            "date": "01/01/2017",
+            "description": "Adjustment UNITED",
+            "amount": "$31.96",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          },
+          {
+            "date": "01/01/2017",
+            "description": "Payment UNITED",
+            "amount": "$0.00",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          }
+        ],
+        "total": {
+          "amount": "$38.04",
+          "insurance": "$0.00",
+          "currentBalance": "$38.04",
+          "lineItem": "$38.04"
+        }
+      }
+    ]
+  },
     {
       "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=3",
+      "Category": "SORIEN",
       "Name": "Johns Sarah",
       "DateOfBirth": "2007-12-25 00:00:00",
       "SSN": "***-**-5428",
@@ -27,50 +384,171 @@
           "PhoneNumber": "+1 216 411 8765"
         }
       ],
-      "Billing":{
+      "Billing": {
         "Provider": "United HealthCare",
         "Plan": "Choice",
         "Subscriber": "Self",
         "Street": "3453 T Ave",
         "City": "Fort Worth",
         "State": "TX",
-        "ZipCode": "76179",
+        "ZipCode": "75038",
         "GroupNum": "555664422",
         "PolicyNum": "334422456"
       },
-      "BillHistory":[
+      "BillHistory": [
         {
+          "name": " JACOBS,JOHN ",
           "status": "Unpaid",
-          "StatementId": "01534125",
+          "StatementId": "06642326",
           "PatientName": "Johns Sarah",
           "PatientId": "28724351",
           "Payer": "United",
           "ClaimType": "eClaims",
-          "Date": "2007-12-25 00:00:00",
+          "Date": "12/03/2017",
           "TotalAmount": "3200.00",
-          "TotalPaidAmount": "1200.00"
+          "TotalPaidAmount": "1200.00",
+          "reviews": [
+            {
+              "date": "12/03/2017",
+              "description": "ENCOUNTER 209523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "12/03/2017",
+              "description": "815235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "12/03/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "12/18/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$38.04",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
+          }
         },
         {
           "status": "Paid",
-          "StatementId": "01534125",
+          "StatementId": "02534126",
           "PatientName": "Johns Sarah",
           "PatientId": "28724351",
           "Payer": "United",
           "ClaimType": "eClaims",
-          "Date": "2005-11-25 00:00:00",
+          "Date": "11/02/2016",
           "TotalAmount": "1200.00",
-          "TotalPaidAmount": "1200.00"
+          "TotalPaidAmount": "1200.00",
+          "reviews": [
+            {
+              "date": "11/03/2017",
+              "description": "ENCOUNTER 109523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "11/03/2017",
+              "description": "115235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "11/03/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "12/14/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$38.04",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
+          }
         },
         {
           "status": "Unpaid",
-          "StatementId": "01534125",
+          "StatementId": "02513426",
           "PatientName": "Johns Sarah",
           "PatientId": "28724351",
           "Payer": "United",
           "ClaimType": "eClaims",
-          "Date": "2007-12-25 00:00:00",
+          "Date": "08/02/2015",
           "TotalAmount": "3500.00",
-          "TotalPaidAmount": "1100.00"
+          "TotalPaidAmount": "1100.00",
+          "reviews": [
+            {
+              "date": "12/15/2017",
+              "description": "ENCOUNTER 209523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "12/16/2017",
+              "description": "815235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "12/15/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "12/15/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$38.04",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
+          }
         }
       ],
       "InsuranceVerification": {
@@ -113,82 +591,124 @@
           {
             "Name": "Patient Geo Location",
             "Address": "1272 Belt Line Rd, Garland TX 75040",
-            "Position": {"lat": 32.944827, "lng": -96.645879},
+            "Position": {
+              "lat": 32.944827,
+              "lng": -96.645879
+            },
             "Phone": "+1 202 456 7890",
             "Hours": "N / A",
-            "Markers":[
+            "Markers": [
               {
-                "Name": "Patient Geo Location"
-              , "Address": "1272 Belt Line Rd, Garland TX 75040"
-              , "Position": {"lat": 32.944827, "lng": -96.645879}
+                "Name": "Patient Geo Location",
+                "Address": "1272 Belt Line Rd, Garland TX 75040",
+                "Position": {
+                  "lat": 32.944827,
+                  "lng": -96.645879
+                }
               }
             ]
           },
           {
             "Name": "Pharmacies In Area",
             "Address": "1272 Belt Line Rd, Garland TX 75040",
-            "Position": {"lat": 32.944827, "lng": -96.645879},
+            "Position": {
+              "lat": 32.944827,
+              "lng": -96.645879
+            },
             "Phone": "+1 (972) 495-1933",
             "Hours": "Open 9 AM to 10 PM",
-            "Markers":[
+            "Markers": [
               {
-                "Name": "CVS Pharmacy"
-              , "Address": "1372 Belt Line Rd"
-              , "Position": {"lat": 32.944527, "lng": -96.646960}
-              } ,
+                "Name": "CVS Pharmacy",
+                "Address": "1372 Belt Line Rd",
+                "Position": {
+                  "lat": 32.944527,
+                  "lng": -96.646960
+                }
+              },
               {
-                "Name": "Walmart Pharmacy"
-              , "Address": "101 W Buckingham Rd"
-              , "Position": {"lat": 32.932013, "lng": -96.631611}
-              } ,
+                "Name": "Walmart Pharmacy",
+                "Address": "101 W Buckingham Rd",
+                "Position": {
+                  "lat": 32.932013,
+                  "lng": -96.631611
+                }
+              },
               {
-                "Name": "Walgreens"
-              , "Address": "2614 Lavon Dr"
-              , "Position": {"lat": 32.939566, "lng": -96.621946}
-              } ,
+                "Name": "Walgreens",
+                "Address": "2614 Lavon Dr",
+                "Position": {
+                  "lat": 32.939566,
+                  "lng": -96.621946
+                }
+              },
               {
-                "Name": "Walgreens"
-              , "Address": "1902 N Jupiter Rd"
-              , "Position": {"lat": 32.930183, "lng": -96.682285}
-              } ,
+                "Name": "Walgreens",
+                "Address": "1902 N Jupiter Rd",
+                "Position": {
+                  "lat": 32.930183,
+                  "lng": -96.682285
+                }
+              },
               {
-                "Name": "CVS Pharmacy - Target"
-              , "Address": "5301 N Garland Ave"
-              , "Position": {"lat": 32.965650, "lng": -96.646806}
-              } ,
+                "Name": "CVS Pharmacy - Target",
+                "Address": "5301 N Garland Ave",
+                "Position": {
+                  "lat": 32.965650,
+                  "lng": -96.646806
+                }
+              },
               {
-                "Name": "Walmart Pharmacy"
-              , "Address": "5302 N Garland Ave"
-              , "Position": {"lat": 32.962346, "lng": -96.642499}
+                "Name": "Walmart Pharmacy",
+                "Address": "5302 N Garland Ave",
+                "Position": {
+                  "lat": 32.962346,
+                  "lng": -96.642499
+                }
               }
             ]
           },
           {
             "Name": "Hospitals In Area",
             "Address": "7 Medical Pkwy, Dallas, TX 75234",
-            "Position": {"lat": 32.944827, "lng": -96.645879},
+            "Position": {
+              "lat": 32.944827,
+              "lng": -96.645879
+            },
             "Phone": "+(972) 888-7000",
             "Hours": "Open 9AM to 9PM",
-            "Markers":[
+            "Markers": [
               {
-                "Name": "Baylor Scott & White Medical Center"
-              , "Address": "2300 Marie Curie Blvd"
-              , "Position": {"lat": 32.918755, "lng": -96.661963}
-              } ,
+                "Name": "Baylor Scott & White Medical Center",
+                "Address": "2300 Marie Curie Blvd",
+                "Position": {
+                  "lat": 32.918755,
+                  "lng": -96.661963
+                }
+              },
               {
-                "Name": "Select Specialty Hospital - Dallas Garland"
-              , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
-              , "Position": {"lat": 32.918793, "lng": -96.662041}
-              } ,
+                "Name": "Select Specialty Hospital - Dallas Garland",
+                "Address": "2300 Marie Curie Drive Floors 3E & 3W",
+                "Position": {
+                  "lat": 32.918793,
+                  "lng": -96.662041
+                }
+              },
               {
-                "Name": "Children's Health Pediatric Group Garland"
-              , "Address": "455 N Garland Ave"
-              , "Position": {"lat": 28.548467, "lng": -81.381385}
-              } ,
+                "Name": "Children's Health Pediatric Group Garland",
+                "Address": "455 N Garland Ave",
+                "Position": {
+                  "lat": 28.548467,
+                  "lng": -81.381385
+                }
+              },
               {
-                "Name": "Sundance Hospital Dallas"
-              , "Address": "2696 W Walnut St"
-              , "Position": {"lat": 32.913402, "lng": -96.670117}
+                "Name": "Sundance Hospital Dallas",
+                "Address": "2696 W Walnut St",
+                "Position": {
+                  "lat": 32.913402,
+                  "lng": -96.670117
+                }
               }
             ]
           }
