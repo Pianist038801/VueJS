@@ -37,25 +37,25 @@
                 .statement__top-active-title
                     .span   Notes
         textarea.ui-textarea.ui-textarea--skin-default.ui-textarea--theme-default 
+        modal(ref="modalimage")
+            .modal__content
+                img(src="http://uhealthsystem.com/images/content/UMH-statement.jpg")
+                .modal-appointment__row
+                    a(href="#3", @click="$refs.modalimage.close()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border Cancel
 </template>
 <script>
- 
+    import modal from "../modal-component/modal.vue";
     export default {
         props: 
-			 ['item'],
+			 ['item', 'showimagemodal'],
         components: {
-             
-        },
-        data() {
-            return { 
+             modal
+        }, 
+        watch:{
+            showimagemodal: function() {
+                this.$refs.modalimage.open()
             }
-        },
-        methods: { 
-        },
-        mounted() {
-        },
-        beforeDestroy() {
-        },
+        } 
     }
 </script>
 <style lang="scss">

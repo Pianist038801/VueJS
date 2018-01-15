@@ -34,7 +34,7 @@ import paymentConfirmation from "../components/billing/payment-confirmation.vue"
 import paymentResult from "../components/billing/payment-result.vue";
 let appData = {
   activePacient: null,
-
+  showImageModal: 0,
   currentShowBox: null,
   currentShowSubBox: null,
   billItem: null,
@@ -79,6 +79,9 @@ let App = new Vue({
       this.currentShowBox = 'payment_result';
       console.log('SDFSDF', item);
       this.paymentResult = item;
+    },
+    showImage: function () {
+      this.showImageModal = this.showImageModal + 1;
     },
     goBack: function (item) {
       this.currentShowBox = 'billing';

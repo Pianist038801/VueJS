@@ -26,7 +26,7 @@
   <div class="header__tabs">
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='scheduling'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'scheduling'">Scheduling</a></div>
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='case-managment'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'case-managment'">Case Management</a></div>
-    <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'billing'">Billing</a></div>
+    <div class="header__tabs-item" :class="{'state--active': ['billing', 'statement_review','payment_confirmation','payment_result'].indexOf($root.currentShowBox)&gt;=0}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'billing'">Billing</a></div>
     <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'Referrals'">Referrals</a></div>
     <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" v-on:click="$root.showSpaceWidget()">Huddle Room</a></div>
   </div>
@@ -90,29 +90,29 @@
               </div>
               <div class="content" v-if="$root.currentShowBox ==='statement_review' &amp;&amp; !currentShowSubBox" key="statement_review">
                 <div class="content__top-line">
-                  <h1 class="title">Statement Review for {{$root._data.billItem.name}} {{$root._data.billItem.Date}} 
+                  <h1 class="title">Statement Review for {{$root._data.billItem.name}} {{$root._data.billItem.Date}}
                     <div class="sub-popup-menu">
                       <div class="sub-popup-menu__action">
                         <svg class="ico-svg ico-svg__more svg-blue">
                           <use xlink:href="#more"></use>
                         </svg>
                       </div>
-                      <div class="sub-popup-menu__list"><a class="sub-popup-menu__item1" href="#3">Expand Details</a><a class="sub-popup-menu__item1" href="#3">View in Invision</a><a class="sub-popup-menu__item1" href="#3" @click.prevent="">Payment Plan</a><a class="sub-popup-menu__item1" href="#3">Adjust</a><a class="sub-popup-menu__item1" href="#3">Print</a><a class="sub-popup-menu__item1" href="#3">Download as PDF</a></div>
+                      <div class="sub-popup-menu__list"><a class="sub-popup-menu__item1" href="#3" @click.prevent="showImage()">Expand Details</a><a class="sub-popup-menu__item1" href="#3">View in Invision</a><a class="sub-popup-menu__item1" href="#3" @click.prevent="payBill($root._data.billItem)">Pay Bill</a><a class="sub-popup-menu__item1" href="#3">Adjust</a><a class="sub-popup-menu__item1" href="#3">Print</a><a class="sub-popup-menu__item1" href="#3">Download as PDF</a></div>
                     </div>
-                  </h1><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = 'dollar'">
+                  </h1><a class="content__top-action" href="#3" @click.prevent="$root.goBack">
                     <svg class="ico-svg ico-svg__plus-round">
-                      <use xlink:href="#plus-round"></use>
+                      <use xlink:href="#close"></use>
                     </svg></a>
                 </div>
                 <div class="content__box">
-                  <statement-review :item="$root._data.billItem"></statement-review>
+                  <statement-review :item="$root._data.billItem" :showimagemodal="$root._data.showImageModal"></statement-review>
                 </div>
               </div>
               <div class="content" v-if="$root.currentShowBox ==='payment_confirmation' &amp;&amp; !currentShowSubBox" key="payment_confirmation">
                 <div class="content__top-line">
-                  <h1 class="title">Payment Confirmation</h1><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = 'dollar'">
+                  <h1 class="title">Payment Confirmation</h1><a class="content__top-action" href="#3" @click.prevent="$root.goBack">
                     <svg class="ico-svg ico-svg__plus-round">
-                      <use xlink:href="#plus-round"></use>
+                      <use xlink:href="#close"></use>
                     </svg></a>
                 </div>
                 <div class="content__box">

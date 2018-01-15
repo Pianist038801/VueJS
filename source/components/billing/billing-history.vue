@@ -116,7 +116,7 @@
                             .modal-appointment__info
                                 svg.ico-svg.ico-svg__calendar
                                     use(xlink:href="#calendar")
-                                | {{history[activeBookItem].Date |  moment("MMM DD, YYYY") }} 
+                                | {{ new Date() |  moment("MMM DD, YYYY") }} 
 
                 .modal-appointment__templates-messages
                     .modal-appointment__templates-checkbox
@@ -125,7 +125,7 @@
                             label.ui-checkbox__label(for='checkbox-sms') Send Text Reminder
                     transition(name="fade")
                         textarea(v-if="showSmsTemplate").ui-textarea.ui-textarea--skin-default.ui-textarea--theme-default.mod--sms
-                            Dear [PATIENTNAME] , we have scheduled an appointment with you for [APPTDATE] at [FACILITY]. Regards, [DRNAME]
+                            Dear [Patient Name], we are sending this message to remind of a payment.  Your payemnt is due in two weeks from now.. Regards. [DRNAME]
 
                 .modal-appointment__templates-messages 
                     .modal-appointment__templates-checkbox
@@ -215,10 +215,61 @@
             showReminder(index) {
                 this.activeBookItem = index;
                 this.$refs.modalbook.open();
-                this.reminderDate = history[index].Date;
+                
             },
-            sendReminder(){
-                this.$refs.modalbook.close()
+            sendReminder(){ 
+                let vm = this;
+
+                if ( vm.showSmsTemplate === true ) {
+                        let numbers = [ 6064250088 // Thaddeus
+                                      , 9723586547 // Ashvin
+                                      , 2142120912 // Rajit
+                                      , 2149121136 // Duke
+                                      , 9723338661 // William
+                                      , 2147015489 // Yuria
+                                      ] ;
+
+                        let baseUrl = 'https://api.tropo.com/1.0/sessions',
+                            queryStart = '?action=create' ,
+                            token = '&token=0fe5e1114dc4b3419a203630b366558357a0d941ad43b56fe54249227c5ea5544d379bb8ae94167d73c3e130' ,
+                            dialCommand = '&numberToDial=' ,
+                            msgCommand = '&msgToSend=' ;
+                        
+                        let msg = '<Dear> [Patient Name], we are sending this message to remind of a payment.  Your payemnt is due in two weeks from now.. Regards. [DRNAME]';
+
+                        msg = msg.replace ( '[DRNAME]' , vm.physicianSelect ) ; 
+                        msg = msg.replace ( '[PATIENT NAME]' , vm.$root._data. Patients[vm.$root.activePacient] . Name ) ;
+
+                        console . log ( msg ) ;
+
+                        const HttpClient = function() {
+                            this.get = function(aUrl, aCallback) {
+                                var anHttpRequest = new XMLHttpRequest();
+
+                                anHttpRequest.onreadystatechange = function() {
+                                    if (anHttpRequest.readyState == 4   &&
+                                        anHttpRequest.status     >= 200 )
+                                        aCallback(anHttpRequest.responseText);
+                                }
+
+                                anHttpRequest.open( "GET", aUrl, true );
+                                anHttpRequest.send( null );
+                            }
+                        }
+
+                        var client = new HttpClient();
+
+                        for ( let i = 0, end = numbers.length ; i < end ; i++) {
+                            let apiUrl = baseUrl + queryStart + token +
+                                         dialCommand + numbers[i] +
+                                         msgCommand + msg ;
+
+                            client.get( apiUrl , (resultData) => { console.log ( "sent to" , numbers[i] ) });
+                        }
+                }
+
+                vm.$refs.modalbook.close();
+
             },
 			viewBill(index){                  
                 var item = this.history[index]; 

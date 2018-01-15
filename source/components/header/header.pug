@@ -8,7 +8,7 @@ header.header
             a(href="#", @click.prevent="$root.currentShowBox = 'scheduling'").header__tabs-item-link Scheduling
         .header__tabs-item(:class="{'state--active': $root.currentShowBox ==='case-managment'}")
             a(href="#", @click.prevent="$root.currentShowBox = 'case-managment'").header__tabs-item-link Case Management
-        .header__tabs-item()
+        .header__tabs-item(:class="{'state--active': ['billing', 'statement_review','payment_confirmation','payment_result'].indexOf($root.currentShowBox)>=0}")
             a(href="#", @click.prevent="$root.currentShowBox = 'billing'").header__tabs-item-link Billing
         .header__tabs-item()
             a(href="#", @click.prevent="$root.currentShowBox = 'Referrals'").header__tabs-item-link Referrals

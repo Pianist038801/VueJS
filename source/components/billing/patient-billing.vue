@@ -25,7 +25,7 @@
                 .patient-billing__top-subscriber
                     .patient-billing__top-item-label Subscriber Relationship:
                     .patient-billing__top-item-box
-                        .patient-billing__top-item-box-note  {{patient.Billing.Subscriber}} 
+                        .patient-billing__top-item-box-note  {{patient.Billing.Subscriber}}
                 
                 .patient-billing__top-item3
                     .patient-billing__top-item-label  Street:
@@ -41,6 +41,7 @@
                     .patient-billing__top-item-label  Group Number:
                     .patient-billing__top-item-box
                         .patient-billing__top-item-box-note   {{patient.Billing.GroupNum}}
+                        
                 .patient-billing__top-item
                     .patient-billing__top-item-label  City
                     .patient-billing__top-item-box
