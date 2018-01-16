@@ -66,6 +66,10 @@ let App = new Vue({
         vm.spaceWidget.render($el);
       }
     },
+    openNewWindow(url) {
+      let strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+      window.open(url, "CNN_WindowName", strWindowFeatures);
+    },
     showStatementReview: function(item) {
       this.currentShowBox = 'statement_review';
       console.log('*&&**&(*&(*&*(&', item);
