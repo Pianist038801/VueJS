@@ -38320,8 +38320,7 @@ let App = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
       this.billItem = item;
     },
     showPaymentResult: function (item) {
-      this.currentShowBox = 'payment_result';
-      console.log('SDFSDF', item);
+      this.currentShowBox = 'payment_result'; 
       this.paymentResult = item;
     },
     showImage: function () {

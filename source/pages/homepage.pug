@@ -85,9 +85,6 @@ block content
                                     .sub-popup-menu__list
                                         a(href="#3").sub-popup-menu__item1 Send Confirmation
                                         a(href="#3").sub-popup-menu__item1 View Another Bill 
-                            a(href="#3", @click.prevent="$root.currentShowSubBox = 'dollar'").content__top-action
-                                    svg.ico-svg.ico-svg__plus-close
-                                        use(xlink:href="#plus-round")
                         .content__box
                             payment-result(:item="$root._data.paymentResult", @go-back="$root.goBack")
 

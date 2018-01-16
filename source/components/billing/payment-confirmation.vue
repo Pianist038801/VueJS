@@ -48,15 +48,14 @@
         .payment-confirmation__top-active
             .payment-confirmation__top-active-left
                 .payment-confirmation__top-active-title
-                    .span Total Amount Due: {{item.total.amount}}
+                    label.big Total Amount Due: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{item.total.amount}}
         .payment-confirmation__top-active
             .payment-confirmation__top-active-left
                 .payment-confirmation__top-active-title
-                    .span Payment Amount:
-                    label.bank-card__label.bank-card__cvc
-                        span.bank-card__hint CVC
-                        input.bank-card__field(type="text" v-model="amount" placeholder="CVC" maxlength="3" pattern="[0-9]{3}" name="cvc-card" required="")
-        a(href="#3", @click="confirmPayment").ui-btn.ui-btn--skin-default.ui-btn--theme-primary {{"CONFIRM PAYMENT"}}
+                    label.big Payment Amount:
+                    label.bank-card__label.bank-card__amount 
+                        input.bank-card__field(type="number" v-model="amount" placeholder="0" required="")
+        a(href="#3", @click="confirmPayment").ui-btn.ui-btn--skin-default.ui-btn--theme-primary {{"CONFIRM PAYMENT"}}            
 </template>
 <script>
     import Multiselect from 'vue-multiselect';
@@ -68,6 +67,7 @@
         },
         data() {
             return {
+                amount: '',
                 username:  '',
                 cardType: '',
                 cardNumber: '',
@@ -78,7 +78,7 @@
         },
         methods: {
             confirmPayment(){
-                this.$emit('show-payment-result',{amount: amount, statementId: '209920923', payDate:'01/05/2018', username: this.username, cardType: this.cardType, cardNumber: this.cardNumber, month: this.month, year: this.year,cvv: this.cvv});
+                this.$emit('show-payment-result',{amount: this.amount, statementId: '209920923', payDate:'01/05/2018', username: this.username, cardType: this.cardType, cardNumber: this.cardNumber, month: this.month, year: this.year,cvv: this.cvv});
             }
         },
         mounted() {
@@ -89,6 +89,10 @@
 </script>
 <style lang="scss">
     @import '~mixinsSCSS';
+    label.big{
+        font-size: em(20);
+        color: grey;
+    }
     .ds{
         lost-column: 1/6 6 ;
     }
@@ -430,6 +434,10 @@ a {
         margin-left: 40px;
 		width: 25%;
 	}
+    .bank-card__amount {
+        margin-left: 40px;
+        width: 30%;
+    }
 }
 @media screen and (max-width: 480px) {
 	.bank-card__side {

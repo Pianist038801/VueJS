@@ -129,10 +129,7 @@
                       </div>
                       <div class="sub-popup-menu__list"><a class="sub-popup-menu__item1" href="#3">Send Confirmation</a><a class="sub-popup-menu__item1" href="#3">View Another Bill </a></div>
                     </div>
-                  </div><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = 'dollar'">
-                    <svg class="ico-svg ico-svg__plus-close">
-                      <use xlink:href="#plus-round"></use>
-                    </svg></a>
+                  </div>
                 </div>
                 <div class="content__box">
                   <payment-result :item="$root._data.paymentResult" @go-back="$root.goBack"></payment-result>
