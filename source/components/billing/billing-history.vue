@@ -94,7 +94,7 @@
                         .sub-popup-menu__list-special(v-if="showMenu==index")
                             a(href="#3", @click.prevent="viewBill(index)").sub-popup-menu__item View Bill
                             a(href="#3", @click.prevent="payBill(index)").sub-popup-menu__item Pay Bill
-                            a(href="#3", @click.prevent="openNewWindow('http://www.spinsci.com')").sub-popup-menu__item View in {{$root._data.Patients[$root.activePacient].Category=='INVISION'?'Invision':"Soarian"}}
+                            a(href="#3", @click.prevent="openNewWindow('http://10.3.74.119/openemr/interface/patient_file/history/encounters.php?billing=1&issue=0&pagesize=20&pagestart=0')").sub-popup-menu__item View in {{$root._data.Patients[$root.activePacient].Category=='INVISION'?'Invision':"Soarian"}}
                             a(href="#3", @click.prevent="showReminder(index)").sub-popup-menu__item Send Reminder
                             a(href="#3").sub-popup-menu__item Print
                             a(href="#3", @click.prevent="openNewWindow('http://uhealthsystem.com/images/content/UMH-statement.jpg')").sub-popup-menu__item Download as PDF

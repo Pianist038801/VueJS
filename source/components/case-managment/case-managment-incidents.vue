@@ -87,12 +87,12 @@
                 td eHospitalist
                 td Team
                 td STL eHospitalist
-                td johonson
+                td Smith
                 td (1) NO
-                td 154
+                td 234
                 td Blanca
                 td 212-223-3343
-                td 11/9/2016 11:12am
+                td 11/11/2017 09:30am
                 td Miller M.D
                 td
                     .sub-popup-menu
@@ -117,12 +117,12 @@
                 td eHospitalist
                 td Team
                 td STL eHospitalist
-                td johonson
+                td jones
                 td (1) NO
-                td 154
+                td 452
                 td Blanca
                 td 212-223-3343
-                td 11/9/2016 11:12am
+                td 01/01/2018 10:45am
                 td Miller M.D
                 td
                     .sub-popup-menu
@@ -147,12 +147,12 @@
                 td eHospitalist
                 td Team
                 td STL eHospitalist
-                td johonson
+                td Snyder
                 td (1) NO
-                td 154
+                td 686
                 td Blanca
                 td 212-223-3343
-                td 11/9/2016 11:12am
+                td 12/03/2017 05:26am
                 td Miller M.D
                 td
                     .sub-popup-menu

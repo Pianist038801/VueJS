@@ -53,7 +53,7 @@ block content
                                             use(xlink:href="#more")
                                     .sub-popup-menu__list
                                         a(href="#3", @click.prevent="showImage()").sub-popup-menu__item1 Expand Details
-                                        a(href="#3", @click.prevent="openNewWindow('http://www.spinsci.com')").sub-popup-menu__item View in {{$root._data.Patients[$root.activePacient].Category=='INVISION'?'Invision':"Soarian"}}
+                                        a(href="#3", @click.prevent="openNewWindow('http://10.3.74.119/openemr/interface/patient_file/encounter/load_form.php?formname=fee_sheet')").sub-popup-menu__item View in {{$root._data.Patients[$root.activePacient].Category=='INVISION'?'Invision':"Soarian"}}
                                         a(href="#3", @click.prevent="payBill($root._data.billItem)").sub-popup-menu__item1 Pay Bill
                                         a(href="#3").sub-popup-menu__item1 Adjust
                                         a(href="#3").sub-popup-menu__item1 Print

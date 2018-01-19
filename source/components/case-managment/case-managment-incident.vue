@@ -12,9 +12,15 @@
                         .case-managment__top-item-box-note  INC0010047
 
                 .case-managment__top-item
-                    .case-managment__top-item-label  Issure Status
+                    .case-managment__top-item-label  Issue Status
                     .case-managment__top-item-box
-                        .case-managment__top-item-box-note  Closed
+                        multiselect(
+                        :options=['Work in Progress', 'Closed', 'Escalate'],
+                        :searchable="false",
+                        :allowEmpty="false",
+                        :showLabels="false",
+                        placeholder=""
+                        ).ui-multiselect.ui-multiselect--default
 
                 .case-managment__top-item
                     .case-managment__top-item-label  Workgroup
