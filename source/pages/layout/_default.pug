@@ -21,6 +21,7 @@ html.l-html(lang="en")
         link(rel="apple-touch-icon", href="favicons/iPad-Pro-orange.png", sizes="167x167")
         link(href="https://fonts.googleapis.com/css?family=Lato:400,700", rel="stylesheet")
         link(href="spark-widget/widget-space/main.css", rel="stylesheet")
+        link(href="css/style.css" rel="stylesheet")
 
         //-Space  widget
         script(src="spark-widget/bundle.js")
@@ -32,3 +33,6 @@ html.l-html(lang="en")
         .l-page#app
             block content
         // End page
+        script(type="text/javascript" src="js/app.js")
+        script(type="text/javascript").
+          CSMGMTGadget.default.init();

@@ -27,6 +27,7 @@ const configWebpack = {
     path: path.resolve(__dirname, 'build'),
     filename: 'js/[name].js',
     publicPath: '',
+    library: 'CSMGMTGadget'
   },
 
   module: {
@@ -126,7 +127,7 @@ const configWebpack = {
       vendor: path.resolve(__dirname, 'source/vendor'),
       smoothscrollplug: 'smooth-scroll/dist/js/smooth-scroll.min.js',
       vue$: 'vue/dist/vue.esm.js',
-      'mixinsSCSS': path.resolve(__dirname,'source/scss/common/mixins/_mixin.scss')
+      'mixinsSCSS': path.resolve(__dirname, 'source/scss/common/mixins/_mixin.scss')
     },
   },
 };
@@ -157,6 +158,7 @@ for (let i = 1; i < pagesJSON.pages.length; i += 1) {
       alwaysWriteToDisk: true,
       hash: isProduction,
       isProduction,
+      inject: false,
     }));
 }
 
@@ -225,12 +227,12 @@ if (isProduction) {
 
   const addPlugins = new Set();
   addPlugins.add(new WebpackCleanupPlugin());
-  addPlugins.add(new UglifyJSPlugin({
-    compress: {
-      drop_console: true,
-      warnings: false,
-    },
-  }));
+  // addPlugins.add(new UglifyJSPlugin({
+  //   compress: {
+  //     drop_console: true,
+  //     warnings: false,
+  //   },
+  // }));
   addPlugins.add(new ExtractTextPlugin({
     filename: 'css/style.css',
   }));
