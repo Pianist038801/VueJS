@@ -32,6 +32,15 @@ import billingHistory from "../components/billing/billing-history.vue";
 import statementReview from "../components/billing/statement-review.vue";
 import paymentConfirmation from "../components/billing/payment-confirmation.vue";
 import paymentResult from "../components/billing/payment-result.vue";
+
+import create from '../service/incident/create';
+import { STATES } from '../service/incident/model';
+import searchByNum from '../service/incident/search-num';
+import updateStatus from '../service/incident/update-status';
+import updateAssign from '../service/incident/update-assign';
+import searchToday from '../service/incident/search-today';
+import searchWeek from '../service/incident/search-week';
+
 let appData = {
   activePacient: null,
   showImageModal: 0,
@@ -53,7 +62,7 @@ export default {
       },
       mounted() {
         let vm = this;
-        vm.currentShowBox = 'scheduling';
+        vm.currentShowBox = 'case-managment';
         vm.spaceWidget = window.ciscosparkClient();
         Vue.http.get('demo-credentials.json').then((response) => {
           vm.spaceWidget.init(response.data);
@@ -91,6 +100,27 @@ export default {
         goBack: function (item) {
           this.currentShowBox = 'billing';
 
+        },
+        begin: function ({ phone } = { phone: "9994232121" }) {
+          // call create api and render the top portion of the page
+          const incident = {
+            "caller_id": "Katina Ramano",
+            "u_hospital": "STL eHospitalist",
+            "u_workgroup": "eICU",
+            "u_team": "Team 1",
+            "u_nurse_name": "Alice",
+            "u_phone_number": phone,
+            "u_patient_last_name": "Ramano",
+            "u_problem": "Not Given",
+            "u_urgent": "Yes",
+            "u_bed_number": "123",
+            "u_notes": "Test - Rajeev",
+          };
+          create(incident) 
+        },
+        end: function() {
+          // clear the state
+          alert('3')
         }
       },
       components: {
@@ -152,10 +182,5 @@ export default {
       });
   },
 
-  begin({ phone }) {
-    // call create api and render the top portion of the page
-  },
-  end() {
-    // clear the state
-  }
+
 };

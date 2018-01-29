@@ -2,7 +2,11 @@
 header.header
     h1.logo
         a.logo__link(href="#3") SpinSci
-
+    .header__button
+        .header__button-item
+            a(href="#", @click.prevent="$root.begin()").header__tabs-item-link Begin
+        .header__button-item
+            a(href="#", @click.prevent="$root.end()").header__tabs-item-link End
     .header__tabs
         .header__tabs-item(:class="{'state--active': $root.currentShowBox ==='scheduling'}")
             a(href="#", @click.prevent="$root.currentShowBox = 'scheduling'").header__tabs-item-link Scheduling
