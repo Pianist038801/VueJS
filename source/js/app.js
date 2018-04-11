@@ -76,8 +76,8 @@ let App = new Vue({
       this.billItem = item;  
     },
     payBill: function(item) {
-      this.currentShowBox = 'payment_confirmation'; 
-      this.billItem = item;  
+      this.currentShowBox = 'payment_confirmation';
+      this.billItem = item;
     },
     showPaymentResult: function (item) {
       this.currentShowBox = 'payment_result';
@@ -89,7 +89,6 @@ let App = new Vue({
     },
     goBack: function (item) {
       this.currentShowBox = 'billing';
-       
     }
   },
   components: {

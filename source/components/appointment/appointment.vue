@@ -98,7 +98,6 @@
         data() {
             return {
                 visible: false,
-
                 currentMoreInfoIndex: null
             }
         },
