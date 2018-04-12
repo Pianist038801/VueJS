@@ -20,7 +20,7 @@ const configWebpack = {
   context: path.resolve(__dirname, 'source'),
 
   entry: {
-    app: './js/app.js',
+    app: './js/main.js',
   },
 
   output: {
