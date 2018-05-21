@@ -27,6 +27,9 @@
                 .sidebar__section--note Date of Birth
                 .sidebar__section--info {{ pacients[currentPacient].DateOfBirth | moment("MMM DD, YYYY")}}
             .sidebar__section
+                .sidebar__section--note MRN
+                .sidebar__section--info {{ pacients[currentPacient].MRN }}    
+            .sidebar__section
                 .sidebar__section--note SSN
                 .sidebar__section--info {{ pacients[currentPacient].SSN}}
             .sidebar__section

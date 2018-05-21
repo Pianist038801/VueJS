@@ -4,12 +4,13 @@
     "Category": "EPIC",
     "Name": "John Jacobs",
     "DateOfBirth": "1981-07-01 00:00:00",
+    "MRN": 7499281,
     "SSN": "***-**-6789",
     "PhoneNumber": "+1 214 701 5489",
     "PhotoUrl": "img/user.png",
     "PrimaryCareProvider": {
-      "Name": "Rohit Potaraju, MD",
-      "Phone": "+1 202 456 7890"
+      "Name": "Mark Williams, MD",
+      "Phone": "+1 208 975 3874"
     },
     "Address": {
       "Line1": "3453 T Ave",
@@ -361,12 +362,13 @@
       "Category": "EPIC",
       "Name": "Johns Sarah",
       "DateOfBirth": "2007-12-25 00:00:00",
+      "MRN": 7499220,    
       "SSN": "***-**-5428",
       "PhoneNumber": "+1 214 701 5489",
       "PhotoUrl": "img/user2.png",
       "PrimaryCareProvider": {
-        "Name": "Kiran Potaraju, MD",
-        "Phone": "+1 555 555 5555"
+        "Name": "Mark Williams, MD",
+        "Phone": "+1 208 975 3874"
       },
       "Address": {
         "Line1": "3453 T Ave",
