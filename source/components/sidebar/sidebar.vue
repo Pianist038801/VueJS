@@ -145,15 +145,10 @@
             },
             namesPacient: function () {
                 let vm = this;
-                let array = ['INVISION'];
+                let array = ['EPIC'];
 
                 vm.pacients.forEach((item, i) => {
-                    if(item.Category=='INVISION')
-                        array.push(item.Name);
-                });
-                array.push('SOARIAN');
-                vm.pacients.forEach((item, i) => {
-                    if(item.Category=='SOARIAN')
+                    if(item.Category=='EPIC')
                         array.push(item.Name);
                 });
                 return array;

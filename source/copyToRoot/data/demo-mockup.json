@@ -1,7 +1,7 @@
 {
   "Patients": [{
     "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
-    "Category": "SOARIAN",
+    "Category": "EPIC",
     "Name": "John Jacobs",
     "DateOfBirth": "1981-07-01 00:00:00",
     "SSN": "***-**-6789",
@@ -358,7 +358,7 @@
   },
     {
       "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=3",
-      "Category": "INVISION",
+      "Category": "EPIC",
       "Name": "Johns Sarah",
       "DateOfBirth": "2007-12-25 00:00:00",
       "SSN": "***-**-5428",
