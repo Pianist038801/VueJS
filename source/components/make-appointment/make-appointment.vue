@@ -60,12 +60,12 @@
                             use(xlink:href="#down")
                         svg.ico-svg.ico-svg__calendar
                             use(xlink:href="#calendar")
-                        .make-appointment__line-calendar-note(v-if="calendarClick") October 20,  2017
+                        .make-appointment__line-calendar-note(v-if="calendarClick") May 20,  2018
                         .make-appointment__line-calendar-note(v-else) Date Range
                     calendarPopup(:show="showCalendar")
         transition(name="fade")
             div(v-if="formElementChecked")
-                .make-appointment__date-selected Friday - October 20, 2017
+                .make-appointment__date-selected Sunday - May 20, 2018
                 form(action="#3")
                     fieldset.form__fieldset
                         legend.hide Book table
@@ -142,6 +142,19 @@
                                 :position="{lat: 32.9448268, lng: -96.64587949999998}",
                                 )
 
+                .modal-appointment__templates-messages
+                    .modal-appointment__templates-checkbox
+                        .ui-checkbox
+                            input#checkbox-epic(name="checkbox-epic" type="checkbox" v-model="showEpicTemplate").ui-checkbox__input
+                            label.ui-checkbox__label(for='checkbox-epic') Add Notes to EPIC
+                    transition(name="fade")
+                        textarea(v-if="showEpicTemplate").ui-textarea.ui-textarea--skin-default.ui-textarea--theme-default
+
+                .modal-appointment__remind
+                    .ui-checkbox
+                        input#checkbox-waitlist(name="checkbox-waitlist" type="checkbox" v-model="showWaitList").ui-checkbox__input
+                        label.ui-checkbox__label(for='checkbox-waitlist') Waitlist Enabled
+
                 .modal-appointment__reason
                     | Reason for visit
 
@@ -173,6 +186,13 @@
                         .modal-appointment__remind-days(v-if="showSmsRemind")
                             input(type="text", value="2").ui-input.ui-input--skin-default.ui-input--theme-default
                             | days before appointment.
+
+                .modal-appointment__remind
+                    .ui-checkbox
+                        input#checkbox-voiceremind(name="checkbox-voiceremind" type="checkbox" v-model="showVoiceRemind").ui-checkbox__input
+                        label.ui-checkbox__label(for='checkbox-voiceremind') Send Voice reminder
+
+
                 .modal-appointment__row
                     a(href="#3", @click="$refs.modalbook.close()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border CANCEL
                     a(href="#3", @click="bookModal").ui-btn.ui-btn--skin-default.ui-btn--theme-primary book
@@ -217,6 +237,7 @@
                 activeBookItem: 0,
 
                 showSmsTemplate: false,
+                showEpicTemplate: false,
                 showEmailTemplate: false,
                 showSmsRemind: false,
 

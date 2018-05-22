@@ -32,6 +32,7 @@
                                 use(xlink:href="#more")
                         .sub-popup-menu__list
                             a(href="#3", @click.prevent="openModalInfo(index)").sub-popup-menu__item More details
+                            a(href="#3").sub-popup-menu__item Reschedule Appointment
                             a(href="#3").sub-popup-menu__item Cancel Appointment
                             a(href="#3").sub-popup-menu__item Send Reminder
                             a(href="#3", @click.prevent="openNewWindow('http://10.3.74.119/openemr/interface/patient_file/encounter/forms.php')").sub-popup-menu__item Show in EPIC

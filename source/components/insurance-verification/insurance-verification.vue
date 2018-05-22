@@ -9,7 +9,7 @@
                         .insurance-verification__item
                             .insurance-verification__note Insurance Name
                             .insurance-verification__input
-                                input(type="text", value="John Doe", placeholder="Enter  Name").ui-input.ui-input--skin-default
+                                input(type="text", value="John Jacobs", placeholder="Enter  Name").ui-input.ui-input--skin-default
 
                         .insurance-verification__item
                             .insurance-verification__note Group Number

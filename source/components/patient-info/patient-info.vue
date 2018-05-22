@@ -37,7 +37,7 @@
                     | Physician
                 .patient-info__wrap
                     .patient-info__wrap-coll
-                        .patient-info__note Dr. Full Name
+                        .patient-info__note Dr. Full Namee
                         .patient-info__note-txt {{info.Physician.Name}}
                     .patient-info__wrap-coll
                         .patient-info__note Emergency Number
@@ -63,7 +63,7 @@
                 .patient-info__title
                     svg.ico-svg.ico-svg__couple
                         use(xlink:href="#couple")
-                    | Material Status
+                    | Marital Status
                 .patient-info__wrap
                     .patient-info__wrap-coll
                         .patient-info__note Email

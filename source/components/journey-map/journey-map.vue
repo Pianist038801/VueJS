@@ -20,7 +20,7 @@
                 .tooltip
                     .tooltip__in
                         .tooltip__note <b>Call type</b>: Appointments
-                        .tooltip__note <b>Data/Time</b>: May 27, 2017
+                        .tooltip__note <b>Date/Time</b>: May 27, 2017
                         .tooltip__note <b>Duration</b>:  7 min
                         .tooltip__note <b>ANI</b>:  +1 214 701 5489
                         .tooltip__note <b>Agent ID</b>:  749936
@@ -33,7 +33,7 @@
                 .tooltip
                     .tooltip__in
                         .tooltip__note <b>Call type</b>: Inbound
-                        .tooltip__note <b>Data/Time</b>: May 27, 2017
+                        .tooltip__note <b>Date/Time</b>: May 27, 2017
                         .tooltip__note <b>SMS</b>:  Appintment Confimation
                         .tooltip__note <b>Customet Action</b>: Patient clicked yes
                         .tooltip__note <b>SMS Outcome</b>:  Confirmed Appointment
@@ -50,6 +50,8 @@
                         .tooltip__note <b>Check in Time</b>: 3:00pm
                         .tooltip__note <b>Physician Name</b>: James King
                         .tooltip__note <b>Department</b>:
+                        .tooltip__note <b>Encounter Created By</b>: Dr. Mark Williams
+                        .tooltip__note <b>Encounter Details</b>: Office/OP Visit (15min) XR (5 min)
                         .tooltip__note <b>Check out time</b>:  3:30pm
 
                 svg.ico-svg.ico-svg__hospital
@@ -71,9 +73,9 @@
             return {
                 visible: false,
                 options: [
-                    { name: 'May 27, 2017 - 3:00pm', type: 'visit' },
-                    { name: 'Sept 25, 2017 - 1:00pm', type: 'visit' },
-                    { name: 'Oct 18, 2017 - 11:00am', type: 'visit' },
+                    { name: 'May 27, 2018 - 3:00pm', type: 'visit' },
+                    { name: 'Sep 25, 2018 - 1:00pm', type: 'visit' },
+                    { name: 'Oct 13, 2018 - 11:00am', type: 'visit' },
                 ],
                 journey_select: {
                     name: 'Select Appointment',
@@ -81,6 +83,7 @@
                 },
             }
         },
+
         methods: {
             open() {
             }
