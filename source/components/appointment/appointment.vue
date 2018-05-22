@@ -8,7 +8,7 @@
             .appointment__top-data
                 svg.ico-svg.ico-svg__calendar
                     use(xlink:href="#calendar")
-                span August 10  -  August 16
+                span {{["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][new Date().getMonth()]}} {{new Date().getDate()}}, {{new Date().getFullYear()}}
         table.appointment__table
             tr
                 th Date

@@ -20,7 +20,7 @@
                 .tooltip
                     .tooltip__in
                         .tooltip__note <b>Call type</b>: Appointments
-                        .tooltip__note <b>Date/Time</b>: May 27, 2017
+                        .tooltip__note <b>Date/Time</b>: {{journey_select.name}}
                         .tooltip__note <b>Duration</b>:  7 min
                         .tooltip__note <b>ANI</b>:  +1 214 701 5489
                         .tooltip__note <b>Agent ID</b>:  749936
@@ -33,7 +33,7 @@
                 .tooltip
                     .tooltip__in
                         .tooltip__note <b>Call type</b>: Inbound
-                        .tooltip__note <b>Date/Time</b>: May 27, 2017
+                        .tooltip__note <b>Date/Time</b>: {{journey_select.name}}
                         .tooltip__note <b>SMS</b>:  Appintment Confimation
                         .tooltip__note <b>Customet Action</b>: Patient clicked yes
                         .tooltip__note <b>SMS Outcome</b>:  Confirmed Appointment
@@ -48,7 +48,7 @@
                     .tooltip__in
                         .tooltip__note <b>Type</b>: Check in
                         .tooltip__note <b>Check in Time</b>: 3:00pm
-                        .tooltip__note <b>Physician Name</b>: James King
+                        .tooltip__note <b>Physician Name</b>: Mark Williams, MD
                         .tooltip__note <b>Department</b>:
                         .tooltip__note <b>Encounter Created By</b>: Dr. Mark Williams
                         .tooltip__note <b>Encounter Details</b>: Office/OP Visit (15min) XR (5 min)
@@ -69,6 +69,11 @@
         components: {
             Multiselect
         },
+        watch: {
+            journey_select(to){
+                console.log('TO=',to);
+            }
+        },
         data() {
             return {
                 visible: false,
@@ -83,12 +88,11 @@
                 },
             }
         },
-
         methods: {
             open() {
             }
         },
-        mounted() {
+         mounted() {
         },
         beforeDestroy() {
         },
