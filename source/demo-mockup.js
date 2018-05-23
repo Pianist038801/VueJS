@@ -237,7 +237,7 @@ module.exports =
         'Dr. John Lee, MD',
         'Dr. Steve Angler, MD',
         'Dr. Phil Patel, MD',
-        'Add: Dr. Mark Williams, MD'
+        'Dr. Mark Williams, MD'
       ] // DateRange is a date picker, it's selection needs to populate the text field below it with the day of week and date. Ideally it will also prevent selecting past dates.
     },
 

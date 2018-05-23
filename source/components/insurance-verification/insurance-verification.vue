@@ -28,7 +28,7 @@
                         .insurance-verification__item
                             .insurance-verification__note Issue Date
                             .insurance-verification__input
-                                input(type="text", value="August 20, 2017", placeholder="Enter  Issue Date").ui-input.ui-input--skin-default
+                                input(type="text", value="08/17/2017", placeholder="Enter  Issue Date").ui-input.ui-input--skin-default
                     .insurance-verification__submit
                         button(type="submit", @click="$root.userIsVerify = true" ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary
                             svg.ico-svg.ico-svg__check(v-show="$root.userIsVerify")

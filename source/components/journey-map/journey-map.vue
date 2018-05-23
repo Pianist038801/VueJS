@@ -48,6 +48,7 @@
                     .tooltip__in
                         .tooltip__note <b>Type</b>: Check in
                         .tooltip__note <b>Check in Time</b>: 3:00pm
+                        .tooltip__note <b>Check in Date</b>: {{this.nextDay(journey_select.name)}}
                         .tooltip__note <b>Physician Name</b>: Mark Williams, MD
                         .tooltip__note <b>Department</b>:
                         .tooltip__note <b>Encounter Created By</b>: Dr. Mark Williams
@@ -77,10 +78,11 @@
         data() {
             return {
                 visible: false,
+
                 options: [
-                    { name: 'May 27, 2018 - 3:00pm', type: 'visit' },
-                    { name: 'Sep 25, 2018 - 1:00pm', type: 'visit' },
-                    { name: 'Oct 13, 2018 - 11:00am', type: 'visit' },
+                    { name: 'January 3, 2018 - 3:00pm', type: 'visit' },
+                    { name: 'March 21, 2018 - 3:00pm', type: 'visit' },
+                    { name: 'April 14, 2018 - 3:00am', type: 'visit' },
                 ],
                 journey_select: {
                     name: 'Select Appointment',
@@ -90,6 +92,11 @@
         },
         methods: {
             open() {
+            },
+            nextDay(date){
+                if(date=='January 3, 2018 - 3:00pm') return 'January 4, 2018';
+                if(date=='March 21, 2018 - 3:00pm') return 'March 22, 2018';
+                if(date=='April 14, 2018 - 3:00am') return 'April 15, 2018';
             }
         },
          mounted() {
