@@ -54,15 +54,8 @@
                 ).ui-multiselect.ui-multiselect--border
             .make-appointment__line-select-item
                 .make-appointment__line-select-note Date Range
-                .make-appointment__line-calendar-l
-                    .make-appointment__line-calendar(@click="calendarShowButton")
-                        svg.ico-svg.ico-svg__down
-                            use(xlink:href="#down")
-                        svg.ico-svg.ico-svg__calendar
-                            use(xlink:href="#calendar")
-                        .make-appointment__line-calendar-note(v-if="calendarClick") May 20,  2018
-                        .make-appointment__line-calendar-note(v-else) Date Range
-                    calendarPopup(:show="showCalendar")
+                datepicker(:disabled="!$root.userIsVerify",
+                v-model="date")
         transition(name="fade")
             div(v-if="formElementChecked")
                 .make-appointment__date-selected Sunday - May 20, 2018
@@ -206,9 +199,11 @@
     import calendarPopup from "../calendar-popup/calendar-popup.vue";
 
     import modal from "../modal-component/modal.vue";
+    import Datepicker from 'vuejs-datepicker';
 
     import Vue from 'vue';
     import * as VueGoogleMaps from 'vue2-google-maps';
+
     Vue.use(VueGoogleMaps, {
         load: {
             key: 'AIzaSyBvWE_sIwKbWkiuJQOf8gSk9qzpO96fhfY',
@@ -222,6 +217,7 @@
         components: {
             calendarPopup,
             Multiselect,
+            Datepicker,
             modal
         },
         data() {
@@ -235,7 +231,7 @@
                 langSelected: 'None',
                 disableSelectLang: true,
                 activeBookItem: 0,
-
+                date: '',
                 showSmsTemplate: false,
                 showEpicTemplate: false,
                 showEmailTemplate: false,
