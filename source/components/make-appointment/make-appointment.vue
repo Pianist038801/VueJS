@@ -55,7 +55,9 @@
             .make-appointment__line-select-item
                 .make-appointment__line-select-note Date Range
                 datepicker(:disabled="!$root.userIsVerify",
-                v-model="date")
+                v-model="date",
+                @selected="onSelectDate",
+                :format="customFormatter")
         transition(name="fade")
             div(v-if="formElementChecked")
                 .make-appointment__date-selected Sunday - May 20, 2018
@@ -227,7 +229,7 @@
                 facilitySelect: '',
                 providerSelect: '',
                 physicianSelect: '',
-
+                customFormatter: 'd MMMM yyyy',
                 langSelected: 'None',
                 disableSelectLang: true,
                 activeBookItem: 0,
@@ -251,15 +253,24 @@
                 this.activeBookItem = index;
                 this.$refs.modalbook.open();
             },
-
+            onSelectDate(date){
+                console.log('Select Date =', date)
+                if(date!=null) this.calendarClick = true
+            },
+            filterDate(date){
+                let datePrefix = '-0' 
+                if(date.getDate().toString().length > 1)
+                    datePrefix = '-'
+                const ret = (date.getMonth()+1) + datePrefix + date.getDate() + '-' + date.getFullYear() + ' 15:00:00'; 
+                return ret;
+            },
             bookModal(){
                 let vm = this;
 
                 let currentTime = vm.$moment(vm.existingApointmentSlots[vm.activeBookItem].StartTime);
                 let time = currentTime.format("HH:mm:ss");
-
                 vm.$root._data.Patients[vm.$root.activePacient].PastAppointments.push({
-                    Date: vm.existingApointmentSlots[vm.activeBookItem].StartTime,
+                    Date: this.filterDate(this.date),
                     Time: time,
                     Department: vm.departmentSelect,
                     Provider: vm.physicianSelect,
