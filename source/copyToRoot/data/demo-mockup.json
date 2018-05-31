@@ -150,7 +150,7 @@
         "Date": "5-27-2018 15:00:00",
         "Time": "15:00:00",
         "Department": "Radiology",
-        "Provider": "Dr. Steve",
+        "Provider": "Dr. Steve Angler",
         "VisitType": "Office Visit",
         "VisitReason": "No Comments",
         "Appointment Details": {
@@ -164,7 +164,7 @@
         "Date": "9-25-2018 14:30:00",
         "Time": "13:00:00",
         "Department": "General",
-        "Provider": "Dr. Steve",
+        "Provider": "Dr. Steve Angler",
         "VisitType": "Office Visit",
         "VisitReason": "Knee Pain",
         "Appointment Details": {
@@ -178,7 +178,7 @@
         "Date": "10-13-2018 14:00:00",
         "Time": "11:00:00",
         "Department": "Kent Health Center",
-        "Provider": "Dr. Smith",
+        "Provider": "Dr. Mary John",
         "VisitType": "Physical",
         "VisitReason": "No Comments",
         "Appointment Details": {
