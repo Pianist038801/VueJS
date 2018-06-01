@@ -71,6 +71,7 @@ let App = new Vue({
     },
     showPhoneBook: function () {
       var vm = this;
+      console.log('PHONE_CLICKED: !!!', vm.currentShowPhoneBook )
       vm.currentShowPhoneBook = !vm.currentShowPhoneBook;
     },
     openNewWindow(url) {
@@ -119,7 +120,7 @@ let App = new Vue({
   watch: {
     currentShowBox: function () {
       this.currentShowSubBox = null;
-    }
+    },
   }
 });
 

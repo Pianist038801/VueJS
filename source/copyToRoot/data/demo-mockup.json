@@ -1,4 +1,5 @@
 {
+  "currentShowPhoneBook": false,
   "Patients": [{
     "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
     "Category": "EPIC",

@@ -2,45 +2,43 @@
         
     modal(ref="modalphone")
         .modal__content
-
             .modal__content-row
                 .modal__content-col
-
                     .modal-appointment__title
-                        .title.mod--modal-appointment Book Now
+                        .title.mod--modal-appointment Books Now
+                         
  
-
-
 </template>
 <script> 
 
     import modal from "./modal.vue";  
+    import Multiselect from 'vue-multiselect';
 
     export default {
         props: ['show'],
         components: { 
-            modal
+            modal,
+            Multiselect
+            
         },
         data() {
             return {
-               
             }
         },
          
         created(){
             console.log('PHONE_CREATED');
-
             
         },
         watch: {
             show: function (val) {
-                console.log('WATCH_SHOW=', val)
+                this.$refs.modalphone.open();
             }
         },
         mounted() {
             console.log('PHONE_MOUNTED');
             let vm = this;
-            vm.$refs.modalphone.open();
+           
         },
         computed:{
              
