@@ -13,6 +13,14 @@
     margin-bottom: em(10);
   }
 }
+.content_caller-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: em(15);
+  min-height: em(15);
+ 
+}
 .content__top-appointment-close {
   width: em(50);
   height: em(50);

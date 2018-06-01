@@ -67,6 +67,9 @@
             <transition name="fade" mode="out-in">
               <div class="content" v-if="$root.currentShowBox ==='scheduling' &amp;&amp; !currentShowSubBox" key="scheduling">
                 <div class="content__top-line">
+                  <h1 class="title">Caller Information:</h1>
+                </div><span class="content_caller-info">Caller Name: xxxxx</span><span class="content_caller-info">Caller Phone No.: xxxxx</span><span class="content_caller-info">Caller Type: xxxxx</span><span class="content_caller-info">Transferred location: xxxxx</span><span class="content_caller-info">Hospital: NA</span><span class="content_caller-info">Notes: xxxxx</span>
+                <div class="content__top-line">
                   <h1 class="title">Patient Schedule</h1><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = 'make-appointment'">
                     <svg class="ico-svg ico-svg__plus-round">
                       <use xlink:href="#plus-round"></use>
@@ -88,6 +91,9 @@
                 </div>
               </div>
               <div class="content" v-if="$root.currentShowBox ==='billing' &amp;&amp; !currentShowSubBox" key="billing">
+                <div class="content__top-line">
+                  <h1 class="title">Caller Information:</h1>
+                </div><span class="content_caller-info">Caller Name: xxxxx</span><span class="content_caller-info">Caller Phone No.: xxxxx</span><span class="content_caller-info">Caller Type: xxxxx</span><span class="content_caller-info">Transferred location: xxxxx</span><span class="content_caller-info">Hospital: NA</span><span class="content_caller-info">Notes: xxxxx</span>
                 <div class="content__top-line">
                   <h1 class="title">Patient Billing  </h1>
                 </div>
