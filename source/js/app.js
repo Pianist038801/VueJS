@@ -2,11 +2,14 @@
 // ******************************************
 import Vue from 'vue';
 import VueResource from 'vue-resource';
-import VueMoment from 'vue-moment';
+import VueMoment from 'vue-moment'; 
+import {Tabs, Tab} from 'vue-tabs-component';
+
 
 Vue.use(VueResource);
 Vue.use(VueMoment);
-
+Vue.component('tabs', Tabs);
+Vue.component('tab', Tab);
 import schedulingPage from "pages/scheduling.vue";
 
 import appointment from "../components/appointment/appointment.vue";
