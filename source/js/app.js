@@ -40,6 +40,7 @@ let appData = {
   billItem: null,
   paymentResult: null,
   userIsVerify: false,
+  currentShowPhoneBook: null,
 };
 
 
@@ -60,6 +61,13 @@ let App = new Vue({
   },
   methods: {
     showSpaceWidget: function () {
+      var vm = this;
+      var $el = document.getElementById("huddle-room-mount");
+      if($el){
+        vm.spaceWidget.render($el);
+      }
+    },
+    showPhoneBook: function () {
       var vm = this;
       var $el = document.getElementById("huddle-room-mount");
       if($el){

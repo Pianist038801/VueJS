@@ -18,6 +18,10 @@ header.header
 
     .header__action
         .header__action-item
+            a(href="#3", v-on:click = "$root.showPhoneBook()").header__action-link
+                svg.ico-svg.ico-svg__phone
+                    use(xlink:href="#phone")
+        .header__action-item
             a(href="#3").header__action-link
                 svg.ico-svg.ico-svg__search
                     use(xlink:href="#search")
