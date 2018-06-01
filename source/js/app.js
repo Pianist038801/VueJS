@@ -32,6 +32,8 @@ import billingHistory from "../components/billing/billing-history.vue";
 import statementReview from "../components/billing/statement-review.vue";
 import paymentConfirmation from "../components/billing/payment-confirmation.vue";
 import paymentResult from "../components/billing/payment-result.vue";
+import phoneBook from "../components/modal-component/phone-book.vue";
+
 let appData = {
   activePacient: null,
   showImageModal: 0,
@@ -40,7 +42,7 @@ let appData = {
   billItem: null,
   paymentResult: null,
   userIsVerify: false,
-  currentShowPhoneBook: null,
+  currentShowPhoneBook: false,
 };
 
 
@@ -69,10 +71,7 @@ let App = new Vue({
     },
     showPhoneBook: function () {
       var vm = this;
-      var $el = document.getElementById("huddle-room-mount");
-      if($el){
-        vm.spaceWidget.render($el);
-      }
+      vm.currentShowPhoneBook = !vm.currentShowPhoneBook;
     },
     openNewWindow(url) {
       let strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
@@ -114,7 +113,8 @@ let App = new Vue({
     billingHistory,
     statementReview,
     paymentConfirmation,
-    paymentResult
+    paymentResult,
+    phoneBook
   },
   watch: {
     currentShowBox: function () {

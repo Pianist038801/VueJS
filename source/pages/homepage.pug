@@ -12,9 +12,14 @@ block content
                  sidebar-pacient(:pacients="$root._data.Patients", :active="activePacient")
         div.layout__content
             .layout__content-scrolling
-
                 transition(name="fade", mode='out-in')
-
+                    .content
+                        .content__box
+                            phone-book(:show="$root.currentShowPhoneBox")
+                transition(name="fade", mode='out-in')
+                    //-show modal for phone-book 
+                    
+                
                     //-show scheduling
                     .content(v-if="$root.currentShowBox ==='scheduling' && !currentShowSubBox", key="scheduling")
                         .content__top-line
@@ -121,3 +126,4 @@ block content
                             :existing-apointment-slots="$root._data.ExistingAppointmentSlots",
                             :book-now-data="$root._data.BookNowData"
                             )
+                    
