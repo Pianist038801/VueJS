@@ -187,7 +187,7 @@ if (isDevelopment) {
     open: true,
     stats: 'errors-only',
     clientLogLevel: 'error',
-    host: ip.address(),
+    host: '0.0.0.0',
     watchContentBase: true,
   };
 
