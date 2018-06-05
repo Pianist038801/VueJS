@@ -10,6 +10,9 @@
 .full-width {
   min-width: 100%;
 }
+li {
+  margin-bottom: em(10);
+}
 .case-managment__top-item {
   lost-column: 1/3 3 em(80px);
   margin-bottom: em(30);

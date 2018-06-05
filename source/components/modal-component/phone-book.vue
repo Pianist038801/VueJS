@@ -43,7 +43,21 @@
                             span tempDNIS
                             input(v-model="tempDNIS" readonly)
                 .modal__content-col
-                    tabs().modaltabs
+                    div().box
+                        div().tab-holder
+                            a(@click="showRecent=false").tab Recent List
+                            a(@click="showRecent=true").tab Favorite List
+                        div()
+                            ul(v-if="showRecent")
+                                li() 972-888-2938
+                                li() Urology (214-701-5489)
+                                li() Front Office
+                                li() Cardiology
+                            ul(v-if="!showRecent")
+                                li() Urology (214-701-5489)
+                                li() Radiology (214-212-0912)
+                                li() Cardiology ((972-358-6547)
+                                li() Anesthesiology (972-891-8656)
             .modal-appointment__row
                     a(href="#3", @click="$refs.modalphone.close()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border CANCEL
                     a(href="#3", @click="submit").ui-btn.ui-btn--skin-default.ui-btn--theme-primary DIAL
@@ -54,18 +68,14 @@
 
     import modal from "./modal.vue";
     import Multiselect from 'vue-multiselect';
-    import Vue from 'vue';  
-    import {Tabs, Tab} from 'vue-tabs-component';
+    import Vue from 'vue'; 
 
-    Vue.use(Tabs);
-    Vue.use(Tab);
+
     export default {
         props: ['show'],
         components: { 
             modal,
             Multiselect,
-            Tabs, 
-            Tab
         },
         methods: {
             submit(){
@@ -93,6 +103,7 @@
                 phoneType: '',
                 phoneNote: '',
                 tempDNIS: '',
+                showRecent: true,
             }
         },
          
@@ -130,4 +141,17 @@
 </script>
 <style lang="scss">
     @import '~mixinsSCSS';
+    .box {
+        border: 1px solid;
+        padding: 12px;
+        height: 100%;
+    }
+    .tab-holder {
+        display: flex;
+    }
+    .tab {
+        border: 1px solid;
+        padding: 5px 12px;
+        flex: 1;
+    }
 </style>

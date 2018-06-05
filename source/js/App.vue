@@ -5,6 +5,7 @@
     </v-content>
   </v-app>
 </template>
+ 
 
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 
@@ -20,6 +21,8 @@
   };
   firebase.initializeApp(config);
 </script>
+
+
 
 <script>
 export default {
