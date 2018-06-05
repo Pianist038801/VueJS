@@ -1,5 +1,31 @@
 {
   "currentShowPhoneBook": false,
+  "callInfos": [
+    {
+      "tempDNIS": "97223456789",
+      "Status": "unused",
+      "destination": "",
+      "patientPH": "",
+      "patientMRN": "",
+      "Notes": ""
+    },
+    {
+      "tempDNIS": "9721112223",
+      "Status": "unused",
+      "destination": "",
+      "patientPH": "",
+      "patientMRN": "",
+      "Notes": ""
+    },
+    {
+      "tempDNIS": "9721112224",
+      "Status": "unused",
+      "destination": "",
+      "patientPH": "",
+      "patientMRN": "",
+      "Notes": ""
+    }
+  ],
   "Patients": [{
     "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
     "Category": "EPIC",

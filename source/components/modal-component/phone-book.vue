@@ -39,11 +39,14 @@
                                 .modal-appointment__lang-title Notes
 
                             textarea(v-model="phoneNote").ui-textarea.ui-textarea--skin-default.ui-textarea--theme-default.mod--sms
+
+                            span tempDNIS
+                            input(v-model="tempDNIS" readonly)
                 .modal__content-col
                     tabs().modaltabs
             .modal-appointment__row
                     a(href="#3", @click="$refs.modalphone.close()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border CANCEL
-                    a(href="#3", @click="submit").ui-btn.ui-btn--skin-default.ui-btn--theme-primary SUBMIT                
+                    a(href="#3", @click="submit").ui-btn.ui-btn--skin-default.ui-btn--theme-primary DIAL
 
 
 </template>
@@ -61,7 +64,7 @@
         components: { 
             modal,
             Multiselect,
-            Tabs,
+            Tabs, 
             Tab
         },
         methods: {
@@ -69,10 +72,10 @@
                 console.log('UHAHA');
                 console.log(this.$root._data.Patients[this.$root.activePacient])
                 const result = {
-                    DNIS: this.phoneNumber.substring(this.phoneNumber.length - 13, this.phoneNumber.length - 1),
+                    tempDNIS: this.tempDNIS,
                     Status: 'used',
-                    destination: this.phoneNumber.substring(0, this.phoneNumber.length - 14),
-                    patientPH: '00000',
+                    destination: this.phoneNumber.substring(this.phoneNumber.length - 13, this.phoneNumber.length - 1),
+                    patientPH: '505-33339999',
                     patientMRN: this.$root._data.Patients[this.$root.activePacient].MRN,
                     Notes: this.phoneNote,
                 }
@@ -89,6 +92,7 @@
                 phoneNumber: '',
                 phoneType: '',
                 phoneNote: '',
+                tempDNIS: '',
             }
         },
          
@@ -105,7 +109,17 @@
             console.log('PHONE_MOUNTED');
             let vm = this;
             vm.phoneNumber='';
-           
+            console.log('uhaha', this.$root._data.callInfos)
+            const callInfos = this.$root._data.callInfos;
+            for(var i = 0; i<callInfos.length ;i++)
+            {
+                if(callInfos[i].Status == 'unused')
+                {
+                    this.tempDNIS = callInfos[i].tempDNIS;
+                    break;
+                }
+            }
+            console.log('TEMPDNIS=', this.tempDNIS);
         },
         computed:{
              

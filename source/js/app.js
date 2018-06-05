@@ -50,6 +50,7 @@ let appData = {
   callType: '',
   callNotes: '',
   callDestination: '',
+  callInfos: [],
 };
 
 
