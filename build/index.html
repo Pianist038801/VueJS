@@ -68,13 +68,30 @@
               <div class="content" v-if="$root.currentShowBox ==='scheduling' &amp;&amp; !currentShowSubBox" key="scheduling">
                 <div class="content__top-line">
                   <h1 class="title">Caller Information</h1>
-                </div><span>Caller Name</span>
-                <input value="John Jacobs" readonly><span>Caller Phone #</span>
-                <input value="+214-701-5489" readonly><span>Call Type</span>
-                <input value="Patient" readonly><span>Transferred from</span>
-                <input value="Urology Center" readonly><span>Hospital</span>
-                <input value="John Jacobs" readonly><span>Notes</span>
-                <textarea readonly></textarea>
+                </div>
+                <div class="case-managment">
+                  <div class="case-managment__top">
+                    <div class="case-managment__top-item"><span>Caller Name</span>
+                      <input value="John Jacobs" readonly>
+                    </div>
+                    <div class="case-managment__top-item"><span>Caller Phone #</span>
+                      <input value="214-701-5489" readonly>
+                    </div>
+                    <div class="case-managment__top-item"><span>Call Type</span>
+                      <input value="Patient" readonly>
+                    </div>
+                    <div class="case-managment__top-item"><span>Transferred from</span>
+                      <input value="Urology Center" readonly>
+                    </div>
+                    <div class="case-managment__top-item"><span>Hospital</span>
+                      <input value="NA" readonly>
+                    </div>
+                  </div>
+                  <div class="case-managment__top"><span>Notes</span></div>
+                  <div class="case-managment__top__bottom">
+                    <textarea class="full-width" readonly></textarea>
+                  </div>
+                </div>
                 <div class="content__top-line">
                   <h1 class="title">Patient Schedule</h1><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = 'make-appointment'">
                     <svg class="ico-svg ico-svg__plus-round">
