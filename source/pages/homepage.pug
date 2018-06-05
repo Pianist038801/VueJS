@@ -71,13 +71,32 @@ block content
                     //-show billing
                     .content(v-if="$root.currentShowBox ==='billing' && !currentShowSubBox", key="billing")
                         .content__top-line
-                            h1.title Caller Information:
-                        span.content_caller-info Caller Name: xxxxx
-                        span.content_caller-info Caller Phone No.: {{$root._data.callNumber}}
-                        span.content_caller-info Caller Type: {{$root._data.callType}}
-                        span.content_caller-info Transferred location: {{$root._data.callDestination}}
-                        span.content_caller-info Hospital: NA
-                        span.content_caller-info Notes: {{$root._data.callNotes}}
+                            h1.title Caller Information
+                        .case-managment
+                            .case-managment__top
+                                .case-managment__top-item
+                                    span Caller Name
+                                    input(value="John Jacobs" readonly)
+
+                                .case-managment__top-item
+                                    span Caller Phone #
+                                    input(value="214-701-5489" readonly)
+
+                                .case-managment__top-item
+                                    span Call Type
+                                    input(value="Patient" readonly)
+
+                                .case-managment__top-item
+                                    span Transferred from
+                                    input(value="Urology Center" readonly)
+
+                                .case-managment__top-item
+                                    span Hospital
+                                    input(value="NA" readonly)
+                            .case-managment__top
+                                span Notes
+                            .case-managment__top__bottom
+                                textarea(readonly).full-width
                         .content__top-line
                             h1.title Patient Billing  
                         .content__box
