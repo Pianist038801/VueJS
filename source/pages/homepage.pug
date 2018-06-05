@@ -9,7 +9,7 @@ block content
     div.layout
         div.layout__sidebar
             div.layout__sidebar-scrolling
-                 sidebar-pacient(:pacients="$root._data.Patients", :active="activePacient")
+                sidebar-pacient(:pacients="$root._data.Patients", :active="activePacient")
         div.layout__content
             .layout__content-scrolling
                 transition(name="fade", mode='out-in')
@@ -17,19 +17,37 @@ block content
                         .content__box
                             phone-book(:show="$root.currentShowPhoneBook")
                 transition(name="fade", mode='out-in')
-                    //-show modal for phone-book 
-                    
-                
+                    //-show modal for phone-book
+
+
                     //-show scheduling
                     .content(v-if="$root.currentShowBox ==='scheduling' && !currentShowSubBox", key="scheduling")
                         .content__top-line
-                            h1.title Caller Information:
-                        span.content_caller-info Caller Name: xxxxx
-                        span.content_caller-info Caller Phone No.: xxxxx
-                        span.content_caller-info Caller Type: xxxxx
-                        span.content_caller-info Transferred location: xxxxx
+                            h1.title Caller Information
+
+                        span Caller Name
+                        input(value="John Jacobs" readonly)
+
+                        span Caller Phone #
+                        input(value="+214-701-5489" readonly)
+
+                        span Call Type
+                        input(value="Patient" readonly)
+
+                        span Transferred from
+                        input(value="Urology Center" readonly)
+
+                        span Hospital
+                        input(value="John Jacobs" readonly)
+
+                        span Notes
+                        textarea( readonly)
+                        
+                        span.content_caller-info Caller Phone No.: {{$root._data.callNumber}}
+                        span.content_caller-info Caller Type: {{$root._data.callType}}
+                        span.content_caller-info Transferred location: {{$root._data.callDestination}}
                         span.content_caller-info Hospital: NA
-                        span.content_caller-info Notes: xxxxx
+                        span.content_caller-info Notes: {{$root._data.callNotes}}
 
                         .content__top-line
                             h1.title Patient Schedule
@@ -54,11 +72,11 @@ block content
                         .content__top-line
                             h1.title Caller Information:
                         span.content_caller-info Caller Name: xxxxx
-                        span.content_caller-info Caller Phone No.: xxxxx
-                        span.content_caller-info Caller Type: xxxxx
-                        span.content_caller-info Transferred location: xxxxx
+                        span.content_caller-info Caller Phone No.: {{$root._data.callNumber}}
+                        span.content_caller-info Caller Type: {{$root._data.callType}}
+                        span.content_caller-info Transferred location: {{$root._data.callDestination}}
                         span.content_caller-info Hospital: NA
-                        span.content_caller-info Notes: xxxxx
+                        span.content_caller-info Notes: {{$root._data.callNotes}}
                         .content__top-line
                             h1.title Patient Billing  
                         .content__box
@@ -136,6 +154,7 @@ block content
                             a(href="#3", @click.prevent="$root.currentShowSubBox = null").content__top-appointment-close
                                 svg.ico-svg.ico-svg__close
                                     use(xlink:href="#close")
+
                         .content__box
                             insurance-verification
                             make-appointment(
@@ -143,4 +162,3 @@ block content
                             :existing-apointment-slots="$root._data.ExistingAppointmentSlots",
                             :book-now-data="$root._data.BookNowData"
                             )
-                    

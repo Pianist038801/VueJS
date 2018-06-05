@@ -46,6 +46,10 @@ let appData = {
   paymentResult: null,
   userIsVerify: false,
   currentShowPhoneBook: false,
+  callNumber: '',
+  callType: '',
+  callNotes: '',
+  callDestination: '',
 };
 
 

@@ -23,6 +23,18 @@ fieldset[disabled] .multiselect {
 
 
 // styles
+.modaltabs {
+  min-height: em(50px) !important;
+  min-width: em(50px);
+  background: '#ff00ff' !important;
+}
+
+.tabs-component-tabs {
+  min-height: em(50px) !important;
+  min-width: em(50px);
+  background: '#ff00ff' !important;
+}
+
 .ui-multiselect--default {
   min-height: em(40px);
   color: #202020;
@@ -111,6 +123,7 @@ fieldset[disabled] .multiselect {
     min-width: 100%;
     vertical-align: top;
   }
+
   .multiselect--above .multiselect__content-wrapper {
     bottom: 100%;
     border-radius: 0;
