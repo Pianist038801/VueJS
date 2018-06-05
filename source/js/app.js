@@ -155,6 +155,7 @@ function transformToAssocArray( prmstr ) {
 var paramsUrl = getSearchParameters();
 
 let urlData = paramsUrl.data? `data/${paramsUrl.data}`:'data/demo-mockup.json';
+let downloadURL = 'https://firebasestorage.googleapis.com/v0/b/finesse-2346d.appspot.com/o/mountains.json?alt=media&token=4741e73d-b0d4-4c2b-afb8-456d214136a8';
 
 
 Vue.http.get(urlData)
@@ -162,6 +163,11 @@ Vue.http.get(urlData)
   .then(
     (response) => {
       console.log(response);
-      appData = Object.assign(appData, response.body);
-      App.$mount('#app');
+      let data = response.body;
+      Vue.http.get(downloadURL).then((res)=>{
+        data = Object.assign(data, {callInfos: res.body})
+        appData = Object.assign(appData, data);
+        App.$mount('#app');
+      })
+      
     });
