@@ -75,24 +75,25 @@ block content
                         .ccase-managment
                             .ccase-managment__top
                                 .ccase-managment__top-item
-                                    span Caller Name
-                                    input(value="John Jacobs" readonly)
+                                    span().infoname Caller Name
+                                    input(:value="$root._data.callerInfo.callerName" readonly).infovalue
 
                                 .ccase-managment__top-item
-                                    span Caller Phone #
-                                    input(value="214-701-5489" readonly)
+                                    span().infoname Caller Phone #
+                                    input(value="214-701-5489" readonly).infovalue
 
                                 .ccase-managment__top-item
-                                    span Call Type
-                                    input(value="Patient" readonly)
+                                    span().infoname Call Type
+                                    input(:value="$root._data.callerInfo.callerType" readonly).infovalue
 
                                 .ccase-managment__top-item
-                                    span Transferred from
-                                    input(value="Urology Center" readonly)
+                                    span().infoname Transferred from
+                                    input(:value="$root._data.callerInfo.transferLocation" readonly).infovalue
 
                                 .ccase-managment__top-item
-                                    span Hospital
-                                    input(value="NA" readonly)
+                                    span().infoname Hospital
+                                    input(:value="$root._data.callerInfo.hospital" readonly).infovalue
+
                             .ccase-managment__top
                                 span Notes
                             .ccase-managment__top__bottom

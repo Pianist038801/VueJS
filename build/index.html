@@ -119,20 +119,20 @@
                 </div>
                 <div class="ccase-managment">
                   <div class="ccase-managment__top">
-                    <div class="ccase-managment__top-item"><span>Caller Name</span>
-                      <input value="John Jacobs" readonly>
+                    <div class="ccase-managment__top-item"><span class="infoname">Caller Name</span>
+                      <input class="infovalue" :value="$root._data.callerInfo.callerName" readonly>
                     </div>
-                    <div class="ccase-managment__top-item"><span>Caller Phone #</span>
-                      <input value="214-701-5489" readonly>
+                    <div class="ccase-managment__top-item"><span class="infoname">Caller Phone #</span>
+                      <input class="infovalue" value="214-701-5489" readonly>
                     </div>
-                    <div class="ccase-managment__top-item"><span>Call Type</span>
-                      <input value="Patient" readonly>
+                    <div class="ccase-managment__top-item"><span class="infoname">Call Type</span>
+                      <input class="infovalue" :value="$root._data.callerInfo.callerType" readonly>
                     </div>
-                    <div class="ccase-managment__top-item"><span>Transferred from</span>
-                      <input value="Urology Center" readonly>
+                    <div class="ccase-managment__top-item"><span class="infoname">Transferred from</span>
+                      <input class="infovalue" :value="$root._data.callerInfo.transferLocation" readonly>
                     </div>
-                    <div class="ccase-managment__top-item"><span>Hospital</span>
-                      <input value="NA" readonly>
+                    <div class="ccase-managment__top-item"><span class="infoname">Hospital</span>
+                      <input class="infovalue" :value="$root._data.callerInfo.hospital" readonly>
                     </div>
                   </div>
                   <div class="ccase-managment__top"><span>Notes</span></div>
