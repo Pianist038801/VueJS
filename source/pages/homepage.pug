@@ -28,7 +28,7 @@ block content
                             .ccase-managment__top
                                 .ccase-managment__top-item
                                     span().infoname Caller Name
-                                    input(value="John Jacobs" readonly).infovalue
+                                    input(:value="$root._data.callerInfo.callerName" readonly).infovalue
 
                                 .ccase-managment__top-item
                                     span().infoname Caller Phone #
@@ -36,15 +36,15 @@ block content
 
                                 .ccase-managment__top-item
                                     span().infoname Call Type
-                                    input(value="Patient" readonly).infovalue
+                                    input(:value="$root._data.callerInfo.callerType" readonly).infovalue
 
                                 .ccase-managment__top-item
                                     span().infoname Transferred from
-                                    input(value="Urology Center" readonly).infovalue
+                                    input(:value="$root._data.callerInfo.transferLocation" readonly).infovalue
 
                                 .ccase-managment__top-item
                                     span().infoname Hospital
-                                    input(value="NA" readonly).infovalue
+                                    input(:value="$root._data.callerInfo.hospital" readonly).infovalue
                             .ccase-managment__top
                                 span().infoname Notes
                             .ccase-managment__top__bottom

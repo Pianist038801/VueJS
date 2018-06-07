@@ -72,19 +72,19 @@
                 <div class="ccase-managment">
                   <div class="ccase-managment__top">
                     <div class="ccase-managment__top-item"><span class="infoname">Caller Name</span>
-                      <input class="infovalue" value="John Jacobs" readonly>
+                      <input class="infovalue" :value="$root._data.callerInfo.callerName" readonly>
                     </div>
                     <div class="ccase-managment__top-item"><span class="infoname">Caller Phone #</span>
                       <input class="infovalue" value="214-701-5489" readonly>
                     </div>
                     <div class="ccase-managment__top-item"><span class="infoname">Call Type</span>
-                      <input class="infovalue" value="Patient" readonly>
+                      <input class="infovalue" :value="$root._data.callerInfo.callerType" readonly>
                     </div>
                     <div class="ccase-managment__top-item"><span class="infoname">Transferred from</span>
-                      <input class="infovalue" value="Urology Center" readonly>
+                      <input class="infovalue" :value="$root._data.callerInfo.transferLocation" readonly>
                     </div>
                     <div class="ccase-managment__top-item"><span class="infoname">Hospital</span>
-                      <input class="infovalue" value="NA" readonly>
+                      <input class="infovalue" :value="$root._data.callerInfo.hospital" readonly>
                     </div>
                   </div>
                   <div class="ccase-managment__top"><span class="infoname">Notes</span></div>

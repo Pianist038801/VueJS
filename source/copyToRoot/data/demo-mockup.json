@@ -1,5 +1,11 @@
 {
   "currentShowPhoneBook": false,
+  "callerInfo": {
+    "callerName": "John Jacobs",
+    "callerType": "Patient",
+    "transferLocation": "NA",
+    "hospital": "NA"
+  },
   "callInfos": [
     {
       "tempDNIS": "97223456789",

@@ -3,7 +3,8 @@ import Router from 'vue-router'
 
 import Main from '../app.js'
 import SignIn from '../signIn.vue'
-
+console.log('MAIN=');
+console.log(Main);
 Vue.use(Router)
 
 let router = new Router({
