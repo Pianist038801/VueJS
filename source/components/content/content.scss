@@ -1,9 +1,9 @@
 /* content */
 /***********************************************/
-.case-managment__top {
+.ccase-managment__top {
   lost-flex-container: row;
 }
-.case-managment__top__bottom {
+.ccase-managment__top__bottom {
   lost-flex-container: row;
   margin-bottom: em(30);
 }
@@ -13,26 +13,26 @@
 li {
   margin-bottom: em(10);
 }
-.case-managment__top-item {
+.ccase-managment__top-item {
   lost-column: 1/3 3 em(80px);
   margin-bottom: em(30);
 }
-.case-managment__top-item-box {
+.ccase-managment__top-item-box {
   display: inline-block;
   vertical-align: top;
 
   min-width: em(130);
 }
 
-.case-managment__top-item-label {
+.ccase-managment__top-item-label {
   color: rgba(#202020, .5);
   font-size: em(14px);
 }
-.case-managment__top-item-box-note {
+.ccase-managment__top-item-box-note {
   padding-top: em(8);
 }
 
-.case-managment__top-item-box-link {
+.ccase-managment__top-item-box-link {
   margin-top: em(8);
   text-decoration: none;
   @extend %tr-all;
