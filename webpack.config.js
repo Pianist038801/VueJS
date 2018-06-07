@@ -67,7 +67,7 @@ const configWebpack = {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|jpg|png|gif|svg)$/i,
         exclude: [
           path.resolve(__dirname, 'source/svg-sprite'),
         ],
