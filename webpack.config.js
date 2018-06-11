@@ -182,7 +182,7 @@ if (isDevelopment) {
     overlay: false,
     quiet: false,
     contentBase: path.join(__dirname, 'build'),
-    port: 8000,
+    port: 8080,
     historyApiFallback: false,
     open: true,
     stats: 'errors-only',

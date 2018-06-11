@@ -13,7 +13,7 @@
                             .modal-appointment__info-lang
                                 multiselect(
                                 v-model="phoneNumber",
-                                :options="['Urology (214-701-5489)','Radiology (214-212-0912)','Cardiology ((972-358-6547)','Anesthesiology (972-891-8656)']",
+                                :options="['Urology (214-701-5489)','Radiology (214-212-0912)','Cardiology (972-358-6547)','Anesthesiology (972-891-8656)']",
                                 @input="",
                                 :searchable="false",
                                 :allowEmpty="false",
@@ -56,7 +56,7 @@
                             ul(v-if="!showRecent")
                                 li() Urology (214-701-5489)
                                 li() Radiology (214-212-0912)
-                                li() Cardiology ((972-358-6547)
+                                li() Cardiology (972-358-6547)
                                 li() Anesthesiology (972-891-8656)
             .modal-appointment__row
                     a(href="#3", @click="$refs.modalphone.close()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border CANCEL
@@ -70,7 +70,8 @@
     import Multiselect from 'vue-multiselect';
     import Vue from 'vue'; 
     import firebase from '../../js/firebase';
- 
+    import axios from 'axios';
+
   var config = {
     apiKey: "AIzaSyCT2XVZukLQWSWEsXARA_ibBxV5kgKUiWk",
     authDomain: "finesse-2346d.firebaseapp.com",
@@ -89,8 +90,10 @@
         },
         methods: {
             submit(){
+                
                 console.log('UHAHA');
                 console.log(this.$root._data.Patients[this.$root.activePacient])
+
                 const result = {
                     tempDNIS: this.tempDNIS,
                     Status: 'used',
@@ -99,37 +102,76 @@
                     patientMRN: this.$root._data.Patients[this.$root.activePacient].MRN,
                     Notes: this.phoneNote,
                 }
-                this.$root._data.callNumber = this.phoneNumber.substring(this.phoneNumber.length - 13, this.phoneNumber.length - 1);
-                this.$root._data.callType = this.phoneType;
-                this.$root._data.callDestination = this.phoneNumber.substring(0, this.phoneNumber.length - 14);
-                this.$root._data.callNotes = this.phoneNote;
-                this.$refs.modalphone.close()
-                console.log('Result=', result);
-                const callInfos = this.$root._data.callInfos;
-                for(var i = 0; i<callInfos.length ;i++)
-                {
-                    if(callInfos[i].tempDNIS == this.tempDNIS)
-                    {
-                        callInfos[i] = result;
-                        break;
+
+
+                const results = {
+                    destinationNo : this.phoneNumber.substring(this.phoneNumber.length - 13, this.phoneNumber.length - 1),
+                    destinationName : this.phoneNumber.substring(0, this.phoneNumber.length - 14),
+                    patientName : this.$root._data.Patients[this.$root.activePacient].Name,
+                    patientMRN : this.$root._data.Patients[this.$root.activePacient].MRN,
+                    callerName : this.$root._data.callerInfo.callerName,
+                    callerPhone : this.$root._data.callerInfo.callerNo,
+                    callerType : this.$root._data.callerInfo.callerType,
+                    notes : this.phoneNote,
+                    phantom1 : "",
+                    phantom2 : "",
+                    phantom3 : ""
+                }
+                console.log(results)
+                axios({method: 'post',
+                    url: 'http://office.healthcareintegrations.com:8900/setTempDNIS',
+                    responseType: 'json',
+                    data: results}
+                )
+                .then(function(response){
+                    console.log('Axios_Response=', response);
+                    
+                    if(response.data.error){
+                        alert('No Available TempDNIS Now.');
                     }
-                }
-                var storageRef = firebase.storage().ref();
-                                // Create a reference to 'mountains.jpg'
-                var mountainsRef = storageRef.child('mountains.json');
-                try{
-                    var debug = {hello: "world"};
-                    var blob = new Blob([JSON.stringify(this.$root._data.callInfos)], {type : 'application/json'});
-                    mountainsRef.put(blob).then(function(snapshot) {
-                        console.log('Uploaded a raw string!');
-                        snapshot.ref.getDownloadURL().then(function(downloadURL) {
-                            console.log('File available at', downloadURL);
-                        });
-                    });
-                }
-                catch(e){
-                    console.log(e);
-                }
+                    else
+                    {
+                        alert('Call transferred successfully');
+                    }
+                });
+                this.$refs.modalphone.close()
+                // Old-Way of end-end flow
+                // this.$root._data.callNumber = this.phoneNumber.substring(this.phoneNumber.length - 13, this.phoneNumber.length - 1);
+                // this.$root._data.callType = this.phoneType;
+                // this.$root._data.callDestination = this.phoneNumber.substring(0, this.phoneNumber.length - 14);
+                // this.$root._data.callNotes = this.phoneNote;
+                // this.$refs.modalphone.close()
+                // console.log('Result=', result);
+                // const callInfos = this.$root._data.callInfos;
+                // for(var i = 0; i<callInfos.length ;i++)
+                // {
+                //     if(callInfos[i].tempDNIS == this.tempDNIS)
+                //     {
+                //         callInfos[i] = result;
+                //         break;
+                //     }
+                // }
+                // var storageRef = firebase.storage().ref();
+                //                 // Create a reference to 'mountains.jpg'
+                // var mountainsRef = storageRef.child('mountains.json');
+                // var ref = firebase.database().ref().set({notes: this.phoneNote});     
+                
+                // try{
+                //     var debug = {hello: "world"};
+                //     var blob = new Blob([JSON.stringify(this.$root._data.callInfos)], {type : 'application/json'});
+                //     mountainsRef.put(blob).then(function(snapshot) {
+                //         console.log('Uploaded a raw string!');
+                //         snapshot.ref.getDownloadURL().then(function(downloadURL) {
+                //             console.log('File available at', downloadURL);
+                //             console.log('window');
+                //             console.log(window);
+                //             window.open(downloadURL, '_blank').focus();
+                //         });
+                //     });
+                // }
+                // catch(e){
+                //     console.log(e);
+                // }
             }
         },
         data() {
@@ -166,6 +208,11 @@
                 }
             }
             console.log('TEMPDNIS=', this.tempDNIS);
+            var ref = firebase.database().ref();     
+            ref.on("value", function(snapshot){
+                console.log("CHANGE=", snapshot.val())
+                this.$root._data.callNotes = snapshot.val().notes
+            })
         },
         computed:{
              

@@ -6,34 +6,41 @@
   padding: 10px;
   margin-bottom: 5px;
 }
+
 .infoname {
   color: #1db7e9;
   margin-right: 20px;
 }
+
 .infovalue {
   padding: 10px;
 }
+
 .ccase-managment__top {
   lost-flex-container: row;
 }
+
 .ccase-managment__top__bottom {
   lost-flex-container: row;
   margin-bottom: em(30);
 }
+
 .full-width {
   min-width: 100%;
 }
+
 li {
   margin-bottom: em(10);
 }
+
 .ccase-managment__top-item {
   lost-column: 1/3 3 em(80px);
   margin-bottom: em(30);
 }
+
 .ccase-managment__top-item-box {
   display: inline-block;
   vertical-align: top;
-
   min-width: em(130);
 }
 
@@ -41,6 +48,7 @@ li {
   color: rgba(#202020, .5);
   font-size: em(14px);
 }
+
 .ccase-managment__top-item-box-note {
   padding-top: em(8);
 }
@@ -63,13 +71,13 @@ li {
   align-items: center;
   margin-bottom: em(30);
   min-height: em(50);
-
   &.mod--appointment {
     position: relative;
     min-height: 1px;
     margin-bottom: em(10);
   }
 }
+
 .content_caller-info {
   display: flex;
   justify-content: space-between;
