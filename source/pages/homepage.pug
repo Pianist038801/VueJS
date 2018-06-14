@@ -28,27 +28,27 @@ block content
                             .ccase-managment__top
                                 .ccase-managment__top-item
                                     span().infoname Caller Name
-                                    input(:value="$root._data.callerInfo.callerName" readonly).infovalue
+                                    input(:value="$root._data.callerName" readonly).infovalue
 
                                 .ccase-managment__top-item
                                     span().infoname Caller Phone #
-                                    input(value="214-701-5489" readonly).infovalue
+                                    input(:value="$root._data.callerPhone" readonly).infovalue
 
                                 .ccase-managment__top-item
                                     span().infoname Call Type
-                                    input(:value="$root._data.callerInfo.callerType" readonly).infovalue
+                                    input(:value="$root._data.callerType" readonly).infovalue
 
                                 .ccase-managment__top-item
                                     span().infoname Transferred from
-                                    input(:value="$root._data.callerInfo.transferLocation" readonly).infovalue
+                                    input(:value="$root._data.callerTransferLocation" readonly).infovalue
 
                                 .ccase-managment__top-item
                                     span().infoname Hospital
-                                    input(:value="$root._data.callerInfo.hospital" readonly).infovalue
+                                    input(:value="$root._data.callerHospital" readonly).infovalue
                             .ccase-managment__top
                                 span().infoname Notes
                             .ccase-managment__top__bottom
-                                textarea(readonly).full-width
+                                textarea(:value="$root._data.callerNotes" readonly).full-width
 
                         .content__top-line
                             h1.title Patient Schedule
@@ -76,28 +76,27 @@ block content
                             .ccase-managment__top
                                 .ccase-managment__top-item
                                     span().infoname Caller Name
-                                    input(:value="$root._data.callerInfo.callerName" readonly).infovalue
+                                    input(:value="$root._data.callerName" readonly).infovalue
 
                                 .ccase-managment__top-item
                                     span().infoname Caller Phone #
-                                    input(value="214-701-5489" readonly).infovalue
+                                    input(:value="$root._data.callerPhone" readonly).infovalue
 
                                 .ccase-managment__top-item
                                     span().infoname Call Type
-                                    input(:value="$root._data.callerInfo.callerType" readonly).infovalue
+                                    input(:value="$root._data.callerType" readonly).infovalue
 
                                 .ccase-managment__top-item
                                     span().infoname Transferred from
-                                    input(:value="$root._data.callerInfo.transferLocation" readonly).infovalue
+                                    input(:value="$root._data.callerTransferLocation" readonly).infovalue
 
                                 .ccase-managment__top-item
                                     span().infoname Hospital
-                                    input(:value="$root._data.callerInfo.hospital" readonly).infovalue
-
+                                    input(:value="$root._data.callerHospital" readonly).infovalue
                             .ccase-managment__top
-                                span Notes
+                                span().infoname Notes
                             .ccase-managment__top__bottom
-                                textarea(readonly).full-width
+                                textarea(:value="$root._data.callerNotes" readonly).full-width
                         
                         .content__top-line
                             h1.title Patient Billing  

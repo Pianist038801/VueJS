@@ -60,6 +60,7 @@ let App = new Vue({
   created(){
     let vm = this;
     vm.activePacient = 0;
+    vm.getCallInfoFromURL();
   },
   mounted() {
     let vm = this;
@@ -70,6 +71,57 @@ let App = new Vue({
     });
   },
   methods: {
+    releaseTempDNIS: function(tempDNIS) {
+      axios({method: 'post',
+        url: 'http://office.healthcareintegrations.com:8900/releaseTempDNIS',
+        responseType: 'json',
+        data: {tempDNIS}
+      }
+      )
+      .then(function(response){
+          console.log('Get_CallInfo_Axios_Response=', response);
+          if(response.data.error){
+            console.error('Error in Releasing TempDNIS');
+          }
+          else{
+            console.log('TempDNIS released');
+          }
+      });
+    },
+    getCallInfoFromURL: function() {
+      let vm = this;
+      //Get TempDNIS from the url
+      var url = new URL(window.location.href);
+      var tempDNIS = url.searchParams.get("ani");
+      console.log('TempDNIS=', tempDNIS);
+
+      axios({method: 'post',
+        url: 'http://office.healthcareintegrations.com:8900/getTempDNIS',
+        responseType: 'json',
+        data: {tempDNIS}
+      }
+      )
+      .then(function(response){
+          console.log('Get_CallInfo_Axios_Response=', response);
+          if(response.data.error){
+              console.error('No TempDNIS Found.')
+              vm.callerName = "John Jacobs";
+              vm.callerPhone = "214-701-5489";
+              vm.callerType = "Patient";
+              vm.callerNotes = '';
+              vm.activePacient = 0;
+          }
+          else{
+            const responseData = response.data;
+            vm.callerName = responseData.callerName;
+            vm.callerPhone = responseData.callerPhone;
+            vm.callerType = responseData.callerType;
+            vm.callerNotes = responseData.notes;
+            vm.activePacient = responseData.patientName.indexOf('Sarah') > -1 ? 1 : 0;
+            vm.releaseTempDNIS(tempDNIS);
+          }
+      });
+    },
     showSpaceWidget: function () {
       var vm = this;
       var $el = document.getElementById("huddle-room-mount");
