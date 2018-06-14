@@ -4,7 +4,7 @@ import Vue from 'vue';
 import VueResource from 'vue-resource';
 import VueMoment from 'vue-moment'; 
 import {Tabs, Tab} from 'vue-tabs-component';
-
+import axios from 'axios';
 
 Vue.use(VueResource);
 Vue.use(VueMoment);
@@ -46,11 +46,13 @@ let appData = {
   paymentResult: null,
   userIsVerify: false,
   currentShowPhoneBook: false,
-  callNumber: '',
-  callType: '',
-  callNotes: '',
-  callDestination: '',
-  callInfos: [],
+  callerName: 'a',
+  callerPhone: 'a',
+  callerType: 'a',
+  callerNotes: 'a',
+  callDestination: 'a',
+  callerTransferLocation: 'NA',
+  callerHospital: 'NA',
 };
 
 
@@ -104,7 +106,7 @@ let App = new Vue({
       .then(function(response){
           console.log('Get_CallInfo_Axios_Response=', response);
           if(response.data.error){
-              console.error('No TempDNIS Found.')
+              console.error('Noo TempDNIS Found.')
               vm.callerName = "John Jacobs";
               vm.callerPhone = "214-701-5489";
               vm.callerType = "Patient";

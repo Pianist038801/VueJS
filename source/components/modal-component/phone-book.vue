@@ -197,22 +197,6 @@
             console.log('PHONE_MOUNTED');
             let vm = this;
             vm.phoneNumber='';
-            console.log('uhaha', this.$root._data.callInfos)
-            const callInfos = this.$root._data.callInfos;
-            for(var i = 0; i<callInfos.length ;i++)
-            {
-                if(callInfos[i].Status == 'unused')
-                {
-                    this.tempDNIS = callInfos[i].tempDNIS;
-                    break;
-                }
-            }
-            console.log('TEMPDNIS=', this.tempDNIS);
-            var ref = firebase.database().ref();     
-            ref.on("value", function(snapshot){
-                console.log("CHANGE=", snapshot.val())
-                this.$root._data.callNotes = snapshot.val().notes
-            })
         },
         computed:{
              

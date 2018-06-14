@@ -128,7 +128,7 @@
             }
         },
         created() {
-            this.currentPacientName = this.pacients[0].Name;
+            this.currentPacientName = this.pacients[this.$root.$data.activePacient].Name;
         },
         mounted() {
             let vm = this;
@@ -161,6 +161,9 @@
         watch: {
             'currentPacientName': function (val) {
                 this.getCurrentIndexPacient();
+            },
+            'active': function(val){
+                this.currentPacientName = this.pacients[val].Name;
             }
         }
     }
