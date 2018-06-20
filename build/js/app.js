@@ -19367,7 +19367,7 @@ let App = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
   // router,
   created() {
     let vm = this;
-    vm.activePacient = 0;
+    vm.activePacient = null;
     vm.getCallInfoFromURL();
   },
   mounted() {
@@ -19398,7 +19398,8 @@ let App = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
       //Get TempDNIS from the url
       var url = new URL(window.location.href);
       var tempDNIS = url.searchParams.get("ani");
-      console.log('TempDNIS=', tempDNIS);
+      tempDNIS = tempDNIS.slice(-10);
+      console.log('IFRAME_TempDNIS=', tempDNIS);
 
       __WEBPACK_IMPORTED_MODULE_4_axios___default()({ method: 'post',
         url: 'http://office.healthcareintegrations.com:8900/getTempDNIS',
@@ -19406,22 +19407,30 @@ let App = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
         data: { tempDNIS }
       }).then(function (response) {
         console.log('Get_CallInfo_Axios_Response=', response);
-        if (response.data.error) {
-          console.error('Noo TempDNIS Found.');
-          vm.callerName = "John Jacobs";
-          vm.callerPhone = "214-701-5489";
-          vm.callerType = "Patient";
-          vm.callerNotes = '';
-          vm.activePacient = 0;
-        } else {
-          const responseData = response.data;
-          vm.callerName = responseData.callerName;
-          vm.callerPhone = responseData.callerPhone;
-          vm.callerType = responseData.callerType;
-          vm.callerNotes = responseData.notes;
-          vm.activePacient = responseData.patientName.indexOf('Sarah') > -1 ? 1 : 0;
-          vm.releaseTempDNIS(tempDNIS);
-        }
+        __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].http.get('data/demo-mockup.json').then(response1 => {
+          console.log(response1);
+          let data = response1.body;
+          appData = Object.assign(appData, data);
+
+          if (response.data.error) {
+            console.error('Noo TempDNIS Found.');
+            vm.callerName = "";
+            vm.callerPhone = "";
+            vm.callerType = "";
+            vm.callerNotes = '';
+            vm.activePacient = null;
+            appData.Patients = [];
+          } else {
+            const responseData = response.data;
+            vm.callerName = responseData.callerName;
+            vm.callerPhone = responseData.callerPhone;
+            vm.callerType = responseData.callerType;
+            vm.callerNotes = responseData.notes;
+            vm.activePacient = responseData.patientName.indexOf('Sarah') > -1 ? 1 : 0;
+            vm.releaseTempDNIS(tempDNIS);
+          }
+          App.$mount('#app');
+        });
       });
     },
     showSpaceWidget: function () {
@@ -19509,14 +19518,16 @@ var paramsUrl = getSearchParameters();
 
 let urlData = paramsUrl.data ? `data/${paramsUrl.data}` : 'data/demo-mockup.json';
 
-__WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].http.get(urlData)
-// get access
-.then(response => {
-  console.log(response);
-  let data = response.body;
-  appData = Object.assign(appData, data);
-  App.$mount('#app');
-});
+// Vue.http.get(urlData)
+//   // get access
+//   .then(
+//     (response) => {
+//       console.log(response);
+//       let data = response.body;
+//         appData = Object.assign(appData, data);
+//         App.$mount('#app');
+
+//     });
 
 /***/ }),
 /* 59 */

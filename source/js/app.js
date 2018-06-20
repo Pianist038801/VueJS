@@ -95,7 +95,8 @@ let App = new Vue({
       //Get TempDNIS from the url
       var url = new URL(window.location.href);
       var tempDNIS = url.searchParams.get("ani");
-      console.log('TempDNIS=', tempDNIS);
+      tempDNIS = tempDNIS.slice(-10)
+      console.log('IFRAME_TempDNIS=', tempDNIS);
 
       axios({method: 'post',
         url: 'http://office.healthcareintegrations.com:8900/getTempDNIS',
@@ -114,12 +115,23 @@ let App = new Vue({
                 
                 if(response.data.error){
                   console.error('Noo TempDNIS Found.')
-                  vm.callerName = "";
-                  vm.callerPhone = "";
-                  vm.callerType = "";
-                  vm.callerNotes = '';
-                  vm.activePacient = null;
-                  appData.Patients = []
+                  if(tempDNIS=="") // Blank Gadget
+                  {
+                    vm.callerName = "";
+                    vm.callerPhone = "";
+                    vm.callerType = "";
+                    vm.callerNotes = '';
+                    vm.activePacient = null;
+                    appData.Patients = []
+                  }
+                  else  //Default Gadget
+                  {
+                    vm.callerName = appData.callerInfo.callerName;
+                    vm.callerPhone = appData.callerInfo.callerNo;
+                    vm.callerType = appData.callerInfo.callerType;
+                    vm.callerNotes = '';
+                    vm.activePacient = 0;
+                  }
               }
               else{
                 const responseData = response.data;
