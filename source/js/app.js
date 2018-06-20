@@ -61,7 +61,7 @@ let App = new Vue({
   // router,
   created(){
     let vm = this;
-    vm.activePacient = 0;
+    vm.activePacient = null;
     vm.getCallInfoFromURL();
   },
   mounted() {
@@ -105,23 +105,35 @@ let App = new Vue({
       )
       .then(function(response){
           console.log('Get_CallInfo_Axios_Response=', response);
-          if(response.data.error){
-              console.error('Noo TempDNIS Found.')
-              vm.callerName = "John Jacobs";
-              vm.callerPhone = "214-701-5489";
-              vm.callerType = "Patient";
-              vm.callerNotes = '';
-              vm.activePacient = 0;
-          }
-          else{
-            const responseData = response.data;
-            vm.callerName = responseData.callerName;
-            vm.callerPhone = responseData.callerPhone;
-            vm.callerType = responseData.callerType;
-            vm.callerNotes = responseData.notes;
-            vm.activePacient = responseData.patientName.indexOf('Sarah') > -1 ? 1 : 0;
-            vm.releaseTempDNIS(tempDNIS);
-          }
+          Vue.http.get('data/demo-mockup.json') 
+          .then(
+            (response1) => {
+              console.log(response1);
+              let data = response1.body;
+                appData = Object.assign(appData, data);
+                
+                if(response.data.error){
+                  console.error('Noo TempDNIS Found.')
+                  vm.callerName = "";
+                  vm.callerPhone = "";
+                  vm.callerType = "";
+                  vm.callerNotes = '';
+                  vm.activePacient = null;
+                  appData.Patients = []
+              }
+              else{
+                const responseData = response.data;
+                vm.callerName = responseData.callerName;
+                vm.callerPhone = responseData.callerPhone;
+                vm.callerType = responseData.callerType;
+                vm.callerNotes = responseData.notes;
+                vm.activePacient = responseData.patientName.indexOf('Sarah') > -1 ? 1 : 0;
+                vm.releaseTempDNIS(tempDNIS);
+              }
+                App.$mount('#app');
+
+            });
+         
       });
     },
     showSpaceWidget: function () {
@@ -210,13 +222,13 @@ var paramsUrl = getSearchParameters();
 
 let urlData = paramsUrl.data? `data/${paramsUrl.data}`:'data/demo-mockup.json';
 
-Vue.http.get(urlData)
-  // get access
-  .then(
-    (response) => {
-      console.log(response);
-      let data = response.body;
-        appData = Object.assign(appData, data);
-        App.$mount('#app');
+// Vue.http.get(urlData)
+//   // get access
+//   .then(
+//     (response) => {
+//       console.log(response);
+//       let data = response.body;
+//         appData = Object.assign(appData, data);
+//         App.$mount('#app');
 
-    });
+//     });
