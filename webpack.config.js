@@ -225,12 +225,12 @@ if (isProduction) {
 
   const addPlugins = new Set();
   addPlugins.add(new WebpackCleanupPlugin());
-  addPlugins.add(new UglifyJSPlugin({
-    compress: {
-      drop_console: true,
-      warnings: false,
-    },
-  }));
+  // addPlugins.add(new UglifyJSPlugin({
+  //   compress: {
+  //     drop_console: true,
+  //     warnings: false,
+  //   },
+  // }));
   addPlugins.add(new ExtractTextPlugin({
     filename: 'css/style.css',
   }));

@@ -69,18 +69,7 @@
     import modal from "./modal.vue";
     import Multiselect from 'vue-multiselect';
     import Vue from 'vue'; 
-    import firebase from '../../js/firebase';
     import axios from 'axios';
-
-  var config = {
-    apiKey: "AIzaSyCT2XVZukLQWSWEsXARA_ibBxV5kgKUiWk",
-    authDomain: "finesse-2346d.firebaseapp.com",
-    databaseURL: "https://finesse-2346d.firebaseio.com",
-    projectId: "finesse-2346d",
-    storageBucket: "finesse-2346d.appspot.com",
-    messagingSenderId: "127662663362"
-  };
-  firebase.initializeApp(config);
 
     export default {
         props: ['show'],
@@ -135,43 +124,7 @@
                     }
                 });
                 this.$refs.modalphone.close()
-                // Old-Way of end-end flow
-                // this.$root._data.callNumber = this.phoneNumber.substring(this.phoneNumber.length - 13, this.phoneNumber.length - 1);
-                // this.$root._data.callType = this.phoneType;
-                // this.$root._data.callDestination = this.phoneNumber.substring(0, this.phoneNumber.length - 14);
-                // this.$root._data.callNotes = this.phoneNote;
-                // this.$refs.modalphone.close()
-                // console.log('Result=', result);
-                // const callInfos = this.$root._data.callInfos;
-                // for(var i = 0; i<callInfos.length ;i++)
-                // {
-                //     if(callInfos[i].tempDNIS == this.tempDNIS)
-                //     {
-                //         callInfos[i] = result;
-                //         break;
-                //     }
-                // }
-                // var storageRef = firebase.storage().ref();
-                //                 // Create a reference to 'mountains.jpg'
-                // var mountainsRef = storageRef.child('mountains.json');
-                // var ref = firebase.database().ref().set({notes: this.phoneNote});     
-                
-                // try{
-                //     var debug = {hello: "world"};
-                //     var blob = new Blob([JSON.stringify(this.$root._data.callInfos)], {type : 'application/json'});
-                //     mountainsRef.put(blob).then(function(snapshot) {
-                //         console.log('Uploaded a raw string!');
-                //         snapshot.ref.getDownloadURL().then(function(downloadURL) {
-                //             console.log('File available at', downloadURL);
-                //             console.log('window');
-                //             console.log(window);
-                //             window.open(downloadURL, '_blank').focus();
-                //         });
-                //     });
-                // }
-                // catch(e){
-                //     console.log(e);
-                // }
+               
             }
         },
         data() {

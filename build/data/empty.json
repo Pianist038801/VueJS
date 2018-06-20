@@ -1,0 +1,90 @@
+{
+  "Patients": [
+    {
+      "Name": "",
+      "DateOfBirth": "",
+      "SSN": "",
+      "PhoneNumber": "",
+      "PhotoUrl": "img/newUser.png",
+      "PrimaryCareProvider": {
+        "Name": "",
+        "Phone": ""
+      },
+      "Address": {
+        "Line1": "",
+        "Line2": ""
+      },
+      "TreatmentTeam": [
+        {
+          "Name": "",
+          "PhoneNumber": ""
+        }
+      ],
+      "Provider": [
+        {
+          "Name": "",
+          "PhoneNumber": ""
+        }
+      ],
+      "InsuranceVerification": {
+        "InsuranceName": "",
+        "GroupNum": "",
+        "NetworkNum": "",
+        "PolicyNum": "",
+        "IssueDate": ""
+      },
+      "Vitals": {
+        "Height": 0,
+        "Weight": 0,
+        "RespirationRate": 0,
+        "BMI": 0,
+        "Pulse": 0,
+        "BloodPressureLo": 0,
+        "BloodPressureHi": 0
+      },
+      "Physician": {
+        "Name": "",
+        "Clinic": "",
+        "Specialty": "",
+        "EmergencyPhone": "",
+        "PrimaryPhone": ""
+      },
+      "Status": {
+        "Email": "",
+        "Race": "",
+        "Ethnicity": "",
+        "Religion": "",
+        "MaritalStatus": "",
+        "EmergencyContact": {
+          "Relation": "",
+          "Name": "",
+          "Phone": ""
+        }
+      },
+      "Location": {
+        "DropdownRecords": [
+        ]
+      },
+      "PastAppointments": [
+      ]
+    }
+  ],
+  "MakeAppointmentDropDownOptions": {
+    "Department": [
+    ]
+  },
+  "ExistingAppointmentSlots": [
+  ],
+  "NewAppointment": {
+  },
+  "BookNowData": {
+    "InterpreterLanguages": [
+      "Spanish",
+      "French",
+      "Mandarin"
+    ],
+    "GoogleMapIMG": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Google_maps_screenshot.png/300px-Google_maps_screenshot.png",
+    "SmsConfirmTemplate": "Dear [PATIENTNAME] , we have scheduled an appointment with you for [APPTDATE] at [FACILITY]. Regards, [DRNAME]",
+    "EmailConfirmTemplate": "Dear [PATIENTNAME]: This letter is to confirm your appointment at [APPTDATE]. Please plan to arrive approximately 30 minutes prior to your scheduled appointment to allow time for you and your significant other to sign consent forms that are required for your treatment. It is important that your significant other is able to accompany you to your appointments as much as possible. With the type of care we provide, we may be unable to schedule/perform certain procedures without their signature.\n\nPlease complete the following informational forms and return to our office prior to your appointment.\n+ Patient Information Page \n+ Medical History Form\nThis will enable us to thoroughly review your medical background and provide you with the best possible care. If you have been seen by another physician, please request that your medical records be forwarded to our office prior to your appointment, as well. \n\nIn an effort to be HIPAA compliant and to protect your private health information and identity, we require that you bring your photo I.D. and insurance card to your first visit.\n\nAs a courtesy to you we will submit your insurance claims for you; however any copayments will be collected at time of service. For any non insured patients, fees for all office visits and related charges are payable at the time of service. \n\nMy staff and I appreciate your selecting our office for your health care. We recognize the trust and responsibility placed in us and we will do everything possible to provide for those needs. \n\nWe look forward to seeing you!\nSincerely,\n[DRNAME]"
+  }
+}
