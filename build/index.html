@@ -97,10 +97,7 @@
                     </div>
                   </div>
                   <div class="content__top-line">
-                    <h1 class="title">Patient Schedule</h1><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = 'make-appointment'">
-                      <svg class="ico-svg ico-svg__plus-round">
-                        <use xlink:href="#plus-round"></use>
-                      </svg></a>
+                    <h1 class="title">Patient Schedule</h1>
                   </div>
                   <div class="content__box">
                     <appointment :patients="$root._data.Patients[$root.activePacient]"></appointment>
