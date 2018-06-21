@@ -41,7 +41,7 @@
                             textarea(v-model="phoneNote").ui-textarea.ui-textarea--skin-default.ui-textarea--theme-default.mod--sms
 
                             span tempDNIS
-                            input(v-model="tempDNIS" readonly)
+                            input(v-model="tempDNIS")
                 .modal__content-col
                     div().box
                         div().tab-holder
@@ -82,17 +82,7 @@
                 
                 console.log('UHAHA');
                 console.log(this.$root._data.Patients[this.$root.activePacient])
-
-                const result = {
-                    tempDNIS: this.tempDNIS,
-                    Status: 'used',
-                    destination: this.phoneNumber.substring(this.phoneNumber.length - 13, this.phoneNumber.length - 1),
-                    patientPH: '505-33339999',
-                    patientMRN: this.$root._data.Patients[this.$root.activePacient].MRN,
-                    Notes: this.phoneNote,
-                }
-
-
+                const vm = this;
                 const results = {
                     destinationNo : this.phoneNumber.substring(this.phoneNumber.length - 13, this.phoneNumber.length - 1),
                     destinationName : this.phoneNumber.substring(0, this.phoneNumber.length - 14),
@@ -120,11 +110,9 @@
                     }
                     else
                     {
-                        alert('Call transferred successfully');
+                        vm.tempDNIS = response.data.tempDNIS
                     }
-                });
-                this.$refs.modalphone.close()
-               
+                });  
             }
         },
         data() {

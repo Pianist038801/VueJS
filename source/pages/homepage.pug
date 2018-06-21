@@ -5,7 +5,7 @@ block title
 
 block content
     include ../components/header/header
-    div#huddle-room-mount
+    div#huddle-room-mount 
     div.layout
         div.layout__sidebar
             div.layout__sidebar-scrolling
@@ -24,6 +24,9 @@ block content
                     .content(v-if="$root.currentShowBox ==='scheduling' && !currentShowSubBox", key="scheduling")
                         .content__top-line
                             h1.title Caller Information
+                            a(href="#3", @click.prevent="$root.currentShowSubBox = 'make-appointment'").content__top-action
+                                svg.ico-svg.ico-svg__plus-round
+                                    use(xlink:href="#plus-round")
                         div().ccase-managment
                             .ccase-managment__top
                                 .ccase-managment__top-item
