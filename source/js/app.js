@@ -36,7 +36,7 @@ import statementReview from "../components/billing/statement-review.vue";
 import paymentConfirmation from "../components/billing/payment-confirmation.vue";
 import paymentResult from "../components/billing/payment-result.vue";
 import phoneBook from "../components/modal-component/phone-book.vue";
-import blankPage from '../pages/blank/dex.vue';
+import blankPage from '../components/empty/empty.vue';
 
 var appData = {
   activePacient: null,
