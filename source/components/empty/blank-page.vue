@@ -1,0 +1,1 @@
+<template src="./blank-page.html" lang="html"></template>

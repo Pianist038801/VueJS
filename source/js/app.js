@@ -36,7 +36,7 @@ import statementReview from "../components/billing/statement-review.vue";
 import paymentConfirmation from "../components/billing/payment-confirmation.vue";
 import paymentResult from "../components/billing/payment-result.vue";
 import phoneBook from "../components/modal-component/phone-book.vue";
-import blankPage from '../components/empty/empty.vue';
+import blankPage from '../components/empty/blank-page.vue';
 
 var appData = {
   activePacient: null,
@@ -54,6 +54,7 @@ var appData = {
   callDestination: 'a',
   callerTransferLocation: 'NA',
   callerHospital: 'NA',
+  isBlank: false,
 };
 
 
@@ -118,12 +119,7 @@ let App = new Vue({
                   console.error('Noo TempDNIS Found.')
                   if(tempDNIS=="") // Blank Gadget
                   {
-                    vm.callerName = "";
-                    vm.callerPhone = "";
-                    vm.callerType = "";
-                    vm.callerNotes = '';
-                    vm.activePacient = null;
-                    appData.Patients = []
+                    vm.isBlank=true;
                   }
                   else  //Default Gadget
                   {

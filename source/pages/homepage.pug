@@ -4,185 +4,187 @@ block title
     title Home page
 
 block content
-    include ../components/header/header
-    div#huddle-room-mount
-    div.layout
-        div.layout__sidebar
-            div.layout__sidebar-scrolling
-                sidebar-pacient(:pacients="$root._data.Patients", :active="activePacient")
-        div.layout__content
-            .layout__content-scrolling
-                transition(name="fade", mode='out-in')
-                    .content
-                        .content__box
-                            phone-book(:show="$root.currentShowPhoneBook")
-                transition(name="fade", mode='out-in')
-                    //-show modal for phone-book
+    blank-page(v-if="$root._data.isBlank")
+    div(v-if="$root._data.isBlank==false")
+        include ../components/header/header
+        div#huddle-room-mount
+        div.layout
+            div.layout__sidebar
+                div.layout__sidebar-scrolling
+                    sidebar-pacient(:pacients="$root._data.Patients", :active="activePacient")
+            div.layout__content
+                .layout__content-scrolling
+                    transition(name="fade", mode='out-in')
+                        .content
+                            .content__box
+                                phone-book(:show="$root.currentShowPhoneBook")
+                    transition(name="fade", mode='out-in')
+                        //-show modal for phone-book
 
 
-                    //-show scheduling
-                    .content(v-if="$root.currentShowBox ==='scheduling' && !currentShowSubBox", key="scheduling")
-                        .content__top-line
-                            h1.title Caller Information
-                            a(href="#3", @click.prevent="$root.currentShowSubBox = 'make-appointment'").content__top-action
-                                svg.ico-svg.ico-svg__plus-round
-                                    use(xlink:href="#plus-round")
-                        div().ccase-managment
-                            .ccase-managment__top
-                                .ccase-managment__top-item
-                                    span().infoname Caller Name
-                                    input(:value="$root._data.callerName" readonly).infovalue
+                        //-show scheduling
+                        .content(v-if="$root.currentShowBox ==='scheduling' && !currentShowSubBox", key="scheduling")
+                            .content__top-line
+                                h1.title Caller Information
+                                a(href="#3", @click.prevent="$root.currentShowSubBox = 'make-appointment'").content__top-action
+                                    svg.ico-svg.ico-svg__plus-round
+                                        use(xlink:href="#plus-round")
+                            div().ccase-managment
+                                .ccase-managment__top
+                                    .ccase-managment__top-item
+                                        span().infoname Caller Name
+                                        input(:value="$root._data.callerName" readonly).infovalue
 
-                                .ccase-managment__top-item
-                                    span().infoname Caller Phone #
-                                    input(:value="$root._data.callerPhone" readonly).infovalue
+                                    .ccase-managment__top-item
+                                        span().infoname Caller Phone #
+                                        input(:value="$root._data.callerPhone" readonly).infovalue
 
-                                .ccase-managment__top-item
-                                    span().infoname Call Type
-                                    input(:value="$root._data.callerType" readonly).infovalue
+                                    .ccase-managment__top-item
+                                        span().infoname Call Type
+                                        input(:value="$root._data.callerType" readonly).infovalue
 
-                                .ccase-managment__top-item
-                                    span().infoname Transferred from
-                                    input(:value="$root._data.callerTransferLocation" readonly).infovalue
+                                    .ccase-managment__top-item
+                                        span().infoname Transferred from
+                                        input(:value="$root._data.callerTransferLocation" readonly).infovalue
 
-                                .ccase-managment__top-item
-                                    span().infoname Hospital
-                                    input(:value="$root._data.callerHospital" readonly).infovalue
-                            .ccase-managment__top
-                                span().infoname Notes
-                            .ccase-managment__top__bottom
-                                textarea(:value="$root._data.callerNotes" readonly).full-width
+                                    .ccase-managment__top-item
+                                        span().infoname Hospital
+                                        input(:value="$root._data.callerHospital" readonly).infovalue
+                                .ccase-managment__top
+                                    span().infoname Notes
+                                .ccase-managment__top__bottom
+                                    textarea(:value="$root._data.callerNotes" readonly).full-width
 
-                        .content__top-line
-                            h1.title Patient Schedule
-                            a(href="#3", @click.prevent="$root.currentShowSubBox = 'make-appointment'").content__top-action
-                                svg.ico-svg.ico-svg__plus-round
-                                    use(xlink:href="#plus-round")
-                        .content__box
-                            appointment(:patients="$root._data.Patients[$root.activePacient]")
-                            journey-map(:info="$root._data.Patients[$root.activePacient]")
+                            .content__top-line
+                                h1.title Patient Schedule
+                                a(href="#3", @click.prevent="$root.currentShowSubBox = 'make-appointment'").content__top-action
+                                    svg.ico-svg.ico-svg__plus-round
+                                        use(xlink:href="#plus-round")
+                            .content__box
+                                appointment(:patients="$root._data.Patients[$root.activePacient]")
+                                journey-map(:info="$root._data.Patients[$root.activePacient]")
 
-                    //-show case-managment
-                    .content(v-if="$root.currentShowBox ==='case-managment' && !currentShowSubBox", key="case-managment")
-                        .content__top-line
-                            h1.title Case Managment
-                        .content__box
-                            c-managment
-                            c-managment-incidents
-                            c-managment-incident
-                    
-                    //-show billing
-                    .content(v-if="$root.currentShowBox ==='billing' && !currentShowSubBox", key="billing")
-                        .content__top-line
-                            h1.title Caller Information
-                        .ccase-managment
-                            .ccase-managment__top
-                                .ccase-managment__top-item
-                                    span().infoname Caller Name
-                                    input(:value="$root._data.callerName" readonly).infovalue
-
-                                .ccase-managment__top-item
-                                    span().infoname Caller Phone #
-                                    input(:value="$root._data.callerPhone" readonly).infovalue
-
-                                .ccase-managment__top-item
-                                    span().infoname Call Type
-                                    input(:value="$root._data.callerType" readonly).infovalue
-
-                                .ccase-managment__top-item
-                                    span().infoname Transferred from
-                                    input(:value="$root._data.callerTransferLocation" readonly).infovalue
-
-                                .ccase-managment__top-item
-                                    span().infoname Hospital
-                                    input(:value="$root._data.callerHospital" readonly).infovalue
-                            .ccase-managment__top
-                                span().infoname Notes
-                            .ccase-managment__top__bottom
-                                textarea(:value="$root._data.callerNotes" readonly).full-width
+                        //-show case-managment
+                        .content(v-if="$root.currentShowBox ==='case-managment' && !currentShowSubBox", key="case-managment")
+                            .content__top-line
+                                h1.title Case Managment
+                            .content__box
+                                c-managment
+                                c-managment-incidents
+                                c-managment-incident
                         
-                        .content__top-line
-                            h1.title Patient Billing
-                        .content__box
-                            patient-billing(:patient="$root._data.Patients[$root.activePacient]")
-                            billing-history(:history="$root._data.Patients[$root.activePacient].BillHistory",@pay-bill="$root.payBill",@show-statement-review="$root.showStatementReview")
+                        //-show billing
+                        .content(v-if="$root.currentShowBox ==='billing' && !currentShowSubBox", key="billing")
+                            .content__top-line
+                                h1.title Caller Information
+                            .ccase-managment
+                                .ccase-managment__top
+                                    .ccase-managment__top-item
+                                        span().infoname Caller Name
+                                        input(:value="$root._data.callerName" readonly).infovalue
+
+                                    .ccase-managment__top-item
+                                        span().infoname Caller Phone #
+                                        input(:value="$root._data.callerPhone" readonly).infovalue
+
+                                    .ccase-managment__top-item
+                                        span().infoname Call Type
+                                        input(:value="$root._data.callerType" readonly).infovalue
+
+                                    .ccase-managment__top-item
+                                        span().infoname Transferred from
+                                        input(:value="$root._data.callerTransferLocation" readonly).infovalue
+
+                                    .ccase-managment__top-item
+                                        span().infoname Hospital
+                                        input(:value="$root._data.callerHospital" readonly).infovalue
+                                .ccase-managment__top
+                                    span().infoname Notes
+                                .ccase-managment__top__bottom
+                                    textarea(:value="$root._data.callerNotes" readonly).full-width
+                            
+                            .content__top-line
+                                h1.title Patient Billing
+                            .content__box
+                                patient-billing(:patient="$root._data.Patients[$root.activePacient]")
+                                billing-history(:history="$root._data.Patients[$root.activePacient].BillHistory",@pay-bill="$root.payBill",@show-statement-review="$root.showStatementReview")
+                        
+                        //-show statement review
+                        .content(v-if="$root.currentShowBox ==='statement_review' && !currentShowSubBox", key="statement_review")
+                            .content__top-line
+                                .div
+                                    h1.title Statement Review for {{$root._data.billItem.name}} {{$root._data.billItem.Date}}
+                                    .sub-popup-menu
+                                        .sub-popup-menu__action
+                                            svg.ico-svg.ico-svg__more.svg-blue
+                                                use(xlink:href="#more")
+                                        .sub-popup-menu__list
+                                            a(href="#3", @click.prevent="showImage()").sub-popup-menu__item1 Expand Details
+                                            a(href="#3", @click.prevent="openNewWindow('http://10.3.74.119/openemr/interface/patient_file/encounter/load_form.php?formname=fee_sheet')").sub-popup-menu__item View in {{$root._data.Patients[$root.activePacient].Category=='EPIC'?'EPIC':"EPIC"}}
+                                            a(href="#3", @click.prevent="payBill($root._data.billItem)").sub-popup-menu__item1 Pay Bill
+                                            a(href="#3").sub-popup-menu__item1 Adjust
+                                            a(href="#3").sub-popup-menu__item1 Print
+                                            a(href="#3", @click.prevent="openNewWindow('http://uhealthsystem.com/images/content/UMH-statement.jpg')").sub-popup-menu__item Download as PDF
+                                a(href="#3", @click.prevent="$root.goBack").content__top-action
+                                    svg.ico-svg.ico-svg__plus-close
+                                        use(xlink:href="#close")
+                            .content__box
+                                statement-review(:item="$root._data.billItem",:showimagemodal="$root._data.showImageModal")
+                        //-show payment confirmation
+                        .content(v-if="$root.currentShowBox ==='payment_confirmation' && !currentShowSubBox", key="payment_confirmation")
+                            .content__top-line
+                                h1.title Payment Confirmation
+                                a(href="#3", @click.prevent="$root.goBack").content__top-action
+                                    svg.ico-svg.ico-svg__plus-close
+                                        use(xlink:href="#close")
+                            .content__box
+                                payment-confirmation(:item="$root._data.billItem", @show-payment-result="$root.showPaymentResult")
+
+                        //-show payment result
+                        .content(v-if="$root.currentShowBox ==='payment_result' && !currentShowSubBox", key="payment_result")
+                            .content__top-line
+                                .div
+                                    h1.title Payment Confirmed
+                                    .sub-popup-menu
+                                        .sub-popup-menu__action
+                                            svg.ico-svg.ico-svg__more.svg-blue
+                                                use(xlink:href="#more")
+                                        .sub-popup-menu__list
+                                            a(href="#3").sub-popup-menu__item1 Send Confirmation
+                                            a(href="#3").sub-popup-menu__item1 View Another Bill 
+                            .content__box
+                                payment-result(:item="$root._data.paymentResult", @go-back="$root.goBack")
+
+                        //-show huddle-room
+                        .content(v-if="$root.currentShowBox ==='huddle-room' && !currentShowSubBox", key="huddle-room")
+                            .content__top-line
+                                h1.title Huddle Room
+                            .content__box
+
+                        //-show patient-information
+                        .content(v-if="$root.currentShowSubBox ==='patient-info'", key="patient-info")
+                            .content__top-line
+                                h1.title Patient Information
+                                a(href="#3", @click.prevent="$root.currentShowSubBox = null").content__top-action
+                                    svg.ico-svg.ico-svg__close 
+                                        use(xlink:href="#close")
+                            .content__box
+                                patient-info(:info="$root._data.Patients[$root.activePacient]")
+                                pharmacy(:info="$root._data.Patients[$root.activePacient]")
+                                journey-map(:info="$root._data.Patients[$root.activePacient]")
                     
-                    //-show statement review
-                    .content(v-if="$root.currentShowBox ==='statement_review' && !currentShowSubBox", key="statement_review")
-                        .content__top-line
-                            .div
-                                h1.title Statement Review for {{$root._data.billItem.name}} {{$root._data.billItem.Date}}
-                                .sub-popup-menu
-                                    .sub-popup-menu__action
-                                        svg.ico-svg.ico-svg__more.svg-blue
-                                            use(xlink:href="#more")
-                                    .sub-popup-menu__list
-                                        a(href="#3", @click.prevent="showImage()").sub-popup-menu__item1 Expand Details
-                                        a(href="#3", @click.prevent="openNewWindow('http://10.3.74.119/openemr/interface/patient_file/encounter/load_form.php?formname=fee_sheet')").sub-popup-menu__item View in {{$root._data.Patients[$root.activePacient].Category=='EPIC'?'EPIC':"EPIC"}}
-                                        a(href="#3", @click.prevent="payBill($root._data.billItem)").sub-popup-menu__item1 Pay Bill
-                                        a(href="#3").sub-popup-menu__item1 Adjust
-                                        a(href="#3").sub-popup-menu__item1 Print
-                                        a(href="#3", @click.prevent="openNewWindow('http://uhealthsystem.com/images/content/UMH-statement.jpg')").sub-popup-menu__item Download as PDF
-                            a(href="#3", @click.prevent="$root.goBack").content__top-action
-                                svg.ico-svg.ico-svg__plus-close
-                                    use(xlink:href="#close")
-                        .content__box
-                            statement-review(:item="$root._data.billItem",:showimagemodal="$root._data.showImageModal")
-                    //-show payment confirmation
-                    .content(v-if="$root.currentShowBox ==='payment_confirmation' && !currentShowSubBox", key="payment_confirmation")
-                        .content__top-line
-                            h1.title Payment Confirmation
-                            a(href="#3", @click.prevent="$root.goBack").content__top-action
-                                svg.ico-svg.ico-svg__plus-close
-                                    use(xlink:href="#close")
-                        .content__box
-                            payment-confirmation(:item="$root._data.billItem", @show-payment-result="$root.showPaymentResult")
+                        //-show make-appointment
+                            Make Appointment
+                        .content(v-if="$root.currentShowSubBox ==='make-appointment'", key="make-appointment")
+                            .content__top-line.mod--appointment
+                                a(href="#3", @click.prevent="$root.currentShowSubBox = null").content__top-appointment-close
+                                    svg.ico-svg.ico-svg__close
+                                        use(xlink:href="#close")
 
-                    //-show payment result
-                    .content(v-if="$root.currentShowBox ==='payment_result' && !currentShowSubBox", key="payment_result")
-                        .content__top-line
-                            .div
-                                h1.title Payment Confirmed
-                                .sub-popup-menu
-                                    .sub-popup-menu__action
-                                        svg.ico-svg.ico-svg__more.svg-blue
-                                            use(xlink:href="#more")
-                                    .sub-popup-menu__list
-                                        a(href="#3").sub-popup-menu__item1 Send Confirmation
-                                        a(href="#3").sub-popup-menu__item1 View Another Bill 
-                        .content__box
-                            payment-result(:item="$root._data.paymentResult", @go-back="$root.goBack")
-
-                    //-show huddle-room
-                    .content(v-if="$root.currentShowBox ==='huddle-room' && !currentShowSubBox", key="huddle-room")
-                        .content__top-line
-                            h1.title Huddle Room
-                        .content__box
-
-                    //-show patient-information
-                    .content(v-if="$root.currentShowSubBox ==='patient-info'", key="patient-info")
-                        .content__top-line
-                            h1.title Patient Information
-                            a(href="#3", @click.prevent="$root.currentShowSubBox = null").content__top-action
-                                svg.ico-svg.ico-svg__close 
-                                    use(xlink:href="#close")
-                        .content__box
-                            patient-info(:info="$root._data.Patients[$root.activePacient]")
-                            pharmacy(:info="$root._data.Patients[$root.activePacient]")
-                            journey-map(:info="$root._data.Patients[$root.activePacient]")
-                
-                    //-show make-appointment
-                        Make Appointment
-                    .content(v-if="$root.currentShowSubBox ==='make-appointment'", key="make-appointment")
-                        .content__top-line.mod--appointment
-                            a(href="#3", @click.prevent="$root.currentShowSubBox = null").content__top-appointment-close
-                                svg.ico-svg.ico-svg__close
-                                    use(xlink:href="#close")
-
-                        .content__box
-                            insurance-verification
-                            make-appointment(
-                            :dropdowns="$root._data.MakeAppointmentDropDownOptions",
-                            :existing-apointment-slots="$root._data.ExistingAppointmentSlots",
-                            :book-now-data="$root._data.BookNowData"
-                            )
+                            .content__box
+                                insurance-verification
+                                make-appointment(
+                                :dropdowns="$root._data.MakeAppointmentDropDownOptions",
+                                :existing-apointment-slots="$root._data.ExistingAppointmentSlots",
+                                :book-now-data="$root._data.BookNowData"
+                                )
