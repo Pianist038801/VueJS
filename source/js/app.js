@@ -55,6 +55,8 @@ var appData = {
   callerTransferLocation: 'NA',
   callerHospital: 'NA',
   isBlank: false,
+  dlgID: null,
+  extension: null,
 };
 
 
@@ -98,6 +100,10 @@ let App = new Vue({
       var url = new URL(window.location.href);
       var tempDNIS = url.searchParams.get("ani");
       tempDNIS = tempDNIS.slice(-10)
+        
+      vm.dlgID = url.searchParams.get('dlg');
+      vm.extension = url.searchParams.get('ext');
+      
       console.log('IFRAME_TempDNIS=', tempDNIS);
 
       axios({method: 'post',

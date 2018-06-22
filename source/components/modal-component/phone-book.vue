@@ -13,7 +13,7 @@
                             .modal-appointment__info-lang
                                 multiselect(
                                 v-model="phoneNumber",
-                                :options="['Urology (214-701-5489)','Radiology (214-212-0912)','Cardiology (972-358-6547)','Anesthesiology (972-891-8656)']",
+                                :options="['Urology (469-899-1224)','Radiology (214-212-0912)','Cardiology (972-358-6547)','Anesthesiology (972-891-8656)']",
                                 @input="",
                                 :searchable="false",
                                 :allowEmpty="false",
@@ -111,6 +111,32 @@
                     else
                     {
                         vm.tempDNIS = response.data.tempDNIS
+                        //Transfer Call
+                        const { dlgID, extension } = this.$root._data;
+                        console.log('DLG=', dlgID, 'extension=', extension);
+                        
+                        let xmls=`<Dialog>\
+                            <requestedAction>TRANSFER_SST</requestedAction>\
+                            <toAddress>91${vm.tempDNIS}</toAddress>\
+                            <targetMediaAddress>${extension}</targetMediaAddress>\
+                            </Dialog>`;
+
+                        var config = {
+                          headers: {'Content-Type': 'application/xml',
+                          'Authorization': 'Basic NzQ5OTM4OjEyMzQ1Ng=='}
+                        };
+
+                        axios.put(
+                            `http://vm-dev-d-fin-a.dev.in.spinsci.com/finesse/api/Dialog/${dlgID}`,
+                            xmls, 
+                            config
+                        )
+                        .then((res) => {
+                            console.log("TRANSFER_CALL_RESPONSE RECEIVED: ", res);
+                        })
+                        .catch((err) => {
+                            console.log("TRANSFER_CALL ERROR: ", err);
+                        })  
                     }
                 });  
             }
