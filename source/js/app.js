@@ -56,6 +56,8 @@ var appData = {
   callerHospital: 'NA',
   isBlank: false,
   dlgID: null,
+  transferredFrom: '',
+  hospital: '',
   extension: null,
 };
 
@@ -143,6 +145,8 @@ let App = new Vue({
                 vm.callerType = responseData.callerType;
                 vm.callerNotes = responseData.notes;
                 vm.activePacient = responseData.patientName.indexOf('Sarah') > -1 ? 1 : 0;
+                vm.callerTransferLocation = responseData.phantom1;
+                vm.callerHospital = responseData.phantom2;
                 vm.releaseTempDNIS(tempDNIS);
               }
                 App.$mount('#app');

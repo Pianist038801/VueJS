@@ -112,30 +112,30 @@
                     {
                         vm.tempDNIS = response.data.tempDNIS
                         //Transfer Call
-                        const { dlgID, extension } = this.$root._data;
+                        const { dlgID, extension } = vm.$root._data;
                         console.log('DLG=', dlgID, 'extension=', extension);
                         
-                        let xmls=`<Dialog>\
-                            <requestedAction>TRANSFER_SST</requestedAction>\
+                        let xmls=`<body>\
+                            <requestedAction>CONSULT_CALL</requestedAction>\
+                            <dialog>${dlgID}</dialog>\
                             <toAddress>91${vm.tempDNIS}</toAddress>\
                             <targetMediaAddress>${extension}</targetMediaAddress>\
-                            </Dialog>`;
-
+                        </body>`
                         var config = {
-                          headers: {'Content-Type': 'application/xml',
-                          'Authorization': 'Basic NzQ5OTM4OjEyMzQ1Ng=='}
-                        };
-
-                        axios.put(
-                            `http://vm-dev-d-fin-a.dev.in.spinsci.com/finesse/api/Dialog/${dlgID}`,
-                            xmls, 
+                            headers: {'Content-Type': 'application/xml'}
+                        };    
+                        axios.post(
+                            'http://10.3.74.118:3456/finesse_api',
+                            xmls,
                             config
                         )
                         .then((res) => {
-                            console.log("TRANSFER_CALL_RESPONSE RECEIVED: ", res);
+                            console.log("TRANSFER_CALL_RESPONSE RECEIVED: ");
+                            console.log(res);
                         })
                         .catch((err) => {
-                            console.log("TRANSFER_CALL ERROR: ", err);
+                            console.log("TRANSFER_CALL ERROR: ");
+                            console.log(err)
                         })  
                     }
                 });  
