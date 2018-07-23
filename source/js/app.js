@@ -59,8 +59,8 @@ var appData = {
   transferredFrom: '',
   hospital: '',
   extension: null,
+  agentID: null,
 };
-
 
 let App = new Vue({
   data: appData,
@@ -105,7 +105,8 @@ let App = new Vue({
         
       vm.dlgID = url.searchParams.get('dlg');
       vm.extension = url.searchParams.get('ext');
-      
+      vm.agentID = url.searchParams.get('agentID');
+
       console.log('IFRAME_TempDNIS=', tempDNIS);
 
       axios({method: 'post',
@@ -116,7 +117,7 @@ let App = new Vue({
       )
       .then(function(response){
           console.log('Get_CallInfo_Axios_Response=', response);
-          Vue.http.get('data/demo-mockup.json') 
+          Vue.http.get('data/demo-mockup.json')
           .then(
             (response1) => {
               console.log(response1);

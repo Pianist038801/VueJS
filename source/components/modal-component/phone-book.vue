@@ -94,7 +94,7 @@
                     notes : this.phoneNote,
                     phantom1 : "",
                     phantom2 : "",
-                    phantom3 : ""
+                    phantom3 : this.$root._data.agentID
                 }
                 console.log(results)
                 axios({method: 'post',
