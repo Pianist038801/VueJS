@@ -27,7 +27,7 @@
             .patient-billing__top-filter
                 multiselect(
                 v-model="cre_patient_name",
-                :options="['John Jacobs', 'Johns Sarah']",
+                :options="['Johns Jacobs', 'Johns Sarah']",
                 :searchable="false",
                 :allowEmpty="false",
                 :showLabels="false",

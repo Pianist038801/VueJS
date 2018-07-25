@@ -5,7 +5,7 @@
                 .case-managment__top-item-label  Hospital Name
                 .case-managment__top-item-box
                     multiselect(
-                    :options=['Mercy Joplin', 'John Jacobs'],
+                    :options=['Mercy Joplin', 'Johns Jacobs'],
                     :searchable="false",
                     :allowEmpty="false",
                     :showLabels="false",

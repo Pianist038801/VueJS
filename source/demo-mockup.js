@@ -2,7 +2,7 @@ module.exports =
   {
     Patients: [
       {
-        Name: 'John Jacobs',
+        Name: 'Johns Jacobs',
         DateOfBirth: '1934-07-01 00:00:00',
         SSN: '***-**-6789',
         PhoneNumber: '+1 214 701 5489',
@@ -28,7 +28,7 @@ module.exports =
           }
         ], // should be same as MakeAppointmentDropDownOptions
         InsuranceVerification: {
-          InsuranceName: 'John Jacobs',
+          InsuranceName: 'Johns Jacobs',
           GroupNum: '#45ABC',
           NetworkNum: '#45ABC',
           PolicyNum: '#022141242',
@@ -133,7 +133,7 @@ module.exports =
           }
         ], // should be same as MakeAppointmentDropDownOptions
         InsuranceVerification: {
-          InsuranceName: 'John Jacobs',
+          InsuranceName: 'Johns Jacobs',
           GroupNum: '#555664422',
           NetworkNum: '#45ABC',
           PolicyNum: '#334422456',
@@ -338,7 +338,7 @@ module.exports =
     NewAppointment: { // row 4 replacement
       StartTime: '1-Jan-1980 10:00:00', // Time Only
       EndTime: '1-Jan-1980 10:30:00', // Time Only
-      Name: 'John Jacobs',
+      Name: 'Johns Jacobs',
       IsOpen: false,
       Facility: 'SpinSci Clinic',
       Provider: 'United Healthcare(UHC Parkway, GA,66552)',

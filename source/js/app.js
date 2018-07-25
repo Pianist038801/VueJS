@@ -1,11 +1,19 @@
 // imports
 // ******************************************
 import Vue from 'vue';
+import Vuex from 'vuex'
+
 import VueResource from 'vue-resource';
 import VueMoment from 'vue-moment'; 
 import {Tabs, Tab} from 'vue-tabs-component';
 import axios from 'axios';
+import Multiselect from '../components/name-select/src/Multiselect.vue';
+import boardBlock from '../components/home/board-block.vue';
+import store from './store.js';
 
+Vue.use(Vuex)
+Vue.use(Multiselect)
+Vue.use(boardBlock);
 Vue.use(VueResource);
 Vue.use(VueMoment);
 Vue.component('tabs', Tabs);
@@ -37,33 +45,40 @@ import paymentConfirmation from "../components/billing/payment-confirmation.vue"
 import paymentResult from "../components/billing/payment-result.vue";
 import phoneBook from "../components/modal-component/phone-book.vue";
 import blankPage from '../components/empty/blank-page.vue';
+import searchPatient from "../components/modal-component/search-patient.vue";
 
 var appData = {
   activePacient: null,
   showImageModal: 0,
   currentShowBox: null,
   currentShowSubBox: null,
+  addNewCallerName: false,
   billItem: null,
   paymentResult: null,
   userIsVerify: false,
   currentShowPhoneBook: false,
+  currentShowSearchPatient: false,
+  newCallerName: '',
   callerName: 'a',
-  callerPhone: 'a',
+  callerPhone: '',
   callerType: 'a',
-  callerNotes: 'a',
+  callerNotes: '',
   callDestination: 'a',
   callerTransferLocation: 'NA',
   callerHospital: 'NA',
+  patientNames: ['a','s'],
+  dropdownCallerName: '',
   isBlank: false,
   dlgID: null,
   transferredFrom: '',
   hospital: '',
   extension: null,
-  agentID: null,
+  agentID: '',
 };
 
 let App = new Vue({
   data: appData,
+  store,
   // router,
   created(){
     let vm = this;
@@ -72,13 +87,33 @@ let App = new Vue({
   },
   mounted() {
     let vm = this;
-    vm.currentShowBox = 'scheduling';
+    vm.activePacient = 0;
+    vm.currentShowBox = 'home';
     vm.spaceWidget =  window.ciscosparkClient();
     Vue.http.get('demo-credentials.json').then((response) => {
       vm.spaceWidget.init(response.data);
     });
   },
   methods: {
+    getCurrentIndexPacient: function(txt) {
+      if(txt == 'add New')
+      {
+        this.newCallerName='';
+        this.addNewCallerName = true;
+      }
+    },
+    onKeyPress: function(event) {
+      if(event.keyCode==13)
+      {
+        this.addNewCallerName = false;
+        if(this.newCallerName=='')
+          return;
+        let temp = this.patientNames.slice(0);
+        temp.splice(1,0,this.newCallerName);
+        this.patientNames = temp;
+        
+      }
+    },
     releaseTempDNIS: function(tempDNIS) {
       axios({method: 'post',
         url: 'http://office.healthcareintegrations.com:8900/releaseTempDNIS',
@@ -122,6 +157,15 @@ let App = new Vue({
             (response1) => {
               console.log(response1);
               let data = response1.body;
+              
+              let array = ['EPIC']; 
+              data.Patients.forEach((item, i) => {
+                  if(item.Category=='EPIC')
+                      array.push(item.Name);
+              });
+              array.push('add New')
+              data.patientNames = array.slice(0);
+
                 appData = Object.assign(appData, data);
                 
                 if(response.data.error){
@@ -168,6 +212,9 @@ let App = new Vue({
       console.log('PHONE_CLICKED: !!!', vm.currentShowPhoneBook )
       vm.currentShowPhoneBook = !vm.currentShowPhoneBook;
     },
+    showSearchPatient: function () {
+      this.currentShowSearchPatient = !this.currentShowSearchPatient
+    },
     openNewWindow(url) {
       let strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
       window.open(url, "CNN_WindowName", strWindowFeatures);
@@ -210,7 +257,10 @@ let App = new Vue({
     paymentConfirmation,
     paymentResult,
     phoneBook,
-    blankPage
+    blankPage,
+    Multiselect,
+    boardBlock,
+    searchPatient
   },
   watch: {
     currentShowBox: function () {

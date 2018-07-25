@@ -315,7 +315,7 @@
   "NewAppointment": {
     "StartTime": "20-Oct-2017 10:00:00",
     "EndTime": "20-Oct-2017 10:30:00",
-    "Name": "John Jacobs",
+    "Name": "Johns Jacobs",
     "IsOpen": false,
     "Facility": "SpinSci Clinic",
     "Provider": "United Healthcare(UHC Parkway, GA,66552)",

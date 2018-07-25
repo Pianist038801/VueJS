@@ -13,7 +13,7 @@
                             .modal-appointment__info-lang
                                 multiselect(
                                 v-model="phoneNumber",
-                                :options="['Urology (469-899-1224)','Radiology (214-212-0912)','Cardiology (972-358-6547)','Anesthesiology (972-891-8656)']",
+                                :options="['Urology (214-701-5489)','Radiology (214-212-0912)','Cardiology (972-358-6547)','Anesthesiology (972-891-8656)']",
                                 @input="",
                                 :searchable="false",
                                 :allowEmpty="false",
@@ -41,7 +41,7 @@
                             textarea(v-model="phoneNote").ui-textarea.ui-textarea--skin-default.ui-textarea--theme-default.mod--sms
 
                             span tempDNIS
-                            input(v-model="tempDNIS")
+                            input(v-model="tempDNIS" readonly)
                 .modal__content-col
                     div().box
                         div().tab-holder

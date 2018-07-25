@@ -4,6 +4,8 @@ header.header
         a.logo__link(href="#3") SpinSci
 
     .header__tabs
+        .header__tabs-item(:class="{'state--active': $root.currentShowBox ==='home'}")
+            a(href="#", @click.prevent="$root.currentShowBox = 'home'").header__tabs-item-link Home
         .header__tabs-item(:class="{'state--active': $root.currentShowBox ==='scheduling'}")
             a(href="#", @click.prevent="$root.currentShowBox = 'scheduling'").header__tabs-item-link Scheduling
         .header__tabs-item(:class="{'state--active': $root.currentShowBox ==='case-managment'}")

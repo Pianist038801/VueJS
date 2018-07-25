@@ -362,6 +362,32 @@
         width: 100%;
         border-spacing: 0;
     }
+    .search-patient__table {
+        width: 100%;
+        margin-top: em(50);
+        border-spacing: 10;
+        border-width: 12;
+
+        td {
+            border-bottom: 2px solid transparent;
+            @extend %breakwords;
+            padding: em(6 4);
+            background-color:  rgb(233, 237, 245);
+        }
+
+        &.state--hold {
+            td {
+                background-color: #f9f9f9;
+            }
+        }
+        
+    }
+    .search-patient__table th {
+        background-color: rgb(107, 154, 208);
+        color: white;
+        font-size: em(22px);
+        padding: em(13 13);    
+    }
     .make-appointment__table-time {
         text-transform: uppercase;
     }
@@ -491,10 +517,11 @@
     }
 
     .modal-appointment__info-lang {
-        margin-top: em(16);
+        margin-right: em(40);
         display: inline-block;
         vertical-align: top;
         min-width: em(200);
+        height: em(40);
     }
 
 

@@ -26,6 +26,7 @@
 <header class="header">
   <h1 class="logo"><a class="logo__link" href="#3">SpinSci</a></h1>
   <div class="header__tabs">
+    <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='home'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'home'">Home</a></div>
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='scheduling'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'scheduling'">Scheduling</a></div>
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='case-managment'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'case-managment'">Case Management</a></div>
     <div class="header__tabs-item" :class="{'state--active': ['billing', 'statement_review','payment_confirmation','payment_result'].indexOf($root.currentShowBox)&gt;=0}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'billing'">Billing</a></div>
@@ -66,28 +67,92 @@
                 </div>
               </transition>
               <transition name="fade" mode="out-in">
-                <div class="content" v-if="$root.currentShowBox ==='scheduling' &amp;&amp; !currentShowSubBox" key="scheduling">
+                <div class="content" v-if="$root.currentShowBox ==='home' &amp;&amp; !currentShowSubBox" key="home">
+                  <h3>Inbound(Option 3 in IVR)  /  Transferred by Agent {{$root._data.agentID}} /</h3>
                   <div class="content__top-line">
-                    <h1 class="title">Caller Information</h1><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = 'make-appointment'">
-                      <svg class="ico-svg ico-svg__plus-round">
-                        <use xlink:href="#plus-round"></use>
+                    <h1 class="title">Caller Information</h1><a class="content__top-action" href="#3" @click.prevent="$root.showSearchPatient()">
+                      <h1 class="title inline-block">Search Patient</h1>
+                      <svg class="ico-svg__search-patient">
+                        <use xlink:href="#search"></use>
                       </svg></a>
                   </div>
+                  <transition name="fade" mode="out-in">
+                    <div class="content">
+                      <div class="content__box">
+                        <search-patient :show="$root.currentShowSearchPatient"></search-patient>
+                      </div>
+                    </div>
+                  </transition>
                   <div class="ccase-managment">
                     <div class="ccase-managment__top">
                       <div class="ccase-managment__top-item"><span class="infoname">Caller Name</span>
-                        <input class="infovalue" :value="$root._data.callerName" readonly>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" v-if="$root._data.addNewCallerName===false" v-model="$root._data.dropdownCallerName" :options="$root._data.patientNames" @input="$root.getCurrentIndexPacient" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
+                        <input class="infovalue" v-if="$root._data.addNewCallerName" v-model="$root._data.newCallerName" :value="$root._data.callerPhone" @keyup="$root.onKeyPress">
                       </div>
                       <div class="ccase-managment__top-item"><span class="infoname">Caller Phone #</span>
                         <input class="infovalue" :value="$root._data.callerPhone" readonly>
                       </div>
                       <div class="ccase-managment__top-item"><span class="infoname">Call Type</span>
-                        <input class="infovalue" :value="$root._data.callerType" readonly>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
                       </div>
-                      <div class="ccase-managment__top-item"><span class="infoname">Transferred from</span>
-                        <input class="infovalue" :value="$root._data.callerTransferLocation" readonly>
+                      <div class="ccase-managment__top-item"><span class="infoname">Other</span>
+                        <input class="infovalue" :value="$root._data.callerHospital" readonly>
                       </div>
-                      <div class="ccase-managment__top-item"><span class="infoname">Hospital</span>
+                    </div>
+                    <div class="ccase-managment__top"><span class="infoname">Notes</span></div>
+                    <div class="ccase-managment__top__bottom">
+                      <textarea class="full-width" :value="$root._data.callerNotes" readonly></textarea>
+                    </div>
+                    <div class="ccase-managment__top_boxes">
+                      <div class="ccase-managment__top-rect inline-block">
+                        <board-block :count="$root.activePacient==0?2:1" :text="'Past Appointments'" :col="'rgb(255,0,0)'"></board-block>
+                      </div>
+                      <div class="ccase-managment__top-rect inline-block">
+                        <board-block :count="$root.activePacient==0?3:8" :text="'Current Appointments'" :col="'green'"></board-block>
+                      </div>
+                      <div class="ccase-managment__top-rect inline-block">
+                        <board-block :count="$root.activePacient==0?2:7" :text="'Future Appointments'" :col="'grey'"></board-block>
+                      </div>
+                      <div class="ccase-managment__top-rect inline-block">
+                        <board-block :count="$root.activePacient==0?4:6" :text="'Cancelled/No Shows'" :col="'pink'"></board-block>
+                      </div>
+                    </div>
+                    <div class="ccase-managment__top_boxes">
+                      <div class="ccase-managment__top-rect inline-block">
+                        <board-block :count="$root.activePacient==0?3:5" :text="'Bills'" :col="'grey'"></board-block>
+                      </div>
+                      <div class="ccase-managment__top-rect inline-block">
+                        <board-block :count="$root.activePacient==0?5:4" :text="'Referrals'" :col="'pink'"></board-block>
+                      </div>
+                      <div class="ccase-managment__top-rect inline-block">
+                        <board-block :count="$root.activePacient==0?7:1" :text="'Outreach'" :col="'rgb(255,0,0)'"></board-block>
+                      </div>
+                      <div class="ccase-managment__top-rect inline-block">
+                        <board-block :count="$root.activePacient==0?6:2" :text="'Inbound'" :col="'green'"></board-block>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__box">
+                    <journey-map :info="$root._data.Patients[$root.activePacient]">   </journey-map>
+                  </div>
+                </div>
+                <div class="content" v-if="$root.currentShowBox ==='scheduling' &amp;&amp; !currentShowSubBox" key="scheduling">
+                  <div class="content__top-line">
+                    <h1 class="title">Caller Information</h1>
+                  </div>
+                  <div class="ccase-managment">
+                    <div class="ccase-managment__top">
+                      <div class="ccase-managment__top-item"><span class="infoname">Caller Name</span>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" v-if="$root._data.addNewCallerName===false" v-model="$root._data.dropdownCallerName" :options="$root._data.patientNames" @input="$root.getCurrentIndexPacient" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
+                        <input class="infovalue" v-if="$root._data.addNewCallerName" v-model="$root._data.newCallerName" :value="$root._data.callerPhone" @keyup="$root.onKeyPress">
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Caller Phone #</span>
+                        <input class="infovalue" :value="$root._data.callerPhone" readonly>
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Call Type</span>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Other</span>
                         <input class="infovalue" :value="$root._data.callerHospital" readonly>
                       </div>
                     </div>
@@ -97,7 +162,10 @@
                     </div>
                   </div>
                   <div class="content__top-line">
-                    <h1 class="title">Patient Schedule</h1>
+                    <h1 class="title">Patient Schedule</h1><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = 'make-appointment'">
+                      <svg class="ico-svg ico-svg__plus-round">
+                        <use xlink:href="#plus-round"></use>
+                      </svg></a>
                   </div>
                   <div class="content__box">
                     <appointment :patients="$root._data.Patients[$root.activePacient]"></appointment>
@@ -105,6 +173,30 @@
                   </div>
                 </div>
                 <div class="content" v-if="$root.currentShowBox ==='case-managment' &amp;&amp; !currentShowSubBox" key="case-managment">
+                  <div class="content__top-line">
+                    <h1 class="title">Caller Information</h1>
+                  </div>
+                  <div class="ccase-managment">
+                    <div class="ccase-managment__top">
+                      <div class="ccase-managment__top-item"><span class="infoname">Caller Name</span>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" v-if="$root._data.addNewCallerName===false" v-model="$root._data.dropdownCallerName" :options="$root._data.patientNames" @input="$root.getCurrentIndexPacient" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
+                        <input class="infovalue" v-if="$root._data.addNewCallerName" v-model="$root._data.newCallerName" :value="$root._data.callerPhone" @keyup="$root.onKeyPress">
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Caller Phone #</span>
+                        <input class="infovalue" :value="$root._data.callerPhone" readonly>
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Call Type</span>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Other</span>
+                        <input class="infovalue" :value="$root._data.callerHospital" readonly>
+                      </div>
+                    </div>
+                    <div class="ccase-managment__top"><span class="infoname">Notes</span></div>
+                    <div class="ccase-managment__top__bottom">
+                      <textarea class="full-width" :value="$root._data.callerNotes" readonly></textarea>
+                    </div>
+                  </div>
                   <div class="content__top-line">
                     <h1 class="title">Case Managment</h1>
                   </div>
@@ -121,18 +213,16 @@
                   <div class="ccase-managment">
                     <div class="ccase-managment__top">
                       <div class="ccase-managment__top-item"><span class="infoname">Caller Name</span>
-                        <input class="infovalue" :value="$root._data.callerName" readonly>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" v-if="$root._data.addNewCallerName===false" v-model="$root._data.dropdownCallerName" :options="$root._data.patientNames" @input="$root.getCurrentIndexPacient" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
+                        <input class="infovalue" v-if="$root._data.addNewCallerName" v-model="$root._data.newCallerName" :value="$root._data.callerPhone" @keyup="$root.onKeyPress">
                       </div>
                       <div class="ccase-managment__top-item"><span class="infoname">Caller Phone #</span>
                         <input class="infovalue" :value="$root._data.callerPhone" readonly>
                       </div>
                       <div class="ccase-managment__top-item"><span class="infoname">Call Type</span>
-                        <input class="infovalue" :value="$root._data.callerType" readonly>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
                       </div>
-                      <div class="ccase-managment__top-item"><span class="infoname">Transferred from</span>
-                        <input class="infovalue" :value="$root._data.callerTransferLocation" readonly>
-                      </div>
-                      <div class="ccase-managment__top-item"><span class="infoname">Hospital</span>
+                      <div class="ccase-managment__top-item"><span class="infoname">Other</span>
                         <input class="infovalue" :value="$root._data.callerHospital" readonly>
                       </div>
                     </div>

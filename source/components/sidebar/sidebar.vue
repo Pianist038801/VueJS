@@ -38,15 +38,16 @@
                     a(:href="'tel:'+pacients[currentPacient].PhoneNumber.replace(/[^0-9]+/g,'')").sidebar__section--info-link
                         | {{ pacients[currentPacient].PhoneNumber}}
             .sidebar__section
+                .sidebar__section--note Address
+                .sidebar__section--info
+                    | {{pacients[currentPacient].Address.Line1}}, {{pacients[currentPacient].Address.Line2}}
+
+            .sidebar__section
                 .sidebar__section--note Primary Care Provider
                 .sidebar__section--info {{ pacients[currentPacient].PrimaryCareProvider.Name}}
                 .sidebar__section--info
                     a(:href="'tel:'+pacients[currentPacient].PrimaryCareProvider.Phone.replace(/[^0-9]+/g,'')").sidebar__section--info-link
                         | {{ pacients[currentPacient].PrimaryCareProvider.Phone}}
-            .sidebar__section
-                .sidebar__section--note Address
-                .sidebar__section--info
-                    | {{pacients[currentPacient].Address.Line1}}, {{pacients[currentPacient].Address.Line2}}
 
             //- show  TreatmentTeam
             .sidebar__section(v-if="pacients[currentPacient].TreatmentTeam.length")
@@ -102,9 +103,8 @@
         },
         data() {
             return {
-                currentPacient: 0,
-                currentPacientName: '',
                 visible: false,
+                patientNames: [],
             }
         },
         methods: {
@@ -122,7 +122,9 @@
                 vm.pacients.forEach((item, i) => {
                     if(item.Name === vm.currentPacientName) {
                         vm.$root.activePacient = i;
-                        vm.currentPacient = i;
+                        //vm.currentPacient = i;
+                        console.log(item.Name + '+' + vm.currentPacientName)
+                        console.log(i);
                     }
                 });
             }
@@ -139,6 +141,26 @@
 
         },
         computed: {
+            currentPacient: {
+                // getter
+                get: function () {
+                return this.$store.state.pacientId;
+                },
+                // setter
+                set: function (newValue) {
+                this.$store.dispatch('setId', newValue)
+                }
+            },
+            currentPacientName: {
+                // getter
+                get: function () {
+                return this.$store.state.pacientName;
+                },
+                // setter
+                set: function (newValue) {
+                this.$store.dispatch('setName', newValue);
+                }
+            },
             // get only
             sizePacients: function () {
 

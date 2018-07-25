@@ -18,6 +18,12 @@
 .ccase-managment__top {
   lost-flex-container: row;
 }
+.ccase-managment__top_boxes {
+  
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
 
 .ccase-managment__top__bottom {
   lost-flex-container: row;
@@ -30,6 +36,9 @@
 
 li {
   margin-bottom: em(10);
+}
+
+.ccase-managment__top-rect {
 }
 
 .ccase-managment__top-item {
@@ -124,6 +133,15 @@ li {
     border-radius: 50%;
     box-shadow: 0.5px 0.8px 5px rgba(0, 0, 0, 0.2);
   }
+  .ico-svg__search-patient {
+    width: em(30);
+    height: em(30);
+    display: inline-block !important;
+    use {
+      @extend %tr-all;
+      fill: #1db7e9;
+    }
+  }
   .ico-svg__plus-close {
     width: em(25);
     height: em(25);
@@ -155,4 +173,9 @@ li {
 
   }
 
+}
+
+.inline-block {
+  display: inline-block !important;
+  max-width: 157px;
 }
