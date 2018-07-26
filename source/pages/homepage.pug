@@ -21,7 +21,6 @@ block content
                     transition(name="fade", mode='out-in')
                         //-show modal for phone-book
                         .content(v-if="$root.currentShowBox ==='home' && !currentShowSubBox", key="home")
-                            h3() Inbound(Option 3 in IVR)  /  Transferred by Agent {{$root._data.agentID}} /
                             .content__top-line
                                 h1.title Caller Information
                                 a(href="#3", @click.prevent="$root.showSearchPatient()").content__top-action
