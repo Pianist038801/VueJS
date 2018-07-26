@@ -5,7 +5,7 @@
             "Errors": null,
 
         "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
-        "Name": "Johns Sarah",
+        "Name": "Grace Paz",
         "DateOfBirth": "2007-12-25 00:00:00",
               "SSN": "***-**-5428",
               "MRN": "3755428",
@@ -28,7 +28,7 @@
         }
         ],
         "InsuranceVerification": {
-        "InsuranceName": "Johns Sarah",
+        "InsuranceName": "Grace Paz",
         "GroupNum": "#45ABC",
         "NetworkNum": "#45ABC",
         "PolicyNum": "#022141242",

@@ -86,7 +86,7 @@
                 this.$refs.modalphone.close()
                 console.log('THIS.CHOSEN=');
                 console.log(this.chosen);
-                if(this.chosen.Name=='Johns Sarah')
+                if(this.chosen.Name=='Grace Paz')
                     store.dispatch('setId', 1)
                 else
                     store.dispatch('setId', 0)

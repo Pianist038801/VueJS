@@ -16,7 +16,7 @@
     <link href="spark-widget/widget-space/main.css" rel="stylesheet">
     <script src="spark-widget/bundle.js"></script>
     <title>Home page</title>
-  </head>
+  <link href="css/style.css?d61f5303f3dfde5d0fa5" rel="stylesheet"></head>
   <body class="l-body ">
     <!-- page-->
     <div class="l-page" id="app">
@@ -68,7 +68,6 @@
               </transition>
               <transition name="fade" mode="out-in">
                 <div class="content" v-if="$root.currentShowBox ==='home' &amp;&amp; !currentShowSubBox" key="home">
-                  <h3>Inbound(Option 3 in IVR)  /  Transferred by Agent {{$root._data.agentID}} /</h3>
                   <div class="content__top-line">
                     <h1 class="title">Caller Information</h1><a class="content__top-action" href="#3" @click.prevent="$root.showSearchPatient()">
                       <h1 class="title inline-block">Search Patient</h1>
@@ -325,5 +324,5 @@
       </div>
     </div>
     <!-- End page-->
-  <script type="text/javascript" src="js/app.js"></script></body>
-</html><script src="http://localhost:8196/socket.io/socket.io.js"></script><script>var socket = io.connect("http://localhost:8196");socket.on("reload", function(){window.location.reload()});</script>
+  <script type="text/javascript" src="js/app.js?d61f5303f3dfde5d0fa5"></script></body>
+</html>

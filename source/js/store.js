@@ -16,7 +16,7 @@ export default new Vuex.Store({
        if(id==0)
         state.pacientName = 'Johns Jacobs'
        else
-        state.pacientName = 'Johns Sarah'
+        state.pacientName = 'Grace Paz'
     },
     setPacientName (state, name) {
       state.pacientName = name

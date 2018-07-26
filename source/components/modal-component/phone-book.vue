@@ -50,11 +50,11 @@
                         div()
                             ul(v-if="showRecent")
                                 li() 972-888-2938
-                                li() Urology (214-701-5489)
+                                li() Urology (469-899-1224)
                                 li() Front Office
                                 li() Cardiology
                             ul(v-if="!showRecent")
-                                li() Urology (214-701-5489)
+                                li() Urology (469-899-1224)
                                 li() Radiology (214-212-0912)
                                 li() Cardiology (972-358-6547)
                                 li() Anesthesiology (972-891-8656)
