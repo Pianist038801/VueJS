@@ -8,8 +8,13 @@ export default new Vuex.Store({
   state: {
     pacientId: 0,
     pacientName: 'Johns Jacobs',
+    referrals: [],
   },
   mutations: {
+    setReferralData(state, referrals){
+      console.log('NEW_REF+', referrals)
+      state.referrals = [...referrals]
+    },
     setPacientId (state,id) {
        // Vue.set(state, 'paciendId', id);
        state.paciendId = id
@@ -27,6 +32,10 @@ export default new Vuex.Store({
     }
   },
   actions: {
+    setReferral({commit, state}, referrals) {
+        commit('setReferralData', referrals);
+        console.log(referrals);
+    },
     setName({commit, state}, name) {
         commit('setPacientName', name);
         console.log('setName', name);

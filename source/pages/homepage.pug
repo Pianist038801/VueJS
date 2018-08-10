@@ -281,6 +281,59 @@ block content
                                 h1.title Huddle Room
                             .content__box
 
+                        //-show Referrals
+                        .content(v-if="$root.currentShowBox ==='referrals' && !currentShowSubBox", key="referrals")
+                            transition(name="fade", mode='out-in')
+                                .content
+                                    .content__box
+                                        detail-referral(:show="$root.currentShowDetailReferral")
+                            transition(name="fade", mode='out-in')
+                                .content
+                                    .content__box
+                                        update-referral(:show="$root.currentShowUpdateReferral")
+                            .content__top-line
+                                h1.title Caller Information
+                            div().ccase-managment
+                                .ccase-managment__top
+                                    .ccase-managment__top-item
+                                        span().infoname Caller Name
+                                        multiselect(
+                                            v-if="$root._data.addNewCallerName===false",
+                                            v-model="$root._data.dropdownCallerName",
+                                            :options="$root._data.patientNames",
+                                            @input="$root.getCurrentIndexPacient",
+                                            :searchable="false",
+                                            :allowEmpty="false",
+                                            :showLabels="false"
+                                        ).ui-multiselect.ui-multiselect--default.inline-block
+                                        input(v-if="$root._data.addNewCallerName", v-model="$root._data.newCallerName", :value="$root._data.callerPhone", @keyup="$root.onKeyPress").infovalue
+                                        
+                                    .ccase-managment__top-item
+                                        span().infoname Caller Phone #
+                                        input(:value="$root._data.callerPhone" readonly).infovalue
+
+                                    .ccase-managment__top-item
+                                        span().infoname Call Type
+                                        multiselect(
+                                            :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
+                                            :searchable="false",
+                                            :allowEmpty="false",
+                                            :showLabels="false"
+                                        ).ui-multiselect.ui-multiselect--default.inline-block
+
+                                    .ccase-managment__top-item
+                                        span().infoname Other
+                                        input(:value="$root._data.callerHospital" readonly).infovalue
+                                .ccase-managment__top
+                                    span().infoname Notes
+                                .ccase-managment__top__bottom
+                                    textarea(:value="$root._data.callerNotes" readonly).full-width
+
+                            .content__top-line
+                                h1.title Referrals
+                            .content__box
+                                referral(:referrals="$root._data.Referrals")
+                                journey-map(:info="$root._data.Patients[$root.activePacient]")
                         //-show patient-information
                         .content(v-if="$root.currentShowSubBox ==='patient-info'", key="patient-info")
                             .content__top-line

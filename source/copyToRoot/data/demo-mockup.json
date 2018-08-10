@@ -7,6 +7,16 @@
     "transferLocation": "NA",
     "hospital": "NA"
   },
+  "referralAppointments" : [
+    {
+      "StartTime": "August 20, 2018",
+      "EndTime": "September 5, 2018"
+    },
+    {
+      "StartTime": "September 5, 2018",
+      "EndTime": "September 6, 2018"
+    }
+  ],
   "callInfos": [
     {
       "tempDNIS": "97223456789",
@@ -31,6 +41,72 @@
       "patientPH": "",
       "patientMRN": "",
       "Notes": ""
+    }
+  ],
+  "Referrals": [
+    {
+      "refID": "9145142519",
+      "patientID": "331325525",
+      "patientName": "Grace Paz",
+      "referredBy": "Kevin Walker",
+      "referredTo": "Chris Walker",
+      "referralType": "Direct",
+      "referredStatus": "Authorized",
+      "businessSegment": "Business1",
+      "serviceArea" : "Dallas",
+      "startDate": "2018/03/02",
+      "endDate": "2018/06/05",
+
+      "refID_External": "222222222",
+      "patientAddress": "3453 T Ave Fort Worth, TX 76179, USA",
+      "diagnoses": "Fever, Pain",
+      "procedures": "",
+      "referredToAddress": "163 Main Street, Dallas, TX",
+      "referredToFacility": "173 Main Street, Dallas, TX",
+
+      "reason": "",
+      "scheduleDate": "",
+      "scheduleStatus": "Pending",
+      "deptID": "",
+      "deptType": "",
+      "locationID": "",
+      "locationType": "",
+      "assignAppointment": false,
+      "appointment": "",
+      "notes": "",
+      "comments": ""
+    },
+    {
+      "refID": "29145142519",
+      "patientID": "2221325525",
+      "patientName": "Johns Jacobs",
+      "referredBy": "Joseph Synder",
+      "referredTo": "Rajiv Sharma",
+      "referralType": "Direct",
+      "referredStatus": "Pending",
+      "businessSegment": "Business1",
+      "serviceArea" : "Dallas",
+      "startDate": "2018/03/02",
+      "endDate": "2018/06/05",
+
+      "refID_External": "51523525325",
+      "patientAddress": "3453 T Ave Fort Worth, TX 76179, USA",
+      "diagnoses": "Cold, Pain",
+      "procedures": "",
+      "referredToAddress": "163 Main Street, Dallas, TX",
+      "referredToFacility": "173 Main Street, Dallas, TX",
+
+      "reason": "",
+      "scheduleDate": "",
+      "scheduleStatus": "Pending",
+      "deptID": "",
+      "deptType": "",
+      "locationID": "",
+      "locationType": "",
+      "assignAppointment": true,
+      "appointment": "",
+      "notes": "",
+      "comments": ""
     }
   ],
   "Patients": [{

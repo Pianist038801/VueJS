@@ -21,6 +21,7 @@ Vue.component('tab', Tab);
 import schedulingPage from "pages/scheduling.vue";
 
 import appointment from "../components/appointment/appointment.vue";
+import referral from "../components/referral/referral.vue";
 import journeyMap from "../components/journey-map/journey-map.vue";
 
 
@@ -46,9 +47,11 @@ import paymentResult from "../components/billing/payment-result.vue";
 import phoneBook from "../components/modal-component/phone-book.vue";
 import blankPage from '../components/empty/blank-page.vue';
 import searchPatient from "../components/modal-component/search-patient.vue";
+import updateReferral from "../components/modal-component/update-referral.vue";
+import detailReferral from "../components/modal-component/detail-referral.vue";
 
-var appData = {
-  activePacient: null,
+let appData = {
+  activePacient: 1,
   showImageModal: 0,
   currentShowBox: null,
   currentShowSubBox: null,
@@ -58,6 +61,8 @@ var appData = {
   userIsVerify: false,
   currentShowPhoneBook: false,
   currentShowSearchPatient: false,
+  currentShowDetailReferral: false,
+  currentShowUpdateReferral: false,
   newCallerName: '',
   callerName: 'a',
   callerPhone: '',
@@ -74,6 +79,7 @@ var appData = {
   hospital: '',
   extension: null,
   agentID: '',
+  referralIndex: 0,
 };
 
 let App = new Vue({
@@ -215,6 +221,14 @@ let App = new Vue({
     showSearchPatient: function () {
       this.currentShowSearchPatient = !this.currentShowSearchPatient
     },
+    showDetailReferral: function (index) {
+      this.referralIndex = index;
+      this.currentShowDetailReferral = !this.currentShowDetailReferral
+    },
+    showUpdateReferral: function (index) {
+      this.referralIndex = index;
+      this.currentShowUpdateReferral = !this.currentShowUpdateReferral
+    },
     openNewWindow(url) {
       let strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
       window.open(url, "CNN_WindowName", strWindowFeatures);
@@ -243,6 +257,7 @@ let App = new Vue({
   components: {
     sidebarPacient,
     appointment,
+    referral,
     journeyMap,
     patientInfo,
     pharmacy,
@@ -260,7 +275,9 @@ let App = new Vue({
     blankPage,
     Multiselect,
     boardBlock,
-    searchPatient
+    searchPatient,
+    updateReferral,
+    detailReferral,
   },
   watch: {
     currentShowBox: function () {
