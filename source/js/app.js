@@ -21,9 +21,11 @@ Vue.component('tab', Tab);
 import schedulingPage from "pages/scheduling.vue";
 
 import appointment from "../components/appointment/appointment.vue";
+import allergies from "../components/allergies/allergies.vue";
+import encounters from "../components/encounters/encounters.vue";
 import referral from "../components/referral/referral.vue";
 import journeyMap from "../components/journey-map/journey-map.vue";
-
+import card from "../components/card/card.vue";
 
 // import css style to app
 import '../scss/main.scss';
@@ -70,9 +72,10 @@ let appData = {
   callerNotes: '',
   callDestination: 'a',
   callerTransferLocation: 'NA',
-  callerHospital: 'NA',
+  callerHospital: '',
   patientNames: ['a','s'],
   dropdownCallerName: '',
+  dropdownCallerType: '',
   isBlank: false,
   dlgID: null,
   transferredFrom: '',
@@ -80,6 +83,7 @@ let appData = {
   extension: null,
   agentID: '',
   referralIndex: 0,
+  epicProcesses: ['Encounter', 'Contracts', 'Assessment', 'Protocol', 'Disposition', 'Care Advice',' Routing'],
 };
 
 let App = new Vue({
@@ -256,7 +260,10 @@ let App = new Vue({
   },
   components: {
     sidebarPacient,
+    card,
     appointment,
+    allergies,
+    encounters,
     referral,
     journeyMap,
     patientInfo,

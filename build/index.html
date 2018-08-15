@@ -16,7 +16,7 @@
     <link href="spark-widget/widget-space/main.css" rel="stylesheet">
     <script src="spark-widget/bundle.js"></script>
     <title>Home page</title>
-  </head>
+  <link href="css/style.css?748508eeb5dd784548e4" rel="stylesheet"></head>
   <body class="l-body ">
     <!-- page-->
     <div class="l-page" id="app">
@@ -30,7 +30,7 @@
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='scheduling'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'scheduling'">Scheduling</a></div>
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='case-managment'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'case-managment'">Case Management</a></div>
     <div class="header__tabs-item" :class="{'state--active': ['billing', 'statement_review','payment_confirmation','payment_result'].indexOf($root.currentShowBox)&gt;=0}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'billing'">Billing</a></div>
-    <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" v-on:click="$root.showSpaceWidget()">Huddle Room</a></div>
+    <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" v-on:click="$root.currentShowBox = 'triage'">Triage</a></div>
     <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'referrals'">Referrals</a></div>
   </div>
   <div class="header__action">
@@ -93,7 +93,7 @@
                         <input class="infovalue" :value="$root._data.callerPhone" readonly>
                       </div>
                       <div class="ccase-managment__top-item"><span class="infoname">Call Type</span>
-                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" v-model="$root._data.dropdownCallerType" :allowEmpty="false" :showLabels="false"></multiselect>
                       </div>
                       <div class="ccase-managment__top-item"><span class="infoname">Other</span>
                         <input class="infovalue" :value="$root._data.callerHospital" readonly>
@@ -105,30 +105,30 @@
                     </div>
                     <div class="ccase-managment__top_boxes">
                       <div class="ccase-managment__top-rect inline-block">
-                        <board-block :count="$root.activePacient==0?2:1" :text="'Past Appointments'" :col="'rgb(255,0,0)'"></board-block>
+                        <board-block :count="$root.activePacient==0?1:1" :text="'Past Appointments'" :col="'rgb(255,0,0)'"></board-block>
                       </div>
                       <div class="ccase-managment__top-rect inline-block">
-                        <board-block :count="$root.activePacient==0?3:8" :text="'Current Appointments'" :col="'green'"></board-block>
+                        <board-block :count="$root.activePacient==0?3:2" :text="'Current Appointments'" :col="'green'"></board-block>
                       </div>
                       <div class="ccase-managment__top-rect inline-block">
-                        <board-block :count="$root.activePacient==0?2:7" :text="'Future Appointments'" :col="'grey'"></board-block>
+                        <board-block :count="$root.activePacient==0?1:1" :text="'Future Appointments'" :col="'grey'"></board-block>
                       </div>
                       <div class="ccase-managment__top-rect inline-block">
-                        <board-block :count="$root.activePacient==0?4:6" :text="'Cancelled/No Shows'" :col="'pink'"></board-block>
+                        <board-block :count="$root.activePacient==0?2:3" :text="'Cancelled/No Shows'" :col="'pink'"></board-block>
                       </div>
                     </div>
                     <div class="ccase-managment__top_boxes">
                       <div class="ccase-managment__top-rect inline-block">
-                        <board-block :count="$root.activePacient==0?3:5" :text="'Bills'" :col="'grey'"></board-block>
+                        <board-block :count="$root.activePacient==0?3:3" :text="'Bills'" :col="'grey'"></board-block>
                       </div>
                       <div class="ccase-managment__top-rect inline-block">
-                        <board-block :count="$root.activePacient==0?5:4" :text="'Referrals'" :col="'pink'"></board-block>
+                        <board-block :count="$root.activePacient==0?2:2" :text="'Referrals'" :col="'pink'"></board-block>
                       </div>
                       <div class="ccase-managment__top-rect inline-block">
-                        <board-block :count="$root.activePacient==0?7:1" :text="'Outreach'" :col="'rgb(255,0,0)'"></board-block>
+                        <board-block :count="$root.activePacient==0?3:2" :text="'Outreach'" :col="'rgb(255,0,0)'"></board-block>
                       </div>
                       <div class="ccase-managment__top-rect inline-block">
-                        <board-block :count="$root.activePacient==0?6:2" :text="'Inbound'" :col="'green'"></board-block>
+                        <board-block :count="$root.activePacient==0?2:4" :text="'Inbound'" :col="'green'"></board-block>
                       </div>
                     </div>
                   </div>
@@ -150,7 +150,7 @@
                         <input class="infovalue" :value="$root._data.callerPhone" readonly>
                       </div>
                       <div class="ccase-managment__top-item"><span class="infoname">Call Type</span>
-                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" v-model="$root._data.dropdownCallerType" :allowEmpty="false" :showLabels="false"></multiselect>
                       </div>
                       <div class="ccase-managment__top-item"><span class="infoname">Other</span>
                         <input class="infovalue" :value="$root._data.callerHospital" readonly>
@@ -186,7 +186,7 @@
                         <input class="infovalue" :value="$root._data.callerPhone" readonly>
                       </div>
                       <div class="ccase-managment__top-item"><span class="infoname">Call Type</span>
-                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" v-model="$root._data.dropdownCallerType" :allowEmpty="false" :showLabels="false"></multiselect>
                       </div>
                       <div class="ccase-managment__top-item"><span class="infoname">Other</span>
                         <input class="infovalue" :value="$root._data.callerHospital" readonly>
@@ -206,6 +206,41 @@
                     <c-managment-incident></c-managment-incident>
                   </div>
                 </div>
+                <div class="content" v-if="$root.currentShowBox ==='triage' &amp;&amp; !currentShowSubBox" key="triage">
+                  <div class="content__top-line">
+                    <h1 class="title">Caller Information</h1>
+                  </div>
+                  <div class="ccase-managment">
+                    <div class="ccase-managment__top">
+                      <div class="ccase-managment__top-item"><span class="infoname">Caller Name</span>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" v-if="$root._data.addNewCallerName===false" v-model="$root._data.dropdownCallerName" :options="$root._data.patientNames" @input="$root.getCurrentIndexPacient" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
+                        <input class="infovalue" v-if="$root._data.addNewCallerName" v-model="$root._data.newCallerName" :value="$root._data.callerPhone" @keyup="$root.onKeyPress">
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Caller Phone #</span>
+                        <input class="infovalue" :value="$root._data.callerPhone" readonly>
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Call Type</span>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" v-model="$root._data.dropdownCallerType" :allowEmpty="false" :showLabels="false"></multiselect>
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Other</span>
+                        <input class="infovalue" :value="$root._data.callerHospital" readonly>
+                      </div>
+                    </div>
+                    <div class="ccase-managment__top"><span class="infoname">Notes</span></div>
+                    <div class="ccase-managment__top__bottom">
+                      <textarea class="full-width" :value="$root._data.callerNotes" readonly></textarea>
+                    </div>
+                  </div>
+                  <div class="content__top-line">
+                    <h1 class="title">Clinical Details</h1>
+                    <multiselect class="ui-multiselect ui-multiselect--default inline-block" v-if="$root._data.addNewCallerName===false" :options="$root._data.epicProcesses" @input="openNewWindow('http://10.3.74.119/openemr/interface/patient_file/encounter/forms.php')" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
+                  </div>
+                  <div class="content__box">
+                    <card :patients="$root._data.Patients[$root.activePacient]"></card>
+                    <allergies :patients="$root._data.Patients[$root.activePacient]"></allergies>
+                    <encounters :patients="$root._data.Patients[$root.activePacient]"></encounters>
+                  </div>
+                </div>
                 <div class="content" v-if="$root.currentShowBox ==='billing' &amp;&amp; !currentShowSubBox" key="billing">
                   <div class="content__top-line">
                     <h1 class="title">Caller Information</h1>
@@ -220,7 +255,7 @@
                         <input class="infovalue" :value="$root._data.callerPhone" readonly>
                       </div>
                       <div class="ccase-managment__top-item"><span class="infoname">Call Type</span>
-                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" v-model="$root._data.dropdownCallerType" :allowEmpty="false" :showLabels="false"></multiselect>
                       </div>
                       <div class="ccase-managment__top-item"><span class="infoname">Other</span>
                         <input class="infovalue" :value="$root._data.callerHospital" readonly>
@@ -323,7 +358,7 @@
                         <input class="infovalue" :value="$root._data.callerPhone" readonly>
                       </div>
                       <div class="ccase-managment__top-item"><span class="infoname">Call Type</span>
-                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" v-model="$root._data.dropdownCallerType" :allowEmpty="false" :showLabels="false"></multiselect>
                       </div>
                       <div class="ccase-managment__top-item"><span class="infoname">Other</span>
                         <input class="infovalue" :value="$root._data.callerHospital" readonly>
@@ -372,5 +407,5 @@
       </div>
     </div>
     <!-- End page-->
-  <script type="text/javascript" src="js/app.js"></script></body>
-</html><script src="http://localhost:8196/socket.io/socket.io.js"></script><script>var socket = io.connect("http://localhost:8196");socket.on("reload", function(){window.location.reload()});</script>
+  <script type="text/javascript" src="js/app.js?748508eeb5dd784548e4"></script></body>
+</html>

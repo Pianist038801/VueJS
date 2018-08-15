@@ -16,19 +16,23 @@ export default new Vuex.Store({
       state.referrals = [...referrals]
     },
     setPacientId (state,id) {
-       // Vue.set(state, 'paciendId', id);
-       state.paciendId = id
-       if(id==0)
-        state.pacientName = 'Johns Jacobs'
-       else
-        state.pacientName = 'Grace Paz'
+      // Vue.set(state, 'paciendId', id);
+      state.paciendId = id
+      if(id==0)
+       state.pacientName = 'Johns Jacobs'
+      if(id==1)
+       state.pacientName = 'Sarah Jones'
+      if(id==2)
+       state.pacientName = 'Grace Paz'
     },
     setPacientName (state, name) {
       state.pacientName = name
       if(name=='Johns Jacobs')
-        state.pacientId = 0;    
-      else
+        state.pacientId = 0;
+      if(name=='Sarah Jones')
         state.pacientId = 1;
+      if(name=='Grace Paz')
+        state.pacientId = 2;
     }
   },
   actions: {

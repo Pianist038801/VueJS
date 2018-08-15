@@ -40,7 +40,9 @@
             .sidebar__section
                 .sidebar__section--note Address
                 .sidebar__section--info
-                    | {{pacients[currentPacient].Address.Line1}}, {{pacients[currentPacient].Address.Line2}}
+                    | {{pacients[currentPacient].Address.Line1}}, 
+                .sidebar__section--info 
+                    | {{pacients[currentPacient].Address.Line2}}
 
             .sidebar__section
                 .sidebar__section--note Primary Care Provider

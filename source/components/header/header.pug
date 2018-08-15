@@ -13,7 +13,7 @@ header.header
         .header__tabs-item(:class="{'state--active': ['billing', 'statement_review','payment_confirmation','payment_result'].indexOf($root.currentShowBox)>=0}")
             a(href="#", @click.prevent="$root.currentShowBox = 'billing'").header__tabs-item-link Billing
         .header__tabs-item()
-            a(href="#", v-on:click = "$root.showSpaceWidget()").header__tabs-item-link Huddle Room
+            a(href="#", v-on:click = "$root.currentShowBox = 'triage'").header__tabs-item-link Triage
         .header__tabs-item()
             a(href="#", @click.prevent="$root.currentShowBox = 'referrals'").header__tabs-item-link Referrals
 

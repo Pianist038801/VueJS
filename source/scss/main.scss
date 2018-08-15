@@ -72,6 +72,10 @@
 .appointment__table td.more-action {
   text-align: center;
 }
+
+.appointment__table td.past {
+  color: grey;
+}
 .sub-popup-menu__list {
   display: none;
   z-index: 400;

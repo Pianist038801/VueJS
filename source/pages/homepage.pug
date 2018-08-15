@@ -55,6 +55,7 @@ block content
                                         multiselect(
                                             :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
                                             :searchable="false",
+                                            v-model="$root._data.dropdownCallerType",
                                             :allowEmpty="false",
                                             :showLabels="false"
                                         ).ui-multiselect.ui-multiselect--default.inline-block
@@ -69,22 +70,22 @@ block content
                             
                                 .ccase-managment__top_boxes
                                     .ccase-managment__top-rect.inline-block
-                                        board-block(:count='$root.activePacient==0?2:1', :text="'Past Appointments'", :col="'rgb(255,0,0)'")
+                                        board-block(:count='$root.activePacient==0?1:1', :text="'Past Appointments'", :col="'rgb(255,0,0)'")
                                     .ccase-managment__top-rect.inline-block
-                                        board-block(:count='$root.activePacient==0?3:8', :text="'Current Appointments'", :col="'green'")
+                                        board-block(:count='$root.activePacient==0?3:2', :text="'Current Appointments'", :col="'green'")
                                     .ccase-managment__top-rect.inline-block
-                                        board-block(:count='$root.activePacient==0?2:7', :text="'Future Appointments'", :col="'grey'")
+                                        board-block(:count='$root.activePacient==0?1:1', :text="'Future Appointments'", :col="'grey'")
                                     .ccase-managment__top-rect.inline-block
-                                        board-block(:count='$root.activePacient==0?4:6', :text="'Cancelled/No Shows'", :col="'pink'")
+                                        board-block(:count='$root.activePacient==0?2:3', :text="'Cancelled/No Shows'", :col="'pink'")
                                 .ccase-managment__top_boxes
                                     .ccase-managment__top-rect.inline-block
-                                        board-block(:count='$root.activePacient==0?3:5', :text="'Bills'", :col="'grey'")
+                                        board-block(:count='$root.activePacient==0?3:3', :text="'Bills'", :col="'grey'")
                                     .ccase-managment__top-rect.inline-block
-                                        board-block(:count='$root.activePacient==0?5:4', :text="'Referrals'", :col="'pink'")
+                                        board-block(:count='$root.activePacient==0?2:2', :text="'Referrals'", :col="'pink'")
                                     .ccase-managment__top-rect.inline-block
-                                        board-block(:count='$root.activePacient==0?7:1', :text="'Outreach'", :col="'rgb(255,0,0)'")
+                                        board-block(:count='$root.activePacient==0?3:2', :text="'Outreach'", :col="'rgb(255,0,0)'")
                                     .ccase-managment__top-rect.inline-block
-                                        board-block(:count='$root.activePacient==0?6:2', :text="'Inbound'", :col="'green'")
+                                        board-block(:count='$root.activePacient==0?2:4', :text="'Inbound'", :col="'green'")
                             .content__box
                                 journey-map(:info="$root._data.Patients[$root.activePacient]")    
 
@@ -116,6 +117,7 @@ block content
                                         multiselect(
                                             :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
                                             :searchable="false",
+                                            v-model="$root._data.dropdownCallerType",
                                             :allowEmpty="false",
                                             :showLabels="false"
                                         ).ui-multiselect.ui-multiselect--default.inline-block
@@ -165,6 +167,7 @@ block content
                                         multiselect(
                                             :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
                                             :searchable="false",
+                                            v-model="$root._data.dropdownCallerType",
                                             :allowEmpty="false",
                                             :showLabels="false"
                                         ).ui-multiselect.ui-multiselect--default.inline-block
@@ -182,7 +185,62 @@ block content
                                 c-managment
                                 c-managment-incidents
                                 c-managment-incident
-                        
+                        //-show triage
+                        .content(v-if="$root.currentShowBox ==='triage' && !currentShowSubBox", key="triage")
+                            
+                            .content__top-line
+                                h1.title Caller Information
+                            div().ccase-managment
+                                .ccase-managment__top
+                                    .ccase-managment__top-item
+                                        span().infoname Caller Name
+                                        multiselect(
+                                            v-if="$root._data.addNewCallerName===false",
+                                            v-model="$root._data.dropdownCallerName",
+                                            :options="$root._data.patientNames",
+                                            @input="$root.getCurrentIndexPacient",
+                                            :searchable="false",
+                                            :allowEmpty="false",
+                                            :showLabels="false"
+                                        ).ui-multiselect.ui-multiselect--default.inline-block
+                                        input(v-if="$root._data.addNewCallerName", v-model="$root._data.newCallerName", :value="$root._data.callerPhone", @keyup="$root.onKeyPress").infovalue
+                                        
+                                    .ccase-managment__top-item
+                                        span().infoname Caller Phone #
+                                        input(:value="$root._data.callerPhone" readonly).infovalue
+
+                                    .ccase-managment__top-item
+                                        span().infoname Call Type
+                                        multiselect(
+                                            :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
+                                            :searchable="false",
+                                            v-model="$root._data.dropdownCallerType",
+                                            :allowEmpty="false",
+                                            :showLabels="false"
+                                        ).ui-multiselect.ui-multiselect--default.inline-block
+
+                                    .ccase-managment__top-item
+                                        span().infoname Other
+                                        input(:value="$root._data.callerHospital" readonly).infovalue
+                                .ccase-managment__top
+                                    span().infoname Notes
+                                .ccase-managment__top__bottom
+                                    textarea(:value="$root._data.callerNotes" readonly).full-width
+
+                            .content__top-line
+                                h1.title Clinical Details
+                                multiselect(
+                                            v-if="$root._data.addNewCallerName===false",
+                                            :options="$root._data.epicProcesses",
+                                            @input="openNewWindow('http://10.3.74.119/openemr/interface/patient_file/encounter/forms.php')",
+                                            :searchable="false",
+                                            :allowEmpty="false",
+                                            :showLabels="false"
+                                        ).ui-multiselect.ui-multiselect--default.inline-block
+                            .content__box
+                                card(:patients="$root._data.Patients[$root.activePacient]")
+                                allergies(:patients="$root._data.Patients[$root.activePacient]")
+                                encounters(:patients="$root._data.Patients[$root.activePacient]")
                         //-show billing
                         .content(v-if="$root.currentShowBox ==='billing' && !currentShowSubBox", key="billing")
                             .content__top-line
@@ -209,11 +267,12 @@ block content
                                     .ccase-managment__top-item
                                         span().infoname Call Type
                                         multiselect(
-                                        :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
-                                        :searchable="false",
-                                        :allowEmpty="false",
-                                        :showLabels="false"
-                                    ).ui-multiselect.ui-multiselect--default.inline-block
+                                            :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
+                                            :searchable="false",
+                                            v-model="$root._data.dropdownCallerType",
+                                            :allowEmpty="false",
+                                            :showLabels="false"
+                                        ).ui-multiselect.ui-multiselect--default.inline-block
 
                                     .ccase-managment__top-item
                                         span().infoname Other
@@ -317,6 +376,7 @@ block content
                                         multiselect(
                                             :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
                                             :searchable="false",
+                                            v-model="$root._data.dropdownCallerType",
                                             :allowEmpty="false",
                                             :showLabels="false"
                                         ).ui-multiselect.ui-multiselect--default.inline-block

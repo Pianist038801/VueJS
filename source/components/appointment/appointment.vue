@@ -5,10 +5,7 @@
                 svg.ico-svg.ico-svg__filter-results-button
                     use(xlink:href="#filter-results-button")
                 span All Appointments
-            .appointment__top-data
-                svg.ico-svg.ico-svg__calendar
-                    use(xlink:href="#calendar")
-                span {{["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][new Date().getMonth()]}} {{new Date().getDate()}}, {{new Date().getFullYear()}}
+            
         table.appointment__table
             tr
                 th Date
@@ -18,7 +15,26 @@
                 th Visit Type
                 th Reason for Visit
                 th Actions
+            
             tr(v-for="(item, index) in patients.PastAppointments")
+                td.past {{ [item.Date, ["M-DD-YYYY HH:mm:ss","D-MMM-YYYY HH:mm:ss"]] | moment("MMM DD, YYYY")}}
+                td.past {{item.Department}}
+                td.past {{ [ item.Time, "HH:mm:ss" ]  | moment("h:mm a") }}
+                td.past {{ item.Provider }}
+                td.past {{ item.VisitType }}
+                td.past {{ item.VisitReason }}
+                td.more-action.past
+                    .sub-popup-menu
+                        .sub-popup-menu__action
+                            svg.ico-svg.ico-svg__more
+                                use(xlink:href="#more")
+                        .sub-popup-menu__list
+                            a(href="#3", @click.prevent="openModalInfo(index)").sub-popup-menu__item More details
+                            a(href="#3").sub-popup-menu__item Reschedule Appointment
+                            a(href="#3").sub-popup-menu__item Cancel Appointment
+                            a(href="#3").sub-popup-menu__item Send Reminder
+                            a(href="#3", @click.prevent="openNewWindow('http://10.3.74.119/openemr/interface/patient_file/encounter/forms.php')").sub-popup-menu__item Show in EPIC
+            tr(v-for="(item, index) in patients.CurrentAppointments")
                 td {{ [item.Date, ["M-DD-YYYY HH:mm:ss","D-MMM-YYYY HH:mm:ss"]] | moment("MMM DD, YYYY")}}
                 td {{item.Department}}
                 td {{ [ item.Time, "HH:mm:ss" ]  | moment("h:mm a") }}
@@ -35,8 +51,7 @@
                             a(href="#3").sub-popup-menu__item Reschedule Appointment
                             a(href="#3").sub-popup-menu__item Cancel Appointment
                             a(href="#3").sub-popup-menu__item Send Reminder
-                            a(href="#3", @click.prevent="openNewWindow('http://10.3.74.119/openemr/interface/patient_file/encounter/forms.php')").sub-popup-menu__item Show in EPIC
-
+                            a(href="#3", @click.prevent="openNewWindow('http://10.3.74.119/openemr/interface/patient_file/encounter/forms.php')").sub-popup-menu__item Show in EPIC    
         modal(ref="modalInfo")
             .modal__content(v-if="currentMoreInfoIndex !== null")
 

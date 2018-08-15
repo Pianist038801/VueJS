@@ -63,7 +63,7 @@
                 .patient-info__title
                     svg.ico-svg.ico-svg__couple
                         use(xlink:href="#couple")
-                    | Marital Status
+                    | Extra Info
                 .patient-info__wrap
                     .patient-info__wrap-coll
                         .patient-info__note Email
