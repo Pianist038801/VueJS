@@ -120,7 +120,19 @@
             },
             getCurrentIndexPacient(){
                 let vm = this;
-                console.log(vm.currentPacientName);
+                console.log('1_currentID=');
+                console.log(vm.currentPacient);
+                const now = new Date();
+                const options = [];
+                console.log('ACTIVE_PATIENT=', this.$root.activePacient);
+                for(let i = 0 ; i < 3; i ++)
+                {
+                    let date = new Date();
+                    date.setDate(date.getDate() - 40 + this.$root.activePacient * 5 + i * 9);
+                    const _name = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear() + ' - 3:00pm';
+                    options.push({id: i, name: _name, type: 'visit'})
+                }
+                vm.$root.journeyOptions = options;
                 vm.pacients.forEach((item, i) => {
                     if(item.Name === vm.currentPacientName) {
                         vm.$root.activePacient = i;

@@ -75,7 +75,7 @@
                 .case-managment__top-item
                     .case-managment__top-item-label Created Dated
                     .case-managment__top-item-box
-                        .case-managment__top-item-box-note 11/9/2016  11:12am
+                        .case-managment__top-item-box-note {{curDate}} 11:12am
 
                 .case-managment__top-item
                     .case-managment__top-item-label Created By
@@ -98,7 +98,11 @@
             Multiselect
         },
         data() {
+            let date = new Date();
+            date.setDate(date.getDate() - 10)
+            const curDate = (parseInt(date.getMonth()) + 1 ) + '/' + date.getDate() + '/' + date.getFullYear() + ' ';
             return {
+                curDate,
                 visible: false,
             }
         },

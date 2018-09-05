@@ -6,7 +6,7 @@
             div(v-for="(item, index) in patients.medicalHistory").card_content_regular {{ item }}
 
         .card
-            div().card__header.red ACTIVE PROBLEMS
+            div().card__header ACTIVE PROBLEMS
             div().card_content_title Problem Names:
             div(v-for="(item, index) in patients.activeProblems").card_content_regular {{ item }}
 
@@ -40,25 +40,25 @@
     .card__header {
         display: flex;
         justify-content: center;
-        color: white;
+        color: black;
         align-items: center;
+        border-style: solid;
+        border-color: grey;
+        border-width: 0px 0px 1px 0px;
         height: em(60);
-        background: #4A655B;
+        background: white;
         font-size: em(20px);
         font-weight: 800;
     }
 
-    .red {
-        background: #B53533;
-    }
     .card_content_title {
-        font-size: em(15px);
+        font-size: em(17px);
         margin: em(25) em(25);
         font-weight: 700;
     }
 
     .card_content_regular {
-        font-size: em(13px);
+        font-size: em(15px);
         margin-left: em(55px);
         margin-bottom: em(35px);
     }

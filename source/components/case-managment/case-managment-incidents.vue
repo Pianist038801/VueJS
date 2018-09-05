@@ -62,7 +62,7 @@
                 td 154
                 td Blanca
                 td 212-223-3343
-                td 11/9/2016 11:12am
+                td {{dates[0]}}
                 td Miller M.D
                 td
                     .sub-popup-menu
@@ -92,7 +92,7 @@
                 td 234
                 td Blanca
                 td 212-223-3343
-                td 11/11/2017 09:30am
+                td {{dates[1]}}
                 td Miller M.D
                 td
                     .sub-popup-menu
@@ -122,7 +122,7 @@
                 td 452
                 td Blanca
                 td 212-223-3343
-                td 01/01/2018 10:45am
+                td {{dates[2]}}
                 td Miller M.D
                 td
                     .sub-popup-menu
@@ -152,7 +152,7 @@
                 td 686
                 td Blanca
                 td 212-223-3343
-                td 12/03/2017 05:26am
+                td {{dates[3]}}
                 td Miller M.D
                 td
                     .sub-popup-menu
@@ -180,8 +180,17 @@
             Multiselect
         },
         data() {
+            const dates = [];
+            const times = [' 09:30 am', ' 03:30 pm', ' 10:30 am', ' 05:30 pm']
+            for(let i = 0; i<4; i++)
+            {
+                let date = new Date();
+                date.setDate(date.getDate() - 50 + 8 * i)
+                dates[i] = (parseInt(date.getMonth()) + 1 ) + '/' + date.getDate() + '/' + date.getFullYear() + times[i];
+            }
             return {
                 visible: false,
+                dates,
             }
         },
         methods: {

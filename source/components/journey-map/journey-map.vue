@@ -4,7 +4,7 @@
 
         .journey-map-selects
             multiselect(
-            :options="options",
+            :options="$root.journeyOptions",
             :searchable="false",
             :allowEmpty="false",
             :showLabels="false",
@@ -12,6 +12,7 @@
             track-by="name",
             label="name",
             v-model="journey_select",
+            @input="clickJourney"
             ).ui-multiselect.ui-multiselect--border
 
         .journey-map__line
@@ -22,7 +23,7 @@
                         .tooltip__note <b>Call type</b>: Appointments
                         .tooltip__note <b>Date/Time</b>: {{journey_select.name}}
                         .tooltip__note <b>Duration</b>:  7 min
-                        .tooltip__note <b>ANI</b>:  +1 214 701 5489
+                        .tooltip__note <b>ANI</b>:  {{info.PhoneNumber}}
                         .tooltip__note <b>Agent ID</b>:  749936
                         .tooltip__note <b>Agent Name</b>:  James King
                         .tooltip__note <b>Survey Score</b>: 3
@@ -48,7 +49,7 @@
                     .tooltip__in
                         .tooltip__note <b>Type</b>: Check in
                         .tooltip__note <b>Check in Time</b>: 3:00pm
-                        .tooltip__note <b>Check in Date</b>: {{this.nextDay(journey_select.name)}}
+                        .tooltip__note <b>Check in Date</b>: {{this.nextDay}}
                         .tooltip__note <b>Physician Name</b>: Mark Williams, MD
                         .tooltip__note <b>Department</b>:
                         .tooltip__note <b>Encounter Created By</b>: Dr. Mark Williams
@@ -78,26 +79,22 @@
         data() {
             return {
                 visible: false,
-
-                options: [
-                    { name: 'January 3, 2018 - 3:00pm', type: 'visit' },
-                    { name: 'March 21, 2018 - 3:00pm', type: 'visit' },
-                    { name: 'April 14, 2018 - 3:00am', type: 'visit' },
-                ],
                 journey_select: {
                     name: 'Select Appointment',
                     type: ''
                 },
+                nextDay: '',
             }
         },
         methods: {
+            clickJourney(data) {
+                let date = new Date();
+                date.setDate(date.getDate() - 40 + this.$root.activePacient * 5 + data.id * 9 + 1);
+                this.nextDay = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
+
+            },
             open() {
             },
-            nextDay(date){
-                if(date=='January 3, 2018 - 3:00pm') return 'January 4, 2018';
-                if(date=='March 21, 2018 - 3:00pm') return 'March 22, 2018';
-                if(date=='April 14, 2018 - 3:00am') return 'April 15, 2018';
-            }
         },
          mounted() {
         },

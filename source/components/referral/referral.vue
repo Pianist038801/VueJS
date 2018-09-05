@@ -48,7 +48,7 @@
                             svg.ico-svg.ico-svg__more
                                 use(xlink:href="#more")
                         .sub-popup-menu__list
-                            a(href="#3", @click.prevent="openNewWindow('http://10.3.74.119/openemr/interface/patient_file/history/encounters.php?billing=1&issue=0&pagesize=20&pagestart=0')").sub-popup-menu__item Show in EPIC
+                            a(href="#3", @click.prevent="openNewWindow($root.epicAddress)").sub-popup-menu__item Show in EPIC
                             a(href="#3", @click.prevent="$root.showDetailReferral(index)").sub-popup-menu__item Show Details
                             a(href="#3", @click.prevent="$root.showUpdateReferral(index)").sub-popup-menu__item Update
 

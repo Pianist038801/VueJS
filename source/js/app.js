@@ -10,6 +10,7 @@ import axios from 'axios';
 import Multiselect from '../components/name-select/src/Multiselect.vue';
 import boardBlock from '../components/home/board-block.vue';
 import store from './store.js';
+import _mockup from '../demo-mockup.js';
 
 Vue.use(Vuex)
 Vue.use(Multiselect)
@@ -53,7 +54,9 @@ import updateReferral from "../components/modal-component/update-referral.vue";
 import detailReferral from "../components/modal-component/detail-referral.vue";
 
 let appData = {
+  epicAddress: 'http://10.3.74.119/openemr/interface/patient_file/encounter/forms.php',
   activePacient: 1,
+  journeyOptions: [],
   showImageModal: 0,
   currentShowBox: null,
   currentShowSubBox: null,
@@ -166,7 +169,7 @@ let App = new Vue({
           .then(
             (response1) => {
               console.log(response1);
-              let data = response1.body;
+              let data = _mockup;
               
               let array = ['EPIC']; 
               data.Patients.forEach((item, i) => {
@@ -316,6 +319,7 @@ function transformToAssocArray( prmstr ) {
 var paramsUrl = getSearchParameters();
 
 let urlData = paramsUrl.data? `data/${paramsUrl.data}`:'data/demo-mockup.json';
+urlData = _mockup;
 
 // Vue.http.get(urlData)
 //   // get access

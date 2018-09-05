@@ -6358,9 +6358,9 @@ module.exports = isArray;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_modal_vue__ = __webpack_require__(84);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1ce5aae4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_modal_vue__ = __webpack_require__(488);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1ce5aae4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_modal_vue__ = __webpack_require__(490);
 function injectStyle (ssrContext) {
-  __webpack_require__(276)
+  __webpack_require__(278)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -19350,36 +19350,39 @@ exports.default = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_name_select_src_Multiselect_vue__ = __webpack_require__(248);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_home_board_block_vue__ = __webpack_require__(473);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__store_js__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_pages_scheduling_vue__ = __webpack_require__(484);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_appointment_appointment_vue__ = __webpack_require__(246);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_allergies_allergies_vue__ = __webpack_require__(460);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_encounters_encounters_vue__ = __webpack_require__(472);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_referral_referral_vue__ = __webpack_require__(482);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_journey_map_journey_map_vue__ = __webpack_require__(247);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_card_card_vue__ = __webpack_require__(467);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__scss_main_scss__ = __webpack_require__(274);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__scss_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__scss_main_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__svg_sprite_svg_strite__ = __webpack_require__(532);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_sidebar_sidebar_vue__ = __webpack_require__(483);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_patient_info_patient_info_vue__ = __webpack_require__(480);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_pharmacy_pharmacy_vue__ = __webpack_require__(481);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_insurance_verification_insurance_verification_vue__ = __webpack_require__(474);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_make_appointment_make_appointment_vue__ = __webpack_require__(475);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_case_managment_case_managment_vue__ = __webpack_require__(470);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_case_managment_case_managment_incidents_vue__ = __webpack_require__(469);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_case_managment_case_managment_incident_vue__ = __webpack_require__(468);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_billing_patient_billing_vue__ = __webpack_require__(462);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_billing_billing_history_vue__ = __webpack_require__(461);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_billing_statement_review_vue__ = __webpack_require__(465);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_billing_payment_confirmation_vue__ = __webpack_require__(463);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_billing_payment_result_vue__ = __webpack_require__(464);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_modal_component_phone_book_vue__ = __webpack_require__(477);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_empty_blank_page_vue__ = __webpack_require__(471);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_modal_component_search_patient_vue__ = __webpack_require__(478);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_modal_component_update_referral_vue__ = __webpack_require__(479);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_modal_component_detail_referral_vue__ = __webpack_require__(476);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__demo_mockup_js__ = __webpack_require__(532);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__demo_mockup_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__demo_mockup_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_pages_scheduling_vue__ = __webpack_require__(484);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_appointment_appointment_vue__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_allergies_allergies_vue__ = __webpack_require__(460);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_encounters_encounters_vue__ = __webpack_require__(472);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_referral_referral_vue__ = __webpack_require__(482);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_journey_map_journey_map_vue__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_card_card_vue__ = __webpack_require__(467);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__scss_main_scss__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__scss_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__scss_main_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__svg_sprite_svg_strite__ = __webpack_require__(533);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_sidebar_sidebar_vue__ = __webpack_require__(483);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_patient_info_patient_info_vue__ = __webpack_require__(480);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_pharmacy_pharmacy_vue__ = __webpack_require__(481);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_insurance_verification_insurance_verification_vue__ = __webpack_require__(474);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_make_appointment_make_appointment_vue__ = __webpack_require__(475);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_case_managment_case_managment_vue__ = __webpack_require__(470);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_case_managment_case_managment_incidents_vue__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_case_managment_case_managment_incident_vue__ = __webpack_require__(468);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_billing_patient_billing_vue__ = __webpack_require__(462);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_billing_billing_history_vue__ = __webpack_require__(461);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_billing_statement_review_vue__ = __webpack_require__(465);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_billing_payment_confirmation_vue__ = __webpack_require__(463);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_billing_payment_result_vue__ = __webpack_require__(464);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_modal_component_phone_book_vue__ = __webpack_require__(477);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_empty_blank_page_vue__ = __webpack_require__(471);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_modal_component_search_patient_vue__ = __webpack_require__(478);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_modal_component_update_referral_vue__ = __webpack_require__(479);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_modal_component_detail_referral_vue__ = __webpack_require__(476);
 // imports
 // ******************************************
+
 
 
 
@@ -19432,7 +19435,9 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].component('tab', __WEBPACK_
 
 
 let appData = {
+  epicAddress: 'http://10.3.74.119/openemr/interface/patient_file/encounter/forms.php',
   activePacient: 1,
+  journeyOptions: [],
   showImageModal: 0,
   currentShowBox: null,
   currentShowSubBox: null,
@@ -19534,7 +19539,7 @@ let App = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
         console.log('Get_CallInfo_Axios_Response=', response);
         __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].http.get('data/demo-mockup.json').then(response1 => {
           console.log(response1);
-          let data = response1.body;
+          let data = __WEBPACK_IMPORTED_MODULE_9__demo_mockup_js___default.a;
 
           let array = ['EPIC'];
           data.Patients.forEach((item, i) => {
@@ -19622,32 +19627,32 @@ let App = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
     }
   },
   components: {
-    sidebarPacient: __WEBPACK_IMPORTED_MODULE_18__components_sidebar_sidebar_vue__["a" /* default */],
-    card: __WEBPACK_IMPORTED_MODULE_15__components_card_card_vue__["a" /* default */],
-    appointment: __WEBPACK_IMPORTED_MODULE_10__components_appointment_appointment_vue__["a" /* default */],
-    allergies: __WEBPACK_IMPORTED_MODULE_11__components_allergies_allergies_vue__["a" /* default */],
-    encounters: __WEBPACK_IMPORTED_MODULE_12__components_encounters_encounters_vue__["a" /* default */],
-    referral: __WEBPACK_IMPORTED_MODULE_13__components_referral_referral_vue__["a" /* default */],
-    journeyMap: __WEBPACK_IMPORTED_MODULE_14__components_journey_map_journey_map_vue__["a" /* default */],
-    patientInfo: __WEBPACK_IMPORTED_MODULE_19__components_patient_info_patient_info_vue__["a" /* default */],
-    pharmacy: __WEBPACK_IMPORTED_MODULE_20__components_pharmacy_pharmacy_vue__["a" /* default */],
-    insuranceVerification: __WEBPACK_IMPORTED_MODULE_21__components_insurance_verification_insurance_verification_vue__["a" /* default */],
-    makeAppointment: __WEBPACK_IMPORTED_MODULE_22__components_make_appointment_make_appointment_vue__["a" /* default */],
-    cManagment: __WEBPACK_IMPORTED_MODULE_23__components_case_managment_case_managment_vue__["a" /* default */],
-    cManagmentIncidents: __WEBPACK_IMPORTED_MODULE_24__components_case_managment_case_managment_incidents_vue__["a" /* default */],
-    cManagmentIncident: __WEBPACK_IMPORTED_MODULE_25__components_case_managment_case_managment_incident_vue__["a" /* default */],
-    patientBilling: __WEBPACK_IMPORTED_MODULE_26__components_billing_patient_billing_vue__["a" /* default */],
-    billingHistory: __WEBPACK_IMPORTED_MODULE_27__components_billing_billing_history_vue__["a" /* default */],
-    statementReview: __WEBPACK_IMPORTED_MODULE_28__components_billing_statement_review_vue__["a" /* default */],
-    paymentConfirmation: __WEBPACK_IMPORTED_MODULE_29__components_billing_payment_confirmation_vue__["a" /* default */],
-    paymentResult: __WEBPACK_IMPORTED_MODULE_30__components_billing_payment_result_vue__["a" /* default */],
-    phoneBook: __WEBPACK_IMPORTED_MODULE_31__components_modal_component_phone_book_vue__["a" /* default */],
-    blankPage: __WEBPACK_IMPORTED_MODULE_32__components_empty_blank_page_vue__["a" /* default */],
+    sidebarPacient: __WEBPACK_IMPORTED_MODULE_19__components_sidebar_sidebar_vue__["a" /* default */],
+    card: __WEBPACK_IMPORTED_MODULE_16__components_card_card_vue__["a" /* default */],
+    appointment: __WEBPACK_IMPORTED_MODULE_11__components_appointment_appointment_vue__["a" /* default */],
+    allergies: __WEBPACK_IMPORTED_MODULE_12__components_allergies_allergies_vue__["a" /* default */],
+    encounters: __WEBPACK_IMPORTED_MODULE_13__components_encounters_encounters_vue__["a" /* default */],
+    referral: __WEBPACK_IMPORTED_MODULE_14__components_referral_referral_vue__["a" /* default */],
+    journeyMap: __WEBPACK_IMPORTED_MODULE_15__components_journey_map_journey_map_vue__["a" /* default */],
+    patientInfo: __WEBPACK_IMPORTED_MODULE_20__components_patient_info_patient_info_vue__["a" /* default */],
+    pharmacy: __WEBPACK_IMPORTED_MODULE_21__components_pharmacy_pharmacy_vue__["a" /* default */],
+    insuranceVerification: __WEBPACK_IMPORTED_MODULE_22__components_insurance_verification_insurance_verification_vue__["a" /* default */],
+    makeAppointment: __WEBPACK_IMPORTED_MODULE_23__components_make_appointment_make_appointment_vue__["a" /* default */],
+    cManagment: __WEBPACK_IMPORTED_MODULE_24__components_case_managment_case_managment_vue__["a" /* default */],
+    cManagmentIncidents: __WEBPACK_IMPORTED_MODULE_25__components_case_managment_case_managment_incidents_vue__["a" /* default */],
+    cManagmentIncident: __WEBPACK_IMPORTED_MODULE_26__components_case_managment_case_managment_incident_vue__["a" /* default */],
+    patientBilling: __WEBPACK_IMPORTED_MODULE_27__components_billing_patient_billing_vue__["a" /* default */],
+    billingHistory: __WEBPACK_IMPORTED_MODULE_28__components_billing_billing_history_vue__["a" /* default */],
+    statementReview: __WEBPACK_IMPORTED_MODULE_29__components_billing_statement_review_vue__["a" /* default */],
+    paymentConfirmation: __WEBPACK_IMPORTED_MODULE_30__components_billing_payment_confirmation_vue__["a" /* default */],
+    paymentResult: __WEBPACK_IMPORTED_MODULE_31__components_billing_payment_result_vue__["a" /* default */],
+    phoneBook: __WEBPACK_IMPORTED_MODULE_32__components_modal_component_phone_book_vue__["a" /* default */],
+    blankPage: __WEBPACK_IMPORTED_MODULE_33__components_empty_blank_page_vue__["a" /* default */],
     Multiselect: __WEBPACK_IMPORTED_MODULE_6__components_name_select_src_Multiselect_vue__["a" /* default */],
     boardBlock: __WEBPACK_IMPORTED_MODULE_7__components_home_board_block_vue__["a" /* default */],
-    searchPatient: __WEBPACK_IMPORTED_MODULE_33__components_modal_component_search_patient_vue__["a" /* default */],
-    updateReferral: __WEBPACK_IMPORTED_MODULE_34__components_modal_component_update_referral_vue__["a" /* default */],
-    detailReferral: __WEBPACK_IMPORTED_MODULE_35__components_modal_component_detail_referral_vue__["a" /* default */]
+    searchPatient: __WEBPACK_IMPORTED_MODULE_34__components_modal_component_search_patient_vue__["a" /* default */],
+    updateReferral: __WEBPACK_IMPORTED_MODULE_35__components_modal_component_update_referral_vue__["a" /* default */],
+    detailReferral: __WEBPACK_IMPORTED_MODULE_36__components_modal_component_detail_referral_vue__["a" /* default */]
   },
   watch: {
     currentShowBox: function () {
@@ -19678,6 +19683,7 @@ function transformToAssocArray(prmstr) {
 var paramsUrl = getSearchParameters();
 
 let urlData = paramsUrl.data ? `data/${paramsUrl.data}` : 'data/demo-mockup.json';
+urlData = __WEBPACK_IMPORTED_MODULE_9__demo_mockup_js___default.a;
 
 // Vue.http.get(urlData)
 //   // get access
@@ -20033,6 +20039,8 @@ module.exports = function bind(fn, thisArg) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_multiselect__);
 //
 //
 //
@@ -20138,30 +20146,158 @@ module.exports = function bind(fn, thisArg) {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
     props: ['patients'],
     components: {
-        modal: __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__["a" /* default */]
+        modal: __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__["a" /* default */],
+        Multiselect: __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default.a
     },
     data() {
         return {
+            showCalendar: false,
+            departmentSelect: '',
+            facilitySelect: '',
+            providerSelect: '',
+            physicianSelect: '',
+            customFormatter: 'd MMMM yyyy',
+            langSelected: 'None',
+            disableSelectLang: true,
+            date: '',
+            showSmsTemplate: false,
+            showEpicTemplate: false,
+            showEmailTemplate: false,
+            showSmsRemind: false,
+
+            calendarClick: false,
             visible: false,
-            currentMoreInfoIndex: null
+            currentAppointment: null,
+            bookNowData: this.$root._data.BookNowData
         };
     },
     methods: {
         open() {},
-
+        showModal(data) {
+            this.currentAppointment = data;
+            this.$refs.modalbook.open();
+        },
         openNewWindow(url) {
             let strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
             window.open(url, "CNN_WindowName", strWindowFeatures);
         },
 
-        openModalInfo(index) {
-            this.currentMoreInfoIndex = index;
+        openModalInfo(data) {
+            this.currentAppointment = data;
             this.$refs.modalInfo.open();
         }
     },
@@ -21074,7 +21210,11 @@ module.exports = function bind(fn, thisArg) {
         Multiselect: __WEBPACK_IMPORTED_MODULE_0_vue_multiselect___default.a
     },
     data() {
+        let date = new Date();
+        date.setDate(date.getDate() - 10);
+        const curDate = parseInt(date.getMonth()) + 1 + '/' + date.getDate() + '/' + date.getFullYear() + ' ';
         return {
+            curDate,
             visible: false
         };
     },
@@ -21274,8 +21414,16 @@ module.exports = function bind(fn, thisArg) {
         Multiselect: __WEBPACK_IMPORTED_MODULE_0_vue_multiselect___default.a
     },
     data() {
+        const dates = [];
+        const times = [' 09:30 am', ' 03:30 pm', ' 10:30 am', ' 05:30 pm'];
+        for (let i = 0; i < 4; i++) {
+            let date = new Date();
+            date.setDate(date.getDate() - 50 + 8 * i);
+            dates[i] = parseInt(date.getMonth()) + 1 + '/' + date.getDate() + '/' + date.getFullYear() + times[i];
+        }
         return {
-            visible: false
+            visible: false,
+            dates
         };
     },
     methods: {
@@ -21597,6 +21745,7 @@ module.exports = function bind(fn, thisArg) {
 //
 //
 //
+//
 
 
 
@@ -21614,21 +21763,20 @@ module.exports = function bind(fn, thisArg) {
     data() {
         return {
             visible: false,
-
-            options: [{ name: 'January 3, 2018 - 3:00pm', type: 'visit' }, { name: 'March 21, 2018 - 3:00pm', type: 'visit' }, { name: 'April 14, 2018 - 3:00am', type: 'visit' }],
             journey_select: {
                 name: 'Select Appointment',
                 type: ''
-            }
+            },
+            nextDay: ''
         };
     },
     methods: {
-        open() {},
-        nextDay(date) {
-            if (date == 'January 3, 2018 - 3:00pm') return 'January 4, 2018';
-            if (date == 'March 21, 2018 - 3:00pm') return 'March 22, 2018';
-            if (date == 'April 14, 2018 - 3:00am') return 'April 15, 2018';
-        }
+        clickJourney(data) {
+            let date = new Date();
+            date.setDate(date.getDate() - 40 + this.$root.activePacient * 5 + data.id * 9 + 1);
+            this.nextDay = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
+        },
+        open() {}
     },
     mounted() {},
     beforeDestroy() {}
@@ -23691,7 +23839,18 @@ __WEBPACK_IMPORTED_MODULE_1_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
         },
         getCurrentIndexPacient() {
             let vm = this;
-            console.log(vm.currentPacientName);
+            console.log('1_currentID=');
+            console.log(vm.currentPacient);
+            const now = new Date();
+            const options = [];
+            console.log('ACTIVE_PATIENT=', this.$root.activePacient);
+            for (let i = 0; i < 3; i++) {
+                let date = new Date();
+                date.setDate(date.getDate() - 40 + this.$root.activePacient * 5 + i * 9);
+                const _name = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear() + ' - 3:00pm';
+                options.push({ id: i, name: _name, type: 'visit' });
+            }
+            vm.$root.journeyOptions = options;
             vm.pacients.forEach((item, i) => {
                 if (item.Name === vm.currentPacientName) {
                     vm.$root.activePacient = i;
@@ -37230,7 +37389,44 @@ return zhTw;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_appointment_vue__ = __webpack_require__(67);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_df06147a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_appointment_vue__ = __webpack_require__(516);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5f3d7aa2_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_appointment_vue__ = __webpack_require__(506);
+function injectStyle (ssrContext) {
+  __webpack_require__(293)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+
+
+/* template */
+
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_appointment_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5f3d7aa2_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_appointment_vue__["a" /* default */],
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+
+/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
+
+
+/***/ }),
+/* 247 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_journey_map_vue__ = __webpack_require__(81);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_d5842a12_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_journey_map_vue__ = __webpack_require__(516);
 function injectStyle (ssrContext) {
   __webpack_require__(301)
 }
@@ -37249,45 +37445,8 @@ var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_appointment_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_df06147a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_appointment_vue__["a" /* default */],
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-
-/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
-
-
-/***/ }),
-/* 247 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_journey_map_vue__ = __webpack_require__(81);
-/* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_280cc088_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_journey_map_vue__ = __webpack_require__(489);
-function injectStyle (ssrContext) {
-  __webpack_require__(277)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-
-
-/* template */
-
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_journey_map_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_280cc088_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_journey_map_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_d5842a12_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_journey_map_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -37304,9 +37463,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Multiselect_vue__ = __webpack_require__(88);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_54ebf8a4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Multiselect_vue__ = __webpack_require__(502);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_54ebf8a4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Multiselect_vue__ = __webpack_require__(503);
 function injectStyle (ssrContext) {
-  __webpack_require__(290)
+  __webpack_require__(291)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -46735,7 +46894,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_b1ade17a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_infoWindow_vue__ = __webpack_require__(513);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_b1ade17a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_infoWindow_vue__ = __webpack_require__(514);
 var normalizeComponent = __webpack_require__(3)
 /* script */
 
@@ -46808,7 +46967,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_13bfbbee_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_placeInput_vue__ = __webpack_require__(486);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_13bfbbee_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_placeInput_vue__ = __webpack_require__(489);
 var normalizeComponent = __webpack_require__(3)
 /* script */
 
@@ -46843,9 +47002,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_streetViewPanoramaImpl_js__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_streetViewPanoramaImpl_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_streetViewPanoramaImpl_js__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_streetViewPanoramaImpl_js__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_streetViewPanoramaImpl_js__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_5f5650e6_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_streetViewPanorama_vue__ = __webpack_require__(505);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_5f5650e6_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_streetViewPanorama_vue__ = __webpack_require__(507);
 function injectStyle (ssrContext) {
-  __webpack_require__(292)
+  __webpack_require__(294)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -46879,9 +47038,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_allergies_vue__ = __webpack_require__(66);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_62ed97ce_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_allergies_vue__ = __webpack_require__(506);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_62ed97ce_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_allergies_vue__ = __webpack_require__(508);
 function injectStyle (ssrContext) {
-  __webpack_require__(293)
+  __webpack_require__(295)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -46916,7 +47075,7 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_billing_history_vue__ = __webpack_require__(68);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2e76a9a0_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_billing_history_vue__ = __webpack_require__(491);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_210e7e26_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_billing_history_vue__ = __webpack_require__(491);
 function injectStyle (ssrContext) {
   __webpack_require__(279)
 }
@@ -46936,7 +47095,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_billing_history_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2e76a9a0_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_billing_history_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_210e7e26_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_billing_history_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -46990,9 +47149,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_payment_confirmation_vue__ = __webpack_require__(70);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4eadc1f0_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_payment_confirmation_vue__ = __webpack_require__(500);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4eadc1f0_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_payment_confirmation_vue__ = __webpack_require__(501);
 function injectStyle (ssrContext) {
-  __webpack_require__(288)
+  __webpack_require__(289)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47027,9 +47186,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_payment_result_vue__ = __webpack_require__(71);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_512ed9a2_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_payment_result_vue__ = __webpack_require__(501);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_512ed9a2_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_payment_result_vue__ = __webpack_require__(502);
 function injectStyle (ssrContext) {
-  __webpack_require__(289)
+  __webpack_require__(290)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47064,9 +47223,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_statement_review_vue__ = __webpack_require__(72);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_417b1cce_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_statement_review_vue__ = __webpack_require__(494);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_417b1cce_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_statement_review_vue__ = __webpack_require__(495);
 function injectStyle (ssrContext) {
-  __webpack_require__(282)
+  __webpack_require__(283)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47101,9 +47260,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_calendar_popup_vue__ = __webpack_require__(73);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_46f1f0c6_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_calendar_popup_vue__ = __webpack_require__(496);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_46f1f0c6_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_calendar_popup_vue__ = __webpack_require__(497);
 function injectStyle (ssrContext) {
-  __webpack_require__(284)
+  __webpack_require__(285)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47138,9 +47297,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_card_vue__ = __webpack_require__(74);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_cac02870_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_card_vue__ = __webpack_require__(514);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1174b562_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_card_vue__ = __webpack_require__(488);
 function injectStyle (ssrContext) {
-  __webpack_require__(299)
+  __webpack_require__(277)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47158,7 +47317,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_card_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_cac02870_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_card_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1174b562_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_card_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -47175,7 +47334,7 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_case_managment_incident_vue__ = __webpack_require__(75);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_19bb9844_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_incident_vue__ = __webpack_require__(487);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0795f025_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_incident_vue__ = __webpack_require__(486);
 function injectStyle (ssrContext) {
   __webpack_require__(275)
 }
@@ -47195,7 +47354,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_case_managment_incident_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_19bb9844_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_incident_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0795f025_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_incident_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -47212,9 +47371,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_case_managment_incidents_vue__ = __webpack_require__(76);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_37672a18_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_incidents_vue__ = __webpack_require__(492);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_104ac2ec_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_incidents_vue__ = __webpack_require__(487);
 function injectStyle (ssrContext) {
-  __webpack_require__(280)
+  __webpack_require__(276)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47232,7 +47391,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_case_managment_incidents_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_37672a18_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_incidents_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_104ac2ec_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_incidents_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -47249,9 +47408,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_case_managment_vue__ = __webpack_require__(77);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7e4ec5ac_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_vue__ = __webpack_require__(510);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7e4ec5ac_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_vue__ = __webpack_require__(511);
 function injectStyle (ssrContext) {
-  __webpack_require__(297)
+  __webpack_require__(298)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47284,7 +47443,7 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_55db2783_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_blank_page_html__ = __webpack_require__(504);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_55db2783_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_blank_page_html__ = __webpack_require__(505);
 var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = null
@@ -47317,9 +47476,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_encounters_vue__ = __webpack_require__(78);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4a0ce72d_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_encounters_vue__ = __webpack_require__(497);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4a0ce72d_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_encounters_vue__ = __webpack_require__(498);
 function injectStyle (ssrContext) {
-  __webpack_require__(285)
+  __webpack_require__(286)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47354,9 +47513,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_board_block_vue__ = __webpack_require__(79);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4bbed15f_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_board_block_vue__ = __webpack_require__(498);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4bbed15f_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_board_block_vue__ = __webpack_require__(499);
 function injectStyle (ssrContext) {
-  __webpack_require__(286)
+  __webpack_require__(287)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47428,9 +47587,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_make_appointment_vue__ = __webpack_require__(82);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_70589151_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_make_appointment_vue__ = __webpack_require__(509);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_70589151_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_make_appointment_vue__ = __webpack_require__(510);
 function injectStyle (ssrContext) {
-  __webpack_require__(296)
+  __webpack_require__(297)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47465,9 +47624,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_detail_referral_vue__ = __webpack_require__(83);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_381f9d36_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_detail_referral_vue__ = __webpack_require__(493);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_381f9d36_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_detail_referral_vue__ = __webpack_require__(494);
 function injectStyle (ssrContext) {
-  __webpack_require__(281)
+  __webpack_require__(282)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47502,9 +47661,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_phone_book_vue__ = __webpack_require__(85);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4d1cf5c7_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_phone_book_vue__ = __webpack_require__(499);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4d1cf5c7_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_phone_book_vue__ = __webpack_require__(500);
 function injectStyle (ssrContext) {
-  __webpack_require__(287)
+  __webpack_require__(288)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47539,9 +47698,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_search_patient_vue__ = __webpack_require__(86);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_44b65718_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_search_patient_vue__ = __webpack_require__(495);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_44b65718_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_search_patient_vue__ = __webpack_require__(496);
 function injectStyle (ssrContext) {
-  __webpack_require__(283)
+  __webpack_require__(284)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47613,9 +47772,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_patient_info_vue__ = __webpack_require__(89);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd88d5a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_patient_info_vue__ = __webpack_require__(511);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd88d5a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_patient_info_vue__ = __webpack_require__(512);
 function injectStyle (ssrContext) {
-  __webpack_require__(298)
+  __webpack_require__(299)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47650,9 +47809,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_pharmacy_vue__ = __webpack_require__(90);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_69afa24e_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_pharmacy_vue__ = __webpack_require__(508);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_69afa24e_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_pharmacy_vue__ = __webpack_require__(509);
 function injectStyle (ssrContext) {
-  __webpack_require__(295)
+  __webpack_require__(296)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47687,9 +47846,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_referral_vue__ = __webpack_require__(91);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5583a3d4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_referral_vue__ = __webpack_require__(503);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5514f9ae_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_referral_vue__ = __webpack_require__(504);
 function injectStyle (ssrContext) {
-  __webpack_require__(291)
+  __webpack_require__(292)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47707,7 +47866,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_referral_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5583a3d4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_referral_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5514f9ae_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_referral_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -47724,9 +47883,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_sidebar_vue__ = __webpack_require__(92);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_668e69d4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__ = __webpack_require__(507);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2f276924_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__ = __webpack_require__(493);
 function injectStyle (ssrContext) {
-  __webpack_require__(294)
+  __webpack_require__(281)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47744,7 +47903,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_sidebar_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_668e69d4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2f276924_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -47761,9 +47920,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_scheduling_vue__ = __webpack_require__(93);
 /* unused harmony reexport namespace */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2b9b6a16_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_scheduling_vue__ = __webpack_require__(490);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2b9b6a16_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_scheduling_vue__ = __webpack_require__(492);
 function injectStyle (ssrContext) {
-  __webpack_require__(278)
+  __webpack_require__(280)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47798,7 +47957,7 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_signIn_vue__ = __webpack_require__(94);
 /* unused harmony reexport namespace */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_ae2535ac_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_signIn_vue__ = __webpack_require__(512);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_ae2535ac_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_signIn_vue__ = __webpack_require__(513);
 var normalizeComponent = __webpack_require__(3)
 /* script */
 
@@ -47830,8 +47989,8 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('label',[_c('span',{domProps:{"textContent":_vm._s(_vm.label)}}),_vm._v(" "),_c('input',{ref:"input",class:_vm.className,attrs:{"type":"text","placeholder":_vm.placeholder}})])}
-var staticRenderFns = []
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"incident"},[_vm._m(0),_c('div',{staticClass:"case-managment"},[_c('div',{staticClass:"case-managment__top"},[_vm._m(1),_c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Issue Status")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":["Work in Progress","Closed","Escalate"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":""}})],1)]),_vm._m(2),_vm._m(3),_vm._m(4),_vm._m(5),_c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Urgent")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":["(1) NO","(2) Yes"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"(1) NO"}})],1)]),_vm._m(6),_vm._m(7),_vm._m(8),_c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v("Created Dated")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v(_vm._s(_vm.curDate)+" 11:12am")])])]),_vm._m(9)])])])}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"incident__title"},[_c('h2',{staticClass:"title"},[_vm._v("Incident No")]),_c('div',{staticClass:"incident__title-num"},[_vm._v("#INC0010047")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Number")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v(" INC0010047")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Workgroup")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("eHospitalist")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Team")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("Team Name")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Hospital")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("STL eHospitalist")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Patient Last Name")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("johnson")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Bed Number")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("154")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v("Caller")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("Blanca")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v("Phone Number")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('a',{staticClass:"case-managment__top-item-box-link",attrs:{"href":"tel:2122234543"}},[_vm._v("+212-223-4543")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v("Created By")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("Miller M.D")])])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
@@ -47840,8 +47999,8 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"incident"},[_vm._m(0),_c('div',{staticClass:"case-managment"},[_c('div',{staticClass:"case-managment__top"},[_vm._m(1),_c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Issue Status")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":["Work in Progress","Closed","Escalate"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":""}})],1)]),_vm._m(2),_vm._m(3),_vm._m(4),_vm._m(5),_c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Urgent")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":["(1) NO","(2) Yes"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"(1) NO"}})],1)]),_vm._m(6),_vm._m(7),_vm._m(8),_vm._m(9),_vm._m(10)])])])}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"incident__title"},[_c('h2',{staticClass:"title"},[_vm._v("Incident No")]),_c('div',{staticClass:"incident__title-num"},[_vm._v("#INC0010047")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Number")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v(" INC0010047")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Workgroup")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("eHospitalist")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Team")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("Team Name")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Hospital")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("STL eHospitalist")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Patient Last Name")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("johnson")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Bed Number")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("154")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v("Caller")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("Blanca")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v("Phone Number")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('a',{staticClass:"case-managment__top-item-box-link",attrs:{"href":"tel:2122234543"}},[_vm._v("+212-223-4543")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v("Created Dated")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("11/9/2016  11:12am")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v("Created By")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("Miller M.D")])])])}]
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"incidents"},[_c('div',{staticClass:"incidents__top-active"},[_c('div',{staticClass:"incidents__top-active-left"},[_vm._m(0),_c('div',{staticClass:"incidents__top-active-search"},[_c('svg',{staticClass:"ico-svg ico-svg__search"},[_c('use',{attrs:{"xlink:href":"#search"}})]),_vm._v("Search")])]),_c('div',{staticClass:"incidents__top-active-icons"},[_c('a',{staticClass:"incidents__top-active-item",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__tune"},[_c('use',{attrs:{"xlink:href":"#tune"}})])]),_c('a',{staticClass:"incidents__top-active-item",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__update"},[_c('use',{attrs:{"xlink:href":"#update"}})])]),_c('a',{staticClass:"incidents__top-active-item",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__cached"},[_c('use',{attrs:{"xlink:href":"#cached"}})])]),_c('a',{staticClass:"incidents__top-active-item",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__delete"},[_c('use',{attrs:{"xlink:href":"#delete"}})])]),_c('a',{staticClass:"incidents__top-active-item",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__arrow-b"},[_c('use',{attrs:{"xlink:href":"#arrow-b"}})])]),_c('a',{staticClass:"incidents__top-active-item",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__arrow-t"},[_c('use',{attrs:{"xlink:href":"#arrow-t"}})])])])]),_c('table',{staticClass:"incidents__table"},[_vm._m(1),_c('tr',[_vm._m(2),_c('td',[_c('a',{staticClass:"incidents__table-edit",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__pen"},[_c('use',{attrs:{"xlink:href":"#pen"}})])])]),_c('td',[_vm._v("Closed")]),_c('td',[_vm._v("eHospitalist")]),_c('td',[_vm._v("Team")]),_c('td',[_vm._v("STL eHospitalist")]),_c('td',[_vm._v("johonson")]),_c('td',[_vm._v("(1) NO")]),_c('td',[_vm._v("154")]),_c('td',[_vm._v("Blanca")]),_c('td',[_vm._v("212-223-3343")]),_c('td',[_vm._v(_vm._s(_vm.dates[0]))]),_c('td',[_vm._v("Miller M.D")]),_c('td',[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__dot-v"},[_c('use',{attrs:{"xlink:href":"#dot-v"}})])]),_vm._m(3)])])]),_c('tr',[_vm._m(4),_c('td',[_c('a',{staticClass:"incidents__table-edit",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__pen"},[_c('use',{attrs:{"xlink:href":"#pen"}})])])]),_c('td',[_vm._v("Closed")]),_c('td',[_vm._v("eHospitalist")]),_c('td',[_vm._v("Team")]),_c('td',[_vm._v("STL eHospitalist")]),_c('td',[_vm._v("Smith")]),_c('td',[_vm._v("(1) NO")]),_c('td',[_vm._v("234")]),_c('td',[_vm._v("Blanca")]),_c('td',[_vm._v("212-223-3343")]),_c('td',[_vm._v(_vm._s(_vm.dates[1]))]),_c('td',[_vm._v("Miller M.D")]),_c('td',[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__dot-v"},[_c('use',{attrs:{"xlink:href":"#dot-v"}})])]),_vm._m(5)])])]),_c('tr',[_vm._m(6),_c('td',[_c('a',{staticClass:"incidents__table-edit",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__pen"},[_c('use',{attrs:{"xlink:href":"#pen"}})])])]),_c('td',[_vm._v("Closed")]),_c('td',[_vm._v("eHospitalist")]),_c('td',[_vm._v("Team")]),_c('td',[_vm._v("STL eHospitalist")]),_c('td',[_vm._v("jones")]),_c('td',[_vm._v("(1) NO")]),_c('td',[_vm._v("452")]),_c('td',[_vm._v("Blanca")]),_c('td',[_vm._v("212-223-3343")]),_c('td',[_vm._v(_vm._s(_vm.dates[2]))]),_c('td',[_vm._v("Miller M.D")]),_c('td',[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__dot-v"},[_c('use',{attrs:{"xlink:href":"#dot-v"}})])]),_vm._m(7)])])]),_c('tr',[_vm._m(8),_c('td',[_c('a',{staticClass:"incidents__table-edit",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__pen"},[_c('use',{attrs:{"xlink:href":"#pen"}})])])]),_c('td',[_vm._v("Closed")]),_c('td',[_vm._v("eHospitalist")]),_c('td',[_vm._v("Team")]),_c('td',[_vm._v("STL eHospitalist")]),_c('td',[_vm._v("Snyder")]),_c('td',[_vm._v("(1) NO")]),_c('td',[_vm._v("686")]),_c('td',[_vm._v("Blanca")]),_c('td',[_vm._v("212-223-3343")]),_c('td',[_vm._v(_vm._s(_vm.dates[3]))]),_c('td',[_vm._v("Miller M.D")]),_c('td',[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__dot-v"},[_c('use',{attrs:{"xlink:href":"#dot-v"}})])]),_vm._m(9)])])])])])}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"incidents__top-active-title"},[_c('div',{staticClass:"title"},[_vm._v("Incidents")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th'),_c('th',[_vm._v("Edit")]),_c('th',[_vm._v("Issue Status")]),_c('th',[_vm._v("Workgroup")]),_c('th',[_vm._v("Team")]),_c('th',[_vm._v("Hospital")]),_c('th',[_vm._v("Patient Last Name")]),_c('th',[_vm._v("Urgent")]),_c('th',[_vm._v("Bed Number")]),_c('th',[_vm._v("Caller")]),_c('th',[_vm._v("Phone Number")]),_c('th',[_vm._v("Created Dated")]),_c('th',[_vm._v("Created By")]),_c('th')])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('td',[_c('div',{staticClass:"ui-checkbox"},[_c('input',{staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-s1","name":"checkbox-s1","type":"checkbox"}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-s1"}})])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Details")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Share")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Archive")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('td',[_c('div',{staticClass:"ui-checkbox"},[_c('input',{staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-s2","name":"checkbox-s1","type":"checkbox"}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-s2"}})])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Details")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Share")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Archive")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('td',[_c('div',{staticClass:"ui-checkbox"},[_c('input',{staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-s3","name":"checkbox-s1","type":"checkbox"}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-s3"}})])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Details")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Share")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Archive")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('td',[_c('div',{staticClass:"ui-checkbox"},[_c('input',{staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-s4","name":"checkbox-s1","type":"checkbox"}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-s4"}})])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Details")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Share")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Archive")])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
@@ -47850,7 +48009,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.is_open),expression:"is_open"}],staticClass:"modal"},[_c('transition',{attrs:{"name":"fade"}},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.is_open),expression:"is_open"}],staticClass:"modal__overlay"})]),_c('transition',{attrs:{"name":"fade"}},[(_vm.visible)?_c('div',{staticClass:"modal__wrapper",on:{"click":_vm._onOverlayClick}},[(_vm.video)?_c('div',{staticClass:"modal__box"},[_c('div',{staticClass:"modal__box-close",on:{"click":_vm.close}},[_c('svg',{staticClass:"ico-svg ico-svg__close"},[_c('use',{attrs:{"xlink:href":"#close"}})])]),_c('div',{staticClass:"modal__box-iframe"},[_c('iframe',{attrs:{"src":_vm.video,"frameborder":"0","webkitallowfullscreen":"webkitallowfullscreen","mozallowfullscreen":"mozallowfullscreen","allowfullscreen":"allowfullscreen"}})])]):_c('div',{staticClass:"modal__box"},[_c('div',{staticClass:"modal__box-close",on:{"click":_vm.close}},[_c('svg',{staticClass:"ico-svg ico-svg__close"},[_c('use',{attrs:{"xlink:href":"#close"}})])]),_vm._t("default")],2)]):_vm._e()])],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"cards"},[_c('div',{staticClass:"card"},[_c('div',{staticClass:"card__header"},[_vm._v("MEDICAL HISTORY")]),_c('div',{staticClass:"card_content_title"},[_vm._v("Diagnosis Names:")]),_vm._l((_vm.patients.medicalHistory),function(item,index){return _c('div',{staticClass:"card_content_regular"},[_vm._v(_vm._s(item))])})],2),_c('div',{staticClass:"card"},[_c('div',{staticClass:"card__header"},[_vm._v("ACTIVE PROBLEMS")]),_c('div',{staticClass:"card_content_title"},[_vm._v("Problem Names:")]),_vm._l((_vm.patients.activeProblems),function(item,index){return _c('div',{staticClass:"card_content_regular"},[_vm._v(_vm._s(item))])})],2)])}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -47860,8 +48019,8 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"journey-map"},[_c('h2',{staticClass:"title mod--journey"},[_vm._v("Patient Journey Map")]),_c('div',{staticClass:"journey-map-selects"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":_vm.options,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Choise an option","track-by":"name","label":"name"},model:{value:(_vm.journey_select),callback:function ($$v) {_vm.journey_select=$$v},expression:"journey_select"}})],1),_c('div',{staticClass:"journey-map__line"},[_c('img',{staticClass:"journey-map__line-userpic",attrs:{"src":_vm.info.PhotoUrl}}),(_vm.journey_select.type!='')?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_vm._m(0),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date/Time")]),_vm._v(": "+_vm._s(_vm.journey_select.name))]),_vm._m(1),_vm._m(2),_vm._m(3),_vm._m(4),_vm._m(5)])]),_c('svg',{staticClass:"ico-svg ico-svg__phone"},[_c('use',{attrs:{"xlink:href":"#phone"}})])]):_vm._e(),(_vm.journey_select.type!='')?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_vm._m(6),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date/Time")]),_vm._v(": "+_vm._s(_vm.journey_select.name))]),_vm._m(7),_vm._m(8),_vm._m(9),_vm._m(10),_vm._m(11)])]),_c('svg',{staticClass:"ico-svg ico-svg__mail"},[_c('use',{attrs:{"xlink:href":"#mail"}})])]):_vm._e(),(_vm.journey_select.type!='')?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_vm._m(12),_vm._m(13),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check in Date")]),_vm._v(": "+_vm._s(this.nextDay(_vm.journey_select.name)))]),_vm._m(14),_vm._m(15),_vm._m(16),_vm._m(17),_vm._m(18)])]),_c('svg',{staticClass:"ico-svg ico-svg__hospital"},[_c('use',{attrs:{"xlink:href":"#hospital"}})])]):_vm._e(),_c('div',{staticClass:"journey-map__line-item-end"})])])}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Appointments")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Duration")]),_vm._v(":  7 min")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("ANI")]),_vm._v(":  +1 214 701 5489")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent ID")]),_vm._v(":  749936")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent Name")]),_vm._v(":  James King")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Survey Score")]),_vm._v(": 3")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Inbound")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("SMS")]),_vm._v(":  Appintment Confimation")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Customet Action")]),_vm._v(": Patient clicked yes")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("SMS Outcome")]),_vm._v(":  Confirmed Appointment")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent ID")]),_vm._v(":  749936")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent Name")]),_vm._v(":  James King")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Type")]),_vm._v(": Check in")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check in Time")]),_vm._v(": 3:00pm")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Physician Name")]),_vm._v(": Mark Williams, MD")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Department")]),_vm._v(":")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Encounter Created By")]),_vm._v(": Dr. Mark Williams")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Encounter Details")]),_vm._v(": Office/OP Visit (15min) XR (5 min)")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check out time")]),_vm._v(":  3:30pm")])}]
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('label',[_c('span',{domProps:{"textContent":_vm._s(_vm.label)}}),_vm._v(" "),_c('input',{ref:"input",class:_vm.className,attrs:{"type":"text","placeholder":_vm.placeholder}})])}
+var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
@@ -47870,7 +48029,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"content"},[_c('div',{staticClass:"content__top-line"},[_c('h1',{staticClass:"title"},[_vm._v("Patient Schedule")]),_c('a',{staticClass:"content__top-action",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__plus-round"},[_c('use',{attrs:{"xlink:href":"#plus-round"}})])])]),_c('div',{staticClass:"content__box"},[_c('appointment',{attrs:{"patients":_vm.$root._data.Patients[_vm.$root.activePacient]}}),_c('journey-map',{attrs:{"info":_vm.$root._data.Patients[_vm.$root.activePacient]}})],1)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.is_open),expression:"is_open"}],staticClass:"modal"},[_c('transition',{attrs:{"name":"fade"}},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.is_open),expression:"is_open"}],staticClass:"modal__overlay"})]),_c('transition',{attrs:{"name":"fade"}},[(_vm.visible)?_c('div',{staticClass:"modal__wrapper",on:{"click":_vm._onOverlayClick}},[(_vm.video)?_c('div',{staticClass:"modal__box"},[_c('div',{staticClass:"modal__box-close",on:{"click":_vm.close}},[_c('svg',{staticClass:"ico-svg ico-svg__close"},[_c('use',{attrs:{"xlink:href":"#close"}})])]),_c('div',{staticClass:"modal__box-iframe"},[_c('iframe',{attrs:{"src":_vm.video,"frameborder":"0","webkitallowfullscreen":"webkitallowfullscreen","mozallowfullscreen":"mozallowfullscreen","allowfullscreen":"allowfullscreen"}})])]):_c('div',{staticClass:"modal__box"},[_c('div',{staticClass:"modal__box-close",on:{"click":_vm.close}},[_c('svg',{staticClass:"ico-svg ico-svg__close"},[_c('use',{attrs:{"xlink:href":"#close"}})])]),_vm._t("default")],2)]):_vm._e()])],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -47880,7 +48039,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"history"},[_vm._m(0),_c('div',{staticClass:"history__top-active"},[_c('div',{staticClass:"patient-billing__top-filter"},[_c('svg',{staticClass:"ico-svg ico-svg"},[_c('use',{attrs:{"xlink:href":"#filter"}})]),_c('div',{staticClass:"filterString"},[_vm._v("Filter Results")])])]),_c('div',{staticClass:"history__top-active"},[_c('div',{staticClass:"patient-billing__top-filter"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":['Unpaid', 'Paid'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Billing Status"},model:{value:(_vm.cre_bill_status),callback:function ($$v) {_vm.cre_bill_status=$$v},expression:"cre_bill_status"}})],1),_c('div',{staticClass:"patient-billing__top-filter"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.cre_batch_id),expression:"cre_batch_id"}],staticClass:"ui-input",attrs:{"placeholder":"Batch ID"},domProps:{"value":(_vm.cre_batch_id)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cre_batch_id=$event.target.value}}}),_c('svg',{staticClass:"ico-svg ico-search"},[_c('use',{attrs:{"xlink:href":"#search"}})])]),_c('div',{staticClass:"patient-billing__top-filter"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":['Johns Jacobs', 'Grace Paz'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Patient Name"},model:{value:(_vm.cre_patient_name),callback:function ($$v) {_vm.cre_patient_name=$$v},expression:"cre_patient_name"}})],1),_c('div',{staticClass:"patient-billing__top-filter"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":['28724351', '25316235'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Patient ID"},model:{value:(_vm.cre_patient_id),callback:function ($$v) {_vm.cre_patient_id=$$v},expression:"cre_patient_id"}})],1),_c('div',{staticClass:"patient-billing__top-filter"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":['United', 'Scattered'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Payer"},model:{value:(_vm.cre_payer),callback:function ($$v) {_vm.cre_payer=$$v},expression:"cre_payer"}})],1),_c('div',{staticClass:"patient-billing__top-filter"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":['eClaims', 'Paper'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Claim Type"},model:{value:(_vm.cre_claim_type),callback:function ($$v) {_vm.cre_claim_type=$$v},expression:"cre_claim_type"}})],1),_c('div',{staticClass:"patient-billing__top-filter"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.cre_date),expression:"cre_date"}],staticClass:"ui-input",attrs:{"placeholder":"Date"},domProps:{"value":(_vm.cre_date)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cre_date=$event.target.value}}}),_c('svg',{staticClass:"ico-svg ico-search"},[_c('use',{attrs:{"xlink:href":"#calendar"}})])])]),_c('table',{staticClass:"history__table"},[_vm._m(1),_vm._l((_vm.history),function(item,index){return ((_vm.cre_bill_status=='' || _vm.cre_bill_status==item.status) && (_vm.cre_batch_id=='' || item.StatementId.toLowerCase().indexOf(_vm.cre_batch_id.toLowerCase())>=0) && (_vm.cre_patient_name=='' || _vm.cre_patient_name==item.PatientName) && (_vm.cre_patient_id=='' || item.PatientId.toLowerCase().indexOf(_vm.cre_patient_id.toLowerCase())>=0) && (_vm.cre_payer=='' || _vm.cre_payer==item.Payer) && (_vm.cre_claim_type=='' || _vm.cre_claim_type==item.ClaimType) && (_vm.cre_date==''))?_c('tr',[_c('td',[_vm._v(_vm._s(item.status))]),_c('td',[_vm._v(_vm._s(item.StatementId))]),_c('td',[_vm._v(_vm._s(item.PatientName))]),_c('td',[_vm._v(_vm._s(item.PatientId))]),_c('td',[_vm._v(_vm._s(item.Payer))]),_c('td',[_vm._v(_vm._s(item.ClaimType))]),_c('td',[_vm._v(_vm._s(item.TotalAmount))]),_c('td',[_vm._v(_vm._s(item.TotalPaidAmount))]),_c('td',[_vm._v(_vm._s(item.Date))]),_c('td',[_c('div',{staticClass:"sub-popup-menu-special",on:{"mouseover":function($event){_vm.overMenu(index)},"mouseout":function($event){_vm.outMenu()}}},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__dot-v"},[_c('use',{attrs:{"xlink:href":"#dot-v"}})])]),(_vm.showMenu==index)?_c('div',{staticClass:"sub-popup-menu__list-special"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.viewBill(index)}}},[_vm._v("View Bill")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.payBill(index)}}},[_vm._v("Pay Bill")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('http://10.3.74.119/openemr/interface/patient_file/history/encounters.php?billing=1&issue=0&pagesize=20&pagestart=0')}}},[_vm._v("View in "+_vm._s(_vm.$root._data.Patients[_vm.$root.activePacient].Category=='EPIC'?'EPIC':"EPIC"))]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.showReminder(index)}}},[_vm._v("Send Reminder")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Print")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('http://uhealthsystem.com/images/content/UMH-statement.jpg')}}},[_vm._v("Download as PDF")])]):_vm._e()])])]):_vm._e()})],2),_c('modal',{ref:"modalbook"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Payment Reminder")]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__calendar"},[_c('use',{attrs:{"xlink:href":"#calendar"}})]),_vm._v(_vm._s(_vm._f("moment")(new Date(),"MMM DD, YYYY"))+" ")])])])]),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showSmsTemplate),expression:"showSmsTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-sms","name":"checkbox-sms","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showSmsTemplate)?_vm._i(_vm.showSmsTemplate,null)>-1:(_vm.showSmsTemplate)},on:{"change":function($event){var $$a=_vm.showSmsTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showSmsTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showSmsTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showSmsTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-sms"}},[_vm._v("Send Text Reminder")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showSmsTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default mod--sms"},[_vm._v("Dear [Patient Name], we are sending this message to remind of a payment.  Your payment is due in two weeks from now.. Regards. ")]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showEmailTemplate),expression:"showEmailTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-email","name":"checkbox-email","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showEmailTemplate)?_vm._i(_vm.showEmailTemplate,null)>-1:(_vm.showEmailTemplate)},on:{"change":function($event){var $$a=_vm.showEmailTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showEmailTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showEmailTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showEmailTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-email"}},[_vm._v("Send Email Reminder")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showEmailTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"},[_vm._v("Email Confirmation Template")]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showSmsRemind),expression:"showSmsRemind"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-smsremind","name":"checkbox-smsremind","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showSmsRemind)?_vm._i(_vm.showSmsRemind,null)>-1:(_vm.showSmsRemind)},on:{"change":function($event){var $$a=_vm.showSmsRemind,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showSmsRemind=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showSmsRemind=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showSmsRemind=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-smsremind"}},[_vm._v("Send SMS reminder")])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showSmsRemind)?_c('div',{staticClass:"modal-appointment__remind-days"},[_c('input',{staticClass:"ui-input ui-input--skin-default ui-input--theme-default",attrs:{"type":"text","value":"2"}}),_vm._v("days before bill is due.")]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalbook.close()}}},[_vm._v("CANCEL")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.sendReminder}},[_vm._v("SEND ")])])])])],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"history"},[_vm._m(0),_c('div',{staticClass:"history__top-active"},[_c('div',{staticClass:"patient-billing__top-filter"},[_c('svg',{staticClass:"ico-svg ico-svg"},[_c('use',{attrs:{"xlink:href":"#filter"}})]),_c('div',{staticClass:"filterString"},[_vm._v("Filter Results")])])]),_c('div',{staticClass:"history__top-active"},[_c('div',{staticClass:"patient-billing__top-filter"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":['Unpaid', 'Paid'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Billing Status"},model:{value:(_vm.cre_bill_status),callback:function ($$v) {_vm.cre_bill_status=$$v},expression:"cre_bill_status"}})],1),_c('div',{staticClass:"patient-billing__top-filter"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.cre_batch_id),expression:"cre_batch_id"}],staticClass:"ui-input",attrs:{"placeholder":"Batch ID"},domProps:{"value":(_vm.cre_batch_id)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cre_batch_id=$event.target.value}}}),_c('svg',{staticClass:"ico-svg ico-search"},[_c('use',{attrs:{"xlink:href":"#search"}})])]),_c('div',{staticClass:"patient-billing__top-filter"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":['Johns Jacobs', 'Grace Paz'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Patient Name"},model:{value:(_vm.cre_patient_name),callback:function ($$v) {_vm.cre_patient_name=$$v},expression:"cre_patient_name"}})],1),_c('div',{staticClass:"patient-billing__top-filter"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":['28724351', '25316235'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Patient ID"},model:{value:(_vm.cre_patient_id),callback:function ($$v) {_vm.cre_patient_id=$$v},expression:"cre_patient_id"}})],1),_c('div',{staticClass:"patient-billing__top-filter"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":['United', 'Scattered'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Payer"},model:{value:(_vm.cre_payer),callback:function ($$v) {_vm.cre_payer=$$v},expression:"cre_payer"}})],1),_c('div',{staticClass:"patient-billing__top-filter"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":['eClaims', 'Paper'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Claim Type"},model:{value:(_vm.cre_claim_type),callback:function ($$v) {_vm.cre_claim_type=$$v},expression:"cre_claim_type"}})],1),_c('div',{staticClass:"patient-billing__top-filter"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.cre_date),expression:"cre_date"}],staticClass:"ui-input",attrs:{"placeholder":"Date"},domProps:{"value":(_vm.cre_date)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cre_date=$event.target.value}}}),_c('svg',{staticClass:"ico-svg ico-search"},[_c('use',{attrs:{"xlink:href":"#calendar"}})])])]),_c('table',{staticClass:"history__table"},[_vm._m(1),_vm._l((_vm.history),function(item,index){return ((_vm.cre_bill_status=='' || _vm.cre_bill_status==item.status) && (_vm.cre_batch_id=='' || item.StatementId.toLowerCase().indexOf(_vm.cre_batch_id.toLowerCase())>=0) && (_vm.cre_patient_name=='' || _vm.cre_patient_name==item.PatientName) && (_vm.cre_patient_id=='' || item.PatientId.toLowerCase().indexOf(_vm.cre_patient_id.toLowerCase())>=0) && (_vm.cre_payer=='' || _vm.cre_payer==item.Payer) && (_vm.cre_claim_type=='' || _vm.cre_claim_type==item.ClaimType) && (_vm.cre_date==''))?_c('tr',[_c('td',[_vm._v(_vm._s(item.status))]),_c('td',[_vm._v(_vm._s(item.StatementId))]),_c('td',[_vm._v(_vm._s(item.PatientName))]),_c('td',[_vm._v(_vm._s(item.PatientId))]),_c('td',[_vm._v(_vm._s(item.Payer))]),_c('td',[_vm._v(_vm._s(item.ClaimType))]),_c('td',[_vm._v(_vm._s(item.TotalAmount))]),_c('td',[_vm._v(_vm._s(item.TotalPaidAmount))]),_c('td',[_vm._v(_vm._s(item.Date))]),_c('td',[_c('div',{staticClass:"sub-popup-menu-special",on:{"mouseover":function($event){_vm.overMenu(index)},"mouseout":function($event){_vm.outMenu()}}},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__dot-v"},[_c('use',{attrs:{"xlink:href":"#dot-v"}})])]),(_vm.showMenu==index)?_c('div',{staticClass:"sub-popup-menu__list-special"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.viewBill(index)}}},[_vm._v("View Bill")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.payBill(index)}}},[_vm._v("Pay Bill")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow(_vm.$root.epicAddress)}}},[_vm._v("View in "+_vm._s(_vm.$root._data.Patients[_vm.$root.activePacient].Category=='EPIC'?'EPIC':"EPIC"))]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.showReminder(index)}}},[_vm._v("Send Reminder")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Print")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('http://uhealthsystem.com/images/content/UMH-statement.jpg')}}},[_vm._v("Download as PDF")])]):_vm._e()])])]):_vm._e()})],2),_c('modal',{ref:"modalbook"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Payment Reminder")]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__calendar"},[_c('use',{attrs:{"xlink:href":"#calendar"}})]),_vm._v(_vm._s(_vm._f("moment")(new Date(),"MMM DD, YYYY"))+" ")])])])]),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showSmsTemplate),expression:"showSmsTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-sms","name":"checkbox-sms","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showSmsTemplate)?_vm._i(_vm.showSmsTemplate,null)>-1:(_vm.showSmsTemplate)},on:{"change":function($event){var $$a=_vm.showSmsTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showSmsTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showSmsTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showSmsTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-sms"}},[_vm._v("Send Text Reminder")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showSmsTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default mod--sms"},[_vm._v("Dear [Patient Name], we are sending this message to remind of a payment.  Your payment is due in two weeks from now.. Regards. ")]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showEmailTemplate),expression:"showEmailTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-email","name":"checkbox-email","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showEmailTemplate)?_vm._i(_vm.showEmailTemplate,null)>-1:(_vm.showEmailTemplate)},on:{"change":function($event){var $$a=_vm.showEmailTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showEmailTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showEmailTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showEmailTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-email"}},[_vm._v("Send Email Reminder")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showEmailTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"},[_vm._v("Email Confirmation Template")]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showSmsRemind),expression:"showSmsRemind"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-smsremind","name":"checkbox-smsremind","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showSmsRemind)?_vm._i(_vm.showSmsRemind,null)>-1:(_vm.showSmsRemind)},on:{"change":function($event){var $$a=_vm.showSmsRemind,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showSmsRemind=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showSmsRemind=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showSmsRemind=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-smsremind"}},[_vm._v("Send SMS reminder")])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showSmsRemind)?_c('div',{staticClass:"modal-appointment__remind-days"},[_c('input',{staticClass:"ui-input ui-input--skin-default ui-input--theme-default",attrs:{"type":"text","value":"2"}}),_vm._v("days before bill is due.")]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalbook.close()}}},[_vm._v("CANCEL")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.sendReminder}},[_vm._v("SEND ")])])])])],1)}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"history__top-active"},[_c('div',{staticClass:"history__top-active-left"},[_c('div',{staticClass:"history__top-active-title"},[_c('div',{staticClass:"title"},[_vm._v("Billing History")])])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th',[_vm._v("Billing Status")]),_c('th',[_vm._v("Statement ID")]),_c('th',[_vm._v("Patient Name")]),_c('th',[_vm._v("Patient ID")]),_c('th',[_vm._v("Payer")]),_c('th',[_vm._v("Claim Type")]),_c('th',[_vm._v("Total Amount")]),_c('th',[_vm._v("Total Paid Amount")]),_c('th',[_vm._v("Created Date")]),_c('th',[_vm._v("Action")])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -47890,153 +48049,13 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"incidents"},[_c('div',{staticClass:"incidents__top-active"},[_c('div',{staticClass:"incidents__top-active-left"},[_vm._m(0),_c('div',{staticClass:"incidents__top-active-search"},[_c('svg',{staticClass:"ico-svg ico-svg__search"},[_c('use',{attrs:{"xlink:href":"#search"}})]),_vm._v("Search")])]),_c('div',{staticClass:"incidents__top-active-icons"},[_c('a',{staticClass:"incidents__top-active-item",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__tune"},[_c('use',{attrs:{"xlink:href":"#tune"}})])]),_c('a',{staticClass:"incidents__top-active-item",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__update"},[_c('use',{attrs:{"xlink:href":"#update"}})])]),_c('a',{staticClass:"incidents__top-active-item",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__cached"},[_c('use',{attrs:{"xlink:href":"#cached"}})])]),_c('a',{staticClass:"incidents__top-active-item",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__delete"},[_c('use',{attrs:{"xlink:href":"#delete"}})])]),_c('a',{staticClass:"incidents__top-active-item",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__arrow-b"},[_c('use',{attrs:{"xlink:href":"#arrow-b"}})])]),_c('a',{staticClass:"incidents__top-active-item",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__arrow-t"},[_c('use',{attrs:{"xlink:href":"#arrow-t"}})])])])]),_c('table',{staticClass:"incidents__table"},[_vm._m(1),_c('tr',[_vm._m(2),_c('td',[_c('a',{staticClass:"incidents__table-edit",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__pen"},[_c('use',{attrs:{"xlink:href":"#pen"}})])])]),_c('td',[_vm._v("Closed")]),_c('td',[_vm._v("eHospitalist")]),_c('td',[_vm._v("Team")]),_c('td',[_vm._v("STL eHospitalist")]),_c('td',[_vm._v("johonson")]),_c('td',[_vm._v("(1) NO")]),_c('td',[_vm._v("154")]),_c('td',[_vm._v("Blanca")]),_c('td',[_vm._v("212-223-3343")]),_c('td',[_vm._v("11/9/2016 11:12am")]),_c('td',[_vm._v("Miller M.D")]),_c('td',[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__dot-v"},[_c('use',{attrs:{"xlink:href":"#dot-v"}})])]),_vm._m(3)])])]),_c('tr',[_vm._m(4),_c('td',[_c('a',{staticClass:"incidents__table-edit",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__pen"},[_c('use',{attrs:{"xlink:href":"#pen"}})])])]),_c('td',[_vm._v("Closed")]),_c('td',[_vm._v("eHospitalist")]),_c('td',[_vm._v("Team")]),_c('td',[_vm._v("STL eHospitalist")]),_c('td',[_vm._v("Smith")]),_c('td',[_vm._v("(1) NO")]),_c('td',[_vm._v("234")]),_c('td',[_vm._v("Blanca")]),_c('td',[_vm._v("212-223-3343")]),_c('td',[_vm._v("11/11/2017 09:30am")]),_c('td',[_vm._v("Miller M.D")]),_c('td',[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__dot-v"},[_c('use',{attrs:{"xlink:href":"#dot-v"}})])]),_vm._m(5)])])]),_c('tr',[_vm._m(6),_c('td',[_c('a',{staticClass:"incidents__table-edit",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__pen"},[_c('use',{attrs:{"xlink:href":"#pen"}})])])]),_c('td',[_vm._v("Closed")]),_c('td',[_vm._v("eHospitalist")]),_c('td',[_vm._v("Team")]),_c('td',[_vm._v("STL eHospitalist")]),_c('td',[_vm._v("jones")]),_c('td',[_vm._v("(1) NO")]),_c('td',[_vm._v("452")]),_c('td',[_vm._v("Blanca")]),_c('td',[_vm._v("212-223-3343")]),_c('td',[_vm._v("01/01/2018 10:45am")]),_c('td',[_vm._v("Miller M.D")]),_c('td',[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__dot-v"},[_c('use',{attrs:{"xlink:href":"#dot-v"}})])]),_vm._m(7)])])]),_c('tr',[_vm._m(8),_c('td',[_c('a',{staticClass:"incidents__table-edit",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__pen"},[_c('use',{attrs:{"xlink:href":"#pen"}})])])]),_c('td',[_vm._v("Closed")]),_c('td',[_vm._v("eHospitalist")]),_c('td',[_vm._v("Team")]),_c('td',[_vm._v("STL eHospitalist")]),_c('td',[_vm._v("Snyder")]),_c('td',[_vm._v("(1) NO")]),_c('td',[_vm._v("686")]),_c('td',[_vm._v("Blanca")]),_c('td',[_vm._v("212-223-3343")]),_c('td',[_vm._v("12/03/2017 05:26am")]),_c('td',[_vm._v("Miller M.D")]),_c('td',[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__dot-v"},[_c('use',{attrs:{"xlink:href":"#dot-v"}})])]),_vm._m(9)])])])])])}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"incidents__top-active-title"},[_c('div',{staticClass:"title"},[_vm._v("Incidents")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th'),_c('th',[_vm._v("Edit")]),_c('th',[_vm._v("Issue Status")]),_c('th',[_vm._v("Workgroup")]),_c('th',[_vm._v("Team")]),_c('th',[_vm._v("Hospital")]),_c('th',[_vm._v("Patient Last Name")]),_c('th',[_vm._v("Urgent")]),_c('th',[_vm._v("Bed Number")]),_c('th',[_vm._v("Caller")]),_c('th',[_vm._v("Phone Number")]),_c('th',[_vm._v("Created Dated")]),_c('th',[_vm._v("Created By")]),_c('th')])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('td',[_c('div',{staticClass:"ui-checkbox"},[_c('input',{staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-s1","name":"checkbox-s1","type":"checkbox"}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-s1"}})])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Details")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Share")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Archive")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('td',[_c('div',{staticClass:"ui-checkbox"},[_c('input',{staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-s2","name":"checkbox-s1","type":"checkbox"}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-s2"}})])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Details")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Share")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Archive")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('td',[_c('div',{staticClass:"ui-checkbox"},[_c('input',{staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-s3","name":"checkbox-s1","type":"checkbox"}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-s3"}})])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Details")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Share")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Archive")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('td',[_c('div',{staticClass:"ui-checkbox"},[_c('input',{staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-s4","name":"checkbox-s1","type":"checkbox"}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-s4"}})])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Details")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Share")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Archive")])])}]
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"content"},[_c('div',{staticClass:"content__top-line"},[_c('h1',{staticClass:"title"},[_vm._v("Patient Schedule")]),_c('a',{staticClass:"content__top-action",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__plus-round"},[_c('use',{attrs:{"xlink:href":"#plus-round"}})])])]),_c('div',{staticClass:"content__box"},[_c('appointment',{attrs:{"patients":_vm.$root._data.Patients[_vm.$root.activePacient]}}),_c('journey-map',{attrs:{"info":_vm.$root._data.Patients[_vm.$root.activePacient]}})],1)])}
+var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
 /* 493 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('modal',{ref:"modalphone"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Patient Referral Details ")]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referral Id    ")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].refID}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("External Referral ID")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].refID_External}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referral Auth Start Date")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].startDate}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referral Auth End Date")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].endDate}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Patient Id    ")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].patientID}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Patient Name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].patientName}})]),_c('div',{staticClass:"referral__detail-field-patient-address"},[_c('span',{staticClass:"infoname_address"},[_vm._v("Patient Address")]),_c('input',{staticClass:"infovalue-patient-address",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].patientAddress}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referral Type")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referralType}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referral Status")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referredStatus}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Diagnoses")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].diagnoses}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("procedures")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].procedures}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referred by provider name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referredBy}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referred to provider name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referredTo}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referred to provider address")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referredToAddress}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referred to facility address")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referredToFacility}})])])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":_vm.onClose}},[_vm._v("Ok")])])])])}
-var staticRenderFns = []
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 494 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"statement"},[_c('div',{staticClass:"statement__top-active"},[_c('div',{staticClass:"statement__top-active-left"},[_c('div',{staticClass:"statement__top-active-title"},[_c('div',{staticClass:"span"},[_vm._v("Statement: "+_vm._s(_vm.item.StatementId))])])])]),_c('div',{staticClass:"statement__top-active"},[_c('div',{staticClass:"statement__top-active-left"},[_c('div',{staticClass:"statement__top-active-title"},[_c('div',{staticClass:"title"},[_vm._v("Payment Due Date: "+_vm._s(_vm.item.Date))])])])]),_c('table',{staticClass:"statement__table"},[_vm._m(0),_vm._l((_vm.item.reviews),function(review,index){return _c('tr',[_c('td',[_vm._v(_vm._s(review.date))]),_c('td',[_vm._v(_vm._s(review.description))]),_c('td',[_vm._v(_vm._s(review.amount))]),_c('td',[_vm._v(_vm._s(review.insurance))]),_c('td',[_vm._v(_vm._s(review.currentBalance))]),_c('td',[_vm._v(_vm._s(review.lineItem))])])}),_c('tr',[_c('td'),_c('td',[_vm._v("ENCOUNTER TOTAL")]),_c('td',[_vm._v(_vm._s(_vm.item.total.amount))]),_c('td',[_vm._v(_vm._s(_vm.item.total.insurance))]),_c('td',[_vm._v(_vm._s(_vm.item.total.currentBalance))]),_c('td',[_vm._v(_vm._s(_vm.item.total.lineItem))])])],2),_vm._m(1),_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"}),_c('modal',{ref:"modalimage"},[_c('div',{staticClass:"modal__content"},[_c('img',{attrs:{"src":"http://uhealthsystem.com/images/content/UMH-statement.jpg"}}),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalimage.close()}}},[_vm._v("Cancel")])])])])],1)}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th',[_vm._v("Date")]),_c('th',[_vm._v("Description of Service")]),_c('th',[_vm._v("Amount")]),_c('th',[_vm._v("Insurance")]),_c('th',[_vm._v("Current Balance")]),_c('th',[_vm._v("Line Item Balance")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"statement__top-active"},[_c('div',{staticClass:"statement__top-active-left"},[_c('div',{staticClass:"statement__top-active-title"},[_c('div',{staticClass:"span"},[_vm._v("  Notes")])])])])}]
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 495 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('modal',{ref:"modalphone"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Search Patient")]),_c('div',{staticClass:"modal-content-row"},[_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Search All', 'Search EPIC', 'Search CERNER'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select EHR"},on:{"input":function($event){}},model:{value:(_vm.phoneNumber),callback:function ($$v) {_vm.phoneNumber=$$v},expression:"phoneNumber"}})],1),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Patient MRN', 'Patient First Name', 'Patient Last Name', 'Patient DOB','Patient Zip', 'Patient Phone Number', 'Patient SSN'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select Criteria"},on:{"input":_vm.showType},model:{value:(_vm.searchType),callback:function ($$v) {_vm.searchType=$$v},expression:"searchType"}})],1),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.searchTemp),expression:"searchTemp"}],staticClass:"modal-appointment__info-lang",domProps:{"value":(_vm.searchTemp)},on:{"input":function($event){if($event.target.composing){ return; }_vm.searchTemp=$event.target.value}}}),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.searchKey=_vm.searchTemp==''?-1:_vm.searchTemp}}},[_vm._v("Search")])])])]),_c('table',{staticClass:"search-patient__table"},[_c('tr',[_c('th',{staticClass:"g-align-center"},[_vm._v("MRN")]),_c('th',{staticClass:"g-align-center"},[_vm._v("First Name")]),_c('th',{staticClass:"g-align-center"},[_vm._v("Last Name")]),_c('th',{staticClass:"g-align-center"},[_vm._v("DOB")]),_c('th',{staticClass:"g-align-center"},[_vm._v("ZIP")]),_c('th',{staticClass:"g-align-center"},[_vm._v("Phone Number")]),_c('th',{staticClass:"g-align-center"},[_vm._v("SSN")])]),_vm._l((_vm.$root._data.Patients),function(patient,index){return (_vm.ifShow(patient)==true)?_c('tr',{style:({color: patient==_vm.chosen?'red':'black'}),on:{"click":function($event){_vm.clickRow(patient)}}},[_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(patient.MRN))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(patient.Name.split(' ')[1]))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(patient.Name.split(' ')[0]))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(patient.DateOfBirth.split(' ')[0]))]),_c('td',{staticClass:"g-align-center"},[_vm._v("Zip")]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(patient.PhoneNumber))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(patient.SSN))])]):_vm._e()})],2),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":_vm.onSelect}},[_vm._v("Select")])])])])}
-var staticRenderFns = []
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 496 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"name":"fade"}},[(_vm.show)?_c('div',{staticClass:"calendar-popup",on:{"click":function($event){_vm.$parent.showCalendar=false, _vm.$parent.calendarClick=true}}},[_c('div',{staticClass:"calendar"},[_c('div',{staticClass:"calendar__top-month"},[_c('div',{staticClass:"calendar__top-month-action"},[_c('svg',{staticClass:"ico-svg ico-svg__arrow-l"},[_c('use',{attrs:{"xlink:href":"#arrow-l"}})])]),_c('div',{staticClass:"calendar__top-item mod--first"},[_vm._v("October 2017")]),_c('div',{staticClass:"calendar__top-item"},[_vm._v("Novermber 2017")]),_c('div',{staticClass:"calendar__top-month-action"},[_c('svg',{staticClass:"ico-svg ico-svg__arrow-r"},[_c('use',{attrs:{"xlink:href":"#arrow-r"}})])])]),_c('div',{staticClass:"calendar__main"},[_c('div',{staticClass:"calendar__main-box"},[_c('div',{staticClass:"calendar__main-days"},[_c('span',[_vm._v("Su")]),_c('span',[_vm._v("Mo")]),_c('span',[_vm._v("Tu")]),_c('span',[_vm._v("We")]),_c('span',[_vm._v("Th")]),_c('span',[_vm._v("Fr")]),_c('span',[_vm._v("Sa")])]),_c('div',{staticClass:"calendar__days"},[_c('div',{staticClass:"calendar__days-item mod--free"},[_vm._v("1")]),_c('div',{staticClass:"calendar__days-item mod--disable"},[_vm._v("2")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("3")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("4")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("5")]),_c('div',{staticClass:"calendar__days-item mod--busy"},[_vm._v("6")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("7")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("8")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("9")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("10")]),_c('div',{staticClass:"calendar__days-item mod--free"},[_vm._v("11")]),_c('div',{staticClass:"calendar__days-item mod--disable"},[_vm._v("12")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("13")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("14")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("15")]),_c('div',{staticClass:"calendar__days-item mod--busy"},[_vm._v("16")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("17")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("18")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("19")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("20")]),_c('div',{staticClass:"calendar__days-item mod--free"},[_vm._v("21")]),_c('div',{staticClass:"calendar__days-item mod--disable"},[_vm._v("22")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("23")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("24")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("25")]),_c('div',{staticClass:"calendar__days-item mod--busy"},[_vm._v("26")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("27")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("28")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("29")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("30")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("31")])])]),_c('div',{staticClass:"calendar__main-box"},[_c('div',{staticClass:"calendar__main-days"},[_c('span',[_vm._v("Su")]),_c('span',[_vm._v("Mo")]),_c('span',[_vm._v("Tu")]),_c('span',[_vm._v("We")]),_c('span',[_vm._v("Th")]),_c('span',[_vm._v("Fr")]),_c('span',[_vm._v("Sa")])]),_c('div',{staticClass:"calendar__days"},[_c('div',{staticClass:"calendar__days-item mod--free"},[_vm._v("1")]),_c('div',{staticClass:"calendar__days-item mod--disable"},[_vm._v("2")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("3")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("4")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("5")]),_c('div',{staticClass:"calendar__days-item mod--busy"},[_vm._v("6")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("7")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("8")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("9")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("10")]),_c('div',{staticClass:"calendar__days-item mod--free"},[_vm._v("11")]),_c('div',{staticClass:"calendar__days-item mod--disable"},[_vm._v("12")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("13")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("14")]),_c('div',{staticClass:"calendar__days-item mod--shadow"},[_vm._v("15")]),_c('div',{staticClass:"calendar__days-item mod--busy mod--shadow"},[_vm._v("16")]),_c('div',{staticClass:"calendar__days-item mod--shadow"},[_vm._v("17")]),_c('div',{staticClass:"calendar__days-item mod--shadow"},[_vm._v("18")]),_c('div',{staticClass:"calendar__days-item mod--shadow"},[_vm._v("19")]),_c('div',{staticClass:"calendar__days-item mod--shadow"},[_vm._v("20")]),_c('div',{staticClass:"calendar__days-item mod--free mod--shadow"},[_vm._v("21")]),_c('div',{staticClass:"calendar__days-item mod--disable"},[_vm._v("22")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("23")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("24")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("25")]),_c('div',{staticClass:"calendar__days-item mod--busy"},[_vm._v("26")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("27")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("28")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("29")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("30")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("31")])])])])])]):_vm._e()])}
-var staticRenderFns = []
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 497 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"appointment"},[_c('div',{staticClass:"appointment__top"},[_c('div',{staticClass:"appointment__top-filter"},[_c('svg',{staticClass:"ico-svg ico-svg__filter-results-button"},[_c('use',{attrs:{"xlink:href":"#filter-results-button"}})]),_c('span',[_vm._v("All Encounters")])])]),_c('table',{staticClass:"appointment__table"},[_vm._m(0),_vm._l((_vm.patients.encounters),function(item,index){return _c('tr',[_c('td',[_vm._v(_vm._s(item.type))]),_c('td',[_vm._v(_vm._s(item.date))]),_c('td',[_vm._v(_vm._s(item.eventType))]),_c('td',[_vm._v(_vm._s(item.patientClass))]),_c('td',[_vm._v(_vm._s(item.admissionType))]),_c('td',[_vm._v(_vm._s(item.dischargeDisposition))])])})],2)])}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th',[_vm._v("Type")]),_c('th',[_vm._v("Date")]),_c('th',[_vm._v("Event Type")]),_c('th',[_vm._v("Patient Class")]),_c('th',[_vm._v("Admission Type")]),_c('th',[_vm._v("Discharge Disposition")])])}]
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 498 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"board-block",style:({borderColor: _vm.col})},[_c('span',{staticClass:"board-block__count",style:({color: _vm.col})},[_vm._v(_vm._s(_vm.count))]),_c('br'),_c('span',{staticClass:"board-block__title"},[_vm._v(_vm._s(_vm.text))])])}
-var staticRenderFns = []
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 499 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('modal',{ref:"modalphone"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Phone Book")]),_c('div',{staticClass:"modal-content-row"},[_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Destination")])]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Urology (469-899-1224)','Radiology (214-212-0912)','Cardiology (972-358-6547)','Anesthesiology (972-891-8656)'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select Phone Number"},on:{"input":function($event){}},model:{value:(_vm.phoneNumber),callback:function ($$v) {_vm.phoneNumber=$$v},expression:"phoneNumber"}})],1),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Type")])]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Transfer','Consult', 'Conference'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select Phone Type"},on:{"input":function($event){}},model:{value:(_vm.phoneType),callback:function ($$v) {_vm.phoneType=$$v},expression:"phoneType"}})],1),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Notes")])]),_c('textarea',{directives:[{name:"model",rawName:"v-model",value:(_vm.phoneNote),expression:"phoneNote"}],staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default mod--sms",domProps:{"value":(_vm.phoneNote)},on:{"input":function($event){if($event.target.composing){ return; }_vm.phoneNote=$event.target.value}}}),_c('span',[_vm._v("tempDNIS")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.tempDNIS),expression:"tempDNIS"}],attrs:{"readonly":"readonly"},domProps:{"value":(_vm.tempDNIS)},on:{"input":function($event){if($event.target.composing){ return; }_vm.tempDNIS=$event.target.value}}})])])]),_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"box"},[_c('div',{staticClass:"tab-holder"},[_c('a',{staticClass:"tab",on:{"click":function($event){_vm.showRecent=false}}},[_vm._v("Recent List")]),_c('a',{staticClass:"tab",on:{"click":function($event){_vm.showRecent=true}}},[_vm._v("Favorite List")])]),_c('div',[(_vm.showRecent)?_c('ul',[_c('li',[_vm._v("972-888-2938")]),_c('li',[_vm._v("Urology (469-899-1224)")]),_c('li',[_vm._v("Front Office")]),_c('li',[_vm._v("Cardiology")])]):_vm._e(),(!_vm.showRecent)?_c('ul',[_c('li',[_vm._v("Urology (469-899-1224)")]),_c('li',[_vm._v("Radiology (214-212-0912)")]),_c('li',[_vm._v("Cardiology (972-358-6547)")]),_c('li',[_vm._v("Anesthesiology (972-891-8656)")])]):_vm._e()])])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalphone.close()}}},[_vm._v("CANCEL")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.submit}},[_vm._v("DIAL")])])])])}
-var staticRenderFns = []
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 500 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-confirmation"},[_vm._m(0),_c('div',{staticClass:"payment-confirmation__top-active"},[_c('form',{staticClass:"payment-card"},[_c('div',{staticClass:"bank-card__side bank-card__side_front"},[_c('div',{staticClass:"title"},[_vm._v("HealthPay24")]),_c('div',{staticClass:"bank-card__inner"}),_c('label',{staticClass:"bank-card__label bank-card__label_holder"},[_c('span',{staticClass:"bank-card__hint"},[_vm._v("Holder of card")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.username),expression:"username"}],staticClass:"bank-card__field",attrs:{"type":"text","placeholder":"Holder of card","pattern":"[A-Za-z, ]{2,}","name":"holder-card","required":""},domProps:{"value":(_vm.username)},on:{"input":function($event){if($event.target.composing){ return; }_vm.username=$event.target.value}}})]),_c('div',{staticClass:"bank-card__inner"}),_c('label',{staticClass:"bank-card__label bank-card__label_number"},[_c('span',{staticClass:"bank-card__hint"},[_vm._v("Number of card")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.cardNumber),expression:"cardNumber"}],staticClass:"bank-card__field",attrs:{"type":"text","placeholder":"Number of card","pattern":"[0-9]{16}","name":"number-card","required":""},domProps:{"value":(_vm.cardNumber)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cardNumber=$event.target.value}}})]),_c('div',{staticClass:"bank-card__inner"}),_c('span',{staticClass:"bank-card__caption"},[_vm._v("valid thru")]),_c('div',{staticClass:"bank-card__inner bank-card__footer"}),_c('label',{staticClass:"bank-card__label bank-card__month"},[_c('span',{staticClass:"bank-card__hint"},[_vm._v("Month")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":['1', '2','3', '4','5', '6','7', '8','9', '10','11', '12' ],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"MM"},model:{value:(_vm.month),callback:function ($$v) {_vm.month=$$v},expression:"month"}})],1),_c('span',{staticClass:"bank-card__separator"},[_vm._v("/")]),_c('label',{staticClass:"bank-card__label bank-card__year"},[_c('span',{staticClass:"bank-card__hint"},[_vm._v("Year")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":['2016', '2017','2018', '2019'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"YY"},model:{value:(_vm.year),callback:function ($$v) {_vm.year=$$v},expression:"year"}})],1),_c('label',{staticClass:"bank-card__label bank-card__cvc"},[_c('span',{staticClass:"bank-card__hint"},[_vm._v("CVC")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.cvv),expression:"cvv"}],staticClass:"bank-card__field",attrs:{"type":"text","placeholder":"CVC","maxlength":"3","pattern":"[0-9]{3}","name":"cvc-card","required":""},domProps:{"value":(_vm.cvv)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cvv=$event.target.value}}})])])])]),_c('div',{staticClass:"payment-confirmation__top-active"},[_c('div',{staticClass:"payment-confirmation__top-active-left"},[_c('div',{staticClass:"payment-confirmation__top-active-title"},[_c('label',{staticClass:"big"},[_vm._v("Total Amount Due:                 "+_vm._s(_vm.item.total.amount))])])])]),_c('div',{staticClass:"payment-confirmation__top-active"},[_c('div',{staticClass:"payment-confirmation__top-active-left"},[_c('div',{staticClass:"payment-confirmation__top-active-title"},[_c('label',{staticClass:"big"},[_vm._v("Payment Amount:")]),_c('label',{staticClass:"bank-card__label bank-card__amount"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.amount),expression:"amount"}],staticClass:"bank-card__field",attrs:{"type":"number","placeholder":"0","required":""},domProps:{"value":(_vm.amount)},on:{"input":function($event){if($event.target.composing){ return; }_vm.amount=$event.target.value}}})])])])]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.confirmPayment}},[_vm._v(_vm._s("CONFIRM PAYMENT")+"            ")])])}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-confirmation__top-active"},[_c('div',{staticClass:"payment-confirmation__top-active-left"},[_c('div',{staticClass:"payment-confirmation__top-active-title"},[_c('div',{staticClass:"span"},[_vm._v("Payment Information")])])])])}]
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 501 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result"},[_vm._m(0),_c('div',{staticClass:"payment-result__top"},[_vm._m(1),_c('div',{staticClass:"payment-result__top-item2"},[_c('div',{staticClass:"payment-result__top-item-label2"},[_vm._v(" "+_vm._s(_vm.item.amount))])])]),_c('div',{staticClass:"payment-result__top"},[_vm._m(2),_c('div',{staticClass:"payment-result__top-item2"},[_c('div',{staticClass:"payment-result__top-item-label2"},[_vm._v(" "+_vm._s(_vm.item.statementId))])])]),_c('div',{staticClass:"payment-result__top"},[_vm._m(3),_c('div',{staticClass:"payment-result__top-item2"},[_c('div',{staticClass:"payment-result__top-item-label2"},[_vm._v(" "+_vm._s(_vm._f("moment")(new Date(),"MMM DD, YYYY"))+" ")])])]),_c('div',{staticClass:"payment-result__top"},[_vm._m(4),_c('div',{staticClass:"payment-result__top-item2"},[_c('div',{staticClass:"payment-result__top-item-label2"},[_vm._v(" "+_vm._s(_vm.item.username))])])]),_c('div',{staticClass:"payment-result__top"},[_vm._m(5),_c('div',{staticClass:"payment-result__top-item2"},[_c('div',{staticClass:"payment-result__top-item-label2"},[_vm._v(" "+_vm._s(_vm.item.cardNumber))])])]),_vm._m(6),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.goBack}},[_vm._v("Return")])])}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result__top"},[_c('div',{staticClass:"payment-result__top-item"},[_c('div',{staticClass:"payment-result__top-item-label"},[_vm._v("Payment Information")])]),_c('div',{staticClass:"payment-result__top-item2"},[_c('div',{staticClass:"payment-result__top-item-label2"})])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result__top-item"},[_c('div',{staticClass:"payment-result__top-item-label"},[_vm._v(" Amount:")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result__top-item"},[_c('div',{staticClass:"payment-result__top-item-label"},[_vm._v(" Statement Number:")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result__top-item"},[_c('div',{staticClass:"payment-result__top-item-label"},[_vm._v(" Payment Date:")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result__top-item"},[_c('div',{staticClass:"payment-result__top-item-label"},[_vm._v(" Billed to:")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result__top-item"},[_c('div',{staticClass:"payment-result__top-item-label"},[_vm._v(" Payed via: ")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result__top"},[_c('div',{staticClass:"payment-result__top-item3"},[_c('div',{staticClass:"payment-result__top-item-label"},[_vm._v(" Outstanding Balance:")])]),_c('div',{staticClass:"payment-result__top-item4"},[_c('div',{staticClass:"payment-result__top-item-label2"},[_vm._v(" $523.09 ")])])])}]
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 502 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"multiselect",class:{ 'multiselect--active': _vm.isOpen, 'multiselect--disabled': _vm.disabled, 'multiselect--above': _vm.isAbove },attrs:{"tabindex":_vm.searchable ? -1 : _vm.tabindex},on:{"focus":function($event){_vm.activate()},"blur":function($event){_vm.searchable ? false : _vm.deactivate()},"keydown":[function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"down",40,$event.key)){ return null; }if($event.target !== $event.currentTarget){ return null; }$event.preventDefault();_vm.pointerForward()},function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"up",38,$event.key)){ return null; }if($event.target !== $event.currentTarget){ return null; }$event.preventDefault();_vm.pointerBackward()},function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"enter",13,$event.key)&&_vm._k($event.keyCode,"tab",9,$event.key)){ return null; }$event.stopPropagation();if($event.target !== $event.currentTarget){ return null; }_vm.addPointerElement($event)}],"keyup":function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"esc",27,$event.key)){ return null; }_vm.deactivate()}}},[_vm._t("caret",[_c('div',{staticClass:"multiselect__select",on:{"mousedown":function($event){$event.preventDefault();$event.stopPropagation();_vm.toggle()}}})],{toggle:_vm.toggle}),_vm._v(" "),_vm._t("clear",null,{search:_vm.search}),_vm._v(" "),_c('div',{ref:"tags",staticClass:"multiselect__tags"},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.visibleValue.length > 0),expression:"visibleValue.length > 0"}],staticClass:"multiselect__tags-wrap"},[_vm._l((_vm.visibleValue),function(option){return [_vm._t("tag",[_c('span',{staticClass:"multiselect__tag"},[_c('span',{domProps:{"textContent":_vm._s(_vm.getOptionLabel(option))}}),_vm._v(" "),_c('i',{staticClass:"multiselect__tag-icon",attrs:{"aria-hidden":"true","tabindex":"1"},on:{"keydown":function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"enter",13,$event.key)){ return null; }$event.preventDefault();_vm.removeElement(option)},"mousedown":function($event){$event.preventDefault();_vm.removeElement(option)}}})])],{option:option,search:_vm.search,remove:_vm.removeElement})]})],2),_vm._v(" "),(_vm.internalValue && _vm.internalValue.length > _vm.limit)?[_c('strong',{staticClass:"multiselect__strong",domProps:{"textContent":_vm._s(_vm.limitText(_vm.internalValue.length - _vm.limit))}})]:_vm._e(),_vm._v(" "),_c('transition',{attrs:{"name":"multiselect__loading"}},[_vm._t("loading",[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.loading),expression:"loading"}],staticClass:"multiselect__spinner"})])],2),_vm._v(" "),(_vm.searchable)?_c('input',{ref:"search",staticClass:"multiselect__input",style:(_vm.inputStyle),attrs:{"name":_vm.name,"id":_vm.id,"type":"text","autocomplete":"off","placeholder":_vm.placeholder,"disabled":_vm.disabled,"tabindex":_vm.tabindex},domProps:{"value":_vm.isOpen ? _vm.search : _vm.currentOptionLabel},on:{"input":function($event){_vm.updateSearch($event.target.value)},"focus":function($event){$event.preventDefault();_vm.activate()},"blur":function($event){$event.preventDefault();_vm.deactivate()},"keyup":function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"esc",27,$event.key)){ return null; }_vm.deactivate()},"keydown":[function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"down",40,$event.key)){ return null; }$event.preventDefault();_vm.pointerForward()},function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"up",38,$event.key)){ return null; }$event.preventDefault();_vm.pointerBackward()},function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"enter",13,$event.key)){ return null; }$event.preventDefault();$event.stopPropagation();if($event.target !== $event.currentTarget){ return null; }_vm.addPointerElement($event)},function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"delete",[8,46],$event.key)){ return null; }$event.stopPropagation();_vm.removeLastElement()}]}}):_vm._e(),_vm._v(" "),(!_vm.searchable)?_c('span',{staticClass:"multiselect__single",domProps:{"textContent":_vm._s(_vm.currentOptionLabel)},on:{"mousedown":function($event){$event.preventDefault();_vm.toggle($event)}}}):_vm._e()],2),_vm._v(" "),_c('transition',{attrs:{"name":"multiselect"}},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.isOpen),expression:"isOpen"}],ref:"list",staticClass:"multiselect__content-wrapper",style:({ maxHeight: _vm.optimizedHeight + 'px' }),on:{"focus":_vm.activate,"mousedown":function($event){$event.preventDefault();}}},[_c('ul',{staticClass:"multiselect__content",style:(_vm.contentStyle)},[_vm._t("beforeList"),_vm._v(" "),(_vm.multiple && _vm.max === _vm.internalValue.length)?_c('li',[_c('span',{staticClass:"multiselect__option"},[_vm._t("maxElements",[_vm._v("Maximum of "+_vm._s(_vm.max)+" options selected. First remove a selected option to select another.")])],2)]):_vm._e(),_vm._v(" "),(!_vm.max || _vm.internalValue.length < _vm.max)?_vm._l((_vm.filteredOptions),function(option,index){return _c('li',{key:index,staticClass:"multiselect__element"},[(!(option && (option.$isLabel || option.$isDisabled)))?_c('span',{staticClass:"multiselect__option",class:_vm.optionHighlight(index, option),attrs:{"data-select":option && option.isTag ? _vm.tagPlaceholder : _vm.selectLabelText,"data-selected":_vm.selectedLabelText,"data-deselect":_vm.deselectLabelText},on:{"click":function($event){$event.stopPropagation();_vm.select(option)},"mouseenter":function($event){if($event.target !== $event.currentTarget){ return null; }_vm.pointerSet(index)}}},[_vm._t("option",[_c('span',{staticClass:"multiselect__option-category"},[_vm._v(_vm._s(_vm.getOptionLabel(option)))])],{option:option,search:_vm.search})],2):_vm._e(),_vm._v(" "),(option && (option.$isLabel || option.$isDisabled))?_c('span',{staticClass:"multiselect__option multiselect__option--disabled",class:_vm.optionHighlight(index, option)},[_vm._t("option",[_c('span',[_vm._v(_vm._s(_vm.getOptionLabel(option)))])],{option:option,search:_vm.search})],2):_vm._e()])}):_vm._e(),_vm._v(" "),_c('li',{directives:[{name:"show",rawName:"v-show",value:(_vm.showNoResults && (_vm.filteredOptions.length === 0 && _vm.search && !_vm.loading)),expression:"showNoResults && (filteredOptions.length === 0 && search && !loading)"}]},[_c('span',{staticClass:"multiselect__option"},[_vm._t("noResult",[_vm._v("No elements found. Consider changing the search query.")])],2)]),_vm._v(" "),_vm._t("afterList")],2)])])],2)}
-var staticRenderFns = []
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 503 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"appointment"},[_c('div',{staticClass:"appointment__top"},[_c('div',{staticClass:"appointment__top-filter"},[_c('svg',{staticClass:"ico-svg ico-svg__filter-results-button"},[_c('use',{attrs:{"xlink:href":"#filter-results-button"}})]),_c('span',[_vm._v("All referrals")])]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.business_segment),expression:"business_segment"}],attrs:{"placeholder":"Business Segment"},domProps:{"value":(_vm.business_segment)},on:{"input":function($event){if($event.target.composing){ return; }_vm.business_segment=$event.target.value}}}),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.service_area),expression:"service_area"}],attrs:{"placeholder":"Service Area"},domProps:{"value":(_vm.service_area)},on:{"input":function($event){if($event.target.composing){ return; }_vm.service_area=$event.target.value}}}),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.status),expression:"status"}],attrs:{"placeholder":"Status"},domProps:{"value":(_vm.status)},on:{"input":function($event){if($event.target.composing){ return; }_vm.status=$event.target.value}}}),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.startDate),expression:"startDate"}],attrs:{"placeholder":"Start Date"},domProps:{"value":(_vm.startDate)},on:{"input":function($event){if($event.target.composing){ return; }_vm.startDate=$event.target.value}}}),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.endDate),expression:"endDate"}],attrs:{"placeholder":"End Date"},domProps:{"value":(_vm.endDate)},on:{"input":function($event){if($event.target.composing){ return; }_vm.endDate=$event.target.value}}}),_c('div',{staticClass:"appointment__top-data"},[_c('svg',{staticClass:"ico-svg ico-svg__calendar"},[_c('use',{attrs:{"xlink:href":"#calendar"}})]),_c('span',[_vm._v(_vm._s(_vm.sunday)+" - "+_vm._s(_vm.saturday))])])]),_c('table',{staticClass:"appointment__table"},[_vm._m(0),_vm._l((this.$store.state.referrals),function(item,index){return (_vm.check(item))?_c('tr',[_c('td',[_vm._v(_vm._s(item.refID))]),_c('td',[_vm._v(_vm._s(item.patientID))]),_c('td',[_vm._v(_vm._s(item.patientName))]),_c('td',[_vm._v(_vm._s(item.referredBy))]),_c('td',[_vm._v(_vm._s(item.referredTo))]),_c('td',[_vm._v(_vm._s(item.referralType))]),_c('td',[_vm._v(_vm._s(item.referredStatus))]),_c('td',[_vm._v(_vm._s(item.businessSegment))]),_c('td',[_vm._v(_vm._s(item.serviceArea))]),_c('td',[_vm._v(_vm._s(item.startDate))]),_c('td',[_vm._v(_vm._s(item.endDate))]),_c('td',{staticClass:"more-action"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__more"},[_c('use',{attrs:{"xlink:href":"#more"}})])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('http://10.3.74.119/openemr/interface/patient_file/history/encounters.php?billing=1&issue=0&pagesize=20&pagestart=0')}}},[_vm._v("Show in EPIC")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.showDetailReferral(index)}}},[_vm._v("Show Details")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.showUpdateReferral(index)}}},[_vm._v("Update")])])])])]):_vm._e()})],2),_c('modal',{ref:"modalInfo"},[(_vm.currentMoreInfoIndex !== null)?_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Appointment details")]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__clock"},[_c('use',{attrs:{"xlink:href":"#clock"}})]),_vm._v("Appointment time: "),_c('b',[_vm._v(" "+_vm._s(_vm._f("moment")([_vm.patients.PastAppointments[_vm.currentMoreInfoIndex].Time, "HH:mm:ss"],"h:mm a")))])]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__calendar"},[_c('use',{attrs:{"xlink:href":"#calendar"}})]),_vm._v("Appointment date: "),_c('b',[_vm._v(_vm._s(_vm._f("moment")([_vm.patients.PastAppointments[_vm.currentMoreInfoIndex].Date, ["M-DD-YYYY HH:mm:ss","D-MMM-YYYY HH:mm:ss"]],"MMM DD, YYYY")))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Hospital/clinic name: "),_c('b',[_vm._v(" "+_vm._s(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex].Department))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Appointment type: "),_c('b',[_vm._v(_vm._s(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex].VisitType))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Reason for visit: "),_c('b',[_vm._v(_vm._s(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex].VisitReason))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Interpreter required: "),_c('b',[_vm._v(_vm._s(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex]['Appointment Details']['Interpreter Required']))])]),(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex]['Appointment Details']['Interpreter Language'] !== 'None')?_c('div',{staticClass:"modal-appointment__info"},[_c('div',{staticClass:"modal-appointment__lang-ico"},[_c('svg',{staticClass:"ico-svg ico-svg__lang"},[_c('use',{attrs:{"xlink:href":"#lang"}})])]),_vm._v("Interpreter required: "),_c('b',[_vm._v(_vm._s(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex]['Appointment Details']['Interpreter Language']))])]):_vm._e()])]),_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__map"},[_c('gmap-map',{staticStyle:{"width":"100%","height":"300px"},attrs:{"center":{lat: 32.9448268, lng: -96.64587949999998},"zoom":14}},[_c('gmap-marker',{key:1,attrs:{"position":{lat: 32.9448268, lng: -96.64587949999998}}})],1)],1)])])]):_vm._e()])],1)}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th',[_vm._v("Ref ID")]),_c('th',[_vm._v("Patient ID")]),_c('th',[_vm._v("Patient Name")]),_c('th',[_vm._v("Referred By (Provider)")]),_c('th',[_vm._v("Referred To (Provider)")]),_c('th',[_vm._v("Referral Type")]),_c('th',[_vm._v("Referred Status")]),_c('th',[_vm._v("Business Segment")]),_c('th',[_vm._v("Service Area")]),_c('th',[_vm._v("Referral Auth Start Date")]),_c('th',[_vm._v("Referral Auth End Date")]),_c('th',[_vm._v("Actions")])])}]
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 504 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"l-page",attrs:{"id":"app"}},[_c('link',{attrs:{"href":"./style.css","rel":"stylesheet"}}),_vm._v(" "),_c('header',{staticClass:"header"},[_vm._m(0),_vm._v(" "),_vm._m(1),_vm._v(" "),_c('div',{staticClass:"header__action"},[_c('div',{staticClass:"header__action-item"},[_c('a',{staticClass:"header__action-link",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__search"},[_c('use',{attrs:{"xlink:href":"#search"}})])])]),_vm._v(" "),_c('div',{staticClass:"header__action-item"},[_c('a',{staticClass:"header__action-link",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__settings"},[_c('use',{attrs:{"xlink:href":"#settings"}})])])]),_vm._v(" "),_vm._m(2)])]),_vm._v(" "),_c('div',{attrs:{"id":"huddle-room-mount"}}),_vm._v(" "),_c('div',{staticClass:"layout"},[_c('div',{staticClass:"layout__sidebar"},[_c('div',{staticClass:"layout__sidebar-scrolling"},[_c('aside',{staticClass:"sidebar"},[_c('div',{staticClass:"sidebar__title"},[_vm._v("Patient Information")]),_c('div',{staticClass:"l-sidebar__userpic"},[_c('div',{staticClass:"sidebar__userpic"},[_c('img',{staticClass:"sidebar__userpic-image",attrs:{"src":"img/newUser.png"}}),_c('a',{staticClass:"sidebar__userpic-info",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__info"},[_c('use',{attrs:{"xlink:href":"#info"}})])])])]),_vm._m(3),_vm._m(4),_vm._m(5)])])]),_vm._v(" "),_c('div',{staticClass:"layout__content"},[_c('div',{staticClass:"layout__content-scrolling"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"content__top-line"},[_c('h1',{staticClass:"title"},[_vm._v("Patient Schedule")]),_c('a',{staticClass:"content__top-action",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__plus-round"},[_c('use',{attrs:{"xlink:href":"#plus-round"}})])])]),_vm._v(" "),_c('div',{staticClass:"content__box"},[_c('div',{staticClass:"appointment"},[_c('div',{staticClass:"appointment__top"},[_c('div',{staticClass:"appointment__top-filter"},[_c('svg',{staticClass:"ico-svg ico-svg__filter-results-button"},[_c('use',{attrs:{"xlink:href":"#filter-results-button"}})]),_c('span',[_vm._v("All Appointments")])]),_c('div',{staticClass:"appointment__top-data"},[_c('svg',{staticClass:"ico-svg ico-svg__calendar"},[_c('use',{attrs:{"xlink:href":"#calendar"}})]),_c('span',[_vm._v("August 10  -  August 16")])])]),_vm._m(6),_vm._m(7)]),_vm._v(" "),_c('div',{staticClass:"journey-map"},[_c('h2',{staticClass:"title mod--journey"},[_vm._v("Patient Journey Map")]),_vm._m(8),_c('div',{staticClass:"journey-map__line"},[_c('img',{staticClass:"journey-map__line-userpic",attrs:{"src":"img/newUser.png"}}),_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_vm._m(9),_c('svg',{staticClass:"ico-svg ico-svg__phone"},[_c('use',{attrs:{"xlink:href":"#phone"}})])]),_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_vm._m(10),_c('svg',{staticClass:"ico-svg ico-svg__mail"},[_c('use',{attrs:{"xlink:href":"#mail"}})])]),_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_vm._m(11),_c('svg',{staticClass:"ico-svg ico-svg__hospital"},[_c('use',{attrs:{"xlink:href":"#hospital"}})])]),_c('div',{staticClass:"journey-map__line-item-end"})])])])])])])])])}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('h1',{staticClass:"logo"},[_c('a',{staticClass:"logo__link",attrs:{"href":"#3"}},[_vm._v("SpinSci")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"header__tabs"},[_c('div',{staticClass:"header__tabs-item state--active"},[_c('a',{staticClass:"header__tabs-item-link",attrs:{"href":"#"}},[_vm._v("Scheduling")])]),_vm._v(" "),_c('div',{staticClass:"header__tabs-item"},[_c('a',{staticClass:"header__tabs-item-link",attrs:{"href":"#"}},[_vm._v("Case Management")])]),_vm._v(" "),_c('div',{staticClass:"header__tabs-item"},[_c('a',{staticClass:"header__tabs-item-link",attrs:{"href":"#"}},[_vm._v("Billing")])]),_vm._v(" "),_c('div',{staticClass:"header__tabs-item"},[_c('a',{staticClass:"header__tabs-item-link",attrs:{"href":"#"}},[_vm._v("Huddle Room")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"header__action-item"},[_c('a',{staticClass:"header__action-link",attrs:{"href":"#3"}},[_c('div',{staticClass:"userpic-header"},[_c('img',{staticClass:"userpic-header__img",attrs:{"src":"img/cd6083.png"}})])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sidebar__note-userpic"},[_vm._v("Number of Matches ("),_c('b',[_vm._v("0")]),_vm._v(")")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Patient Name")]),_c('div',{staticClass:"multiselect ui-multiselect ui-multiselect--default",attrs:{"tabindex":"0"}},[_c('div',{staticClass:"multiselect__select"}),_vm._v(" "),_c('div',{staticClass:"multiselect__tags"},[_c('div',{staticClass:"multiselect__tags-wrap",staticStyle:{"display":"none"}}),_vm._v(" "),_c('div',{staticClass:"multiselect__spinner",staticStyle:{"display":"none"}}),_vm._v(" "),_c('span',{staticClass:"multiselect__single"},[_vm._v("Select option")])]),_vm._v(" "),_c('div',{staticClass:"multiselect__content-wrapper",staticStyle:{"max-height":"300px","display":"none"}},[_c('ul',{staticClass:"multiselect__content",staticStyle:{"display":"inline-block"}},[_c('li',{staticClass:"multiselect__element"},[_c('span',{staticClass:"multiselect__option multiselect__option--category",attrs:{"data-select":"","data-selected":"","data-deselect":""}},[_c('span',{staticClass:"multiselect__option-category"},[_vm._v("INVISION")])])]),_c('li',{staticClass:"multiselect__element"},[_c('span',{staticClass:"multiselect__option multiselect__option--category",attrs:{"data-select":"","data-selected":"","data-deselect":""}},[_c('span',{staticClass:"multiselect__option-category"},[_vm._v("SOARIAN")])])]),_vm._v(" "),_c('li',{staticStyle:{"display":"none"}},[_c('span',{staticClass:"multiselect__option"},[_vm._v("No elements found. Consider changing the search query.")])])])])])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Date of Birth")]),_c('div',{staticClass:"sidebar__section--info"})]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("SSN")]),_c('div',{staticClass:"sidebar__section--info"})]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Phone Number")]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":"tel:"}})])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Primary Care Provider")]),_c('div',{staticClass:"sidebar__section--info"}),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":"tel:"}})])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Address")]),_c('div',{staticClass:"sidebar__section--info"})]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Treatment Team")]),_c('div',[_c('div',{staticClass:"sidebar__section--info-select"}),_c('div',{staticClass:"sidebar__section--info"})])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Provider")]),_c('div',[_c('div',{staticClass:"sidebar__section--info-select"}),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":"tel:"}})])])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sidebar__success"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary mod--block",attrs:{"href":"#3"}},[_vm._v(" Screen pop")])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Patient Search")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Patient Information")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Appointments Create")])])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('table',{staticClass:"appointment__table"},[_c('tr',[_c('th',[_vm._v("Date")]),_c('th',[_vm._v("Department")]),_c('th',[_vm._v("Appt. Time")]),_c('th',[_vm._v("Provider")]),_c('th',[_vm._v("Visit Type")]),_c('th',[_vm._v("Reason for Visit")]),_c('th',[_vm._v("Actions")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"modal",staticStyle:{"display":"none"}},[_c('div',{staticClass:"modal__overlay",staticStyle:{"display":"none"}})])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"journey-map-selects"},[_c('div',{staticClass:"multiselect ui-multiselect ui-multiselect--border multiselect--above",attrs:{"tabindex":"0"}},[_c('div',{staticClass:"multiselect__select"}),_vm._v(" "),_c('div',{staticClass:"multiselect__tags"},[_c('div',{staticClass:"multiselect__tags-wrap",staticStyle:{"display":"none"}}),_vm._v(" "),_c('div',{staticClass:"multiselect__spinner",staticStyle:{"display":"none"}}),_vm._v(" "),_c('span',{staticClass:"multiselect__single"},[_vm._v("Oct 18, 2017 - 11:00am")])]),_vm._v(" "),_c('div',{staticClass:"multiselect__content-wrapper",staticStyle:{"max-height":"300px","display":"none"}},[_c('ul',{staticClass:"multiselect__content",staticStyle:{"display":"inline-block"}},[_c('li',{staticClass:"multiselect__element"},[_c('span',{staticClass:"multiselect__option",attrs:{"data-select":"","data-selected":"","data-deselect":""}},[_c('span',[_vm._v("May 27, 2017 - 3:00pm")])])]),_c('li',{staticClass:"multiselect__element"},[_c('span',{staticClass:"multiselect__option",attrs:{"data-select":"","data-selected":"","data-deselect":""}},[_c('span',[_vm._v("Sept 25, 2017 - 1:00pm")])])]),_c('li',{staticClass:"multiselect__element"},[_c('span',{staticClass:"multiselect__option multiselect__option--highlight multiselect__option--selected",attrs:{"data-select":"","data-selected":"","data-deselect":""}},[_c('span',[_vm._v("Oct 18, 2017 - 11:00am")])])]),_vm._v(" "),_c('li',{staticStyle:{"display":"none"}},[_c('span',{staticClass:"multiselect__option"},[_vm._v("No elements found. Consider changing the search query.")])])])])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Appointments")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Data/Time")]),_vm._v(": May 27, 2017")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Duration")]),_vm._v(":  7 min")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("ANI")]),_vm._v(":  +1 214 701 5489")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent ID")]),_vm._v(":  749936")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent Name")]),_vm._v(":  James King")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Survey Score")]),_vm._v(": 3")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Inbound")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Data/Time")]),_vm._v(": May 27, 2017")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("SMS")]),_vm._v(":  Appintment Confimation")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Customet Action")]),_vm._v(": Patient clicked yes")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("SMS Outcome")]),_vm._v(":  Confirmed Appointment")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent ID")]),_vm._v(":  749936")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent Name")]),_vm._v(":  James King")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Type")]),_vm._v(": Check in")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check in Time")]),_vm._v(": 3:00pm")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Physician Name")]),_vm._v(": James King")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Department")]),_vm._v(":")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check out time")]),_vm._v(":  3:30pm")])])])}]
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 505 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vue-street-view-pano-container"},[_c('div',{ref:"vue-street-view-pano",staticClass:"vue-street-view-pano"}),_vm._v(" "),_vm._t("default")],2)}
-var staticRenderFns = []
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 506 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"appointment"},[_c('div',{staticClass:"appointment__top"},[_c('div',{staticClass:"appointment__top-filter"},[_c('svg',{staticClass:"ico-svg ico-svg__filter-results-button"},[_c('use',{attrs:{"xlink:href":"#filter-results-button"}})]),_c('span',[_vm._v("All Allergies")])])]),_c('table',{staticClass:"appointment__table"},[_vm._m(0),_vm._l((_vm.patients.allergies),function(item,index){return _c('tr',[_c('td',[_vm._v(_vm._s(item.name))]),_c('td',[_vm._v(_vm._s(item.description))]),_c('td',[_vm._v(_vm._s(item.dateEntered))]),_c('td',[_vm._v(_vm._s(item.dateNoted))]),_c('td',[_vm._v(_vm._s(item.reactions))]),_c('td',[_vm._v(_vm._s(item.reactionComments))]),_c('td',[_vm._v(_vm._s(item.severity))]),_c('td',[_vm._v(_vm._s(item.type))])])})],2)])}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th',[_vm._v("Allergy Name")]),_c('th',[_vm._v("Allergy Description")]),_c('th',[_vm._v("Date Entered")]),_c('th',[_vm._v("Date Noted")]),_c('th',[_vm._v("Reactions")]),_c('th',[_vm._v("Reaction Comments")]),_c('th',[_vm._v("Severity")]),_c('th',[_vm._v("Type")])])}]
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 507 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48046,7 +48065,157 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
+/* 494 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('modal',{ref:"modalphone"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Patient Referral Details ")]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referral Id    ")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].refID}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("External Referral ID")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].refID_External}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referral Auth Start Date")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].startDate}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referral Auth End Date")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].endDate}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Patient Id    ")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].patientID}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Patient Name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].patientName}})]),_c('div',{staticClass:"referral__detail-field-patient-address"},[_c('span',{staticClass:"infoname_address"},[_vm._v("Patient Address")]),_c('input',{staticClass:"infovalue-patient-address",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].patientAddress}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referral Type")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referralType}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referral Status")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referredStatus}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Diagnoses")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].diagnoses}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("procedures")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].procedures}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referred by provider name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referredBy}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referred to provider name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referredTo}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referred to provider address")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referredToAddress}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referred to facility address")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referredToFacility}})])])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":_vm.onClose}},[_vm._v("Ok")])])])])}
+var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 495 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"statement"},[_c('div',{staticClass:"statement__top-active"},[_c('div',{staticClass:"statement__top-active-left"},[_c('div',{staticClass:"statement__top-active-title"},[_c('div',{staticClass:"span"},[_vm._v("Statement: "+_vm._s(_vm.item.StatementId))])])])]),_c('div',{staticClass:"statement__top-active"},[_c('div',{staticClass:"statement__top-active-left"},[_c('div',{staticClass:"statement__top-active-title"},[_c('div',{staticClass:"title"},[_vm._v("Payment Due Date: "+_vm._s(_vm.item.Date))])])])]),_c('table',{staticClass:"statement__table"},[_vm._m(0),_vm._l((_vm.item.reviews),function(review,index){return _c('tr',[_c('td',[_vm._v(_vm._s(review.date))]),_c('td',[_vm._v(_vm._s(review.description))]),_c('td',[_vm._v(_vm._s(review.amount))]),_c('td',[_vm._v(_vm._s(review.insurance))]),_c('td',[_vm._v(_vm._s(review.currentBalance))]),_c('td',[_vm._v(_vm._s(review.lineItem))])])}),_c('tr',[_c('td'),_c('td',[_vm._v("ENCOUNTER TOTAL")]),_c('td',[_vm._v(_vm._s(_vm.item.total.amount))]),_c('td',[_vm._v(_vm._s(_vm.item.total.insurance))]),_c('td',[_vm._v(_vm._s(_vm.item.total.currentBalance))]),_c('td',[_vm._v(_vm._s(_vm.item.total.lineItem))])])],2),_vm._m(1),_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"}),_c('modal',{ref:"modalimage"},[_c('div',{staticClass:"modal__content"},[_c('img',{attrs:{"src":"http://uhealthsystem.com/images/content/UMH-statement.jpg"}}),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalimage.close()}}},[_vm._v("Cancel")])])])])],1)}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th',[_vm._v("Date")]),_c('th',[_vm._v("Description of Service")]),_c('th',[_vm._v("Amount")]),_c('th',[_vm._v("Insurance")]),_c('th',[_vm._v("Current Balance")]),_c('th',[_vm._v("Line Item Balance")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"statement__top-active"},[_c('div',{staticClass:"statement__top-active-left"},[_c('div',{staticClass:"statement__top-active-title"},[_c('div',{staticClass:"span"},[_vm._v("  Notes")])])])])}]
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 496 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('modal',{ref:"modalphone"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Search Patient")]),_c('div',{staticClass:"modal-content-row"},[_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Search All', 'Search EPIC', 'Search CERNER'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select EHR"},on:{"input":function($event){}},model:{value:(_vm.phoneNumber),callback:function ($$v) {_vm.phoneNumber=$$v},expression:"phoneNumber"}})],1),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Patient MRN', 'Patient First Name', 'Patient Last Name', 'Patient DOB','Patient Zip', 'Patient Phone Number', 'Patient SSN'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select Criteria"},on:{"input":_vm.showType},model:{value:(_vm.searchType),callback:function ($$v) {_vm.searchType=$$v},expression:"searchType"}})],1),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.searchTemp),expression:"searchTemp"}],staticClass:"modal-appointment__info-lang",domProps:{"value":(_vm.searchTemp)},on:{"input":function($event){if($event.target.composing){ return; }_vm.searchTemp=$event.target.value}}}),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.searchKey=_vm.searchTemp==''?-1:_vm.searchTemp}}},[_vm._v("Search")])])])]),_c('table',{staticClass:"search-patient__table"},[_c('tr',[_c('th',{staticClass:"g-align-center"},[_vm._v("MRN")]),_c('th',{staticClass:"g-align-center"},[_vm._v("First Name")]),_c('th',{staticClass:"g-align-center"},[_vm._v("Last Name")]),_c('th',{staticClass:"g-align-center"},[_vm._v("DOB")]),_c('th',{staticClass:"g-align-center"},[_vm._v("ZIP")]),_c('th',{staticClass:"g-align-center"},[_vm._v("Phone Number")]),_c('th',{staticClass:"g-align-center"},[_vm._v("SSN")])]),_vm._l((_vm.$root._data.Patients),function(patient,index){return (_vm.ifShow(patient)==true)?_c('tr',{style:({color: patient==_vm.chosen?'red':'black'}),on:{"click":function($event){_vm.clickRow(patient)}}},[_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(patient.MRN))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(patient.Name.split(' ')[1]))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(patient.Name.split(' ')[0]))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(patient.DateOfBirth.split(' ')[0]))]),_c('td',{staticClass:"g-align-center"},[_vm._v("Zip")]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(patient.PhoneNumber))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(patient.SSN))])]):_vm._e()})],2),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":_vm.onSelect}},[_vm._v("Select")])])])])}
+var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 497 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"name":"fade"}},[(_vm.show)?_c('div',{staticClass:"calendar-popup",on:{"click":function($event){_vm.$parent.showCalendar=false, _vm.$parent.calendarClick=true}}},[_c('div',{staticClass:"calendar"},[_c('div',{staticClass:"calendar__top-month"},[_c('div',{staticClass:"calendar__top-month-action"},[_c('svg',{staticClass:"ico-svg ico-svg__arrow-l"},[_c('use',{attrs:{"xlink:href":"#arrow-l"}})])]),_c('div',{staticClass:"calendar__top-item mod--first"},[_vm._v("October 2017")]),_c('div',{staticClass:"calendar__top-item"},[_vm._v("Novermber 2017")]),_c('div',{staticClass:"calendar__top-month-action"},[_c('svg',{staticClass:"ico-svg ico-svg__arrow-r"},[_c('use',{attrs:{"xlink:href":"#arrow-r"}})])])]),_c('div',{staticClass:"calendar__main"},[_c('div',{staticClass:"calendar__main-box"},[_c('div',{staticClass:"calendar__main-days"},[_c('span',[_vm._v("Su")]),_c('span',[_vm._v("Mo")]),_c('span',[_vm._v("Tu")]),_c('span',[_vm._v("We")]),_c('span',[_vm._v("Th")]),_c('span',[_vm._v("Fr")]),_c('span',[_vm._v("Sa")])]),_c('div',{staticClass:"calendar__days"},[_c('div',{staticClass:"calendar__days-item mod--free"},[_vm._v("1")]),_c('div',{staticClass:"calendar__days-item mod--disable"},[_vm._v("2")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("3")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("4")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("5")]),_c('div',{staticClass:"calendar__days-item mod--busy"},[_vm._v("6")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("7")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("8")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("9")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("10")]),_c('div',{staticClass:"calendar__days-item mod--free"},[_vm._v("11")]),_c('div',{staticClass:"calendar__days-item mod--disable"},[_vm._v("12")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("13")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("14")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("15")]),_c('div',{staticClass:"calendar__days-item mod--busy"},[_vm._v("16")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("17")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("18")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("19")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("20")]),_c('div',{staticClass:"calendar__days-item mod--free"},[_vm._v("21")]),_c('div',{staticClass:"calendar__days-item mod--disable"},[_vm._v("22")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("23")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("24")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("25")]),_c('div',{staticClass:"calendar__days-item mod--busy"},[_vm._v("26")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("27")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("28")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("29")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("30")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("31")])])]),_c('div',{staticClass:"calendar__main-box"},[_c('div',{staticClass:"calendar__main-days"},[_c('span',[_vm._v("Su")]),_c('span',[_vm._v("Mo")]),_c('span',[_vm._v("Tu")]),_c('span',[_vm._v("We")]),_c('span',[_vm._v("Th")]),_c('span',[_vm._v("Fr")]),_c('span',[_vm._v("Sa")])]),_c('div',{staticClass:"calendar__days"},[_c('div',{staticClass:"calendar__days-item mod--free"},[_vm._v("1")]),_c('div',{staticClass:"calendar__days-item mod--disable"},[_vm._v("2")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("3")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("4")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("5")]),_c('div',{staticClass:"calendar__days-item mod--busy"},[_vm._v("6")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("7")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("8")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("9")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("10")]),_c('div',{staticClass:"calendar__days-item mod--free"},[_vm._v("11")]),_c('div',{staticClass:"calendar__days-item mod--disable"},[_vm._v("12")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("13")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("14")]),_c('div',{staticClass:"calendar__days-item mod--shadow"},[_vm._v("15")]),_c('div',{staticClass:"calendar__days-item mod--busy mod--shadow"},[_vm._v("16")]),_c('div',{staticClass:"calendar__days-item mod--shadow"},[_vm._v("17")]),_c('div',{staticClass:"calendar__days-item mod--shadow"},[_vm._v("18")]),_c('div',{staticClass:"calendar__days-item mod--shadow"},[_vm._v("19")]),_c('div',{staticClass:"calendar__days-item mod--shadow"},[_vm._v("20")]),_c('div',{staticClass:"calendar__days-item mod--free mod--shadow"},[_vm._v("21")]),_c('div',{staticClass:"calendar__days-item mod--disable"},[_vm._v("22")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("23")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("24")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("25")]),_c('div',{staticClass:"calendar__days-item mod--busy"},[_vm._v("26")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("27")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("28")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("29")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("30")]),_c('div',{staticClass:"calendar__days-item"},[_vm._v("31")])])])])])]):_vm._e()])}
+var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 498 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"appointment"},[_c('div',{staticClass:"appointment__top"},[_c('div',{staticClass:"appointment__top-filter"},[_c('svg',{staticClass:"ico-svg ico-svg__filter-results-button"},[_c('use',{attrs:{"xlink:href":"#filter-results-button"}})]),_c('span',[_vm._v("All Encounters")])])]),_c('table',{staticClass:"appointment__table"},[_vm._m(0),_vm._l((_vm.patients.encounters),function(item,index){return _c('tr',[_c('td',[_vm._v(_vm._s(item.type))]),_c('td',[_vm._v(_vm._s(item.date))]),_c('td',[_vm._v(_vm._s(item.eventType))]),_c('td',[_vm._v(_vm._s(item.patientClass))]),_c('td',[_vm._v(_vm._s(item.admissionType))]),_c('td',[_vm._v(_vm._s(item.dischargeDisposition))])])})],2)])}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th',[_vm._v("Type")]),_c('th',[_vm._v("Date")]),_c('th',[_vm._v("Event Type")]),_c('th',[_vm._v("Patient Class")]),_c('th',[_vm._v("Admission Type")]),_c('th',[_vm._v("Discharge Disposition")])])}]
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 499 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"board-block",style:({borderColor: _vm.col})},[_c('span',{staticClass:"board-block__count",style:({color: _vm.col})},[_vm._v(_vm._s(_vm.count))]),_c('br'),_c('span',{staticClass:"board-block__title"},[_vm._v(_vm._s(_vm.text))])])}
+var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 500 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('modal',{ref:"modalphone"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Phone Book")]),_c('div',{staticClass:"modal-content-row"},[_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Destination")])]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Urology (469-899-1224)','Radiology (214-212-0912)','Cardiology (972-358-6547)','Anesthesiology (972-891-8656)'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select Phone Number"},on:{"input":function($event){}},model:{value:(_vm.phoneNumber),callback:function ($$v) {_vm.phoneNumber=$$v},expression:"phoneNumber"}})],1),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Type")])]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Transfer','Consult', 'Conference'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select Phone Type"},on:{"input":function($event){}},model:{value:(_vm.phoneType),callback:function ($$v) {_vm.phoneType=$$v},expression:"phoneType"}})],1),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Notes")])]),_c('textarea',{directives:[{name:"model",rawName:"v-model",value:(_vm.phoneNote),expression:"phoneNote"}],staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default mod--sms",domProps:{"value":(_vm.phoneNote)},on:{"input":function($event){if($event.target.composing){ return; }_vm.phoneNote=$event.target.value}}}),_c('span',[_vm._v("tempDNIS")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.tempDNIS),expression:"tempDNIS"}],attrs:{"readonly":"readonly"},domProps:{"value":(_vm.tempDNIS)},on:{"input":function($event){if($event.target.composing){ return; }_vm.tempDNIS=$event.target.value}}})])])]),_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"box"},[_c('div',{staticClass:"tab-holder"},[_c('a',{staticClass:"tab",on:{"click":function($event){_vm.showRecent=false}}},[_vm._v("Recent List")]),_c('a',{staticClass:"tab",on:{"click":function($event){_vm.showRecent=true}}},[_vm._v("Favorite List")])]),_c('div',[(_vm.showRecent)?_c('ul',[_c('li',[_vm._v("972-888-2938")]),_c('li',[_vm._v("Urology (469-899-1224)")]),_c('li',[_vm._v("Front Office")]),_c('li',[_vm._v("Cardiology")])]):_vm._e(),(!_vm.showRecent)?_c('ul',[_c('li',[_vm._v("Urology (469-899-1224)")]),_c('li',[_vm._v("Radiology (214-212-0912)")]),_c('li',[_vm._v("Cardiology (972-358-6547)")]),_c('li',[_vm._v("Anesthesiology (972-891-8656)")])]):_vm._e()])])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalphone.close()}}},[_vm._v("CANCEL")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.submit}},[_vm._v("DIAL")])])])])}
+var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 501 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-confirmation"},[_vm._m(0),_c('div',{staticClass:"payment-confirmation__top-active"},[_c('form',{staticClass:"payment-card"},[_c('div',{staticClass:"bank-card__side bank-card__side_front"},[_c('div',{staticClass:"title"},[_vm._v("HealthPay24")]),_c('div',{staticClass:"bank-card__inner"}),_c('label',{staticClass:"bank-card__label bank-card__label_holder"},[_c('span',{staticClass:"bank-card__hint"},[_vm._v("Holder of card")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.username),expression:"username"}],staticClass:"bank-card__field",attrs:{"type":"text","placeholder":"Holder of card","pattern":"[A-Za-z, ]{2,}","name":"holder-card","required":""},domProps:{"value":(_vm.username)},on:{"input":function($event){if($event.target.composing){ return; }_vm.username=$event.target.value}}})]),_c('div',{staticClass:"bank-card__inner"}),_c('label',{staticClass:"bank-card__label bank-card__label_number"},[_c('span',{staticClass:"bank-card__hint"},[_vm._v("Number of card")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.cardNumber),expression:"cardNumber"}],staticClass:"bank-card__field",attrs:{"type":"text","placeholder":"Number of card","pattern":"[0-9]{16}","name":"number-card","required":""},domProps:{"value":(_vm.cardNumber)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cardNumber=$event.target.value}}})]),_c('div',{staticClass:"bank-card__inner"}),_c('span',{staticClass:"bank-card__caption"},[_vm._v("valid thru")]),_c('div',{staticClass:"bank-card__inner bank-card__footer"}),_c('label',{staticClass:"bank-card__label bank-card__month"},[_c('span',{staticClass:"bank-card__hint"},[_vm._v("Month")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":['1', '2','3', '4','5', '6','7', '8','9', '10','11', '12' ],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"MM"},model:{value:(_vm.month),callback:function ($$v) {_vm.month=$$v},expression:"month"}})],1),_c('span',{staticClass:"bank-card__separator"},[_vm._v("/")]),_c('label',{staticClass:"bank-card__label bank-card__year"},[_c('span',{staticClass:"bank-card__hint"},[_vm._v("Year")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":['2016', '2017','2018', '2019'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"YY"},model:{value:(_vm.year),callback:function ($$v) {_vm.year=$$v},expression:"year"}})],1),_c('label',{staticClass:"bank-card__label bank-card__cvc"},[_c('span',{staticClass:"bank-card__hint"},[_vm._v("CVC")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.cvv),expression:"cvv"}],staticClass:"bank-card__field",attrs:{"type":"text","placeholder":"CVC","maxlength":"3","pattern":"[0-9]{3}","name":"cvc-card","required":""},domProps:{"value":(_vm.cvv)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cvv=$event.target.value}}})])])])]),_c('div',{staticClass:"payment-confirmation__top-active"},[_c('div',{staticClass:"payment-confirmation__top-active-left"},[_c('div',{staticClass:"payment-confirmation__top-active-title"},[_c('label',{staticClass:"big"},[_vm._v("Total Amount Due:                 "+_vm._s(_vm.item.total.amount))])])])]),_c('div',{staticClass:"payment-confirmation__top-active"},[_c('div',{staticClass:"payment-confirmation__top-active-left"},[_c('div',{staticClass:"payment-confirmation__top-active-title"},[_c('label',{staticClass:"big"},[_vm._v("Payment Amount:")]),_c('label',{staticClass:"bank-card__label bank-card__amount"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.amount),expression:"amount"}],staticClass:"bank-card__field",attrs:{"type":"number","placeholder":"0","required":""},domProps:{"value":(_vm.amount)},on:{"input":function($event){if($event.target.composing){ return; }_vm.amount=$event.target.value}}})])])])]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.confirmPayment}},[_vm._v(_vm._s("CONFIRM PAYMENT")+"            ")])])}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-confirmation__top-active"},[_c('div',{staticClass:"payment-confirmation__top-active-left"},[_c('div',{staticClass:"payment-confirmation__top-active-title"},[_c('div',{staticClass:"span"},[_vm._v("Payment Information")])])])])}]
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 502 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result"},[_vm._m(0),_c('div',{staticClass:"payment-result__top"},[_vm._m(1),_c('div',{staticClass:"payment-result__top-item2"},[_c('div',{staticClass:"payment-result__top-item-label2"},[_vm._v(" "+_vm._s(_vm.item.amount))])])]),_c('div',{staticClass:"payment-result__top"},[_vm._m(2),_c('div',{staticClass:"payment-result__top-item2"},[_c('div',{staticClass:"payment-result__top-item-label2"},[_vm._v(" "+_vm._s(_vm.item.statementId))])])]),_c('div',{staticClass:"payment-result__top"},[_vm._m(3),_c('div',{staticClass:"payment-result__top-item2"},[_c('div',{staticClass:"payment-result__top-item-label2"},[_vm._v(" "+_vm._s(_vm._f("moment")(new Date(),"MMM DD, YYYY"))+" ")])])]),_c('div',{staticClass:"payment-result__top"},[_vm._m(4),_c('div',{staticClass:"payment-result__top-item2"},[_c('div',{staticClass:"payment-result__top-item-label2"},[_vm._v(" "+_vm._s(_vm.item.username))])])]),_c('div',{staticClass:"payment-result__top"},[_vm._m(5),_c('div',{staticClass:"payment-result__top-item2"},[_c('div',{staticClass:"payment-result__top-item-label2"},[_vm._v(" "+_vm._s(_vm.item.cardNumber))])])]),_vm._m(6),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.goBack}},[_vm._v("Return")])])}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result__top"},[_c('div',{staticClass:"payment-result__top-item"},[_c('div',{staticClass:"payment-result__top-item-label"},[_vm._v("Payment Information")])]),_c('div',{staticClass:"payment-result__top-item2"},[_c('div',{staticClass:"payment-result__top-item-label2"})])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result__top-item"},[_c('div',{staticClass:"payment-result__top-item-label"},[_vm._v(" Amount:")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result__top-item"},[_c('div',{staticClass:"payment-result__top-item-label"},[_vm._v(" Statement Number:")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result__top-item"},[_c('div',{staticClass:"payment-result__top-item-label"},[_vm._v(" Payment Date:")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result__top-item"},[_c('div',{staticClass:"payment-result__top-item-label"},[_vm._v(" Billed to:")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result__top-item"},[_c('div',{staticClass:"payment-result__top-item-label"},[_vm._v(" Payed via: ")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"payment-result__top"},[_c('div',{staticClass:"payment-result__top-item3"},[_c('div',{staticClass:"payment-result__top-item-label"},[_vm._v(" Outstanding Balance:")])]),_c('div',{staticClass:"payment-result__top-item4"},[_c('div',{staticClass:"payment-result__top-item-label2"},[_vm._v(" $523.09 ")])])])}]
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 503 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"multiselect",class:{ 'multiselect--active': _vm.isOpen, 'multiselect--disabled': _vm.disabled, 'multiselect--above': _vm.isAbove },attrs:{"tabindex":_vm.searchable ? -1 : _vm.tabindex},on:{"focus":function($event){_vm.activate()},"blur":function($event){_vm.searchable ? false : _vm.deactivate()},"keydown":[function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"down",40,$event.key)){ return null; }if($event.target !== $event.currentTarget){ return null; }$event.preventDefault();_vm.pointerForward()},function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"up",38,$event.key)){ return null; }if($event.target !== $event.currentTarget){ return null; }$event.preventDefault();_vm.pointerBackward()},function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"enter",13,$event.key)&&_vm._k($event.keyCode,"tab",9,$event.key)){ return null; }$event.stopPropagation();if($event.target !== $event.currentTarget){ return null; }_vm.addPointerElement($event)}],"keyup":function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"esc",27,$event.key)){ return null; }_vm.deactivate()}}},[_vm._t("caret",[_c('div',{staticClass:"multiselect__select",on:{"mousedown":function($event){$event.preventDefault();$event.stopPropagation();_vm.toggle()}}})],{toggle:_vm.toggle}),_vm._v(" "),_vm._t("clear",null,{search:_vm.search}),_vm._v(" "),_c('div',{ref:"tags",staticClass:"multiselect__tags"},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.visibleValue.length > 0),expression:"visibleValue.length > 0"}],staticClass:"multiselect__tags-wrap"},[_vm._l((_vm.visibleValue),function(option){return [_vm._t("tag",[_c('span',{staticClass:"multiselect__tag"},[_c('span',{domProps:{"textContent":_vm._s(_vm.getOptionLabel(option))}}),_vm._v(" "),_c('i',{staticClass:"multiselect__tag-icon",attrs:{"aria-hidden":"true","tabindex":"1"},on:{"keydown":function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"enter",13,$event.key)){ return null; }$event.preventDefault();_vm.removeElement(option)},"mousedown":function($event){$event.preventDefault();_vm.removeElement(option)}}})])],{option:option,search:_vm.search,remove:_vm.removeElement})]})],2),_vm._v(" "),(_vm.internalValue && _vm.internalValue.length > _vm.limit)?[_c('strong',{staticClass:"multiselect__strong",domProps:{"textContent":_vm._s(_vm.limitText(_vm.internalValue.length - _vm.limit))}})]:_vm._e(),_vm._v(" "),_c('transition',{attrs:{"name":"multiselect__loading"}},[_vm._t("loading",[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.loading),expression:"loading"}],staticClass:"multiselect__spinner"})])],2),_vm._v(" "),(_vm.searchable)?_c('input',{ref:"search",staticClass:"multiselect__input",style:(_vm.inputStyle),attrs:{"name":_vm.name,"id":_vm.id,"type":"text","autocomplete":"off","placeholder":_vm.placeholder,"disabled":_vm.disabled,"tabindex":_vm.tabindex},domProps:{"value":_vm.isOpen ? _vm.search : _vm.currentOptionLabel},on:{"input":function($event){_vm.updateSearch($event.target.value)},"focus":function($event){$event.preventDefault();_vm.activate()},"blur":function($event){$event.preventDefault();_vm.deactivate()},"keyup":function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"esc",27,$event.key)){ return null; }_vm.deactivate()},"keydown":[function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"down",40,$event.key)){ return null; }$event.preventDefault();_vm.pointerForward()},function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"up",38,$event.key)){ return null; }$event.preventDefault();_vm.pointerBackward()},function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"enter",13,$event.key)){ return null; }$event.preventDefault();$event.stopPropagation();if($event.target !== $event.currentTarget){ return null; }_vm.addPointerElement($event)},function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"delete",[8,46],$event.key)){ return null; }$event.stopPropagation();_vm.removeLastElement()}]}}):_vm._e(),_vm._v(" "),(!_vm.searchable)?_c('span',{staticClass:"multiselect__single",domProps:{"textContent":_vm._s(_vm.currentOptionLabel)},on:{"mousedown":function($event){$event.preventDefault();_vm.toggle($event)}}}):_vm._e()],2),_vm._v(" "),_c('transition',{attrs:{"name":"multiselect"}},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.isOpen),expression:"isOpen"}],ref:"list",staticClass:"multiselect__content-wrapper",style:({ maxHeight: _vm.optimizedHeight + 'px' }),on:{"focus":_vm.activate,"mousedown":function($event){$event.preventDefault();}}},[_c('ul',{staticClass:"multiselect__content",style:(_vm.contentStyle)},[_vm._t("beforeList"),_vm._v(" "),(_vm.multiple && _vm.max === _vm.internalValue.length)?_c('li',[_c('span',{staticClass:"multiselect__option"},[_vm._t("maxElements",[_vm._v("Maximum of "+_vm._s(_vm.max)+" options selected. First remove a selected option to select another.")])],2)]):_vm._e(),_vm._v(" "),(!_vm.max || _vm.internalValue.length < _vm.max)?_vm._l((_vm.filteredOptions),function(option,index){return _c('li',{key:index,staticClass:"multiselect__element"},[(!(option && (option.$isLabel || option.$isDisabled)))?_c('span',{staticClass:"multiselect__option",class:_vm.optionHighlight(index, option),attrs:{"data-select":option && option.isTag ? _vm.tagPlaceholder : _vm.selectLabelText,"data-selected":_vm.selectedLabelText,"data-deselect":_vm.deselectLabelText},on:{"click":function($event){$event.stopPropagation();_vm.select(option)},"mouseenter":function($event){if($event.target !== $event.currentTarget){ return null; }_vm.pointerSet(index)}}},[_vm._t("option",[_c('span',{staticClass:"multiselect__option-category"},[_vm._v(_vm._s(_vm.getOptionLabel(option)))])],{option:option,search:_vm.search})],2):_vm._e(),_vm._v(" "),(option && (option.$isLabel || option.$isDisabled))?_c('span',{staticClass:"multiselect__option multiselect__option--disabled",class:_vm.optionHighlight(index, option)},[_vm._t("option",[_c('span',[_vm._v(_vm._s(_vm.getOptionLabel(option)))])],{option:option,search:_vm.search})],2):_vm._e()])}):_vm._e(),_vm._v(" "),_c('li',{directives:[{name:"show",rawName:"v-show",value:(_vm.showNoResults && (_vm.filteredOptions.length === 0 && _vm.search && !_vm.loading)),expression:"showNoResults && (filteredOptions.length === 0 && search && !loading)"}]},[_c('span',{staticClass:"multiselect__option"},[_vm._t("noResult",[_vm._v("No elements found. Consider changing the search query.")])],2)]),_vm._v(" "),_vm._t("afterList")],2)])])],2)}
+var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 504 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"appointment"},[_c('div',{staticClass:"appointment__top"},[_c('div',{staticClass:"appointment__top-filter"},[_c('svg',{staticClass:"ico-svg ico-svg__filter-results-button"},[_c('use',{attrs:{"xlink:href":"#filter-results-button"}})]),_c('span',[_vm._v("All referrals")])]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.business_segment),expression:"business_segment"}],attrs:{"placeholder":"Business Segment"},domProps:{"value":(_vm.business_segment)},on:{"input":function($event){if($event.target.composing){ return; }_vm.business_segment=$event.target.value}}}),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.service_area),expression:"service_area"}],attrs:{"placeholder":"Service Area"},domProps:{"value":(_vm.service_area)},on:{"input":function($event){if($event.target.composing){ return; }_vm.service_area=$event.target.value}}}),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.status),expression:"status"}],attrs:{"placeholder":"Status"},domProps:{"value":(_vm.status)},on:{"input":function($event){if($event.target.composing){ return; }_vm.status=$event.target.value}}}),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.startDate),expression:"startDate"}],attrs:{"placeholder":"Start Date"},domProps:{"value":(_vm.startDate)},on:{"input":function($event){if($event.target.composing){ return; }_vm.startDate=$event.target.value}}}),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.endDate),expression:"endDate"}],attrs:{"placeholder":"End Date"},domProps:{"value":(_vm.endDate)},on:{"input":function($event){if($event.target.composing){ return; }_vm.endDate=$event.target.value}}}),_c('div',{staticClass:"appointment__top-data"},[_c('svg',{staticClass:"ico-svg ico-svg__calendar"},[_c('use',{attrs:{"xlink:href":"#calendar"}})]),_c('span',[_vm._v(_vm._s(_vm.sunday)+" - "+_vm._s(_vm.saturday))])])]),_c('table',{staticClass:"appointment__table"},[_vm._m(0),_vm._l((this.$store.state.referrals),function(item,index){return (_vm.check(item))?_c('tr',[_c('td',[_vm._v(_vm._s(item.refID))]),_c('td',[_vm._v(_vm._s(item.patientID))]),_c('td',[_vm._v(_vm._s(item.patientName))]),_c('td',[_vm._v(_vm._s(item.referredBy))]),_c('td',[_vm._v(_vm._s(item.referredTo))]),_c('td',[_vm._v(_vm._s(item.referralType))]),_c('td',[_vm._v(_vm._s(item.referredStatus))]),_c('td',[_vm._v(_vm._s(item.businessSegment))]),_c('td',[_vm._v(_vm._s(item.serviceArea))]),_c('td',[_vm._v(_vm._s(item.startDate))]),_c('td',[_vm._v(_vm._s(item.endDate))]),_c('td',{staticClass:"more-action"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__more"},[_c('use',{attrs:{"xlink:href":"#more"}})])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow(_vm.$root.epicAddress)}}},[_vm._v("Show in EPIC")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.showDetailReferral(index)}}},[_vm._v("Show Details")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.showUpdateReferral(index)}}},[_vm._v("Update")])])])])]):_vm._e()})],2),_c('modal',{ref:"modalInfo"},[(_vm.currentMoreInfoIndex !== null)?_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Appointment details")]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__clock"},[_c('use',{attrs:{"xlink:href":"#clock"}})]),_vm._v("Appointment time: "),_c('b',[_vm._v(" "+_vm._s(_vm._f("moment")([_vm.patients.PastAppointments[_vm.currentMoreInfoIndex].Time, "HH:mm:ss"],"h:mm a")))])]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__calendar"},[_c('use',{attrs:{"xlink:href":"#calendar"}})]),_vm._v("Appointment date: "),_c('b',[_vm._v(_vm._s(_vm._f("moment")([_vm.patients.PastAppointments[_vm.currentMoreInfoIndex].Date, ["M-DD-YYYY HH:mm:ss","D-MMM-YYYY HH:mm:ss"]],"MMM DD, YYYY")))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Hospital/clinic name: "),_c('b',[_vm._v(" "+_vm._s(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex].Department))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Appointment type: "),_c('b',[_vm._v(_vm._s(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex].VisitType))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Reason for visit: "),_c('b',[_vm._v(_vm._s(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex].VisitReason))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Interpreter required: "),_c('b',[_vm._v(_vm._s(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex]['Appointment Details']['Interpreter Required']))])]),(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex]['Appointment Details']['Interpreter Language'] !== 'None')?_c('div',{staticClass:"modal-appointment__info"},[_c('div',{staticClass:"modal-appointment__lang-ico"},[_c('svg',{staticClass:"ico-svg ico-svg__lang"},[_c('use',{attrs:{"xlink:href":"#lang"}})])]),_vm._v("Interpreter required: "),_c('b',[_vm._v(_vm._s(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex]['Appointment Details']['Interpreter Language']))])]):_vm._e()])]),_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__map"},[_c('gmap-map',{staticStyle:{"width":"100%","height":"300px"},attrs:{"center":{lat: 32.9448268, lng: -96.64587949999998},"zoom":14}},[_c('gmap-marker',{key:1,attrs:{"position":{lat: 32.9448268, lng: -96.64587949999998}}})],1)],1)])])]):_vm._e()])],1)}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th',[_vm._v("Ref ID")]),_c('th',[_vm._v("Patient ID")]),_c('th',[_vm._v("Patient Name")]),_c('th',[_vm._v("Referred By (Provider)")]),_c('th',[_vm._v("Referred To (Provider)")]),_c('th',[_vm._v("Referral Type")]),_c('th',[_vm._v("Referred Status")]),_c('th',[_vm._v("Business Segment")]),_c('th',[_vm._v("Service Area")]),_c('th',[_vm._v("Referral Auth Start Date")]),_c('th',[_vm._v("Referral Auth End Date")]),_c('th',[_vm._v("Actions")])])}]
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 505 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"l-page",attrs:{"id":"app"}},[_c('link',{attrs:{"href":"./style.css","rel":"stylesheet"}}),_vm._v(" "),_c('header',{staticClass:"header"},[_vm._m(0),_vm._v(" "),_vm._m(1),_vm._v(" "),_c('div',{staticClass:"header__action"},[_c('div',{staticClass:"header__action-item"},[_c('a',{staticClass:"header__action-link",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__search"},[_c('use',{attrs:{"xlink:href":"#search"}})])])]),_vm._v(" "),_c('div',{staticClass:"header__action-item"},[_c('a',{staticClass:"header__action-link",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__settings"},[_c('use',{attrs:{"xlink:href":"#settings"}})])])]),_vm._v(" "),_vm._m(2)])]),_vm._v(" "),_c('div',{attrs:{"id":"huddle-room-mount"}}),_vm._v(" "),_c('div',{staticClass:"layout"},[_c('div',{staticClass:"layout__sidebar"},[_c('div',{staticClass:"layout__sidebar-scrolling"},[_c('aside',{staticClass:"sidebar"},[_c('div',{staticClass:"sidebar__title"},[_vm._v("Patient Information")]),_c('div',{staticClass:"l-sidebar__userpic"},[_c('div',{staticClass:"sidebar__userpic"},[_c('img',{staticClass:"sidebar__userpic-image",attrs:{"src":"img/newUser.png"}}),_c('a',{staticClass:"sidebar__userpic-info",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__info"},[_c('use',{attrs:{"xlink:href":"#info"}})])])])]),_vm._m(3),_vm._m(4),_vm._m(5)])])]),_vm._v(" "),_c('div',{staticClass:"layout__content"},[_c('div',{staticClass:"layout__content-scrolling"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"content__top-line"},[_c('h1',{staticClass:"title"},[_vm._v("Patient Schedule")]),_c('a',{staticClass:"content__top-action",attrs:{"href":"#3"}},[_c('svg',{staticClass:"ico-svg ico-svg__plus-round"},[_c('use',{attrs:{"xlink:href":"#plus-round"}})])])]),_vm._v(" "),_c('div',{staticClass:"content__box"},[_c('div',{staticClass:"appointment"},[_c('div',{staticClass:"appointment__top"},[_c('div',{staticClass:"appointment__top-filter"},[_c('svg',{staticClass:"ico-svg ico-svg__filter-results-button"},[_c('use',{attrs:{"xlink:href":"#filter-results-button"}})]),_c('span',[_vm._v("All Appointments")])]),_c('div',{staticClass:"appointment__top-data"},[_c('svg',{staticClass:"ico-svg ico-svg__calendar"},[_c('use',{attrs:{"xlink:href":"#calendar"}})]),_c('span',[_vm._v("August 10  -  August 16")])])]),_vm._m(6),_vm._m(7)]),_vm._v(" "),_c('div',{staticClass:"journey-map"},[_c('h2',{staticClass:"title mod--journey"},[_vm._v("Patient Journey Map")]),_vm._m(8),_c('div',{staticClass:"journey-map__line"},[_c('img',{staticClass:"journey-map__line-userpic",attrs:{"src":"img/newUser.png"}}),_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_vm._m(9),_c('svg',{staticClass:"ico-svg ico-svg__phone"},[_c('use',{attrs:{"xlink:href":"#phone"}})])]),_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_vm._m(10),_c('svg',{staticClass:"ico-svg ico-svg__mail"},[_c('use',{attrs:{"xlink:href":"#mail"}})])]),_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_vm._m(11),_c('svg',{staticClass:"ico-svg ico-svg__hospital"},[_c('use',{attrs:{"xlink:href":"#hospital"}})])]),_c('div',{staticClass:"journey-map__line-item-end"})])])])])])])])])}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('h1',{staticClass:"logo"},[_c('a',{staticClass:"logo__link",attrs:{"href":"#3"}},[_vm._v("SpinSci")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"header__tabs"},[_c('div',{staticClass:"header__tabs-item state--active"},[_c('a',{staticClass:"header__tabs-item-link",attrs:{"href":"#"}},[_vm._v("Scheduling")])]),_vm._v(" "),_c('div',{staticClass:"header__tabs-item"},[_c('a',{staticClass:"header__tabs-item-link",attrs:{"href":"#"}},[_vm._v("Case Management")])]),_vm._v(" "),_c('div',{staticClass:"header__tabs-item"},[_c('a',{staticClass:"header__tabs-item-link",attrs:{"href":"#"}},[_vm._v("Billing")])]),_vm._v(" "),_c('div',{staticClass:"header__tabs-item"},[_c('a',{staticClass:"header__tabs-item-link",attrs:{"href":"#"}},[_vm._v("Huddle Room")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"header__action-item"},[_c('a',{staticClass:"header__action-link",attrs:{"href":"#3"}},[_c('div',{staticClass:"userpic-header"},[_c('img',{staticClass:"userpic-header__img",attrs:{"src":"img/cd6083.png"}})])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sidebar__note-userpic"},[_vm._v("Number of Matches ("),_c('b',[_vm._v("0")]),_vm._v(")")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Patient Name")]),_c('div',{staticClass:"multiselect ui-multiselect ui-multiselect--default",attrs:{"tabindex":"0"}},[_c('div',{staticClass:"multiselect__select"}),_vm._v(" "),_c('div',{staticClass:"multiselect__tags"},[_c('div',{staticClass:"multiselect__tags-wrap",staticStyle:{"display":"none"}}),_vm._v(" "),_c('div',{staticClass:"multiselect__spinner",staticStyle:{"display":"none"}}),_vm._v(" "),_c('span',{staticClass:"multiselect__single"},[_vm._v("Select option")])]),_vm._v(" "),_c('div',{staticClass:"multiselect__content-wrapper",staticStyle:{"max-height":"300px","display":"none"}},[_c('ul',{staticClass:"multiselect__content",staticStyle:{"display":"inline-block"}},[_c('li',{staticClass:"multiselect__element"},[_c('span',{staticClass:"multiselect__option multiselect__option--category",attrs:{"data-select":"","data-selected":"","data-deselect":""}},[_c('span',{staticClass:"multiselect__option-category"},[_vm._v("INVISION")])])]),_c('li',{staticClass:"multiselect__element"},[_c('span',{staticClass:"multiselect__option multiselect__option--category",attrs:{"data-select":"","data-selected":"","data-deselect":""}},[_c('span',{staticClass:"multiselect__option-category"},[_vm._v("SOARIAN")])])]),_vm._v(" "),_c('li',{staticStyle:{"display":"none"}},[_c('span',{staticClass:"multiselect__option"},[_vm._v("No elements found. Consider changing the search query.")])])])])])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Date of Birth")]),_c('div',{staticClass:"sidebar__section--info"})]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("SSN")]),_c('div',{staticClass:"sidebar__section--info"})]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Phone Number")]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":"tel:"}})])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Primary Care Provider")]),_c('div',{staticClass:"sidebar__section--info"}),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":"tel:"}})])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Address")]),_c('div',{staticClass:"sidebar__section--info"})]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Treatment Team")]),_c('div',[_c('div',{staticClass:"sidebar__section--info-select"}),_c('div',{staticClass:"sidebar__section--info"})])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Provider")]),_c('div',[_c('div',{staticClass:"sidebar__section--info-select"}),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":"tel:"}})])])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sidebar__success"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary mod--block",attrs:{"href":"#3"}},[_vm._v(" Screen pop")])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Patient Search")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Patient Information")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Appointments Create")])])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('table',{staticClass:"appointment__table"},[_c('tr',[_c('th',[_vm._v("Date")]),_c('th',[_vm._v("Department")]),_c('th',[_vm._v("Appt. Time")]),_c('th',[_vm._v("Provider")]),_c('th',[_vm._v("Visit Type")]),_c('th',[_vm._v("Reason for Visit")]),_c('th',[_vm._v("Actions")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"modal",staticStyle:{"display":"none"}},[_c('div',{staticClass:"modal__overlay",staticStyle:{"display":"none"}})])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"journey-map-selects"},[_c('div',{staticClass:"multiselect ui-multiselect ui-multiselect--border multiselect--above",attrs:{"tabindex":"0"}},[_c('div',{staticClass:"multiselect__select"}),_vm._v(" "),_c('div',{staticClass:"multiselect__tags"},[_c('div',{staticClass:"multiselect__tags-wrap",staticStyle:{"display":"none"}}),_vm._v(" "),_c('div',{staticClass:"multiselect__spinner",staticStyle:{"display":"none"}}),_vm._v(" "),_c('span',{staticClass:"multiselect__single"},[_vm._v("Oct 18, 2017 - 11:00am")])]),_vm._v(" "),_c('div',{staticClass:"multiselect__content-wrapper",staticStyle:{"max-height":"300px","display":"none"}},[_c('ul',{staticClass:"multiselect__content",staticStyle:{"display":"inline-block"}},[_c('li',{staticClass:"multiselect__element"},[_c('span',{staticClass:"multiselect__option",attrs:{"data-select":"","data-selected":"","data-deselect":""}},[_c('span',[_vm._v("May 27, 2017 - 3:00pm")])])]),_c('li',{staticClass:"multiselect__element"},[_c('span',{staticClass:"multiselect__option",attrs:{"data-select":"","data-selected":"","data-deselect":""}},[_c('span',[_vm._v("Sept 25, 2017 - 1:00pm")])])]),_c('li',{staticClass:"multiselect__element"},[_c('span',{staticClass:"multiselect__option multiselect__option--highlight multiselect__option--selected",attrs:{"data-select":"","data-selected":"","data-deselect":""}},[_c('span',[_vm._v("Oct 18, 2017 - 11:00am")])])]),_vm._v(" "),_c('li',{staticStyle:{"display":"none"}},[_c('span',{staticClass:"multiselect__option"},[_vm._v("No elements found. Consider changing the search query.")])])])])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Appointments")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Data/Time")]),_vm._v(": May 27, 2017")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Duration")]),_vm._v(":  7 min")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("ANI")]),_vm._v(":  +1 214 701 5489")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent ID")]),_vm._v(":  749936")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent Name")]),_vm._v(":  James King")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Survey Score")]),_vm._v(": 3")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Inbound")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Data/Time")]),_vm._v(": May 27, 2017")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("SMS")]),_vm._v(":  Appintment Confimation")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Customet Action")]),_vm._v(": Patient clicked yes")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("SMS Outcome")]),_vm._v(":  Confirmed Appointment")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent ID")]),_vm._v(":  749936")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent Name")]),_vm._v(":  James King")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Type")]),_vm._v(": Check in")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check in Time")]),_vm._v(": 3:00pm")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Physician Name")]),_vm._v(": James King")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Department")]),_vm._v(":")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check out time")]),_vm._v(":  3:30pm")])])])}]
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 506 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"appointment"},[_c('div',{staticClass:"appointment__top"},[_c('div',{staticClass:"appointment__top-filter"},[_c('svg',{staticClass:"ico-svg ico-svg__filter-results-button"},[_c('use',{attrs:{"xlink:href":"#filter-results-button"}})]),_c('span',[_vm._v("All Appointments")])])]),_c('table',{staticClass:"appointment__table"},[_vm._m(0),_vm._l((_vm.patients.PastAppointments),function(item,index){return _c('tr',[_c('td',{staticClass:"past"},[_vm._v(_vm._s(_vm._f("moment")([item.Date, ["M-DD-YYYY HH:mm:ss","D-MMM-YYYY HH:mm:ss"]],"MMM DD, YYYY")))]),_c('td',{staticClass:"past"},[_vm._v(_vm._s(item.Department))]),_c('td',{staticClass:"past"},[_vm._v(_vm._s(_vm._f("moment")([ item.Time, "HH:mm:ss" ],"h:mm a")))]),_c('td',{staticClass:"past"},[_vm._v(_vm._s(item.Provider))]),_c('td',{staticClass:"past"},[_vm._v(_vm._s(item.VisitType))]),_c('td',{staticClass:"past"},[_vm._v(_vm._s(item.VisitReason))]),_c('td',{staticClass:"more-action past"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__more"},[_c('use',{attrs:{"xlink:href":"#more"}})])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openModalInfo(_vm.patients.PastAppointments[index])}}},[_vm._v("More details")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Reschedule Appointment")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Send Reminder")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow(_vm.$root.epicAddress)}}},[_vm._v("Show in EPIC")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.showModal(_vm.patients.PastAppointments[index])}}},[_vm._v("Show Details")])])])])])}),_vm._l((_vm.patients.CurrentAppointments),function(item,index){return _c('tr',[_c('td',[_vm._v(_vm._s(_vm._f("moment")([item.Date, ["M-DD-YYYY HH:mm:ss","D-MMM-YYYY HH:mm:ss"]],"MMM DD, YYYY")))]),_c('td',[_vm._v(_vm._s(item.Department))]),_c('td',[_vm._v(_vm._s(_vm._f("moment")([ item.Time, "HH:mm:ss" ],"h:mm a")))]),_c('td',[_vm._v(_vm._s(item.Provider))]),_c('td',[_vm._v(_vm._s(item.VisitType))]),_c('td',[_vm._v(_vm._s(item.VisitReason))]),_c('td',{staticClass:"more-action"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__more"},[_c('use',{attrs:{"xlink:href":"#more"}})])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openModalInfo(_vm.patients.CurrentAppointments[index])}}},[_vm._v("More details")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Reschedule Appointment")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Cancel Appointment")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Send Reminder")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow(_vm.$root.epicAddress)}}},[_vm._v("Show in EPIC")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.showModal(_vm.patients.CurrentAppointments[index])}}},[_vm._v("Show Details")])])])])])})],2),_c('modal',{ref:"modalInfo"},[(_vm.currentAppointment !== null)?_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Appointment details")]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__clock"},[_c('use',{attrs:{"xlink:href":"#clock"}})]),_vm._v("Appointment time: "),_c('b',[_vm._v(" "+_vm._s(_vm._f("moment")([_vm.currentAppointment.Time, "HH:mm:ss"],"h:mm a")))])]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__calendar"},[_c('use',{attrs:{"xlink:href":"#calendar"}})]),_vm._v("Appointment date: "),_c('b',[_vm._v(_vm._s(_vm._f("moment")([_vm.currentAppointment.Date, ["M-DD-YYYY HH:mm:ss","D-MMM-YYYY HH:mm:ss"]],"MMM DD, YYYY")))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Hospital/clinic name: "),_c('b',[_vm._v(" "+_vm._s(_vm.currentAppointment.Department))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Appointment type: "),_c('b',[_vm._v(_vm._s(_vm.currentAppointment.VisitType))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Reason for visit: "),_c('b',[_vm._v(_vm._s(_vm.currentAppointment.VisitReason))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Interpreter required: "),_c('b',[_vm._v(_vm._s(_vm.currentAppointment['Appointment Details']['Interpreter Required']))])]),(_vm.currentAppointment['Appointment Details']['Interpreter Language'] !== 'None')?_c('div',{staticClass:"modal-appointment__info"},[_c('div',{staticClass:"modal-appointment__lang-ico"},[_c('svg',{staticClass:"ico-svg ico-svg__lang"},[_c('use',{attrs:{"xlink:href":"#lang"}})])]),_vm._v("Interpreter required: "),_c('b',[_vm._v(_vm._s(_vm.currentAppointment['Appointment Details']['Interpreter Language']))])]):_vm._e()])]),_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__map"},[_c('gmap-map',{staticStyle:{"width":"100%","height":"300px"},attrs:{"center":{lat: 32.9448268, lng: -96.64587949999998},"zoom":14}},[_c('gmap-marker',{key:1,attrs:{"position":{lat: 32.9448268, lng: -96.64587949999998}}})],1)],1)])])]):_vm._e()]),_c('modal',{ref:"modalbook"},[(_vm.currentAppointment !== null)?_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Details")]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__calendar"},[_c('use',{attrs:{"xlink:href":"#calendar"}})]),_vm._v(_vm._s(_vm._f("moment")([_vm.currentAppointment.Date, ["M-DD-YYYY HH:mm:ss","D-MMM-YYYY HH:mm:ss"]],"MMM DD, YYYY"))+" | "+_vm._s(_vm._f("moment")([ _vm.currentAppointment.Time, "HH:mm:ss" ],"h:mm a")))]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__location"},[_c('use',{attrs:{"xlink:href":"#location"}})]),_vm._v("Schedule appointment with "+_vm._s(_vm.currentAppointment.Provider))]),_c('div',{staticClass:"modal-appointment__info"},[_c('div',{staticClass:"modal-appointment__lang-ico"},[_c('svg',{staticClass:"ico-svg ico-svg__lang"},[_c('use',{attrs:{"xlink:href":"#lang"}})])]),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Language Interpreter Required")]),_c('div',{staticClass:"modal-appointment__lang-toggle",class:{'state--active': !_vm.disableSelectLang},on:{"click":function($event){$event.preventDefault();_vm.disableSelectLang=!_vm.disableSelectLang}}})]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":_vm.bookNowData.InterpreterLanguages,"searchable":false,"allowEmpty":false,"showLabels":false,"disabled":_vm.disableSelectLang,"placeholder":"Select Language"},on:{"input":function($event){}},model:{value:(_vm.langSelected),callback:function ($$v) {_vm.langSelected=$$v},expression:"langSelected"}})],1)])])]),_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__map"},[_c('gmap-map',{staticStyle:{"width":"100%","height":"100px"},attrs:{"center":{lat: 32.9448268, lng: -96.64587949999998},"zoom":14}},[_c('gmap-marker',{key:1,attrs:{"position":{lat: 32.9448268, lng: -96.64587949999998}}})],1)],1)])]),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showEpicTemplate),expression:"showEpicTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-epic","name":"checkbox-epic","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showEpicTemplate)?_vm._i(_vm.showEpicTemplate,null)>-1:(_vm.showEpicTemplate)},on:{"change":function($event){var $$a=_vm.showEpicTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showEpicTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showEpicTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showEpicTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-epic"}},[_vm._v("Add Notes to EPIC")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showEpicTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"}):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showWaitList),expression:"showWaitList"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-waitlist","name":"checkbox-waitlist","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showWaitList)?_vm._i(_vm.showWaitList,null)>-1:(_vm.showWaitList)},on:{"change":function($event){var $$a=_vm.showWaitList,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showWaitList=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showWaitList=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showWaitList=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-waitlist"}},[_vm._v("Waitlist Enabled")])])]),_c('div',{staticClass:"modal-appointment__reason"},[_vm._v("Reason for visit")]),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showSmsTemplate),expression:"showSmsTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-sms","name":"checkbox-sms","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showSmsTemplate)?_vm._i(_vm.showSmsTemplate,null)>-1:(_vm.showSmsTemplate)},on:{"change":function($event){var $$a=_vm.showSmsTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showSmsTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showSmsTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showSmsTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-sms"}},[_vm._v("Sent Text Confirmation")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showSmsTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default mod--sms"},[_vm._v(_vm._s(_vm.bookNowData.SmsConfirmTemplate))]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showEmailTemplate),expression:"showEmailTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-email","name":"checkbox-email","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showEmailTemplate)?_vm._i(_vm.showEmailTemplate,null)>-1:(_vm.showEmailTemplate)},on:{"change":function($event){var $$a=_vm.showEmailTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showEmailTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showEmailTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showEmailTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-email"}},[_vm._v("Sent Email Confirmation")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showEmailTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"},[_vm._v(_vm._s(_vm.bookNowData.EmailConfirmTemplate))]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showSmsRemind),expression:"showSmsRemind"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-smsremind","name":"checkbox-smsremind","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showSmsRemind)?_vm._i(_vm.showSmsRemind,null)>-1:(_vm.showSmsRemind)},on:{"change":function($event){var $$a=_vm.showSmsRemind,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showSmsRemind=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showSmsRemind=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showSmsRemind=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-smsremind"}},[_vm._v("Send SMS reminder")])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showSmsRemind)?_c('div',{staticClass:"modal-appointment__remind-days"},[_c('input',{staticClass:"ui-input ui-input--skin-default ui-input--theme-default",attrs:{"type":"text","value":"2"}}),_vm._v("days before appointment.")]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showVoiceRemind),expression:"showVoiceRemind"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-voiceremind","name":"checkbox-voiceremind","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showVoiceRemind)?_vm._i(_vm.showVoiceRemind,null)>-1:(_vm.showVoiceRemind)},on:{"change":function($event){var $$a=_vm.showVoiceRemind,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showVoiceRemind=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showVoiceRemind=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showVoiceRemind=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-voiceremind"}},[_vm._v("Send Voice reminder")])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$refs.modalbook.close()}}},[_vm._v("OK")])])]):_vm._e()])],1)}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th',[_vm._v("Date")]),_c('th',[_vm._v("Department")]),_c('th',[_vm._v("Appt. Time")]),_c('th',[_vm._v("Provider")]),_c('th',[_vm._v("Visit Type")]),_c('th',[_vm._v("Reason for Visit")]),_c('th',[_vm._v("Actions")])])}]
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 507 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vue-street-view-pano-container"},[_c('div',{ref:"vue-street-view-pano",staticClass:"vue-street-view-pano"}),_vm._v(" "),_vm._t("default")],2)}
+var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
 /* 508 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"appointment"},[_c('div',{staticClass:"appointment__top"},[_c('div',{staticClass:"appointment__top-filter"},[_c('svg',{staticClass:"ico-svg ico-svg__filter-results-button"},[_c('use',{attrs:{"xlink:href":"#filter-results-button"}})]),_c('span',[_vm._v("All Allergies")])])]),_c('table',{staticClass:"appointment__table"},[_vm._m(0),_vm._l((_vm.patients.allergies),function(item,index){return _c('tr',[_c('td',[_vm._v(_vm._s(item.name))]),_c('td',[_vm._v(_vm._s(item.description))]),_c('td',[_vm._v(_vm._s(item.dateEntered))]),_c('td',[_vm._v(_vm._s(item.dateNoted))]),_c('td',[_vm._v(_vm._s(item.reactions))]),_c('td',[_vm._v(_vm._s(item.reactionComments))]),_c('td',[_vm._v(_vm._s(item.severity))]),_c('td',[_vm._v(_vm._s(item.type))])])})],2)])}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th',[_vm._v("Allergy Name")]),_c('th',[_vm._v("Allergy Description")]),_c('th',[_vm._v("Date Entered")]),_c('th',[_vm._v("Date Noted")]),_c('th',[_vm._v("Reactions")]),_c('th',[_vm._v("Reaction Comments")]),_c('th',[_vm._v("Severity")]),_c('th',[_vm._v("Type")])])}]
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 509 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48056,7 +48225,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 509 */
+/* 510 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48066,7 +48235,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 510 */
+/* 511 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48076,7 +48245,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 511 */
+/* 512 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48086,7 +48255,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 512 */
+/* 513 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48096,21 +48265,11 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 513 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{ref:"flyaway"},[_vm._t("default")],2)])}
-var staticRenderFns = []
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
 /* 514 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"cards"},[_c('div',{staticClass:"card"},[_c('div',{staticClass:"card__header"},[_vm._v("MEDICAL HISTORY")]),_c('div',{staticClass:"card_content_title"},[_vm._v("Diagnosis Names:")]),_vm._l((_vm.patients.medicalHistory),function(item,index){return _c('div',{staticClass:"card_content_regular"},[_vm._v(_vm._s(item))])})],2),_c('div',{staticClass:"card"},[_c('div',{staticClass:"card__header red"},[_vm._v("ACTIVE PROBLEMS")]),_c('div',{staticClass:"card_content_title"},[_vm._v("Problem Names:")]),_vm._l((_vm.patients.activeProblems),function(item,index){return _c('div',{staticClass:"card_content_regular"},[_vm._v(_vm._s(item))])})],2)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{ref:"flyaway"},[_vm._t("default")],2)])}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -48130,8 +48289,8 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"appointment"},[_c('div',{staticClass:"appointment__top"},[_c('div',{staticClass:"appointment__top-filter"},[_c('svg',{staticClass:"ico-svg ico-svg__filter-results-button"},[_c('use',{attrs:{"xlink:href":"#filter-results-button"}})]),_c('span',[_vm._v("All Appointments")])])]),_c('table',{staticClass:"appointment__table"},[_vm._m(0),_vm._l((_vm.patients.PastAppointments),function(item,index){return _c('tr',[_c('td',{staticClass:"past"},[_vm._v(_vm._s(_vm._f("moment")([item.Date, ["M-DD-YYYY HH:mm:ss","D-MMM-YYYY HH:mm:ss"]],"MMM DD, YYYY")))]),_c('td',{staticClass:"past"},[_vm._v(_vm._s(item.Department))]),_c('td',{staticClass:"past"},[_vm._v(_vm._s(_vm._f("moment")([ item.Time, "HH:mm:ss" ],"h:mm a")))]),_c('td',{staticClass:"past"},[_vm._v(_vm._s(item.Provider))]),_c('td',{staticClass:"past"},[_vm._v(_vm._s(item.VisitType))]),_c('td',{staticClass:"past"},[_vm._v(_vm._s(item.VisitReason))]),_c('td',{staticClass:"more-action past"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__more"},[_c('use',{attrs:{"xlink:href":"#more"}})])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openModalInfo(index)}}},[_vm._v("More details")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Reschedule Appointment")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Cancel Appointment")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Send Reminder")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('http://10.3.74.119/openemr/interface/patient_file/encounter/forms.php')}}},[_vm._v("Show in EPIC")])])])])])}),_vm._l((_vm.patients.CurrentAppointments),function(item,index){return _c('tr',[_c('td',[_vm._v(_vm._s(_vm._f("moment")([item.Date, ["M-DD-YYYY HH:mm:ss","D-MMM-YYYY HH:mm:ss"]],"MMM DD, YYYY")))]),_c('td',[_vm._v(_vm._s(item.Department))]),_c('td',[_vm._v(_vm._s(_vm._f("moment")([ item.Time, "HH:mm:ss" ],"h:mm a")))]),_c('td',[_vm._v(_vm._s(item.Provider))]),_c('td',[_vm._v(_vm._s(item.VisitType))]),_c('td',[_vm._v(_vm._s(item.VisitReason))]),_c('td',{staticClass:"more-action"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__more"},[_c('use',{attrs:{"xlink:href":"#more"}})])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openModalInfo(index)}}},[_vm._v("More details")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Reschedule Appointment")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Cancel Appointment")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Send Reminder")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('http://10.3.74.119/openemr/interface/patient_file/encounter/forms.php')}}},[_vm._v("Show in EPIC    ")])])])])])})],2),_c('modal',{ref:"modalInfo"},[(_vm.currentMoreInfoIndex !== null)?_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Appointment details")]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__clock"},[_c('use',{attrs:{"xlink:href":"#clock"}})]),_vm._v("Appointment time: "),_c('b',[_vm._v(" "+_vm._s(_vm._f("moment")([_vm.patients.PastAppointments[_vm.currentMoreInfoIndex].Time, "HH:mm:ss"],"h:mm a")))])]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__calendar"},[_c('use',{attrs:{"xlink:href":"#calendar"}})]),_vm._v("Appointment date: "),_c('b',[_vm._v(_vm._s(_vm._f("moment")([_vm.patients.PastAppointments[_vm.currentMoreInfoIndex].Date, ["M-DD-YYYY HH:mm:ss","D-MMM-YYYY HH:mm:ss"]],"MMM DD, YYYY")))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Hospital/clinic name: "),_c('b',[_vm._v(" "+_vm._s(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex].Department))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Appointment type: "),_c('b',[_vm._v(_vm._s(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex].VisitType))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Reason for visit: "),_c('b',[_vm._v(_vm._s(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex].VisitReason))])]),_c('div',{staticClass:"modal-appointment__info"},[_vm._v("Interpreter required: "),_c('b',[_vm._v(_vm._s(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex]['Appointment Details']['Interpreter Required']))])]),(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex]['Appointment Details']['Interpreter Language'] !== 'None')?_c('div',{staticClass:"modal-appointment__info"},[_c('div',{staticClass:"modal-appointment__lang-ico"},[_c('svg',{staticClass:"ico-svg ico-svg__lang"},[_c('use',{attrs:{"xlink:href":"#lang"}})])]),_vm._v("Interpreter required: "),_c('b',[_vm._v(_vm._s(_vm.patients.PastAppointments[_vm.currentMoreInfoIndex]['Appointment Details']['Interpreter Language']))])]):_vm._e()])]),_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__map"},[_c('gmap-map',{staticStyle:{"width":"100%","height":"300px"},attrs:{"center":{lat: 32.9448268, lng: -96.64587949999998},"zoom":14}},[_c('gmap-marker',{key:1,attrs:{"position":{lat: 32.9448268, lng: -96.64587949999998}}})],1)],1)])])]):_vm._e()])],1)}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th',[_vm._v("Date")]),_c('th',[_vm._v("Department")]),_c('th',[_vm._v("Appt. Time")]),_c('th',[_vm._v("Provider")]),_c('th',[_vm._v("Visit Type")]),_c('th',[_vm._v("Reason for Visit")]),_c('th',[_vm._v("Actions")])])}]
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"journey-map"},[_c('h2',{staticClass:"title mod--journey"},[_vm._v("Patient Journey Map")]),_c('div',{staticClass:"journey-map-selects"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":_vm.$root.journeyOptions,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Choise an option","track-by":"name","label":"name"},on:{"input":_vm.clickJourney},model:{value:(_vm.journey_select),callback:function ($$v) {_vm.journey_select=$$v},expression:"journey_select"}})],1),_c('div',{staticClass:"journey-map__line"},[_c('img',{staticClass:"journey-map__line-userpic",attrs:{"src":_vm.info.PhotoUrl}}),(_vm.journey_select.type!='')?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_vm._m(0),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date/Time")]),_vm._v(": "+_vm._s(_vm.journey_select.name))]),_vm._m(1),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("ANI")]),_vm._v(":  "+_vm._s(_vm.info.PhoneNumber))]),_vm._m(2),_vm._m(3),_vm._m(4)])]),_c('svg',{staticClass:"ico-svg ico-svg__phone"},[_c('use',{attrs:{"xlink:href":"#phone"}})])]):_vm._e(),(_vm.journey_select.type!='')?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_vm._m(5),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date/Time")]),_vm._v(": "+_vm._s(_vm.journey_select.name))]),_vm._m(6),_vm._m(7),_vm._m(8),_vm._m(9),_vm._m(10)])]),_c('svg',{staticClass:"ico-svg ico-svg__mail"},[_c('use',{attrs:{"xlink:href":"#mail"}})])]):_vm._e(),(_vm.journey_select.type!='')?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_vm._m(11),_vm._m(12),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check in Date")]),_vm._v(": "+_vm._s(this.nextDay))]),_vm._m(13),_vm._m(14),_vm._m(15),_vm._m(16),_vm._m(17)])]),_c('svg',{staticClass:"ico-svg ico-svg__hospital"},[_c('use',{attrs:{"xlink:href":"#hospital"}})])]):_vm._e(),_c('div',{staticClass:"journey-map__line-item-end"})])])}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Appointments")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Duration")]),_vm._v(":  7 min")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent ID")]),_vm._v(":  749936")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent Name")]),_vm._v(":  James King")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Survey Score")]),_vm._v(": 3")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Inbound")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("SMS")]),_vm._v(":  Appintment Confimation")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Customet Action")]),_vm._v(": Patient clicked yes")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("SMS Outcome")]),_vm._v(":  Confirmed Appointment")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent ID")]),_vm._v(":  749936")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent Name")]),_vm._v(":  James King")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Type")]),_vm._v(": Check in")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check in Time")]),_vm._v(": 3:00pm")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Physician Name")]),_vm._v(": Mark Williams, MD")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Department")]),_vm._v(":")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Encounter Created By")]),_vm._v(": Dr. Mark Williams")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Encounter Details")]),_vm._v(": Office/OP Visit (15min) XR (5 min)")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check out time")]),_vm._v(":  3:30pm")])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
@@ -49453,7 +49612,7 @@ function xhrClient (request) {
 
 function nodeClient (request) {
 
-    var client = __webpack_require__(533);
+    var client = __webpack_require__(534);
 
     return new PromiseObj(function (resolve) {
 
@@ -55555,6 +55714,1668 @@ var Datepicker = {render: function(){var _vm=this;var _h=_vm.$createElement;var 
 
 /***/ }),
 /* 532 */
+/***/ (function(module, exports) {
+
+let data= {
+  "currentShowPhoneBook": false,
+  "callerInfo": {
+    "callerName": "Johns Jacobs",
+    "callerNo": "214-701-5489",
+    "callerType": "Patient",
+    "transferLocation": "NA",
+    "hospital": "NA"
+  },
+  "referralAppointments" : [
+    {
+      "StartTime": "August 20, 2018",
+      "EndTime": "September 5, 2018"
+    },
+    {
+      "StartTime": "September 5, 2018",
+      "EndTime": "September 6, 2018"
+    }
+  ],
+  "callInfos": [
+    {
+      "tempDNIS": "97223456789",
+      "Status": "unused",
+      "destination": "",
+      "patientPH": "",
+      "patientMRN": "",
+      "Notes": ""
+    },
+    {
+      "tempDNIS": "9721112223",
+      "Status": "unused",
+      "destination": "",
+      "patientPH": "",
+      "patientMRN": "",
+      "Notes": ""
+    },
+    {
+      "tempDNIS": "9721112224",
+      "Status": "unused",
+      "destination": "",
+      "patientPH": "",
+      "patientMRN": "",
+      "Notes": ""
+    }
+  ],
+  "Referrals": [
+    {
+      "refID": "9145142519",
+      "patientID": "331325525",
+      "patientName": "Grace Paz",
+      "referredBy": "Kevin Walker",
+      "referredTo": "Chris Walker",
+      "referralType": "Direct",
+      "referredStatus": "Authorized",
+      "businessSegment": "Business1",
+      "serviceArea" : "Dallas",
+      "startDate": "2018/03/02",
+      "endDate": "2018/06/05",
+
+      "refID_External": "222222222",
+      "patientAddress": "3453 T Ave Fort Worth, TX 76179, USA",
+      "diagnoses": "Fever, Pain",
+      "procedures": "",
+      "referredToAddress": "163 Main Street, Dallas, TX",
+      "referredToFacility": "173 Main Street, Dallas, TX",
+
+      "reason": "",
+      "scheduleDate": "",
+      "scheduleStatus": "Pending",
+      "deptID": "",
+      "deptType": "",
+      "locationID": "",
+      "locationType": "",
+      "assignAppointment": false,
+      "appointment": "",
+      "notes": "",
+      "comments": ""
+    },
+    {
+      "refID": "29145142519",
+      "patientID": "2221325525",
+      "patientName": "Johns Jacobs",
+      "referredBy": "Joseph Synder",
+      "referredTo": "Rajiv Sharma",
+      "referralType": "Direct",
+      "referredStatus": "Pending",
+      "businessSegment": "Business1",
+      "serviceArea" : "Dallas",
+      "startDate": "2018/03/02",
+      "endDate": "2018/06/05",
+
+      "refID_External": "51523525325",
+      "patientAddress": "3453 T Ave Fort Worth, TX 76179, USA",
+      "diagnoses": "Cold, Pain",
+      "procedures": "",
+      "referredToAddress": "163 Main Street, Dallas, TX",
+      "referredToFacility": "173 Main Street, Dallas, TX",
+
+      "reason": "",
+      "scheduleDate": "",
+      "scheduleStatus": "Pending",
+      "deptID": "",
+      "deptType": "",
+      "locationID": "",
+      "locationType": "",
+      "assignAppointment": true,
+      "appointment": "",
+      "notes": "",
+      "comments": ""
+    }
+  ],
+  "Patients": [{
+    "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
+    "Category": "EPIC",
+    "Name": "Johns Jacobs",
+    "DateOfBirth": "1981-07-01 00:00:00",
+    "MRN": 7499281,
+    "SSN": "***-**-6789",
+    "PhoneNumber": "+1 214 701 5489",
+    "PhotoUrl": "img/user.png",
+    "PrimaryCareProvider": {
+      "Name": "Mark Williams, MD",
+      "Phone": "+1 208 975 3874"
+    },
+    "medicalHistory": [
+      "> Cardiac left ventricular ejection fraction 21-40 percent",
+      "> Sleeeptalking"
+    ],
+    "activeProblems": [
+      "> Protein-calorie malnutrition, severe",
+      "> Moderate asthma without complication"
+    ],
+    "allergies": [
+      {
+        "name": "IODINE",
+        "description": "IODINE",
+        "dateEntered": "Aug 08, 2018",
+        "dateNoted": "Aug 08, 2018",
+        "reactions": "itchy rash taht comes on slowly",
+        "reactionComments": "Direct contact with skin results in small bumps",
+        "severity": "Moderate",
+        "type": "Intolerance"
+      },
+      {
+        "name": "PENICILLINS",
+        "description": "PENICILLINS",
+        "dateEntered": "Jul 13, 2018",
+        "dateNoted": "Jul 13, 2018",
+        "reactions": "Hives nad itchy eyes",
+        "reactionComments": "Overdose",
+        "severity": "Low",
+        "type": "Tolerant"
+      }
+    ],
+    "encounters": [
+      {
+        "type": "Evaluation",
+        "date": "Mar 05, 2017",
+        "eventType": "Admission",
+        "patientClass": "In Patient",
+        "admissionType": "Elective",
+        "dischargeDisposition": "30 - Still Patient"
+      },
+      {
+        "type": "Evaluation",
+        "date": "Mar 15, 2018",
+        "eventType": "Transfer In",
+        "patientClass": "In Patient",
+        "admissionType": "Elective",
+        "dischargeDisposition": "02 - Transferred"
+      }
+    ],
+    "Address": {
+      "Line1": "3453 T Ave, Fort Worth",
+      "Line2": "TX 76179, USA"
+    },
+    "TreatmentTeam": [
+    ],
+    "Provider": [
+      {
+        "Name": "United Healthcare (UHC Parkway, GA,66552)",
+        "PhoneNumber": "+1 216 411 8765"
+      }
+    ],
+    "InsuranceVerification": {
+      "InsuranceName": "Johns Jacobs",
+      "GroupNum": "#45ABC",
+      "NetworkNum": "#45ABC",
+      "PolicyNum": "#022141242",
+      "IssueDate": "20-Aug-2016 00:00:00"
+    },
+    "Vitals": {
+      "Height": 168,
+      "Weight": 78,
+      "RespirationRate": 58,
+      "BMI": 18.9,
+      "Pulse": 210,
+      "BloodPressureLo": 127,
+      "BloodPressureHi": 145
+    },
+    "Physician": {
+      "Name": "Mark Williams, MD",
+      "PrimaryPhone": "+1 208 975 3874",
+      "Clinic": "Clarit Clinic",
+      "Specialty": "PCP",
+      "EmergencyPhone": "+1 800 111 2222"
+    },
+    "Status": {
+      "Email": "john.doe@gmail.com",
+      "Race": "White",
+      "Ethnicity": "Not Hispanic Or Latino",
+      "Religion": "Christian (non-Catholic, non-Specific)",
+      "MaritalStatus": "Married",
+      "EmergencyContact": {
+        "Relation": "Wife",
+        "Name": "Sarah Doe",
+        "Phone": "+1 (972) 293 9101"
+      }
+    },
+    "Location": {
+      "DropdownRecords": [
+        {
+          "Name": "Patient Geo Location",
+          "Address": "1431 T Ave, Fort Worth, TX 76179",
+          "Position": {"lat": 32.944827, "lng": -96.645879},
+          "Phone": "+1 (214)-701-5489",
+          "Hours": "N / A",
+          "Markers":[
+            {
+              "Name": "Patient Geo Location"
+            , "Address": "1272 Belt Line Rd, Garland TX 75040"
+            , "Position": {"lat": 32.944827, "lng": -96.645879}
+            }
+          ]
+        },
+        {
+          "Name": "Pharmacies In Area",
+          "Address": "1272 Belt Line Rd, Garland TX 75040",
+          "Position": {"lat": 32.944827, "lng": -96.645879},
+          "Phone": "+1 (972) 495-1933",
+          "Hours": "Open 9 AM to 10 PM",
+          "Markers":[
+            {
+              "Name": "CVS Pharmacy"
+            , "Address": "1372 Belt Line Rd"
+            , "Position": {"lat": 32.944527, "lng": -96.646960}
+            } ,
+            {
+              "Name": "Walmart Pharmacy"
+            , "Address": "101 W Buckingham Rd"
+            , "Position": {"lat": 32.932013, "lng": -96.631611}
+            } ,
+            {
+              "Name": "Walgreens"
+            , "Address": "2614 Lavon Dr"
+            , "Position": {"lat": 32.939566, "lng": -96.621946}
+            } ,
+            {
+              "Name": "Walgreens"
+            , "Address": "1902 N Jupiter Rd"
+            , "Position": {"lat": 32.930183, "lng": -96.682285}
+            } ,
+            {
+              "Name": "CVS Pharmacy - Target"
+            , "Address": "5301 N Garland Ave"
+            , "Position": {"lat": 32.965650, "lng": -96.646806}
+            } ,
+            {
+              "Name": "Walmart Pharmacy"
+            , "Address": "5302 N Garland Ave"
+            , "Position": {"lat": 32.962346, "lng": -96.642499}
+            }
+          ]
+        },
+        {
+          "Name": "Hospitals In Area",
+          "Address": "7 Medical Pkwy, Dallas, TX 75234",
+          "Position": {"lat": 32.944827, "lng": -96.645879},
+          "Phone": "+(972) 888-7000",
+          "Hours": "Open 9AM to 9PM",
+          "Markers":[
+            {
+              "Name": "Baylor Scott & White Medical Center"
+            , "Address": "2300 Marie Curie Blvd"
+            , "Position": {"lat": 32.918755, "lng": -96.661963}
+            } ,
+            {
+              "Name": "Select Specialty Hospital - Dallas Garland"
+            , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
+            , "Position": {"lat": 32.918793, "lng": -96.662041}
+            } ,
+            {
+              "Name": "Children's Health Pediatric Group Garland"
+            , "Address": "455 N Garland Ave"
+            , "Position": {"lat": 28.548467, "lng": -81.381385}
+            } ,
+            {
+              "Name": "Sundance Hospital Dallas"
+            , "Address": "2696 W Walnut St"
+            , "Position": {"lat": 32.913402, "lng": -96.670117}
+            }
+          ]
+        }
+      ]
+    },
+    "PastAppointments": [
+      {
+        "Date": "7-01-2018 15:00:00",
+        "Time": "12:00:00",
+        "Department": "SpinSci Clinic",
+        "Provider": "Administrator",
+        "VisitType": "Office Visit",
+        "VisitReason": "New Patient",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "false",
+          "Interpreter Language": "None",
+          "Status": "Arrived Late"
+        }
+      }
+    ],
+    "CurrentAppointments": [
+      {
+        "Date": "8-20-2018 15:00:00",
+        "Time": "15:00:00",
+        "Department": "Radiology",
+        "Provider": "Dr. Steve Angler",
+        "VisitType": "Office Visit",
+        "VisitReason": "No Comments",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "false",
+          "Interpreter Language": "None",
+          "Status": "Arrived Late"
+        }
+      },
+      {
+        "Date": "8-25-2018 14:30:00",
+        "Time": "13:00:00",
+        "Department": "General",
+        "Provider": "Dr. John Lee",
+        "VisitType": "Office Visit",
+        "VisitReason": "Knee Pain",
+        "Appointment Details": {
+          "Interpreter Required": "Yes",
+          "IsRequired": "True",
+          "Interpreter Language": "Mandarin",
+          "Status": "Checked Out"
+        }
+      },
+      {
+        "Date": "9-01-2018 14:00:00",
+        "Time": "11:00:00",
+        "Department": "Kent Health Center",
+        "Provider": "Dr. Mary John",
+        "VisitType": "Physical",
+        "VisitReason": "No Comments",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "True",
+          "Interpreter Language": "None",
+          "Status": "Checked Out"
+        }
+      },
+      {
+        "Date": "10-01-2018 14:00:00",
+        "Time": "11:00:00",
+        "Department": "Kent Health Center",
+        "Provider": "Dr. John Lee",
+        "VisitType": "Physical",
+        "VisitReason": "No Comments",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "True",
+          "Interpreter Language": "None",
+          "Status": "Checked Out"
+        }
+      }
+    ],
+    "Billing": {
+      "Provider": "United HealthCare",
+      "Plan": "Choice",
+      "Subscriber": "Self",
+      "Street": "3153 T Ave",
+      "City": "Fort Worth",
+      "State": "TX",
+      "ZipCode": "75038",
+      "GroupNum": "52534422",
+      "PolicyNum": "112222456"
+    },
+    "BillHistory": [
+      {
+        "name": " JACOBS,JOHN ",
+        "status": "Unpaid",
+        "StatementId": "06642326",
+        "PatientName": "Johns Jacobs",
+        "PatientId": "28724351",
+        "Payer": "United",
+        "ClaimType": "eClaims",
+        "Date": "12/03/2017",
+        "TotalAmount": "848.09",
+        "TotalPaidAmount": "1200.00",
+        "reviews": [
+          {
+            "date": "07/07/2017",
+            "description": "ENCOUNTER 209523",
+            "amount": "",
+            "insurance": "",
+            "currentBalance": "",
+            "lineItem": ""
+          },
+          {
+            "date": "07/07/2017",
+            "description": "815235 OFFICE/OUTPATIENT VISIT",
+            "amount": "$70.00",
+            "insurance": "",
+            "currentBalance": "$38.04",
+            "lineItem": ""
+          },
+          {
+            "date": "07/07/2017",
+            "description": "Adjustment UNITED",
+            "amount": "$31.96",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          },
+          {
+            "date": "07/07/2017",
+            "description": "Payment UNITED",
+            "amount": "$0.00",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          }
+        ],
+        "total": {
+          "amount": "$848.09",
+          "insurance": "$0.00",
+          "currentBalance": "$38.04",
+          "lineItem": "$38.04"
+        }
+      },
+      {
+        "status": "Paid",
+        "StatementId": "02534126",
+        "PatientName": "Johns Jacobs",
+        "PatientId": "28724351",
+        "Payer": "United",
+        "ClaimType": "eClaims",
+        "Date": "11/02/2016",
+        "TotalAmount": "848.09",
+        "TotalPaidAmount": "1200.00",
+        "reviews": [
+          {
+            "date": "11/11/2017",
+            "description": "ENCOUNTER 109523",
+            "amount": "",
+            "insurance": "",
+            "currentBalance": "",
+            "lineItem": ""
+          },
+          {
+            "date": "11/11/2017",
+            "description": "163235 OFFICE/OUTPATIENT VISIT",
+            "amount": "$70.00",
+            "insurance": "",
+            "currentBalance": "$38.04",
+            "lineItem": ""
+          },
+          {
+            "date": "11/11/2017",
+            "description": "Adjustment UNITED",
+            "amount": "$31.96",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          },
+          {
+            "date": "11/11/2017",
+            "description": "Payment UNITED",
+            "amount": "$0.00",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          }
+        ],
+        "total": {
+          "amount": "$848.09",
+          "insurance": "$0.00",
+          "currentBalance": "$38.04",
+          "lineItem": "$38.04"
+        }
+      },
+      {
+        "status": "Unpaid",
+        "StatementId": "02512426",
+        "PatientName": "Johns Jacobs",
+        "PatientId": "28724351",
+        "Payer": "United",
+        "ClaimType": "eClaims",
+        "Date": "04/04/2015",
+        "TotalAmount": "848.09",
+        "TotalPaidAmount": "1100.00",
+        "reviews": [
+          {
+            "date": "03/03/2017",
+            "description": "ENCOUNTER 209523",
+            "amount": "",
+            "insurance": "",
+            "currentBalance": "",
+            "lineItem": ""
+          },
+          {
+            "date": "02/02/2017",
+            "description": "815235 OFFICE/OUTPATIENT VISIT",
+            "amount": "$70.00",
+            "insurance": "",
+            "currentBalance": "$38.04",
+            "lineItem": ""
+          },
+          {
+            "date": "01/01/2017",
+            "description": "Adjustment UNITED",
+            "amount": "$31.96",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          },
+          {
+            "date": "01/01/2017",
+            "description": "Payment UNITED",
+            "amount": "$0.00",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          }
+        ],
+        "total": {
+          "amount": "$848.09",
+          "insurance": "$0.00",
+          "currentBalance": "$38.04",
+          "lineItem": "$38.04"
+        }
+      }
+    ]
+  },
+  {
+    "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
+    "Category": "EPIC",
+    "Name": "Sarah Jones",
+    "DateOfBirth": "1993-07-01 00:00:00",
+    "MRN": 7499281,
+    "SSN": "***-**-5124",
+    "PhoneNumber": "+1 253 704 2531",
+    "PhotoUrl": "img/uhaha.png",
+    "PrimaryCareProvider": {
+      "Name": "Mark Williams, MD",
+      "Phone": "+1 208 975 3874"
+    },
+    "medicalHistory": [
+      "> Heart surgery at the age of 21",
+      "> Sleeeptalking"
+    ],
+    "activeProblems": [
+      "> Moderate Insomnia",
+      "> Severe fever"
+    ],
+    "allergies": [
+      {
+        "name": "IODINE",
+        "description": "IODINE",
+        "dateEntered": "Aug 08, 2018",
+        "dateNoted": "Aug 08, 2018",
+        "reactions": "itchy rash taht comes on slowly",
+        "reactionComments": "Direct contact with skin results in small bumps",
+        "severity": "Moderate",
+        "type": "Intolerance"
+      },
+      {
+        "name": "BEE VENOM",
+        "description": "BEE VENOM",
+        "dateEntered": "Mar 05, 2017",
+        "dateNoted": "Mar 05, 2017",
+        "reactions": "nausea and vomiting",
+        "reactionComments": "Patient was stung by a bee",
+        "severity": "High",
+        "type": "Intolerant"
+      }
+    ],
+    "encounters": [
+      {
+        "type": "Office Visit",
+        "date": "Jun 05, 2018",
+        "eventType": "Hospital Outpatient",
+        "patientClass": "Our Patient",
+        "admissionType": "Emergency",
+        "dischargeDisposition": "09 - Admitted as an inpatient to this hospital"
+      },
+      {
+        "type": "Orders Only",
+        "date": "Mar 15, 2018",
+        "eventType": "Admission",
+        "patientClass": "In Patient",
+        "admissionType": "Elective",
+        "dischargeDisposition": "52 - The referring/prescribing/rendering provider is not eligible to refer/prescribe/order/perform the service billed"
+      }
+    ],
+    "Address": {
+      "Line1": "1431 T Ave, Fort Worth",
+      "Line2": "TX 76179, USA"
+    },
+    "TreatmentTeam": [
+    ],
+    "Provider": [
+      {
+        "Name": "United Healthcare (UHC Parkway, GA,66552)",
+        "PhoneNumber": "+1 216 411 8765"
+      }
+    ],
+    "InsuranceVerification": {
+      "InsuranceName": "Sarah Jones",
+      "GroupNum": "#42AEC",
+      "NetworkNum": "#42AEC",
+      "PolicyNum": "#055113542",
+      "IssueDate": "20-Aug-2016 00:00:00"
+    },
+    "Vitals": {
+      "Height": 160,
+      "Weight": 55,
+      "RespirationRate": 67,
+      "BMI": 22,
+      "Pulse": 100,
+      "BloodPressureLo": 80,
+      "BloodPressureHi": 120
+    },
+    "Physician": {
+      "Name": "Mark Williams, MD",
+      "PrimaryPhone": "+1 208 975 3874",
+      "Clinic": "Clarit Clinic",
+      "Specialty": "PCP",
+      "EmergencyPhone": "+1 800 111 2222"
+    },
+    "Status": {
+      "Email": "sarah.jones@gmail.com",
+      "Race": "White",
+      "Ethnicity": "Not Hispanic Or Latino",
+      "Religion": "Christian (non-Catholic, non-Specific)",
+      "MaritalStatus": "Married",
+      "EmergencyContact": {
+        "Relation": "Husband",
+        "Name": "Jack Jones",
+        "Phone": "+1 (972) 293 9234"
+      }
+    },
+    "Location": {
+      "DropdownRecords": [
+        {
+          "Name": "Patient Geo Location",
+          "Address": "1431 T Ave, Fort Worth, TX 76179",
+          "Position": {"lat": 31.944827, "lng": -95.645879},
+          "Phone": "+1 (253)-704-2531",
+          "Hours": "N / A",
+          "Markers":[
+            {
+              "Name": "Patient Geo Location"
+            , "Address": "1272 Belt Line Rd, Garland TX 75040"
+            , "Position": {"lat": 31.944827, "lng": -95.645879}
+            }
+          ]
+        },
+        {
+          "Name": "Pharmacies In Area",
+          "Address": "1272 Belt Line Rd, Garland TX 75040",
+          "Position": {"lat": 31.944827, "lng": -95.645879},
+          "Phone": "+1 (972) 495-1933",
+          "Hours": "Open 9 AM to 10 PM",
+          "Markers":[
+            {
+              "Name": "CVS Pharmacy"
+            , "Address": "1372 Belt Line Rd"
+            , "Position": {"lat": 31.944527, "lng": -95.646960}
+            } ,
+            {
+              "Name": "Walmart Pharmacy"
+            , "Address": "101 W Buckingham Rd"
+            , "Position": {"lat": 31.932013, "lng": -95.631611}
+            } ,
+            {
+              "Name": "Walgreens"
+            , "Address": "2614 Lavon Dr"
+            , "Position": {"lat": 31.939566, "lng": -95.621946}
+            } ,
+            {
+              "Name": "Walgreens"
+            , "Address": "1902 N Jupiter Rd"
+            , "Position": {"lat": 32.930183, "lng": -95.682285}
+            } ,
+            {
+              "Name": "CVS Pharmacy - Target"
+            , "Address": "5301 N Garland Ave"
+            , "Position": {"lat": 32.965650, "lng": -95.646806}
+            } ,
+            {
+              "Name": "Walmart Pharmacy"
+            , "Address": "5302 N Garland Ave"
+            , "Position": {"lat": 32.962346, "lng": -95.642499}
+            }
+          ]
+        },
+        {
+          "Name": "Hospitals In Area",
+          "Address": "7 Medical Pkwy, Dallas, TX 75234",
+          "Position": {"lat": 32.944827, "lng": -95.645879},
+          "Phone": "+(972) 888-7000",
+          "Hours": "Open 9AM to 9PM",
+          "Markers":[
+            {
+              "Name": "Baylor Scott & White Medical Center"
+            , "Address": "2300 Marie Curie Blvd"
+            , "Position": {"lat": 32.918755, "lng": -95.661963}
+            } ,
+            {
+              "Name": "Select Specialty Hospital - Dallas Garland"
+            , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
+            , "Position": {"lat": 32.918793, "lng": -96.662041}
+            } ,
+            {
+              "Name": "Children's Health Pediatric Group Garland"
+            , "Address": "455 N Garland Ave"
+            , "Position": {"lat": 28.548467, "lng": -81.381385}
+            } ,
+            {
+              "Name": "Sundance Hospital Dallas"
+            , "Address": "2696 W Walnut St"
+            , "Position": {"lat": 32.913402, "lng": -96.670117}
+            }
+          ]
+        }
+      ]
+    },
+    "PastAppointments": [
+      {
+        "Date": "7-15-2018 15:00:00",
+        "Time": "12:00:00",
+        "Department": "SpinSci Clinic",
+        "Provider": "Administrator",
+        "VisitType": "Office Visit",
+        "VisitReason": "New Patient",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "false",
+          "Interpreter Language": "None",
+          "Status": "Arrived Late"
+        }
+      }
+    ],
+    "CurrentAppointments": [
+      {
+        "Date": "8-24-2018 15:00:00",
+        "Time": "15:00:00",
+        "Department": "Urology",
+        "Provider": "Dr. Steve Angler",
+        "VisitType": "Office Visit",
+        "VisitReason": "No Comments",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "false",
+          "Interpreter Language": "None",
+          "Status": "Arrived Late"
+        }
+      },
+      {
+        "Date": "8-22-2018 14:30:00",
+        "Time": "13:00:00",
+        "Department": "General",
+        "Provider": "Dr. John Lee",
+        "VisitType": "Office Visit",
+        "VisitReason": "Knee Pain",
+        "Appointment Details": {
+          "Interpreter Required": "Yes",
+          "IsRequired": "True",
+          "Interpreter Language": "Mandarin",
+          "Status": "Checked Out"
+        }
+      },
+      {
+        "Date": "10-03-2018 14:00:00",
+        "Time": "11:00:00",
+        "Department": "Kent Health Center",
+        "Provider": "Dr. John Lee",
+        "VisitType": "Physical",
+        "VisitReason": "No Comments",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "True",
+          "Interpreter Language": "None",
+          "Status": "Checked Out"
+        }
+      }
+    ],
+    "Billing": {
+      "Provider": "United HealthCare",
+      "Plan": "Choice",
+      "Subscriber": "Self",
+      "Street": "3153 T Ave",
+      "City": "Fort Worth",
+      "State": "TX",
+      "ZipCode": "75038",
+      "GroupNum": "52534422",
+      "PolicyNum": "112222456"
+    },
+    "BillHistory": [
+      {
+        "name": " JONES,SARAH ",
+        "status": "Unpaid",
+        "StatementId": "06642326",
+        "PatientName": "Sarah Jones",
+        "PatientId": "28724301",
+        "Payer": "United",
+        "ClaimType": "eClaims",
+        "Date": "12/03/2017",
+        "TotalAmount": "848.09",
+        "TotalPaidAmount": "1200.00",
+        "reviews": [
+          {
+            "date": "07/07/2017",
+            "description": "ENCOUNTER 209233",
+            "amount": "",
+            "insurance": "",
+            "currentBalance": "",
+            "lineItem": ""
+          },
+          {
+            "date": "07/07/2017",
+            "description": "815235 OFFICE/OUTPATIENT VISIT",
+            "amount": "$70.00",
+            "insurance": "",
+            "currentBalance": "$15.04",
+            "lineItem": ""
+          },
+          {
+            "date": "07/07/2017",
+            "description": "Adjustment UNITED",
+            "amount": "$41.96",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          },
+          {
+            "date": "07/07/2017",
+            "description": "Payment UNITED",
+            "amount": "$0.00",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          }
+        ],
+        "total": {
+          "amount": "$551.09",
+          "insurance": "$0.00",
+          "currentBalance": "$38.04",
+          "lineItem": "$38.04"
+        }
+      },
+      {
+        "status": "Paid",
+        "StatementId": "02534126",
+        "PatientName": "Sarah Jones",
+        "PatientId": "28724301",
+        "Payer": "United",
+        "ClaimType": "eClaims",
+        "Date": "11/02/2016",
+        "TotalAmount": "848.09",
+        "TotalPaidAmount": "1200.00",
+        "reviews": [
+          {
+            "date": "11/11/2017",
+            "description": "ENCOUNTER 109523",
+            "amount": "",
+            "insurance": "",
+            "currentBalance": "",
+            "lineItem": ""
+          },
+          {
+            "date": "11/11/2017",
+            "description": "163235 OFFICE/OUTPATIENT VISIT",
+            "amount": "$70.00",
+            "insurance": "",
+            "currentBalance": "$38.04",
+            "lineItem": ""
+          },
+          {
+            "date": "11/11/2017",
+            "description": "Adjustment UNITED",
+            "amount": "$31.96",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          },
+          {
+            "date": "11/11/2017",
+            "description": "Payment UNITED",
+            "amount": "$0.00",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          }
+        ],
+        "total": {
+          "amount": "$848.09",
+          "insurance": "$0.00",
+          "currentBalance": "$38.04",
+          "lineItem": "$38.04"
+        }
+      },
+      {
+        "status": "Unpaid",
+        "StatementId": "02512426",
+        "PatientName": "Sarah Jones",
+        "PatientId": "28724301",
+        "Payer": "United",
+        "ClaimType": "eClaims",
+        "Date": "04/04/2015",
+        "TotalAmount": "848.09",
+        "TotalPaidAmount": "1100.00",
+        "reviews": [
+          {
+            "date": "03/03/2017",
+            "description": "ENCOUNTER 209523",
+            "amount": "",
+            "insurance": "",
+            "currentBalance": "",
+            "lineItem": ""
+          },
+          {
+            "date": "02/02/2017",
+            "description": "815235 OFFICE/OUTPATIENT VISIT",
+            "amount": "$70.00",
+            "insurance": "",
+            "currentBalance": "$38.04",
+            "lineItem": ""
+          },
+          {
+            "date": "01/01/2017",
+            "description": "Adjustment UNITED",
+            "amount": "$31.96",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          },
+          {
+            "date": "01/01/2017",
+            "description": "Payment UNITED",
+            "amount": "$0.00",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          }
+        ],
+        "total": {
+          "amount": "$848.09",
+          "insurance": "$0.00",
+          "currentBalance": "$38.04",
+          "lineItem": "$38.04"
+        }
+      }
+    ]
+  },
+    {
+      "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=3",
+      "Category": "EPIC",
+      "Name": "Grace Paz",
+      "DateOfBirth": "2007-12-25 00:00:00",
+      "MRN": 7499220,    
+      "SSN": "***-**-5428",
+      "PhoneNumber": "+1 255 703 8801",
+      "PhotoUrl": "img/user2.png",
+      "PrimaryCareProvider": {
+        "Name": "Mark Williams, MD",
+        "Phone": "+1 208 975 3874"
+      },
+      "Address": {
+        "Line1": "5234 T Ave",
+        "Line2": "Fort Worth, TX 76179, USA"
+      },
+      "medicalHistory": [
+        "> Sleeeptalking",
+        "> Hepatitis"
+      ],
+      "activeProblems": [
+        "> Prolonged fever without complication",
+        "> Protein-calorie malnutrition, moderate"
+      ],
+      "allergies": [
+        {
+          "name": "PENICILLINS",
+          "description": "PENICILLINS",
+          "dateEntered": "Jul 13, 2018",
+          "dateNoted": "Jul 13, 2018",
+          "reactions": "Hives nad itchy eyes",
+          "reactionComments": "Overdose",
+          "severity": "Low",
+          "type": "Tolerant"
+        },
+        {
+          "name": "BEE VENOM",
+          "description": "BEE VENOM",
+          "dateEntered": "Mar 05, 2017",
+          "dateNoted": "Mar 05, 2017",
+          "reactions": "nausea and vomiting",
+          "reactionComments": "Patient was stung by a bee",
+          "severity": "High",
+          "type": "Intolerant"
+        }
+      ],
+      "encounters": [
+        {
+          "type": "Office Visit",
+          "date": "Jun 05, 2018",
+          "eventType": "Telephone",
+          "patientClass": "Our Patient",
+          "admissionType": "Elective",
+          "dischargeDisposition": "B2 - Covered visits. INACTIVE"
+        },
+        {
+          "type": "Abstract",
+          "date": "Mar 05, 2018",
+          "eventType": "History",
+          "patientClass": "Our Patient",
+          "admissionType": "Elective",
+          "dischargeDisposition": "29 - The time limit for filing has expired"
+        }
+      ],
+      "TreatmentTeam": [
+        {
+          "Name": "David Steve",
+          "PhoneNumber": "+1 404 418 1212"
+        }
+      ],
+      "Provider": [
+        {
+          "Name": "United Healthcare (UHC Parkway, GA,66552)",
+          "PhoneNumber": "+1 216 411 8765"
+        }
+      ],
+      "Billing": {
+        "Provider": "United HealthCare",
+        "Plan": "Choice",
+        "Subscriber": "Self",
+        "Street": "5234 T Ave",
+        "City": "Fort Worth",
+        "State": "TX",
+        "ZipCode": "75038",
+        "GroupNum": "555664422",
+        "PolicyNum": "334422456"
+      },
+      "BillHistory": [
+        {
+          "name": " JACOBS,JOHN ",
+          "status": "Unpaid",
+          "StatementId": "06642326",
+          "PatientName": "Grace Paz",
+          "PatientId": "28724351",
+          "Payer": "United",
+          "ClaimType": "eClaims",
+          "Date": "12/03/2017",
+          "TotalAmount": "848.09",
+          "TotalPaidAmount": "1200.00",
+          "reviews": [
+            {
+              "date": "12/03/2017",
+              "description": "ENCOUNTER 209523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "12/03/2017",
+              "description": "815235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "12/03/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "12/18/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$848.09",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
+          }
+        },
+        {
+          "status": "Paid",
+          "StatementId": "02534126",
+          "PatientName": "Grace Paz",
+          "PatientId": "28724351",
+          "Payer": "United",
+          "ClaimType": "eClaims",
+          "Date": "11/02/2016",
+          "TotalAmount": "848.09",
+          "TotalPaidAmount": "1200.00",
+          "reviews": [
+            {
+              "date": "11/03/2017",
+              "description": "ENCOUNTER 109523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "11/03/2017",
+              "description": "115235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "11/03/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "12/14/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$848.09",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
+          }
+        },
+        {
+          "status": "Unpaid",
+          "StatementId": "02513426",
+          "PatientName": "Grace Paz",
+          "PatientId": "28724351",
+          "Payer": "United",
+          "ClaimType": "eClaims",
+          "Date": "08/02/2015",
+          "TotalAmount": "848.09",
+          "TotalPaidAmount": "1100.00",
+          "reviews": [
+            {
+              "date": "12/15/2017",
+              "description": "ENCOUNTER 209523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "12/16/2017",
+              "description": "815235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "12/15/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "12/15/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$848.09",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
+          }
+        }
+      ],
+
+      "InsuranceVerification": {
+        "InsuranceName": "Johns Jacobs",
+        "GroupNum": "#555664422",
+        "NetworkNum": "#45ABC",
+        "PolicyNum": "#334422456",
+        "IssueDate": "20-Aug-2016 00:00:00"
+      },
+      "Vitals": {
+        "Height": 133,
+        "Weight": 30,
+        "RespirationRate": 29,
+        "BMI": 17.2,
+        "Pulse": 84,
+        "BloodPressureLo": 70,
+        "BloodPressureHi": 100  
+      },
+      "Physician": {
+        "Name": "Mark Williams, MD",
+        "PrimaryPhone": "+1 208 975 3874",
+        "Clinic": "Clarit Clinic",
+        "Specialty": "PCP",
+        "EmergencyPhone": "+1 800 111 2222"
+      },
+      "Status": {
+        "Email": "grace.paz.531@aol.com",
+        "Race": "Declined to Specify",
+        "Ethnicity": "Declined to Specify",
+        "Religion": "Cyberculture Religions",
+        "MaritalStatus": "Single",
+        "EmergencyContact": {
+          "Relation": "Friend",
+          "Name": "Mr Nobody",
+          "Phone": "+1 (972) 293 9101"
+        }
+      },
+      "Location": {
+        "DropdownRecords": [
+          {
+            "Name": "Patient Geo Location",
+            "Address": "5234 T Ave, Fort Worth, TX 76179",
+            "Position": {
+              "lat": 31.900827,
+              "lng": -97.600879
+            },
+            "Phone": "+1 255 703 8801",
+            "Hours": "N / A",
+            "Markers": [
+              {
+                "Name": "Patient Geo Location",
+                "Address": "1272 Belt Line Rd, Garland TX 75040",
+                "Position": {
+                  "lat": 31.900827,
+                  "lng": -97.600879
+                }
+              }
+            ]
+          },
+          {
+            "Name": "Pharmacies In Area",
+            "Address": "1272 Belt Line Rd, Garland TX 75040",
+            "Position": {
+              "lat": 31.900827,
+              "lng": -97.600879
+            },
+            "Phone": "+1 (972) 495-1933",
+            "Hours": "Open 9 AM to 10 PM",
+            "Markers": [
+              {
+                "Name": "CVS Pharmacy",
+                "Address": "1372 Belt Line Rd",
+                "Position": {
+                  "lat": 31.900827,
+                  "lng": -97.600879
+                }
+              },
+              {
+                "Name": "Walmart Pharmacy",
+                "Address": "101 W Buckingham Rd",
+                "Position": {
+                  "lat": 31.900827,
+                  "lng": -97.600879
+                }
+              },
+              {
+                "Name": "Walgreens",
+                "Address": "2614 Lavon Dr",
+                "Position": {
+                  "lat": 31.900827,
+                  "lng": -97.600879
+                }
+              },
+              {
+                "Name": "Walgreens",
+                "Address": "1902 N Jupiter Rd",
+                "Position": {
+                  "lat": 31.900827,
+                  "lng": -97.600879
+                }
+              },
+              {
+                "Name": "CVS Pharmacy - Target",
+                "Address": "5301 N Garland Ave",
+                "Position": {
+                  "lat": 31.900827,
+                  "lng": -97.600879
+                }
+              },
+              {
+                "Name": "Walmart Pharmacy",
+                "Address": "5302 N Garland Ave",
+                "Position": {
+                  "lat": 31.900827,
+                  "lng": -97.600879
+                }
+              }
+            ]
+          },
+          {
+            "Name": "Hospitals In Area",
+            "Address": "7 Medical Pkwy, Dallas, TX 75234",
+            "Position": {
+              "lat": 32.944827,
+              "lng": -97.600879
+            },
+            "Phone": "+(972) 888-7000",
+            "Hours": "Open 9AM to 9PM",
+            "Markers": [
+              {
+                "Name": "Baylor Scott & White Medical Center",
+                "Address": "2300 Marie Curie Blvd",
+                "Position": {
+                  "lat": 32.918755,
+                  "lng": -97.600879
+                }
+              },
+              {
+                "Name": "Select Specialty Hospital - Dallas Garland",
+                "Address": "2300 Marie Curie Drive Floors 3E & 3W",
+                "Position": {
+                  "lat": 32.918793,
+                  "lng": -97.600879
+                }
+              },
+              {
+                "Name": "Children's Health Pediatric Group Garland",
+                "Address": "455 N Garland Ave",
+                "Position": {
+                  "lat": 28.548467,
+                  "lng": -81.381385
+                }
+              },
+              {
+                "Name": "Sundance Hospital Dallas",
+                "Address": "2696 W Walnut St",
+                "Position": {
+                  "lat": 32.913402,
+                  "lng": -96.670117
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "PastAppointments": [
+        {
+          "Date": "7-23-2018 15:00:00",
+          "Time": "12:00:00",
+          "Department": "SpinSci Clinic",
+          "Provider": "Administrator",
+          "VisitType": "Office Visit",
+          "VisitReason": "New Patient",
+          "Appointment Details": {
+            "Interpreter Required": "No",
+            "IsRequired": "false",
+            "Interpreter Language": "None",
+            "Status": "Arrived Late"
+          }
+        }
+      ],
+      "CurrentAppointments": [
+        {
+          "Date": "8-23-2018 15:00:00",
+          "Time": "12:00:00",
+          "Department": "SpinSci Clinic",
+          "Provider": "Administrator",
+          "VisitType": "Office Visit",
+          "VisitReason": "New Patient",
+          "Appointment Details": {
+            "Interpreter Required": "No",
+            "IsRequired": "false",
+            "Interpreter Language": "None",
+            "Status": "Arrived Late"
+          }
+        },
+        {
+          "Date": "8-28-2018 14:30:00",
+          "Time": "15:00:00",
+          "Department": "SpinSci Clinic",
+          "Provider": "Administrator",
+          "VisitType": "Office Visit",
+          "VisitReason": "Perscription Clarification",
+          "Appointment Details": {
+            "Interpreter Required": "Yes",
+            "IsRequired": "True",
+            "Interpreter Language": "Mandarin",
+            "Status": "Checked Out"
+          }
+        },
+        {
+          "Date": "9-30-2018 15:00:00",
+          "Time": "12:00:00",
+          "Department": "SpinSci Clinic",
+          "Provider": "Administrator",
+          "VisitType": "Office Visit",
+          "VisitReason": "New Patient",
+          "Appointment Details": {
+            "Interpreter Required": "No",
+            "IsRequired": "false",
+            "Interpreter Language": "None",
+            "Status": "Arrived Late"
+          }
+        }
+      ]
+    }
+  ],
+  "MakeAppointmentDropDownOptions": {
+    "Department": [
+      "Select Department...",
+      "Emergency",
+      "Outpatient",
+      "Radiology",
+      "General"
+    ],
+    "Facility": [
+      "Select Facility...",
+      "Clarit",
+      "Imaging Center"
+    ],
+    "Provider": [
+      "Select Provider...",
+      "Medical Center",
+      "Hospital",
+      "Clinic"
+    ],
+    "Physician": [
+      "Select Physician...",
+      "Dr. John Lee, MD",
+      "Dr. Steve Angler, MD",
+      "Dr. Phil Patel, MD",
+      "Dr. Mark Williams, MD"
+    ]
+  },
+  "ExistingAppointmentSlots": [
+    {
+      "StartTime": "20-Oct-2017 08:00:00",
+      "EndTime": "20-Oct-2017 08:30:00",
+      "Name": "Open Schedule",
+      "IsOpen": true,
+      "Facility": "---",
+      "Provider": "---",
+      "Physician": "---",
+      "Status": "Available"
+    },
+    {
+      "StartTime": "20-Oct-2017 08:30:00",
+      "EndTime": "20-Oct-2017 09:00:00",
+      "Name": "Open Schedule",
+      "IsOpen": true,
+      "Facility": "---",
+      "Provider": "---",
+      "Physician": "---",
+      "Status": "Available"
+    },
+    {
+      "StartTime": "20-Oct-2017 09:00:00",
+      "EndTime": "20-Oct-2017 09:30:00",
+      "Name": "Open Schedule",
+      "IsOpen": true,
+      "Facility": "---",
+      "Provider": "---",
+      "Physician": "---",
+      "Status": "Available"
+    },
+    {
+      "StartTime": "20-Oct-2017 09:30:00",
+      "EndTime": "20-Oct-2017 10:00:00",
+      "Name": "Jean Jacobs",
+      "IsOpen": false,
+      "Facility": "Imaging Center",
+      "Provider": "Dr. Steve",
+      "Physician": "---",
+      "Status": "On Hold"
+    },
+    {
+      "StartTime": "20-Oct-2017 10:00:00",
+      "EndTime": "20-Oct-2017 10:30:00",
+      "Name": "Open Schedule",
+      "IsOpen": true,
+      "Facility": "---",
+      "Provider": "---",
+      "Physician": "---",
+      "Status": "Available"
+    },
+    {
+      "StartTime": "20-Oct-2017 10:30:00",
+      "EndTime": "20-Oct-2017 11:00:00",
+      "Name": "Open Schedule",
+      "IsOpen": true,
+      "Facility": "---",
+      "Provider": "---",
+      "Physician": "---",
+      "Status": "Available"
+    },
+    {
+      "StartTime": "20-Oct-2017 11:00:00",
+      "EndTime": "20-Oct-2017 11:30:00",
+      "Name": "Open Schedule",
+      "IsOpen": true,
+      "Facility": "---",
+      "Provider": "---",
+      "Physician": "---",
+      "Status": "Available"
+    },
+    {
+      "StartTime": "20-Oct-2017 11:30:00",
+      "EndTime": "20-Oct-2017 12:00:00",
+      "Name": "Open Schedule",
+      "IsOpen": true,
+      "Facility": "---",
+      "Provider": "---",
+      "Physician": "---",
+      "Status": "Available"
+    },
+    {
+      "StartTime": "20-Oct-2017 12:00:00",
+      "EndTime": "20-Oct-2017 12:30:00",
+      "Name": "Thomas Smith",
+      "IsOpen": false,
+      "Facility": "Imaging Center",
+      "Provider": "Dr. John",
+      "Physician": "---",
+      "Status": "On Hold"
+    }
+  ],
+  "NewAppointment": {
+    "StartTime": "20-Oct-2017 10:00:00",
+    "EndTime": "20-Oct-2017 10:30:00",
+    "Name": "Johns Jacobs",
+    "IsOpen": false,
+    "Facility": "SpinSci Clinic",
+    "Provider": "United Healthcare(UHC Parkway, GA,66552)",
+    "Physician": "Rohit Potaraju, MD",
+    "Status": "On Hold"
+  },
+  "BookNowData": {
+    "InterpreterLanguages": [
+      "Spanish",
+      "French",
+      "Mandarin"
+    ],
+    "GoogleMapIMG": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Google_maps_screenshot.png/300px-Google_maps_screenshot.png",
+    "SmsConfirmTemplate": "Dear [PATIENTNAME] , we have scheduled an appointment with you for [APPTDATE] at [FACILITY]. Regards, [DRNAME]",
+    "EmailConfirmTemplate": "Dear [PATIENTNAME]: This letter is to confirm your appointment at [APPTDATE]. Please plan to arrive approximately 30 minutes prior to your scheduled appointment to allow time for you and your significant other to sign consent forms that are required for your treatment. It is important that your significant other is able to accompany you to your appointments as much as possible. With the type of care we provide, we may be unable to schedule/perform certain procedures without their signature.\n\nPlease complete the following informational forms and return to our office prior to your appointment.\n+ Patient Information Page \n+ Medical History Form\nThis will enable us to thoroughly review your medical background and provide you with the best possible care. If you have been seen by another physician, please request that your medical records be forwarded to our office prior to your appointment, as well. \n\nIn an effort to be HIPAA compliant and to protect your private health information and identity, we require that you bring your photo I.D. and insurance card to your first visit.\n\nAs a courtesy to you we will submit your insurance claims for you; however any copayments will be collected at time of service. For any non insured patients, fees for all office visits and related charges are payable at the time of service. \n\nMy staff and I appreciate your selecting our office for your health care. We recognize the trust and responsibility placed in us and we will do everything possible to provide for those needs. \n\nWe look forward to seeing you!\nSincerely,\n[DRNAME]"
+  }
+}
+
+function Purify(_data) {
+  let data = _data;
+
+  //Purify Referral Date
+  for(let i = 0; i<_data.Referrals.length; i++)
+  {
+    console.log('hhh');
+    let date = new Date();
+    date.setDate(date.getDate() - 100);
+    data.Referrals[i].startDate = ['01','02','03','04','05','06','07','08','09','10','11','12'][date.getMonth()] + '/' + date.getDate() + '/' + date.getFullYear()
+    date = new Date();
+    date.setDate(date.getDate() - 40);
+    data.Referrals[i].endDate = ['01','02','03','04','05','06','07','08','09','10','11','12'][date.getMonth()]  + '/' + date.getDate() + '/' + date.getFullYear()
+  }
+
+  
+  for(i = 0; i<_data.Patients.length; i++)
+  {
+    //Purify Appointment Date
+    for(let j = 0 ; j<_data.Patients[i].PastAppointments.length; j++)
+    {
+      let date = new Date();
+      date.setDate(date.getDate() - 40 + 7 * j)
+      data.Patients[i].PastAppointments[j].Date = (parseInt(date.getMonth()) + 1 ) + '-' + date.getDate() + '-' + date.getFullYear() + ' 15:00:00';
+    }
+    for(j = 0 ; j<_data.Patients[i].CurrentAppointments.length ; j++)
+    {
+      let date = new Date();
+      if(j==_data.Patients[i].CurrentAppointments.length-1)
+        date.setDate(date.getDate() + 5 * j + 15)
+      else
+        date.setDate(date.getDate() + 5 * j)
+      data.Patients[i].CurrentAppointments[j].Date = (parseInt(date.getMonth()) + 1 ) + '-' + date.getDate() + '-' + date.getFullYear() + ' 15:00:00';
+    }
+
+    //Purify Billing Date
+    for(j = 0 ; j<_data.Patients[i].BillHistory.length; j++)
+    {
+      let date = new Date();
+      date.setDate(date.getDate() - 140 + 20 * j)
+      data.Patients[i].BillHistory[j].Date = (parseInt(date.getMonth()) + 1 ) + '/' + date.getDate() + '/' + date.getFullYear();
+      for(let k = 0; k < _data.Patients[i].BillHistory[j].reviews.length ; k++)
+      {
+        data.Patients[i].BillHistory[j].reviews[k].date = data.Patients[i].BillHistory[j].Date
+      }
+    }
+    
+    //Purify Triage-Allergies Date
+    for(j = 0 ; j<_data.Patients[i].allergies.length; j++)
+    {
+      let date = new Date();
+      date.setDate(date.getDate() - 50 + 11 * j)
+      data.Patients[i].allergies[j].dateEntered = (parseInt(date.getMonth()) + 1 ) + '/' + date.getDate() + '/' + date.getFullYear();
+      data.Patients[i].allergies[j].dateNoted = data.Patients[i].allergies[j].dateEntered
+    }
+
+    //Purify Triage-Encounters Date
+    for(j = 0 ; j<_data.Patients[i].encounters.length; j++)
+    {
+      let date = new Date();
+      date.setDate(date.getDate() - 140 + 30 * j)
+      data.Patients[i].encounters[j].date = (parseInt(date.getMonth()) + 1 ) + '/' + date.getDate() + '/' + date.getFullYear();
+    }
+  }
+  
+ 
+     
+
+  // let date = new Date();
+  // date.setDate(date.getDate() - 40 + this.$root.activePacient * 5 + data.id * 9 + 1);
+  // this.nextDay = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
+  console.log(data.Referrals)
+  return data
+}
+
+module.exports = Purify(data)
+
+
+/***/ }),
+/* 533 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -55633,7 +57454,7 @@ var Datepicker = {render: function(){var _vm=this;var _h=_vm.$createElement;var 
 
 
 /***/ }),
-/* 533 */
+/* 534 */
 /***/ (function(module, exports) {
 
 /* (ignored) */
