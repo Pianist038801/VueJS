@@ -19569,7 +19569,8 @@ let App = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
             vm.callerPhone = responseData.callerPhone;
             vm.callerType = responseData.callerType;
             vm.callerNotes = responseData.notes;
-            vm.activePacient = responseData.patientName.indexOf('Sarah') > -1 ? 1 : 0;
+            const _patientName = responseData.patientName;
+            if (_patientName.indexOf('Sarah') > -1) vm.activePacient = 1;else if (_patientName.indexOf('Johns') > -1) vm.activePacient = 0;else vm.activePacient = 2;
             vm.callerTransferLocation = responseData.phantom1;
             vm.callerHospital = responseData.phantom2;
             vm.releaseTempDNIS(tempDNIS);
@@ -57319,7 +57320,7 @@ function Purify(_data) {
     {
       let date = new Date();
       date.setDate(date.getDate() - 40 + 7 * j)
-      data.Patients[i].PastAppointments[j].Date = (parseInt(date.getMonth()) + 1 ) + '-' + date.getDate() + '-' + date.getFullYear() + ' 15:00:00';
+      data.Patients[i].PastAppointments[j].Date = (parseInt(date.getMonth()) + 1 ) + '-' + ( date.getDate() < 10 ? ('0' + date.getDate()) : date.getDate() ) + '-' + date.getFullYear() + ' 15:00:00';
     }
     for(j = 0 ; j<_data.Patients[i].CurrentAppointments.length ; j++)
     {
@@ -57328,7 +57329,7 @@ function Purify(_data) {
         date.setDate(date.getDate() + 5 * j + 15)
       else
         date.setDate(date.getDate() + 5 * j)
-      data.Patients[i].CurrentAppointments[j].Date = (parseInt(date.getMonth()) + 1 ) + '-' + date.getDate() + '-' + date.getFullYear() + ' 15:00:00';
+      data.Patients[i].CurrentAppointments[j].Date = (parseInt(date.getMonth()) + 1 ) + '-' + ( date.getDate() < 10 ? ('0' + date.getDate()) : date.getDate() ) + '-' + date.getFullYear() + ' 15:00:00';
     }
 
     //Purify Billing Date

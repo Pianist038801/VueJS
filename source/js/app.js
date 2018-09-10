@@ -202,7 +202,13 @@ let App = new Vue({
                 vm.callerPhone = responseData.callerPhone;
                 vm.callerType = responseData.callerType;
                 vm.callerNotes = responseData.notes;
-                vm.activePacient = responseData.patientName.indexOf('Sarah') > -1 ? 1 : 0;
+                const _patientName = responseData.patientName;
+                if(_patientName.indexOf('Sarah') > -1) 
+                  vm.activePacient = 1;
+                else if(_patientName.indexOf('Johns') > -1) 
+                  vm.activePacient = 0;
+                else
+                  vm.activePacient = 2;
                 vm.callerTransferLocation = responseData.phantom1;
                 vm.callerHospital = responseData.phantom2;
                 vm.releaseTempDNIS(tempDNIS);
