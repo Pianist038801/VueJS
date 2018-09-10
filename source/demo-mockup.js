@@ -1601,7 +1601,7 @@ function Purify(_data) {
     {
       let date = new Date();
       date.setDate(date.getDate() - 40 + 7 * j)
-      data.Patients[i].PastAppointments[j].Date = (parseInt(date.getMonth()) + 1 ) + '-' + date.getDate() + '-' + date.getFullYear() + ' 15:00:00';
+      data.Patients[i].PastAppointments[j].Date = (parseInt(date.getMonth()) + 1 ) + '-' + ( date.getDate() < 10 ? ('0' + date.getDate()) : date.getDate() ) + '-' + date.getFullYear() + ' 15:00:00';
     }
     for(j = 0 ; j<_data.Patients[i].CurrentAppointments.length ; j++)
     {
@@ -1610,7 +1610,7 @@ function Purify(_data) {
         date.setDate(date.getDate() + 5 * j + 15)
       else
         date.setDate(date.getDate() + 5 * j)
-      data.Patients[i].CurrentAppointments[j].Date = (parseInt(date.getMonth()) + 1 ) + '-' + date.getDate() + '-' + date.getFullYear() + ' 15:00:00';
+      data.Patients[i].CurrentAppointments[j].Date = (parseInt(date.getMonth()) + 1 ) + '-' + ( date.getDate() < 10 ? ('0' + date.getDate()) : date.getDate() ) + '-' + date.getFullYear() + ' 15:00:00';
     }
 
     //Purify Billing Date

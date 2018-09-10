@@ -16,7 +16,8 @@ header.header
             a(href="#", v-on:click = "$root.currentShowBox = 'triage'").header__tabs-item-link Triage
         .header__tabs-item()
             a(href="#", @click.prevent="$root.currentShowBox = 'referrals'").header__tabs-item-link Referrals
-
+        .header__tabs-item()
+            a(href="#", v-on:click = "$root.showSpaceWidget()").header__tabs-item-link Huddle Room
 
     .header__action
         .header__action-item
