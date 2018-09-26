@@ -90,7 +90,7 @@
                     a(href="#3").ui-btn.ui-btn--skin-default.ui-btn--theme-primary.mod--block  Screen pop
                 .sub-popup-menu__list
                     a(href="#3", @click.prevent="openNewWindow('http://10.1.74.36:2230/EPIC_InPatient/patient_scheduling/search.html')").sub-popup-menu__item Patient Search
-                    a(href="#3", @click.prevent="openNewWindow('alert:test')").sub-popup-menu__item Patient Information
+                    a(href="#3", @click.prevent="replaceNewWindow('alert:test')").sub-popup-menu__item Patient Information
                     a(href="#3", @click.prevent="openNewWindow('http://10.1.74.36:2230/EPIC_InPatient/patient_scheduling/make_appt.html')").sub-popup-menu__item Appointments Create
 
     // End
@@ -117,6 +117,11 @@
                     return;
                 }
                 window.open(url, "CNN_WindowName", strWindowFeatures);
+            },
+            replaceNewWindow(url) {
+                let strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+                window.location.href = url;
+                //window.open(url, "CNN_WindowName", strWindowFeatures, true);
             },
             getCurrentIndexPacient(){
                 let vm = this;

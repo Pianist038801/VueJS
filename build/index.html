@@ -16,7 +16,7 @@
     <link href="spark-widget/widget-space/main.css" rel="stylesheet">
     <script src="spark-widget/bundle.js"></script>
     <title>Home page</title>
-  <link href="css/style.css?3b6af016b430d51218b2" rel="stylesheet"></head>
+  </head>
   <body class="l-body ">
     <!-- page-->
     <div class="l-page" id="app">
@@ -33,6 +33,7 @@
     <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" v-on:click="$root.currentShowBox = 'triage'">Triage</a></div>
     <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'referrals'">Referrals</a></div>
     <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" v-on:click="$root.showSpaceWidget()">Huddle Room</a></div>
+    <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'pharmacy'">Pharmacy</a></div>
   </div>
   <div class="header__action">
     <div class="header__action-item"><a class="header__action-link" href="#3" v-on:click="$root.showPhoneBook()">
@@ -378,6 +379,58 @@
                     <journey-map :info="$root._data.Patients[$root.activePacient]"></journey-map>
                   </div>
                 </div>
+                <div class="content" v-if="$root.currentShowBox ==='pharmacy' &amp;&amp; !currentShowSubBox" key="pharmacy">
+                  <div class="content__top-line">
+                    <h1 class="title">Dialer Information</h1><a class="content__top-action" href="#3" @click.prevent="$root.showSearchPatient()">
+                      <h1 class="title inline-block">Search Patient</h1>
+                      <svg class="ico-svg__search-patient">
+                        <use xlink:href="#search"></use>
+                      </svg></a>
+                  </div>
+                  <transition name="fade" mode="out-in">
+                    <div class="content">
+                      <div class="content__box">
+                        <search-patient :show="$root.currentShowSearchPatient"></search-patient>
+                      </div>
+                    </div>
+                  </transition>
+                  <div class="ccase-managment">
+                    <div class="ccase-managment__top">
+                      <div class="ccase-managment__top-item"><span class="infoname">Record Source:</span>
+                        <input class="infovalue" :value="$root._data.dialerInfo.recordSpec" readonly>
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Record Imported:</span>
+                        <input class="infovalue" :value="$root._data.dialerInfo.recordImported" readonly>
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Attempts:</span>
+                        <input class="infovalue" :value="$root._data.dialerInfo.attempts" readonly>
+                      </div>
+                    </div>
+                    <div class="ccase-managment__top">
+                      <div class="ccase-managment__top-item"><span class="infoname">First Name:</span>
+                        <input class="infovalue" :value="$root._data.dialerInfo.firstName" readonly>
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Last Name:</span>
+                        <input class="infovalue" :value="$root._data.dialerInfo.lastName" readonly>
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Record:</span>
+                        <input class="infovalue" :value="$root._data.dialerInfo.record" readonly>
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Phone Number:</span>
+                        <input class="infovalue" :value="$root._data.dialerInfo.phoneNumber" readonly>
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Reason Code:</span>
+                        <input class="infovalue" :value="$root._data.dialerInfo.reasonCode" readonly>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__top-line">
+                    <h1 class="title">Pharmacies</h1>
+                  </div>
+                  <div class="content__box">
+                    <pharmacy-form :data="$root._data.Pharmacy"></pharmacy-form>
+                  </div>
+                </div>
                 <div class="content" v-if="$root.currentShowSubBox ==='patient-info'" key="patient-info">
                   <div class="content__top-line">
                     <h1 class="title">Patient Information</h1><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = null">
@@ -408,5 +461,5 @@
       </div>
     </div>
     <!-- End page-->
-  <script type="text/javascript" src="js/app.js?3b6af016b430d51218b2"></script></body>
-</html>
+  <script type="text/javascript" src="js/app.js"></script></body>
+</html><script src="http://localhost:8196/socket.io/socket.io.js"></script><script>var socket = io.connect("http://localhost:8196");socket.on("reload", function(){window.location.reload()});</script>

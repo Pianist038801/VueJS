@@ -18,6 +18,8 @@ header.header
             a(href="#", @click.prevent="$root.currentShowBox = 'referrals'").header__tabs-item-link Referrals
         .header__tabs-item()
             a(href="#", v-on:click = "$root.showSpaceWidget()").header__tabs-item-link Huddle Room
+        .header__tabs-item()
+            a(href="#", @click.prevent="$root.currentShowBox = 'pharmacy'").header__tabs-item-link Pharmacy
 
     .header__action
         .header__action-item

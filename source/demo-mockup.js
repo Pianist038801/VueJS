@@ -1,4 +1,36 @@
 let data= {
+  "dialerInfo": {
+    "recordSpec": "Epic",
+    "recordImported": "Sept 26, 1:00 PM",
+    "attempts": "First",
+    "firstName": 'John',
+    "lastName": "Jacobs",
+    "record": "7299281",
+    "phoneNumber": "12147015489",
+    "reasonCode": "A984"
+  },
+  "Pharmacy": [
+    {
+      "rxNumber": "Rx 4672983",
+      "physician": "Dr Richard Cox",
+      "pharmacy": "Walgreens",
+      "daySupply": "52",
+      "numberOfRefills": "5",
+      "refillsRemaining": "5",
+      "drugClassification": "Opioid",
+      "insuranceProvider": "Jack David"
+    },
+    {
+      "rxNumber": "Rx 9834092",
+      "physician": "Dr Chris Synder",
+      "pharmacy": "St Lukes Hospital Pharmacy",
+      "daySupply": "36",
+      "numberOfRefills": "3",
+      "refillsRemaining": "0",
+      "drugClassification": "Steroid",
+      "insuranceProvider": "Michale Wilson"
+    }
+  ],
   "currentShowPhoneBook": false,
   "callerInfo": {
     "callerName": "Johns Jacobs",
