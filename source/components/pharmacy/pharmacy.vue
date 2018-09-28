@@ -43,8 +43,30 @@
                 :key="index"
                 v-for="(m, index) in info.Location.DropdownRecords[currentPharmacy].Markers",
                 :position="m.Position",
-                :label="m.Name"
+                :clickable="true",
+                :label="m.Name",
+                v-on:click="clickMarker(currentPharmacy, index)"
                 )
+                    gmap-info-window(
+                    :key="index"
+                    :position="m.Position",
+                    :label="m.Name",
+                    :opened="getIndex(currentPharmacy, index) === $store.state.currentPin"
+                    
+                    )
+                        div().popup_row
+                            span().popup_title Name:
+                            span().popup_title {{m.Name}}
+                        div().popup_row
+                            span().popup_title Address:
+                            span().popup_title {{m.Address}}
+                        div(v-if="currentPharmacy!==0").popup_row
+                            span().popup_title Hours:
+                            span().popup_title {{info.Location.DropdownRecords[currentPharmacy].Hours}}
+                        div().popup_row
+                            span().popup_title Phone Number:
+                            span().popup_title {{m.Phone}}
+
 
 </template>
 <script>
@@ -79,6 +101,15 @@
                         vm.currentPharmacy = i;
                     }
                 });
+            },
+            clickMarker(categoryNumber, placeNumber) {
+                console.log('MapPinClicked');
+                console.log(this.$store.state.currentPin);
+                this.$store.dispatch('setCurrentPin', this.getIndex(categoryNumber, placeNumber));
+                console.log(this.getIndex(categoryNumber, placeNumber))
+            },
+            getIndex(categoryNumber, placeNumber) {
+                return this.$root.activePacient.toString() + categoryNumber.toString() + placeNumber.toString()
             }
         },
         created() {

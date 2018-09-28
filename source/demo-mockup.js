@@ -262,6 +262,7 @@ let data= {
               "Name": "Patient Geo Location"
             , "Address": "1272 Belt Line Rd, Garland TX 75040"
             , "Position": {"lat": 32.944827, "lng": -96.645879}
+            , "Phone": "+1 (214)-701-5489"
             }
           ]
         },
@@ -276,31 +277,37 @@ let data= {
               "Name": "CVS Pharmacy"
             , "Address": "1372 Belt Line Rd"
             , "Position": {"lat": 32.944527, "lng": -96.646960}
+            ,"Phone": "+1 (972) 495-1934"
             } ,
             {
               "Name": "Walmart Pharmacy"
             , "Address": "101 W Buckingham Rd"
             , "Position": {"lat": 32.932013, "lng": -96.631611}
+            ,"Phone": "+1 (972) 495-1935"
             } ,
             {
               "Name": "Walgreens"
             , "Address": "2614 Lavon Dr"
             , "Position": {"lat": 32.939566, "lng": -96.621946}
+            ,"Phone": "+1 (972) 495-1936"
             } ,
             {
               "Name": "Walgreens"
             , "Address": "1902 N Jupiter Rd"
             , "Position": {"lat": 32.930183, "lng": -96.682285}
+            ,"Phone": "+1 (972) 495-1937"
             } ,
             {
               "Name": "CVS Pharmacy - Target"
             , "Address": "5301 N Garland Ave"
             , "Position": {"lat": 32.965650, "lng": -96.646806}
+            ,"Phone": "+1 (972) 495-1938"
             } ,
             {
               "Name": "Walmart Pharmacy"
             , "Address": "5302 N Garland Ave"
             , "Position": {"lat": 32.962346, "lng": -96.642499}
+            ,"Phone": "+1 (972) 495-1939"
             }
           ]
         },
@@ -315,21 +322,25 @@ let data= {
               "Name": "Baylor Scott & White Medical Center"
             , "Address": "2300 Marie Curie Blvd"
             , "Position": {"lat": 32.918755, "lng": -96.661963}
+            , "Phone": "+(972) 888-7001",
             } ,
             {
               "Name": "Select Specialty Hospital - Dallas Garland"
             , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
             , "Position": {"lat": 32.918793, "lng": -96.662041}
+            , "Phone": "+(972) 888-7002",
             } ,
             {
               "Name": "Children's Health Pediatric Group Garland"
             , "Address": "455 N Garland Ave"
             , "Position": {"lat": 28.548467, "lng": -81.381385}
+            , "Phone": "+(972) 888-7003",
             } ,
             {
               "Name": "Sundance Hospital Dallas"
             , "Address": "2696 W Walnut St"
             , "Position": {"lat": 32.913402, "lng": -96.670117}
+            , "Phone": "+(972) 888-7004",
             }
           ]
         }
@@ -698,6 +709,7 @@ let data= {
               "Name": "Patient Geo Location"
             , "Address": "1272 Belt Line Rd, Garland TX 75040"
             , "Position": {"lat": 31.944827, "lng": -95.645879}
+            , "Phone": "+1 (253)-704-2531"
             }
           ]
         },
@@ -705,38 +717,44 @@ let data= {
           "Name": "Pharmacies In Area",
           "Address": "1272 Belt Line Rd, Garland TX 75040",
           "Position": {"lat": 31.944827, "lng": -95.645879},
-          "Phone": "+1 (972) 495-1933",
+          "Phone": "+1 (972) 496-1933",
           "Hours": "Open 9 AM to 10 PM",
           "Markers":[
             {
               "Name": "CVS Pharmacy"
             , "Address": "1372 Belt Line Rd"
             , "Position": {"lat": 31.944527, "lng": -95.646960}
+            , "Phone": "+1 (972) 496-1934" 
             } ,
             {
               "Name": "Walmart Pharmacy"
             , "Address": "101 W Buckingham Rd"
             , "Position": {"lat": 31.932013, "lng": -95.631611}
+            , "Phone": "+1 (972) 496-1935" 
             } ,
             {
               "Name": "Walgreens"
             , "Address": "2614 Lavon Dr"
             , "Position": {"lat": 31.939566, "lng": -95.621946}
+            , "Phone": "+1 (972) 496-1936" 
             } ,
             {
               "Name": "Walgreens"
             , "Address": "1902 N Jupiter Rd"
             , "Position": {"lat": 32.930183, "lng": -95.682285}
+            , "Phone": "+1 (972) 496-1937" 
             } ,
             {
               "Name": "CVS Pharmacy - Target"
             , "Address": "5301 N Garland Ave"
             , "Position": {"lat": 32.965650, "lng": -95.646806}
+            , "Phone": "+1 (972) 496-1938" 
             } ,
             {
               "Name": "Walmart Pharmacy"
             , "Address": "5302 N Garland Ave"
             , "Position": {"lat": 32.962346, "lng": -95.642499}
+            , "Phone": "+1 (972) 496-1939" 
             }
           ]
         },
@@ -744,28 +762,32 @@ let data= {
           "Name": "Hospitals In Area",
           "Address": "7 Medical Pkwy, Dallas, TX 75234",
           "Position": {"lat": 32.944827, "lng": -95.645879},
-          "Phone": "+(972) 888-7000",
+          "Phone": "+(972) 898-7000",
           "Hours": "Open 9AM to 9PM",
           "Markers":[
             {
               "Name": "Baylor Scott & White Medical Center"
             , "Address": "2300 Marie Curie Blvd"
             , "Position": {"lat": 32.918755, "lng": -95.661963}
+            , "Phone": "+(972) 898-7001"
             } ,
             {
               "Name": "Select Specialty Hospital - Dallas Garland"
             , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
             , "Position": {"lat": 32.918793, "lng": -96.662041}
+            , "Phone": "+(972) 898-7002"
             } ,
             {
               "Name": "Children's Health Pediatric Group Garland"
             , "Address": "455 N Garland Ave"
             , "Position": {"lat": 28.548467, "lng": -81.381385}
+            , "Phone": "+(972) 898-7003"
             } ,
             {
               "Name": "Sundance Hospital Dallas"
             , "Address": "2696 W Walnut St"
             , "Position": {"lat": 32.913402, "lng": -96.670117}
+            , "Phone": "+(972) 898-7004"
             }
           ]
         }
@@ -1297,7 +1319,8 @@ let data= {
                 "Position": {
                   "lat": 31.900827,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+1 255 703 8801"
               }
             ]
           },
@@ -1308,7 +1331,7 @@ let data= {
               "lat": 31.900827,
               "lng": -97.600879
             },
-            "Phone": "+1 (972) 495-1933",
+            "Phone": "+1 (972) 498-1933",
             "Hours": "Open 9 AM to 10 PM",
             "Markers": [
               {
@@ -1317,7 +1340,8 @@ let data= {
                 "Position": {
                   "lat": 31.900827,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+1 (972) 498-1934"
               },
               {
                 "Name": "Walmart Pharmacy",
@@ -1325,7 +1349,8 @@ let data= {
                 "Position": {
                   "lat": 31.900827,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+1 (972) 498-1935"
               },
               {
                 "Name": "Walgreens",
@@ -1333,7 +1358,8 @@ let data= {
                 "Position": {
                   "lat": 31.900827,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+1 (972) 498-1936"
               },
               {
                 "Name": "Walgreens",
@@ -1341,7 +1367,8 @@ let data= {
                 "Position": {
                   "lat": 31.900827,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+1 (972) 498-1937"
               },
               {
                 "Name": "CVS Pharmacy - Target",
@@ -1349,7 +1376,8 @@ let data= {
                 "Position": {
                   "lat": 31.900827,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+1 (972) 498-1938"
               },
               {
                 "Name": "Walmart Pharmacy",
@@ -1357,7 +1385,8 @@ let data= {
                 "Position": {
                   "lat": 31.900827,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+1 (972) 498-1939"
               }
             ]
           },
@@ -1368,7 +1397,7 @@ let data= {
               "lat": 32.944827,
               "lng": -97.600879
             },
-            "Phone": "+(972) 888-7000",
+            "Phone": "+(972) 988-7000",
             "Hours": "Open 9AM to 9PM",
             "Markers": [
               {
@@ -1377,7 +1406,8 @@ let data= {
                 "Position": {
                   "lat": 32.918755,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+(972) 988-7001",
               },
               {
                 "Name": "Select Specialty Hospital - Dallas Garland",
@@ -1385,7 +1415,8 @@ let data= {
                 "Position": {
                   "lat": 32.918793,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+(972) 988-7002",
               },
               {
                 "Name": "Children's Health Pediatric Group Garland",
@@ -1393,7 +1424,8 @@ let data= {
                 "Position": {
                   "lat": 28.548467,
                   "lng": -81.381385
-                }
+                },
+                "Phone": "+(972) 988-7003",
               },
               {
                 "Name": "Sundance Hospital Dallas",
@@ -1401,7 +1433,8 @@ let data= {
                 "Position": {
                   "lat": 32.913402,
                   "lng": -96.670117
-                }
+                },
+                "Phone": "+(972) 988-7004",
               }
             ]
           }

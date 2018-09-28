@@ -13,6 +13,18 @@
   line-height: em(27px, 24);
 }
 
+.popup_title {
+  margin: 0;
+  margin-right: 20px;
+  color: grey;
+  font-size: em(24px);
+  font-weight: 700;
+}
+
+.popup_row {
+  margin-bottom: 5px;
+}
+
 .g-align-center {
   text-align: center;
 }

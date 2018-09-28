@@ -9,8 +9,12 @@ export default new Vuex.Store({
     pacientId: 0,
     pacientName: 'Johns Jacobs',
     referrals: [],
+    currentPin: '',
   },
   mutations: {
+    setCurrentPin(state, pin) {
+      state.currentPin = pin;
+    },
     setReferralData(state, referrals){
       console.log('NEW_REF+', referrals)
       state.referrals = [...referrals]
@@ -36,6 +40,9 @@ export default new Vuex.Store({
     }
   },
   actions: {
+    setCurrentPin({commit, state}, pinIndex) {
+      commit('setCurrentPin', pinIndex);
+    },
     setReferral({commit, state}, referrals) {
         commit('setReferralData', referrals);
         console.log(referrals);

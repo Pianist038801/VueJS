@@ -18201,9 +18201,13 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
   state: {
     pacientId: 0,
     pacientName: 'Johns Jacobs',
-    referrals: []
+    referrals: [],
+    currentPin: ''
   },
   mutations: {
+    setCurrentPin(state, pin) {
+      state.currentPin = pin;
+    },
     setReferralData(state, referrals) {
       console.log('NEW_REF+', referrals);
       state.referrals = [...referrals];
@@ -18223,6 +18227,9 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
     }
   },
   actions: {
+    setCurrentPin({ commit, state }, pinIndex) {
+      commit('setCurrentPin', pinIndex);
+    },
     setReferral({ commit, state }, referrals) {
       commit('setReferralData', referrals);
       console.log(referrals);
@@ -23592,6 +23599,28 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -23624,6 +23653,15 @@ __WEBPACK_IMPORTED_MODULE_1_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
                     vm.currentPharmacy = i;
                 }
             });
+        },
+        clickMarker(categoryNumber, placeNumber) {
+            console.log('MapPinClicked');
+            console.log(this.$store.state.currentPin);
+            this.$store.dispatch('setCurrentPin', this.getIndex(categoryNumber, placeNumber));
+            console.log(this.getIndex(categoryNumber, placeNumber));
+        },
+        getIndex(categoryNumber, placeNumber) {
+            return this.$root.activePacient.toString() + categoryNumber.toString() + placeNumber.toString();
         }
     },
     created() {
@@ -47012,7 +47050,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_b1ade17a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_infoWindow_vue__ = __webpack_require__(518);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_b1ade17a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_infoWindow_vue__ = __webpack_require__(517);
 var normalizeComponent = __webpack_require__(3)
 /* script */
 
@@ -47526,9 +47564,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_case_managment_vue__ = __webpack_require__(77);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7e4ec5ac_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_vue__ = __webpack_require__(515);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7e4ec5ac_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_vue__ = __webpack_require__(514);
 function injectStyle (ssrContext) {
-  __webpack_require__(300)
+  __webpack_require__(299)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47705,9 +47743,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_make_appointment_vue__ = __webpack_require__(82);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_70589151_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_make_appointment_vue__ = __webpack_require__(514);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_70589151_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_make_appointment_vue__ = __webpack_require__(513);
 function injectStyle (ssrContext) {
-  __webpack_require__(299)
+  __webpack_require__(298)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47890,9 +47928,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_patient_info_vue__ = __webpack_require__(89);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd88d5a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_patient_info_vue__ = __webpack_require__(516);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd88d5a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_patient_info_vue__ = __webpack_require__(515);
 function injectStyle (ssrContext) {
-  __webpack_require__(301)
+  __webpack_require__(300)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47964,9 +48002,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_pharmacy_vue__ = __webpack_require__(91);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_69afa24e_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_pharmacy_vue__ = __webpack_require__(513);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_bbe3c308_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_pharmacy_vue__ = __webpack_require__(518);
 function injectStyle (ssrContext) {
-  __webpack_require__(298)
+  __webpack_require__(301)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47984,7 +48022,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_pharmacy_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_69afa24e_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_pharmacy_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_bbe3c308_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_pharmacy_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -48112,7 +48150,7 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_signIn_vue__ = __webpack_require__(95);
 /* unused harmony reexport namespace */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_ae2535ac_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_signIn_vue__ = __webpack_require__(517);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_ae2535ac_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_signIn_vue__ = __webpack_require__(516);
 var normalizeComponent = __webpack_require__(3)
 /* script */
 
@@ -48384,7 +48422,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"pharmacies"},[_c('h2',{staticClass:"title"},[_vm._v("Locations")]),_c('div',{staticClass:"pharmacies__line"},[_c('div',{staticClass:"pharmacies__line-item"},[_c('svg',{staticClass:"ico-svg ico-svg__pharmacy"},[_c('use',{attrs:{"xlink:href":"#pharmacy"}})]),_c('div',{staticClass:"pharmacies__line-item-select"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":_vm.pharmacies,"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.setAcivePharmacy},model:{value:(_vm.currentPharmacyName),callback:function ($$v) {_vm.currentPharmacyName=$$v},expression:"currentPharmacyName"}})],1)]),_c('div',{staticClass:"pharmacies__line-item"},[_c('svg',{staticClass:"ico-svg ico-svg__location"},[_c('use',{attrs:{"xlink:href":"#location"}})]),_vm._v(_vm._s(_vm.info.Location.DropdownRecords[_vm.currentPharmacy].Address))]),_c('div',{staticClass:"pharmacies__line-item"},[_c('svg',{staticClass:"ico-svg ico-svg__phone"},[_c('use',{attrs:{"xlink:href":"#phone"}})]),_c('a',{staticClass:"pharmacies__line-item-link",attrs:{"href":'tel:'+_vm.info.Location.DropdownRecords[_vm.currentPharmacy].Phone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.info.Location.DropdownRecords[_vm.currentPharmacy].Phone))])]),_c('div',{staticClass:"pharmacies__line-item"},[_c('svg',{staticClass:"ico-svg ico-svg__clock"},[_c('use',{attrs:{"xlink:href":"#clock"}})]),_vm._v(_vm._s(_vm.info.Location.DropdownRecords[_vm.currentPharmacy].Hours))])]),_c('div',{staticClass:"pharmacies__map"},[_c('gmap-map',{staticStyle:{"width":"100%","height":"300px"},attrs:{"center":_vm.info.Location.DropdownRecords[0].Position,"zoom":12}},_vm._l((_vm.info.Location.DropdownRecords[_vm.currentPharmacy].Markers),function(m,index){return _c('gmap-marker',{key:index,attrs:{"position":m.Position,"label":m.Name}})}))],1)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"make-appointment"},[_c('h2',{staticClass:"title mod--appointment"},[_vm._v("Make Appointment")]),_c('div',{staticClass:"make-appointment__line-select"},[_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Department")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Department,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Department[0]},on:{"input":function($event){}},model:{value:(_vm.departmentSelect),callback:function ($$v) {_vm.departmentSelect=$$v},expression:"departmentSelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Facility")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Facility,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Facility[0]},on:{"input":function($event){}},model:{value:(_vm.facilitySelect),callback:function ($$v) {_vm.facilitySelect=$$v},expression:"facilitySelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Provider")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Provider,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Provider[0]},on:{"input":function($event){}},model:{value:(_vm.providerSelect),callback:function ($$v) {_vm.providerSelect=$$v},expression:"providerSelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Physician")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Physician,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Physician[0]},on:{"input":function($event){}},model:{value:(_vm.physicianSelect),callback:function ($$v) {_vm.physicianSelect=$$v},expression:"physicianSelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Date Range")]),_c('datepicker',{attrs:{"disabled":!_vm.$root.userIsVerify,"format":_vm.customFormatter},on:{"selected":_vm.onSelectDate},model:{value:(_vm.date),callback:function ($$v) {_vm.date=$$v},expression:"date"}})],1)]),_c('transition',{attrs:{"name":"fade"}},[(_vm.formElementChecked)?_c('div',[_c('div',{staticClass:"make-appointment__date-selected"},[_vm._v("Sunday - May 20, 2018")]),_c('form',{attrs:{"action":"#3"}},[_c('fieldset',{staticClass:"form__fieldset"},[_c('legend',{staticClass:"hide"},[_vm._v("Book table")]),_c('table',{staticClass:"make-appointment__table"},[_c('tr',[_c('th',[_vm._v("TIME SLOTS")]),_c('th',[_vm._v("NAME")]),_c('th',{staticClass:"g-align-center"},[_vm._v("FACILITY")]),_c('th',{staticClass:"g-align-center"},[_vm._v("PROVIDER")]),_c('th',{staticClass:"g-align-center"},[_vm._v("PHYSICIAN")]),_c('th',{staticClass:"g-align-center"},[_vm._v("STATUS")]),_c('th',{staticClass:"g-align-center"},[_vm._v("ACTION")])]),_vm._l((_vm.existingApointmentSlots),function(item,index){return _c('tr',{staticClass:"make-appointment__table-tr",class:{'state--hold': item.Status === 'On Hold' }},[_c('td',{staticClass:"make-appointment__table-time"},[_vm._v(_vm._s(_vm._f("moment")(item.StartTime,"HH:mm"))+" - "+_vm._s(_vm._f("moment")(item.EndTime,"HH:mm A")))]),_c('td',[_vm._v(_vm._s(item.Name))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(item.Facility))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(item.Provider))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(item.Physician))]),_c('td',{staticClass:"make-appointment__table-status g-align-center"},[_vm._v(_vm._s(item.Status))]),(item.Status === 'On Hold')?_c('td',{staticClass:"g-align-center make-appointment__table-action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-disable-border mod--block",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();}}},[_vm._v("update")])]):_c('td',{staticClass:"g-align-center make-appointment__table-action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border mod--block",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.showModal(index)}}},[_vm._v("book now")])])])})],2)])])]):_vm._e()]),_c('modal',{ref:"modalbook"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Book Now")]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__calendar"},[_c('use',{attrs:{"xlink:href":"#calendar"}})]),_vm._v(_vm._s(_vm._f("moment")(_vm.existingApointmentSlots[_vm.activeBookItem].StartTime,"MMM DD, YYYY"))+" | "+_vm._s(_vm._f("moment")(_vm.existingApointmentSlots[_vm.activeBookItem].StartTime,"HH:mm"))+" - "+_vm._s(_vm._f("moment")(_vm.existingApointmentSlots[_vm.activeBookItem].EndTime,"HH:mm A")))]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__location"},[_c('use',{attrs:{"xlink:href":"#location"}})]),_vm._v("Schedule appointment with Dr. Steve Clinic Name")]),_c('div',{staticClass:"modal-appointment__info"},[_c('div',{staticClass:"modal-appointment__lang-ico"},[_c('svg',{staticClass:"ico-svg ico-svg__lang"},[_c('use',{attrs:{"xlink:href":"#lang"}})])]),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Language Interpreter Required")]),_c('div',{staticClass:"modal-appointment__lang-toggle",class:{'state--active': !_vm.disableSelectLang},on:{"click":function($event){_vm.disableSelectLang=!_vm.disableSelectLang}}})]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":_vm.bookNowData.InterpreterLanguages,"searchable":false,"allowEmpty":false,"showLabels":false,"disabled":_vm.disableSelectLang,"placeholder":"Select Language"},on:{"input":function($event){}},model:{value:(_vm.langSelected),callback:function ($$v) {_vm.langSelected=$$v},expression:"langSelected"}})],1)])])]),_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__map"},[_c('gmap-map',{staticStyle:{"width":"100%","height":"100px"},attrs:{"center":{lat: 32.9448268, lng: -96.64587949999998},"zoom":14}},[_c('gmap-marker',{key:1,attrs:{"position":{lat: 32.9448268, lng: -96.64587949999998}}})],1)],1)])]),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showEpicTemplate),expression:"showEpicTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-epic","name":"checkbox-epic","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showEpicTemplate)?_vm._i(_vm.showEpicTemplate,null)>-1:(_vm.showEpicTemplate)},on:{"change":function($event){var $$a=_vm.showEpicTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showEpicTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showEpicTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showEpicTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-epic"}},[_vm._v("Add Notes to EPIC")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showEpicTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"}):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showWaitList),expression:"showWaitList"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-waitlist","name":"checkbox-waitlist","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showWaitList)?_vm._i(_vm.showWaitList,null)>-1:(_vm.showWaitList)},on:{"change":function($event){var $$a=_vm.showWaitList,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showWaitList=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showWaitList=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showWaitList=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-waitlist"}},[_vm._v("Waitlist Enabled")])])]),_c('div',{staticClass:"modal-appointment__reason"},[_vm._v("Reason for visit")]),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showSmsTemplate),expression:"showSmsTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-sms","name":"checkbox-sms","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showSmsTemplate)?_vm._i(_vm.showSmsTemplate,null)>-1:(_vm.showSmsTemplate)},on:{"change":function($event){var $$a=_vm.showSmsTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showSmsTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showSmsTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showSmsTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-sms"}},[_vm._v("Sent Text Confirmation")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showSmsTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default mod--sms"},[_vm._v(_vm._s(_vm.bookNowData.SmsConfirmTemplate))]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showEmailTemplate),expression:"showEmailTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-email","name":"checkbox-email","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showEmailTemplate)?_vm._i(_vm.showEmailTemplate,null)>-1:(_vm.showEmailTemplate)},on:{"change":function($event){var $$a=_vm.showEmailTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showEmailTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showEmailTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showEmailTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-email"}},[_vm._v("Sent Email Confirmation")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showEmailTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"},[_vm._v(_vm._s(_vm.bookNowData.EmailConfirmTemplate))]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showSmsRemind),expression:"showSmsRemind"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-smsremind","name":"checkbox-smsremind","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showSmsRemind)?_vm._i(_vm.showSmsRemind,null)>-1:(_vm.showSmsRemind)},on:{"change":function($event){var $$a=_vm.showSmsRemind,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showSmsRemind=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showSmsRemind=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showSmsRemind=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-smsremind"}},[_vm._v("Send SMS reminder")])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showSmsRemind)?_c('div',{staticClass:"modal-appointment__remind-days"},[_c('input',{staticClass:"ui-input ui-input--skin-default ui-input--theme-default",attrs:{"type":"text","value":"2"}}),_vm._v("days before appointment.")]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showVoiceRemind),expression:"showVoiceRemind"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-voiceremind","name":"checkbox-voiceremind","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showVoiceRemind)?_vm._i(_vm.showVoiceRemind,null)>-1:(_vm.showVoiceRemind)},on:{"change":function($event){var $$a=_vm.showVoiceRemind,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showVoiceRemind=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showVoiceRemind=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showVoiceRemind=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-voiceremind"}},[_vm._v("Send Voice reminder")])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalbook.close()}}},[_vm._v("CANCEL")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.bookModal}},[_vm._v("book")])])])])],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -48394,23 +48432,13 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"make-appointment"},[_c('h2',{staticClass:"title mod--appointment"},[_vm._v("Make Appointment")]),_c('div',{staticClass:"make-appointment__line-select"},[_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Department")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Department,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Department[0]},on:{"input":function($event){}},model:{value:(_vm.departmentSelect),callback:function ($$v) {_vm.departmentSelect=$$v},expression:"departmentSelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Facility")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Facility,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Facility[0]},on:{"input":function($event){}},model:{value:(_vm.facilitySelect),callback:function ($$v) {_vm.facilitySelect=$$v},expression:"facilitySelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Provider")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Provider,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Provider[0]},on:{"input":function($event){}},model:{value:(_vm.providerSelect),callback:function ($$v) {_vm.providerSelect=$$v},expression:"providerSelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Physician")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Physician,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Physician[0]},on:{"input":function($event){}},model:{value:(_vm.physicianSelect),callback:function ($$v) {_vm.physicianSelect=$$v},expression:"physicianSelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Date Range")]),_c('datepicker',{attrs:{"disabled":!_vm.$root.userIsVerify,"format":_vm.customFormatter},on:{"selected":_vm.onSelectDate},model:{value:(_vm.date),callback:function ($$v) {_vm.date=$$v},expression:"date"}})],1)]),_c('transition',{attrs:{"name":"fade"}},[(_vm.formElementChecked)?_c('div',[_c('div',{staticClass:"make-appointment__date-selected"},[_vm._v("Sunday - May 20, 2018")]),_c('form',{attrs:{"action":"#3"}},[_c('fieldset',{staticClass:"form__fieldset"},[_c('legend',{staticClass:"hide"},[_vm._v("Book table")]),_c('table',{staticClass:"make-appointment__table"},[_c('tr',[_c('th',[_vm._v("TIME SLOTS")]),_c('th',[_vm._v("NAME")]),_c('th',{staticClass:"g-align-center"},[_vm._v("FACILITY")]),_c('th',{staticClass:"g-align-center"},[_vm._v("PROVIDER")]),_c('th',{staticClass:"g-align-center"},[_vm._v("PHYSICIAN")]),_c('th',{staticClass:"g-align-center"},[_vm._v("STATUS")]),_c('th',{staticClass:"g-align-center"},[_vm._v("ACTION")])]),_vm._l((_vm.existingApointmentSlots),function(item,index){return _c('tr',{staticClass:"make-appointment__table-tr",class:{'state--hold': item.Status === 'On Hold' }},[_c('td',{staticClass:"make-appointment__table-time"},[_vm._v(_vm._s(_vm._f("moment")(item.StartTime,"HH:mm"))+" - "+_vm._s(_vm._f("moment")(item.EndTime,"HH:mm A")))]),_c('td',[_vm._v(_vm._s(item.Name))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(item.Facility))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(item.Provider))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(item.Physician))]),_c('td',{staticClass:"make-appointment__table-status g-align-center"},[_vm._v(_vm._s(item.Status))]),(item.Status === 'On Hold')?_c('td',{staticClass:"g-align-center make-appointment__table-action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-disable-border mod--block",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();}}},[_vm._v("update")])]):_c('td',{staticClass:"g-align-center make-appointment__table-action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border mod--block",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.showModal(index)}}},[_vm._v("book now")])])])})],2)])])]):_vm._e()]),_c('modal',{ref:"modalbook"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Book Now")]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__calendar"},[_c('use',{attrs:{"xlink:href":"#calendar"}})]),_vm._v(_vm._s(_vm._f("moment")(_vm.existingApointmentSlots[_vm.activeBookItem].StartTime,"MMM DD, YYYY"))+" | "+_vm._s(_vm._f("moment")(_vm.existingApointmentSlots[_vm.activeBookItem].StartTime,"HH:mm"))+" - "+_vm._s(_vm._f("moment")(_vm.existingApointmentSlots[_vm.activeBookItem].EndTime,"HH:mm A")))]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__location"},[_c('use',{attrs:{"xlink:href":"#location"}})]),_vm._v("Schedule appointment with Dr. Steve Clinic Name")]),_c('div',{staticClass:"modal-appointment__info"},[_c('div',{staticClass:"modal-appointment__lang-ico"},[_c('svg',{staticClass:"ico-svg ico-svg__lang"},[_c('use',{attrs:{"xlink:href":"#lang"}})])]),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Language Interpreter Required")]),_c('div',{staticClass:"modal-appointment__lang-toggle",class:{'state--active': !_vm.disableSelectLang},on:{"click":function($event){_vm.disableSelectLang=!_vm.disableSelectLang}}})]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":_vm.bookNowData.InterpreterLanguages,"searchable":false,"allowEmpty":false,"showLabels":false,"disabled":_vm.disableSelectLang,"placeholder":"Select Language"},on:{"input":function($event){}},model:{value:(_vm.langSelected),callback:function ($$v) {_vm.langSelected=$$v},expression:"langSelected"}})],1)])])]),_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__map"},[_c('gmap-map',{staticStyle:{"width":"100%","height":"100px"},attrs:{"center":{lat: 32.9448268, lng: -96.64587949999998},"zoom":14}},[_c('gmap-marker',{key:1,attrs:{"position":{lat: 32.9448268, lng: -96.64587949999998}}})],1)],1)])]),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showEpicTemplate),expression:"showEpicTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-epic","name":"checkbox-epic","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showEpicTemplate)?_vm._i(_vm.showEpicTemplate,null)>-1:(_vm.showEpicTemplate)},on:{"change":function($event){var $$a=_vm.showEpicTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showEpicTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showEpicTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showEpicTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-epic"}},[_vm._v("Add Notes to EPIC")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showEpicTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"}):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showWaitList),expression:"showWaitList"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-waitlist","name":"checkbox-waitlist","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showWaitList)?_vm._i(_vm.showWaitList,null)>-1:(_vm.showWaitList)},on:{"change":function($event){var $$a=_vm.showWaitList,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showWaitList=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showWaitList=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showWaitList=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-waitlist"}},[_vm._v("Waitlist Enabled")])])]),_c('div',{staticClass:"modal-appointment__reason"},[_vm._v("Reason for visit")]),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showSmsTemplate),expression:"showSmsTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-sms","name":"checkbox-sms","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showSmsTemplate)?_vm._i(_vm.showSmsTemplate,null)>-1:(_vm.showSmsTemplate)},on:{"change":function($event){var $$a=_vm.showSmsTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showSmsTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showSmsTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showSmsTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-sms"}},[_vm._v("Sent Text Confirmation")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showSmsTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default mod--sms"},[_vm._v(_vm._s(_vm.bookNowData.SmsConfirmTemplate))]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showEmailTemplate),expression:"showEmailTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-email","name":"checkbox-email","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showEmailTemplate)?_vm._i(_vm.showEmailTemplate,null)>-1:(_vm.showEmailTemplate)},on:{"change":function($event){var $$a=_vm.showEmailTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showEmailTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showEmailTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showEmailTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-email"}},[_vm._v("Sent Email Confirmation")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showEmailTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"},[_vm._v(_vm._s(_vm.bookNowData.EmailConfirmTemplate))]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showSmsRemind),expression:"showSmsRemind"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-smsremind","name":"checkbox-smsremind","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showSmsRemind)?_vm._i(_vm.showSmsRemind,null)>-1:(_vm.showSmsRemind)},on:{"change":function($event){var $$a=_vm.showSmsRemind,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showSmsRemind=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showSmsRemind=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showSmsRemind=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-smsremind"}},[_vm._v("Send SMS reminder")])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showSmsRemind)?_c('div',{staticClass:"modal-appointment__remind-days"},[_c('input',{staticClass:"ui-input ui-input--skin-default ui-input--theme-default",attrs:{"type":"text","value":"2"}}),_vm._v("days before appointment.")]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showVoiceRemind),expression:"showVoiceRemind"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-voiceremind","name":"checkbox-voiceremind","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showVoiceRemind)?_vm._i(_vm.showVoiceRemind,null)>-1:(_vm.showVoiceRemind)},on:{"change":function($event){var $$a=_vm.showVoiceRemind,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showVoiceRemind=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showVoiceRemind=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showVoiceRemind=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-voiceremind"}},[_vm._v("Send Voice reminder")])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalbook.close()}}},[_vm._v("CANCEL")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.bookModal}},[_vm._v("book")])])])])],1)}
-var staticRenderFns = []
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 515 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment"},[_c('div',{staticClass:"case-managment__top"},[_c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Hospital Name")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":["Mercy Joplin","Johns Jacobs"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Mercy Joplin"}})],1)]),_vm._m(0),_c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Unit")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":["Cardiology","Ophthalmology"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Cardiology"}})],1)]),_vm._m(1),_c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Incident Type")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":["Existing","Missing"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Existing"}})],1)]),_vm._m(2)])])}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Incident ID")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("INC0010032")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Case Manager")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("Katie Holmes, RN")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Phone Number#")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('a',{staticClass:"case-managment__top-item-box-link",attrs:{"href":"tel:1212421234"}},[_vm._v(" +1-(212)-42-1234")])])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 516 */
+/* 515 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48420,7 +48448,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 517 */
+/* 516 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48430,11 +48458,21 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 518 */
+/* 517 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{ref:"flyaway"},[_vm._t("default")],2)])}
+var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 518 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"pharmacies"},[_c('h2',{staticClass:"title"},[_vm._v("Locations")]),_c('div',{staticClass:"pharmacies__line"},[_c('div',{staticClass:"pharmacies__line-item"},[_c('svg',{staticClass:"ico-svg ico-svg__pharmacy"},[_c('use',{attrs:{"xlink:href":"#pharmacy"}})]),_c('div',{staticClass:"pharmacies__line-item-select"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":_vm.pharmacies,"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.setAcivePharmacy},model:{value:(_vm.currentPharmacyName),callback:function ($$v) {_vm.currentPharmacyName=$$v},expression:"currentPharmacyName"}})],1)]),_c('div',{staticClass:"pharmacies__line-item"},[_c('svg',{staticClass:"ico-svg ico-svg__location"},[_c('use',{attrs:{"xlink:href":"#location"}})]),_vm._v(_vm._s(_vm.info.Location.DropdownRecords[_vm.currentPharmacy].Address))]),_c('div',{staticClass:"pharmacies__line-item"},[_c('svg',{staticClass:"ico-svg ico-svg__phone"},[_c('use',{attrs:{"xlink:href":"#phone"}})]),_c('a',{staticClass:"pharmacies__line-item-link",attrs:{"href":'tel:'+_vm.info.Location.DropdownRecords[_vm.currentPharmacy].Phone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.info.Location.DropdownRecords[_vm.currentPharmacy].Phone))])]),_c('div',{staticClass:"pharmacies__line-item"},[_c('svg',{staticClass:"ico-svg ico-svg__clock"},[_c('use',{attrs:{"xlink:href":"#clock"}})]),_vm._v(_vm._s(_vm.info.Location.DropdownRecords[_vm.currentPharmacy].Hours))])]),_c('div',{staticClass:"pharmacies__map"},[_c('gmap-map',{staticStyle:{"width":"100%","height":"300px"},attrs:{"center":_vm.info.Location.DropdownRecords[0].Position,"zoom":12}},_vm._l((_vm.info.Location.DropdownRecords[_vm.currentPharmacy].Markers),function(m,index){return _c('gmap-marker',{key:index,attrs:{"position":m.Position,"clickable":true,"label":m.Name},on:{"click":function($event){_vm.clickMarker(_vm.currentPharmacy, index)}}},[_c('gmap-info-window',{key:index,attrs:{"position":m.Position,"label":m.Name,"opened":_vm.getIndex(_vm.currentPharmacy, index) === _vm.$store.state.currentPin}},[_c('div',{staticClass:"popup_row"},[_c('span',{staticClass:"popup_title"},[_vm._v("Name:")]),_c('span',{staticClass:"popup_title"},[_vm._v(_vm._s(m.Name))])]),_c('div',{staticClass:"popup_row"},[_c('span',{staticClass:"popup_title"},[_vm._v("Address:")]),_c('span',{staticClass:"popup_title"},[_vm._v(_vm._s(m.Address))])]),(_vm.currentPharmacy!==0)?_c('div',{staticClass:"popup_row"},[_c('span',{staticClass:"popup_title"},[_vm._v("Hours:")]),_c('span',{staticClass:"popup_title"},[_vm._v(_vm._s(_vm.info.Location.DropdownRecords[_vm.currentPharmacy].Hours))])]):_vm._e(),_c('div',{staticClass:"popup_row"},[_c('span',{staticClass:"popup_title"},[_vm._v("Phone Number:")]),_c('span',{staticClass:"popup_title"},[_vm._v(_vm._s(m.Phone))])])])],1)}))],1)])}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -56145,6 +56183,7 @@ let data= {
               "Name": "Patient Geo Location"
             , "Address": "1272 Belt Line Rd, Garland TX 75040"
             , "Position": {"lat": 32.944827, "lng": -96.645879}
+            , "Phone": "+1 (214)-701-5489"
             }
           ]
         },
@@ -56159,31 +56198,37 @@ let data= {
               "Name": "CVS Pharmacy"
             , "Address": "1372 Belt Line Rd"
             , "Position": {"lat": 32.944527, "lng": -96.646960}
+            ,"Phone": "+1 (972) 495-1934"
             } ,
             {
               "Name": "Walmart Pharmacy"
             , "Address": "101 W Buckingham Rd"
             , "Position": {"lat": 32.932013, "lng": -96.631611}
+            ,"Phone": "+1 (972) 495-1935"
             } ,
             {
               "Name": "Walgreens"
             , "Address": "2614 Lavon Dr"
             , "Position": {"lat": 32.939566, "lng": -96.621946}
+            ,"Phone": "+1 (972) 495-1936"
             } ,
             {
               "Name": "Walgreens"
             , "Address": "1902 N Jupiter Rd"
             , "Position": {"lat": 32.930183, "lng": -96.682285}
+            ,"Phone": "+1 (972) 495-1937"
             } ,
             {
               "Name": "CVS Pharmacy - Target"
             , "Address": "5301 N Garland Ave"
             , "Position": {"lat": 32.965650, "lng": -96.646806}
+            ,"Phone": "+1 (972) 495-1938"
             } ,
             {
               "Name": "Walmart Pharmacy"
             , "Address": "5302 N Garland Ave"
             , "Position": {"lat": 32.962346, "lng": -96.642499}
+            ,"Phone": "+1 (972) 495-1939"
             }
           ]
         },
@@ -56198,21 +56243,25 @@ let data= {
               "Name": "Baylor Scott & White Medical Center"
             , "Address": "2300 Marie Curie Blvd"
             , "Position": {"lat": 32.918755, "lng": -96.661963}
+            , "Phone": "+(972) 888-7001",
             } ,
             {
               "Name": "Select Specialty Hospital - Dallas Garland"
             , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
             , "Position": {"lat": 32.918793, "lng": -96.662041}
+            , "Phone": "+(972) 888-7002",
             } ,
             {
               "Name": "Children's Health Pediatric Group Garland"
             , "Address": "455 N Garland Ave"
             , "Position": {"lat": 28.548467, "lng": -81.381385}
+            , "Phone": "+(972) 888-7003",
             } ,
             {
               "Name": "Sundance Hospital Dallas"
             , "Address": "2696 W Walnut St"
             , "Position": {"lat": 32.913402, "lng": -96.670117}
+            , "Phone": "+(972) 888-7004",
             }
           ]
         }
@@ -56581,6 +56630,7 @@ let data= {
               "Name": "Patient Geo Location"
             , "Address": "1272 Belt Line Rd, Garland TX 75040"
             , "Position": {"lat": 31.944827, "lng": -95.645879}
+            , "Phone": "+1 (253)-704-2531"
             }
           ]
         },
@@ -56588,38 +56638,44 @@ let data= {
           "Name": "Pharmacies In Area",
           "Address": "1272 Belt Line Rd, Garland TX 75040",
           "Position": {"lat": 31.944827, "lng": -95.645879},
-          "Phone": "+1 (972) 495-1933",
+          "Phone": "+1 (972) 496-1933",
           "Hours": "Open 9 AM to 10 PM",
           "Markers":[
             {
               "Name": "CVS Pharmacy"
             , "Address": "1372 Belt Line Rd"
             , "Position": {"lat": 31.944527, "lng": -95.646960}
+            , "Phone": "+1 (972) 496-1934" 
             } ,
             {
               "Name": "Walmart Pharmacy"
             , "Address": "101 W Buckingham Rd"
             , "Position": {"lat": 31.932013, "lng": -95.631611}
+            , "Phone": "+1 (972) 496-1935" 
             } ,
             {
               "Name": "Walgreens"
             , "Address": "2614 Lavon Dr"
             , "Position": {"lat": 31.939566, "lng": -95.621946}
+            , "Phone": "+1 (972) 496-1936" 
             } ,
             {
               "Name": "Walgreens"
             , "Address": "1902 N Jupiter Rd"
             , "Position": {"lat": 32.930183, "lng": -95.682285}
+            , "Phone": "+1 (972) 496-1937" 
             } ,
             {
               "Name": "CVS Pharmacy - Target"
             , "Address": "5301 N Garland Ave"
             , "Position": {"lat": 32.965650, "lng": -95.646806}
+            , "Phone": "+1 (972) 496-1938" 
             } ,
             {
               "Name": "Walmart Pharmacy"
             , "Address": "5302 N Garland Ave"
             , "Position": {"lat": 32.962346, "lng": -95.642499}
+            , "Phone": "+1 (972) 496-1939" 
             }
           ]
         },
@@ -56627,28 +56683,32 @@ let data= {
           "Name": "Hospitals In Area",
           "Address": "7 Medical Pkwy, Dallas, TX 75234",
           "Position": {"lat": 32.944827, "lng": -95.645879},
-          "Phone": "+(972) 888-7000",
+          "Phone": "+(972) 898-7000",
           "Hours": "Open 9AM to 9PM",
           "Markers":[
             {
               "Name": "Baylor Scott & White Medical Center"
             , "Address": "2300 Marie Curie Blvd"
             , "Position": {"lat": 32.918755, "lng": -95.661963}
+            , "Phone": "+(972) 898-7001"
             } ,
             {
               "Name": "Select Specialty Hospital - Dallas Garland"
             , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
             , "Position": {"lat": 32.918793, "lng": -96.662041}
+            , "Phone": "+(972) 898-7002"
             } ,
             {
               "Name": "Children's Health Pediatric Group Garland"
             , "Address": "455 N Garland Ave"
             , "Position": {"lat": 28.548467, "lng": -81.381385}
+            , "Phone": "+(972) 898-7003"
             } ,
             {
               "Name": "Sundance Hospital Dallas"
             , "Address": "2696 W Walnut St"
             , "Position": {"lat": 32.913402, "lng": -96.670117}
+            , "Phone": "+(972) 898-7004"
             }
           ]
         }
@@ -57180,7 +57240,8 @@ let data= {
                 "Position": {
                   "lat": 31.900827,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+1 255 703 8801"
               }
             ]
           },
@@ -57191,7 +57252,7 @@ let data= {
               "lat": 31.900827,
               "lng": -97.600879
             },
-            "Phone": "+1 (972) 495-1933",
+            "Phone": "+1 (972) 498-1933",
             "Hours": "Open 9 AM to 10 PM",
             "Markers": [
               {
@@ -57200,7 +57261,8 @@ let data= {
                 "Position": {
                   "lat": 31.900827,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+1 (972) 498-1934"
               },
               {
                 "Name": "Walmart Pharmacy",
@@ -57208,7 +57270,8 @@ let data= {
                 "Position": {
                   "lat": 31.900827,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+1 (972) 498-1935"
               },
               {
                 "Name": "Walgreens",
@@ -57216,7 +57279,8 @@ let data= {
                 "Position": {
                   "lat": 31.900827,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+1 (972) 498-1936"
               },
               {
                 "Name": "Walgreens",
@@ -57224,7 +57288,8 @@ let data= {
                 "Position": {
                   "lat": 31.900827,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+1 (972) 498-1937"
               },
               {
                 "Name": "CVS Pharmacy - Target",
@@ -57232,7 +57297,8 @@ let data= {
                 "Position": {
                   "lat": 31.900827,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+1 (972) 498-1938"
               },
               {
                 "Name": "Walmart Pharmacy",
@@ -57240,7 +57306,8 @@ let data= {
                 "Position": {
                   "lat": 31.900827,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+1 (972) 498-1939"
               }
             ]
           },
@@ -57251,7 +57318,7 @@ let data= {
               "lat": 32.944827,
               "lng": -97.600879
             },
-            "Phone": "+(972) 888-7000",
+            "Phone": "+(972) 988-7000",
             "Hours": "Open 9AM to 9PM",
             "Markers": [
               {
@@ -57260,7 +57327,8 @@ let data= {
                 "Position": {
                   "lat": 32.918755,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+(972) 988-7001",
               },
               {
                 "Name": "Select Specialty Hospital - Dallas Garland",
@@ -57268,7 +57336,8 @@ let data= {
                 "Position": {
                   "lat": 32.918793,
                   "lng": -97.600879
-                }
+                },
+                "Phone": "+(972) 988-7002",
               },
               {
                 "Name": "Children's Health Pediatric Group Garland",
@@ -57276,7 +57345,8 @@ let data= {
                 "Position": {
                   "lat": 28.548467,
                   "lng": -81.381385
-                }
+                },
+                "Phone": "+(972) 988-7003",
               },
               {
                 "Name": "Sundance Hospital Dallas",
@@ -57284,7 +57354,8 @@ let data= {
                 "Position": {
                   "lat": 32.913402,
                   "lng": -96.670117
-                }
+                },
+                "Phone": "+(972) 988-7004",
               }
             ]
           }
