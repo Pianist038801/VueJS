@@ -467,3 +467,14 @@ block content
                                 :existing-apointment-slots="$root._data.ExistingAppointmentSlots",
                                 :book-now-data="$root._data.BookNowData"
                                 )
+            .dialog-box(v-if="$root.showDialog === true")
+                iframe(
+                        src="https://console.dialogflow.com/api-client/demo/embedded/f82ccbf3-f2d2-4edb-b76a-ff14bc0bb697",
+                        width="350",
+                        height="430",
+                        allow="microphone"
+                    )
+                .button
+                    img(src="img/minimize.png", alt="333", width="40", height="40", @click.prevent="$root.showDialog = false")
+            .dialog-box(v-if="$root.showDialog === false")
+                img(src="img/chat.jpg", alt="333", width="175", height="39", @click.prevent="$root.showDialog = true")

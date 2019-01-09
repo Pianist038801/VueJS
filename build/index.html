@@ -16,7 +16,7 @@
     <link href="spark-widget/widget-space/main.css" rel="stylesheet">
     <script src="spark-widget/bundle.js"></script>
     <title>Home page</title>
-  <link href="css/style.css?0dcd2b87e8626f771230" rel="stylesheet"></head>
+  <link href="css/style.css?a1e316b1c0998ce3d628" rel="stylesheet"></head>
   <body class="l-body ">
     <!-- page-->
     <div class="l-page" id="app">
@@ -457,9 +457,14 @@
               </transition>
             </div>
           </div>
+          <div class="dialog-box" v-if="$root.showDialog === true">
+            <iframe src="https://console.dialogflow.com/api-client/demo/embedded/f82ccbf3-f2d2-4edb-b76a-ff14bc0bb697" width="350" height="430" allow="microphone"></iframe>
+            <div class="button"><img src="img/minimize.png" alt="333" width="40" height="40" @click.prevent="$root.showDialog = false"></div>
+          </div>
+          <div class="dialog-box" v-if="$root.showDialog === false"><img src="img/chat.jpg" alt="333" width="175" height="39" @click.prevent="$root.showDialog = true"></div>
         </div>
       </div>
     </div>
     <!-- End page-->
-  <script type="text/javascript" src="js/app.js?0dcd2b87e8626f771230"></script></body>
+  <script type="text/javascript" src="js/app.js?a1e316b1c0998ce3d628"></script></body>
 </html>

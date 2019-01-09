@@ -67,6 +67,18 @@
   padding: em(40 60);
 }
 
+.dialog-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  .button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+  }
+}
+
 
 /* .sub-popup-menu */
 .appointment__table td.more-action {
