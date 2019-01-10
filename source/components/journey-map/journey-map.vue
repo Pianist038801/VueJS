@@ -17,7 +17,19 @@
 
         .journey-map__line
             img(:src="info.PhotoUrl").journey-map__line-userpic
-            .journey-map__line-item.wrapp-tooltip(v-if="journey_select.type!=''")
+            .journey-map__line-item.wrapp-tooltip(v-if="journey_select.id==3")
+                .tooltip
+                    .tooltip__in
+                        .tooltip__note <b>Call type</b>: Appointments
+                        .tooltip__note <b>Date</b>: Jan 10, 2019
+                        .tooltip__note <b>ANI</b>: 19723586547
+                        .tooltip__note <b>Self-service</b>:  Cancel Appointment
+                        .tooltip__note <b>Self-service</b>:  Reschedule Appointment
+                        .tooltip__note <b>No Survey offered</b>
+
+                svg.ico-svg.ico-svg__phone
+                    use(xlink:href="#phone")
+            .journey-map__line-item.wrapp-tooltip(v-if="journey_select.id!=3 && journey_select.type!=''")
                 .tooltip
                     .tooltip__in
                         .tooltip__note <b>Call type</b>: Appointments
@@ -30,7 +42,19 @@
 
                 svg.ico-svg.ico-svg__phone
                     use(xlink:href="#phone")
-            .journey-map__line-item.wrapp-tooltip(v-if="journey_select.type!=''")
+            .journey-map__line-item.wrapp-tooltip(v-if="journey_select.id==3")
+                .tooltip
+                    .tooltip__in
+                        .tooltip__note <b>Call type</b>: Appointments
+                        .tooltip__note <b>Date</b>: Jan 10, 2019
+                        .tooltip__note <b>Customer</b>: 19723586547
+                        .tooltip__note <b>Self-service</b>:  Parking instructions
+                        .tooltip__note <b>Self-service</b>:  Directions
+                        .tooltip__note <b>No Survey offered</b>
+
+                svg.ico-svg.ico-svg__mail
+                    use(xlink:href="#mail")
+            .journey-map__line-item.wrapp-tooltip(v-if="journey_select.id!=3 && journey_select.type!=''")
                 .tooltip
                     .tooltip__in
                         .tooltip__note <b>Call type</b>: Inbound
@@ -44,7 +68,29 @@
                 svg.ico-svg.ico-svg__mail
                     use(xlink:href="#mail")
 
-            .journey-map__line-item.wrapp-tooltip(v-if="journey_select.type!=''")
+            .journey-map__line-item.wrapp-tooltip(v-if="journey_select.id==3")
+                .tooltip
+                    .tooltip__in
+                        .tooltip__note <b>Call type</b>: Appointments
+                        .tooltip__note <b>Date</b>: Jan 10, 2019
+                        .tooltip__note <b>Customer</b>: 19723586547
+                        .tooltip__note <b>Agent assisted</b>
+                        .tooltip__note <b>No Survey offered</b>
+
+                svg.ico-svg.ico-svg__mail
+                    use(xlink:href="#message")
+            .journey-map__line-item.wrapp-tooltip(v-if="journey_select.id==3")
+                .tooltip
+                    .tooltip__in
+                        .tooltip__note <b>Call type</b>: Appointments
+                        .tooltip__note <b>Date</b>: Jan 10, 2019
+                        .tooltip__note <b>Customer</b>: 19723586547
+                        .tooltip__note <b>Self-service</b>: Dietary instructions
+                        .tooltip__note <b>No Survey offered</b>
+
+                svg.ico-svg.ico-svg__mail
+                    use(xlink:href="#couple")
+            .journey-map__line-item.wrapp-tooltip(v-if="journey_select.id!=3 && journey_select.type!=''")
                 .tooltip
                     .tooltip__in
                         .tooltip__note <b>Type</b>: Check in
@@ -116,6 +162,7 @@
 
     .journey-map__line {
         display: flex;
+        width: 50%;
         flex-shrink: 0;
         position: relative;
         z-index: 10;

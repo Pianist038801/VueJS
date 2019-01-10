@@ -137,6 +137,7 @@
                     const _name = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear() + ' - 3:00pm';
                     options.push({id: i, name: _name, type: 'visit'})
                 }
+                options.push({id: 3, name: "January 10, 2019", type: 'visit'});
                 vm.$root.journeyOptions = options;
                 vm.pacients.forEach((item, i) => {
                     if(item.Name === vm.currentPacientName) {
