@@ -19444,7 +19444,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].component('tab', __WEBPACK_
 
 
 let appData = {
-  showDialog: true,
+  showDialog: false,
   epicAddress: 'http://10.3.74.119/openemr/interface/patient_file/encounter/forms.php',
   activePacient: 1,
   journeyOptions: [],
