@@ -141,7 +141,7 @@
                     .modal-appointment__templates-checkbox
                         .ui-checkbox
                             input#checkbox-epic(name="checkbox-epic" type="checkbox" v-model="showEpicTemplate").ui-checkbox__input
-                            label.ui-checkbox__label(for='checkbox-epic') Add Notes to EPIC
+                            label.ui-checkbox__label(for='checkbox-epic') Add Notes to CERNER
                     transition(name="fade")
                         textarea(v-if="showEpicTemplate").ui-textarea.ui-textarea--skin-default.ui-textarea--theme-default
 
