@@ -39,9 +39,9 @@ export default {
   methods: {
     optionHighlight (index, option) {
       return {
-        'multiselect__option--category': option=='EPIC' || option=='EPIC',
-        'multiselect__option--highlight': option!='EPIC' && option!='EPIC' && index === this.pointer && this.showPointer,
-        'multiselect__option--selected': option!='EPIC' && option!='EPIC' && this.isSelected(option)
+        'multiselect__option--category': option=='EHR' || option=='EHR',
+        'multiselect__option--highlight': option!='EHR' && option!='EHR' && index === this.pointer && this.showPointer,
+        'multiselect__option--selected': option!='EHR' && option!='EHR' && this.isSelected(option)
       }
     },
     addPointerElement ({ key } = 'Enter') {

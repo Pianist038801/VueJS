@@ -143,7 +143,7 @@ let data= {
   ],
   "Patients": [{
     "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
-    "Category": "EPIC",
+    "Category": "EHR",
     "Name": "Johns Jacobs",
     "DateOfBirth": "1981-07-01 00:00:00",
     "MRN": 7499281,
@@ -590,7 +590,7 @@ let data= {
   },
   {
     "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
-    "Category": "EPIC",
+    "Category": "EHR",
     "Name": "Sarah Jones",
     "DateOfBirth": "1993-07-01 00:00:00",
     "MRN": 7499281,
@@ -1023,7 +1023,7 @@ let data= {
   },
     {
       "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=3",
-      "Category": "EPIC",
+      "Category": "EHR",
       "Name": "Grace Paz",
       "DateOfBirth": "2007-12-25 00:00:00",
       "MRN": 7499220,    

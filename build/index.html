@@ -16,7 +16,7 @@
     <link href="spark-widget/widget-space/main.css" rel="stylesheet">
     <script src="spark-widget/bundle.js"></script>
     <title>Home page</title>
-  <link href="css/style.css?5044b2d527652c994390" rel="stylesheet"></head>
+  <link href="css/style.css?c3d6be62043bb81fa449" rel="stylesheet"></head>
   <body class="l-body ">
     <!-- page-->
     <div class="l-page" id="app">
@@ -286,7 +286,7 @@
                             <use xlink:href="#more"></use>
                           </svg>
                         </div>
-                        <div class="sub-popup-menu__list"><a class="sub-popup-menu__item1" href="#3" @click.prevent="showImage()">Expand Details</a><a class="sub-popup-menu__item" href="#3" @click.prevent="openNewWindow($root.epicAddress)">View in {{$root._data.Patients[$root.activePacient].Category=='EPIC'?'EPIC':"EPIC"}}</a><a class="sub-popup-menu__item1" href="#3" @click.prevent="payBill($root._data.billItem)">Pay Bill</a><a class="sub-popup-menu__item1" href="#3">Adjust</a><a class="sub-popup-menu__item1" href="#3">Print</a><a class="sub-popup-menu__item" href="#3" @click.prevent="openNewWindow('http://uhealthsystem.com/images/content/UMH-statement.jpg')">Download as PDF</a></div>
+                        <div class="sub-popup-menu__list"><a class="sub-popup-menu__item1" href="#3" @click.prevent="showImage()">Expand Details</a><a class="sub-popup-menu__item" href="#3" @click.prevent="openNewWindow($root.epicAddress)">View in {{$root._data.Patients[$root.activePacient].Category=='EHR'?'EHR':"EHR"}}</a><a class="sub-popup-menu__item1" href="#3" @click.prevent="payBill($root._data.billItem)">Pay Bill</a><a class="sub-popup-menu__item1" href="#3">Adjust</a><a class="sub-popup-menu__item1" href="#3">Print</a><a class="sub-popup-menu__item" href="#3" @click.prevent="openNewWindow('http://uhealthsystem.com/images/content/UMH-statement.jpg')">Download as PDF</a></div>
                       </div>
                     </div><a class="content__top-action" href="#3" @click.prevent="$root.goBack">
                       <svg class="ico-svg ico-svg__plus-close">
@@ -466,5 +466,5 @@
       </div>
     </div>
     <!-- End page-->
-  <script type="text/javascript" src="js/app.js?5044b2d527652c994390"></script></body>
+  <script type="text/javascript" src="js/app.js?c3d6be62043bb81fa449"></script></body>
 </html>
