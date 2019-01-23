@@ -55,7 +55,7 @@ import updateReferral from "../components/modal-component/update-referral.vue";
 import detailReferral from "../components/modal-component/detail-referral.vue";
 
 let appData = {
-  showDialog: true,
+  showDialog: false,
   epicAddress: 'http://10.3.74.119/openemr/interface/patient_file/encounter/forms.php',
   activePacient: 1,
   journeyOptions: [],
