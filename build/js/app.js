@@ -6011,6 +6011,43 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 /* 5 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_modal_vue__ = __webpack_require__(84);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1ce5aae4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_modal_vue__ = __webpack_require__(496);
+function injectStyle (ssrContext) {
+  __webpack_require__(282)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+
+
+/* template */
+
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_modal_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1ce5aae4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_modal_vue__["a" /* default */],
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+
+/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
+
+
+/***/ }),
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6317,43 +6354,6 @@ module.exports = {
   extend: extend,
   trim: trim
 };
-
-
-/***/ }),
-/* 6 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_modal_vue__ = __webpack_require__(84);
-/* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1ce5aae4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_modal_vue__ = __webpack_require__(495);
-function injectStyle (ssrContext) {
-  __webpack_require__(281)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-
-
-/* template */
-
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_modal_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1ce5aae4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_modal_vue__["a" /* default */],
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-
-/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
 
 
 /***/ }),
@@ -18218,12 +18218,14 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
       if (id == 0) state.pacientName = 'Johns Jacobs';
       if (id == 1) state.pacientName = 'Sarah Jones';
       if (id == 2) state.pacientName = 'Grace Paz';
+      if (id == 3) state.pacientName = 'Opal Lee';
     },
     setPacientName(state, name) {
       state.pacientName = name;
       if (name == 'Johns Jacobs') state.pacientId = 0;
       if (name == 'Sarah Jones') state.pacientId = 1;
       if (name == 'Grace Paz') state.pacientId = 2;
+      if (name == 'Opal Lee') state.pacientId = 3;
     }
   },
   actions: {
@@ -18522,7 +18524,7 @@ module.exports = function(module) {
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
-var utils = __webpack_require__(5);
+var utils = __webpack_require__(6);
 var normalizeHeaderName = __webpack_require__(268);
 
 var DEFAULT_CONTENT_TYPE = {
@@ -19491,7 +19493,7 @@ let App = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
   },
   mounted() {
     let vm = this;
-    vm.activePacient = 0;
+    vm.activePacient = 3;
     vm.currentShowBox = 'home';
     vm.spaceWidget = window.ciscosparkClient();
     __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].http.get('demo-credentials.json').then(response => {
@@ -19561,7 +19563,7 @@ let App = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
           appData = Object.assign(appData, data);
 
           if (response.data.error) {
-            console.error('Noo TempDNIS Found.');
+            console.error('No TempDNIS Found.');
             if (tempDNIS == "") // Blank Gadget
               {
                 vm.isBlank = true;
@@ -19580,7 +19582,7 @@ let App = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
             vm.callerType = responseData.callerType;
             vm.callerNotes = responseData.notes;
             const _patientName = responseData.patientName;
-            if (_patientName.indexOf('Sarah') > -1) vm.activePacient = 1;else if (_patientName.indexOf('Johns') > -1) vm.activePacient = 0;else vm.activePacient = 2;
+            if (_patientName.indexOf('Sarah') > -1) vm.activePacient = 1;else if (_patientName.indexOf('Johns') > -1) vm.activePacient = 0;else if (_patientName.indexOf('Grace') > -1) vm.activePacient = 2;else vm.activePacient = 3;
             vm.callerTransferLocation = responseData.phantom1;
             vm.callerHospital = responseData.phantom2;
             vm.releaseTempDNIS(tempDNIS);
@@ -19715,7 +19717,7 @@ urlData = __WEBPACK_IMPORTED_MODULE_9__demo_mockup_js___default.a;
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
-var utils = __webpack_require__(5);
+var utils = __webpack_require__(6);
 var settle = __webpack_require__(260);
 var buildURL = __webpack_require__(263);
 var parseHeaders = __webpack_require__(269);
@@ -19982,7 +19984,7 @@ module.exports = function bind(fn, thisArg) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(5);
 //
 //
 //
@@ -20050,7 +20052,7 @@ module.exports = function bind(fn, thisArg) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_multiselect__);
 //
@@ -20324,7 +20326,7 @@ module.exports = function bind(fn, thisArg) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_multiselect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modal_component_modal_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modal_component_modal_vue__ = __webpack_require__(5);
 //
 //
 //
@@ -20841,7 +20843,7 @@ module.exports = function bind(fn, thisArg) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(5);
 //
 //
 //
@@ -21536,7 +21538,7 @@ module.exports = function bind(fn, thisArg) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(5);
 //
 //
 //
@@ -21694,6 +21696,32 @@ module.exports = function bind(fn, thisArg) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_multiselect__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modal_component_modal_vue__ = __webpack_require__(5);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -21811,7 +21839,8 @@ module.exports = function bind(fn, thisArg) {
 /* harmony default export */ __webpack_exports__["a"] = ({
     props: ['info'],
     components: {
-        Multiselect: __WEBPACK_IMPORTED_MODULE_0_vue_multiselect___default.a
+        Multiselect: __WEBPACK_IMPORTED_MODULE_0_vue_multiselect___default.a,
+        modal: __WEBPACK_IMPORTED_MODULE_1__modal_component_modal_vue__["a" /* default */]
     },
     watch: {
         journey_select(to) {
@@ -21848,7 +21877,7 @@ module.exports = function bind(fn, thisArg) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_multiselect__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__calendar_popup_calendar_popup_vue__ = __webpack_require__(468);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_component_modal_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_component_modal_vue__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vuejs_datepicker__ = __webpack_require__(535);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vue2_google_maps__ = __webpack_require__(250);
@@ -22235,7 +22264,7 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_vue__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_multiselect__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue__ = __webpack_require__(9);
@@ -22519,7 +22548,7 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_vue__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_multiselect__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue__ = __webpack_require__(9);
@@ -22690,7 +22719,7 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_vue__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_multiselect__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue__ = __webpack_require__(9);
@@ -22888,7 +22917,7 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_vue__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_multiselect__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue__ = __webpack_require__(9);
@@ -23489,7 +23518,7 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(5);
 //
 //
 //
@@ -23734,7 +23763,7 @@ __WEBPACK_IMPORTED_MODULE_1_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(5);
 //
 //
 //
@@ -24006,6 +24035,9 @@ __WEBPACK_IMPORTED_MODULE_1_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 //
 //
 //
+//
+//
+//
 
 
 
@@ -24047,7 +24079,7 @@ __WEBPACK_IMPORTED_MODULE_1_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
                 const _name = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear() + ' - 3:00pm';
                 options.push({ id: i, name: _name, type: 'visit' });
             }
-            options.push({ id: 3, name: "January 10, 2019", type: 'visit' });
+            options.push({ id: 3, name: "February 10, 2019", type: 'visit' });
             vm.$root.journeyOptions = options;
             vm.pacients.forEach((item, i) => {
                 if (item.Name === vm.currentPacientName) {
@@ -24087,6 +24119,13 @@ __WEBPACK_IMPORTED_MODULE_1_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
             // setter
             set: function (newValue) {
                 this.$store.dispatch('setName', newValue);
+                if (newValue === 'Opal Lee') {
+                    this.$root.$data.callerNotes = 'Patient is pregnant with twins, expectancy date soon';
+                    this.$root._data.dropdownCallerName = 'Opal Lee';
+                } else {
+                    this.$root.$data.callerNotes = '';
+                    this.$root._data.dropdownCallerName = newValue;
+                }
             }
         },
         // get only
@@ -37624,9 +37663,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_journey_map_vue__ = __webpack_require__(81);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b9dcb40a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_journey_map_vue__ = __webpack_require__(518);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_8bd010f6_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_journey_map_vue__ = __webpack_require__(515);
 function injectStyle (ssrContext) {
-  __webpack_require__(301)
+  __webpack_require__(300)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -37644,7 +37683,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_journey_map_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b9dcb40a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_journey_map_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_8bd010f6_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_journey_map_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -38852,7 +38891,7 @@ router.beforeEach((to, from, next) => {
 "use strict";
 
 
-var utils = __webpack_require__(5);
+var utils = __webpack_require__(6);
 var bind = __webpack_require__(65);
 var Axios = __webpack_require__(256);
 var defaults = __webpack_require__(37);
@@ -38976,7 +39015,7 @@ module.exports = CancelToken;
 
 
 var defaults = __webpack_require__(37);
-var utils = __webpack_require__(5);
+var utils = __webpack_require__(6);
 var InterceptorManager = __webpack_require__(257);
 var dispatchRequest = __webpack_require__(258);
 
@@ -39061,7 +39100,7 @@ module.exports = Axios;
 "use strict";
 
 
-var utils = __webpack_require__(5);
+var utils = __webpack_require__(6);
 
 function InterceptorManager() {
   this.handlers = [];
@@ -39120,7 +39159,7 @@ module.exports = InterceptorManager;
 "use strict";
 
 
-var utils = __webpack_require__(5);
+var utils = __webpack_require__(6);
 var transformData = __webpack_require__(261);
 var isCancel = __webpack_require__(63);
 var defaults = __webpack_require__(37);
@@ -39274,7 +39313,7 @@ module.exports = function settle(resolve, reject, response) {
 "use strict";
 
 
-var utils = __webpack_require__(5);
+var utils = __webpack_require__(6);
 
 /**
  * Transform the data for a request or a response
@@ -39344,7 +39383,7 @@ module.exports = btoa;
 "use strict";
 
 
-var utils = __webpack_require__(5);
+var utils = __webpack_require__(6);
 
 function encode(val) {
   return encodeURIComponent(val).
@@ -39440,7 +39479,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 "use strict";
 
 
-var utils = __webpack_require__(5);
+var utils = __webpack_require__(6);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -39521,7 +39560,7 @@ module.exports = function isAbsoluteURL(url) {
 "use strict";
 
 
-var utils = __webpack_require__(5);
+var utils = __webpack_require__(6);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -39596,7 +39635,7 @@ module.exports = (
 "use strict";
 
 
-var utils = __webpack_require__(5);
+var utils = __webpack_require__(6);
 
 module.exports = function normalizeHeaderName(headers, normalizedName) {
   utils.forEach(headers, function processHeader(value, name) {
@@ -39615,7 +39654,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 "use strict";
 
 
-var utils = __webpack_require__(5);
+var utils = __webpack_require__(6);
 
 // Headers whose duplicates are ignored by node
 // c.f. https://nodejs.org/api/http.html#http_message_headers
@@ -47098,7 +47137,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_b1ade17a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_infoWindow_vue__ = __webpack_require__(517);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_b1ade17a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_infoWindow_vue__ = __webpack_require__(518);
 var normalizeComponent = __webpack_require__(3)
 /* script */
 
@@ -47171,7 +47210,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_13bfbbee_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_placeInput_vue__ = __webpack_require__(494);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_13bfbbee_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_placeInput_vue__ = __webpack_require__(495);
 var normalizeComponent = __webpack_require__(3)
 /* script */
 
@@ -47427,9 +47466,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_statement_review_vue__ = __webpack_require__(72);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_417b1cce_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_statement_review_vue__ = __webpack_require__(499);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_417b1cce_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_statement_review_vue__ = __webpack_require__(500);
 function injectStyle (ssrContext) {
-  __webpack_require__(285)
+  __webpack_require__(286)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47501,9 +47540,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_card_vue__ = __webpack_require__(74);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1174b562_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_card_vue__ = __webpack_require__(493);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1174b562_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_card_vue__ = __webpack_require__(494);
 function injectStyle (ssrContext) {
-  __webpack_require__(280)
+  __webpack_require__(281)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47575,9 +47614,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_case_managment_incidents_vue__ = __webpack_require__(76);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_104ac2ec_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_incidents_vue__ = __webpack_require__(492);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_104ac2ec_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_incidents_vue__ = __webpack_require__(493);
 function injectStyle (ssrContext) {
-  __webpack_require__(279)
+  __webpack_require__(280)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47791,9 +47830,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_make_appointment_vue__ = __webpack_require__(82);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0d3fba23_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_make_appointment_vue__ = __webpack_require__(490);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0d3fba23_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_make_appointment_vue__ = __webpack_require__(491);
 function injectStyle (ssrContext) {
-  __webpack_require__(277)
+  __webpack_require__(278)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47828,9 +47867,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_detail_referral_vue__ = __webpack_require__(83);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_381f9d36_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_detail_referral_vue__ = __webpack_require__(498);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_381f9d36_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_detail_referral_vue__ = __webpack_require__(499);
 function injectStyle (ssrContext) {
-  __webpack_require__(284)
+  __webpack_require__(285)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -47976,9 +48015,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_patient_info_vue__ = __webpack_require__(89);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd88d5a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_patient_info_vue__ = __webpack_require__(515);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd88d5a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_patient_info_vue__ = __webpack_require__(516);
 function injectStyle (ssrContext) {
-  __webpack_require__(300)
+  __webpack_require__(301)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -48013,9 +48052,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_pharmacy_form_vue__ = __webpack_require__(90);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_25b3d01e_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_pharmacy_form_vue__ = __webpack_require__(496);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_25b3d01e_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_pharmacy_form_vue__ = __webpack_require__(497);
 function injectStyle (ssrContext) {
-  __webpack_require__(282)
+  __webpack_require__(283)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -48087,9 +48126,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_referral_vue__ = __webpack_require__(92);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0eca883c_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_referral_vue__ = __webpack_require__(491);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0eca883c_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_referral_vue__ = __webpack_require__(492);
 function injectStyle (ssrContext) {
-  __webpack_require__(278)
+  __webpack_require__(279)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -48124,9 +48163,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_sidebar_vue__ = __webpack_require__(93);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_431dbcd5_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__ = __webpack_require__(500);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0c66f4a0_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__ = __webpack_require__(490);
 function injectStyle (ssrContext) {
-  __webpack_require__(286)
+  __webpack_require__(277)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -48144,7 +48183,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_sidebar_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_431dbcd5_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0c66f4a0_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -48161,9 +48200,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_scheduling_vue__ = __webpack_require__(94);
 /* unused harmony reexport namespace */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2b9b6a16_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_scheduling_vue__ = __webpack_require__(497);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2b9b6a16_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_scheduling_vue__ = __webpack_require__(498);
 function injectStyle (ssrContext) {
-  __webpack_require__(283)
+  __webpack_require__(284)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -48198,7 +48237,7 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_signIn_vue__ = __webpack_require__(95);
 /* unused harmony reexport namespace */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_ae2535ac_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_signIn_vue__ = __webpack_require__(516);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_ae2535ac_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_signIn_vue__ = __webpack_require__(517);
 var normalizeComponent = __webpack_require__(3)
 /* script */
 
@@ -48240,13 +48279,23 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.pacients)?_c('aside',{staticClass:"sidebar"},[_c('div',{staticClass:"sidebar__title"},[_vm._v("Patient Information")]),_c('div',{staticClass:"l-sidebar__userpic"},[_c('div',{staticClass:"sidebar__userpic"},[_c('img',{staticClass:"sidebar__userpic-image",attrs:{"src":_vm.pacients[_vm.currentPacient].PhotoUrl}}),_c('a',{staticClass:"sidebar__userpic-info",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.currentShowSubBox = 'patient-info'}}},[_c('svg',{staticClass:"ico-svg ico-svg__info"},[_c('use',{attrs:{"xlink:href":"#info"}})])])])]),_c('div',{staticClass:"sidebar__note-userpic"},[_vm._v("Number of Matches ("),_c('b',[_vm._v(_vm._s(_vm.sizePacients))]),_vm._v(")")]),(_vm.currentPacientName === 'Opal Lee')?_c('div',{staticClass:"sidebar__section"},[_vm._m(0)]):_vm._e(),_c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Patient Name")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":_vm.namesPacient,"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientName),callback:function ($$v) {_vm.currentPacientName=$$v},expression:"currentPacientName"}})],1),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Date of Birth")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm._f("moment")(_vm.pacients[_vm.currentPacient].DateOfBirth,"MMM DD, YYYY")))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("MRN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].MRN)+"    ")])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("SSN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].SSN))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Phone Number")]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PhoneNumber))])])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Address")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Address.Line1)+", ")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(" "+_vm._s(_vm.pacients[_vm.currentPacient].Address.Line2))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Primary Care Provider")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Phone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Phone))])])]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Treatment Team")]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].TreatmentTeam[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].TreatmentTeam[0].PhoneNumber))])])]):_vm._e(),(_vm.pacients[_vm.currentPacient].Provider.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Provider")]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Provider[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].Provider[0].PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Provider[0].PhoneNumber))])])])]):_vm._e()]),_c('div',{staticClass:"sidebar__success"},[_c('div',{staticClass:"sub-popup-menu"},[_vm._m(1),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('http://10.1.74.36:2230/EPIC_InPatient/patient_scheduling/search.html')}}},[_vm._v("Patient Search")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('https://i.ytimg.com/vi/RIsVxJWuQ8Y/maxresdefault.jpg')}}},[_vm._v("Patient Information")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.replaceNewWindow('alert:test')}}},[_vm._v("Appointments Create")])])])])]):_vm._e()}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sidebar__high--risk"},[_vm._v("High Risk Patient"),_c('span',{staticClass:"tool-tip"},[_vm._v("High risk alert: Maternity with Twins")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary mod--block",attrs:{"href":"#3"}},[_vm._v(" Screen pop")])])}]
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 491 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"make-appointment"},[_c('h2',{staticClass:"title mod--appointment"},[_vm._v("Make Appointment")]),_c('div',{staticClass:"make-appointment__line-select"},[_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Department")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Department,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Department[0]},on:{"input":function($event){}},model:{value:(_vm.departmentSelect),callback:function ($$v) {_vm.departmentSelect=$$v},expression:"departmentSelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Facility")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Facility,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Facility[0]},on:{"input":function($event){}},model:{value:(_vm.facilitySelect),callback:function ($$v) {_vm.facilitySelect=$$v},expression:"facilitySelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Provider")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Provider,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Provider[0]},on:{"input":function($event){}},model:{value:(_vm.providerSelect),callback:function ($$v) {_vm.providerSelect=$$v},expression:"providerSelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Physician")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Physician,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Physician[0]},on:{"input":function($event){}},model:{value:(_vm.physicianSelect),callback:function ($$v) {_vm.physicianSelect=$$v},expression:"physicianSelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Date Range")]),_c('datepicker',{attrs:{"disabled":!_vm.$root.userIsVerify,"format":_vm.customFormatter},on:{"selected":_vm.onSelectDate},model:{value:(_vm.date),callback:function ($$v) {_vm.date=$$v},expression:"date"}})],1)]),_c('transition',{attrs:{"name":"fade"}},[(_vm.formElementChecked)?_c('div',[_c('div',{staticClass:"make-appointment__date-selected"},[_vm._v("Sunday - May 20, 2018")]),_c('form',{attrs:{"action":"#3"}},[_c('fieldset',{staticClass:"form__fieldset"},[_c('legend',{staticClass:"hide"},[_vm._v("Book table")]),_c('table',{staticClass:"make-appointment__table"},[_c('tr',[_c('th',[_vm._v("TIME SLOTS")]),_c('th',[_vm._v("NAME")]),_c('th',{staticClass:"g-align-center"},[_vm._v("FACILITY")]),_c('th',{staticClass:"g-align-center"},[_vm._v("PROVIDER")]),_c('th',{staticClass:"g-align-center"},[_vm._v("PHYSICIAN")]),_c('th',{staticClass:"g-align-center"},[_vm._v("STATUS")]),_c('th',{staticClass:"g-align-center"},[_vm._v("ACTION")])]),_vm._l((_vm.existingApointmentSlots),function(item,index){return _c('tr',{staticClass:"make-appointment__table-tr",class:{'state--hold': item.Status === 'On Hold' }},[_c('td',{staticClass:"make-appointment__table-time"},[_vm._v(_vm._s(_vm._f("moment")(item.StartTime,"HH:mm"))+" - "+_vm._s(_vm._f("moment")(item.EndTime,"HH:mm A")))]),_c('td',[_vm._v(_vm._s(item.Name))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(item.Facility))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(item.Provider))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(item.Physician))]),_c('td',{staticClass:"make-appointment__table-status g-align-center"},[_vm._v(_vm._s(item.Status))]),(item.Status === 'On Hold')?_c('td',{staticClass:"g-align-center make-appointment__table-action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-disable-border mod--block",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();}}},[_vm._v("update")])]):_c('td',{staticClass:"g-align-center make-appointment__table-action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border mod--block",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.showModal(index)}}},[_vm._v("book now")])])])})],2)])])]):_vm._e()]),_c('modal',{ref:"modalbook"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Book Now")]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__calendar"},[_c('use',{attrs:{"xlink:href":"#calendar"}})]),_vm._v(_vm._s(_vm._f("moment")(_vm.existingApointmentSlots[_vm.activeBookItem].StartTime,"MMM DD, YYYY"))+" | "+_vm._s(_vm._f("moment")(_vm.existingApointmentSlots[_vm.activeBookItem].StartTime,"HH:mm"))+" - "+_vm._s(_vm._f("moment")(_vm.existingApointmentSlots[_vm.activeBookItem].EndTime,"HH:mm A")))]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__location"},[_c('use',{attrs:{"xlink:href":"#location"}})]),_vm._v("Schedule appointment with Dr. Steve Clinic Name")]),_c('div',{staticClass:"modal-appointment__info"},[_c('div',{staticClass:"modal-appointment__lang-ico"},[_c('svg',{staticClass:"ico-svg ico-svg__lang"},[_c('use',{attrs:{"xlink:href":"#lang"}})])]),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Language Interpreter Required")]),_c('div',{staticClass:"modal-appointment__lang-toggle",class:{'state--active': !_vm.disableSelectLang},on:{"click":function($event){_vm.disableSelectLang=!_vm.disableSelectLang}}})]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":_vm.bookNowData.InterpreterLanguages,"searchable":false,"allowEmpty":false,"showLabels":false,"disabled":_vm.disableSelectLang,"placeholder":"Select Language"},on:{"input":function($event){}},model:{value:(_vm.langSelected),callback:function ($$v) {_vm.langSelected=$$v},expression:"langSelected"}})],1)])])]),_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__map"},[_c('gmap-map',{staticStyle:{"width":"100%","height":"100px"},attrs:{"center":{lat: 32.9448268, lng: -96.64587949999998},"zoom":14}},[_c('gmap-marker',{key:1,attrs:{"position":{lat: 32.9448268, lng: -96.64587949999998}}})],1)],1)])]),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showEpicTemplate),expression:"showEpicTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-epic","name":"checkbox-epic","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showEpicTemplate)?_vm._i(_vm.showEpicTemplate,null)>-1:(_vm.showEpicTemplate)},on:{"change":function($event){var $$a=_vm.showEpicTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showEpicTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showEpicTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showEpicTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-epic"}},[_vm._v("Add Notes to EHR")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showEpicTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"}):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showWaitList),expression:"showWaitList"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-waitlist","name":"checkbox-waitlist","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showWaitList)?_vm._i(_vm.showWaitList,null)>-1:(_vm.showWaitList)},on:{"change":function($event){var $$a=_vm.showWaitList,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showWaitList=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showWaitList=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showWaitList=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-waitlist"}},[_vm._v("Waitlist Enabled")])])]),_c('div',{staticClass:"modal-appointment__reason"},[_vm._v("Reason for visit")]),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showSmsTemplate),expression:"showSmsTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-sms","name":"checkbox-sms","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showSmsTemplate)?_vm._i(_vm.showSmsTemplate,null)>-1:(_vm.showSmsTemplate)},on:{"change":function($event){var $$a=_vm.showSmsTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showSmsTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showSmsTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showSmsTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-sms"}},[_vm._v("Sent Text Confirmation")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showSmsTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default mod--sms"},[_vm._v(_vm._s(_vm.bookNowData.SmsConfirmTemplate))]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showEmailTemplate),expression:"showEmailTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-email","name":"checkbox-email","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showEmailTemplate)?_vm._i(_vm.showEmailTemplate,null)>-1:(_vm.showEmailTemplate)},on:{"change":function($event){var $$a=_vm.showEmailTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showEmailTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showEmailTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showEmailTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-email"}},[_vm._v("Sent Email Confirmation")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showEmailTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"},[_vm._v(_vm._s(_vm.bookNowData.EmailConfirmTemplate))]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showSmsRemind),expression:"showSmsRemind"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-smsremind","name":"checkbox-smsremind","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showSmsRemind)?_vm._i(_vm.showSmsRemind,null)>-1:(_vm.showSmsRemind)},on:{"change":function($event){var $$a=_vm.showSmsRemind,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showSmsRemind=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showSmsRemind=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showSmsRemind=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-smsremind"}},[_vm._v("Send SMS reminder")])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showSmsRemind)?_c('div',{staticClass:"modal-appointment__remind-days"},[_c('input',{staticClass:"ui-input ui-input--skin-default ui-input--theme-default",attrs:{"type":"text","value":"2"}}),_vm._v("days before appointment.")]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showVoiceRemind),expression:"showVoiceRemind"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-voiceremind","name":"checkbox-voiceremind","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showVoiceRemind)?_vm._i(_vm.showVoiceRemind,null)>-1:(_vm.showVoiceRemind)},on:{"change":function($event){var $$a=_vm.showVoiceRemind,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showVoiceRemind=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showVoiceRemind=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showVoiceRemind=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-voiceremind"}},[_vm._v("Send Voice reminder")])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalbook.close()}}},[_vm._v("CANCEL")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.bookModal}},[_vm._v("book")])])])])],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 491 */
+/* 492 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48256,7 +48305,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 492 */
+/* 493 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48266,7 +48315,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 493 */
+/* 494 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48276,7 +48325,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 494 */
+/* 495 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48286,7 +48335,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 495 */
+/* 496 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48296,7 +48345,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 496 */
+/* 497 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48306,7 +48355,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 497 */
+/* 498 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48316,7 +48365,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 498 */
+/* 499 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48326,22 +48375,12 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 499 */
+/* 500 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"statement"},[_c('div',{staticClass:"statement__top-active"},[_c('div',{staticClass:"statement__top-active-left"},[_c('div',{staticClass:"statement__top-active-title"},[_c('div',{staticClass:"span"},[_vm._v("Statement: "+_vm._s(_vm.item.StatementId))])])])]),_c('div',{staticClass:"statement__top-active"},[_c('div',{staticClass:"statement__top-active-left"},[_c('div',{staticClass:"statement__top-active-title"},[_c('div',{staticClass:"title"},[_vm._v("Payment Due Date: "+_vm._s(_vm.item.Date))])])])]),_c('table',{staticClass:"statement__table"},[_vm._m(0),_vm._l((_vm.item.reviews),function(review,index){return _c('tr',[_c('td',[_vm._v(_vm._s(review.date))]),_c('td',[_vm._v(_vm._s(review.description))]),_c('td',[_vm._v(_vm._s(review.amount))]),_c('td',[_vm._v(_vm._s(review.insurance))]),_c('td',[_vm._v(_vm._s(review.currentBalance))]),_c('td',[_vm._v(_vm._s(review.lineItem))])])}),_c('tr',[_c('td'),_c('td',[_vm._v("ENCOUNTER TOTAL")]),_c('td',[_vm._v(_vm._s(_vm.item.total.amount))]),_c('td',[_vm._v(_vm._s(_vm.item.total.insurance))]),_c('td',[_vm._v(_vm._s(_vm.item.total.currentBalance))]),_c('td',[_vm._v(_vm._s(_vm.item.total.lineItem))])])],2),_vm._m(1),_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"}),_c('modal',{ref:"modalimage"},[_c('div',{staticClass:"modal__content"},[_c('img',{attrs:{"src":"http://uhealthsystem.com/images/content/UMH-statement.jpg"}}),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalimage.close()}}},[_vm._v("Cancel")])])])])],1)}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th',[_vm._v("Date")]),_c('th',[_vm._v("Description of Service")]),_c('th',[_vm._v("Amount")]),_c('th',[_vm._v("Insurance")]),_c('th',[_vm._v("Current Balance")]),_c('th',[_vm._v("Line Item Balance")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"statement__top-active"},[_c('div',{staticClass:"statement__top-active-left"},[_c('div',{staticClass:"statement__top-active-title"},[_c('div',{staticClass:"span"},[_vm._v("  Notes")])])])])}]
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 500 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.pacients)?_c('aside',{staticClass:"sidebar"},[_c('div',{staticClass:"sidebar__title"},[_vm._v("Patient Information")]),_c('div',{staticClass:"l-sidebar__userpic"},[_c('div',{staticClass:"sidebar__userpic"},[_c('img',{staticClass:"sidebar__userpic-image",attrs:{"src":_vm.pacients[_vm.currentPacient].PhotoUrl}}),_c('a',{staticClass:"sidebar__userpic-info",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.currentShowSubBox = 'patient-info'}}},[_c('svg',{staticClass:"ico-svg ico-svg__info"},[_c('use',{attrs:{"xlink:href":"#info"}})])])])]),_c('div',{staticClass:"sidebar__note-userpic"},[_vm._v("Number of Matches ("),_c('b',[_vm._v(_vm._s(_vm.sizePacients))]),_vm._v(")")]),_c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Patient Name")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":_vm.namesPacient,"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientName),callback:function ($$v) {_vm.currentPacientName=$$v},expression:"currentPacientName"}})],1),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Date of Birth")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm._f("moment")(_vm.pacients[_vm.currentPacient].DateOfBirth,"MMM DD, YYYY")))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("MRN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].MRN)+"    ")])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("SSN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].SSN))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Phone Number")]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PhoneNumber))])])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Address")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Address.Line1)+", ")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(" "+_vm._s(_vm.pacients[_vm.currentPacient].Address.Line2))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Primary Care Provider")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Phone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Phone))])])]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Treatment Team")]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].TreatmentTeam[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].TreatmentTeam[0].PhoneNumber))])])]):_vm._e(),(_vm.pacients[_vm.currentPacient].Provider.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Provider")]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Provider[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].Provider[0].PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Provider[0].PhoneNumber))])])])]):_vm._e()]),_c('div',{staticClass:"sidebar__success"},[_c('div',{staticClass:"sub-popup-menu"},[_vm._m(0),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('http://10.1.74.36:2230/EPIC_InPatient/patient_scheduling/search.html')}}},[_vm._v("Patient Search")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('https://i.ytimg.com/vi/RIsVxJWuQ8Y/maxresdefault.jpg')}}},[_vm._v("Patient Information")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.replaceNewWindow('alert:test')}}},[_vm._v("Appointments Create")])])])])]):_vm._e()}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary mod--block",attrs:{"href":"#3"}},[_vm._v(" Screen pop")])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
@@ -48490,8 +48529,8 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"patient-info"},[_c('div',{staticClass:"patient-info__row"},[_c('div',{staticClass:"patient-info__col"},[_c('div',{staticClass:"patient-info__title"},[_c('svg',{staticClass:"ico-svg ico-svg__heart"},[_c('use',{attrs:{"xlink:href":"#heart"}})]),_vm._v("Vitals")]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Height ( cm )")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Vitals.Height)+" cm")])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("BMI ( calculated )")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Vitals.BMI))])])]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Weight ( kg )")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Vitals.Weight)+" kg")])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Pulse")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Vitals.Pulse)+" / min")])])]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Respiratory Rate")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Vitals.RespirationRate)+" / min")])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Blood Pressure")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Vitals.BloodPressureLo)+" / "+_vm._s(_vm.info.Vitals.BloodPressureHi))])])])]),_c('div',{staticClass:"patient-info__col"},[_c('div',{staticClass:"patient-info__title"},[_c('svg',{staticClass:"ico-svg ico-svg__medical"},[_c('use',{attrs:{"xlink:href":"#medical"}})]),_vm._v("Physician")]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Dr. Full Namee")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Physician.Name))])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Emergency Number")]),_c('div',{staticClass:"patient-info__note-txt"},[_c('a',{staticClass:"patient-info__note-txt-link",attrs:{"href":'tel:'+_vm.info.Physician.EmergencyPhone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.info.Physician.EmergencyPhone))])])])]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Clinic")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Physician.Clinic))])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Phone ( primary )")]),_c('div',{staticClass:"patient-info__note-txt"},[_c('a',{staticClass:"patient-info__note-txt-link",attrs:{"href":'tel:'+_vm.info.Physician.PrimaryPhone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.info.Physician.PrimaryPhone))])])])]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Physician Specialty")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Physician.Specialty))])])])]),_c('div',{staticClass:"patient-info__col"},[_c('div',{staticClass:"patient-info__title"},[_c('svg',{staticClass:"ico-svg ico-svg__couple"},[_c('use',{attrs:{"xlink:href":"#couple"}})]),_vm._v("Extra Info")]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Email")]),_c('div',{staticClass:"patient-info__note-txt"},[_c('a',{staticClass:"patient-info__note-txt-link",attrs:{"href":'mailto:'+_vm.info.Status.Email}},[_vm._v(_vm._s(_vm.info.Status.Email))])])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Race")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Status.Race))])])]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Religion")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Status.Religion))])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Emergency Contact Name")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Status.EmergencyContact.Name))])])]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Emergency Contact Relationship")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Status.EmergencyContact.Relation))])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Emergency Contact Phone")]),_c('div',{staticClass:"patient-info__note-txt"},[_c('a',{staticClass:"patient-info__note-txt-link",attrs:{"href":'tel:'+_vm.info.Status.EmergencyContact.Phone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.info.Status.EmergencyContact.Phone))])])])])])])])}
-var staticRenderFns = []
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"journey-map"},[_c('h2',{staticClass:"title mod--journey"},[_vm._v("Patient Journey Map")]),_c('div',{staticClass:"journey-map-selects"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":_vm.$root.journeyOptions,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Choise an option","track-by":"name","label":"name"},on:{"input":_vm.clickJourney},model:{value:(_vm.journey_select),callback:function ($$v) {_vm.journey_select=$$v},expression:"journey_select"}})],1),_c('div',{staticClass:"journey-map__line"},[_c('img',{staticClass:"journey-map__line-userpic",attrs:{"src":_vm.info.PhotoUrl}}),(_vm.journey_select.id==3)?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_vm._m(0),_c('svg',{staticClass:"ico-svg ico-svg__phone"},[_c('use',{attrs:{"xlink:href":"#phone"}})])]):_vm._e(),(_vm.journey_select.id!=3 && _vm.journey_select.type!='')?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_vm._m(1),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date/Time")]),_vm._v(": "+_vm._s(_vm.journey_select.name))]),_vm._m(2),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("ANI")]),_vm._v(":  "+_vm._s(_vm.info.PhoneNumber))]),_vm._m(3),_vm._m(4),_vm._m(5)])]),_c('svg',{staticClass:"ico-svg ico-svg__phone"},[_c('use',{attrs:{"xlink:href":"#phone"}})])]):_vm._e(),(_vm.journey_select.id==3)?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_vm._m(6),_vm._m(7),_vm._m(8),_vm._m(9),_vm._m(10),_vm._m(11),(_vm.$root.activePacient===3)?_c('div',{staticClass:"tooltip__note history-view",on:{"click":function($event){_vm.$refs.modalbook.open()}}},[_c('b',[_vm._v("Expand SMS History")])]):_vm._e()])]),_c('svg',{staticClass:"ico-svg ico-svg__mail"},[_c('use',{attrs:{"xlink:href":"#mail"}})])]):_vm._e(),(_vm.journey_select.id!=3 && _vm.journey_select.type!='')?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_vm._m(12),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date/Time")]),_vm._v(": "+_vm._s(_vm.journey_select.name))]),_vm._m(13),_vm._m(14),_vm._m(15),_vm._m(16),_vm._m(17)])]),_c('svg',{staticClass:"ico-svg ico-svg__mail"},[_c('use',{attrs:{"xlink:href":"#mail"}})])]):_vm._e(),(_vm.journey_select.id==3)?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_vm._m(18),_c('svg',{staticClass:"ico-svg ico-svg__mail"},[_c('use',{attrs:{"xlink:href":"#message"}})])]):_vm._e(),(_vm.journey_select.id==3)?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_vm._m(19),_c('svg',{staticClass:"ico-svg ico-svg__mail"},[_c('use',{attrs:{"xlink:href":"#couple"}})])]):_vm._e(),(_vm.journey_select.id!=3 && _vm.journey_select.type!='')?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_vm._m(20),_vm._m(21),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check in Date")]),_vm._v(": "+_vm._s(this.nextDay))]),_vm._m(22),_vm._m(23),_vm._m(24),_vm._m(25),_vm._m(26)])]),_c('svg',{staticClass:"ico-svg ico-svg__hospital"},[_c('use',{attrs:{"xlink:href":"#hospital"}})])]):_vm._e(),_c('div',{staticClass:"journey-map__line-item-end"})]),_c('modal',{ref:"modalbook"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Feb 10th 2019: 11:08 AM")])])])]),_c('div',{staticClass:"modal-appointment__remind"},[_c('teatarea',[_c('div',[_vm._v("SMS: Hi, Opal. How are you feeling this week? Do you have anything you would like to talk to your OBGYN?")]),_c('br'),_c('div',[_vm._v("Opal: no, I am not feeling well")]),_c('br'),_c('div',[_vm._v("SMS: Okay, would you like to speak to a nurse?")]),_c('br'),_c('div',[_vm._v("Opal: yes")]),_c('br'),_c('div',[_vm._v("SMS: Okay, let me get you connected to a nurse right now.")])])],1),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalbook.close()}}},[_vm._v("Cancel ")])])])])],1)}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Appointments")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date")]),_vm._v(": Feb 10, 2019")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("ANI")]),_vm._v(": 19723586547")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Self-service")]),_vm._v(":  Cancel Appointment")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Self-service")]),_vm._v(":  Reschedule Appointment")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("No Survey offered")])])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Appointments")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Duration")]),_vm._v(":  7 min")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent ID")]),_vm._v(":  749936")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent Name")]),_vm._v(":  James King")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Survey Score")]),_vm._v(": 3")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Appointments")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date")]),_vm._v(": Feb 10, 2019")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Customer")]),_vm._v(": 19723586547")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Self-service")]),_vm._v(":  Parking instructions")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Self-service")]),_vm._v(":  Directions")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("No Survey offered")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Inbound")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("SMS")]),_vm._v(":  Appintment Confimation")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Customet Action")]),_vm._v(": Patient clicked yes")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("SMS Outcome")]),_vm._v(":  Confirmed Appointment")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent ID")]),_vm._v(":  749936")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent Name")]),_vm._v(":  James King")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Appointments")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date")]),_vm._v(": Feb 10, 2019")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Customer")]),_vm._v(": 19723586547")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent assisted")])]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("No Survey offered")])])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Appointments")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date")]),_vm._v(": Feb 10, 2019")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Customer")]),_vm._v(": 19723586547")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Self-service")]),_vm._v(": Dietary instructions")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("No Survey offered")])])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Type")]),_vm._v(": Check in")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check in Time")]),_vm._v(": 3:00pm")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Physician Name")]),_vm._v(": Mark Williams, MD")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Department")]),_vm._v(":")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Encounter Created By")]),_vm._v(": Dr. Mark Williams")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Encounter Details")]),_vm._v(": Office/OP Visit (15min) XR (5 min)")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check out time")]),_vm._v(":  3:30pm")])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
@@ -48500,7 +48539,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-container',{attrs:{"fluid":"","fill-height":""}},[_c('v-layout',{attrs:{"align-center":"","justify-center":""}})],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"patient-info"},[_c('div',{staticClass:"patient-info__row"},[_c('div',{staticClass:"patient-info__col"},[_c('div',{staticClass:"patient-info__title"},[_c('svg',{staticClass:"ico-svg ico-svg__heart"},[_c('use',{attrs:{"xlink:href":"#heart"}})]),_vm._v("Vitals")]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Height ( cm )")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Vitals.Height)+" cm")])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("BMI ( calculated )")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Vitals.BMI))])])]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Weight ( kg )")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Vitals.Weight)+" kg")])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Pulse")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Vitals.Pulse)+" / min")])])]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Respiratory Rate")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Vitals.RespirationRate)+" / min")])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Blood Pressure")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Vitals.BloodPressureLo)+" / "+_vm._s(_vm.info.Vitals.BloodPressureHi))])])])]),_c('div',{staticClass:"patient-info__col"},[_c('div',{staticClass:"patient-info__title"},[_c('svg',{staticClass:"ico-svg ico-svg__medical"},[_c('use',{attrs:{"xlink:href":"#medical"}})]),_vm._v("Physician")]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Dr. Full Namee")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Physician.Name))])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Emergency Number")]),_c('div',{staticClass:"patient-info__note-txt"},[_c('a',{staticClass:"patient-info__note-txt-link",attrs:{"href":'tel:'+_vm.info.Physician.EmergencyPhone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.info.Physician.EmergencyPhone))])])])]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Clinic")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Physician.Clinic))])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Phone ( primary )")]),_c('div',{staticClass:"patient-info__note-txt"},[_c('a',{staticClass:"patient-info__note-txt-link",attrs:{"href":'tel:'+_vm.info.Physician.PrimaryPhone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.info.Physician.PrimaryPhone))])])])]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Physician Specialty")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Physician.Specialty))])])])]),_c('div',{staticClass:"patient-info__col"},[_c('div',{staticClass:"patient-info__title"},[_c('svg',{staticClass:"ico-svg ico-svg__couple"},[_c('use',{attrs:{"xlink:href":"#couple"}})]),_vm._v("Extra Info")]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Email")]),_c('div',{staticClass:"patient-info__note-txt"},[_c('a',{staticClass:"patient-info__note-txt-link",attrs:{"href":'mailto:'+_vm.info.Status.Email}},[_vm._v(_vm._s(_vm.info.Status.Email))])])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Race")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Status.Race))])])]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Religion")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Status.Religion))])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Emergency Contact Name")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Status.EmergencyContact.Name))])])]),_c('div',{staticClass:"patient-info__wrap"},[_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Emergency Contact Relationship")]),_c('div',{staticClass:"patient-info__note-txt"},[_vm._v(_vm._s(_vm.info.Status.EmergencyContact.Relation))])]),_c('div',{staticClass:"patient-info__wrap-coll"},[_c('div',{staticClass:"patient-info__note"},[_vm._v("Emergency Contact Phone")]),_c('div',{staticClass:"patient-info__note-txt"},[_c('a',{staticClass:"patient-info__note-txt-link",attrs:{"href":'tel:'+_vm.info.Status.EmergencyContact.Phone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.info.Status.EmergencyContact.Phone))])])])])])])])}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -48510,7 +48549,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{ref:"flyaway"},[_vm._t("default")],2)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-container',{attrs:{"fluid":"","fill-height":""}},[_c('v-layout',{attrs:{"align-center":"","justify-center":""}})],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -48520,8 +48559,8 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"journey-map"},[_c('h2',{staticClass:"title mod--journey"},[_vm._v("Patient Journey Map")]),_c('div',{staticClass:"journey-map-selects"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"options":_vm.$root.journeyOptions,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Choise an option","track-by":"name","label":"name"},on:{"input":_vm.clickJourney},model:{value:(_vm.journey_select),callback:function ($$v) {_vm.journey_select=$$v},expression:"journey_select"}})],1),_c('div',{staticClass:"journey-map__line"},[_c('img',{staticClass:"journey-map__line-userpic",attrs:{"src":_vm.info.PhotoUrl}}),(_vm.journey_select.id==3)?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_vm._m(0),_c('svg',{staticClass:"ico-svg ico-svg__phone"},[_c('use',{attrs:{"xlink:href":"#phone"}})])]):_vm._e(),(_vm.journey_select.id!=3 && _vm.journey_select.type!='')?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_vm._m(1),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date/Time")]),_vm._v(": "+_vm._s(_vm.journey_select.name))]),_vm._m(2),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("ANI")]),_vm._v(":  "+_vm._s(_vm.info.PhoneNumber))]),_vm._m(3),_vm._m(4),_vm._m(5)])]),_c('svg',{staticClass:"ico-svg ico-svg__phone"},[_c('use',{attrs:{"xlink:href":"#phone"}})])]):_vm._e(),(_vm.journey_select.id==3)?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_vm._m(6),_c('svg',{staticClass:"ico-svg ico-svg__mail"},[_c('use',{attrs:{"xlink:href":"#mail"}})])]):_vm._e(),(_vm.journey_select.id!=3 && _vm.journey_select.type!='')?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_vm._m(7),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date/Time")]),_vm._v(": "+_vm._s(_vm.journey_select.name))]),_vm._m(8),_vm._m(9),_vm._m(10),_vm._m(11),_vm._m(12)])]),_c('svg',{staticClass:"ico-svg ico-svg__mail"},[_c('use',{attrs:{"xlink:href":"#mail"}})])]):_vm._e(),(_vm.journey_select.id==3)?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_vm._m(13),_c('svg',{staticClass:"ico-svg ico-svg__mail"},[_c('use',{attrs:{"xlink:href":"#message"}})])]):_vm._e(),(_vm.journey_select.id==3)?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_vm._m(14),_c('svg',{staticClass:"ico-svg ico-svg__mail"},[_c('use',{attrs:{"xlink:href":"#couple"}})])]):_vm._e(),(_vm.journey_select.id!=3 && _vm.journey_select.type!='')?_c('div',{staticClass:"journey-map__line-item wrapp-tooltip"},[_c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_vm._m(15),_vm._m(16),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check in Date")]),_vm._v(": "+_vm._s(this.nextDay))]),_vm._m(17),_vm._m(18),_vm._m(19),_vm._m(20),_vm._m(21)])]),_c('svg',{staticClass:"ico-svg ico-svg__hospital"},[_c('use',{attrs:{"xlink:href":"#hospital"}})])]):_vm._e(),_c('div',{staticClass:"journey-map__line-item-end"})])])}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Appointments")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date")]),_vm._v(": Jan 10, 2019")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("ANI")]),_vm._v(": 19723586547")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Self-service")]),_vm._v(":  Cancel Appointment")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Self-service")]),_vm._v(":  Reschedule Appointment")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("No Survey offered")])])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Appointments")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Duration")]),_vm._v(":  7 min")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent ID")]),_vm._v(":  749936")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent Name")]),_vm._v(":  James King")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Survey Score")]),_vm._v(": 3")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Appointments")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date")]),_vm._v(": Jan 10, 2019")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Customer")]),_vm._v(": 19723586547")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Self-service")]),_vm._v(":  Parking instructions")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Self-service")]),_vm._v(":  Directions")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("No Survey offered")])])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Inbound")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("SMS")]),_vm._v(":  Appintment Confimation")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Customet Action")]),_vm._v(": Patient clicked yes")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("SMS Outcome")]),_vm._v(":  Confirmed Appointment")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent ID")]),_vm._v(":  749936")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent Name")]),_vm._v(":  James King")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Appointments")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date")]),_vm._v(": Jan 10, 2019")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Customer")]),_vm._v(": 19723586547")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Agent assisted")])]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("No Survey offered")])])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip"},[_c('div',{staticClass:"tooltip__in"},[_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Call type")]),_vm._v(": Appointments")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Date")]),_vm._v(": Jan 10, 2019")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Customer")]),_vm._v(": 19723586547")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Self-service")]),_vm._v(": Dietary instructions")]),_c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("No Survey offered")])])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Type")]),_vm._v(": Check in")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check in Time")]),_vm._v(": 3:00pm")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Physician Name")]),_vm._v(": Mark Williams, MD")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Department")]),_vm._v(":")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Encounter Created By")]),_vm._v(": Dr. Mark Williams")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Encounter Details")]),_vm._v(": Office/OP Visit (15min) XR (5 min)")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip__note"},[_c('b',[_vm._v("Check out time")]),_vm._v(":  3:30pm")])}]
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{ref:"flyaway"},[_vm._t("default")],2)])}
+var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
@@ -56137,17 +56176,17 @@ let data= {
         "description": "IODINE",
         "dateEntered": "Aug 08, 2018",
         "dateNoted": "Aug 08, 2018",
-        "reactions": "itchy rash taht comes on slowly",
+        "reactions": "Itchy rash that comes on slowly",
         "reactionComments": "Direct contact with skin results in small bumps",
         "severity": "Moderate",
         "type": "Intolerance"
       },
       {
-        "name": "PENICILLINS",
-        "description": "PENICILLINS",
+        "name": "PENICILLIN",
+        "description": "PENICILLIN",
         "dateEntered": "Jul 13, 2018",
         "dateNoted": "Jul 13, 2018",
-        "reactions": "Hives nad itchy eyes",
+        "reactions": "Hives and itchy eyes",
         "reactionComments": "Overdose",
         "severity": "Low",
         "type": "Tolerant"
@@ -56584,7 +56623,7 @@ let data= {
         "description": "IODINE",
         "dateEntered": "Aug 08, 2018",
         "dateNoted": "Aug 08, 2018",
-        "reactions": "itchy rash taht comes on slowly",
+        "reactions": "itchy rash that comes on slowly",
         "reactionComments": "Direct contact with skin results in small bumps",
         "severity": "Moderate",
         "type": "Intolerance"
@@ -57017,11 +57056,11 @@ let data= {
       ],
       "allergies": [
         {
-          "name": "PENICILLINS",
-          "description": "PENICILLINS",
+          "name": "PENICILLIN",
+          "description": "PENICILLIN",
           "dateEntered": "Jul 13, 2018",
           "dateNoted": "Jul 13, 2018",
-          "reactions": "Hives nad itchy eyes",
+          "reactions": "Hives and itchy eyes",
           "reactionComments": "Overdose",
           "severity": "Low",
           "type": "Tolerant"
@@ -57466,6 +57505,455 @@ let data= {
             "IsRequired": "false",
             "Interpreter Language": "None",
             "Status": "Arrived Late"
+          }
+        }
+      ]
+    },
+    {
+      "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
+      "Category": "EHR",
+      "Name": "Opal Lee",
+      "DateOfBirth": "1989-08-29 00:00:00",
+      "MRN": 7499281,
+      "SSN": "***-**-6789",
+      "PhoneNumber": "+1 214 701 5489",
+      "PhotoUrl": "img/opal_lee.png",
+      "PrimaryCareProvider": {
+        "Name": "Mark Williams, MD",
+        "Phone": "+1 208 975 3874"
+      },
+      "medicalHistory": [
+        "> Third Trimester Pregnancy: Expecting Twins",
+        "> Muscular Dystrophy",
+        "> Hemophilia",
+      ],
+      "activeProblems": [
+        "> A Persistent Severe Headache",
+        "> Abdominal Pain",
+        "> Swelling",
+      ],
+      "allergies": [
+        {
+          "name": "IODINE",
+          "description": "IODINE",
+          "dateEntered": "Aug 08, 2018",
+          "dateNoted": "Aug 08, 2018",
+          "reactions": "itchy rash that comes on slowly",
+          "reactionComments": "Direct contact with skin results in small bumps",
+          "severity": "Moderate",
+          "type": "Intolerance"
+        },
+        {
+          "name": "PENICILLIN",
+          "description": "PENICILLIN",
+          "dateEntered": "Jul 13, 2018",
+          "dateNoted": "Jul 13, 2018",
+          "reactions": "Hives and itchy eyes",
+          "reactionComments": "Overdose",
+          "severity": "Low",
+          "type": "Tolerant"
+        }
+      ],
+      "encounters": [
+        {
+          "type": "Evaluation",
+          "date": "Mar 05, 2017",
+          "eventType": "Admission",
+          "patientClass": "In Patient",
+          "admissionType": "Elective",
+          "dischargeDisposition": "30 - Still Patient"
+        },
+        {
+          "type": "Evaluation",
+          "date": "Mar 15, 2018",
+          "eventType": "Transfer In",
+          "patientClass": "In Patient",
+          "admissionType": "Elective",
+          "dischargeDisposition": "02 - Transferred"
+        }
+      ],
+      "Address": {
+        "Line1": "3453 T Ave, San Jose",
+        "Line2": "CA 95134"
+      },
+      "TreatmentTeam": [
+      ],
+      "Provider": [
+        {
+          "Name": "United Healthcare (UHC Parkway, GA,66552)",
+          "PhoneNumber": "+1 216 411 8765"
+        }
+      ],
+      "InsuranceVerification": {
+        "InsuranceName": "Johns Jacobs",
+        "GroupNum": "#45ABC",
+        "NetworkNum": "#45ABC",
+        "PolicyNum": "#022141242",
+        "IssueDate": "20-Aug-2016 00:00:00"
+      },
+      "Vitals": {
+        "Height": 168,
+        "Weight": 78,
+        "RespirationRate": 58,
+        "BMI": 18.9,
+        "Pulse": 210,
+        "BloodPressureLo": 127,
+        "BloodPressureHi": 145
+      },
+      "Physician": {
+        "Name": "Mark Williams, MD",
+        "PrimaryPhone": "+1 208 975 3874",
+        "Clinic": "Clarit Clinic",
+        "Specialty": "PCP",
+        "EmergencyPhone": "+1 800 111 2222"
+      },
+      "Status": {
+        "Email": "john.doe@gmail.com",
+        "Race": "White",
+        "Ethnicity": "Not Hispanic Or Latino",
+        "Religion": "Christian (non-Catholic, non-Specific)",
+        "MaritalStatus": "Married",
+        "EmergencyContact": {
+          "Relation": "Wife",
+          "Name": "Sarah Doe",
+          "Phone": "+1 (972) 293 9101"
+        }
+      },
+      "Location": {
+        "DropdownRecords": [
+          {
+            "Name": "Patient Geo Location",
+            "Address": "1431 T Ave, Fort Worth, TX 76179",
+            "Position": {"lat": 32.944827, "lng": -96.645879},
+            "Phone": "+1 (214)-701-5489",
+            "Hours": "N / A",
+            "Markers":[
+              {
+                "Name": "Patient Geo Location"
+              , "Address": "1272 Belt Line Rd, Garland TX 75040"
+              , "Position": {"lat": 32.944827, "lng": -96.645879}
+              , "Phone": "+1 (214)-701-5489"
+              }
+            ]
+          },
+          {
+            "Name": "Pharmacies In Area",
+            "Address": "1272 Belt Line Rd, Garland TX 75040",
+            "Position": {"lat": 32.944827, "lng": -96.645879},
+            "Phone": "+1 (972) 495-1933",
+            "Hours": "Open 9 AM to 10 PM",
+            "Markers":[
+              {
+                "Name": "CVS Pharmacy"
+              , "Address": "1372 Belt Line Rd"
+              , "Position": {"lat": 32.944527, "lng": -96.646960}
+              ,"Phone": "+1 (972) 495-1934"
+              } ,
+              {
+                "Name": "Walmart Pharmacy"
+              , "Address": "101 W Buckingham Rd"
+              , "Position": {"lat": 32.932013, "lng": -96.631611}
+              ,"Phone": "+1 (972) 495-1935"
+              } ,
+              {
+                "Name": "Walgreens"
+              , "Address": "2614 Lavon Dr"
+              , "Position": {"lat": 32.939566, "lng": -96.621946}
+              ,"Phone": "+1 (972) 495-1936"
+              } ,
+              {
+                "Name": "Walgreens"
+              , "Address": "1902 N Jupiter Rd"
+              , "Position": {"lat": 32.930183, "lng": -96.682285}
+              ,"Phone": "+1 (972) 495-1937"
+              } ,
+              {
+                "Name": "CVS Pharmacy - Target"
+              , "Address": "5301 N Garland Ave"
+              , "Position": {"lat": 32.965650, "lng": -96.646806}
+              ,"Phone": "+1 (972) 495-1938"
+              } ,
+              {
+                "Name": "Walmart Pharmacy"
+              , "Address": "5302 N Garland Ave"
+              , "Position": {"lat": 32.962346, "lng": -96.642499}
+              ,"Phone": "+1 (972) 495-1939"
+              }
+            ]
+          },
+          {
+            "Name": "Hospitals In Area",
+            "Address": "7 Medical Pkwy, Dallas, TX 75234",
+            "Position": {"lat": 32.944827, "lng": -96.645879},
+            "Phone": "+(972) 888-7000",
+            "Hours": "Open 9AM to 9PM",
+            "Markers":[
+              {
+                "Name": "Baylor Scott & White Medical Center"
+              , "Address": "2300 Marie Curie Blvd"
+              , "Position": {"lat": 32.918755, "lng": -96.661963}
+              , "Phone": "+(972) 888-7001",
+              } ,
+              {
+                "Name": "Select Specialty Hospital - Dallas Garland"
+              , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
+              , "Position": {"lat": 32.918793, "lng": -96.662041}
+              , "Phone": "+(972) 888-7002",
+              } ,
+              {
+                "Name": "Children's Health Pediatric Group Garland"
+              , "Address": "455 N Garland Ave"
+              , "Position": {"lat": 28.548467, "lng": -81.381385}
+              , "Phone": "+(972) 888-7003",
+              } ,
+              {
+                "Name": "Sundance Hospital Dallas"
+              , "Address": "2696 W Walnut St"
+              , "Position": {"lat": 32.913402, "lng": -96.670117}
+              , "Phone": "+(972) 888-7004",
+              }
+            ]
+          }
+        ]
+      },
+      "PastAppointments": [
+        {
+          "Date": "7-01-2018 15:00:00",
+          "Time": "12:00:00",
+          "Department": "General",
+          "Provider": "Administrator",
+          "VisitType": "Office Visit",
+          "VisitReason": "X Ray",
+          "Appointment Details": {
+            "Interpreter Required": "No",
+            "IsRequired": "false",
+            "Interpreter Language": "None",
+            "Status": "Arrived Late"
+          }
+        }
+      ],
+      "CurrentAppointments": [
+        {
+          "Date": "8-20-2018 15:00:00",
+          "Time": "15:00:00",
+          "Department": "OBGYN",
+          "Provider": "Dr. Steve Angler",
+          "VisitType": "Physicals",
+          "VisitReason": "Routine Check Up",
+          "Appointment Details": {
+            "Interpreter Required": "No",
+            "IsRequired": "false",
+            "Interpreter Language": "None",
+            "Status": "Arrived Late"
+          }
+        },
+        {
+          "Date": "8-25-2018 14:30:00",
+          "Time": "13:00:00",
+          "Department": "OBGYN",
+          "Provider": "Dr. John Lee",
+          "VisitType": "Physicals",
+          "VisitReason": "Irregular Nausea",
+          "Appointment Details": {
+            "Interpreter Required": "Yes",
+            "IsRequired": "True",
+            "Interpreter Language": "Mandarin",
+            "Status": "Checked Out"
+          }
+        },
+        {
+          "Date": "9-01-2018 14:00:00",
+          "Time": "11:00:00",
+          "Department": "OBGYN",
+          "Provider": "Dr. Mary John",
+          "VisitType": "Physical",
+          "VisitReason": "Routine Check Up",
+          "Appointment Details": {
+            "Interpreter Required": "No",
+            "IsRequired": "True",
+            "Interpreter Language": "None",
+            "Status": "Checked Out"
+          }
+        },
+        {
+          "Date": "10-01-2018 14:00:00",
+          "Time": "11:00:00",
+          "Department": "OBGYN",
+          "Provider": "Dr. John Lee",
+          "VisitType": "Physical",
+          "VisitReason": "Consultation",
+          "Appointment Details": {
+            "Interpreter Required": "No",
+            "IsRequired": "True",
+            "Interpreter Language": "None",
+            "Status": "Checked Out"
+          }
+        }
+      ],
+      "Billing": {
+        "Provider": "United HealthCare",
+        "Plan": "Choice",
+        "Subscriber": "Self",
+        "Street": "3153 T Ave",
+        "City": "Fort Worth",
+        "State": "TX",
+        "ZipCode": "75038",
+        "GroupNum": "52534422",
+        "PolicyNum": "112222456"
+      },
+      "BillHistory": [
+        {
+          "name": " JACOBS,JOHN ",
+          "status": "Unpaid",
+          "StatementId": "06642326",
+          "PatientName": "Johns Jacobs",
+          "PatientId": "28724351",
+          "Payer": "United",
+          "ClaimType": "eClaims",
+          "Date": "12/03/2017",
+          "TotalAmount": "848.09",
+          "TotalPaidAmount": "1200.00",
+          "reviews": [
+            {
+              "date": "07/07/2017",
+              "description": "ENCOUNTER 209523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "07/07/2017",
+              "description": "815235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "07/07/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "07/07/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$848.09",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
+          }
+        },
+        {
+          "status": "Paid",
+          "StatementId": "02534126",
+          "PatientName": "Johns Jacobs",
+          "PatientId": "28724351",
+          "Payer": "United",
+          "ClaimType": "eClaims",
+          "Date": "11/02/2016",
+          "TotalAmount": "848.09",
+          "TotalPaidAmount": "1200.00",
+          "reviews": [
+            {
+              "date": "11/11/2017",
+              "description": "ENCOUNTER 109523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "11/11/2017",
+              "description": "163235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "11/11/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "11/11/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$848.09",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
+          }
+        },
+        {
+          "status": "Unpaid",
+          "StatementId": "02512426",
+          "PatientName": "Johns Jacobs",
+          "PatientId": "28724351",
+          "Payer": "United",
+          "ClaimType": "eClaims",
+          "Date": "04/04/2015",
+          "TotalAmount": "848.09",
+          "TotalPaidAmount": "1100.00",
+          "reviews": [
+            {
+              "date": "03/03/2017",
+              "description": "ENCOUNTER 209523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "02/02/2017",
+              "description": "815235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "01/01/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "01/01/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$848.09",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
           }
         }
       ]

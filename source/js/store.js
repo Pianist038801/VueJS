@@ -28,6 +28,8 @@ export default new Vuex.Store({
        state.pacientName = 'Sarah Jones'
       if(id==2)
        state.pacientName = 'Grace Paz'
+      if(id==3)
+       state.pacientName = 'Opal Lee'
     },
     setPacientName (state, name) {
       state.pacientName = name
@@ -37,6 +39,8 @@ export default new Vuex.Store({
         state.pacientId = 1;
       if(name=='Grace Paz')
         state.pacientId = 2;
+      if(name=='Opal Lee')
+        state.pacientId = 3;
     }
   },
   actions: {

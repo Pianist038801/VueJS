@@ -22,20 +22,6 @@ header.header
             a(href="#", @click.prevent="$root.currentShowBox = 'pharmacy'").header__tabs-item-link Pharmacy
 
     .header__action
-        .header__action-item
-            a(href="#3", v-on:click = "$root.showPhoneBook()").header__action-link
-                svg.ico-svg.ico-svg__phone
-                    use(xlink:href="#phone")
-        .header__action-item
-            a(href="#3").header__action-link
-                svg.ico-svg.ico-svg__search
-                    use(xlink:href="#search")
-        .header__action-item
-            a(href="#3").header__action-link
-                svg.ico-svg.ico-svg__settings
-                    use(xlink:href="#settings")
-        .header__action-item
-            a(href="#3").header__action-link
-                .userpic-header
-                    img(src=require('img/userpic.png')).userpic-header__img
+        .header__tabs-item()
+            a(href="#").header__tabs-item-link Nurse Betsy Swanson
 // End header

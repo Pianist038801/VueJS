@@ -145,11 +145,11 @@
         "type": "Intolerance"
       },
       {
-        "name": "PENICILLINS",
-        "description": "PENICILLINS",
+        "name": "PENICILLIN",
+        "description": "PENICILLIN",
         "dateEntered": "Jul 13, 2018",
         "dateNoted": "Jul 13, 2018",
-        "reactions": "Hives nad itchy eyes",
+        "reactions": "Hives and itchy eyes",
         "reactionComments": "Overdose",
         "severity": "Low",
         "type": "Tolerant"
@@ -997,11 +997,11 @@
       ],
       "allergies": [
         {
-          "name": "PENICILLINS",
-          "description": "PENICILLINS",
+          "name": "PENICILLIN",
+          "description": "PENICILLIN",
           "dateEntered": "Jul 13, 2018",
           "dateNoted": "Jul 13, 2018",
-          "reactions": "Hives nad itchy eyes",
+          "reactions": "Hives and itchy eyes",
           "reactionComments": "Overdose",
           "severity": "Low",
           "type": "Tolerant"

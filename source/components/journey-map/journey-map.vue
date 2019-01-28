@@ -21,7 +21,7 @@
                 .tooltip
                     .tooltip__in
                         .tooltip__note <b>Call type</b>: Appointments
-                        .tooltip__note <b>Date</b>: Jan 10, 2019
+                        .tooltip__note <b>Date</b>: Feb 10, 2019
                         .tooltip__note <b>ANI</b>: 19723586547
                         .tooltip__note <b>Self-service</b>:  Cancel Appointment
                         .tooltip__note <b>Self-service</b>:  Reschedule Appointment
@@ -46,12 +46,12 @@
                 .tooltip
                     .tooltip__in
                         .tooltip__note <b>Call type</b>: Appointments
-                        .tooltip__note <b>Date</b>: Jan 10, 2019
+                        .tooltip__note <b>Date</b>: Feb 10, 2019
                         .tooltip__note <b>Customer</b>: 19723586547
                         .tooltip__note <b>Self-service</b>:  Parking instructions
                         .tooltip__note <b>Self-service</b>:  Directions
                         .tooltip__note <b>No Survey offered</b>
-
+                        .tooltip__note.history-view(v-if="$root.activePacient===3", @click="$refs.modalbook.open()") <b>Expand SMS History</b>
                 svg.ico-svg.ico-svg__mail
                     use(xlink:href="#mail")
             .journey-map__line-item.wrapp-tooltip(v-if="journey_select.id!=3 && journey_select.type!=''")
@@ -72,7 +72,7 @@
                 .tooltip
                     .tooltip__in
                         .tooltip__note <b>Call type</b>: Appointments
-                        .tooltip__note <b>Date</b>: Jan 10, 2019
+                        .tooltip__note <b>Date</b>: Feb 10, 2019
                         .tooltip__note <b>Customer</b>: 19723586547
                         .tooltip__note <b>Agent assisted</b>
                         .tooltip__note <b>No Survey offered</b>
@@ -83,7 +83,7 @@
                 .tooltip
                     .tooltip__in
                         .tooltip__note <b>Call type</b>: Appointments
-                        .tooltip__note <b>Date</b>: Jan 10, 2019
+                        .tooltip__note <b>Date</b>: Feb 10, 2019
                         .tooltip__note <b>Customer</b>: 19723586547
                         .tooltip__note <b>Self-service</b>: Dietary instructions
                         .tooltip__note <b>No Survey offered</b>
@@ -106,16 +106,42 @@
                     use(xlink:href="#hospital")
 
             .journey-map__line-item-end
+        modal(ref="modalbook")
+            .modal__content
+
+                .modal__content-row
+                    .modal__content-col
+
+                        .modal-appointment__title
+                            .title.mod--modal-appointment Feb 10th 2019: 11:08 AM
+
+ 
+                .modal-appointment__remind
+                    teatarea() 
+                        div() SMS: Hi, Opal. How are you feeling this week? Do you have anything you would like to talk to your OBGYN?
+                        br()
+                        div() Opal: no, I am not feeling well
+                        br()
+                        div() SMS: Okay, would you like to speak to a nurse?
+                        br()
+                        div() Opal: yes
+                        br()
+                        div() SMS: Okay, let me get you connected to a nurse right now.
+
+
+                .modal-appointment__row
+                    a(href="#3", @click="$refs.modalbook.close()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary Cancel 
 
 </template>
 <script>
 
     import Multiselect from 'vue-multiselect';
-
+    import modal from "../modal-component/modal.vue";
     export default {
         props: ['info'],
         components: {
-            Multiselect
+            Multiselect,
+            modal,
         },
         watch: {
             journey_select(to){

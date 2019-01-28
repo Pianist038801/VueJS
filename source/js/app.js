@@ -102,7 +102,7 @@ let App = new Vue({
   },
   mounted() {
     let vm = this;
-    vm.activePacient = 0;
+    vm.activePacient = 3;
     vm.currentShowBox = 'home';
     vm.spaceWidget =  window.ciscosparkClient();
     Vue.http.get('demo-credentials.json').then((response) => {
@@ -184,7 +184,7 @@ let App = new Vue({
                 appData = Object.assign(appData, data);
                 
                 if(response.data.error){
-                  console.error('Noo TempDNIS Found.')
+                  console.error('No TempDNIS Found.')
                   if(tempDNIS=="") // Blank Gadget
                   {
                     vm.isBlank=true;
@@ -209,8 +209,10 @@ let App = new Vue({
                   vm.activePacient = 1;
                 else if(_patientName.indexOf('Johns') > -1) 
                   vm.activePacient = 0;
-                else
+                else if(_patientName.indexOf('Grace') > -1) 
                   vm.activePacient = 2;
+                else
+                  vm.activePacient = 3; 
                 vm.callerTransferLocation = responseData.phantom1;
                 vm.callerHospital = responseData.phantom2;
                 vm.releaseTempDNIS(tempDNIS);

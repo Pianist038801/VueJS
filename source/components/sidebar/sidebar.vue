@@ -8,6 +8,9 @@
                     svg.ico-svg.ico-svg__info
                         use(xlink:href="#info")
         .sidebar__note-userpic Number of Matches (<b>{{sizePacients}}</b>)
+        .sidebar__section(v-if="currentPacientName === 'Opal Lee'")
+            .sidebar__high--risk High Risk Patient
+                span().tool-tip High risk alert: Maternity with Twins
         .l-sidebar__section
             .sidebar__section
                 .sidebar__section--note Patient Name
@@ -137,7 +140,7 @@
                     const _name = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear() + ' - 3:00pm';
                     options.push({id: i, name: _name, type: 'visit'})
                 }
-                options.push({id: 3, name: "January 10, 2019", type: 'visit'});
+                options.push({id: 3, name: "February 10, 2019", type: 'visit'});
                 vm.$root.journeyOptions = options;
                 vm.pacients.forEach((item, i) => {
                     if(item.Name === vm.currentPacientName) {
@@ -178,7 +181,14 @@
                 },
                 // setter
                 set: function (newValue) {
-                this.$store.dispatch('setName', newValue);
+                    this.$store.dispatch('setName', newValue);
+                    if(newValue === 'Opal Lee') {
+                        this.$root.$data.callerNotes = 'Patient is pregnant with twins, expectancy date soon';
+                        this.$root._data.dropdownCallerName = 'Opal Lee';
+                    } else {
+                        this.$root.$data.callerNotes = '';
+                        this.$root._data.dropdownCallerName = newValue;
+                    }
                 }
             },
             // get only
