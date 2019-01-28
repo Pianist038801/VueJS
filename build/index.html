@@ -16,7 +16,7 @@
     <link href="spark-widget/widget-space/main.css" rel="stylesheet">
     <script src="spark-widget/bundle.js"></script>
     <title>Home page</title>
-  <link href="css/style.css?aa24a303b2bd3d73b5c2" rel="stylesheet"></head>
+  <link href="css/style.css?363c08b600fa44c022c1" rel="stylesheet"></head>
   <body class="l-body ">
     <!-- page-->
     <div class="l-page" id="app">
@@ -94,13 +94,13 @@
                     </div>
                     <div class="ccase-managment__top_boxes">
                       <div class="ccase-managment__top-rect inline-block">
-                        <board-block :count="$root.activePacient==0?1:1" :text="'Past Appointments'" :col="'rgb(255,0,0)'"></board-block>
+                        <board-block :count="$root.activePacient==3?5:1" :text="'Past Appointments'" :col="'rgb(255,0,0)'"></board-block>
                       </div>
                       <div class="ccase-managment__top-rect inline-block">
                         <board-block :count="$root.activePacient==0?3:2" :text="'Current Appointments'" :col="'green'"></board-block>
                       </div>
                       <div class="ccase-managment__top-rect inline-block">
-                        <board-block :count="$root.activePacient==0?1:1" :text="'Future Appointments'" :col="'grey'"></board-block>
+                        <board-block :count="$root.activePacient==3?6:1" :text="'Future Appointments'" :col="'grey'"></board-block>
                       </div>
                       <div class="ccase-managment__top-rect inline-block">
                         <board-block :count="$root.activePacient==0?2:3" :text="'Cancelled/No Shows'" :col="'pink'"></board-block>
@@ -453,5 +453,5 @@
       </div>
     </div>
     <!-- End page-->
-  <script type="text/javascript" src="js/app.js?aa24a303b2bd3d73b5c2"></script></body>
+  <script type="text/javascript" src="js/app.js?363c08b600fa44c022c1"></script></body>
 </html>

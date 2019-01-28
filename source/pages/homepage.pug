@@ -70,11 +70,11 @@ block content
                             
                                 .ccase-managment__top_boxes
                                     .ccase-managment__top-rect.inline-block
-                                        board-block(:count='$root.activePacient==0?1:1', :text="'Past Appointments'", :col="'rgb(255,0,0)'")
+                                        board-block(:count='$root.activePacient==3?5:1', :text="'Past Appointments'", :col="'rgb(255,0,0)'")
                                     .ccase-managment__top-rect.inline-block
                                         board-block(:count='$root.activePacient==0?3:2', :text="'Current Appointments'", :col="'green'")
                                     .ccase-managment__top-rect.inline-block
-                                        board-block(:count='$root.activePacient==0?1:1', :text="'Future Appointments'", :col="'grey'")
+                                        board-block(:count='$root.activePacient==3?6:1', :text="'Future Appointments'", :col="'grey'")
                                     .ccase-managment__top-rect.inline-block
                                         board-block(:count='$root.activePacient==0?2:3', :text="'Cancelled/No Shows'", :col="'pink'")
                                 .ccase-managment__top_boxes
