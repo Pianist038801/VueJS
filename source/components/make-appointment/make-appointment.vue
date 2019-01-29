@@ -60,7 +60,7 @@
                 :format="customFormatter")
         transition(name="fade")
             div(v-if="formElementChecked")
-                .make-appointment__date-selected Sunday - May 20, 2018
+                .make-appointment__date-selected Sunday - Feb 10, 2019
                 form(action="#3")
                     fieldset.form__fieldset
                         legend.hide Book table
@@ -269,7 +269,7 @@
 
                 let currentTime = vm.$moment(vm.existingApointmentSlots[vm.activeBookItem].StartTime);
                 let time = currentTime.format("HH:mm:ss");
-                vm.$root._data.Patients[vm.$root.activePacient].PastAppointments.push({
+                vm.$root._data.Patients[vm.$root.activePacient].CurrentAppointments.push({
                     Date: this.filterDate(this.date),
                     Time: time,
                     Department: vm.departmentSelect,
