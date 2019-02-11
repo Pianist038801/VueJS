@@ -1,13 +1,13 @@
 <template lang="pug">
     .content
         .content__top-line
-            h1.title Patient Schedule
+            h1.title Customer Schedule
             a(href="#3").content__top-action
                 svg.ico-svg.ico-svg__plus-round
                     use(xlink:href="#plus-round")
         .content__box
-            appointment(:patients="$root._data.Patients[$root.activePacient]")
-            journey-map(:info="$root._data.Patients[$root.activePacient]")
+            appointment(:patients="$root._data.Customers[$root.activePacient]")
+            journey-map(:info="$root._data.Customers[$root.activePacient]")
 
 </template>
 <script>

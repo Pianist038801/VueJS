@@ -3,7 +3,7 @@
         .modal__content
             .modal__content-row
                 .modal-appointment__title
-                    .title.mod--modal-appointment Update Patient Referral Details 
+                    .title.mod--modal-appointment Update Customer Referral Details 
                     .referral-view__top
                         .referral__detail-field
                             span().infoname STATUS    
@@ -132,19 +132,19 @@
                 if(this.searchKey==-1) return true;
                 if(this.searchType=='') return false;
                 switch(this.searchType){
-                    case 'Patient MRN':
+                    case 'Customer MRN':
                         return patient.MRN.indexOf(this.searchKey)>-1 ? true : false
-                    case 'Patient First Name':
+                    case 'Customer First Name':
                         return patient.Name.split(' ')[1].indexOf(this.searchKey)>-1 ? true : false
-                    case 'Patient Last Name':
+                    case 'Customer Last Name':
                         return patient.Name.split(' ')[0].indexOf(this.searchKey)>-1 ? true : false
-                    case 'Patient DOB':
+                    case 'Customer DOB':
                         return patient.DateOfBirth.split(' ')[0].indexOf(this.searchKey)>-1 ? true : false
-                    case 'Patient Zip':
+                    case 'Customer Zip':
                         return true
-                    case 'Patient Phone Number':
+                    case 'Customer Phone Number':
                         return patient.PhoneNumber.indexOf(this.searchKey)>-1 ? true : false
-                    case 'Patient SSN':
+                    case 'Customer SSN':
                         return patient.SSN.indexOf(this.searchKey)>-1 ? true : false
                 }
             }, 

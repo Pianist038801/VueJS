@@ -1,4 +1,4 @@
-<!-- Despite the name of this file, is actually for the Locations section of Patient Info Page. -->
+<!-- Despite the name of this file, is actually for the Locations section of Customer Info Page. -->
 <template lang="pug">
     .pharmacies
         h2.title Locations

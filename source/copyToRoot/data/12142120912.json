@@ -1,5 +1,5 @@
 {
-  "Patients": [
+  "Customers": [
     {
       "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
       "Name": "Johns Jacobs",
@@ -61,14 +61,14 @@
       "Location": {
         "DropdownRecords": [
           {
-            "Name": "Patient Geo Location",
+            "Name": "Customer Geo Location",
             "Address": "1272 Belt Line Rd, Garland TX 75040",
             "Position": {"lat": 32.944827, "lng": -96.645879},
             "Phone": "+1 202 456 7890",
             "Hours": "N / A",
             "Markers":[
               {
-                "Name": "Patient Geo Location"
+                "Name": "Customer Geo Location"
               , "Address": "1272 Belt Line Rd, Garland TX 75040"
               , "Position": {"lat": 32.944827, "lng": -96.645879}
               }
@@ -254,14 +254,14 @@
       "Location": {
         "DropdownRecords": [
           {
-            "Name": "Patient Geo Location",
+            "Name": "Customer Geo Location",
             "Address": "1272 Belt Line Rd, Garland TX 75040",
             "Position": {"lat": 32.944827, "lng": -96.645879},
             "Phone": "+1 202 456 7890",
             "Hours": "N / A",
             "Markers":[
               {
-                "Name": "Patient Geo Location"
+                "Name": "Customer Geo Location"
               , "Address": "1272 Belt Line Rd, Garland TX 75040"
               , "Position": {"lat": 32.944827, "lng": -96.645879}
               }
@@ -344,7 +344,7 @@
           "Department": "SpinSci Clinic",
           "Provider": "Administrator",
           "VisitType": "Office Visit",
-          "VisitReason": "New Patient",
+          "VisitReason": "New Customer",
           "Appointment Details": {
             "Interpreter Required": "No",
             "IsRequired": "false",
@@ -504,6 +504,6 @@
     ],
     "GoogleMapIMG": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Google_maps_screenshot.png/300px-Google_maps_screenshot.png",
     "SmsConfirmTemplate": "Dear [PATIENTNAME] , we have scheduled an appointment with you for [APPTDATE] at [FACILITY]. Regards, [DRNAME]",
-    "EmailConfirmTemplate": "Dear [PATIENTNAME]: This letter is to confirm your appointment at [APPTDATE]. Please plan to arrive approximately 30 minutes prior to your scheduled appointment to allow time for you and your significant other to sign consent forms that are required for your treatment. It is important that your significant other is able to accompany you to your appointments as much as possible. With the type of care we provide, we may be unable to schedule/perform certain procedures without their signature.\n\nPlease complete the following informational forms and return to our office prior to your appointment.\n+ Patient Information Page \n+ Medical History Form\nThis will enable us to thoroughly review your medical background and provide you with the best possible care. If you have been seen by another physician, please request that your medical records be forwarded to our office prior to your appointment, as well. \n\nIn an effort to be HIPAA compliant and to protect your private health information and identity, we require that you bring your photo I.D. and insurance card to your first visit.\n\nAs a courtesy to you we will submit your insurance claims for you; however any copayments will be collected at time of service. For any non insured patients, fees for all office visits and related charges are payable at the time of service. \n\nMy staff and I appreciate your selecting our office for your health care. We recognize the trust and responsibility placed in us and we will do everything possible to provide for those needs. \n\nWe look forward to seeing you!\nSincerely,\n[DRNAME]"
+    "EmailConfirmTemplate": "Dear [PATIENTNAME]: This letter is to confirm your appointment at [APPTDATE]. Please plan to arrive approximately 30 minutes prior to your scheduled appointment to allow time for you and your significant other to sign consent forms that are required for your treatment. It is important that your significant other is able to accompany you to your appointments as much as possible. With the type of care we provide, we may be unable to schedule/perform certain procedures without their signature.\n\nPlease complete the following informational forms and return to our office prior to your appointment.\n+ Customer Information Page \n+ Medical History Form\nThis will enable us to thoroughly review your medical background and provide you with the best possible care. If you have been seen by another physician, please request that your medical records be forwarded to our office prior to your appointment, as well. \n\nIn an effort to be HIPAA compliant and to protect your private health information and identity, we require that you bring your photo I.D. and insurance card to your first visit.\n\nAs a courtesy to you we will submit your insurance claims for you; however any copayments will be collected at time of service. For any non insured patients, fees for all office visits and related charges are payable at the time of service. \n\nMy staff and I appreciate your selecting our office for your health care. We recognize the trust and responsibility placed in us and we will do everything possible to provide for those needs. \n\nWe look forward to seeing you!\nSincerely,\n[DRNAME]"
   }
 }

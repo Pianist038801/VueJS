@@ -31,7 +31,7 @@
                 :searchable="false",
                 :allowEmpty="false",
                 :showLabels="false",
-                placeholder="Patient Name"
+                placeholder="Customer Name"
                 ).ui-multiselect.ui-multiselect--border
             .patient-billing__top-filter
                 multiselect(
@@ -40,7 +40,7 @@
                 :searchable="false",
                 :allowEmpty="false",
                 :showLabels="false",
-                placeholder="Patient ID"
+                placeholder="Customer ID"
                 ).ui-multiselect.ui-multiselect--border
             .patient-billing__top-filter
                 multiselect(
@@ -68,19 +68,19 @@
             tr
                 th Billing Status
                 th Statement ID
-                th Patient Name
-                th Patient ID
+                th Customer Name
+                th Customer ID
                 th Payer
                 th Claim Type
                 th Total Amount
                 th Total Paid Amount
                 th Created Date
                 th Action
-            tr(v-for="(item, index) in history" v-if="(cre_bill_status=='' || cre_bill_status==item.status) && (cre_batch_id=='' || item.StatementId.toLowerCase().indexOf(cre_batch_id.toLowerCase())>=0) && (cre_patient_name=='' || cre_patient_name==item.PatientName) && (cre_patient_id=='' || item.PatientId.toLowerCase().indexOf(cre_patient_id.toLowerCase())>=0) && (cre_payer=='' || cre_payer==item.Payer) && (cre_claim_type=='' || cre_claim_type==item.ClaimType) && (cre_date=='')" )
+            tr(v-for="(item, index) in history" v-if="(cre_bill_status=='' || cre_bill_status==item.status) && (cre_batch_id=='' || item.StatementId.toLowerCase().indexOf(cre_batch_id.toLowerCase())>=0) && (cre_patient_name=='' || cre_patient_name==item.CustomerName) && (cre_patient_id=='' || item.CustomerId.toLowerCase().indexOf(cre_patient_id.toLowerCase())>=0) && (cre_payer=='' || cre_payer==item.Payer) && (cre_claim_type=='' || cre_claim_type==item.ClaimType) && (cre_date=='')" )
                 td {{ item.status}}
                 td {{item.StatementId}}
-                td {{item.PatientName}}
-                td {{item.PatientId}}
+                td {{item.CustomerName}}
+                td {{item.CustomerId}}
                 td {{item.Payer}}
                 td {{item.ClaimType}}
                 td {{ item.TotalAmount }}
@@ -94,7 +94,7 @@
                         .sub-popup-menu__list-special(v-if="showMenu==index")
                             a(href="#3", @click.prevent="viewBill(index)").sub-popup-menu__item View Bill
                             a(href="#3", @click.prevent="payBill(index)").sub-popup-menu__item Pay Bill
-                            a(href="#3", @click.prevent="openNewWindow($root.epicAddress)").sub-popup-menu__item View in {{$root._data.Patients[$root.activePacient].Category=='EHR'?'EHR':"EHR"}}
+                            a(href="#3", @click.prevent="openNewWindow($root.epicAddress)").sub-popup-menu__item View in {{$root._data.Customers[$root.activePacient].Category=='EHR'?'EHR':"EHR"}}
                             a(href="#3", @click.prevent="showReminder(index)").sub-popup-menu__item Send Reminder
                             a(href="#3").sub-popup-menu__item Print
                             a(href="#3", @click.prevent="openNewWindow('http://uhealthsystem.com/images/content/UMH-statement.jpg')").sub-popup-menu__item Download as PDF
@@ -119,7 +119,7 @@
                             label.ui-checkbox__label(for='checkbox-sms') Send Text Reminder
                     transition(name="fade")
                         textarea(v-if="showSmsTemplate").ui-textarea.ui-textarea--skin-default.ui-textarea--theme-default.mod--sms
-                            | Dear [Patient Name], we are sending this message to remind of a payment.  Your payment is due in two weeks from now.. Regards. 
+                            | Dear [Customer Name], we are sending this message to remind of a payment.  Your payment is due in two weeks from now.. Regards. 
 
                 .modal-appointment__templates-messages 
                     .modal-appointment__templates-checkbox
@@ -197,8 +197,8 @@
                 console.log('BILLSTATUS', this.cre_bill_status)
                 if((cre_bill_status=='' || cre_bill_status==item.status) &&
                     (cre_batch_id=='' || item.StatementId.toLowerCase().indexOf(cre_batch_id.toLowerCase())>=0) &&
-                    (cre_patient_name=='' || cre_patient_name==item.PatientName) &&
-                    (cre_patient_id=='' || item.PatientId.toLowerCase().indexOf(cre_patient_id.toLowerCase())>=0) &&
+                    (cre_patient_name=='' || cre_patient_name==item.CustomerName) &&
+                    (cre_patient_id=='' || item.CustomerId.toLowerCase().indexOf(cre_patient_id.toLowerCase())>=0) &&
                     (cre_payer=='' || cre_payer==item.Payer) &&
                     (cre_claim_type=='' || cre_claim_type==item.ClaimType) &&
                     (cre_date==''))  
@@ -231,7 +231,7 @@
                         
                         let msg = 'Dear [PATIENT NAME], we are sending this message to remind of a payment.  Your payemnt is due in two weeks from now.. Regards.';
  
-                        msg = msg.replace ( '[PATIENT NAME]' , vm.$root._data.Patients[vm.$root.activePacient].Name ) ;
+                        msg = msg.replace ( '[PATIENT NAME]' , vm.$root._data.Customers[vm.$root.activePacient].Name ) ;
                         
                         console . log ( msg ) ;
 

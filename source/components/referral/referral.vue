@@ -19,8 +19,8 @@
         table.appointment__table
             tr
                 th Ref ID
-                th Patient ID
-                th Patient Name
+                th Customer ID
+                th Customer Name
                 th Referred By (Provider)
                 th Referred To (Provider)
                 th Referral Type

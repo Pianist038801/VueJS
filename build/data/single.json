@@ -65,14 +65,14 @@
         "Location": {
         "DropdownRecords": [
           {
-          "Name": "Patient Geo Location",
+          "Name": "Customer Geo Location",
           "Address": "1272 Belt Line Rd, Garland TX 75040",
           "Position": {"lat": 32.944827, "lng": -96.645879},
           "Phone": "+1 202 456 7890",
           "Hours": "N / A",
           "Markers":[
             {
-            "Name": "Patient Geo Location"
+            "Name": "Customer Geo Location"
             , "Address": "1272 Belt Line Rd, Garland TX 75040"
             , "Position": {"lat": 32.944827, "lng": -96.645879}
             }
@@ -157,7 +157,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -495,7 +495,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -833,7 +833,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -1171,7 +1171,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -1315,7 +1315,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -1517,7 +1517,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -1855,7 +1855,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,

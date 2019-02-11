@@ -12,7 +12,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -350,7 +350,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -688,7 +688,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -1026,7 +1026,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -1162,7 +1162,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -1364,7 +1364,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -1678,7 +1678,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -2012,7 +2012,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -2350,7 +2350,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -2688,7 +2688,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -2832,7 +2832,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -3034,7 +3034,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -3170,7 +3170,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -3372,7 +3372,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -3710,7 +3710,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -3854,7 +3854,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -4056,7 +4056,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -4180,7 +4180,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -4382,7 +4382,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -4506,7 +4506,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -4708,7 +4708,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -4832,7 +4832,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -5034,7 +5034,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -5372,7 +5372,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -5710,7 +5710,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -6044,7 +6044,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -6378,7 +6378,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -6712,7 +6712,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -7050,7 +7050,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -7388,7 +7388,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -7520,7 +7520,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -7722,7 +7722,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -7858,7 +7858,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -8060,7 +8060,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -8394,7 +8394,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -8732,7 +8732,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -9070,7 +9070,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -9214,7 +9214,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -9416,7 +9416,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Have a full bladder for this appointment. Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -9734,7 +9734,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -10068,7 +10068,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -10406,7 +10406,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -10744,7 +10744,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -11082,7 +11082,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -11226,7 +11226,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -11428,7 +11428,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -11766,7 +11766,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -11910,7 +11910,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -12112,7 +12112,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -12450,7 +12450,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -12594,7 +12594,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -12613,7 +12613,7 @@
                             }
                         },
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -12815,7 +12815,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -12951,7 +12951,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -13153,7 +13153,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -13471,7 +13471,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -13809,7 +13809,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -13953,7 +13953,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -14155,7 +14155,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -14489,7 +14489,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -14827,7 +14827,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -15165,7 +15165,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -15309,7 +15309,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -15511,7 +15511,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -15647,7 +15647,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -15849,7 +15849,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -16167,7 +16167,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -16501,7 +16501,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -16839,7 +16839,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -16983,7 +16983,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -17185,7 +17185,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -17329,7 +17329,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -17531,7 +17531,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -17869,7 +17869,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -18207,7 +18207,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -18545,7 +18545,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -18879,7 +18879,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -19004,7 +19004,7 @@
                     ],
                     "Copay": {
                         "Amount": "0",
-                        "AskPatient": null,
+                        "AskCustomer": null,
                         "PaymentStatus": "Disabled"
                     },
                     "eCheckInStatus": {
@@ -19221,7 +19221,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -19555,7 +19555,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -19893,7 +19893,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -20211,7 +20211,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -20545,7 +20545,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -20883,7 +20883,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -21221,7 +21221,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -21365,7 +21365,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -21567,7 +21567,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -21905,7 +21905,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -22243,7 +22243,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -22581,7 +22581,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -22725,7 +22725,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -22927,7 +22927,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -23265,7 +23265,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -23599,7 +23599,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Have a full bladder for this appointment. Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -23887,7 +23887,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -24225,7 +24225,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -24543,7 +24543,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -24877,7 +24877,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -25215,7 +25215,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -25351,7 +25351,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -25553,7 +25553,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -25697,7 +25697,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -25899,7 +25899,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -26035,7 +26035,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -26237,7 +26237,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -26381,7 +26381,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -26583,7 +26583,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -26897,7 +26897,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -27235,7 +27235,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -27573,7 +27573,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -27709,7 +27709,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -27911,7 +27911,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Bring list of current medications and any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -28017,7 +28017,7 @@
                     },
                     "Questionnaires": [],
                     "VisitType": {
-                        "Name": "New Patient Appointment",
+                        "Name": "New Customer Appointment",
                         "IDs": [
                             {
                                 "ID": "    1003",
@@ -28199,7 +28199,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -28533,7 +28533,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -28867,7 +28867,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -29205,7 +29205,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -29543,7 +29543,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -29881,7 +29881,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -30219,7 +30219,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -30363,7 +30363,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -30565,7 +30565,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -30903,7 +30903,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -31237,7 +31237,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -31571,7 +31571,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -31715,7 +31715,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -31917,7 +31917,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -32223,7 +32223,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -32557,7 +32557,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -32895,7 +32895,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -33233,7 +33233,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -33567,7 +33567,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -33711,7 +33711,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -33913,7 +33913,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -34049,7 +34049,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -34251,7 +34251,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -34589,7 +34589,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -34927,7 +34927,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -35071,7 +35071,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -35273,7 +35273,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -35583,7 +35583,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -35921,7 +35921,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -36259,7 +36259,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -36597,7 +36597,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -36741,7 +36741,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -36943,7 +36943,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -37281,7 +37281,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -37619,7 +37619,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -37953,7 +37953,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Bring list of current medications and any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -38089,7 +38089,7 @@
                     },
                     "Questionnaires": [],
                     "VisitType": {
-                        "Name": "New Patient Appointment",
+                        "Name": "New Customer Appointment",
                         "IDs": [
                             {
                                 "ID": "    1003",
@@ -38271,7 +38271,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -38605,7 +38605,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -38943,7 +38943,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -39087,7 +39087,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -39289,7 +39289,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -39623,7 +39623,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -39961,7 +39961,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -40275,7 +40275,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -40419,7 +40419,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -40621,7 +40621,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -40757,7 +40757,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -40959,7 +40959,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -41091,7 +41091,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -41293,7 +41293,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -41437,7 +41437,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -41639,7 +41639,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -41973,7 +41973,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -42097,7 +42097,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -42299,7 +42299,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -42637,7 +42637,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -42971,7 +42971,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -43095,7 +43095,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -43297,7 +43297,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -43635,7 +43635,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -43973,7 +43973,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -44117,7 +44117,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -44319,7 +44319,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -44653,7 +44653,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -44991,7 +44991,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -45135,7 +45135,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -45337,7 +45337,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -45671,7 +45671,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -46009,7 +46009,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -46153,7 +46153,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -46355,7 +46355,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Have a full bladder for this appointment. Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -46677,7 +46677,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -46821,7 +46821,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -47023,7 +47023,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -47159,7 +47159,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -47361,7 +47361,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -47505,7 +47505,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -47707,7 +47707,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -47851,7 +47851,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -48053,7 +48053,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -48367,7 +48367,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -48705,7 +48705,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -49039,7 +49039,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -49163,7 +49163,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -49365,7 +49365,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -49699,7 +49699,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -49843,7 +49843,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -50045,7 +50045,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -50383,7 +50383,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -50527,7 +50527,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -50729,7 +50729,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -51063,7 +51063,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -51401,7 +51401,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -51739,7 +51739,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -52077,7 +52077,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -52415,7 +52415,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -52729,7 +52729,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -53067,7 +53067,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -53401,7 +53401,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -53739,7 +53739,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -53883,7 +53883,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -54085,7 +54085,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -54423,7 +54423,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -54757,7 +54757,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -55095,7 +55095,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -55413,7 +55413,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -55751,7 +55751,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -55895,7 +55895,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -56097,7 +56097,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -56241,7 +56241,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -56443,7 +56443,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -56579,7 +56579,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient Medical History",
+                            "Name": "Customer Medical History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -56781,7 +56781,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -57119,7 +57119,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Bring list of current medications and any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -57243,7 +57243,7 @@
                     },
                     "Questionnaires": [],
                     "VisitType": {
-                        "Name": "New Patient Appointment",
+                        "Name": "New Customer Appointment",
                         "IDs": [
                             {
                                 "ID": "    1003",
@@ -57425,7 +57425,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -57759,7 +57759,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -58097,7 +58097,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -58241,7 +58241,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -58443,7 +58443,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -58587,7 +58587,7 @@
                     },
                     "Questionnaires": [
                         {
-                            "Name": "Patient History",
+                            "Name": "Customer History",
                             "Type": "History",
                             "Status": "New",
                             "IDs": [
@@ -58789,7 +58789,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -59127,7 +59127,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Please bring any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -59465,7 +59465,7 @@
                     "CancelRequestSent": false,
                     "Duration": 15,
                     "ConfirmInstant": null,
-                    "PatientInstructions": [
+                    "CustomerInstructions": [
                         "Bring list of current medications and any insurance information and a copayment if required by your insurance company."
                     ],
                     "SurgeryTimeOfDay": null,
@@ -59621,7 +59621,7 @@
                         }
                     ],
                     "VisitType": {
-                        "Name": "New Patient Appointment",
+                        "Name": "New Customer Appointment",
                         "IDs": [
                             {
                                 "ID": "    1003",

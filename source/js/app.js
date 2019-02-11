@@ -50,7 +50,7 @@ import paymentConfirmation from "../components/billing/payment-confirmation.vue"
 import paymentResult from "../components/billing/payment-result.vue";
 import phoneBook from "../components/modal-component/phone-book.vue";
 import blankPage from '../components/empty/blank-page.vue';
-import searchPatient from "../components/modal-component/search-patient.vue";
+import searchCustomer from "../components/modal-component/search-patient.vue";
 import updateReferral from "../components/modal-component/update-referral.vue";
 import detailReferral from "../components/modal-component/detail-referral.vue";
 
@@ -67,7 +67,7 @@ let appData = {
   paymentResult: null,
   userIsVerify: false,
   currentShowPhoneBook: false,
-  currentShowSearchPatient: false,
+  currentShowSearchCustomer: false,
   currentShowDetailReferral: false,
   currentShowUpdateReferral: false,
   newCallerName: '',
@@ -174,7 +174,7 @@ let App = new Vue({
               let data = _mockup;
               
               let array = ['EHR']; 
-              data.Patients.forEach((item, i) => {
+              data.Customers.forEach((item, i) => {
                   if(item.Category=='EHR')
                       array.push(item.Name);
               });
@@ -235,8 +235,8 @@ let App = new Vue({
       console.log('PHONE_CLICKED: !!!', vm.currentShowPhoneBook )
       vm.currentShowPhoneBook = !vm.currentShowPhoneBook;
     },
-    showSearchPatient: function () {
-      this.currentShowSearchPatient = !this.currentShowSearchPatient
+    showSearchCustomer: function () {
+      this.currentShowSearchCustomer = !this.currentShowSearchCustomer
     },
     showDetailReferral: function (index) {
       this.referralIndex = index;
@@ -296,7 +296,7 @@ let App = new Vue({
     blankPage,
     Multiselect,
     boardBlock,
-    searchPatient,
+    searchCustomer,
     updateReferral,
     detailReferral,
   },

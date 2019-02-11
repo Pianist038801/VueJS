@@ -4,7 +4,7 @@
             .modal__content-row
                 
                     .modal-appointment__title
-                        .title.mod--modal-appointment Search Patient
+                        .title.mod--modal-appointment Search Customer
  
                         .modal-content-row
   
@@ -23,7 +23,7 @@
                             .modal-appointment__info-lang
                                 multiselect(
                                 v-model="searchType",
-                                :options="['Patient MRN', 'Patient First Name', 'Patient Last Name', 'Patient DOB','Patient Zip', 'Patient Phone Number', 'Patient SSN']",
+                                :options="['Customer MRN', 'Customer First Name', 'Customer Last Name', 'Customer DOB','Customer Zip', 'Customer Phone Number', 'Customer SSN']",
                                 @input="showType",
                                 :searchable="false",
                                 :allowEmpty="false",
@@ -42,7 +42,7 @@
                     th.g-align-center ZIP
                     th.g-align-center Phone Number
                     th.g-align-center SSN
-                tr(v-for="(patient, index) in $root._data.Patients",v-bind:style="{color: patient==chosen?'red':'black'}", v-if="ifShow(patient)==true" @click="clickRow(patient)")
+                tr(v-for="(patient, index) in $root._data.Customers",v-bind:style="{color: patient==chosen?'red':'black'}", v-if="ifShow(patient)==true" @click="clickRow(patient)")
                 
                     td().g-align-center {{patient.MRN}}
                     td.g-align-center {{patient.Name.split(' ')[1]}}
@@ -97,19 +97,19 @@
                 if(this.searchKey==-1) return true;
                 if(this.searchType=='') return false;
                 switch(this.searchType){
-                    case 'Patient MRN':
+                    case 'Customer MRN':
                         return patient.MRN.indexOf(this.searchKey)>-1 ? true : false
-                    case 'Patient First Name':
+                    case 'Customer First Name':
                         return patient.Name.split(' ')[1].indexOf(this.searchKey)>-1 ? true : false
-                    case 'Patient Last Name':
+                    case 'Customer Last Name':
                         return patient.Name.split(' ')[0].indexOf(this.searchKey)>-1 ? true : false
-                    case 'Patient DOB':
+                    case 'Customer DOB':
                         return patient.DateOfBirth.split(' ')[0].indexOf(this.searchKey)>-1 ? true : false
-                    case 'Patient Zip':
+                    case 'Customer Zip':
                         return true
-                    case 'Patient Phone Number':
+                    case 'Customer Phone Number':
                         return patient.PhoneNumber.indexOf(this.searchKey)>-1 ? true : false
-                    case 'Patient SSN':
+                    case 'Customer SSN':
                         return patient.SSN.indexOf(this.searchKey)>-1 ? true : false
                 }
             },
@@ -119,13 +119,13 @@
             submit(){
                 
                 console.log('UHAHA');
-                console.log(this.$root._data.Patients[this.$root.activePacient])
+                console.log(this.$root._data.Customers[this.$root.activePacient])
                 const vm = this;
                 const results = {
                     destinationNo : this.phoneNumber.substring(this.phoneNumber.length - 13, this.phoneNumber.length - 1),
                     destinationName : this.phoneNumber.substring(0, this.phoneNumber.length - 14),
-                    patientName : this.$root._data.Patients[this.$root.activePacient].Name,
-                    patientMRN : this.$root._data.Patients[this.$root.activePacient].MRN,
+                    patientName : this.$root._data.Customers[this.$root.activePacient].Name,
+                    patientMRN : this.$root._data.Customers[this.$root.activePacient].MRN,
                     callerName : this.$root._data.callerInfo.callerName,
                     callerPhone : this.$root._data.callerInfo.callerNo,
                     callerType : this.$root._data.callerInfo.callerType,

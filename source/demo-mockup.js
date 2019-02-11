@@ -35,7 +35,7 @@ let data= {
   "callerInfo": {
     "callerName": "Johns Jacobs",
     "callerNo": "214-701-5489",
-    "callerType": "Patient",
+    "callerType": "Customer",
     "transferLocation": "NA",
     "hospital": "NA"
   },
@@ -141,7 +141,7 @@ let data= {
       "comments": ""
     }
   ],
-  "Patients": [{
+  "Customers": [{
     "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
     "Category": "EHR",
     "Name": "Johns Jacobs",
@@ -189,15 +189,15 @@ let data= {
         "type": "Evaluation",
         "date": "Mar 05, 2017",
         "eventType": "Admission",
-        "patientClass": "In Patient",
+        "patientClass": "In Customer",
         "admissionType": "Elective",
-        "dischargeDisposition": "30 - Still Patient"
+        "dischargeDisposition": "30 - Still Customer"
       },
       {
         "type": "Evaluation",
         "date": "Mar 15, 2018",
         "eventType": "Transfer In",
-        "patientClass": "In Patient",
+        "patientClass": "In Customer",
         "admissionType": "Elective",
         "dischargeDisposition": "02 - Transferred"
       }
@@ -252,14 +252,14 @@ let data= {
     "Location": {
       "DropdownRecords": [
         {
-          "Name": "Patient Geo Location",
+          "Name": "Customer Geo Location",
           "Address": "1431 T Ave, Fort Worth, TX 76179",
           "Position": {"lat": 32.944827, "lng": -96.645879},
           "Phone": "+1 (214)-701-5489",
           "Hours": "N / A",
           "Markers":[
             {
-              "Name": "Patient Geo Location"
+              "Name": "Customer Geo Location"
             , "Address": "1272 Belt Line Rd, Garland TX 75040"
             , "Position": {"lat": 32.944827, "lng": -96.645879}
             , "Phone": "+1 (214)-701-5489"
@@ -353,7 +353,7 @@ let data= {
         "Department": "SpinSci Clinic",
         "Provider": "Administrator",
         "VisitType": "Office Visit",
-        "VisitReason": "New Patient",
+        "VisitReason": "New Customer",
         "Appointment Details": {
           "Interpreter Required": "No",
           "IsRequired": "false",
@@ -436,8 +436,8 @@ let data= {
         "name": " JACOBS,JOHN ",
         "status": "Unpaid",
         "StatementId": "06642326",
-        "PatientName": "Johns Jacobs",
-        "PatientId": "28724351",
+        "CustomerName": "Johns Jacobs",
+        "CustomerId": "28724351",
         "Payer": "United",
         "ClaimType": "eClaims",
         "Date": "12/03/2017",
@@ -487,8 +487,8 @@ let data= {
       {
         "status": "Paid",
         "StatementId": "02534126",
-        "PatientName": "Johns Jacobs",
-        "PatientId": "28724351",
+        "CustomerName": "Johns Jacobs",
+        "CustomerId": "28724351",
         "Payer": "United",
         "ClaimType": "eClaims",
         "Date": "11/02/2016",
@@ -538,8 +538,8 @@ let data= {
       {
         "status": "Unpaid",
         "StatementId": "02512426",
-        "PatientName": "Johns Jacobs",
-        "PatientId": "28724351",
+        "CustomerName": "Johns Jacobs",
+        "CustomerId": "28724351",
         "Payer": "United",
         "ClaimType": "eClaims",
         "Date": "04/04/2015",
@@ -626,7 +626,7 @@ let data= {
         "dateEntered": "Mar 05, 2017",
         "dateNoted": "Mar 05, 2017",
         "reactions": "nausea and vomiting",
-        "reactionComments": "Patient was stung by a bee",
+        "reactionComments": "Customer was stung by a bee",
         "severity": "High",
         "type": "Intolerant"
       }
@@ -636,7 +636,7 @@ let data= {
         "type": "Office Visit",
         "date": "Jun 05, 2018",
         "eventType": "Hospital Outpatient",
-        "patientClass": "Our Patient",
+        "patientClass": "Our Customer",
         "admissionType": "Emergency",
         "dischargeDisposition": "09 - Admitted as an inpatient to this hospital"
       },
@@ -644,7 +644,7 @@ let data= {
         "type": "Orders Only",
         "date": "Mar 15, 2018",
         "eventType": "Admission",
-        "patientClass": "In Patient",
+        "patientClass": "In Customer",
         "admissionType": "Elective",
         "dischargeDisposition": "52 - The referring/prescribing/rendering provider is not eligible to refer/prescribe/order/perform the service billed"
       }
@@ -699,14 +699,14 @@ let data= {
     "Location": {
       "DropdownRecords": [
         {
-          "Name": "Patient Geo Location",
+          "Name": "Customer Geo Location",
           "Address": "1431 T Ave, Fort Worth, TX 76179",
           "Position": {"lat": 31.944827, "lng": -95.645879},
           "Phone": "+1 (253)-704-2531",
           "Hours": "N / A",
           "Markers":[
             {
-              "Name": "Patient Geo Location"
+              "Name": "Customer Geo Location"
             , "Address": "1272 Belt Line Rd, Garland TX 75040"
             , "Position": {"lat": 31.944827, "lng": -95.645879}
             , "Phone": "+1 (253)-704-2531"
@@ -800,7 +800,7 @@ let data= {
         "Department": "SpinSci Clinic",
         "Provider": "Administrator",
         "VisitType": "Office Visit",
-        "VisitReason": "New Patient",
+        "VisitReason": "New Customer",
         "Appointment Details": {
           "Interpreter Required": "No",
           "IsRequired": "false",
@@ -869,8 +869,8 @@ let data= {
         "name": " JONES,SARAH ",
         "status": "Unpaid",
         "StatementId": "06642326",
-        "PatientName": "Sarah Jones",
-        "PatientId": "28724301",
+        "CustomerName": "Sarah Jones",
+        "CustomerId": "28724301",
         "Payer": "United",
         "ClaimType": "eClaims",
         "Date": "12/03/2017",
@@ -920,8 +920,8 @@ let data= {
       {
         "status": "Paid",
         "StatementId": "02534126",
-        "PatientName": "Sarah Jones",
-        "PatientId": "28724301",
+        "CustomerName": "Sarah Jones",
+        "CustomerId": "28724301",
         "Payer": "United",
         "ClaimType": "eClaims",
         "Date": "11/02/2016",
@@ -971,8 +971,8 @@ let data= {
       {
         "status": "Unpaid",
         "StatementId": "02512426",
-        "PatientName": "Sarah Jones",
-        "PatientId": "28724301",
+        "CustomerName": "Sarah Jones",
+        "CustomerId": "28724301",
         "Payer": "United",
         "ClaimType": "eClaims",
         "Date": "04/04/2015",
@@ -1063,7 +1063,7 @@ let data= {
           "dateEntered": "Mar 05, 2017",
           "dateNoted": "Mar 05, 2017",
           "reactions": "nausea and vomiting",
-          "reactionComments": "Patient was stung by a bee",
+          "reactionComments": "Customer was stung by a bee",
           "severity": "High",
           "type": "Intolerant"
         }
@@ -1073,7 +1073,7 @@ let data= {
           "type": "Office Visit",
           "date": "Jun 05, 2018",
           "eventType": "Telephone",
-          "patientClass": "Our Patient",
+          "patientClass": "Our Customer",
           "admissionType": "Elective",
           "dischargeDisposition": "B2 - Covered visits. INACTIVE"
         },
@@ -1081,7 +1081,7 @@ let data= {
           "type": "Abstract",
           "date": "Mar 05, 2018",
           "eventType": "History",
-          "patientClass": "Our Patient",
+          "patientClass": "Our Customer",
           "admissionType": "Elective",
           "dischargeDisposition": "29 - The time limit for filing has expired"
         }
@@ -1114,8 +1114,8 @@ let data= {
           "name": " JACOBS,JOHN ",
           "status": "Unpaid",
           "StatementId": "06642326",
-          "PatientName": "Grace Paz",
-          "PatientId": "28724351",
+          "CustomerName": "Grace Paz",
+          "CustomerId": "28724351",
           "Payer": "United",
           "ClaimType": "eClaims",
           "Date": "12/03/2017",
@@ -1165,8 +1165,8 @@ let data= {
         {
           "status": "Paid",
           "StatementId": "02534126",
-          "PatientName": "Grace Paz",
-          "PatientId": "28724351",
+          "CustomerName": "Grace Paz",
+          "CustomerId": "28724351",
           "Payer": "United",
           "ClaimType": "eClaims",
           "Date": "11/02/2016",
@@ -1216,8 +1216,8 @@ let data= {
         {
           "status": "Unpaid",
           "StatementId": "02513426",
-          "PatientName": "Grace Paz",
-          "PatientId": "28724351",
+          "CustomerName": "Grace Paz",
+          "CustomerId": "28724351",
           "Payer": "United",
           "ClaimType": "eClaims",
           "Date": "08/02/2015",
@@ -1304,7 +1304,7 @@ let data= {
       "Location": {
         "DropdownRecords": [
           {
-            "Name": "Patient Geo Location",
+            "Name": "Customer Geo Location",
             "Address": "5234 T Ave, Fort Worth, TX 76179",
             "Position": {
               "lat": 31.900827,
@@ -1314,7 +1314,7 @@ let data= {
             "Hours": "N / A",
             "Markers": [
               {
-                "Name": "Patient Geo Location",
+                "Name": "Customer Geo Location",
                 "Address": "1272 Belt Line Rd, Garland TX 75040",
                 "Position": {
                   "lat": 31.900827,
@@ -1447,7 +1447,7 @@ let data= {
           "Department": "SpinSci Clinic",
           "Provider": "Administrator",
           "VisitType": "Office Visit",
-          "VisitReason": "New Patient",
+          "VisitReason": "New Customer",
           "Appointment Details": {
             "Interpreter Required": "No",
             "IsRequired": "false",
@@ -1463,7 +1463,7 @@ let data= {
           "Department": "SpinSci Clinic",
           "Provider": "Administrator",
           "VisitType": "Office Visit",
-          "VisitReason": "New Patient",
+          "VisitReason": "New Customer",
           "Appointment Details": {
             "Interpreter Required": "No",
             "IsRequired": "false",
@@ -1491,7 +1491,7 @@ let data= {
           "Department": "SpinSci Clinic",
           "Provider": "Administrator",
           "VisitType": "Office Visit",
-          "VisitReason": "New Patient",
+          "VisitReason": "New Customer",
           "Appointment Details": {
             "Interpreter Required": "No",
             "IsRequired": "false",
@@ -1551,15 +1551,15 @@ let data= {
           "type": "Evaluation",
           "date": "Mar 05, 2017",
           "eventType": "Admission",
-          "patientClass": "In Patient",
+          "patientClass": "In Customer",
           "admissionType": "Elective",
-          "dischargeDisposition": "30 - Still Patient"
+          "dischargeDisposition": "30 - Still Customer"
         },
         {
           "type": "Evaluation",
           "date": "Mar 15, 2018",
           "eventType": "Transfer In",
-          "patientClass": "In Patient",
+          "patientClass": "In Customer",
           "admissionType": "Elective",
           "dischargeDisposition": "02 - Transferred"
         }
@@ -1614,14 +1614,14 @@ let data= {
       "Location": {
         "DropdownRecords": [
           {
-            "Name": "Patient Geo Location",
+            "Name": "Customer Geo Location",
             "Address": "1431 T Ave, Fort Worth, TX 76179",
             "Position": {"lat": 32.944827, "lng": -96.645879},
             "Phone": "+1 (214)-701-5489",
             "Hours": "N / A",
             "Markers":[
               {
-                "Name": "Patient Geo Location"
+                "Name": "Customer Geo Location"
               , "Address": "1272 Belt Line Rd, Garland TX 75040"
               , "Position": {"lat": 32.944827, "lng": -96.645879}
               , "Phone": "+1 (214)-701-5489"
@@ -1798,8 +1798,8 @@ let data= {
           "name": " JACOBS,JOHN ",
           "status": "Unpaid",
           "StatementId": "06642326",
-          "PatientName": "Johns Jacobs",
-          "PatientId": "28724351",
+          "CustomerName": "Johns Jacobs",
+          "CustomerId": "28724351",
           "Payer": "United",
           "ClaimType": "eClaims",
           "Date": "12/03/2017",
@@ -1849,8 +1849,8 @@ let data= {
         {
           "status": "Paid",
           "StatementId": "02534126",
-          "PatientName": "Johns Jacobs",
-          "PatientId": "28724351",
+          "CustomerName": "Johns Jacobs",
+          "CustomerId": "28724351",
           "Payer": "United",
           "ClaimType": "eClaims",
           "Date": "11/02/2016",
@@ -1900,8 +1900,8 @@ let data= {
         {
           "status": "Unpaid",
           "StatementId": "02512426",
-          "PatientName": "Johns Jacobs",
-          "PatientId": "28724351",
+          "CustomerName": "Johns Jacobs",
+          "CustomerId": "28724351",
           "Payer": "United",
           "ClaimType": "eClaims",
           "Date": "04/04/2015",
@@ -2088,7 +2088,7 @@ let data= {
     ],
     "GoogleMapIMG": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Google_maps_screenshot.png/300px-Google_maps_screenshot.png",
     "SmsConfirmTemplate": "Dear [PATIENTNAME] , we have scheduled an appointment with you for [APPTDATE] at [FACILITY]. Regards, [DRNAME]",
-    "EmailConfirmTemplate": "Dear [PATIENTNAME]: This letter is to confirm your appointment at [APPTDATE]. Please plan to arrive approximately 30 minutes prior to your scheduled appointment to allow time for you and your significant other to sign consent forms that are required for your treatment. It is important that your significant other is able to accompany you to your appointments as much as possible. With the type of care we provide, we may be unable to schedule/perform certain procedures without their signature.\n\nPlease complete the following informational forms and return to our office prior to your appointment.\n+ Patient Information Page \n+ Medical History Form\nThis will enable us to thoroughly review your medical background and provide you with the best possible care. If you have been seen by another physician, please request that your medical records be forwarded to our office prior to your appointment, as well. \n\nIn an effort to be HIPAA compliant and to protect your private health information and identity, we require that you bring your photo I.D. and insurance card to your first visit.\n\nAs a courtesy to you we will submit your insurance claims for you; however any copayments will be collected at time of service. For any non insured patients, fees for all office visits and related charges are payable at the time of service. \n\nMy staff and I appreciate your selecting our office for your health care. We recognize the trust and responsibility placed in us and we will do everything possible to provide for those needs. \n\nWe look forward to seeing you!\nSincerely,\n[DRNAME]"
+    "EmailConfirmTemplate": "Dear [PATIENTNAME]: This letter is to confirm your appointment at [APPTDATE]. Please plan to arrive approximately 30 minutes prior to your scheduled appointment to allow time for you and your significant other to sign consent forms that are required for your treatment. It is important that your significant other is able to accompany you to your appointments as much as possible. With the type of care we provide, we may be unable to schedule/perform certain procedures without their signature.\n\nPlease complete the following informational forms and return to our office prior to your appointment.\n+ Customer Information Page \n+ Medical History Form\nThis will enable us to thoroughly review your medical background and provide you with the best possible care. If you have been seen by another physician, please request that your medical records be forwarded to our office prior to your appointment, as well. \n\nIn an effort to be HIPAA compliant and to protect your private health information and identity, we require that you bring your photo I.D. and insurance card to your first visit.\n\nAs a courtesy to you we will submit your insurance claims for you; however any copayments will be collected at time of service. For any non insured patients, fees for all office visits and related charges are payable at the time of service. \n\nMy staff and I appreciate your selecting our office for your health care. We recognize the trust and responsibility placed in us and we will do everything possible to provide for those needs. \n\nWe look forward to seeing you!\nSincerely,\n[DRNAME]"
   }
 }
 
@@ -2108,52 +2108,52 @@ function Purify(_data) {
   }
 
   
-  for(i = 0; i<_data.Patients.length; i++)
+  for(i = 0; i<_data.Customers.length; i++)
   {
     //Purify Appointment Date
-    for(let j = 0 ; j<_data.Patients[i].PastAppointments.length; j++)
+    for(let j = 0 ; j<_data.Customers[i].PastAppointments.length; j++)
     {
       let date = new Date();
       date.setDate(date.getDate() - 40 + 7 * j)
-      data.Patients[i].PastAppointments[j].Date = (parseInt(date.getMonth()) + 1 ) + '-' + ( date.getDate() < 10 ? ('0' + date.getDate()) : date.getDate() ) + '-' + date.getFullYear() + ' 15:00:00';
+      data.Customers[i].PastAppointments[j].Date = (parseInt(date.getMonth()) + 1 ) + '-' + ( date.getDate() < 10 ? ('0' + date.getDate()) : date.getDate() ) + '-' + date.getFullYear() + ' 15:00:00';
     }
-    for(j = 0 ; j<_data.Patients[i].CurrentAppointments.length ; j++)
+    for(j = 0 ; j<_data.Customers[i].CurrentAppointments.length ; j++)
     {
       let date = new Date();
-      if(j==_data.Patients[i].CurrentAppointments.length-1)
+      if(j==_data.Customers[i].CurrentAppointments.length-1)
         date.setDate(date.getDate() + 5 * j + 15)
       else
         date.setDate(date.getDate() + 5 * j)
-      data.Patients[i].CurrentAppointments[j].Date = (parseInt(date.getMonth()) + 1 ) + '-' + ( date.getDate() < 10 ? ('0' + date.getDate()) : date.getDate() ) + '-' + date.getFullYear() + ' 15:00:00';
+      data.Customers[i].CurrentAppointments[j].Date = (parseInt(date.getMonth()) + 1 ) + '-' + ( date.getDate() < 10 ? ('0' + date.getDate()) : date.getDate() ) + '-' + date.getFullYear() + ' 15:00:00';
     }
 
     //Purify Billing Date
-    for(j = 0 ; j<_data.Patients[i].BillHistory.length; j++)
+    for(j = 0 ; j<_data.Customers[i].BillHistory.length; j++)
     {
       let date = new Date();
       date.setDate(date.getDate() - 140 + 20 * j)
-      data.Patients[i].BillHistory[j].Date = (parseInt(date.getMonth()) + 1 ) + '/' + date.getDate() + '/' + date.getFullYear();
-      for(let k = 0; k < _data.Patients[i].BillHistory[j].reviews.length ; k++)
+      data.Customers[i].BillHistory[j].Date = (parseInt(date.getMonth()) + 1 ) + '/' + date.getDate() + '/' + date.getFullYear();
+      for(let k = 0; k < _data.Customers[i].BillHistory[j].reviews.length ; k++)
       {
-        data.Patients[i].BillHistory[j].reviews[k].date = data.Patients[i].BillHistory[j].Date
+        data.Customers[i].BillHistory[j].reviews[k].date = data.Customers[i].BillHistory[j].Date
       }
     }
     
     //Purify Triage-Allergies Date
-    for(j = 0 ; j<_data.Patients[i].allergies.length; j++)
+    for(j = 0 ; j<_data.Customers[i].allergies.length; j++)
     {
       let date = new Date();
       date.setDate(date.getDate() - 50 + 11 * j)
-      data.Patients[i].allergies[j].dateEntered = (parseInt(date.getMonth()) + 1 ) + '/' + date.getDate() + '/' + date.getFullYear();
-      data.Patients[i].allergies[j].dateNoted = data.Patients[i].allergies[j].dateEntered
+      data.Customers[i].allergies[j].dateEntered = (parseInt(date.getMonth()) + 1 ) + '/' + date.getDate() + '/' + date.getFullYear();
+      data.Customers[i].allergies[j].dateNoted = data.Customers[i].allergies[j].dateEntered
     }
 
     //Purify Triage-Encounters Date
-    for(j = 0 ; j<_data.Patients[i].encounters.length; j++)
+    for(j = 0 ; j<_data.Customers[i].encounters.length; j++)
     {
       let date = new Date();
       date.setDate(date.getDate() - 140 + 30 * j)
-      data.Patients[i].encounters[j].date = (parseInt(date.getMonth()) + 1 ) + '/' + date.getDate() + '/' + date.getFullYear();
+      data.Customers[i].encounters[j].date = (parseInt(date.getMonth()) + 1 ) + '/' + date.getDate() + '/' + date.getFullYear();
     }
   }
   

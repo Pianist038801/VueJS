@@ -38,7 +38,7 @@
                         .case-managment__top-item-box-note STL eHospitalist
 
                 .case-managment__top-item
-                    .case-managment__top-item-label  Patient Last Name
+                    .case-managment__top-item-label  Customer Last Name
                     .case-managment__top-item-box
                         .case-managment__top-item-box-note johnson
 

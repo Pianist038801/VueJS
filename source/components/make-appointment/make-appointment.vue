@@ -269,7 +269,7 @@
 
                 let currentTime = vm.$moment(vm.existingApointmentSlots[vm.activeBookItem].StartTime);
                 let time = currentTime.format("HH:mm:ss");
-                vm.$root._data.Patients[vm.$root.activePacient].CurrentAppointments.push({
+                vm.$root._data.Customers[vm.$root.activePacient].CurrentAppointments.push({
                     Date: this.filterDate(this.date),
                     Time: time,
                     Department: vm.departmentSelect,
@@ -305,7 +305,7 @@
                         msg = msg.replace ( '[DRNAME]' , vm.physicianSelect ) ;
                         msg = msg.replace ( '[FACILITY]' , vm.facilitySelect ) ;
                         msg = msg.replace ( '[APPTDATE]' , vm.existingApointmentSlots[vm.activeBookItem].StartTime ) ;
-                        msg = msg.replace ( '[PATIENTNAME]' , vm.$root._data. Patients[vm.$root.activePacient] . Name ) ;
+                        msg = msg.replace ( '[PATIENTNAME]' , vm.$root._data. Customers[vm.$root.activePacient] . Name ) ;
 
                         console . log ( msg ) ;
 

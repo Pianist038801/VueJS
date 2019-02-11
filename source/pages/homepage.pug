@@ -11,7 +11,7 @@ block content
         div.layout
             div.layout__sidebar
                 div.layout__sidebar-scrolling
-                    sidebar-pacient(:pacients="$root._data.Patients", :active="activePacient")
+                    sidebar-pacient(:pacients="$root._data.Customers", :active="activePacient")
             div.layout__content
                 .layout__content-scrolling
                     transition(name="fade", mode='out-in')
@@ -23,14 +23,14 @@ block content
                         .content(v-if="$root.currentShowBox ==='home' && !currentShowSubBox", key="home")
                             .content__top-line
                                 h1.title Caller Information
-                                a(href="#3", @click.prevent="$root.showSearchPatient()").content__top-action
-                                    h1.title.inline-block Search Patient
+                                a(href="#3", @click.prevent="$root.showSearchCustomer()").content__top-action
+                                    h1.title.inline-block Search Customer
                                     svg.ico-svg__search-patient
                                         use(xlink:href="#search")
                             transition(name="fade", mode='out-in')
                                 .content
                                     .content__box
-                                        search-patient(:show="$root.currentShowSearchPatient")
+                                        search-patient(:show="$root.currentShowSearchCustomer")
                             div().ccase-managment
                                 .ccase-managment__top
                                     .ccase-managment__top-item
@@ -53,7 +53,7 @@ block content
                                     .ccase-managment__top-item
                                         span().infoname Call Type
                                         multiselect(
-                                            :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
+                                            :options="['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
                                             :searchable="false",
                                             v-model="$root._data.dropdownCallerType",
                                             :allowEmpty="false",
@@ -87,7 +87,7 @@ block content
                                     .ccase-managment__top-rect.inline-block
                                         board-block(:count='$root.activePacient==0?2:4', :text="'Inbound'", :col="'green'")
                             .content__box
-                                journey-map(:info="$root._data.Patients[$root.activePacient]")    
+                                journey-map(:info="$root._data.Customers[$root.activePacient]")    
 
                         //-show scheduling
                         .content(v-if="$root.currentShowBox ==='scheduling' && !currentShowSubBox", key="scheduling")
@@ -115,7 +115,7 @@ block content
                                     .ccase-managment__top-item
                                         span().infoname Call Type
                                         multiselect(
-                                            :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
+                                            :options="['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
                                             :searchable="false",
                                             v-model="$root._data.dropdownCallerType",
                                             :allowEmpty="false",
@@ -131,13 +131,13 @@ block content
                                     textarea(:value="$root._data.callerNotes" readonly).full-width
 
                             .content__top-line
-                                h1.title Patient Schedule
+                                h1.title Customer Schedule
                                 a(href="#3", @click.prevent="$root.currentShowSubBox = 'make-appointment'").content__top-action
                                     svg.ico-svg.ico-svg__plus-round
                                         use(xlink:href="#plus-round")
                             .content__box
-                                appointment(:patients="$root._data.Patients[$root.activePacient]")
-                                journey-map(:info="$root._data.Patients[$root.activePacient]")
+                                appointment(:patients="$root._data.Customers[$root.activePacient]")
+                                journey-map(:info="$root._data.Customers[$root.activePacient]")
 
                         //-show case-managment
                         .content(v-if="$root.currentShowBox ==='case-managment' && !currentShowSubBox", key="case-managment")
@@ -165,7 +165,7 @@ block content
                                     .ccase-managment__top-item
                                         span().infoname Call Type
                                         multiselect(
-                                            :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
+                                            :options="['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
                                             :searchable="false",
                                             v-model="$root._data.dropdownCallerType",
                                             :allowEmpty="false",
@@ -212,7 +212,7 @@ block content
                                     .ccase-managment__top-item
                                         span().infoname Call Type
                                         multiselect(
-                                            :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
+                                            :options="['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
                                             :searchable="false",
                                             v-model="$root._data.dropdownCallerType",
                                             :allowEmpty="false",
@@ -238,9 +238,9 @@ block content
                                             :showLabels="false"
                                         ).ui-multiselect.ui-multiselect--default.inline-block
                             .content__box
-                                card(:patients="$root._data.Patients[$root.activePacient]")
-                                allergies(:patients="$root._data.Patients[$root.activePacient]")
-                                encounters(:patients="$root._data.Patients[$root.activePacient]")
+                                card(:patients="$root._data.Customers[$root.activePacient]")
+                                allergies(:patients="$root._data.Customers[$root.activePacient]")
+                                encounters(:patients="$root._data.Customers[$root.activePacient]")
                         //-show billing
                         .content(v-if="$root.currentShowBox ==='billing' && !currentShowSubBox", key="billing")
                             .content__top-line
@@ -267,7 +267,7 @@ block content
                                     .ccase-managment__top-item
                                         span().infoname Call Type
                                         multiselect(
-                                            :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
+                                            :options="['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
                                             :searchable="false",
                                             v-model="$root._data.dropdownCallerType",
                                             :allowEmpty="false",
@@ -283,10 +283,10 @@ block content
                                     textarea(:value="$root._data.callerNotes" readonly).full-width
                             
                             .content__top-line
-                                h1.title Patient Billing
+                                h1.title Customer Billing
                             .content__box
-                                patient-billing(:patient="$root._data.Patients[$root.activePacient]")
-                                billing-history(:history="$root._data.Patients[$root.activePacient].BillHistory",@pay-bill="$root.payBill",@show-statement-review="$root.showStatementReview")
+                                patient-billing(:patient="$root._data.Customers[$root.activePacient]")
+                                billing-history(:history="$root._data.Customers[$root.activePacient].BillHistory",@pay-bill="$root.payBill",@show-statement-review="$root.showStatementReview")
                         
                         //-show statement review
                         .content(v-if="$root.currentShowBox ==='statement_review' && !currentShowSubBox", key="statement_review")
@@ -299,7 +299,7 @@ block content
                                                 use(xlink:href="#more")
                                         .sub-popup-menu__list
                                             a(href="#3", @click.prevent="showImage()").sub-popup-menu__item1 Expand Details
-                                            a(href="#3", @click.prevent="openNewWindow($root.epicAddress)").sub-popup-menu__item View in {{$root._data.Patients[$root.activePacient].Category=='EHR'?'EHR':"EHR"}}
+                                            a(href="#3", @click.prevent="openNewWindow($root.epicAddress)").sub-popup-menu__item View in {{$root._data.Customers[$root.activePacient].Category=='EHR'?'EHR':"EHR"}}
                                             a(href="#3", @click.prevent="payBill($root._data.billItem)").sub-popup-menu__item1 Pay Bill
                                             a(href="#3").sub-popup-menu__item1 Adjust
                                             a(href="#3").sub-popup-menu__item1 Print
@@ -374,7 +374,7 @@ block content
                                     .ccase-managment__top-item
                                         span().infoname Call Type
                                         multiselect(
-                                            :options="['Patient', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
+                                            :options="['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
                                             :searchable="false",
                                             v-model="$root._data.dropdownCallerType",
                                             :allowEmpty="false",
@@ -393,20 +393,20 @@ block content
                                 h1.title Referrals
                             .content__box
                                 referral(:referrals="$root._data.Referrals")
-                                journey-map(:info="$root._data.Patients[$root.activePacient]")
+                                journey-map(:info="$root._data.Customers[$root.activePacient]")
                     
                         //-show Pharmacy
                         .content(v-if="$root.currentShowBox ==='pharmacy' && !currentShowSubBox", key="pharmacy")
                             .content__top-line
                                 h1.title Dialer Information
-                                a(href="#3", @click.prevent="$root.showSearchPatient()").content__top-action
-                                    h1.title.inline-block Search Patient
+                                a(href="#3", @click.prevent="$root.showSearchCustomer()").content__top-action
+                                    h1.title.inline-block Search Customer
                                     svg.ico-svg__search-patient
                                         use(xlink:href="#search")
                             transition(name="fade", mode='out-in')
                                 .content
                                     .content__box
-                                        search-patient(:show="$root.currentShowSearchPatient")
+                                        search-patient(:show="$root.currentShowSearchCustomer")
                             div().ccase-managment
                                 .ccase-managment__top
 
@@ -443,14 +443,14 @@ block content
                         //-show patient-information
                         .content(v-if="$root.currentShowSubBox ==='patient-info'", key="patient-info")
                             .content__top-line
-                                h1.title Patient Information
+                                h1.title Customer Information
                                 a(href="#3", @click.prevent="$root.currentShowSubBox = null").content__top-action
                                     svg.ico-svg.ico-svg__close 
                                         use(xlink:href="#close")
                             .content__box
-                                patient-info(:info="$root._data.Patients[$root.activePacient]")
-                                pharmacy(:info="$root._data.Patients[$root.activePacient]")
-                                journey-map(:info="$root._data.Patients[$root.activePacient]")
+                                patient-info(:info="$root._data.Customers[$root.activePacient]")
+                                pharmacy(:info="$root._data.Customers[$root.activePacient]")
+                                journey-map(:info="$root._data.Customers[$root.activePacient]")
                     
                         //-show make-appointment
                             Make Appointment

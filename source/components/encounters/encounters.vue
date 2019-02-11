@@ -11,7 +11,7 @@
                 th Type
                 th Date
                 th Event Type
-                th Patient Class
+                th Customer Class
                 th Admission Type
                 th Discharge Disposition
             

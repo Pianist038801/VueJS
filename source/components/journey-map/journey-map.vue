@@ -1,6 +1,6 @@
 <template lang="pug">
     div.journey-map
-        h2.title.mod--journey Patient Journey Map
+        h2.title.mod--journey Customer Journey Map
 
         .journey-map-selects
             multiselect(
@@ -60,7 +60,7 @@
                         .tooltip__note <b>Call type</b>: Inbound
                         .tooltip__note <b>Date/Time</b>: {{journey_select.name}}
                         .tooltip__note <b>SMS</b>:  Appintment Confimation
-                        .tooltip__note <b>Customet Action</b>: Patient clicked yes
+                        .tooltip__note <b>Customet Action</b>: Customer clicked yes
                         .tooltip__note <b>SMS Outcome</b>:  Confirmed Appointment
                         .tooltip__note <b>Agent ID</b>:  749936
                         .tooltip__note <b>Agent Name</b>:  James King

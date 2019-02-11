@@ -36,7 +36,7 @@
                 th Workgroup
                 th Team
                 th Hospital
-                th Patient Last Name
+                th Customer Last Name
                 th Urgent
                 th Bed Number
                 th Caller

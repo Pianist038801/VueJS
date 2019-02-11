@@ -81,13 +81,13 @@
             submit(){
                 
                 console.log('UHAHA');
-                console.log(this.$root._data.Patients[this.$root.activePacient])
+                console.log(this.$root._data.Customers[this.$root.activePacient])
                 const vm = this;
                 const results = {
                     destinationNo : this.phoneNumber.substring(this.phoneNumber.length - 13, this.phoneNumber.length - 1),
                     destinationName : this.phoneNumber.substring(0, this.phoneNumber.length - 14),
-                    patientName : this.$root._data.Patients[this.$root.activePacient].Name,
-                    patientMRN : this.$root._data.Patients[this.$root.activePacient].MRN,
+                    patientName : this.$root._data.Customers[this.$root.activePacient].Name,
+                    patientMRN : this.$root._data.Customers[this.$root.activePacient].MRN,
                     callerName : this.$root._data.callerInfo.callerName,
                     callerPhone : this.$root._data.callerInfo.callerNo,
                     callerType : this.$root._data.callerInfo.callerType,

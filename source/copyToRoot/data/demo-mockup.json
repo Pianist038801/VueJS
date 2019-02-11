@@ -3,7 +3,7 @@
   "callerInfo": {
     "callerName": "Johns Jacobs",
     "callerNo": "",
-    "callerType": "Patient",
+    "callerType": "Customer",
     "transferLocation": "NA",
     "hospital": "NA"
   },
@@ -112,7 +112,7 @@
       "comments": ""
     }
   ],
-  "Patients": [{
+  "Customers": [{
     "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
     "Category": "EHR",
     "Name": "Johns Jacobs",
@@ -160,15 +160,15 @@
         "type": "Evaluation",
         "date": "Mar 05, 2017",
         "eventType": "Admission",
-        "patientClass": "In Patient",
+        "patientClass": "In Customer",
         "admissionType": "Elective",
-        "dischargeDisposition": "30 - Still Patient"
+        "dischargeDisposition": "30 - Still Customer"
       },
       {
         "type": "Evaluation",
         "date": "Mar 15, 2018",
         "eventType": "Transfer In",
-        "patientClass": "In Patient",
+        "patientClass": "In Customer",
         "admissionType": "Elective",
         "dischargeDisposition": "02 - Transferred"
       }
@@ -223,14 +223,14 @@
     "Location": {
       "DropdownRecords": [
         {
-          "Name": "Patient Geo Location",
+          "Name": "Customer Geo Location",
           "Address": "1431 T Ave, Fort Worth, TX 76179",
           "Position": {"lat": 32.944827, "lng": -96.645879},
           "Phone": "+1 (214)-701-5489",
           "Hours": "N / A",
           "Markers":[
             {
-              "Name": "Patient Geo Location"
+              "Name": "Customer Geo Location"
             , "Address": "1272 Belt Line Rd, Garland TX 75040"
             , "Position": {"lat": 32.944827, "lng": -96.645879}
             }
@@ -313,7 +313,7 @@
         "Department": "SpinSci Clinic",
         "Provider": "Administrator",
         "VisitType": "Office Visit",
-        "VisitReason": "New Patient",
+        "VisitReason": "New Customer",
         "Appointment Details": {
           "Interpreter Required": "No",
           "IsRequired": "false",
@@ -396,8 +396,8 @@
         "name": " JACOBS,JOHN ",
         "status": "Unpaid",
         "StatementId": "06642326",
-        "PatientName": "Johns Jacobs",
-        "PatientId": "28724351",
+        "CustomerName": "Johns Jacobs",
+        "CustomerId": "28724351",
         "Payer": "United",
         "ClaimType": "eClaims",
         "Date": "12/03/2017",
@@ -447,8 +447,8 @@
       {
         "status": "Paid",
         "StatementId": "02534126",
-        "PatientName": "Johns Jacobs",
-        "PatientId": "28724351",
+        "CustomerName": "Johns Jacobs",
+        "CustomerId": "28724351",
         "Payer": "United",
         "ClaimType": "eClaims",
         "Date": "11/02/2016",
@@ -498,8 +498,8 @@
       {
         "status": "Unpaid",
         "StatementId": "02512426",
-        "PatientName": "Johns Jacobs",
-        "PatientId": "48724351",
+        "CustomerName": "Johns Jacobs",
+        "CustomerId": "48724351",
         "Payer": "United",
         "ClaimType": "eClaims",
         "Date": "04/04/2015",
@@ -586,7 +586,7 @@
         "dateEntered": "Mar 05, 2017",
         "dateNoted": "Mar 05, 2017",
         "reactions": "nausea and vomiting",
-        "reactionComments": "Patient was stung by a bee",
+        "reactionComments": "Customer was stung by a bee",
         "severity": "High",
         "type": "Intolerant"
       }
@@ -596,7 +596,7 @@
         "type": "Office Visit",
         "date": "Jun 05, 2018",
         "eventType": "Hospital Outpatient",
-        "patientClass": "Our Patient",
+        "patientClass": "Our Customer",
         "admissionType": "Emergency",
         "dischargeDisposition": "09 - Admitted as an inpatient to this hospital"
       },
@@ -604,7 +604,7 @@
         "type": "Orders Only",
         "date": "Mar 15, 2018",
         "eventType": "Admission",
-        "patientClass": "In Patient",
+        "patientClass": "In Customer",
         "admissionType": "Elective",
         "dischargeDisposition": "52 - The referring/prescribing/rendering provider is not eligible to refer/prescribe/order/perform the service billed"
       }
@@ -659,14 +659,14 @@
     "Location": {
       "DropdownRecords": [
         {
-          "Name": "Patient Geo Location",
+          "Name": "Customer Geo Location",
           "Address": "1431 T Ave, Fort Worth, TX 76179",
           "Position": {"lat": 32.944827, "lng": -96.645879},
           "Phone": "+1 (253)-704-2531",
           "Hours": "N / A",
           "Markers":[
             {
-              "Name": "Patient Geo Location"
+              "Name": "Customer Geo Location"
             , "Address": "1272 Belt Line Rd, Garland TX 75040"
             , "Position": {"lat": 31.944827, "lng": -95.645879}
             }
@@ -749,7 +749,7 @@
         "Department": "SpinSci Clinic",
         "Provider": "Administrator",
         "VisitType": "Office Visit",
-        "VisitReason": "New Patient",
+        "VisitReason": "New Customer",
         "Appointment Details": {
           "Interpreter Required": "No",
           "IsRequired": "false",
@@ -818,8 +818,8 @@
         "name": " JONES,SARAH ",
         "status": "Unpaid",
         "StatementId": "06642326",
-        "PatientName": "Sarah Jones",
-        "PatientId": "28724301",
+        "CustomerName": "Sarah Jones",
+        "CustomerId": "28724301",
         "Payer": "United",
         "ClaimType": "eClaims",
         "Date": "12/03/2017",
@@ -869,8 +869,8 @@
       {
         "status": "Paid",
         "StatementId": "02534126",
-        "PatientName": "Sarah Jones",
-        "PatientId": "28724301",
+        "CustomerName": "Sarah Jones",
+        "CustomerId": "28724301",
         "Payer": "United",
         "ClaimType": "eClaims",
         "Date": "11/02/2016",
@@ -920,8 +920,8 @@
       {
         "status": "Unpaid",
         "StatementId": "02512426",
-        "PatientName": "Sarah Jones",
-        "PatientId": "48724351",
+        "CustomerName": "Sarah Jones",
+        "CustomerId": "48724351",
         "Payer": "United",
         "ClaimType": "eClaims",
         "Date": "04/04/2015",
@@ -1012,7 +1012,7 @@
           "dateEntered": "Mar 05, 2017",
           "dateNoted": "Mar 05, 2017",
           "reactions": "nausea and vomiting",
-          "reactionComments": "Patient was stung by a bee",
+          "reactionComments": "Customer was stung by a bee",
           "severity": "High",
           "type": "Intolerant"
         }
@@ -1022,7 +1022,7 @@
           "type": "Office Visit",
           "date": "Jun 05, 2018",
           "eventType": "Telephone",
-          "patientClass": "Our Patient",
+          "patientClass": "Our Customer",
           "admissionType": "Elective",
           "dischargeDisposition": "B2 - Covered visits. INACTIVE"
         },
@@ -1030,7 +1030,7 @@
           "type": "Abstract",
           "date": "Mar 05, 2018",
           "eventType": "History",
-          "patientClass": "Our Patient",
+          "patientClass": "Our Customer",
           "admissionType": "Elective",
           "dischargeDisposition": "29 - The time limit for filing has expired"
         }
@@ -1063,8 +1063,8 @@
           "name": " JACOBS,JOHN ",
           "status": "Unpaid",
           "StatementId": "06642326",
-          "PatientName": "Grace Paz",
-          "PatientId": "28724351",
+          "CustomerName": "Grace Paz",
+          "CustomerId": "28724351",
           "Payer": "United",
           "ClaimType": "eClaims",
           "Date": "12/03/2017",
@@ -1114,8 +1114,8 @@
         {
           "status": "Paid",
           "StatementId": "02534126",
-          "PatientName": "Grace Paz",
-          "PatientId": "28724351",
+          "CustomerName": "Grace Paz",
+          "CustomerId": "28724351",
           "Payer": "United",
           "ClaimType": "eClaims",
           "Date": "11/02/2016",
@@ -1165,8 +1165,8 @@
         {
           "status": "Unpaid",
           "StatementId": "02513426",
-          "PatientName": "Grace Paz",
-          "PatientId": "28724351",
+          "CustomerName": "Grace Paz",
+          "CustomerId": "28724351",
           "Payer": "United",
           "ClaimType": "eClaims",
           "Date": "08/02/2015",
@@ -1252,7 +1252,7 @@
       "Location": {
         "DropdownRecords": [
           {
-            "Name": "Patient Geo Location",
+            "Name": "Customer Geo Location",
             "Address": "5234 T Ave, Fort Worth, TX 76179",
             "Position": {
               "lat": 32.944827,
@@ -1262,7 +1262,7 @@
             "Hours": "N / A",
             "Markers": [
               {
-                "Name": "Patient Geo Location",
+                "Name": "Customer Geo Location",
                 "Address": "1272 Belt Line Rd, Garland TX 75040",
                 "Position": {
                   "lat": 32.944827,
@@ -1384,7 +1384,7 @@
           "Department": "SpinSci Clinic",
           "Provider": "Administrator",
           "VisitType": "Office Visit",
-          "VisitReason": "New Patient",
+          "VisitReason": "New Customer",
           "Appointment Details": {
             "Interpreter Required": "No",
             "IsRequired": "false",
@@ -1400,7 +1400,7 @@
           "Department": "SpinSci Clinic",
           "Provider": "Administrator",
           "VisitType": "Office Visit",
-          "VisitReason": "New Patient",
+          "VisitReason": "New Customer",
           "Appointment Details": {
             "Interpreter Required": "No",
             "IsRequired": "false",
@@ -1428,7 +1428,7 @@
           "Department": "SpinSci Clinic",
           "Provider": "Administrator",
           "VisitType": "Office Visit",
-          "VisitReason": "New Patient",
+          "VisitReason": "New Customer",
           "Appointment Details": {
             "Interpreter Required": "No",
             "IsRequired": "false",
@@ -1576,6 +1576,6 @@
     ],
     "GoogleMapIMG": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Google_maps_screenshot.png/300px-Google_maps_screenshot.png",
     "SmsConfirmTemplate": "Dear [PATIENTNAME] , we have scheduled an appointment with you for [APPTDATE] at [FACILITY]. Regards, [DRNAME]",
-    "EmailConfirmTemplate": "Dear [PATIENTNAME]: This letter is to confirm your appointment at [APPTDATE]. Please plan to arrive approximately 30 minutes prior to your scheduled appointment to allow time for you and your significant other to sign consent forms that are required for your treatment. It is important that your significant other is able to accompany you to your appointments as much as possible. With the type of care we provide, we may be unable to schedule/perform certain procedures without their signature.\n\nPlease complete the following informational forms and return to our office prior to your appointment.\n+ Patient Information Page \n+ Medical History Form\nThis will enable us to thoroughly review your medical background and provide you with the best possible care. If you have been seen by another physician, please request that your medical records be forwarded to our office prior to your appointment, as well. \n\nIn an effort to be HIPAA compliant and to protect your private health information and identity, we require that you bring your photo I.D. and insurance card to your first visit.\n\nAs a courtesy to you we will submit your insurance claims for you; however any copayments will be collected at time of service. For any non insured patients, fees for all office visits and related charges are payable at the time of service. \n\nMy staff and I appreciate your selecting our office for your health care. We recognize the trust and responsibility placed in us and we will do everything possible to provide for those needs. \n\nWe look forward to seeing you!\nSincerely,\n[DRNAME]"
+    "EmailConfirmTemplate": "Dear [PATIENTNAME]: This letter is to confirm your appointment at [APPTDATE]. Please plan to arrive approximately 30 minutes prior to your scheduled appointment to allow time for you and your significant other to sign consent forms that are required for your treatment. It is important that your significant other is able to accompany you to your appointments as much as possible. With the type of care we provide, we may be unable to schedule/perform certain procedures without their signature.\n\nPlease complete the following informational forms and return to our office prior to your appointment.\n+ Customer Information Page \n+ Medical History Form\nThis will enable us to thoroughly review your medical background and provide you with the best possible care. If you have been seen by another physician, please request that your medical records be forwarded to our office prior to your appointment, as well. \n\nIn an effort to be HIPAA compliant and to protect your private health information and identity, we require that you bring your photo I.D. and insurance card to your first visit.\n\nAs a courtesy to you we will submit your insurance claims for you; however any copayments will be collected at time of service. For any non insured patients, fees for all office visits and related charges are payable at the time of service. \n\nMy staff and I appreciate your selecting our office for your health care. We recognize the trust and responsibility placed in us and we will do everything possible to provide for those needs. \n\nWe look forward to seeing you!\nSincerely,\n[DRNAME]"
   }
 }

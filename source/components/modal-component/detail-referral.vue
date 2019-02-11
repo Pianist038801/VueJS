@@ -3,7 +3,7 @@
         .modal__content
             .modal__content-row
                 .modal-appointment__title
-                    .title.mod--modal-appointment Patient Referral Details 
+                    .title.mod--modal-appointment Customer Referral Details 
                     .referral-view__top
                         .referral__detail-field
                             span().infoname Referral Id    
@@ -20,13 +20,13 @@
 
                     .referral-view__top
                         .referral__detail-field
-                            span().infoname Patient Id    
+                            span().infoname Customer Id    
                             input(:value="this.$root._data.Referrals[this.$root._data.referralIndex].patientID" readonly).infovalue
                         .referral__detail-field
-                            span().infoname Patient Name
+                            span().infoname Customer Name
                             input(:value="this.$root._data.Referrals[this.$root._data.referralIndex].patientName" readonly).infovalue
                         .referral__detail-field-patient-address
-                            span().infoname_address Patient Address
+                            span().infoname_address Customer Address
                             input(:value="this.$root._data.Referrals[this.$root._data.referralIndex].patientAddress" readonly).infovalue-patient-address
 
                     .referral-view__top
@@ -85,19 +85,19 @@
                 if(this.searchKey==-1) return true;
                 if(this.searchType=='') return false;
                 switch(this.searchType){
-                    case 'Patient MRN':
+                    case 'Customer MRN':
                         return patient.MRN.indexOf(this.searchKey)>-1 ? true : false
-                    case 'Patient First Name':
+                    case 'Customer First Name':
                         return patient.Name.split(' ')[1].indexOf(this.searchKey)>-1 ? true : false
-                    case 'Patient Last Name':
+                    case 'Customer Last Name':
                         return patient.Name.split(' ')[0].indexOf(this.searchKey)>-1 ? true : false
-                    case 'Patient DOB':
+                    case 'Customer DOB':
                         return patient.DateOfBirth.split(' ')[0].indexOf(this.searchKey)>-1 ? true : false
-                    case 'Patient Zip':
+                    case 'Customer Zip':
                         return true
-                    case 'Patient Phone Number':
+                    case 'Customer Phone Number':
                         return patient.PhoneNumber.indexOf(this.searchKey)>-1 ? true : false
-                    case 'Patient SSN':
+                    case 'Customer SSN':
                         return patient.SSN.indexOf(this.searchKey)>-1 ? true : false
                 }
             },
@@ -107,13 +107,13 @@
             submit(){
                 
                 console.log('UHAHA');
-                console.log(this.$root._data.Patients[this.$root.activePacient])
+                console.log(this.$root._data.Customers[this.$root.activePacient])
                 const vm = this;
                 const results = {
                     destinationNo : this.phoneNumber.substring(this.phoneNumber.length - 13, this.phoneNumber.length - 1),
                     destinationName : this.phoneNumber.substring(0, this.phoneNumber.length - 14),
-                    patientName : this.$root._data.Patients[this.$root.activePacient].Name,
-                    patientMRN : this.$root._data.Patients[this.$root.activePacient].MRN,
+                    patientName : this.$root._data.Customers[this.$root.activePacient].Name,
+                    patientMRN : this.$root._data.Customers[this.$root.activePacient].MRN,
                     callerName : this.$root._data.callerInfo.callerName,
                     callerPhone : this.$root._data.callerInfo.callerNo,
                     callerType : this.$root._data.callerInfo.callerType,

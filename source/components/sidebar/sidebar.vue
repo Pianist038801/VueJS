@@ -1,6 +1,6 @@
 <template lang="pug">
     aside.sidebar(v-if='pacients')
-        .sidebar__title Patient Information
+        .sidebar__title Customer Information
         .l-sidebar__userpic
             .sidebar__userpic
                 img.sidebar__userpic-image(:src="pacients[currentPacient].PhotoUrl")
@@ -9,11 +9,11 @@
                         use(xlink:href="#info")
         .sidebar__note-userpic Number of Matches (<b>{{sizePacients}}</b>)
         .sidebar__section(v-if="currentPacientName === 'Opal Lee'")
-            .sidebar__high--risk High Risk Patient
+            .sidebar__high--risk High Risk Customer
                 span().tool-tip High risk alert: Maternity with Twins
         .l-sidebar__section
             .sidebar__section
-                .sidebar__section--note Patient Name
+                .sidebar__section--note Customer Name
 
                 //- select(v-model="currentPacientName")
                     option(v-for="item in pacients", :value="item.Name") {{item.Name}}
@@ -92,8 +92,8 @@
                 .sub-popup-menu__action
                     a(href="#3").ui-btn.ui-btn--skin-default.ui-btn--theme-primary.mod--block  Screen pop
                 .sub-popup-menu__list
-                    a(href="#3", @click.prevent="openNewWindow('http://10.1.74.36:2230/EPIC_InPatient/patient_scheduling/search.html')").sub-popup-menu__item Patient Search
-                    a(href="#3", @click.prevent="openNewWindow('https://i.ytimg.com/vi/RIsVxJWuQ8Y/maxresdefault.jpg')").sub-popup-menu__item Patient Information
+                    a(href="#3", @click.prevent="openNewWindow('http://10.1.74.36:2230/EPIC_InCustomer/patient_scheduling/search.html')").sub-popup-menu__item Customer Search
+                    a(href="#3", @click.prevent="openNewWindow('https://i.ytimg.com/vi/RIsVxJWuQ8Y/maxresdefault.jpg')").sub-popup-menu__item Customer Information
                     a(href="#3", @click.prevent="replaceNewWindow('alert:test')").sub-popup-menu__item Appointments Create
 
     // End
@@ -116,7 +116,7 @@
             openNewWindow(url, dataUrlField){
                 let strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
                 if (dataUrlField) {
-                    window.open(this.$root.$data.Patients[this.$root.$data.activePacient][dataUrlField], "CNN_WindowName", strWindowFeatures);
+                    window.open(this.$root.$data.Customers[this.$root.$data.activePacient][dataUrlField], "CNN_WindowName", strWindowFeatures);
                     return;
                 }
                 window.open(url, "CNN_WindowName", strWindowFeatures);
@@ -183,7 +183,7 @@
                 set: function (newValue) {
                     this.$store.dispatch('setName', newValue);
                     if(newValue === 'Opal Lee') {
-                        this.$root.$data.callerNotes = 'Patient is pregnant with twins, expectancy date soon';
+                        this.$root.$data.callerNotes = 'Customer is pregnant with twins, expectancy date soon';
                         this.$root._data.dropdownCallerName = 'Opal Lee';
                     } else {
                         this.$root.$data.callerNotes = '';
