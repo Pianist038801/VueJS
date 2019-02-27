@@ -24,7 +24,7 @@
       <div v-if="$root._data.isBlank==false">
 <!-- Begin header-->
 <header class="header">
-  <h1 class="logo"><img class="logo__link" src="https://drive.google.com/uc?id=1-uD2ofyildDaprkCazv6GnqzX0FH6ndg"></h1>
+  <h1 class="logo"><img class="logo__link" src="../img/logo_kaiser.png"></h1>
   <div class="header__tabs">
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='home'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'home'">Home</a></div>
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='scheduling'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'scheduling'">Scheduling</a></div>
@@ -273,7 +273,7 @@
                             <use xlink:href="#more"></use>
                           </svg>
                         </div>
-                        <div class="sub-popup-menu__list"><a class="sub-popup-menu__item1" href="#3" @click.prevent="showImage()">Expand Details</a><a class="sub-popup-menu__item" href="#3" @click.prevent="openNewWindow($root.epicAddress)">View in {{$root._data.Customers[$root.activePacient].Category=='EHR'?'EHR':"EHR"}}</a><a class="sub-popup-menu__item1" href="#3" @click.prevent="payBill($root._data.billItem)">Pay Bill</a><a class="sub-popup-menu__item1" href="#3">Adjust</a><a class="sub-popup-menu__item1" href="#3">Print</a><a class="sub-popup-menu__item" href="#3" @click.prevent="openNewWindow('http://uhealthsystem.com/images/content/UMH-statement.jpg')">Download as PDF</a></div>
+                        <div class="sub-popup-menu__list"><a class="sub-popup-menu__item1" href="#3" @click.prevent="showImage()">Expand Details</a><a class="sub-popup-menu__item" href="#3" @click.prevent="openNewWindow($root.epicAddress)">View in {{$root._data.Customers[$root.activePacient].Category=='EPIC'?'EPIC':"EPIC"}}</a><a class="sub-popup-menu__item1" href="#3" @click.prevent="payBill($root._data.billItem)">Pay Bill</a><a class="sub-popup-menu__item1" href="#3">Adjust</a><a class="sub-popup-menu__item1" href="#3">Print</a><a class="sub-popup-menu__item" href="#3" @click.prevent="openNewWindow('http://uhealthsystem.com/images/content/UMH-statement.jpg')">Download as PDF</a></div>
                       </div>
                     </div><a class="content__top-action" href="#3" @click.prevent="$root.goBack">
                       <svg class="ico-svg ico-svg__plus-close">

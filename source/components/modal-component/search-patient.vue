@@ -16,7 +16,7 @@
                                 :searchable="false",
                                 :allowEmpty="false",
                                 :showLabels="false",
-                                placeholder="Select EHR"
+                                placeholder="Select EPIC"
                                 ).ui-multiselect.ui-multiselect--default
  
 

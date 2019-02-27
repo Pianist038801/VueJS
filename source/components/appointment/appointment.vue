@@ -32,7 +32,7 @@
                             a(href="#3", @click.prevent="openModalInfo(patients.PastAppointments[index])").sub-popup-menu__item More details
                             a(href="#3").sub-popup-menu__item Reschedule Appointment
                             a(href="#3").sub-popup-menu__item Send Reminder
-                            a(href="#3", @click.prevent="openNewWindow($root.epicAddress)").sub-popup-menu__item Show in EHR
+                            a(href="#3", @click.prevent="openNewWindow($root.epicAddress)").sub-popup-menu__item Show in EPIC
                             a(href="#3", @click.prevent="showModal(patients.PastAppointments[index])").sub-popup-menu__item Show Details
             tr(v-for="(item, index) in patients.CurrentAppointments")
                 td {{ [item.Date, ["M-DD-YYYY HH:mm:ss","D-MMM-YYYY HH:mm:ss"]] | moment("MMM DD, YYYY")}}
@@ -51,7 +51,7 @@
                             a(href="#3").sub-popup-menu__item Reschedule Appointment
                             a(href="#3").sub-popup-menu__item Cancel Appointment
                             a(href="#3").sub-popup-menu__item Send Reminder
-                            a(href="#3", @click.prevent="openNewWindow($root.epicAddress)").sub-popup-menu__item Show in EHR
+                            a(href="#3", @click.prevent="openNewWindow($root.epicAddress)").sub-popup-menu__item Show in EPIC
                             a(href="#3", @click.prevent="showModal(patients.CurrentAppointments[index])").sub-popup-menu__item Show Details
 
         modal(ref="modalInfo")
@@ -157,7 +157,7 @@
                     .modal-appointment__templates-checkbox
                         .ui-checkbox
                             input#checkbox-epic(name="checkbox-epic" type="checkbox" v-model="showEpicTemplate").ui-checkbox__input
-                            label.ui-checkbox__label(for='checkbox-epic') Add Notes to EHR
+                            label.ui-checkbox__label(for='checkbox-epic') Add Notes to EPIC
                     transition(name="fade")
                         textarea(v-if="showEpicTemplate").ui-textarea.ui-textarea--skin-default.ui-textarea--theme-default
 

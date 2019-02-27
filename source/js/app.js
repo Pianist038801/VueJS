@@ -173,9 +173,9 @@ let App = new Vue({
               console.log(response1);
               let data = _mockup;
               
-              let array = ['EHR']; 
+              let array = ['EPIC']; 
               data.Customers.forEach((item, i) => {
-                  if(item.Category=='EHR')
+                  if(item.Category=='EPIC')
                       array.push(item.Name);
               });
               array.push('add New')

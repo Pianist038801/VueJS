@@ -299,7 +299,7 @@ block content
                                                 use(xlink:href="#more")
                                         .sub-popup-menu__list
                                             a(href="#3", @click.prevent="showImage()").sub-popup-menu__item1 Expand Details
-                                            a(href="#3", @click.prevent="openNewWindow($root.epicAddress)").sub-popup-menu__item View in {{$root._data.Customers[$root.activePacient].Category=='EHR'?'EHR':"EHR"}}
+                                            a(href="#3", @click.prevent="openNewWindow($root.epicAddress)").sub-popup-menu__item View in {{$root._data.Customers[$root.activePacient].Category=='EPIC'?'EPIC':"EPIC"}}
                                             a(href="#3", @click.prevent="payBill($root._data.billItem)").sub-popup-menu__item1 Pay Bill
                                             a(href="#3").sub-popup-menu__item1 Adjust
                                             a(href="#3").sub-popup-menu__item1 Print
