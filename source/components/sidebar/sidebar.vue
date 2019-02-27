@@ -8,9 +8,6 @@
                     svg.ico-svg.ico-svg__info
                         use(xlink:href="#info")
         .sidebar__note-userpic Number of Matches (<b>{{sizePacients}}</b>)
-        .sidebar__section(v-if="currentPacientName === 'Opal Lee'")
-            .sidebar__high--risk High Risk Customer
-                span().tool-tip High risk alert: Maternity with Twins
         .l-sidebar__section
             .sidebar__section
                 .sidebar__section--note Customer Name
@@ -183,7 +180,7 @@
                 set: function (newValue) {
                     this.$store.dispatch('setName', newValue);
                     if(newValue === 'Opal Lee') {
-                        this.$root.$data.callerNotes = 'Customer is pregnant with twins, expectancy date soon';
+                        this.$root.$data.callerNotes = '';
                         this.$root._data.dropdownCallerName = 'Opal Lee';
                     } else {
                         this.$root.$data.callerNotes = '';
