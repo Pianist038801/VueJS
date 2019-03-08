@@ -60,7 +60,7 @@
                 :format="customFormatter")
         transition(name="fade")
             div(v-if="formElementChecked")
-                .make-appointment__date-selected Sunday - Feb 27, 2019
+                .make-appointment__date-selected Sunday - Mar 8, 2019
                 form(action="#3")
                     fieldset.form__fieldset
                         legend.hide Book table
