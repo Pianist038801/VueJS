@@ -84,8 +84,17 @@
 }
 
 /* .sub-popup-menu */
+
 .appointment__table td.more-action {
   text-align: center;
+}
+
+.appointment__table td.red {
+  color: red;
+}
+
+.appointment__table td.green {
+  color: green;
 }
 
 .appointment__table td.past {

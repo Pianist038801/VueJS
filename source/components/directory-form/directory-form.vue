@@ -1,5 +1,8 @@
-<template lang="pug">
+<template lang="pug">     
     .appointment
+        svg.ico-svg.ico-search
+            use(xlink:href="#search")
+        input(placeholder="Search Directory", v-model="search_keyword").ui-input
         table.appointment__table
             tr
                 th Name
@@ -19,7 +22,9 @@
                 td {{item.address}}
                 td {{item.provider}}
                 td {{item.providerContact}}
-                td {{item.providerStatus}}
+                td(v-if="isGreen(item)").green {{item.providerStatus}}
+                td(v-if="isRed(item)").red {{item.providerStatus}}
+                td(v-if="isNormal(item)") {{item.providerStatus}}
                 td.more-action
                     .sub-popup-menu
                         .sub-popup-menu__action
@@ -41,6 +46,7 @@
         },
         data() {
             return {
+                search_keyword: '',
                 visible: false,
                 currentMoreInfoIndex: null,
                 business_segment: '',
@@ -56,15 +62,27 @@
             openNewWindow(url){
                 let strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
                 window.open(url, "CNN_WindowName", strWindowFeatures);
-
+            },
+            isRed(item) {
+                return item.providerStatus === 'Not Available'
+            },
+            isGreen(item) {
+                return item.providerStatus === 'Available'
+            },
+            isNormal(item) {
+                return item.providerStatus !== 'Not Available' && item.providerStatus !== 'Available'
             },
             check(item){
-                if(this.business_segment!='' && item.businessSegment.indexOf(this.business_segment) < 0) return false;
-                if(this.service_area!='' && item.serviceArea.indexOf(this.service_area) < 0) return false;
-                if(this.status!='' && item.referredStatus.indexOf(this.status) < 0) return false;    
-                if(this.startDate!='' && item.startDate.indexOf(this.startDate) < 0) return false;
-                if(this.endDate!='' && item.endDate.indexOf(this.endDate) < 0) return false;
-                return true;
+                const { search_keyword } = this;
+                return (
+                    search_keyword=='' ||
+                    item.name.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 ||
+                    item.type.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 ||
+                    item.source.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 ||
+                    item.telephone.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 ||
+                    item.address.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 ||
+                    item.provider.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 ||
+                    item.providerContact.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 );
             },
             openModalInfo(index){
                 this.currentMoreInfoIndex = index;
@@ -99,6 +117,19 @@
 </script>
 <style lang="scss">
     @import '~mixinsSCSS';
+
+	.ui-input {
+		font-size: em(15);
+        width: em(400);
+        height: em(40);
+    }
+    
+    .ico-search {
+        margin-right: em(10);
+        margin-top: em(0);
+        width: em(30);
+        height: em(30);
+    }
 
     .appointment {
         margin-bottom: em(80);
