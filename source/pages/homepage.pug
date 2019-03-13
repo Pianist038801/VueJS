@@ -394,7 +394,13 @@ block content
                             .content__box
                                 referral(:referrals="$root._data.Referrals")
                                 journey-map(:info="$root._data.Customers[$root.activePacient]")
-                    
+                        
+                        //-show Directory
+                        .content(v-if="$root.currentShowBox ==='directory' && !currentShowSubBox", key="directory")
+                            .content__box
+                                directory-form(:data="$root._data.Directory")
+
+
                         //-show Pharmacy
                         .content(v-if="$root.currentShowBox ==='pharmacy' && !currentShowSubBox", key="pharmacy")
                             .content__top-line

@@ -34,7 +34,7 @@
     <div class="header__tabs-item" :class="{'state--active': ['billing', 'statement_review','payment_confirmation','payment_result'].indexOf($root.currentShowBox)&gt;=0}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'billing'">Billing</a></div>
     <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" v-on:click="$root.currentShowBox = 'triage'">Triage</a></div>
     <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'referrals'">Referrals</a></div>
-    <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" v-on:click="$root.showSpaceWidget()">Huddle Room</a></div>
+    <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" v-on:click="$root.currentShowBox = 'directory'">Directory</a></div>
     <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'pharmacy'">Pharmacy</a></div>
   </div>
   <div class="header__action">
@@ -366,6 +366,11 @@
                   <div class="content__box">
                     <referral :referrals="$root._data.Referrals"></referral>
                     <journey-map :info="$root._data.Customers[$root.activePacient]"></journey-map>
+                  </div>
+                </div>
+                <div class="content" v-if="$root.currentShowBox ==='directory' &amp;&amp; !currentShowSubBox" key="directory">
+                  <div class="content__box">
+                    <directory-form :data="$root._data.Directory"></directory-form>
                   </div>
                 </div>
                 <div class="content" v-if="$root.currentShowBox ==='pharmacy' &amp;&amp; !currentShowSubBox" key="pharmacy">

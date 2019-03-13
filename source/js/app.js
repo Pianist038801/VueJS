@@ -38,6 +38,7 @@ import sidebarPacient from "../components/sidebar/sidebar.vue";
 import patientInfo from "../components/patient-info/patient-info.vue";
 import pharmacy from "../components/pharmacy/pharmacy.vue";
 import pharmacyForm from "../components/pharmacy-form/pharmacy-form.vue";
+import directoryForm from "../components/directory-form/directory-form.vue";
 import insuranceVerification from "../components/insurance-verification/insurance-verification.vue";
 import makeAppointment from "../components/make-appointment/make-appointment.vue";
 import cManagment from "../components/case-managment/case-managment.vue";
@@ -300,6 +301,7 @@ let App = new Vue({
     patientInfo,
     pharmacy,
     pharmacyForm,
+    directoryForm,
     insuranceVerification,
     makeAppointment,
     cManagment,
