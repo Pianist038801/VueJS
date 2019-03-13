@@ -199,21 +199,22 @@ let App = new Vue({
 
                 appData = Object.assign(appData, data);
                 
-                if(response.data.error){
-                  console.error('No TempDNIS Found.')
-                  if(tempDNIS=="") // Blank Gadget
-                  {
-                    vm.isBlank=true;
-                  }
-                  else  //Default Gadget
-                  {
-                    vm.callerName = appData.callerInfo.callerName;
-                    vm.callerPhone = appData.callerInfo.callerNo;
-                    vm.callerType = appData.callerInfo.callerType;
-                    vm.callerNotes = '';
-                    vm.activePacient = 0;
-                  }
-              }
+              //   if(response.data.error){
+              //     console.error('No TempDNIS Found.')
+              //     if(tempDNIS=="") // Blank Gadget
+              //     {
+              //       vm.isBlank=true;
+              //     }
+              //     else  //Default Gadget
+              //     {
+              //       vm.callerName = appData.callerInfo.callerName;
+              //       vm.callerPhone = appData.callerInfo.callerNo;
+              //       vm.callerType = appData.callerInfo.callerType;
+              //       vm.callerNotes = '';
+              //       vm.activePacient = 0;
+              //     }
+              // }
+              if (tempDNIS==="") { vm.isBlank = true; }
               else{
                 const responseData = response.data;
                 vm.callerName = responseData.callerName;
