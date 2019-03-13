@@ -159,13 +159,28 @@ let App = new Vue({
 
       console.log('IFRAME_TempDNIS=', tempDNIS);
 
-      axios({method: 'post',
-        url: 'http://office.healthcareintegrations.com:8900/getTempDNIS',
-        responseType: 'json',
-        data: {tempDNIS}
-      }
-      )
-      .then(function(response){
+      // axios({method: 'post',
+      //   url: 'http://office.healthcareintegrations.com:8900/getTempDNIS',
+      //   responseType: 'json',
+      //   data: {tempDNIS}
+      // }
+      // )
+      // .then(function(response){
+          const response = {data: {
+            "tempDNIS" : "9722345678",
+            "status" : "used",
+            "destinationNo" : "214-222-3333",
+            "destinationName" : "Urologist",
+            "patientName" : "Sarah Jones",
+            "patientMRN" : "E234567",
+            "callerName" : "Jacob Jones",
+            "callerPhone" : "972-444-5555",
+            "callerType" : "Patient",
+            "notes" : "",
+            "phantom1" : "",
+            "phantom2" : "",
+            "phantom3" : ""
+          }};
           console.log('Get_CallInfo_Axios_Response=', response);
           Vue.http.get('data/demo-mockup.json')
           .then(
@@ -221,7 +236,10 @@ let App = new Vue({
 
             });
          
-      });
+      // }).catch(function (error) {
+      //   // handle error
+      //   console.log('GET_CALL_ERROR=', error);
+      // });
     },
     showSpaceWidget: function () {
       var vm = this;
