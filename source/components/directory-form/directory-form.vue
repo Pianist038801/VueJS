@@ -3,6 +3,16 @@
         svg.ico-svg.ico-search
             use(xlink:href="#search")
         input(placeholder="Search Directory", v-model="search_keyword").ui-input-search
+        span().inline-present(style="margin-left: 70px; margin-right: 20px") Filter:
+        multiselect(
+            :options=["Show All", "Patient", "Provider"],
+            v-model="search_filter",
+            :searchable="false",
+            :allowEmpty="false",
+            :showLabels="false",
+            placeholder="Show All",
+            style="margin-top: -5px"
+        ).ui-multiselect.ui-multiselect--default.inline-block
         table.appointment__table
             tr
                 th Name
@@ -14,26 +24,138 @@
                 th Provider Contact
                 th Provider Status
                 th Actions
+
             tr(v-for="(item, index) in data", v-if="check(item)")
-                td {{item.name}}
-                td {{item.type}}
-                td {{item.source}}
-                td {{item.telephone}}
-                td {{item.address}}
-                td {{item.provider}}
-                td {{item.providerContact}}
-                td(v-if="isGreen(item)").green {{item.providerStatus}}
-                td(v-if="isRed(item)").red {{item.providerStatus}}
-                td(v-if="isNormal(item)") {{item.providerStatus}}
-                td.more-action
+                td(v-if="$root.patientNames[$root.activePacient + 1] !== item.name", @click.prevent="$refs.modaldetail.open();") {{item.name}}
+                td(v-if="$root.patientNames[$root.activePacient + 1] === item.name", @click.prevent="$refs.modaldetail.open();").highlited {{item.name}}
+                td(v-if="$root.patientNames[$root.activePacient + 1] !== item.name") {{item.type}}
+                td(v-if="$root.patientNames[$root.activePacient + 1] === item.name").highlited {{item.type}}
+                td(v-if="$root.patientNames[$root.activePacient + 1] !== item.name") {{item.source}}
+                td(v-if="$root.patientNames[$root.activePacient + 1] === item.name").highlited {{item.source}}
+                td(v-if="$root.patientNames[$root.activePacient + 1] !== item.name") {{item.telephone}}
+                td(v-if="$root.patientNames[$root.activePacient + 1] === item.name").highlited {{item.telephone}}
+                td(v-if="$root.patientNames[$root.activePacient + 1] !== item.name") {{item.address}}
+                td(v-if="$root.patientNames[$root.activePacient + 1] === item.name").highlited {{item.address}}
+                td(v-if="$root.patientNames[$root.activePacient + 1] !== item.name", @click.prevent="$refs.modalprovider.open();") {{item.provider}}
+                td(v-if="$root.patientNames[$root.activePacient + 1] === item.name", @click.prevent="$refs.modalprovider.open();").highlited {{item.provider}}
+                td(v-if="$root.patientNames[$root.activePacient + 1] !== item.name") {{item.providerContact}}
+                td(v-if="$root.patientNames[$root.activePacient + 1] === item.name").highlited {{item.providerContact}}
+                td(v-if="isGreen(item) && $root.patientNames[$root.activePacient + 1] !== item.name").green {{item.providerStatus}}
+                td(v-if="isGreen(item) && $root.patientNames[$root.activePacient + 1] === item.name").highlited.green {{item.providerStatus}}
+                td(v-if="isRed(item) && $root.patientNames[$root.activePacient + 1] !== item.name").red {{item.providerStatus}}
+                td(v-if="isRed(item) && $root.patientNames[$root.activePacient + 1] === item.name").highlited.red {{item.providerStatus}}
+                td(v-if="isNormal(item) && $root.patientNames[$root.activePacient + 1] !== item.name") {{item.providerStatus}}
+                td(v-if="isNormal(item) && $root.patientNames[$root.activePacient + 1] === item.name").highlited {{item.providerStatus}}
+                td(v-if="$root.patientNames[$root.activePacient + 1] !== item.name").more-action
                     .sub-popup-menu
                         .sub-popup-menu__action
                             svg.ico-svg.ico-svg__more
                                 use(xlink:href="#more")
                         .sub-popup-menu__list
-                            a(href="#",).sub-popup-menu__item Call
+                            a(href="#",).sub-popup-menu__item Transfer
                             a(href="#", @click.prevent="showSMSWindow(item)").sub-popup-menu__item Text
                             a(href="#",).sub-popup-menu__item Page
+                td(v-if="$root.patientNames[$root.activePacient + 1] === item.name").highlited.more-action
+                    .sub-popup-menu
+                        .sub-popup-menu__action
+                            svg.ico-svg.ico-svg__more
+                                use(xlink:href="#more")
+                        .sub-popup-menu__list
+                            a(href="#",).sub-popup-menu__item Transfer
+                            a(href="#", @click.prevent="showSMSWindow(item)").sub-popup-menu__item Text
+                            a(href="#",).sub-popup-menu__item Page
+        modal(ref="modalprovider")
+            .modal__content
+                .modal__content-row
+                    .modal-appointment__title
+                        .title.mod--modal-appointment South Shore Urology
+                .modal__content-row(style="padding: 10px; background: darkcyan; color: white;")                       
+                    span() Mon - Fri 9am - 4:30 pm
+                    span(style="margin-left: 100px") 780 Main Street 
+                    span(style="margin-left: 130px") Office #: 781-331-4600
+                .modal__content-row(style="padding: 10px; background: darkcyan; color: white;")                       
+                    span() Lunch: 12pm - 1:15pm
+                    span(style="margin-left: 110px") South Weymouth, MA 02190
+                    span(style="margin-left: 40px") Fax #: 781-337-5095
+                .modal__content-row(style="padding: 10px; background: darkcyan; color: white;")                       
+                    span(style="margin-left: 510px") SSH Ext: x6860
+                        
+                .modal__content-row(style="margin-top: 30px")
+                    span() The office representitives are unavailable at this time. Is this urgent or can I send a message to the office for you?
+                .modal__content-row(style="margin-top: 30px")
+                    multiselect(
+                            :options=['Office Message', 'Urgent/OnCall', '-------', 'Office Status'],
+                            :searchable="false",
+                            :allowEmpty="false",
+                            :showLabels="false",
+                            placeholder="Office Message",
+                            style="margin-top: -5px"
+                        ).ui-multiselect.ui-multiselect--default.inline-block
+                .modal-appointment__row
+                        a(href="#3", @click.prevent="$refs.modalprovider.close();").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border Ok
+        modal(ref="modaldetail")
+            .modal__content
+                .modal__content-row
+                    .modal-appointment__title
+                        .title.mod--modal-appointment Customer Details 
+                        .referral-view__top
+                            .referral__detail-field
+                                span().infoname First Name  
+                                input(:value="first_name" readonly).infovalue
+                            .referral__detail-field
+                                span().infoname Last Name
+                                input(:value="last_name" readonly).infovalue
+                            .referral__detail-field
+                                span().infoname MI
+                                input(:value="mi" readonly).infovalue
+                            .referral__detail-field
+                                span().infoname Location
+                                input(:value="location" readonly).infovalue
+
+                        .referral-view__top
+                            .referral__detail-field
+                                span().infoname Room #
+                                input(:value="room_no" readonly).infovalue
+                            .referral__detail-field
+                                span().infoname Bed
+                                input(:value="bed_no" readonly).infovalue
+                            .referral__detail-field
+                                span().infoname Phone
+                                input(:value="phone" readonly).infovalue
+                            .referral__detail-field
+                                span().infoname Floor Name
+                                input(:value="floor_name" readonly).infovalue
+
+                        .referral-view__top
+                            .referral__detail-field
+                                span().infoname Location Main Phone
+                                input(:value="location_phone" readonly).infovalue
+                            .referral__detail-field
+                                span().infoname MR #
+                                input(:value="MRN" readonly).infovalue
+                            .referral__detail-field
+                                span().infoname DOB
+                                input(:value="dob" readonly).infovalue
+                            .referral__detail-field
+                                span().infoname Town
+                                input(:value="town" readonly).infovalue
+
+                        .referral-view__top
+                            .referral__detail-field
+                                span().infoname Admission/Registeration Date
+                                input(:value="admission_date" readonly).infovalue
+                            .referral__detail-field
+                                span().infoname City/Town
+                                input(:value="city" readonly).infovalue
+                            .referral__detail-field
+                                span().infoname Discharge Date
+                                input(:value="discharge_date" readonly).infovalue
+                            .referral__detail-field
+                                span().infoname Attending Provider
+                                input(:value="attending_provider" readonly).infovalue
+                                    
+                .modal-appointment__row
+                        a(href="#3", @click.prevent="$refs.modaldetail.close();").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border Ok
         modal(ref="modalbook")
             .modal__content(v-if="currentDirectory !== null")
 
@@ -43,11 +165,41 @@
                         .modal-appointment__title
                             .title.mod--modal-appointment Send SMS
 
-
-
+                .modal__content-row 
+                    
+                        span().inline-present Provider Name:  Dr.Nate Gove
+                    
+                        span().inline-present(style="margin-left: 60px") Patient Name:  Johns Jacobs 
+                    
+                        span().inline-present(style="margin-left: 70px; margin-right: 20px") Template:
+                        multiselect(
+                            :options=['Contact Patient', 'Contact Agent'],
+                            :searchable="false",
+                            :allowEmpty="false",
+                            :showLabels="false",
+                            placeholder="Contact Agent",
+                            style="margin-top: -5px"
+                        ).ui-multiselect.ui-multiselect--default.inline-block
                 .modal-appointment__templates-messages
                     textarea.ui-textarea.ui-textarea--skin-default.ui-textarea--theme-default.mod--sms
                         | {{sms_template}}
+                .modal__content-row
+                    span(style="margin-right: 50px") Priority: 
+                    .ui-checkbox(style="margin-right: 50px")
+                        input#checkbox-routine(name="checkbox-routine" type="checkbox" v-model="showRoutine").ui-checkbox__input
+                        label.ui-checkbox__label(for='checkbox-routine') Routine
+                    .ui-checkbox
+                        input#checkbox-stat(name="checkbox-stat" type="checkbox" v-model="shotStat").ui-checkbox__input
+                        label.ui-checkbox__label(for='checkbox-stat') STAT
+                .modal__content-row(style="margin-top: 36px")
+                    span(style="margin-right: 50px") Response: 
+                    .ui-checkbox(style="margin-right: 30px")
+                        input#checkbox-call(name="checkbox-call" type="checkbox" v-model="showCall").ui-checkbox__input
+                        label.ui-checkbox__label(for='checkbox-call') Please Call
+                    .ui-checkbox
+                        input#checkbox-fyi(name="checkbox-fyi" type="checkbox" v-model="shotFYI").ui-checkbox__input
+                        label.ui-checkbox__label(for='checkbox-fyi') FYI
+                        
                 .modal-appointment__row
                     a(href="#3", @click.prevent="sendSMS()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border Send
                     a(href="#3", @click.prevent="$refs.modalbook.close()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border Cancel
@@ -55,15 +207,34 @@
 </template>
 <script>
     import modal from "../modal-component/modal.vue";
+    import Multiselect from 'vue-multiselect';
 
     export default {
         props: ['data'],
         components: {
-            modal
+            modal,
+            Multiselect,
         },
         data() {
             return {
-                sms_template: 'User [Agent Name] is requesting you to contact them immediately at telephone number [Finesse Number]',
+                first_name: 'Johns',
+                last_name: 'Jacobs',
+                mi: 'N.M.I',
+                location: '3453 T Ave, Fort Worth, TX 76179, USA',
+                room_no: '375',
+                bed_no: '12',
+                phone: '+1 214 701 5489',
+                floor_name: 'L4',
+                location_phone: '+1 214 701 0000',
+                MRN: 'MR-204-3121',
+                dob: 'Jul 01, 1981',
+                town: 'Texas',
+                city: 'Fort Worth',
+                admission_date: 'Apr 06, 1997',
+                discharge_date: 'N/A',
+                attending_provider: 'South Shore Urology',
+                search_filter: 'Search All',
+                sms_template: 'User Rajit Kumar is requesting you to contact them immediately at telephone number 41647',
                 search_keyword: '',
                 visible: false,
                 currentMoreInfoIndex: null,
@@ -151,6 +322,10 @@
             },
             check(item){
                 const { search_keyword } = this;
+                if (this.search_filter == 'Patient' && item.type != 'Patient')
+                    return false;
+                if (this.search_filter == 'Provider' && item.type != 'Provider')
+                    return false;
                 return (
                     search_keyword=='' ||
                     item.name.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 ||
@@ -188,6 +363,7 @@
         },
         mounted() {
             this.$store.dispatch('setReferral', this.$root._data.Referrals);
+            console.log('$Root', this.$root);
         },
         beforeDestroy() {},
     }
@@ -195,6 +371,13 @@
 <style lang="scss">
     @import '~mixinsSCSS';
 
+    .highlited {
+        background: lightblue;
+    }
+    .inline-present {
+        display: inline-block !important;
+        max-width: 250px;
+    }
 	.ui-input-search {
 		font-size: em(15);
         width: em(400);
