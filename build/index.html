@@ -28,6 +28,7 @@
     <!-- img(src="../img/logo_kaiser.png").logo__link-->
   </h1>
   <div class="header__tabs">
+    <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='answering-service'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'answering-service'">Answering Service</a></div>
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='home'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'home'">Home</a></div>
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='scheduling'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'scheduling'">Scheduling</a></div>
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='case-managment'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'case-managment'">Case Management</a></div>
@@ -130,6 +131,83 @@
                 <div class="content" v-if="$root.currentShowBox ==='scheduling' &amp;&amp; !currentShowSubBox" key="scheduling">
                   <div class="content__top-line">
                     <h1 class="title">Caller Information</h1>
+                  </div>
+                  <div class="ccase-managment">
+                    <div class="ccase-managment__top">
+                      <div class="ccase-managment__top-item"><span class="infoname">Caller Name</span>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" v-if="$root._data.addNewCallerName===false" v-model="$root._data.dropdownCallerName" :options="$root._data.patientNames" @input="$root.getCurrentIndexPacient" :searchable="false" :allowEmpty="false" :showLabels="false"></multiselect>
+                        <input class="infovalue" v-if="$root._data.addNewCallerName" v-model="$root._data.newCallerName" :value="$root._data.callerPhone" @keyup="$root.onKeyPress">
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Caller Phone #</span>
+                        <input class="infovalue" :value="$root._data.callerPhone" readonly>
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Call Type</span>
+                        <multiselect class="ui-multiselect ui-multiselect--default inline-block" :options="['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']" :searchable="false" v-model="$root._data.dropdownCallerType" :allowEmpty="false" :showLabels="false"></multiselect>
+                      </div>
+                      <div class="ccase-managment__top-item"><span class="infoname">Other</span>
+                        <input class="infovalue" :value="$root._data.callerHospital" readonly>
+                      </div>
+                    </div>
+                    <div class="ccase-managment__top"><span class="infoname">Notes</span></div>
+                    <div class="ccase-managment__top__bottom">
+                      <textarea class="full-width" :value="$root._data.callerNotes" readonly></textarea>
+                    </div>
+                  </div>
+                  <div class="content__top-line">
+                    <h1 class="title">Customer Schedule</h1><a class="content__top-action" href="#3" @click.prevent="$root.currentShowSubBox = 'make-appointment'">
+                      <svg class="ico-svg ico-svg__plus-round">
+                        <use xlink:href="#plus-round"></use>
+                      </svg></a>
+                  </div>
+                  <div class="content__box">
+                    <appointment :patients="$root._data.Customers[$root.activePacient]"></appointment>
+                    <journey-map :info="$root._data.Customers[$root.activePacient]"></journey-map>
+                  </div>
+                </div>
+                <div class="content" v-if="$root.currentShowBox ==='answering-service' &amp;&amp; !currentShowSubBox" key="answering-service">
+                  <div class="answering-service">
+                    <div class="answering-caller-info"><span>Call from: 203-444-5637</span>
+                      <div>Call To: 1-800-456-9876</div>
+                      <div>(OmniCare Urology)</div>
+                      <div style="height: 30px;"></div>
+                      <div>Call matched to: Patient</div>
+                      <div>Number of Matches: 1</div>
+                      <div>Last Action: Urology Appointment</div>
+                      <div style="flex: 1; height: 3px; background: navy; margin: 10px 0;"></div>
+                      <div>Details</div>
+                      <div style="height: 10px;"></div>
+                      <div class="details-content">
+                        <div class="modal__content-row">
+                          <div class="modal-appointment__title">
+                            <div class="title mod--modal-appointment" style="margin-left: 50px;">South Shore Urology</div>
+                          </div>
+                        </div>
+                        <div class="details-content-urology">
+                          <div class="urology-item">
+                            <div>Mon - Fri 9am - 4:30 pm</div>
+                            <div>Lunch: 12pm - 1:15pm</div>
+                          </div>
+                          <div class="urology-item">
+                            <div>780 Main Street </div>
+                            <div>South Weymouth, MA 02190</div>
+                          </div>
+                          <div class="urology-item">
+                            <div>Office #: 781-331-4600</div>
+                            <div>Fax #: 781-337-5095</div>
+                            <div>SSH Ext: x6860</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="margin-top: 30px;">Quick Links:</div><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link" href="#3">2 Pond Park</a><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link" href="#3">Cancer Center</a><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link" href="#3">Consults</a><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link" href="#3">Courtesy Coach</a><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link" href="#3">Emergency Department</a><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link" href="#3">Engineering</a><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link" href="#3">Health Info Mgmt</a><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link" href="#3">Human Resources</a><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link" href="#3">Supply Chain Mgmt</a><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link" href="#3">Neat Line</a><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link" href="#3">Patient Flow/Discharge</a><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link" href="#3">Physician Referral</a><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link blue" href="#3">Other</a>
+                    </div>
+                    <div class="answering-triage-guide">
+                      <div style="height: 20px;"></div><span>Triage Guide</span>
+                      <div style="height: 30px;"></div>
+                      <div>The office representatives are unavailable at this time. Is this urgent or can I send a message to the office for you?</div>
+                      <div style="height: 50px;"></div>
+                      <div class="button-array"><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button" href="#3" @click="$refs.modalimage.close()">Message</a><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button" href="#3" @click="$refs.modalimage.close()">Page</a></div>
+                      <div class="button-array"><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button" href="#3" @click="$refs.modalimage.close()">Urgent</a><a class="ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button" href="#3" @click="$refs.modalimage.close()">Transfer</a></div>
+                    </div>
                   </div>
                   <div class="ccase-managment">
                     <div class="ccase-managment__top">

@@ -104,7 +104,7 @@ let App = new Vue({
   mounted() {
     let vm = this;
     vm.activePacient = 3;
-    vm.currentShowBox = 'home';
+    vm.currentShowBox = 'answering-service';
     vm.spaceWidget =  window.ciscosparkClient();
     Vue.http.get('demo-credentials.json').then((response) => {
       vm.spaceWidget.init(response.data);

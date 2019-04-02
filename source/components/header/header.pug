@@ -4,6 +4,8 @@ header.header
         img(src="https://drive.google.com/uc?id=1-uD2ofyildDaprkCazv6GnqzX0FH6ndg").logo__link
         // img(src="../img/logo_kaiser.png").logo__link
     .header__tabs
+        .header__tabs-item(:class="{'state--active': $root.currentShowBox ==='answering-service'}")
+            a(href="#", @click.prevent="$root.currentShowBox = 'answering-service'").header__tabs-item-link Answering Service
         .header__tabs-item(:class="{'state--active': $root.currentShowBox ==='home'}")
             a(href="#", @click.prevent="$root.currentShowBox = 'home'").header__tabs-item-link Home
         .header__tabs-item(:class="{'state--active': $root.currentShowBox ==='scheduling'}")
