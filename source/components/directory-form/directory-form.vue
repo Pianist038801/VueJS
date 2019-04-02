@@ -1,5 +1,50 @@
 <template lang="pug">     
     .appointment
+        div(style="margin-bottom: 25px")
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.grey Sandbox
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.blue OnCall
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.blue Department
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.blue Employee
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.blue Patient
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.blue Resource Account
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.dark-grey 2 Pond Park
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.dark-grey Cancer Center
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.dark-grey Consults
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.dark-grey Courtesy Coach
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.dark-grey Emergency Department
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.dark-grey Engineering
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.dark-grey Health Info Mgmt
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.dark-grey Human Resources
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.dark-grey Supply Chain Mgmt
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.dark-grey Neat Line
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.dark-grey Patient Flow/Discharge
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.dark-grey Physician Referral
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.red 101 Columbian Notification
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.red 2PP Notification
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.red CALLeague Alert
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.red EO to ICU Admission Trigger
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.red Generator testing
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.red HCS
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.red MCI Notification
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.red Overhead Paging
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.red Pneumatic Tube Downtime
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.red Snap
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.green 6 Week Schedule
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.green Daily Schedule
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.green Sicl Call
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.green Practic Account
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.green Physician Referral
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.green Call Log
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.green Lead Sheet
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.green Emergency Preparedness
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.grey Park Orbit 1(1041)
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.grey Park Orbit 2(1042)
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.grey Park Orbit 3(1043)
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.grey Park Orbit 4(1044)
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.grey Park Orbit 5(1045)
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.grey Park Orbit 6(1046)
+            a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.yellow Code Script
+
         svg.ico-svg.ico-search
             use(xlink:href="#search")
         input(placeholder="Search Directory", v-model="search_keyword").ui-input-search
@@ -370,6 +415,46 @@
 </script>
 <style lang="scss">
     @import '~mixinsSCSS';
+    .menu-button {
+        font-size: 12px;
+        margin: 5px;
+        &.grey {
+            background: rgb(237,237,237);
+            color: black;
+            border-color: grey;
+            :hover {
+                background: rgb(237,237,237);
+            }
+        }
+
+        &.red {
+            background: red;
+            color: white;
+            border-color: grey;
+        }
+
+        &.green {
+            background: green;
+            color: white;
+            border-color: grey;
+        }
+        &.yellow {
+            background: yellow;
+            color: black;
+            border-color: grey;
+        }
+        &.dark-grey {
+            background: rgb(124,124,124);
+            color: white;
+            border-color: grey;
+        }
+        &.blue {
+            color: white;
+            border-color: grey;
+        }
+    }
+
+
 
     .highlited {
         background: lightblue;
