@@ -159,6 +159,21 @@ li {
         text-transform: none;
       }
     }
+    .quick-provider-link {
+      background: 1db7e9;
+      font-size: 12px;
+      padding: 5px;
+      border-color: gray;
+      margin: 5px;
+      &.blue {
+        font-size: 20px;
+        background: #1db7e9;
+        border-color: #1db7e9;
+        text-transform: none;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+    }
   }
 
   .answering-triage-guide {
