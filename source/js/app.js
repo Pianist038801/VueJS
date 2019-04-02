@@ -39,6 +39,7 @@ import patientInfo from "../components/patient-info/patient-info.vue";
 import pharmacy from "../components/pharmacy/pharmacy.vue";
 import pharmacyForm from "../components/pharmacy-form/pharmacy-form.vue";
 import directoryForm from "../components/directory-form/directory-form.vue";
+import answeringService from "../components/answering-service/answering-service.vue";
 import insuranceVerification from "../components/insurance-verification/insurance-verification.vue";
 import makeAppointment from "../components/make-appointment/make-appointment.vue";
 import cManagment from "../components/case-managment/case-managment.vue";
@@ -58,7 +59,7 @@ import detailReferral from "../components/modal-component/detail-referral.vue";
 let appData = {
   showDialog: false,
   epicAddress: 'http://10.3.74.119/openemr/interface/patient_file/encounter/forms.php',
-  activePacient: 1,
+  activePacient: 0,
   journeyOptions: [],
   showImageModal: 0,
   currentShowBox: null,
@@ -67,7 +68,7 @@ let appData = {
   billItem: null,
   paymentResult: null,
   userIsVerify: false,
-  currentShowPhoneBook: false,
+  currentShowPhoneBook: true,
   currentShowSearchCustomer: false,
   currentShowDetailReferral: false,
   currentShowUpdateReferral: false,
@@ -103,7 +104,6 @@ let App = new Vue({
   },
   mounted() {
     let vm = this;
-    vm.activePacient = 3;
     vm.currentShowBox = 'answering-service';
     vm.spaceWidget =  window.ciscosparkClient();
     Vue.http.get('demo-credentials.json').then((response) => {
@@ -172,7 +172,7 @@ let App = new Vue({
             "status" : "used",
             "destinationNo" : "214-222-3333",
             "destinationName" : "Urologist",
-            "patientName" : "Sarah Jones",
+            "patientName" : "Johns Jacobs",
             "patientMRN" : "E234567",
             "callerName" : "Jacob Jones",
             "callerPhone" : "972-444-5555",
@@ -303,6 +303,7 @@ let App = new Vue({
     pharmacy,
     pharmacyForm,
     directoryForm,
+    answeringService,
     insuranceVerification,
     makeAppointment,
     cManagment,
