@@ -40,6 +40,7 @@ import pharmacy from "../components/pharmacy/pharmacy.vue";
 import pharmacyForm from "../components/pharmacy-form/pharmacy-form.vue";
 import directoryForm from "../components/directory-form/directory-form.vue";
 import answeringService from "../components/answering-service/answering-service.vue";
+import answeringServiceProvider from "../components/answering-service/answering-service-provider.vue";
 import insuranceVerification from "../components/insurance-verification/insurance-verification.vue";
 import makeAppointment from "../components/make-appointment/make-appointment.vue";
 import cManagment from "../components/case-managment/case-managment.vue";
@@ -186,57 +187,49 @@ let App = new Vue({
           Vue.http.get('data/demo-mockup.json')
           .then(
             (response1) => {
-              console.log(response1);
-              let data = _mockup;
               
-              let array = ['EPIC']; 
-              data.Customers.forEach((item, i) => {
-                  if(item.Category=='EPIC')
-                      array.push(item.Name);
-              });
-              array.push('add New')
-              data.patientNames = array.slice(0);
+          let data = _mockup;
+          
+          let array = ['EPIC']; 
+          data.Customers.forEach((item, i) => {
+              if(item.Category=='EPIC')
+                  array.push(item.Name);
+          });
+          array.push('add New')
+          data.patientNames = array.slice(0);
+          const isPatient = tempDNIS === '2142120192';
+          if (!isPatient) {
+            data.Customers[0].Name = 'Nancy Snyder';
+            data.Customers[0].PhotoUrl = 'img/nancy.png';
+          }
+          data.isPatient = isPatient;
+          appData = Object.assign(appData, data);
 
-                appData = Object.assign(appData, data);
-                
-              //   if(response.data.error){
-              //     console.error('No TempDNIS Found.')
-              //     if(tempDNIS=="") // Blank Gadget
-              //     {
-              //       vm.isBlank=true;
-              //     }
-              //     else  //Default Gadget
-              //     {
-              //       vm.callerName = appData.callerInfo.callerName;
-              //       vm.callerPhone = appData.callerInfo.callerNo;
-              //       vm.callerType = appData.callerInfo.callerType;
-              //       vm.callerNotes = '';
-              //       vm.activePacient = 0;
-              //     }
-              // }
-              if (tempDNIS==="") { vm.isBlank = true; }
-              else{
-                const responseData = response.data;
-                vm.callerName = responseData.callerName;
-                vm.callerPhone = responseData.callerPhone;
-                vm.callerType = responseData.callerType;
-                vm.callerNotes = responseData.notes;
-                const _patientName = responseData.patientName;
-                if(_patientName.indexOf('Sarah') > -1) 
-                  vm.activePacient = 1;
-                else if(_patientName.indexOf('Johns') > -1) 
-                  vm.activePacient = 0;
-                else if(_patientName.indexOf('Grace') > -1) 
-                  vm.activePacient = 2;
-                else
-                  vm.activePacient = 3; 
-                vm.callerTransferLocation = responseData.phantom1;
-                vm.callerHospital = responseData.phantom2;
-                vm.releaseTempDNIS(tempDNIS);
-              }
-                App.$mount('#app');
+          
 
-            });
+          if (tempDNIS==="") { vm.isBlank = true; }
+          else{
+            
+            const responseData = response.data;
+            vm.callerName = responseData.callerName;
+            vm.callerPhone = responseData.callerPhone;
+            vm.callerType = responseData.callerType;
+            vm.callerNotes = responseData.notes;
+            const _patientName = responseData.patientName;
+            if(_patientName.indexOf('Sarah') > -1) 
+              vm.activePacient = 1;
+            else if(_patientName.indexOf('Johns') > -1) 
+              vm.activePacient = 0;
+            else if(_patientName.indexOf('Grace') > -1) 
+              vm.activePacient = 2;
+            else
+              vm.activePacient = 3; 
+            vm.callerTransferLocation = responseData.phantom1;
+            vm.callerHospital = responseData.phantom2;
+            vm.releaseTempDNIS(tempDNIS);
+          }
+            App.$mount('#app');
+          });
          
       // }).catch(function (error) {
       //   // handle error
@@ -304,6 +297,7 @@ let App = new Vue({
     pharmacyForm,
     directoryForm,
     answeringService,
+    answeringServiceProvider,
     insuranceVerification,
     makeAppointment,
     cManagment,

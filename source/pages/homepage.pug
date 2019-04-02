@@ -142,7 +142,8 @@ block content
                         //-answering service
                         .content(v-if="$root.currentShowBox ==='answering-service' && !currentShowSubBox", key="answering-service")
                             .content__box
-                                answering-service(:data="$root._data.Directory")
+                                answering-service(:data="$root._data.Directory", v-if="$root._data.isPatient === true")
+                                answering-service-provider(:data="$root._data.Directory", v-if="$root._data.isPatient === false")
                             
                         //-show case-managment
                         .content(v-if="$root.currentShowBox ==='case-managment' && !currentShowSubBox", key="case-managment")

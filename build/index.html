@@ -166,7 +166,8 @@
                 </div>
                 <div class="content" v-if="$root.currentShowBox ==='answering-service' &amp;&amp; !currentShowSubBox" key="answering-service">
                   <div class="content__box">
-                    <answering-service :data="$root._data.Directory"></answering-service>
+                    <answering-service :data="$root._data.Directory" v-if="$root._data.isPatient === true"></answering-service>
+                    <answering-service-provider :data="$root._data.Directory" v-if="$root._data.isPatient === false"></answering-service-provider>
                   </div>
                 </div>
                 <div class="content" v-if="$root.currentShowBox ==='case-managment' &amp;&amp; !currentShowSubBox" key="case-managment">
