@@ -2,22 +2,45 @@
     .appointment
         .answering-service
             .answering-caller-info
-                span Call from: 253-704-2531
-                div Call To: 1-800-456-9876
+                div(style="font-size: 1.5em; margin-bottom: 20px; font-weight: 700; color: #1db7e9;") Caller Information
+                span(style="color: rgba(32,32,32,.5)") Call from:  
+                span(style="margin-left: 10px") 253-704-2531
+                div(style="margin: 15px 0") 
+                    span(style="color: rgba(32,32,32,.5)") Call To: 
+                    span(style="margin-left: 10px") 1-800-456-9876
                 div (South Shore Urology)
                 div(style="height: 30px")
-                div Call matched to: Provider
-                div Number of Matches: 1
-                div Last Action: OnCall Cardiologist
-                div(style="flex: 1; height: 3px; background: navy; margin: 10px 0;")
-                div Details
+                div()
+                    span(style="color: rgba(32,32,32,.5)") Call matched to:
+                    span(style="margin-left: 10px") Provider
+                div(style="margin: 15px 0") 
+                    span(style="color: rgba(32,32,32,.5)") Number of Matches:
+                    span(style="margin-left: 10px") 1
+                div 
+                    span(style="color: rgba(32,32,32,.5)") Last Action:
+                    span(style="margin-left: 10px") OnCall Cardiologist
+                     
+                div(style="flex: 1; height: 1px; background: black; margin: 10px 0;")
+                div(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;")  Details
                 div(style="height: 10px")
                 div Practioning Nurse at OmniCare Downtown
-                div(style="margin-top: 30px") This week:
-                div() Start: 7:00 AM End: 5:00 PM
-                div() Shift: Day  Role: RN
-                div() Call Order: 18
-                div(style="margin-top: 30px") Quick Links:
+                div(style="font-size: 1.5em; margin-top: 30px; font-weight: 700; color: #1db7e9;") This week
+                
+                div(style="margin: 10px 0")
+                    span(style="color: rgba(32,32,32,.5)") Start: 
+                    span(style="margin-left: 5px") 7:00 AM
+                    span(style="color: rgba(32,32,32,.5); margin-left: 25px") End: 
+                    span(style="margin-left: 5px") 5:00 PM
+                div(style="margin: 10px 0")
+                    span(style="color: rgba(32,32,32,.5)") Shift: 
+                    span(style="margin-left: 5px") Day
+                    span(style="color: rgba(32,32,32,.5); margin-left: 25px") Role:
+                    span(style="margin-left: 5px") RN
+                div()
+                    span(style="color: rgba(32,32,32,.5)") Call Order:
+                    span(style="margin-left: 5px") 18
+                div(style="font-size: 1.5em; margin-top: 30px; font-weight: 700; color: #1db7e9;") Quick Links
+                
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link OnCall
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link Department
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link Employee
@@ -28,9 +51,9 @@
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link.blue Other
             .answering-triage-guide
                 div(style="height: 40px")
-                span Triage Guide
+                span(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;") Triage Guide
                 div(style="height: 30px")
-                div I can help you with OnCall Physician or other?
+                div(style="font-size: 20px") I can help you with OnCall Physician or other?
                 div(style="height: 100px")
                 .button-array
                     a(href="#3", @click="$refs.modalCall.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button OnCall

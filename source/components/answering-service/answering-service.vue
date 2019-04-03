@@ -2,21 +2,30 @@
     .appointment
         .answering-service
             .answering-caller-info
-                span Call from: 203-444-5637
-                div Call To: 1-800-456-9876
+                div(style="font-size: 1.5em; margin-bottom: 20px; font-weight: 700; color: #1db7e9;") Caller Information
+                span(style="color: rgba(32,32,32,.5)") Call from:  
+                span(style="margin-left: 10px") 203-444-5637
+                div(style="margin: 15px 0") 
+                    span(style="color: rgba(32,32,32,.5)") Call To: 
+                    span(style="margin-left: 10px") 1-800-456-9876
                 div (OmniCare Urology)
                 div(style="height: 30px")
-                div Call matched to: Patient
-                div Number of Matches: 1
-                div Last Action: Urology Appointment
-                div(style="flex: 1; height: 3px; background: navy; margin: 10px 0;")
-                div Details
+                div()
+                    span(style="color: rgba(32,32,32,.5)") Call matched to:
+                    span(style="margin-left: 10px") Patient
+                div(style="margin: 15px 0") 
+                    span(style="color: rgba(32,32,32,.5)") Number of Matches:
+                    span(style="margin-left: 10px") 1
+                div 
+                    span(style="color: rgba(32,32,32,.5)") Last Action:
+                    span(style="margin-left: 10px") Urology Appointment
+
+                div(style="flex: 1; height: 1px; background: black; margin: 10px 0;")
+                div(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;")  Details
                 div(style="height: 10px")
+                div(style="margin-bottom: 20px") South Shore Urology
                 .details-content
-                    .modal__content-row
-                        .modal-appointment__title
-                            .title.mod--modal-appointment(style="margin-left: 50px") South Shore Urology
-                    .details-content-urology
+                    .details-content-urology(style="background: white; color: black;")
                         .urology-item
                             div Mon - Fri 9am - 4:30 pm
                             div Lunch: 12pm - 1:15pm
@@ -27,7 +36,7 @@
                             div Office #: 781-331-4600
                             div Fax #: 781-337-5095
                             div SSH Ext: x6860
-                div(style="margin-top: 30px") Quick Links:
+                div(style="font-size: 1.5em; margin-top: 30px; font-weight: 700; color: #1db7e9;") Quick Links
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-link 2 Pond Park
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-link Cancer Center
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-link Consults
@@ -43,9 +52,9 @@
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-link.blue Other
             .answering-triage-guide
                 div(style="height: 20px")
-                span Triage Guide
+                span(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;") Triage Guide
                 div(style="height: 30px")
-                div The office representatives are unavailable at this time. Is this urgent or can I send a message to the office for you?
+                div(style="font-size: 20px") The office representatives are unavailable at this time. Is this urgent or can I send a message to the office for you?
                 div(style="height: 50px")
                 .button-array
                     a(href="#3", @click="$refs.modalbook.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Message
