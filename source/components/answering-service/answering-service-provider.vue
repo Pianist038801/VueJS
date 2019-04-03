@@ -20,7 +20,7 @@
                     span(style="color: rgba(32,32,32,.5)") Last Action:
                     span(style="margin-left: 10px") OnCall Cardiologist
                      
-                div(style="flex: 1; height: 1px; background: black; margin: 10px 0;")
+                div(style="flex: 1;  background: black; margin: 20px 0;")
                 div(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;")  Details
                 div(style="height: 10px")
                 div Practioning Nurse at OmniCare Downtown
