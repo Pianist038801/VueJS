@@ -1,5 +1,54 @@
 <template lang="pug">
     aside.sidebar(v-if='pacients')
+        .sidebar__title(v-if="$root._data.isPatient === true || $root._data.isProvider === true") Caller Information
+        .l-sidebar__section(v-if="$root._data.isPatient === true")
+            .sidebar__section
+                .sidebar__section--note Caller Name
+                multiselect(
+                    placeholder="Johns Jacobs",
+                    :options=["Johns Jacobs"],
+                    @input="getCurrentIndexPacient",
+                    :searchable="false",
+                    :allowEmpty="false",
+                    :showLabels="false"
+                 ).ui-multiselect.ui-multiselect--default
+            .sidebar__section
+                .sidebar__section--note Caller Phone #
+                input(:value="$root._data.callerPhone" readonly).infovalue
+            .sidebar__section
+                .sidebar__section--note Call Type
+                multiselect(
+                    placeholder="Patient"
+                    :options="['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
+                    :searchable="false",
+                    :allowEmpty="false",
+                    :showLabels="false"
+                ).ui-multiselect.ui-multiselect--default.inline-block
+
+        .l-sidebar__section(v-if="$root._data.isProvider === true")
+            .sidebar__section
+                .sidebar__section--note Caller Name
+                multiselect(
+                    placeholder="Nancy Snyder",
+                    :options=["Nancy Snyder"],
+                    @input="getCurrentIndexPacient",
+                    :searchable="false",
+                    :allowEmpty="false",
+                    :showLabels="false"
+                 ).ui-multiselect.ui-multiselect--default
+            .sidebar__section
+                .sidebar__section--note Caller Phone #
+                input(:value="$root._data.callerPhone" readonly).infovalue
+            .sidebar__section
+                .sidebar__section--note Call Type
+                multiselect(
+                    placeholder="Nurse"
+                    :options="['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
+                    :searchable="false",
+                    :allowEmpty="false",
+                    :showLabels="false"
+                ).ui-multiselect.ui-multiselect--default.inline-block
+
         .sidebar__title Customer Information
         .l-sidebar__userpic
             .sidebar__userpic
