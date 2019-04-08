@@ -48,7 +48,7 @@
                     :allowEmpty="false",
                     :showLabels="false"
                 ).ui-multiselect.ui-multiselect--default.inline-block
-
+        .sidebar__divider(v-if="$root._data.isPatient === true || $root._data.isProvider === true")
         .sidebar__title Customer Information
         .l-sidebar__userpic
             .sidebar__userpic
@@ -56,6 +56,9 @@
                 a(href="#3", @click.prevent="$root.currentShowSubBox = 'patient-info'").sidebar__userpic-info
                     svg.ico-svg.ico-svg__info
                         use(xlink:href="#info")
+            a(v-if="$root._data.isPatient === true || $root._data.isProvider === true", href="#3", @click.prevent="$root.showSearchCustomer()").content__top-action.content__search-icon
+                svg.ico-svg__search-patient
+                    use(xlink:href="#search")
         .sidebar__note-userpic Number of Matches (<b>{{sizePacients}}</b>)
         .l-sidebar__section
             .sidebar__section

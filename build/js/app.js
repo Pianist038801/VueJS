@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 277);
+/******/ 	return __webpack_require__(__webpack_require__.s = 278);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1914,7 +1914,7 @@ function loadLocale(name) {
         try {
             oldLocale = globalLocale._abbr;
             var aliasedRequire = require;
-            __webpack_require__(424)("./" + name);
+            __webpack_require__(425)("./" + name);
             getSetGlobalLocale(oldLocale);
         } catch (e) {}
     }
@@ -4606,7 +4606,7 @@ return hooks;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(36)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(37)(module)))
 
 /***/ }),
 /* 1 */
@@ -6014,11 +6014,11 @@ return sprite$1;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_modal_vue__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_modal_vue__ = __webpack_require__(89);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1ce5aae4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_modal_vue__ = __webpack_require__(503);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1ce5aae4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_modal_vue__ = __webpack_require__(505);
 function injectStyle (ssrContext) {
-  __webpack_require__(283)
+  __webpack_require__(286)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -6053,8 +6053,8 @@ var Component = normalizeComponent(
 "use strict";
 
 
-var bind = __webpack_require__(65);
-var isBuffer = __webpack_require__(313);
+var bind = __webpack_require__(67);
+var isBuffer = __webpack_require__(314);
 
 /*global toString:true*/
 
@@ -6399,7 +6399,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _forEach2 = __webpack_require__(125);
+var _forEach2 = __webpack_require__(127);
 
 var _forEach3 = _interopRequireDefault(_forEach2);
 
@@ -17318,13 +17318,13 @@ Vue$3.compile = compileToFunctions;
 
 /* harmony default export */ __webpack_exports__["a"] = (Vue$3);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(23), __webpack_require__(28), __webpack_require__(462).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(23), __webpack_require__(28), __webpack_require__(463).setImmediate))
 
 /***/ }),
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var freeGlobal = __webpack_require__(115);
+var freeGlobal = __webpack_require__(117);
 
 /** Detect free variable `self`. */
 var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
@@ -17346,7 +17346,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _mapValues2 = __webpack_require__(129);
+var _mapValues2 = __webpack_require__(131);
 
 var _mapValues3 = _interopRequireDefault(_mapValues2);
 
@@ -17368,7 +17368,7 @@ exports.default = {
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseClone = __webpack_require__(108);
+var baseClone = __webpack_require__(110);
 
 /** Used to compose bitmasks for cloning. */
 var CLONE_SYMBOLS_FLAG = 4;
@@ -17417,7 +17417,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _forEach2 = __webpack_require__(125);
+var _forEach2 = __webpack_require__(127);
 
 var _forEach3 = _interopRequireDefault(_forEach2);
 
@@ -17445,7 +17445,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _deferredReady = __webpack_require__(35);
+var _deferredReady = __webpack_require__(36);
 
 /**
  * @class MapElementMixin @mixins DeferredReadyMixin
@@ -17508,8 +17508,8 @@ exports.default = {
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsNative = __webpack_require__(335),
-    getValue = __webpack_require__(372);
+var baseIsNative = __webpack_require__(336),
+    getValue = __webpack_require__(373);
 
 /**
  * Gets the native function at `key` of `object`.
@@ -17568,14 +17568,14 @@ module.exports = isObject;
 /* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayMap = __webpack_require__(41),
-    baseClone = __webpack_require__(108),
-    baseUnset = __webpack_require__(350),
+var arrayMap = __webpack_require__(42),
+    baseClone = __webpack_require__(110),
+    baseUnset = __webpack_require__(351),
     castPath = __webpack_require__(20),
     copyObject = __webpack_require__(25),
-    customOmitClone = __webpack_require__(366),
-    flatRest = __webpack_require__(369),
-    getAllKeysIn = __webpack_require__(46);
+    customOmitClone = __webpack_require__(367),
+    flatRest = __webpack_require__(370),
+    getAllKeysIn = __webpack_require__(47);
 
 /** Used to compose bitmasks for cloning. */
 var CLONE_DEEP_FLAG = 1,
@@ -17644,8 +17644,8 @@ module.exports = Symbol;
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(18),
-    getRawTag = __webpack_require__(371),
-    objectToString = __webpack_require__(399);
+    getRawTag = __webpack_require__(372),
+    objectToString = __webpack_require__(400);
 
 /** `Object#toString` result references. */
 var nullTag = '[object Null]',
@@ -17678,9 +17678,9 @@ module.exports = baseGetTag;
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArray = __webpack_require__(7),
-    isKey = __webpack_require__(50),
-    stringToPath = __webpack_require__(411),
-    toString = __webpack_require__(422);
+    isKey = __webpack_require__(51),
+    stringToPath = __webpack_require__(412),
+    toString = __webpack_require__(423);
 
 /**
  * Casts `value` to a path array if it's not one.
@@ -17704,7 +17704,7 @@ module.exports = castPath;
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isSymbol = __webpack_require__(58);
+var isSymbol = __webpack_require__(59);
 
 /** Used as references for various `Number` constants. */
 var INFINITY = 1 / 0;
@@ -17956,14 +17956,14 @@ process.umask = function() { return 0; };
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(257);
+module.exports = __webpack_require__(258);
 
 /***/ }),
 /* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assignValue = __webpack_require__(43),
-    baseAssignValue = __webpack_require__(44);
+var assignValue = __webpack_require__(44),
+    baseAssignValue = __webpack_require__(45);
 
 /**
  * Copies properties of `source` to `object`.
@@ -18008,9 +18008,9 @@ module.exports = copyObject;
 /* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayLikeKeys = __webpack_require__(106),
-    baseKeys = __webpack_require__(337),
-    isArrayLike = __webpack_require__(55);
+var arrayLikeKeys = __webpack_require__(108),
+    baseKeys = __webpack_require__(338),
+    isArrayLike = __webpack_require__(56);
 
 /**
  * Creates an array of the own enumerable property names of `object`.
@@ -18191,7 +18191,7 @@ module.exports = g;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(256);
 
 
 
@@ -18251,11 +18251,11 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 /* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var listCacheClear = __webpack_require__(385),
-    listCacheDelete = __webpack_require__(386),
-    listCacheGet = __webpack_require__(387),
-    listCacheHas = __webpack_require__(388),
-    listCacheSet = __webpack_require__(389);
+var listCacheClear = __webpack_require__(386),
+    listCacheDelete = __webpack_require__(387),
+    listCacheGet = __webpack_require__(388),
+    listCacheHas = __webpack_require__(389),
+    listCacheSet = __webpack_require__(390);
 
 /**
  * Creates an list cache object.
@@ -18289,7 +18289,7 @@ module.exports = ListCache;
 /* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var eq = __webpack_require__(52);
+var eq = __webpack_require__(53);
 
 /**
  * Gets the index at which the `key` is found in `array` of key-value pairs.
@@ -18346,7 +18346,7 @@ module.exports = baseGet;
 /* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isKeyable = __webpack_require__(383);
+var isKeyable = __webpack_require__(384);
 
 /**
  * Gets the data for `map`.
@@ -18380,6 +18380,43 @@ module.exports = nativeCreate;
 
 /***/ }),
 /* 35 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_journey_map_vue__ = __webpack_require__(86);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3c763255_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_journey_map_vue__ = __webpack_require__(508);
+function injectStyle (ssrContext) {
+  __webpack_require__(289)
+}
+var normalizeComponent = __webpack_require__(1)
+/* script */
+
+
+/* template */
+
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_journey_map_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3c763255_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_journey_map_vue__["a" /* default */],
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+
+/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
+
+
+/***/ }),
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18490,7 +18527,7 @@ var DeferredReadyMixin = exports.DeferredReadyMixin = {
 };
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -18518,14 +18555,14 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(6);
-var normalizeHeaderName = __webpack_require__(271);
+var normalizeHeaderName = __webpack_require__(272);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -18541,10 +18578,10 @@ function getDefaultAdapter() {
   var adapter;
   if (typeof XMLHttpRequest !== 'undefined') {
     // For browsers use XHR adapter
-    adapter = __webpack_require__(61);
+    adapter = __webpack_require__(63);
   } else if (typeof process !== 'undefined') {
     // For node use HTTP adapter
-    adapter = __webpack_require__(61);
+    adapter = __webpack_require__(63);
   }
   return adapter;
 }
@@ -18618,7 +18655,7 @@ module.exports = defaults;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(23)))
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(15),
@@ -18631,14 +18668,14 @@ module.exports = Map;
 
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var mapCacheClear = __webpack_require__(390),
-    mapCacheDelete = __webpack_require__(391),
-    mapCacheGet = __webpack_require__(392),
-    mapCacheHas = __webpack_require__(393),
-    mapCacheSet = __webpack_require__(394);
+var mapCacheClear = __webpack_require__(391),
+    mapCacheDelete = __webpack_require__(392),
+    mapCacheGet = __webpack_require__(393),
+    mapCacheHas = __webpack_require__(394),
+    mapCacheSet = __webpack_require__(395);
 
 /**
  * Creates a map cache object to store key-value pairs.
@@ -18669,15 +18706,15 @@ module.exports = MapCache;
 
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(30),
-    stackClear = __webpack_require__(406),
-    stackDelete = __webpack_require__(407),
-    stackGet = __webpack_require__(408),
-    stackHas = __webpack_require__(409),
-    stackSet = __webpack_require__(410);
+    stackClear = __webpack_require__(407),
+    stackDelete = __webpack_require__(408),
+    stackGet = __webpack_require__(409),
+    stackHas = __webpack_require__(410),
+    stackSet = __webpack_require__(411);
 
 /**
  * Creates a stack cache object to store key-value pairs.
@@ -18702,7 +18739,7 @@ module.exports = Stack;
 
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports) {
 
 /**
@@ -18729,7 +18766,7 @@ module.exports = arrayMap;
 
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports) {
 
 /**
@@ -18755,11 +18792,11 @@ module.exports = arrayPush;
 
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseAssignValue = __webpack_require__(44),
-    eq = __webpack_require__(52);
+var baseAssignValue = __webpack_require__(45),
+    eq = __webpack_require__(53);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -18789,10 +18826,10 @@ module.exports = assignValue;
 
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var defineProperty = __webpack_require__(113);
+var defineProperty = __webpack_require__(115);
 
 /**
  * The base implementation of `assignValue` and `assignMergeValue` without
@@ -18820,10 +18857,10 @@ module.exports = baseAssignValue;
 
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Uint8Array = __webpack_require__(104);
+var Uint8Array = __webpack_require__(106);
 
 /**
  * Creates a clone of `arrayBuffer`.
@@ -18842,12 +18879,12 @@ module.exports = cloneArrayBuffer;
 
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetAllKeys = __webpack_require__(110),
-    getSymbolsIn = __webpack_require__(117),
-    keysIn = __webpack_require__(128);
+var baseGetAllKeys = __webpack_require__(112),
+    getSymbolsIn = __webpack_require__(119),
+    keysIn = __webpack_require__(130);
 
 /**
  * Creates an array of own and inherited enumerable property names and
@@ -18865,10 +18902,10 @@ module.exports = getAllKeysIn;
 
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var overArg = __webpack_require__(122);
+var overArg = __webpack_require__(124);
 
 /** Built-in value references. */
 var getPrototype = overArg(Object.getPrototypeOf, Object);
@@ -18877,11 +18914,11 @@ module.exports = getPrototype;
 
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayFilter = __webpack_require__(323),
-    stubArray = __webpack_require__(130);
+var arrayFilter = __webpack_require__(324),
+    stubArray = __webpack_require__(132);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -18913,7 +18950,7 @@ module.exports = getSymbols;
 
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports) {
 
 /** Used as references for various `Number` constants. */
@@ -18941,11 +18978,11 @@ module.exports = isIndex;
 
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArray = __webpack_require__(7),
-    isSymbol = __webpack_require__(58);
+    isSymbol = __webpack_require__(59);
 
 /** Used to match property names within property paths. */
 var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
@@ -18976,7 +19013,7 @@ module.exports = isKey;
 
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -19000,7 +19037,7 @@ module.exports = isPrototype;
 
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports) {
 
 /**
@@ -19043,7 +19080,7 @@ module.exports = eq;
 
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports) {
 
 /**
@@ -19070,10 +19107,10 @@ module.exports = identity;
 
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsArguments = __webpack_require__(332),
+var baseIsArguments = __webpack_require__(333),
     isObjectLike = __webpack_require__(22);
 
 /** Used for built-in method references. */
@@ -19112,11 +19149,11 @@ module.exports = isArguments;
 
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isFunction = __webpack_require__(126),
-    isLength = __webpack_require__(57);
+var isFunction = __webpack_require__(128),
+    isLength = __webpack_require__(58);
 
 /**
  * Checks if `value` is array-like. A value is considered array-like if it's
@@ -19151,11 +19188,11 @@ module.exports = isArrayLike;
 
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(10),
-    stubFalse = __webpack_require__(421);
+    stubFalse = __webpack_require__(422);
 
 /** Detect free variable `exports`. */
 var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
@@ -19193,10 +19230,10 @@ var isBuffer = nativeIsBuffer || stubFalse;
 
 module.exports = isBuffer;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(36)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(37)(module)))
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports) {
 
 /** Used as references for various `Number` constants. */
@@ -19237,7 +19274,7 @@ module.exports = isLength;
 
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(19),
@@ -19272,7 +19309,44 @@ module.exports = isSymbol;
 
 
 /***/ }),
-/* 59 */
+/* 60 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_board_block_vue__ = __webpack_require__(84);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4bbed15f_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_board_block_vue__ = __webpack_require__(513);
+function injectStyle (ssrContext) {
+  __webpack_require__(294)
+}
+var normalizeComponent = __webpack_require__(1)
+/* script */
+
+
+/* template */
+
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_board_block_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4bbed15f_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_board_block_vue__["a" /* default */],
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+
+/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
+
+
+/***/ }),
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19343,12 +19417,12 @@ exports.default = {
 };
 
 /***/ }),
-/* 60 */
+/* 62 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(256);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_resource__ = __webpack_require__(538);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_moment__ = __webpack_require__(537);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_vue_moment__);
@@ -19356,40 +19430,40 @@ exports.default = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_tabs_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_vue_tabs_component__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_axios__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_name_select_src_Multiselect_vue__ = __webpack_require__(252);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_home_board_block_vue__ = __webpack_require__(484);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_name_select_src_Multiselect_vue__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_home_board_block_vue__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__store_js__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__demo_mockup_js__ = __webpack_require__(548);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__demo_mockup_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__demo_mockup_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_pages_scheduling_vue__ = __webpack_require__(496);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_appointment_appointment_vue__ = __webpack_require__(250);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_allergies_allergies_vue__ = __webpack_require__(468);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_encounters_encounters_vue__ = __webpack_require__(483);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_appointment_appointment_vue__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_allergies_allergies_vue__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_encounters_encounters_vue__ = __webpack_require__(484);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_referral_referral_vue__ = __webpack_require__(494);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_journey_map_journey_map_vue__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_card_card_vue__ = __webpack_require__(477);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__scss_main_scss__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_journey_map_journey_map_vue__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_card_card_vue__ = __webpack_require__(478);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__scss_main_scss__ = __webpack_require__(279);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__scss_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__scss_main_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__svg_sprite_svg_strite__ = __webpack_require__(549);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_sidebar_sidebar_vue__ = __webpack_require__(495);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_patient_info_patient_info_vue__ = __webpack_require__(491);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_pharmacy_pharmacy_vue__ = __webpack_require__(493);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_pharmacy_form_pharmacy_form_vue__ = __webpack_require__(492);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_directory_form_directory_form_vue__ = __webpack_require__(481);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_answering_service_answering_service_vue__ = __webpack_require__(470);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_answering_service_answering_service_provider_vue__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_directory_form_directory_form_vue__ = __webpack_require__(482);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_answering_service_answering_service_vue__ = __webpack_require__(471);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_answering_service_answering_service_provider_vue__ = __webpack_require__(470);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_insurance_verification_insurance_verification_vue__ = __webpack_require__(485);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_make_appointment_make_appointment_vue__ = __webpack_require__(486);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_case_managment_case_managment_vue__ = __webpack_require__(480);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_case_managment_case_managment_incidents_vue__ = __webpack_require__(479);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_case_managment_case_managment_incident_vue__ = __webpack_require__(478);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_billing_patient_billing_vue__ = __webpack_require__(472);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_billing_billing_history_vue__ = __webpack_require__(471);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_billing_statement_review_vue__ = __webpack_require__(475);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_billing_payment_confirmation_vue__ = __webpack_require__(473);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_billing_payment_result_vue__ = __webpack_require__(474);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_case_managment_case_managment_vue__ = __webpack_require__(481);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_case_managment_case_managment_incidents_vue__ = __webpack_require__(480);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_case_managment_case_managment_incident_vue__ = __webpack_require__(479);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_billing_patient_billing_vue__ = __webpack_require__(473);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_billing_billing_history_vue__ = __webpack_require__(472);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_billing_statement_review_vue__ = __webpack_require__(476);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_billing_payment_confirmation_vue__ = __webpack_require__(474);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_billing_payment_result_vue__ = __webpack_require__(475);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_modal_component_phone_book_vue__ = __webpack_require__(488);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_empty_blank_page_vue__ = __webpack_require__(482);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_empty_blank_page_vue__ = __webpack_require__(483);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_modal_component_search_patient_vue__ = __webpack_require__(489);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_modal_component_update_referral_vue__ = __webpack_require__(490);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_modal_component_detail_referral_vue__ = __webpack_require__(487);
@@ -19499,7 +19573,7 @@ let App = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
   },
   mounted() {
     let vm = this;
-    vm.currentShowBox = 'answering-service';
+    vm.currentShowBox = 'home';
     vm.spaceWidget = window.ciscosparkClient();
     __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].http.get('demo-credentials.json').then(response => {
       vm.spaceWidget.init(response.data);
@@ -19583,12 +19657,13 @@ let App = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
         data.patientNames = array.slice(0);
         const isPatient = tempDNIS === '2142120192';
         const isProvider = tempDNIS === '9998887777';
-
         if (isProvider) {
           data.Customers[0].Name = 'Nancy Snyder';
           data.Customers[0].PhotoUrl = 'img/nancy.png';
         }
-
+        if (isProvider || isPatient) {
+          data.Customers = data.Customers.slice(0, 1);
+        }
         data.isPatient = isPatient;
         data.isProvider = isProvider;
 
@@ -19740,19 +19815,19 @@ urlData = __WEBPACK_IMPORTED_MODULE_9__demo_mockup_js___default.a;
 //     });
 
 /***/ }),
-/* 61 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(6);
-var settle = __webpack_require__(263);
-var buildURL = __webpack_require__(266);
-var parseHeaders = __webpack_require__(272);
-var isURLSameOrigin = __webpack_require__(270);
-var createError = __webpack_require__(64);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(265);
+var settle = __webpack_require__(264);
+var buildURL = __webpack_require__(267);
+var parseHeaders = __webpack_require__(273);
+var isURLSameOrigin = __webpack_require__(271);
+var createError = __webpack_require__(66);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(266);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -19849,7 +19924,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(268);
+      var cookies = __webpack_require__(269);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -19928,7 +20003,7 @@ module.exports = function xhrAdapter(config) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(23)))
 
 /***/ }),
-/* 62 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19954,7 +20029,7 @@ module.exports = Cancel;
 
 
 /***/ }),
-/* 63 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19966,13 +20041,13 @@ module.exports = function isCancel(value) {
 
 
 /***/ }),
-/* 64 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var enhanceError = __webpack_require__(262);
+var enhanceError = __webpack_require__(263);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -19991,7 +20066,7 @@ module.exports = function createError(message, config, code, request, response) 
 
 
 /***/ }),
-/* 65 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20009,7 +20084,7 @@ module.exports = function bind(fn, thisArg) {
 
 
 /***/ }),
-/* 66 */
+/* 68 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20077,949 +20152,1003 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 67 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_multiselect__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-    props: ['data'],
-    components: {
-        modal: __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__["a" /* default */],
-        Multiselect: __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default.a
-    },
-    data() {
-        return {
-            first_name: 'Johns',
-            last_name: 'Jacobs',
-            mi: 'N.M.I',
-            location: '3453 T Ave, Fort Worth, TX 76179, USA',
-            room_no: '375',
-            bed_no: '12',
-            phone: '+1 214 701 5489',
-            floor_name: 'L4',
-            location_phone: '+1 214 701 0000',
-            MRN: 'MR-204-3121',
-            dob: 'Jul 01, 1981',
-            town: 'Texas',
-            city: 'Fort Worth',
-            admission_date: 'Apr 06, 1997',
-            discharge_date: 'N/A',
-            attending_provider: 'South Shore Urology',
-            search_filter: 'Search All',
-            sms_template: 'User Rajit Kumar is requesting you to contact them immediately at telephone number 41647',
-            search_keyword: '',
-            visible: false,
-            currentMoreInfoIndex: null,
-            business_segment: '',
-            service_area: '',
-            status: '',
-            startDate: '',
-            endDate: '',
-            currentDirectory: null
-        };
-    },
-    methods: {
-        open() {},
-        sendSMS() {
-            console.log('hey');
-            let vm = this;
-            const { currentDirectory } = this;
-
-            let numbers = [6064250088 // Thaddeus
-            , 9723586547 // Ashvin
-            , 2142120912 // Rajit
-            , 4699555520 // CJ
-            , 9723338661 // William
-            , 2147015489 // Yuria
-            ];
-
-            let baseUrl = 'https://api.tropo.com/1.0/sessions',
-                queryStart = '?action=create',
-                token = '&token=0fe5e1114dc4b3419a203630b366558357a0d941ad43b56fe54249227c5ea5544d379bb8ae94167d73c3e130',
-                dialCommand = '&numberToDial=',
-                msgCommand = '&msgToSend=';
-
-            let msg = 'User [Agent Name] is requesting you to contact them immediately at telephone number [Finesse Number]';
-
-            msg = msg.replace('[Agent Name]', 'Rajit Kumar');
-            msg = msg.replace('[Finesse Number]', 41647);
-
-            console.log(msg);
-
-            const HttpClient = function () {
-                this.get = function (aUrl, aCallback) {
-                    var anHttpRequest = new XMLHttpRequest();
-
-                    anHttpRequest.onreadystatechange = function () {
-                        if (anHttpRequest.readyState == 4 && anHttpRequest.status >= 200) aCallback(anHttpRequest.responseText);
-                    };
-
-                    anHttpRequest.open("GET", aUrl, true);
-                    anHttpRequest.send(null);
-                };
-            };
-
-            var client = new HttpClient();
-
-            for (let i = 0, end = numbers.length; i < end; i++) {
-                let apiUrl = baseUrl + queryStart + token + dialCommand + numbers[i] + msgCommand + msg;
-
-                client.get(apiUrl, resultData => {
-                    console.log("sent to", numbers[i]);
-                });
-            }
-
-            vm.$refs.modalbook.close();
-        },
-        showSMSWindow(data) {
-            this.currentDirectory = data;
-            this.$refs.modalbook.open();
-        },
-        openNewWindow(url) {
-            let strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
-            window.open(url, "CNN_WindowName", strWindowFeatures);
-        },
-        isRed(item) {
-            return item.providerStatus === 'Not Available';
-        },
-        isGreen(item) {
-            return item.providerStatus === 'Available';
-        },
-        isNormal(item) {
-            return item.providerStatus !== 'Not Available' && item.providerStatus !== 'Available';
-        },
-        check(item) {
-            const { search_keyword } = this;
-            if (this.search_filter == 'Patient' && item.type != 'Patient') return false;
-            if (this.search_filter == 'Provider' && item.type != 'Provider') return false;
-            return search_keyword == '' || item.name.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.type.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.source.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.telephone.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.address.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.provider.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.providerContact.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0;
-        },
-        openModalInfo(index) {
-            this.currentMoreInfoIndex = index;
-            this.$refs.modalInfo.open();
-        }
-    },
-    computed: {
-        sunday: function () {
-            var d = new Date();
-            var day = d.getDay(),
-                diff = d.getDate() - day + (day == 0 ? -6 : 1) - 1; // adjust when day is sunday
-            //{{new Date().getDate()}}/{{ new Date().getMonth() + 1 }}/{{new Date().getFullYear()}}
-            const _sunday = new Date(d.setDate(diff));
-            return _sunday.getDate() + '/' + (_sunday.getMonth() + 1) + '/' + _sunday.getFullYear();
-        },
-        saturday: function () {
-            var d = new Date();
-            var day = d.getDay(),
-                diff = d.getDate() - day + (day == 0 ? -6 : 1) + 5; // adjust when day is sunday
-            const _saturday = new Date(d.setDate(diff));
-            return _saturday.getDate() + '/' + (_saturday.getMonth() + 1) + '/' + _saturday.getFullYear();
-        }
-
-    },
-    mounted() {
-        this.$store.dispatch('setReferral', this.$root._data.Referrals);
-        console.log('$Root', this.$root);
-    },
-    beforeDestroy() {}
-});
-
-/***/ }),
-/* 68 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_multiselect__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-    props: ['data'],
-    components: {
-        modal: __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__["a" /* default */],
-        Multiselect: __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default.a
-    },
-    data() {
-        return {
-            first_name: 'Johns',
-            last_name: 'Jacobs',
-            mi: 'N.M.I',
-            location: '3453 T Ave, Fort Worth, TX 76179, USA',
-            room_no: '375',
-            bed_no: '12',
-            phone: '+1 214 701 5489',
-            floor_name: 'L4',
-            location_phone: '+1 214 701 0000',
-            MRN: 'MR-204-3121',
-            dob: 'Jul 01, 1981',
-            town: 'Texas',
-            city: 'Fort Worth',
-            admission_date: 'Apr 06, 1997',
-            discharge_date: 'N/A',
-            attending_provider: 'South Shore Urology',
-            search_filter: 'Search All',
-            sms_template: 'User Rajit Kumar is requesting you to contact them immediately at telephone number 41647',
-            search_keyword: '',
-            visible: false,
-            currentMoreInfoIndex: null,
-            business_segment: '',
-            service_area: '',
-            status: '',
-            startDate: '',
-            endDate: '',
-            currentDirectory: null
-        };
-    },
-    methods: {
-        open() {},
-        sendSMS() {
-            console.log('hey');
-            let vm = this;
-            const { currentDirectory } = this;
-
-            let numbers = [6064250088 // Thaddeus
-            , 9723586547 // Ashvin
-            , 2142120912 // Rajit
-            , 4699555520 // CJ
-            , 9723338661 // William
-            , 2147015489 // Yuria
-            ];
-
-            let baseUrl = 'https://api.tropo.com/1.0/sessions',
-                queryStart = '?action=create',
-                token = '&token=0fe5e1114dc4b3419a203630b366558357a0d941ad43b56fe54249227c5ea5544d379bb8ae94167d73c3e130',
-                dialCommand = '&numberToDial=',
-                msgCommand = '&msgToSend=';
-
-            let msg = 'User [Agent Name] is requesting you to contact them immediately at telephone number [Finesse Number]';
-
-            msg = msg.replace('[Agent Name]', 'Rajit Kumar');
-            msg = msg.replace('[Finesse Number]', 41647);
-
-            console.log(msg);
-
-            const HttpClient = function () {
-                this.get = function (aUrl, aCallback) {
-                    var anHttpRequest = new XMLHttpRequest();
-
-                    anHttpRequest.onreadystatechange = function () {
-                        if (anHttpRequest.readyState == 4 && anHttpRequest.status >= 200) aCallback(anHttpRequest.responseText);
-                    };
-
-                    anHttpRequest.open("GET", aUrl, true);
-                    anHttpRequest.send(null);
-                };
-            };
-
-            var client = new HttpClient();
-
-            for (let i = 0, end = numbers.length; i < end; i++) {
-                let apiUrl = baseUrl + queryStart + token + dialCommand + numbers[i] + msgCommand + msg;
-
-                client.get(apiUrl, resultData => {
-                    console.log("sent to", numbers[i]);
-                });
-            }
-
-            vm.$refs.modalbook.close();
-        },
-        showSMSWindow(data) {
-            this.currentDirectory = data;
-            this.$refs.modalbook.open();
-        },
-        openNewWindow(url) {
-            let strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
-            window.open(url, "CNN_WindowName", strWindowFeatures);
-        },
-        isRed(item) {
-            return item.providerStatus === 'Not Available';
-        },
-        isGreen(item) {
-            return item.providerStatus === 'Available';
-        },
-        isNormal(item) {
-            return item.providerStatus !== 'Not Available' && item.providerStatus !== 'Available';
-        },
-        check(item) {
-            const { search_keyword } = this;
-            if (this.search_filter == 'Patient' && item.type != 'Patient') return false;
-            if (this.search_filter == 'Provider' && item.type != 'Provider') return false;
-            return search_keyword == '' || item.name.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.type.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.source.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.telephone.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.address.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.provider.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.providerContact.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0;
-        },
-        openModalInfo(index) {
-            this.currentMoreInfoIndex = index;
-            this.$refs.modalInfo.open();
-        }
-    },
-    computed: {
-        sunday: function () {
-            var d = new Date();
-            var day = d.getDay(),
-                diff = d.getDate() - day + (day == 0 ? -6 : 1) - 1; // adjust when day is sunday
-            //{{new Date().getDate()}}/{{ new Date().getMonth() + 1 }}/{{new Date().getFullYear()}}
-            const _sunday = new Date(d.setDate(diff));
-            return _sunday.getDate() + '/' + (_sunday.getMonth() + 1) + '/' + _sunday.getFullYear();
-        },
-        saturday: function () {
-            var d = new Date();
-            var day = d.getDay(),
-                diff = d.getDate() - day + (day == 0 ? -6 : 1) + 5; // adjust when day is sunday
-            const _saturday = new Date(d.setDate(diff));
-            return _saturday.getDate() + '/' + (_saturday.getMonth() + 1) + '/' + _saturday.getFullYear();
-        }
-
-    },
-    mounted() {
-        this.$store.dispatch('setReferral', this.$root._data.Referrals);
-        console.log('$Root', this.$root);
-    },
-    beforeDestroy() {}
-});
-
-/***/ }),
 /* 69 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_multiselect__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_board_block_vue__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__journey_map_journey_map_vue__ = __webpack_require__(35);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    props: ['data'],
+    components: {
+        modal: __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__["a" /* default */],
+        Multiselect: __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default.a,
+        boardBlock: __WEBPACK_IMPORTED_MODULE_2__home_board_block_vue__["a" /* default */],
+        journeyMap: __WEBPACK_IMPORTED_MODULE_3__journey_map_journey_map_vue__["a" /* default */]
+    },
+    data() {
+        return {
+            first_name: 'Johns',
+            last_name: 'Jacobs',
+            mi: 'N.M.I',
+            location: '3453 T Ave, Fort Worth, TX 76179, USA',
+            room_no: '375',
+            bed_no: '12',
+            phone: '+1 214 701 5489',
+            floor_name: 'L4',
+            location_phone: '+1 214 701 0000',
+            MRN: 'MR-204-3121',
+            dob: 'Jul 01, 1981',
+            town: 'Texas',
+            city: 'Fort Worth',
+            admission_date: 'Apr 06, 1997',
+            discharge_date: 'N/A',
+            attending_provider: 'South Shore Urology',
+            search_filter: 'Search All',
+            sms_template: 'User Rajit Kumar is requesting you to contact them immediately at telephone number 41647',
+            search_keyword: '',
+            visible: false,
+            currentMoreInfoIndex: null,
+            business_segment: '',
+            service_area: '',
+            status: '',
+            startDate: '',
+            endDate: '',
+            currentDirectory: null
+        };
+    },
+    methods: {
+        open() {},
+        sendSMS() {
+            console.log('hey');
+            let vm = this;
+            const { currentDirectory } = this;
+
+            let numbers = [6064250088 // Thaddeus
+            , 9723586547 // Ashvin
+            , 2142120912 // Rajit
+            , 4699555520 // CJ
+            , 9723338661 // William
+            , 2147015489 // Yuria
+            ];
+
+            let baseUrl = 'https://api.tropo.com/1.0/sessions',
+                queryStart = '?action=create',
+                token = '&token=0fe5e1114dc4b3419a203630b366558357a0d941ad43b56fe54249227c5ea5544d379bb8ae94167d73c3e130',
+                dialCommand = '&numberToDial=',
+                msgCommand = '&msgToSend=';
+
+            let msg = 'User [Agent Name] is requesting you to contact them immediately at telephone number [Finesse Number]';
+
+            msg = msg.replace('[Agent Name]', 'Rajit Kumar');
+            msg = msg.replace('[Finesse Number]', 41647);
+
+            console.log(msg);
+
+            const HttpClient = function () {
+                this.get = function (aUrl, aCallback) {
+                    var anHttpRequest = new XMLHttpRequest();
+
+                    anHttpRequest.onreadystatechange = function () {
+                        if (anHttpRequest.readyState == 4 && anHttpRequest.status >= 200) aCallback(anHttpRequest.responseText);
+                    };
+
+                    anHttpRequest.open("GET", aUrl, true);
+                    anHttpRequest.send(null);
+                };
+            };
+
+            var client = new HttpClient();
+
+            for (let i = 0, end = numbers.length; i < end; i++) {
+                let apiUrl = baseUrl + queryStart + token + dialCommand + numbers[i] + msgCommand + msg;
+
+                client.get(apiUrl, resultData => {
+                    console.log("sent to", numbers[i]);
+                });
+            }
+
+            vm.$refs.modalbook.close();
+        },
+        showSMSWindow(data) {
+            this.currentDirectory = data;
+            this.$refs.modalbook.open();
+        },
+        openNewWindow(url) {
+            let strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+            window.open(url, "CNN_WindowName", strWindowFeatures);
+        },
+        isRed(item) {
+            return item.providerStatus === 'Not Available';
+        },
+        isGreen(item) {
+            return item.providerStatus === 'Available';
+        },
+        isNormal(item) {
+            return item.providerStatus !== 'Not Available' && item.providerStatus !== 'Available';
+        },
+        check(item) {
+            const { search_keyword } = this;
+            if (this.search_filter == 'Patient' && item.type != 'Patient') return false;
+            if (this.search_filter == 'Provider' && item.type != 'Provider') return false;
+            return search_keyword == '' || item.name.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.type.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.source.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.telephone.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.address.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.provider.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.providerContact.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0;
+        },
+        openModalInfo(index) {
+            this.currentMoreInfoIndex = index;
+            this.$refs.modalInfo.open();
+        }
+    },
+    computed: {
+        sunday: function () {
+            var d = new Date();
+            var day = d.getDay(),
+                diff = d.getDate() - day + (day == 0 ? -6 : 1) - 1; // adjust when day is sunday
+            //{{new Date().getDate()}}/{{ new Date().getMonth() + 1 }}/{{new Date().getFullYear()}}
+            const _sunday = new Date(d.setDate(diff));
+            return _sunday.getDate() + '/' + (_sunday.getMonth() + 1) + '/' + _sunday.getFullYear();
+        },
+        saturday: function () {
+            var d = new Date();
+            var day = d.getDay(),
+                diff = d.getDate() - day + (day == 0 ? -6 : 1) + 5; // adjust when day is sunday
+            const _saturday = new Date(d.setDate(diff));
+            return _saturday.getDate() + '/' + (_saturday.getMonth() + 1) + '/' + _saturday.getFullYear();
+        }
+
+    },
+    mounted() {
+        this.$store.dispatch('setReferral', this.$root._data.Referrals);
+        console.log('$Root', this.$root);
+    },
+    beforeDestroy() {}
+});
+
+/***/ }),
+/* 70 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_multiselect__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_board_block_vue__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__journey_map_journey_map_vue__ = __webpack_require__(35);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    props: ['data'],
+    components: {
+        modal: __WEBPACK_IMPORTED_MODULE_0__modal_component_modal_vue__["a" /* default */],
+        Multiselect: __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default.a,
+        boardBlock: __WEBPACK_IMPORTED_MODULE_2__home_board_block_vue__["a" /* default */],
+        journeyMap: __WEBPACK_IMPORTED_MODULE_3__journey_map_journey_map_vue__["a" /* default */]
+    },
+    data() {
+        return {
+            first_name: 'Johns',
+            last_name: 'Jacobs',
+            mi: 'N.M.I',
+            location: '3453 T Ave, Fort Worth, TX 76179, USA',
+            room_no: '375',
+            bed_no: '12',
+            phone: '+1 214 701 5489',
+            floor_name: 'L4',
+            location_phone: '+1 214 701 0000',
+            MRN: 'MR-204-3121',
+            dob: 'Jul 01, 1981',
+            town: 'Texas',
+            city: 'Fort Worth',
+            admission_date: 'Apr 06, 1997',
+            discharge_date: 'N/A',
+            attending_provider: 'South Shore Urology',
+            search_filter: 'Search All',
+            sms_template: 'User Rajit Kumar is requesting you to contact them immediately at telephone number 41647',
+            search_keyword: '',
+            visible: false,
+            currentMoreInfoIndex: null,
+            business_segment: '',
+            service_area: '',
+            status: '',
+            startDate: '',
+            endDate: '',
+            currentDirectory: null
+        };
+    },
+    methods: {
+        open() {},
+        sendSMS() {
+            console.log('hey');
+            let vm = this;
+            const { currentDirectory } = this;
+
+            let numbers = [6064250088 // Thaddeus
+            , 9723586547 // Ashvin
+            , 2142120912 // Rajit
+            , 4699555520 // CJ
+            , 9723338661 // William
+            , 2147015489 // Yuria
+            ];
+
+            let baseUrl = 'https://api.tropo.com/1.0/sessions',
+                queryStart = '?action=create',
+                token = '&token=0fe5e1114dc4b3419a203630b366558357a0d941ad43b56fe54249227c5ea5544d379bb8ae94167d73c3e130',
+                dialCommand = '&numberToDial=',
+                msgCommand = '&msgToSend=';
+
+            let msg = 'User [Agent Name] is requesting you to contact them immediately at telephone number [Finesse Number]';
+
+            msg = msg.replace('[Agent Name]', 'Rajit Kumar');
+            msg = msg.replace('[Finesse Number]', 41647);
+
+            console.log(msg);
+
+            const HttpClient = function () {
+                this.get = function (aUrl, aCallback) {
+                    var anHttpRequest = new XMLHttpRequest();
+
+                    anHttpRequest.onreadystatechange = function () {
+                        if (anHttpRequest.readyState == 4 && anHttpRequest.status >= 200) aCallback(anHttpRequest.responseText);
+                    };
+
+                    anHttpRequest.open("GET", aUrl, true);
+                    anHttpRequest.send(null);
+                };
+            };
+
+            var client = new HttpClient();
+
+            for (let i = 0, end = numbers.length; i < end; i++) {
+                let apiUrl = baseUrl + queryStart + token + dialCommand + numbers[i] + msgCommand + msg;
+
+                client.get(apiUrl, resultData => {
+                    console.log("sent to", numbers[i]);
+                });
+            }
+
+            vm.$refs.modalbook.close();
+        },
+        showSMSWindow(data) {
+            this.currentDirectory = data;
+            this.$refs.modalbook.open();
+        },
+        openNewWindow(url) {
+            let strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+            window.open(url, "CNN_WindowName", strWindowFeatures);
+        },
+        isRed(item) {
+            return item.providerStatus === 'Not Available';
+        },
+        isGreen(item) {
+            return item.providerStatus === 'Available';
+        },
+        isNormal(item) {
+            return item.providerStatus !== 'Not Available' && item.providerStatus !== 'Available';
+        },
+        check(item) {
+            const { search_keyword } = this;
+            if (this.search_filter == 'Patient' && item.type != 'Patient') return false;
+            if (this.search_filter == 'Provider' && item.type != 'Provider') return false;
+            return search_keyword == '' || item.name.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.type.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.source.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.telephone.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.address.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.provider.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0 || item.providerContact.toLowerCase().indexOf(search_keyword.toLowerCase()) >= 0;
+        },
+        openModalInfo(index) {
+            this.currentMoreInfoIndex = index;
+            this.$refs.modalInfo.open();
+        }
+    },
+    computed: {
+        sunday: function () {
+            var d = new Date();
+            var day = d.getDay(),
+                diff = d.getDate() - day + (day == 0 ? -6 : 1) - 1; // adjust when day is sunday
+            //{{new Date().getDate()}}/{{ new Date().getMonth() + 1 }}/{{new Date().getFullYear()}}
+            const _sunday = new Date(d.setDate(diff));
+            return _sunday.getDate() + '/' + (_sunday.getMonth() + 1) + '/' + _sunday.getFullYear();
+        },
+        saturday: function () {
+            var d = new Date();
+            var day = d.getDay(),
+                diff = d.getDate() - day + (day == 0 ? -6 : 1) + 5; // adjust when day is sunday
+            const _saturday = new Date(d.setDate(diff));
+            return _saturday.getDate() + '/' + (_saturday.getMonth() + 1) + '/' + _saturday.getFullYear();
+        }
+
+    },
+    mounted() {
+        this.$store.dispatch('setReferral', this.$root._data.Referrals);
+        console.log('$Root', this.$root);
+    },
+    beforeDestroy() {}
+});
+
+/***/ }),
+/* 71 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21291,7 +21420,7 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 70 */
+/* 72 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21566,7 +21695,7 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 71 */
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21652,7 +21781,7 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 72 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21745,7 +21874,7 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 73 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21810,7 +21939,7 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 74 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21875,7 +22004,7 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 75 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22060,7 +22189,7 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 76 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22089,7 +22218,7 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 77 */
+/* 79 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22211,7 +22340,7 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 78 */
+/* 80 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22419,7 +22548,7 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 79 */
+/* 81 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22505,7 +22634,7 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 80 */
+/* 82 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22912,7 +23041,7 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 81 */
+/* 83 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22976,7 +23105,7 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 82 */
+/* 84 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23002,7 +23131,7 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 83 */
+/* 85 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23068,7 +23197,7 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 84 */
+/* 86 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23248,17 +23377,17 @@ module.exports = function bind(fn, thisArg) {
 });
 
 /***/ }),
-/* 85 */
+/* 87 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_multiselect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__calendar_popup_calendar_popup_vue__ = __webpack_require__(476);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__calendar_popup_calendar_popup_vue__ = __webpack_require__(477);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_component_modal_vue__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vuejs_datepicker__ = __webpack_require__(547);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vue2_google_maps__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vue2_google_maps__ = __webpack_require__(254);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vue2_google_maps___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_vue2_google_maps__);
 //
 //
@@ -23638,7 +23767,7 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 });
 
 /***/ }),
-/* 86 */
+/* 88 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23821,7 +23950,7 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 });
 
 /***/ }),
-/* 87 */
+/* 89 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23922,7 +24051,7 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 });
 
 /***/ }),
-/* 88 */
+/* 90 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24093,7 +24222,7 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 });
 
 /***/ }),
-/* 89 */
+/* 91 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24291,7 +24420,7 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 });
 
 /***/ }),
-/* 90 */
+/* 92 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24505,12 +24634,12 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 });
 
 /***/ }),
-/* 91 */
+/* 93 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__multiselectMixin__ = __webpack_require__(274);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pointerMixin__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__multiselectMixin__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pointerMixin__ = __webpack_require__(276);
 //
 //
 //
@@ -24777,7 +24906,7 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 });
 
 /***/ }),
-/* 92 */
+/* 94 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24892,7 +25021,7 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 });
 
 /***/ }),
-/* 93 */
+/* 95 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24995,14 +25124,14 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 });
 
 /***/ }),
-/* 94 */
+/* 96 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_multiselect__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue2_google_maps__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue2_google_maps__ = __webpack_require__(254);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue2_google_maps___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue2_google_maps__);
 //
 //
@@ -25137,7 +25266,7 @@ __WEBPACK_IMPORTED_MODULE_1_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 });
 
 /***/ }),
-/* 95 */
+/* 97 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25311,11 +25440,63 @@ __WEBPACK_IMPORTED_MODULE_1_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 });
 
 /***/ }),
-/* 96 */
+/* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__name_select_src_Multiselect_vue__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__name_select_src_Multiselect_vue__ = __webpack_require__(253);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -25532,12 +25713,12 @@ __WEBPACK_IMPORTED_MODULE_1_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 });
 
 /***/ }),
-/* 97 */
+/* 99 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_appointment_appointment_vue__ = __webpack_require__(250);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_journey_map_journey_map_vue__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_appointment_appointment_vue__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_journey_map_journey_map_vue__ = __webpack_require__(35);
 //
 //
 //
@@ -25572,7 +25753,7 @@ __WEBPACK_IMPORTED_MODULE_1_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 });
 
 /***/ }),
-/* 98 */
+/* 100 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25601,7 +25782,7 @@ __WEBPACK_IMPORTED_MODULE_1_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 });
 
 /***/ }),
-/* 99 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25615,7 +25796,7 @@ var _omit2 = __webpack_require__(17);
 
 var _omit3 = _interopRequireDefault(_omit2);
 
-var _pickBy2 = __webpack_require__(419);
+var _pickBy2 = __webpack_require__(420);
 
 var _pickBy3 = _interopRequireDefault(_pickBy2);
 
@@ -25627,7 +25808,7 @@ var _propsBinder = __webpack_require__(8);
 
 var _propsBinder2 = _interopRequireDefault(_propsBinder);
 
-var _simulateArrowDown = __webpack_require__(254);
+var _simulateArrowDown = __webpack_require__(255);
 
 var _simulateArrowDown2 = _interopRequireDefault(_simulateArrowDown);
 
@@ -25713,7 +25894,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 100 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25839,7 +26020,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 101 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25859,7 +26040,7 @@ var _omit3 = _interopRequireDefault(_omit2);
 
 var _manager = __webpack_require__(27);
 
-var _deferredReady = __webpack_require__(35);
+var _deferredReady = __webpack_require__(36);
 
 var _eventsBinder = __webpack_require__(13);
 
@@ -25873,7 +26054,7 @@ var _getPropsValuesMixin = __webpack_require__(11);
 
 var _getPropsValuesMixin2 = _interopRequireDefault(_getPropsValuesMixin);
 
-var _mountableMixin = __webpack_require__(59);
+var _mountableMixin = __webpack_require__(61);
 
 var _mountableMixin2 = _interopRequireDefault(_mountableMixin);
 
@@ -26036,7 +26217,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 102 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26058,7 +26239,7 @@ var _propsBinder = __webpack_require__(8);
 
 var _propsBinder2 = _interopRequireDefault(_propsBinder);
 
-var _simulateArrowDown = __webpack_require__(254);
+var _simulateArrowDown = __webpack_require__(255);
 
 var _simulateArrowDown2 = _interopRequireDefault(_simulateArrowDown);
 
@@ -26150,7 +26331,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 103 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26166,7 +26347,7 @@ var _omit3 = _interopRequireDefault(_omit2);
 
 var _manager = __webpack_require__(27);
 
-var _deferredReady = __webpack_require__(35);
+var _deferredReady = __webpack_require__(36);
 
 var _eventsBinder = __webpack_require__(13);
 
@@ -26180,7 +26361,7 @@ var _getPropsValuesMixin = __webpack_require__(11);
 
 var _getPropsValuesMixin2 = _interopRequireDefault(_getPropsValuesMixin);
 
-var _mountableMixin = __webpack_require__(59);
+var _mountableMixin = __webpack_require__(61);
 
 var _mountableMixin2 = _interopRequireDefault(_mountableMixin);
 
@@ -26308,7 +26489,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 104 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var root = __webpack_require__(10);
@@ -26320,7 +26501,7 @@ module.exports = Uint8Array;
 
 
 /***/ }),
-/* 105 */
+/* 107 */
 /***/ (function(module, exports) {
 
 /**
@@ -26348,15 +26529,15 @@ module.exports = arrayEach;
 
 
 /***/ }),
-/* 106 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseTimes = __webpack_require__(347),
-    isArguments = __webpack_require__(54),
+var baseTimes = __webpack_require__(348),
+    isArguments = __webpack_require__(55),
     isArray = __webpack_require__(7),
-    isBuffer = __webpack_require__(56),
-    isIndex = __webpack_require__(49),
-    isTypedArray = __webpack_require__(127);
+    isBuffer = __webpack_require__(57),
+    isIndex = __webpack_require__(50),
+    isTypedArray = __webpack_require__(129);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -26403,7 +26584,7 @@ module.exports = arrayLikeKeys;
 
 
 /***/ }),
-/* 107 */
+/* 109 */
 /***/ (function(module, exports) {
 
 /**
@@ -26435,26 +26616,26 @@ module.exports = arrayReduce;
 
 
 /***/ }),
-/* 108 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Stack = __webpack_require__(40),
-    arrayEach = __webpack_require__(105),
-    assignValue = __webpack_require__(43),
-    baseAssign = __webpack_require__(325),
-    baseAssignIn = __webpack_require__(326),
-    cloneBuffer = __webpack_require__(353),
-    copyArray = __webpack_require__(360),
-    copySymbols = __webpack_require__(361),
-    copySymbolsIn = __webpack_require__(362),
-    getAllKeys = __webpack_require__(116),
-    getAllKeysIn = __webpack_require__(46),
-    getTag = __webpack_require__(118),
-    initCloneArray = __webpack_require__(379),
-    initCloneByTag = __webpack_require__(380),
-    initCloneObject = __webpack_require__(381),
+var Stack = __webpack_require__(41),
+    arrayEach = __webpack_require__(107),
+    assignValue = __webpack_require__(44),
+    baseAssign = __webpack_require__(326),
+    baseAssignIn = __webpack_require__(327),
+    cloneBuffer = __webpack_require__(354),
+    copyArray = __webpack_require__(361),
+    copySymbols = __webpack_require__(362),
+    copySymbolsIn = __webpack_require__(363),
+    getAllKeys = __webpack_require__(118),
+    getAllKeysIn = __webpack_require__(47),
+    getTag = __webpack_require__(120),
+    initCloneArray = __webpack_require__(380),
+    initCloneByTag = __webpack_require__(381),
+    initCloneObject = __webpack_require__(382),
     isArray = __webpack_require__(7),
-    isBuffer = __webpack_require__(56),
+    isBuffer = __webpack_require__(57),
     isObject = __webpack_require__(16),
     keys = __webpack_require__(26);
 
@@ -26594,10 +26775,10 @@ module.exports = baseClone;
 
 
 /***/ }),
-/* 109 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseFor = __webpack_require__(330),
+var baseFor = __webpack_require__(331),
     keys = __webpack_require__(26);
 
 /**
@@ -26616,10 +26797,10 @@ module.exports = baseForOwn;
 
 
 /***/ }),
-/* 110 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayPush = __webpack_require__(42),
+var arrayPush = __webpack_require__(43),
     isArray = __webpack_require__(7);
 
 /**
@@ -26642,10 +26823,10 @@ module.exports = baseGetAllKeys;
 
 
 /***/ }),
-/* 111 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsEqualDeep = __webpack_require__(333),
+var baseIsEqualDeep = __webpack_require__(334),
     isObjectLike = __webpack_require__(22);
 
 /**
@@ -26676,14 +26857,14 @@ module.exports = baseIsEqual;
 
 
 /***/ }),
-/* 112 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseMatches = __webpack_require__(339),
-    baseMatchesProperty = __webpack_require__(340),
-    identity = __webpack_require__(53),
+var baseMatches = __webpack_require__(340),
+    baseMatchesProperty = __webpack_require__(341),
+    identity = __webpack_require__(54),
     isArray = __webpack_require__(7),
-    property = __webpack_require__(420);
+    property = __webpack_require__(421);
 
 /**
  * The base implementation of `_.iteratee`.
@@ -26713,7 +26894,7 @@ module.exports = baseIteratee;
 
 
 /***/ }),
-/* 113 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(15);
@@ -26730,12 +26911,12 @@ module.exports = defineProperty;
 
 
 /***/ }),
-/* 114 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var SetCache = __webpack_require__(318),
-    arraySome = __webpack_require__(324),
-    cacheHas = __webpack_require__(351);
+var SetCache = __webpack_require__(319),
+    arraySome = __webpack_require__(325),
+    cacheHas = __webpack_require__(352);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -26819,7 +27000,7 @@ module.exports = equalArrays;
 
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
@@ -26830,11 +27011,11 @@ module.exports = freeGlobal;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28)))
 
 /***/ }),
-/* 116 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetAllKeys = __webpack_require__(110),
-    getSymbols = __webpack_require__(48),
+var baseGetAllKeys = __webpack_require__(112),
+    getSymbols = __webpack_require__(49),
     keys = __webpack_require__(26);
 
 /**
@@ -26852,13 +27033,13 @@ module.exports = getAllKeys;
 
 
 /***/ }),
-/* 117 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayPush = __webpack_require__(42),
-    getPrototype = __webpack_require__(47),
-    getSymbols = __webpack_require__(48),
-    stubArray = __webpack_require__(130);
+var arrayPush = __webpack_require__(43),
+    getPrototype = __webpack_require__(48),
+    getSymbols = __webpack_require__(49),
+    stubArray = __webpack_require__(132);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeGetSymbols = Object.getOwnPropertySymbols;
@@ -26883,16 +27064,16 @@ module.exports = getSymbolsIn;
 
 
 /***/ }),
-/* 118 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var DataView = __webpack_require__(314),
-    Map = __webpack_require__(38),
-    Promise = __webpack_require__(316),
-    Set = __webpack_require__(317),
-    WeakMap = __webpack_require__(319),
+var DataView = __webpack_require__(315),
+    Map = __webpack_require__(39),
+    Promise = __webpack_require__(317),
+    Set = __webpack_require__(318),
+    WeakMap = __webpack_require__(320),
     baseGetTag = __webpack_require__(19),
-    toSource = __webpack_require__(124);
+    toSource = __webpack_require__(126);
 
 /** `Object#toString` result references. */
 var mapTag = '[object Map]',
@@ -26947,7 +27128,7 @@ module.exports = getTag;
 
 
 /***/ }),
-/* 119 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(16);
@@ -26968,7 +27149,7 @@ module.exports = isStrictComparable;
 
 
 /***/ }),
-/* 120 */
+/* 122 */
 /***/ (function(module, exports) {
 
 /**
@@ -26992,7 +27173,7 @@ module.exports = mapToArray;
 
 
 /***/ }),
-/* 121 */
+/* 123 */
 /***/ (function(module, exports) {
 
 /**
@@ -27018,7 +27199,7 @@ module.exports = matchesStrictComparable;
 
 
 /***/ }),
-/* 122 */
+/* 124 */
 /***/ (function(module, exports) {
 
 /**
@@ -27039,7 +27220,7 @@ module.exports = overArg;
 
 
 /***/ }),
-/* 123 */
+/* 125 */
 /***/ (function(module, exports) {
 
 /**
@@ -27063,7 +27244,7 @@ module.exports = setToArray;
 
 
 /***/ }),
-/* 124 */
+/* 126 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -27095,12 +27276,12 @@ module.exports = toSource;
 
 
 /***/ }),
-/* 125 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayEach = __webpack_require__(105),
-    baseEach = __webpack_require__(328),
-    castFunction = __webpack_require__(352),
+var arrayEach = __webpack_require__(107),
+    baseEach = __webpack_require__(329),
+    castFunction = __webpack_require__(353),
     isArray = __webpack_require__(7);
 
 /**
@@ -27142,7 +27323,7 @@ module.exports = forEach;
 
 
 /***/ }),
-/* 126 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(19),
@@ -27185,12 +27366,12 @@ module.exports = isFunction;
 
 
 /***/ }),
-/* 127 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsTypedArray = __webpack_require__(336),
-    baseUnary = __webpack_require__(349),
-    nodeUtil = __webpack_require__(398);
+var baseIsTypedArray = __webpack_require__(337),
+    baseUnary = __webpack_require__(350),
+    nodeUtil = __webpack_require__(399);
 
 /* Node.js helper references. */
 var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
@@ -27218,12 +27399,12 @@ module.exports = isTypedArray;
 
 
 /***/ }),
-/* 128 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayLikeKeys = __webpack_require__(106),
-    baseKeysIn = __webpack_require__(338),
-    isArrayLike = __webpack_require__(55);
+var arrayLikeKeys = __webpack_require__(108),
+    baseKeysIn = __webpack_require__(339),
+    isArrayLike = __webpack_require__(56);
 
 /**
  * Creates an array of the own and inherited enumerable property names of `object`.
@@ -27256,12 +27437,12 @@ module.exports = keysIn;
 
 
 /***/ }),
-/* 129 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseAssignValue = __webpack_require__(44),
-    baseForOwn = __webpack_require__(109),
-    baseIteratee = __webpack_require__(112);
+var baseAssignValue = __webpack_require__(45),
+    baseForOwn = __webpack_require__(111),
+    baseIteratee = __webpack_require__(114);
 
 /**
  * Creates an object with the same keys as `object` and values generated
@@ -27305,7 +27486,7 @@ module.exports = mapValues;
 
 
 /***/ }),
-/* 130 */
+/* 132 */
 /***/ (function(module, exports) {
 
 /**
@@ -27334,7 +27515,7 @@ module.exports = stubArray;
 
 
 /***/ }),
-/* 131 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -27413,7 +27594,7 @@ return af;
 
 
 /***/ }),
-/* 132 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -27478,7 +27659,7 @@ return arDz;
 
 
 /***/ }),
-/* 133 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -27543,7 +27724,7 @@ return arKw;
 
 
 /***/ }),
-/* 134 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -27675,7 +27856,7 @@ return arLy;
 
 
 /***/ }),
-/* 135 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -27741,7 +27922,7 @@ return arMa;
 
 
 /***/ }),
-/* 136 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -27852,7 +28033,7 @@ return arSa;
 
 
 /***/ }),
-/* 137 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -27917,7 +28098,7 @@ return arTn;
 
 
 /***/ }),
-/* 138 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -28065,7 +28246,7 @@ return ar;
 
 
 /***/ }),
-/* 139 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -28176,7 +28357,7 @@ return az;
 
 
 /***/ }),
-/* 140 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -28316,7 +28497,7 @@ return be;
 
 
 /***/ }),
-/* 141 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -28412,7 +28593,7 @@ return bg;
 
 
 /***/ }),
-/* 142 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -28477,7 +28658,7 @@ return bm;
 
 
 /***/ }),
-/* 143 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -28602,7 +28783,7 @@ return bn;
 
 
 /***/ }),
-/* 144 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -28727,7 +28908,7 @@ return bo;
 
 
 /***/ }),
-/* 145 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -28841,7 +29022,7 @@ return br;
 
 
 /***/ }),
-/* 146 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -28999,7 +29180,7 @@ return bs;
 
 
 /***/ }),
-/* 147 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -29093,7 +29274,7 @@ return ca;
 
 
 /***/ }),
-/* 148 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -29278,7 +29459,7 @@ return cs;
 
 
 /***/ }),
-/* 149 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -29347,7 +29528,7 @@ return cv;
 
 
 /***/ }),
-/* 150 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -29434,7 +29615,7 @@ return cy;
 
 
 /***/ }),
-/* 151 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -29500,7 +29681,7 @@ return da;
 
 
 /***/ }),
-/* 152 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -29585,7 +29766,7 @@ return deAt;
 
 
 /***/ }),
-/* 153 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -29669,7 +29850,7 @@ return deCh;
 
 
 /***/ }),
-/* 154 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -29753,7 +29934,7 @@ return de;
 
 
 /***/ }),
-/* 155 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -29859,7 +30040,7 @@ return dv;
 
 
 /***/ }),
-/* 156 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -29965,7 +30146,7 @@ return el;
 
 
 /***/ }),
-/* 157 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -30038,7 +30219,7 @@ return enAu;
 
 
 /***/ }),
-/* 158 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -30107,7 +30288,7 @@ return enCa;
 
 
 /***/ }),
-/* 159 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -30180,7 +30361,7 @@ return enGb;
 
 
 /***/ }),
-/* 160 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -30253,7 +30434,7 @@ return enIe;
 
 
 /***/ }),
-/* 161 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -30326,7 +30507,7 @@ return enNz;
 
 
 /***/ }),
-/* 162 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -30405,7 +30586,7 @@ return eo;
 
 
 /***/ }),
-/* 163 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -30502,7 +30683,7 @@ return esDo;
 
 
 /***/ }),
-/* 164 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -30591,7 +30772,7 @@ return esUs;
 
 
 /***/ }),
-/* 165 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -30689,7 +30870,7 @@ return es;
 
 
 /***/ }),
-/* 166 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -30776,7 +30957,7 @@ return et;
 
 
 /***/ }),
-/* 167 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -30848,7 +31029,7 @@ return eu;
 
 
 /***/ }),
-/* 168 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -30961,7 +31142,7 @@ return fa;
 
 
 /***/ }),
-/* 169 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31076,7 +31257,7 @@ return fi;
 
 
 /***/ }),
-/* 170 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31142,7 +31323,7 @@ return fo;
 
 
 /***/ }),
-/* 171 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31222,7 +31403,7 @@ return frCa;
 
 
 /***/ }),
-/* 172 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31306,7 +31487,7 @@ return frCh;
 
 
 /***/ }),
-/* 173 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31395,7 +31576,7 @@ return fr;
 
 
 /***/ }),
-/* 174 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31476,7 +31657,7 @@ return fy;
 
 
 /***/ }),
-/* 175 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31558,7 +31739,7 @@ return gd;
 
 
 /***/ }),
-/* 176 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31641,7 +31822,7 @@ return gl;
 
 
 /***/ }),
-/* 177 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31770,7 +31951,7 @@ return gomLatn;
 
 
 /***/ }),
-/* 178 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31900,7 +32081,7 @@ return gu;
 
 
 /***/ }),
-/* 179 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32005,7 +32186,7 @@ return he;
 
 
 /***/ }),
-/* 180 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32135,7 +32316,7 @@ return hi;
 
 
 /***/ }),
-/* 181 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32295,7 +32476,7 @@ return hr;
 
 
 /***/ }),
-/* 182 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32411,7 +32592,7 @@ return hu;
 
 
 /***/ }),
-/* 183 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32512,7 +32693,7 @@ return hyAm;
 
 
 /***/ }),
-/* 184 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32601,7 +32782,7 @@ return id;
 
 
 /***/ }),
-/* 185 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32739,7 +32920,7 @@ return is;
 
 
 /***/ }),
-/* 186 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32815,7 +32996,7 @@ return it;
 
 
 /***/ }),
-/* 187 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32901,7 +33082,7 @@ return ja;
 
 
 /***/ }),
-/* 188 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32990,7 +33171,7 @@ return jv;
 
 
 /***/ }),
-/* 189 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33085,7 +33266,7 @@ return ka;
 
 
 /***/ }),
-/* 190 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33178,7 +33359,7 @@ return kk;
 
 
 /***/ }),
-/* 191 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33242,7 +33423,7 @@ return km;
 
 
 /***/ }),
-/* 192 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33374,7 +33555,7 @@ return kn;
 
 
 /***/ }),
-/* 193 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33462,7 +33643,7 @@ return ko;
 
 
 /***/ }),
-/* 194 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33556,7 +33737,7 @@ return ky;
 
 
 /***/ }),
-/* 195 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33699,7 +33880,7 @@ return lb;
 
 
 /***/ }),
-/* 196 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33775,7 +33956,7 @@ return lo;
 
 
 /***/ }),
-/* 197 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33899,7 +34080,7 @@ return lt;
 
 
 /***/ }),
-/* 198 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34003,7 +34184,7 @@ return lv;
 
 
 /***/ }),
-/* 199 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34121,7 +34302,7 @@ return me;
 
 
 /***/ }),
-/* 200 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34191,7 +34372,7 @@ return mi;
 
 
 /***/ }),
-/* 201 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34287,7 +34468,7 @@ return mk;
 
 
 /***/ }),
-/* 202 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34374,7 +34555,7 @@ return ml;
 
 
 /***/ }),
-/* 203 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34541,7 +34722,7 @@ return mr;
 
 
 /***/ }),
-/* 204 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34630,7 +34811,7 @@ return msMy;
 
 
 /***/ }),
-/* 205 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34718,7 +34899,7 @@ return ms;
 
 
 /***/ }),
-/* 206 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34784,7 +34965,7 @@ return mt;
 
 
 /***/ }),
-/* 207 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34886,7 +35067,7 @@ return my;
 
 
 /***/ }),
-/* 208 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34955,7 +35136,7 @@ return nb;
 
 
 /***/ }),
-/* 209 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35084,7 +35265,7 @@ return ne;
 
 
 /***/ }),
-/* 210 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35178,7 +35359,7 @@ return nlBe;
 
 
 /***/ }),
-/* 211 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35272,7 +35453,7 @@ return nl;
 
 
 /***/ }),
-/* 212 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35338,7 +35519,7 @@ return nn;
 
 
 /***/ }),
-/* 213 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35468,7 +35649,7 @@ return paIn;
 
 
 /***/ }),
-/* 214 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35600,7 +35781,7 @@ return pl;
 
 
 /***/ }),
-/* 215 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35667,7 +35848,7 @@ return ptBr;
 
 
 /***/ }),
-/* 216 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35738,7 +35919,7 @@ return pt;
 
 
 /***/ }),
-/* 217 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35820,7 +36001,7 @@ return ro;
 
 
 /***/ }),
-/* 218 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36010,7 +36191,7 @@ return ru;
 
 
 /***/ }),
-/* 219 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36114,7 +36295,7 @@ return sd;
 
 
 /***/ }),
-/* 220 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36181,7 +36362,7 @@ return se;
 
 
 /***/ }),
-/* 221 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36258,7 +36439,7 @@ return si;
 
 
 /***/ }),
-/* 222 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36421,7 +36602,7 @@ return sk;
 
 
 /***/ }),
-/* 223 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36600,7 +36781,7 @@ return sl;
 
 
 /***/ }),
-/* 224 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36676,7 +36857,7 @@ return sq;
 
 
 /***/ }),
-/* 225 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36793,7 +36974,7 @@ return srCyrl;
 
 
 /***/ }),
-/* 226 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36910,7 +37091,7 @@ return sr;
 
 
 /***/ }),
-/* 227 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37005,7 +37186,7 @@ return ss;
 
 
 /***/ }),
-/* 228 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37080,7 +37261,7 @@ return sv;
 
 
 /***/ }),
-/* 229 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37145,7 +37326,7 @@ return sw;
 
 
 /***/ }),
-/* 230 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37281,7 +37462,7 @@ return ta;
 
 
 /***/ }),
-/* 231 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37376,7 +37557,7 @@ return te;
 
 
 /***/ }),
-/* 232 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37450,7 +37631,7 @@ return tet;
 
 
 /***/ }),
-/* 233 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37523,7 +37704,7 @@ return th;
 
 
 /***/ }),
-/* 234 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37591,7 +37772,7 @@ return tlPh;
 
 
 /***/ }),
-/* 235 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37719,7 +37900,7 @@ return tlh;
 
 
 /***/ }),
-/* 236 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37815,7 +37996,7 @@ return tr;
 
 
 /***/ }),
-/* 237 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37913,7 +38094,7 @@ return tzl;
 
 
 /***/ }),
-/* 238 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37977,7 +38158,7 @@ return tzmLatn;
 
 
 /***/ }),
-/* 239 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38041,7 +38222,7 @@ return tzm;
 
 
 /***/ }),
-/* 240 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38199,7 +38380,7 @@ return uk;
 
 
 /***/ }),
-/* 241 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38304,7 +38485,7 @@ return ur;
 
 
 /***/ }),
-/* 242 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38368,7 +38549,7 @@ return uzLatn;
 
 
 /***/ }),
-/* 243 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38432,7 +38613,7 @@ return uz;
 
 
 /***/ }),
-/* 244 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38517,7 +38698,7 @@ return vi;
 
 
 /***/ }),
-/* 245 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38591,7 +38772,7 @@ return xPseudo;
 
 
 /***/ }),
-/* 246 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38657,7 +38838,7 @@ return yo;
 
 
 /***/ }),
-/* 247 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38774,7 +38955,7 @@ return zhCn;
 
 
 /***/ }),
-/* 248 */
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38885,7 +39066,7 @@ return zhHk;
 
 
 /***/ }),
-/* 249 */
+/* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38995,15 +39176,15 @@ return zhTw;
 
 
 /***/ }),
-/* 250 */
+/* 252 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_appointment_vue__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_appointment_vue__ = __webpack_require__(71);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5f3d7aa2_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_appointment_vue__ = __webpack_require__(520);
 function injectStyle (ssrContext) {
-  __webpack_require__(299)
+  __webpack_require__(300)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -39032,52 +39213,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 251 */
+/* 253 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_journey_map_vue__ = __webpack_require__(84);
-/* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3c763255_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_journey_map_vue__ = __webpack_require__(508);
-function injectStyle (ssrContext) {
-  __webpack_require__(288)
-}
-var normalizeComponent = __webpack_require__(1)
-/* script */
-
-
-/* template */
-
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_journey_map_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3c763255_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_journey_map_vue__["a" /* default */],
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-
-/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
-
-
-/***/ }),
-/* 252 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Multiselect_vue__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Multiselect_vue__ = __webpack_require__(93);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_54ebf8a4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Multiselect_vue__ = __webpack_require__(516);
 function injectStyle (ssrContext) {
-  __webpack_require__(296)
+  __webpack_require__(297)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -39106,7 +39250,7 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 253 */
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39144,23 +39288,23 @@ var _rectangle = __webpack_require__(546);
 
 var _rectangle2 = _interopRequireDefault(_rectangle);
 
-var _infoWindow = __webpack_require__(464);
+var _infoWindow = __webpack_require__(465);
 
 var _infoWindow2 = _interopRequireDefault(_infoWindow);
 
-var _map = __webpack_require__(465);
+var _map = __webpack_require__(466);
 
 var _map2 = _interopRequireDefault(_map);
 
-var _streetViewPanorama = __webpack_require__(467);
+var _streetViewPanorama = __webpack_require__(468);
 
 var _streetViewPanorama2 = _interopRequireDefault(_streetViewPanorama);
 
-var _placeInput = __webpack_require__(466);
+var _placeInput = __webpack_require__(467);
 
 var _placeInput2 = _interopRequireDefault(_placeInput);
 
-var _autocomplete = __webpack_require__(463);
+var _autocomplete = __webpack_require__(464);
 
 var _autocomplete2 = _interopRequireDefault(_autocomplete);
 
@@ -39168,11 +39312,11 @@ var _mapElementMixin = __webpack_require__(14);
 
 var _mapElementMixin2 = _interopRequireDefault(_mapElementMixin);
 
-var _mountableMixin = __webpack_require__(59);
+var _mountableMixin = __webpack_require__(61);
 
 var _mountableMixin2 = _interopRequireDefault(_mountableMixin);
 
-var _deferredReady = __webpack_require__(35);
+var _deferredReady = __webpack_require__(36);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39229,7 +39373,7 @@ function install(Vue, options) {
 }
 
 /***/ }),
-/* 254 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39269,7 +39413,7 @@ exports.default = function (input) {
 };
 
 /***/ }),
-/* 255 */
+/* 256 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40215,13 +40359,13 @@ var index_esm = {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(23)))
 
 /***/ }),
-/* 256 */
+/* 257 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(539);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_js__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_js__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signIn_vue__ = __webpack_require__(497);
 
 
@@ -40260,16 +40404,16 @@ router.beforeEach((to, from, next) => {
 /* harmony default export */ __webpack_exports__["a"] = (router);
 
 /***/ }),
-/* 257 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(6);
-var bind = __webpack_require__(65);
-var Axios = __webpack_require__(259);
-var defaults = __webpack_require__(37);
+var bind = __webpack_require__(67);
+var Axios = __webpack_require__(260);
+var defaults = __webpack_require__(38);
 
 /**
  * Create an instance of Axios
@@ -40302,15 +40446,15 @@ axios.create = function create(instanceConfig) {
 };
 
 // Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(62);
-axios.CancelToken = __webpack_require__(258);
-axios.isCancel = __webpack_require__(63);
+axios.Cancel = __webpack_require__(64);
+axios.CancelToken = __webpack_require__(259);
+axios.isCancel = __webpack_require__(65);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(273);
+axios.spread = __webpack_require__(274);
 
 module.exports = axios;
 
@@ -40319,13 +40463,13 @@ module.exports.default = axios;
 
 
 /***/ }),
-/* 258 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Cancel = __webpack_require__(62);
+var Cancel = __webpack_require__(64);
 
 /**
  * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -40383,16 +40527,16 @@ module.exports = CancelToken;
 
 
 /***/ }),
-/* 259 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(37);
+var defaults = __webpack_require__(38);
 var utils = __webpack_require__(6);
-var InterceptorManager = __webpack_require__(260);
-var dispatchRequest = __webpack_require__(261);
+var InterceptorManager = __webpack_require__(261);
+var dispatchRequest = __webpack_require__(262);
 
 /**
  * Create a new instance of Axios
@@ -40469,7 +40613,7 @@ module.exports = Axios;
 
 
 /***/ }),
-/* 260 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40528,18 +40672,18 @@ module.exports = InterceptorManager;
 
 
 /***/ }),
-/* 261 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(6);
-var transformData = __webpack_require__(264);
-var isCancel = __webpack_require__(63);
-var defaults = __webpack_require__(37);
-var isAbsoluteURL = __webpack_require__(269);
-var combineURLs = __webpack_require__(267);
+var transformData = __webpack_require__(265);
+var isCancel = __webpack_require__(65);
+var defaults = __webpack_require__(38);
+var isAbsoluteURL = __webpack_require__(270);
+var combineURLs = __webpack_require__(268);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -40621,7 +40765,7 @@ module.exports = function dispatchRequest(config) {
 
 
 /***/ }),
-/* 262 */
+/* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40649,13 +40793,13 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 
 /***/ }),
-/* 263 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var createError = __webpack_require__(64);
+var createError = __webpack_require__(66);
 
 /**
  * Resolve or reject a Promise based on response status.
@@ -40682,7 +40826,7 @@ module.exports = function settle(resolve, reject, response) {
 
 
 /***/ }),
-/* 264 */
+/* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40709,7 +40853,7 @@ module.exports = function transformData(data, headers, fns) {
 
 
 /***/ }),
-/* 265 */
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40752,7 +40896,7 @@ module.exports = btoa;
 
 
 /***/ }),
-/* 266 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40827,7 +40971,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 
 /***/ }),
-/* 267 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40848,7 +40992,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 
 /***/ }),
-/* 268 */
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40908,7 +41052,7 @@ module.exports = (
 
 
 /***/ }),
-/* 269 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40929,7 +41073,7 @@ module.exports = function isAbsoluteURL(url) {
 
 
 /***/ }),
-/* 270 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41004,7 +41148,7 @@ module.exports = (
 
 
 /***/ }),
-/* 271 */
+/* 272 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41023,7 +41167,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 
 /***/ }),
-/* 272 */
+/* 273 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41083,7 +41227,7 @@ module.exports = function parseHeaders(headers) {
 
 
 /***/ }),
-/* 273 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41117,11 +41261,11 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 274 */
+/* 275 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(277);
 
 
 function isEmpty(opt) {
@@ -41719,7 +41863,7 @@ const flow = (...fns) => x => fns.reduce((v, f) => f(v), x);
 });
 
 /***/ }),
-/* 275 */
+/* 276 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -41827,7 +41971,7 @@ const flow = (...fns) => x => fns.reduce((v, f) => f(v), x);
 });
 
 /***/ }),
-/* 276 */
+/* 277 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -41854,14 +41998,14 @@ function deepClone(obj) {
 }
 
 /***/ }),
-/* 277 */
+/* 278 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router__ = __webpack_require__(257);
 
 
 
@@ -41878,12 +42022,6 @@ if (!app) {
     render: h => h(__WEBPACK_IMPORTED_MODULE_1__app__["default"])
   });
 }
-
-/***/ }),
-/* 278 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 279 */
@@ -42093,6 +42231,12 @@ if (!app) {
 /* 313 */
 /***/ (function(module, exports) {
 
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 314 */
+/***/ (function(module, exports) {
+
 /*!
  * Determine if an object is a Buffer
  *
@@ -42117,7 +42261,7 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 314 */
+/* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(15),
@@ -42130,14 +42274,14 @@ module.exports = DataView;
 
 
 /***/ }),
-/* 315 */
+/* 316 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var hashClear = __webpack_require__(374),
-    hashDelete = __webpack_require__(375),
-    hashGet = __webpack_require__(376),
-    hashHas = __webpack_require__(377),
-    hashSet = __webpack_require__(378);
+var hashClear = __webpack_require__(375),
+    hashDelete = __webpack_require__(376),
+    hashGet = __webpack_require__(377),
+    hashHas = __webpack_require__(378),
+    hashSet = __webpack_require__(379);
 
 /**
  * Creates a hash object.
@@ -42168,7 +42312,7 @@ module.exports = Hash;
 
 
 /***/ }),
-/* 316 */
+/* 317 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(15),
@@ -42181,7 +42325,7 @@ module.exports = Promise;
 
 
 /***/ }),
-/* 317 */
+/* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(15),
@@ -42194,12 +42338,12 @@ module.exports = Set;
 
 
 /***/ }),
-/* 318 */
+/* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var MapCache = __webpack_require__(39),
-    setCacheAdd = __webpack_require__(402),
-    setCacheHas = __webpack_require__(403);
+var MapCache = __webpack_require__(40),
+    setCacheAdd = __webpack_require__(403),
+    setCacheHas = __webpack_require__(404);
 
 /**
  *
@@ -42227,7 +42371,7 @@ module.exports = SetCache;
 
 
 /***/ }),
-/* 319 */
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(15),
@@ -42240,7 +42384,7 @@ module.exports = WeakMap;
 
 
 /***/ }),
-/* 320 */
+/* 321 */
 /***/ (function(module, exports) {
 
 /**
@@ -42261,7 +42405,7 @@ module.exports = addMapEntry;
 
 
 /***/ }),
-/* 321 */
+/* 322 */
 /***/ (function(module, exports) {
 
 /**
@@ -42282,7 +42426,7 @@ module.exports = addSetEntry;
 
 
 /***/ }),
-/* 322 */
+/* 323 */
 /***/ (function(module, exports) {
 
 /**
@@ -42309,7 +42453,7 @@ module.exports = apply;
 
 
 /***/ }),
-/* 323 */
+/* 324 */
 /***/ (function(module, exports) {
 
 /**
@@ -42340,7 +42484,7 @@ module.exports = arrayFilter;
 
 
 /***/ }),
-/* 324 */
+/* 325 */
 /***/ (function(module, exports) {
 
 /**
@@ -42369,7 +42513,7 @@ module.exports = arraySome;
 
 
 /***/ }),
-/* 325 */
+/* 326 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var copyObject = __webpack_require__(25),
@@ -42392,11 +42536,11 @@ module.exports = baseAssign;
 
 
 /***/ }),
-/* 326 */
+/* 327 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var copyObject = __webpack_require__(25),
-    keysIn = __webpack_require__(128);
+    keysIn = __webpack_require__(130);
 
 /**
  * The base implementation of `_.assignIn` without support for multiple sources
@@ -42415,7 +42559,7 @@ module.exports = baseAssignIn;
 
 
 /***/ }),
-/* 327 */
+/* 328 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(16);
@@ -42451,11 +42595,11 @@ module.exports = baseCreate;
 
 
 /***/ }),
-/* 328 */
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseForOwn = __webpack_require__(109),
-    createBaseEach = __webpack_require__(364);
+var baseForOwn = __webpack_require__(111),
+    createBaseEach = __webpack_require__(365);
 
 /**
  * The base implementation of `_.forEach` without support for iteratee shorthands.
@@ -42471,11 +42615,11 @@ module.exports = baseEach;
 
 
 /***/ }),
-/* 329 */
+/* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayPush = __webpack_require__(42),
-    isFlattenable = __webpack_require__(382);
+var arrayPush = __webpack_require__(43),
+    isFlattenable = __webpack_require__(383);
 
 /**
  * The base implementation of `_.flatten` with support for restricting flattening.
@@ -42515,10 +42659,10 @@ module.exports = baseFlatten;
 
 
 /***/ }),
-/* 330 */
+/* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var createBaseFor = __webpack_require__(365);
+var createBaseFor = __webpack_require__(366);
 
 /**
  * The base implementation of `baseForOwn` which iterates over `object`
@@ -42537,7 +42681,7 @@ module.exports = baseFor;
 
 
 /***/ }),
-/* 331 */
+/* 332 */
 /***/ (function(module, exports) {
 
 /**
@@ -42556,7 +42700,7 @@ module.exports = baseHasIn;
 
 
 /***/ }),
-/* 332 */
+/* 333 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(19),
@@ -42580,17 +42724,17 @@ module.exports = baseIsArguments;
 
 
 /***/ }),
-/* 333 */
+/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Stack = __webpack_require__(40),
-    equalArrays = __webpack_require__(114),
-    equalByTag = __webpack_require__(367),
-    equalObjects = __webpack_require__(368),
-    getTag = __webpack_require__(118),
+var Stack = __webpack_require__(41),
+    equalArrays = __webpack_require__(116),
+    equalByTag = __webpack_require__(368),
+    equalObjects = __webpack_require__(369),
+    getTag = __webpack_require__(120),
     isArray = __webpack_require__(7),
-    isBuffer = __webpack_require__(56),
-    isTypedArray = __webpack_require__(127);
+    isBuffer = __webpack_require__(57),
+    isTypedArray = __webpack_require__(129);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1;
@@ -42669,11 +42813,11 @@ module.exports = baseIsEqualDeep;
 
 
 /***/ }),
-/* 334 */
+/* 335 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Stack = __webpack_require__(40),
-    baseIsEqual = __webpack_require__(111);
+var Stack = __webpack_require__(41),
+    baseIsEqual = __webpack_require__(113);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -42737,13 +42881,13 @@ module.exports = baseIsMatch;
 
 
 /***/ }),
-/* 335 */
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isFunction = __webpack_require__(126),
-    isMasked = __webpack_require__(384),
+var isFunction = __webpack_require__(128),
+    isMasked = __webpack_require__(385),
     isObject = __webpack_require__(16),
-    toSource = __webpack_require__(124);
+    toSource = __webpack_require__(126);
 
 /**
  * Used to match `RegExp`
@@ -42790,11 +42934,11 @@ module.exports = baseIsNative;
 
 
 /***/ }),
-/* 336 */
+/* 337 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(19),
-    isLength = __webpack_require__(57),
+    isLength = __webpack_require__(58),
     isObjectLike = __webpack_require__(22);
 
 /** `Object#toString` result references. */
@@ -42856,11 +43000,11 @@ module.exports = baseIsTypedArray;
 
 
 /***/ }),
-/* 337 */
+/* 338 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isPrototype = __webpack_require__(51),
-    nativeKeys = __webpack_require__(396);
+var isPrototype = __webpack_require__(52),
+    nativeKeys = __webpack_require__(397);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -42892,12 +43036,12 @@ module.exports = baseKeys;
 
 
 /***/ }),
-/* 338 */
+/* 339 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(16),
-    isPrototype = __webpack_require__(51),
-    nativeKeysIn = __webpack_require__(397);
+    isPrototype = __webpack_require__(52),
+    nativeKeysIn = __webpack_require__(398);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -42931,12 +43075,12 @@ module.exports = baseKeysIn;
 
 
 /***/ }),
-/* 339 */
+/* 340 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsMatch = __webpack_require__(334),
-    getMatchData = __webpack_require__(370),
-    matchesStrictComparable = __webpack_require__(121);
+var baseIsMatch = __webpack_require__(335),
+    getMatchData = __webpack_require__(371),
+    matchesStrictComparable = __webpack_require__(123);
 
 /**
  * The base implementation of `_.matches` which doesn't clone `source`.
@@ -42959,15 +43103,15 @@ module.exports = baseMatches;
 
 
 /***/ }),
-/* 340 */
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsEqual = __webpack_require__(111),
-    get = __webpack_require__(414),
-    hasIn = __webpack_require__(415),
-    isKey = __webpack_require__(50),
-    isStrictComparable = __webpack_require__(119),
-    matchesStrictComparable = __webpack_require__(121),
+var baseIsEqual = __webpack_require__(113),
+    get = __webpack_require__(415),
+    hasIn = __webpack_require__(416),
+    isKey = __webpack_require__(51),
+    isStrictComparable = __webpack_require__(121),
+    matchesStrictComparable = __webpack_require__(123),
     toKey = __webpack_require__(21);
 
 /** Used to compose bitmasks for value comparisons. */
@@ -42998,11 +43142,11 @@ module.exports = baseMatchesProperty;
 
 
 /***/ }),
-/* 341 */
+/* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGet = __webpack_require__(32),
-    baseSet = __webpack_require__(344),
+    baseSet = __webpack_require__(345),
     castPath = __webpack_require__(20);
 
 /**
@@ -43034,7 +43178,7 @@ module.exports = basePickBy;
 
 
 /***/ }),
-/* 342 */
+/* 343 */
 /***/ (function(module, exports) {
 
 /**
@@ -43054,7 +43198,7 @@ module.exports = baseProperty;
 
 
 /***/ }),
-/* 343 */
+/* 344 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGet = __webpack_require__(32);
@@ -43076,12 +43220,12 @@ module.exports = basePropertyDeep;
 
 
 /***/ }),
-/* 344 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assignValue = __webpack_require__(43),
+var assignValue = __webpack_require__(44),
     castPath = __webpack_require__(20),
-    isIndex = __webpack_require__(49),
+    isIndex = __webpack_require__(50),
     isObject = __webpack_require__(16),
     toKey = __webpack_require__(21);
 
@@ -43129,12 +43273,12 @@ module.exports = baseSet;
 
 
 /***/ }),
-/* 345 */
+/* 346 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var constant = __webpack_require__(412),
-    defineProperty = __webpack_require__(113),
-    identity = __webpack_require__(53);
+var constant = __webpack_require__(413),
+    defineProperty = __webpack_require__(115),
+    identity = __webpack_require__(54);
 
 /**
  * The base implementation of `setToString` without support for hot loop shorting.
@@ -43157,7 +43301,7 @@ module.exports = baseSetToString;
 
 
 /***/ }),
-/* 346 */
+/* 347 */
 /***/ (function(module, exports) {
 
 /**
@@ -43194,7 +43338,7 @@ module.exports = baseSlice;
 
 
 /***/ }),
-/* 347 */
+/* 348 */
 /***/ (function(module, exports) {
 
 /**
@@ -43220,13 +43364,13 @@ module.exports = baseTimes;
 
 
 /***/ }),
-/* 348 */
+/* 349 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(18),
-    arrayMap = __webpack_require__(41),
+    arrayMap = __webpack_require__(42),
     isArray = __webpack_require__(7),
-    isSymbol = __webpack_require__(58);
+    isSymbol = __webpack_require__(59);
 
 /** Used as references for various `Number` constants. */
 var INFINITY = 1 / 0;
@@ -43263,7 +43407,7 @@ module.exports = baseToString;
 
 
 /***/ }),
-/* 349 */
+/* 350 */
 /***/ (function(module, exports) {
 
 /**
@@ -43283,12 +43427,12 @@ module.exports = baseUnary;
 
 
 /***/ }),
-/* 350 */
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var castPath = __webpack_require__(20),
-    last = __webpack_require__(417),
-    parent = __webpack_require__(401),
+    last = __webpack_require__(418),
+    parent = __webpack_require__(402),
     toKey = __webpack_require__(21);
 
 /**
@@ -43309,7 +43453,7 @@ module.exports = baseUnset;
 
 
 /***/ }),
-/* 351 */
+/* 352 */
 /***/ (function(module, exports) {
 
 /**
@@ -43328,10 +43472,10 @@ module.exports = cacheHas;
 
 
 /***/ }),
-/* 352 */
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var identity = __webpack_require__(53);
+var identity = __webpack_require__(54);
 
 /**
  * Casts `value` to `identity` if it's not a function.
@@ -43348,7 +43492,7 @@ module.exports = castFunction;
 
 
 /***/ }),
-/* 353 */
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(10);
@@ -43387,13 +43531,13 @@ function cloneBuffer(buffer, isDeep) {
 
 module.exports = cloneBuffer;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(36)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(37)(module)))
 
 /***/ }),
-/* 354 */
+/* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var cloneArrayBuffer = __webpack_require__(45);
+var cloneArrayBuffer = __webpack_require__(46);
 
 /**
  * Creates a clone of `dataView`.
@@ -43412,12 +43556,12 @@ module.exports = cloneDataView;
 
 
 /***/ }),
-/* 355 */
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var addMapEntry = __webpack_require__(320),
-    arrayReduce = __webpack_require__(107),
-    mapToArray = __webpack_require__(120);
+var addMapEntry = __webpack_require__(321),
+    arrayReduce = __webpack_require__(109),
+    mapToArray = __webpack_require__(122);
 
 /** Used to compose bitmasks for cloning. */
 var CLONE_DEEP_FLAG = 1;
@@ -43440,7 +43584,7 @@ module.exports = cloneMap;
 
 
 /***/ }),
-/* 356 */
+/* 357 */
 /***/ (function(module, exports) {
 
 /** Used to match `RegExp` flags from their coerced string values. */
@@ -43463,12 +43607,12 @@ module.exports = cloneRegExp;
 
 
 /***/ }),
-/* 357 */
+/* 358 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var addSetEntry = __webpack_require__(321),
-    arrayReduce = __webpack_require__(107),
-    setToArray = __webpack_require__(123);
+var addSetEntry = __webpack_require__(322),
+    arrayReduce = __webpack_require__(109),
+    setToArray = __webpack_require__(125);
 
 /** Used to compose bitmasks for cloning. */
 var CLONE_DEEP_FLAG = 1;
@@ -43491,7 +43635,7 @@ module.exports = cloneSet;
 
 
 /***/ }),
-/* 358 */
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(18);
@@ -43515,10 +43659,10 @@ module.exports = cloneSymbol;
 
 
 /***/ }),
-/* 359 */
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var cloneArrayBuffer = __webpack_require__(45);
+var cloneArrayBuffer = __webpack_require__(46);
 
 /**
  * Creates a clone of `typedArray`.
@@ -43537,7 +43681,7 @@ module.exports = cloneTypedArray;
 
 
 /***/ }),
-/* 360 */
+/* 361 */
 /***/ (function(module, exports) {
 
 /**
@@ -43563,11 +43707,11 @@ module.exports = copyArray;
 
 
 /***/ }),
-/* 361 */
+/* 362 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var copyObject = __webpack_require__(25),
-    getSymbols = __webpack_require__(48);
+    getSymbols = __webpack_require__(49);
 
 /**
  * Copies own symbols of `source` to `object`.
@@ -43585,11 +43729,11 @@ module.exports = copySymbols;
 
 
 /***/ }),
-/* 362 */
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var copyObject = __webpack_require__(25),
-    getSymbolsIn = __webpack_require__(117);
+    getSymbolsIn = __webpack_require__(119);
 
 /**
  * Copies own and inherited symbols of `source` to `object`.
@@ -43607,7 +43751,7 @@ module.exports = copySymbolsIn;
 
 
 /***/ }),
-/* 363 */
+/* 364 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var root = __webpack_require__(10);
@@ -43619,10 +43763,10 @@ module.exports = coreJsData;
 
 
 /***/ }),
-/* 364 */
+/* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isArrayLike = __webpack_require__(55);
+var isArrayLike = __webpack_require__(56);
 
 /**
  * Creates a `baseEach` or `baseEachRight` function.
@@ -43657,7 +43801,7 @@ module.exports = createBaseEach;
 
 
 /***/ }),
-/* 365 */
+/* 366 */
 /***/ (function(module, exports) {
 
 /**
@@ -43688,10 +43832,10 @@ module.exports = createBaseFor;
 
 
 /***/ }),
-/* 366 */
+/* 367 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isPlainObject = __webpack_require__(416);
+var isPlainObject = __webpack_require__(417);
 
 /**
  * Used by `_.omit` to customize its `_.cloneDeep` use to only clone plain
@@ -43710,15 +43854,15 @@ module.exports = customOmitClone;
 
 
 /***/ }),
-/* 367 */
+/* 368 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(18),
-    Uint8Array = __webpack_require__(104),
-    eq = __webpack_require__(52),
-    equalArrays = __webpack_require__(114),
-    mapToArray = __webpack_require__(120),
-    setToArray = __webpack_require__(123);
+    Uint8Array = __webpack_require__(106),
+    eq = __webpack_require__(53),
+    equalArrays = __webpack_require__(116),
+    mapToArray = __webpack_require__(122),
+    setToArray = __webpack_require__(125);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -43828,10 +43972,10 @@ module.exports = equalByTag;
 
 
 /***/ }),
-/* 368 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getAllKeys = __webpack_require__(116);
+var getAllKeys = __webpack_require__(118);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1;
@@ -43923,12 +44067,12 @@ module.exports = equalObjects;
 
 
 /***/ }),
-/* 369 */
+/* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var flatten = __webpack_require__(413),
-    overRest = __webpack_require__(400),
-    setToString = __webpack_require__(404);
+var flatten = __webpack_require__(414),
+    overRest = __webpack_require__(401),
+    setToString = __webpack_require__(405);
 
 /**
  * A specialized version of `baseRest` which flattens the rest array.
@@ -43945,10 +44089,10 @@ module.exports = flatRest;
 
 
 /***/ }),
-/* 370 */
+/* 371 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isStrictComparable = __webpack_require__(119),
+var isStrictComparable = __webpack_require__(121),
     keys = __webpack_require__(26);
 
 /**
@@ -43975,7 +44119,7 @@ module.exports = getMatchData;
 
 
 /***/ }),
-/* 371 */
+/* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(18);
@@ -44027,7 +44171,7 @@ module.exports = getRawTag;
 
 
 /***/ }),
-/* 372 */
+/* 373 */
 /***/ (function(module, exports) {
 
 /**
@@ -44046,14 +44190,14 @@ module.exports = getValue;
 
 
 /***/ }),
-/* 373 */
+/* 374 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var castPath = __webpack_require__(20),
-    isArguments = __webpack_require__(54),
+    isArguments = __webpack_require__(55),
     isArray = __webpack_require__(7),
-    isIndex = __webpack_require__(49),
-    isLength = __webpack_require__(57),
+    isIndex = __webpack_require__(50),
+    isLength = __webpack_require__(58),
     toKey = __webpack_require__(21);
 
 /**
@@ -44091,7 +44235,7 @@ module.exports = hasPath;
 
 
 /***/ }),
-/* 374 */
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(34);
@@ -44112,7 +44256,7 @@ module.exports = hashClear;
 
 
 /***/ }),
-/* 375 */
+/* 376 */
 /***/ (function(module, exports) {
 
 /**
@@ -44135,7 +44279,7 @@ module.exports = hashDelete;
 
 
 /***/ }),
-/* 376 */
+/* 377 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(34);
@@ -44171,7 +44315,7 @@ module.exports = hashGet;
 
 
 /***/ }),
-/* 377 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(34);
@@ -44200,7 +44344,7 @@ module.exports = hashHas;
 
 
 /***/ }),
-/* 378 */
+/* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(34);
@@ -44229,7 +44373,7 @@ module.exports = hashSet;
 
 
 /***/ }),
-/* 379 */
+/* 380 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -44261,16 +44405,16 @@ module.exports = initCloneArray;
 
 
 /***/ }),
-/* 380 */
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var cloneArrayBuffer = __webpack_require__(45),
-    cloneDataView = __webpack_require__(354),
-    cloneMap = __webpack_require__(355),
-    cloneRegExp = __webpack_require__(356),
-    cloneSet = __webpack_require__(357),
-    cloneSymbol = __webpack_require__(358),
-    cloneTypedArray = __webpack_require__(359);
+var cloneArrayBuffer = __webpack_require__(46),
+    cloneDataView = __webpack_require__(355),
+    cloneMap = __webpack_require__(356),
+    cloneRegExp = __webpack_require__(357),
+    cloneSet = __webpack_require__(358),
+    cloneSymbol = __webpack_require__(359),
+    cloneTypedArray = __webpack_require__(360);
 
 /** `Object#toString` result references. */
 var boolTag = '[object Boolean]',
@@ -44347,12 +44491,12 @@ module.exports = initCloneByTag;
 
 
 /***/ }),
-/* 381 */
+/* 382 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseCreate = __webpack_require__(327),
-    getPrototype = __webpack_require__(47),
-    isPrototype = __webpack_require__(51);
+var baseCreate = __webpack_require__(328),
+    getPrototype = __webpack_require__(48),
+    isPrototype = __webpack_require__(52);
 
 /**
  * Initializes an object clone.
@@ -44371,11 +44515,11 @@ module.exports = initCloneObject;
 
 
 /***/ }),
-/* 382 */
+/* 383 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(18),
-    isArguments = __webpack_require__(54),
+    isArguments = __webpack_require__(55),
     isArray = __webpack_require__(7);
 
 /** Built-in value references. */
@@ -44397,7 +44541,7 @@ module.exports = isFlattenable;
 
 
 /***/ }),
-/* 383 */
+/* 384 */
 /***/ (function(module, exports) {
 
 /**
@@ -44418,10 +44562,10 @@ module.exports = isKeyable;
 
 
 /***/ }),
-/* 384 */
+/* 385 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var coreJsData = __webpack_require__(363);
+var coreJsData = __webpack_require__(364);
 
 /** Used to detect methods masquerading as native. */
 var maskSrcKey = (function() {
@@ -44444,7 +44588,7 @@ module.exports = isMasked;
 
 
 /***/ }),
-/* 385 */
+/* 386 */
 /***/ (function(module, exports) {
 
 /**
@@ -44463,7 +44607,7 @@ module.exports = listCacheClear;
 
 
 /***/ }),
-/* 386 */
+/* 387 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(31);
@@ -44504,7 +44648,7 @@ module.exports = listCacheDelete;
 
 
 /***/ }),
-/* 387 */
+/* 388 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(31);
@@ -44529,7 +44673,7 @@ module.exports = listCacheGet;
 
 
 /***/ }),
-/* 388 */
+/* 389 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(31);
@@ -44551,7 +44695,7 @@ module.exports = listCacheHas;
 
 
 /***/ }),
-/* 389 */
+/* 390 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(31);
@@ -44583,12 +44727,12 @@ module.exports = listCacheSet;
 
 
 /***/ }),
-/* 390 */
+/* 391 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Hash = __webpack_require__(315),
+var Hash = __webpack_require__(316),
     ListCache = __webpack_require__(30),
-    Map = __webpack_require__(38);
+    Map = __webpack_require__(39);
 
 /**
  * Removes all key-value entries from the map.
@@ -44610,7 +44754,7 @@ module.exports = mapCacheClear;
 
 
 /***/ }),
-/* 391 */
+/* 392 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(33);
@@ -44634,7 +44778,7 @@ module.exports = mapCacheDelete;
 
 
 /***/ }),
-/* 392 */
+/* 393 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(33);
@@ -44656,7 +44800,7 @@ module.exports = mapCacheGet;
 
 
 /***/ }),
-/* 393 */
+/* 394 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(33);
@@ -44678,7 +44822,7 @@ module.exports = mapCacheHas;
 
 
 /***/ }),
-/* 394 */
+/* 395 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(33);
@@ -44706,10 +44850,10 @@ module.exports = mapCacheSet;
 
 
 /***/ }),
-/* 395 */
+/* 396 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var memoize = __webpack_require__(418);
+var memoize = __webpack_require__(419);
 
 /** Used as the maximum memoize cache size. */
 var MAX_MEMOIZE_SIZE = 500;
@@ -44738,10 +44882,10 @@ module.exports = memoizeCapped;
 
 
 /***/ }),
-/* 396 */
+/* 397 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var overArg = __webpack_require__(122);
+var overArg = __webpack_require__(124);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeKeys = overArg(Object.keys, Object);
@@ -44750,7 +44894,7 @@ module.exports = nativeKeys;
 
 
 /***/ }),
-/* 397 */
+/* 398 */
 /***/ (function(module, exports) {
 
 /**
@@ -44776,10 +44920,10 @@ module.exports = nativeKeysIn;
 
 
 /***/ }),
-/* 398 */
+/* 399 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(115);
+/* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(117);
 
 /** Detect free variable `exports`. */
 var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
@@ -44802,10 +44946,10 @@ var nodeUtil = (function() {
 
 module.exports = nodeUtil;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(36)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(37)(module)))
 
 /***/ }),
-/* 399 */
+/* 400 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -44833,10 +44977,10 @@ module.exports = objectToString;
 
 
 /***/ }),
-/* 400 */
+/* 401 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var apply = __webpack_require__(322);
+var apply = __webpack_require__(323);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
@@ -44875,11 +45019,11 @@ module.exports = overRest;
 
 
 /***/ }),
-/* 401 */
+/* 402 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGet = __webpack_require__(32),
-    baseSlice = __webpack_require__(346);
+    baseSlice = __webpack_require__(347);
 
 /**
  * Gets the parent value at `path` of `object`.
@@ -44897,7 +45041,7 @@ module.exports = parent;
 
 
 /***/ }),
-/* 402 */
+/* 403 */
 /***/ (function(module, exports) {
 
 /** Used to stand-in for `undefined` hash values. */
@@ -44922,7 +45066,7 @@ module.exports = setCacheAdd;
 
 
 /***/ }),
-/* 403 */
+/* 404 */
 /***/ (function(module, exports) {
 
 /**
@@ -44942,11 +45086,11 @@ module.exports = setCacheHas;
 
 
 /***/ }),
-/* 404 */
+/* 405 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseSetToString = __webpack_require__(345),
-    shortOut = __webpack_require__(405);
+var baseSetToString = __webpack_require__(346),
+    shortOut = __webpack_require__(406);
 
 /**
  * Sets the `toString` method of `func` to return `string`.
@@ -44962,7 +45106,7 @@ module.exports = setToString;
 
 
 /***/ }),
-/* 405 */
+/* 406 */
 /***/ (function(module, exports) {
 
 /** Used to detect hot functions by number of calls within a span of milliseconds. */
@@ -45005,7 +45149,7 @@ module.exports = shortOut;
 
 
 /***/ }),
-/* 406 */
+/* 407 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(30);
@@ -45026,7 +45170,7 @@ module.exports = stackClear;
 
 
 /***/ }),
-/* 407 */
+/* 408 */
 /***/ (function(module, exports) {
 
 /**
@@ -45050,7 +45194,7 @@ module.exports = stackDelete;
 
 
 /***/ }),
-/* 408 */
+/* 409 */
 /***/ (function(module, exports) {
 
 /**
@@ -45070,7 +45214,7 @@ module.exports = stackGet;
 
 
 /***/ }),
-/* 409 */
+/* 410 */
 /***/ (function(module, exports) {
 
 /**
@@ -45090,12 +45234,12 @@ module.exports = stackHas;
 
 
 /***/ }),
-/* 410 */
+/* 411 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(30),
-    Map = __webpack_require__(38),
-    MapCache = __webpack_require__(39);
+    Map = __webpack_require__(39),
+    MapCache = __webpack_require__(40);
 
 /** Used as the size to enable large array optimizations. */
 var LARGE_ARRAY_SIZE = 200;
@@ -45130,10 +45274,10 @@ module.exports = stackSet;
 
 
 /***/ }),
-/* 411 */
+/* 412 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var memoizeCapped = __webpack_require__(395);
+var memoizeCapped = __webpack_require__(396);
 
 /** Used to match property names within property paths. */
 var reLeadingDot = /^\./,
@@ -45164,7 +45308,7 @@ module.exports = stringToPath;
 
 
 /***/ }),
-/* 412 */
+/* 413 */
 /***/ (function(module, exports) {
 
 /**
@@ -45196,10 +45340,10 @@ module.exports = constant;
 
 
 /***/ }),
-/* 413 */
+/* 414 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseFlatten = __webpack_require__(329);
+var baseFlatten = __webpack_require__(330);
 
 /**
  * Flattens `array` a single level deep.
@@ -45224,7 +45368,7 @@ module.exports = flatten;
 
 
 /***/ }),
-/* 414 */
+/* 415 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGet = __webpack_require__(32);
@@ -45263,11 +45407,11 @@ module.exports = get;
 
 
 /***/ }),
-/* 415 */
+/* 416 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseHasIn = __webpack_require__(331),
-    hasPath = __webpack_require__(373);
+var baseHasIn = __webpack_require__(332),
+    hasPath = __webpack_require__(374);
 
 /**
  * Checks if `path` is a direct or inherited property of `object`.
@@ -45303,11 +45447,11 @@ module.exports = hasIn;
 
 
 /***/ }),
-/* 416 */
+/* 417 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(19),
-    getPrototype = __webpack_require__(47),
+    getPrototype = __webpack_require__(48),
     isObjectLike = __webpack_require__(22);
 
 /** `Object#toString` result references. */
@@ -45371,7 +45515,7 @@ module.exports = isPlainObject;
 
 
 /***/ }),
-/* 417 */
+/* 418 */
 /***/ (function(module, exports) {
 
 /**
@@ -45397,10 +45541,10 @@ module.exports = last;
 
 
 /***/ }),
-/* 418 */
+/* 419 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var MapCache = __webpack_require__(39);
+var MapCache = __webpack_require__(40);
 
 /** Error message constants. */
 var FUNC_ERROR_TEXT = 'Expected a function';
@@ -45476,13 +45620,13 @@ module.exports = memoize;
 
 
 /***/ }),
-/* 419 */
+/* 420 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayMap = __webpack_require__(41),
-    baseIteratee = __webpack_require__(112),
-    basePickBy = __webpack_require__(341),
-    getAllKeysIn = __webpack_require__(46);
+var arrayMap = __webpack_require__(42),
+    baseIteratee = __webpack_require__(114),
+    basePickBy = __webpack_require__(342),
+    getAllKeysIn = __webpack_require__(47);
 
 /**
  * Creates an object composed of the `object` properties `predicate` returns
@@ -45519,12 +45663,12 @@ module.exports = pickBy;
 
 
 /***/ }),
-/* 420 */
+/* 421 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseProperty = __webpack_require__(342),
-    basePropertyDeep = __webpack_require__(343),
-    isKey = __webpack_require__(50),
+var baseProperty = __webpack_require__(343),
+    basePropertyDeep = __webpack_require__(344),
+    isKey = __webpack_require__(51),
     toKey = __webpack_require__(21);
 
 /**
@@ -45557,7 +45701,7 @@ module.exports = property;
 
 
 /***/ }),
-/* 421 */
+/* 422 */
 /***/ (function(module, exports) {
 
 /**
@@ -45581,10 +45725,10 @@ module.exports = stubFalse;
 
 
 /***/ }),
-/* 422 */
+/* 423 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseToString = __webpack_require__(348);
+var baseToString = __webpack_require__(349);
 
 /**
  * Converts `value` to a string. An empty string is returned for `null`
@@ -45615,7 +45759,7 @@ module.exports = toString;
 
 
 /***/ }),
-/* 423 */
+/* 424 */
 /***/ (function(module, exports) {
 
 /**
@@ -47255,248 +47399,248 @@ module.exports = MarkerClusterer
 
 
 /***/ }),
-/* 424 */
+/* 425 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 131,
-	"./af.js": 131,
-	"./ar": 138,
-	"./ar-dz": 132,
-	"./ar-dz.js": 132,
-	"./ar-kw": 133,
-	"./ar-kw.js": 133,
-	"./ar-ly": 134,
-	"./ar-ly.js": 134,
-	"./ar-ma": 135,
-	"./ar-ma.js": 135,
-	"./ar-sa": 136,
-	"./ar-sa.js": 136,
-	"./ar-tn": 137,
-	"./ar-tn.js": 137,
-	"./ar.js": 138,
-	"./az": 139,
-	"./az.js": 139,
-	"./be": 140,
-	"./be.js": 140,
-	"./bg": 141,
-	"./bg.js": 141,
-	"./bm": 142,
-	"./bm.js": 142,
-	"./bn": 143,
-	"./bn.js": 143,
-	"./bo": 144,
-	"./bo.js": 144,
-	"./br": 145,
-	"./br.js": 145,
-	"./bs": 146,
-	"./bs.js": 146,
-	"./ca": 147,
-	"./ca.js": 147,
-	"./cs": 148,
-	"./cs.js": 148,
-	"./cv": 149,
-	"./cv.js": 149,
-	"./cy": 150,
-	"./cy.js": 150,
-	"./da": 151,
-	"./da.js": 151,
-	"./de": 154,
-	"./de-at": 152,
-	"./de-at.js": 152,
-	"./de-ch": 153,
-	"./de-ch.js": 153,
-	"./de.js": 154,
-	"./dv": 155,
-	"./dv.js": 155,
-	"./el": 156,
-	"./el.js": 156,
-	"./en-au": 157,
-	"./en-au.js": 157,
-	"./en-ca": 158,
-	"./en-ca.js": 158,
-	"./en-gb": 159,
-	"./en-gb.js": 159,
-	"./en-ie": 160,
-	"./en-ie.js": 160,
-	"./en-nz": 161,
-	"./en-nz.js": 161,
-	"./eo": 162,
-	"./eo.js": 162,
-	"./es": 165,
-	"./es-do": 163,
-	"./es-do.js": 163,
-	"./es-us": 164,
-	"./es-us.js": 164,
-	"./es.js": 165,
-	"./et": 166,
-	"./et.js": 166,
-	"./eu": 167,
-	"./eu.js": 167,
-	"./fa": 168,
-	"./fa.js": 168,
-	"./fi": 169,
-	"./fi.js": 169,
-	"./fo": 170,
-	"./fo.js": 170,
-	"./fr": 173,
-	"./fr-ca": 171,
-	"./fr-ca.js": 171,
-	"./fr-ch": 172,
-	"./fr-ch.js": 172,
-	"./fr.js": 173,
-	"./fy": 174,
-	"./fy.js": 174,
-	"./gd": 175,
-	"./gd.js": 175,
-	"./gl": 176,
-	"./gl.js": 176,
-	"./gom-latn": 177,
-	"./gom-latn.js": 177,
-	"./gu": 178,
-	"./gu.js": 178,
-	"./he": 179,
-	"./he.js": 179,
-	"./hi": 180,
-	"./hi.js": 180,
-	"./hr": 181,
-	"./hr.js": 181,
-	"./hu": 182,
-	"./hu.js": 182,
-	"./hy-am": 183,
-	"./hy-am.js": 183,
-	"./id": 184,
-	"./id.js": 184,
-	"./is": 185,
-	"./is.js": 185,
-	"./it": 186,
-	"./it.js": 186,
-	"./ja": 187,
-	"./ja.js": 187,
-	"./jv": 188,
-	"./jv.js": 188,
-	"./ka": 189,
-	"./ka.js": 189,
-	"./kk": 190,
-	"./kk.js": 190,
-	"./km": 191,
-	"./km.js": 191,
-	"./kn": 192,
-	"./kn.js": 192,
-	"./ko": 193,
-	"./ko.js": 193,
-	"./ky": 194,
-	"./ky.js": 194,
-	"./lb": 195,
-	"./lb.js": 195,
-	"./lo": 196,
-	"./lo.js": 196,
-	"./lt": 197,
-	"./lt.js": 197,
-	"./lv": 198,
-	"./lv.js": 198,
-	"./me": 199,
-	"./me.js": 199,
-	"./mi": 200,
-	"./mi.js": 200,
-	"./mk": 201,
-	"./mk.js": 201,
-	"./ml": 202,
-	"./ml.js": 202,
-	"./mr": 203,
-	"./mr.js": 203,
-	"./ms": 205,
-	"./ms-my": 204,
-	"./ms-my.js": 204,
-	"./ms.js": 205,
-	"./mt": 206,
-	"./mt.js": 206,
-	"./my": 207,
-	"./my.js": 207,
-	"./nb": 208,
-	"./nb.js": 208,
-	"./ne": 209,
-	"./ne.js": 209,
-	"./nl": 211,
-	"./nl-be": 210,
-	"./nl-be.js": 210,
-	"./nl.js": 211,
-	"./nn": 212,
-	"./nn.js": 212,
-	"./pa-in": 213,
-	"./pa-in.js": 213,
-	"./pl": 214,
-	"./pl.js": 214,
-	"./pt": 216,
-	"./pt-br": 215,
-	"./pt-br.js": 215,
-	"./pt.js": 216,
-	"./ro": 217,
-	"./ro.js": 217,
-	"./ru": 218,
-	"./ru.js": 218,
-	"./sd": 219,
-	"./sd.js": 219,
-	"./se": 220,
-	"./se.js": 220,
-	"./si": 221,
-	"./si.js": 221,
-	"./sk": 222,
-	"./sk.js": 222,
-	"./sl": 223,
-	"./sl.js": 223,
-	"./sq": 224,
-	"./sq.js": 224,
-	"./sr": 226,
-	"./sr-cyrl": 225,
-	"./sr-cyrl.js": 225,
-	"./sr.js": 226,
-	"./ss": 227,
-	"./ss.js": 227,
-	"./sv": 228,
-	"./sv.js": 228,
-	"./sw": 229,
-	"./sw.js": 229,
-	"./ta": 230,
-	"./ta.js": 230,
-	"./te": 231,
-	"./te.js": 231,
-	"./tet": 232,
-	"./tet.js": 232,
-	"./th": 233,
-	"./th.js": 233,
-	"./tl-ph": 234,
-	"./tl-ph.js": 234,
-	"./tlh": 235,
-	"./tlh.js": 235,
-	"./tr": 236,
-	"./tr.js": 236,
-	"./tzl": 237,
-	"./tzl.js": 237,
-	"./tzm": 239,
-	"./tzm-latn": 238,
-	"./tzm-latn.js": 238,
-	"./tzm.js": 239,
-	"./uk": 240,
-	"./uk.js": 240,
-	"./ur": 241,
-	"./ur.js": 241,
-	"./uz": 243,
-	"./uz-latn": 242,
-	"./uz-latn.js": 242,
-	"./uz.js": 243,
-	"./vi": 244,
-	"./vi.js": 244,
-	"./x-pseudo": 245,
-	"./x-pseudo.js": 245,
-	"./yo": 246,
-	"./yo.js": 246,
-	"./zh-cn": 247,
-	"./zh-cn.js": 247,
-	"./zh-hk": 248,
-	"./zh-hk.js": 248,
-	"./zh-tw": 249,
-	"./zh-tw.js": 249
+	"./af": 133,
+	"./af.js": 133,
+	"./ar": 140,
+	"./ar-dz": 134,
+	"./ar-dz.js": 134,
+	"./ar-kw": 135,
+	"./ar-kw.js": 135,
+	"./ar-ly": 136,
+	"./ar-ly.js": 136,
+	"./ar-ma": 137,
+	"./ar-ma.js": 137,
+	"./ar-sa": 138,
+	"./ar-sa.js": 138,
+	"./ar-tn": 139,
+	"./ar-tn.js": 139,
+	"./ar.js": 140,
+	"./az": 141,
+	"./az.js": 141,
+	"./be": 142,
+	"./be.js": 142,
+	"./bg": 143,
+	"./bg.js": 143,
+	"./bm": 144,
+	"./bm.js": 144,
+	"./bn": 145,
+	"./bn.js": 145,
+	"./bo": 146,
+	"./bo.js": 146,
+	"./br": 147,
+	"./br.js": 147,
+	"./bs": 148,
+	"./bs.js": 148,
+	"./ca": 149,
+	"./ca.js": 149,
+	"./cs": 150,
+	"./cs.js": 150,
+	"./cv": 151,
+	"./cv.js": 151,
+	"./cy": 152,
+	"./cy.js": 152,
+	"./da": 153,
+	"./da.js": 153,
+	"./de": 156,
+	"./de-at": 154,
+	"./de-at.js": 154,
+	"./de-ch": 155,
+	"./de-ch.js": 155,
+	"./de.js": 156,
+	"./dv": 157,
+	"./dv.js": 157,
+	"./el": 158,
+	"./el.js": 158,
+	"./en-au": 159,
+	"./en-au.js": 159,
+	"./en-ca": 160,
+	"./en-ca.js": 160,
+	"./en-gb": 161,
+	"./en-gb.js": 161,
+	"./en-ie": 162,
+	"./en-ie.js": 162,
+	"./en-nz": 163,
+	"./en-nz.js": 163,
+	"./eo": 164,
+	"./eo.js": 164,
+	"./es": 167,
+	"./es-do": 165,
+	"./es-do.js": 165,
+	"./es-us": 166,
+	"./es-us.js": 166,
+	"./es.js": 167,
+	"./et": 168,
+	"./et.js": 168,
+	"./eu": 169,
+	"./eu.js": 169,
+	"./fa": 170,
+	"./fa.js": 170,
+	"./fi": 171,
+	"./fi.js": 171,
+	"./fo": 172,
+	"./fo.js": 172,
+	"./fr": 175,
+	"./fr-ca": 173,
+	"./fr-ca.js": 173,
+	"./fr-ch": 174,
+	"./fr-ch.js": 174,
+	"./fr.js": 175,
+	"./fy": 176,
+	"./fy.js": 176,
+	"./gd": 177,
+	"./gd.js": 177,
+	"./gl": 178,
+	"./gl.js": 178,
+	"./gom-latn": 179,
+	"./gom-latn.js": 179,
+	"./gu": 180,
+	"./gu.js": 180,
+	"./he": 181,
+	"./he.js": 181,
+	"./hi": 182,
+	"./hi.js": 182,
+	"./hr": 183,
+	"./hr.js": 183,
+	"./hu": 184,
+	"./hu.js": 184,
+	"./hy-am": 185,
+	"./hy-am.js": 185,
+	"./id": 186,
+	"./id.js": 186,
+	"./is": 187,
+	"./is.js": 187,
+	"./it": 188,
+	"./it.js": 188,
+	"./ja": 189,
+	"./ja.js": 189,
+	"./jv": 190,
+	"./jv.js": 190,
+	"./ka": 191,
+	"./ka.js": 191,
+	"./kk": 192,
+	"./kk.js": 192,
+	"./km": 193,
+	"./km.js": 193,
+	"./kn": 194,
+	"./kn.js": 194,
+	"./ko": 195,
+	"./ko.js": 195,
+	"./ky": 196,
+	"./ky.js": 196,
+	"./lb": 197,
+	"./lb.js": 197,
+	"./lo": 198,
+	"./lo.js": 198,
+	"./lt": 199,
+	"./lt.js": 199,
+	"./lv": 200,
+	"./lv.js": 200,
+	"./me": 201,
+	"./me.js": 201,
+	"./mi": 202,
+	"./mi.js": 202,
+	"./mk": 203,
+	"./mk.js": 203,
+	"./ml": 204,
+	"./ml.js": 204,
+	"./mr": 205,
+	"./mr.js": 205,
+	"./ms": 207,
+	"./ms-my": 206,
+	"./ms-my.js": 206,
+	"./ms.js": 207,
+	"./mt": 208,
+	"./mt.js": 208,
+	"./my": 209,
+	"./my.js": 209,
+	"./nb": 210,
+	"./nb.js": 210,
+	"./ne": 211,
+	"./ne.js": 211,
+	"./nl": 213,
+	"./nl-be": 212,
+	"./nl-be.js": 212,
+	"./nl.js": 213,
+	"./nn": 214,
+	"./nn.js": 214,
+	"./pa-in": 215,
+	"./pa-in.js": 215,
+	"./pl": 216,
+	"./pl.js": 216,
+	"./pt": 218,
+	"./pt-br": 217,
+	"./pt-br.js": 217,
+	"./pt.js": 218,
+	"./ro": 219,
+	"./ro.js": 219,
+	"./ru": 220,
+	"./ru.js": 220,
+	"./sd": 221,
+	"./sd.js": 221,
+	"./se": 222,
+	"./se.js": 222,
+	"./si": 223,
+	"./si.js": 223,
+	"./sk": 224,
+	"./sk.js": 224,
+	"./sl": 225,
+	"./sl.js": 225,
+	"./sq": 226,
+	"./sq.js": 226,
+	"./sr": 228,
+	"./sr-cyrl": 227,
+	"./sr-cyrl.js": 227,
+	"./sr.js": 228,
+	"./ss": 229,
+	"./ss.js": 229,
+	"./sv": 230,
+	"./sv.js": 230,
+	"./sw": 231,
+	"./sw.js": 231,
+	"./ta": 232,
+	"./ta.js": 232,
+	"./te": 233,
+	"./te.js": 233,
+	"./tet": 234,
+	"./tet.js": 234,
+	"./th": 235,
+	"./th.js": 235,
+	"./tl-ph": 236,
+	"./tl-ph.js": 236,
+	"./tlh": 237,
+	"./tlh.js": 237,
+	"./tr": 238,
+	"./tr.js": 238,
+	"./tzl": 239,
+	"./tzl.js": 239,
+	"./tzm": 241,
+	"./tzm-latn": 240,
+	"./tzm-latn.js": 240,
+	"./tzm.js": 241,
+	"./uk": 242,
+	"./uk.js": 242,
+	"./ur": 243,
+	"./ur.js": 243,
+	"./uz": 245,
+	"./uz-latn": 244,
+	"./uz-latn.js": 244,
+	"./uz.js": 245,
+	"./vi": 246,
+	"./vi.js": 246,
+	"./x-pseudo": 247,
+	"./x-pseudo.js": 247,
+	"./yo": 248,
+	"./yo.js": 248,
+	"./zh-cn": 249,
+	"./zh-cn.js": 249,
+	"./zh-hk": 250,
+	"./zh-hk.js": 250,
+	"./zh-tw": 251,
+	"./zh-tw.js": 251
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -47512,10 +47656,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 424;
+webpackContext.id = 425;
 
 /***/ }),
-/* 425 */
+/* 426 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -47708,7 +47852,7 @@ webpackContext.id = 424;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28), __webpack_require__(23)))
 
 /***/ }),
-/* 426 */
+/* 427 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47728,7 +47872,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 427 */
+/* 428 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47748,7 +47892,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 428 */
+/* 429 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47768,7 +47912,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 429 */
+/* 430 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47788,7 +47932,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 430 */
+/* 431 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47808,7 +47952,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 431 */
+/* 432 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47828,7 +47972,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 432 */
+/* 433 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47848,7 +47992,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 433 */
+/* 434 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47868,7 +48012,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 434 */
+/* 435 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47888,7 +48032,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 435 */
+/* 436 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47908,7 +48052,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 436 */
+/* 437 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47928,7 +48072,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 437 */
+/* 438 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47948,7 +48092,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 438 */
+/* 439 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47968,7 +48112,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 439 */
+/* 440 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47988,7 +48132,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 440 */
+/* 441 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48008,7 +48152,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 441 */
+/* 442 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48028,7 +48172,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 442 */
+/* 443 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48048,7 +48192,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 443 */
+/* 444 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48068,7 +48212,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 444 */
+/* 445 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48088,7 +48232,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 445 */
+/* 446 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48108,7 +48252,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 446 */
+/* 447 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48128,7 +48272,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 447 */
+/* 448 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48148,7 +48292,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 448 */
+/* 449 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48168,7 +48312,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 449 */
+/* 450 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48188,7 +48332,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 450 */
+/* 451 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48208,7 +48352,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 451 */
+/* 452 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48228,7 +48372,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 452 */
+/* 453 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48248,7 +48392,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 453 */
+/* 454 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48268,7 +48412,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 454 */
+/* 455 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48288,7 +48432,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 455 */
+/* 456 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48308,7 +48452,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 456 */
+/* 457 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48328,7 +48472,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 457 */
+/* 458 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48348,7 +48492,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 458 */
+/* 459 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48368,7 +48512,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 459 */
+/* 460 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48388,7 +48532,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 460 */
+/* 461 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48408,7 +48552,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 461 */
+/* 462 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48428,7 +48572,7 @@ var result = __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprit
 /* unused harmony default export */ var _unused_webpack_default_export = (symbol);
 
 /***/ }),
-/* 462 */
+/* 463 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = Function.prototype.apply;
@@ -48481,18 +48625,18 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(425);
+__webpack_require__(426);
 exports.setImmediate = setImmediate;
 exports.clearImmediate = clearImmediate;
 
 
 /***/ }),
-/* 463 */
+/* 464 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_autocompleteImpl_js__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_autocompleteImpl_js__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_autocompleteImpl_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_autocompleteImpl_js__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_autocompleteImpl_js__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_autocompleteImpl_js__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_ff36f0b0_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_autocomplete_vue__ = __webpack_require__(536);
@@ -48522,15 +48666,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 464 */
+/* 465 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_infoWindowImpl_js__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_b1ade17a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_infoWindow_vue__ = __webpack_require__(530);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_b1ade17a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_infoWindow_vue__ = __webpack_require__(529);
 var normalizeComponent = __webpack_require__(1)
 /* script */
 
@@ -48557,17 +48701,17 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 465 */
+/* 466 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_mapImpl_js__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_mapImpl_js__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_mapImpl_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_mapImpl_js__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_mapImpl_js__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_mapImpl_js__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_fb581256_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_map_vue__ = __webpack_require__(535);
 function injectStyle (ssrContext) {
-  __webpack_require__(312)
+  __webpack_require__(313)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -48595,15 +48739,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 466 */
+/* 467 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_13bfbbee_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_placeInput_vue__ = __webpack_require__(501);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_13bfbbee_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_placeInput_vue__ = __webpack_require__(503);
 var normalizeComponent = __webpack_require__(1)
 /* script */
 
@@ -48630,17 +48774,17 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 467 */
+/* 468 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_streetViewPanoramaImpl_js__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_streetViewPanoramaImpl_js__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_streetViewPanoramaImpl_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_streetViewPanoramaImpl_js__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_streetViewPanoramaImpl_js__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_streetViewPanoramaImpl_js__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_5f5650e6_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_streetViewPanorama_vue__ = __webpack_require__(521);
 function injectStyle (ssrContext) {
-  __webpack_require__(300)
+  __webpack_require__(301)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -48668,15 +48812,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 468 */
+/* 469 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_allergies_vue__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_allergies_vue__ = __webpack_require__(68);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_62ed97ce_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_allergies_vue__ = __webpack_require__(522);
 function injectStyle (ssrContext) {
-  __webpack_require__(301)
+  __webpack_require__(302)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -48705,15 +48849,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 469 */
+/* 470 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_answering_service_provider_vue__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_answering_service_provider_vue__ = __webpack_require__(69);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2e647280_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_answering_service_provider_vue__ = __webpack_require__(507);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_05350040_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_answering_service_provider_vue__ = __webpack_require__(498);
 function injectStyle (ssrContext) {
-  __webpack_require__(287)
+  __webpack_require__(280)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -48731,7 +48875,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_answering_service_provider_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2e647280_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_answering_service_provider_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_05350040_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_answering_service_provider_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -48742,15 +48886,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 470 */
+/* 471 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_answering_service_vue__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_answering_service_vue__ = __webpack_require__(70);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2118e439_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_answering_service_vue__ = __webpack_require__(505);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_cc852bf0_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_answering_service_vue__ = __webpack_require__(531);
 function injectStyle (ssrContext) {
-  __webpack_require__(285)
+  __webpack_require__(309)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -48768,7 +48912,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_answering_service_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2118e439_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_answering_service_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_cc852bf0_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_answering_service_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -48779,15 +48923,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 471 */
+/* 472 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_billing_history_vue__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_billing_history_vue__ = __webpack_require__(72);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_6ca000a6_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_billing_history_vue__ = __webpack_require__(524);
 function injectStyle (ssrContext) {
-  __webpack_require__(303)
+  __webpack_require__(304)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -48816,15 +48960,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 472 */
+/* 473 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_patient_billing_vue__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_patient_billing_vue__ = __webpack_require__(73);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_faf3c338_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_patient_billing_vue__ = __webpack_require__(534);
 function injectStyle (ssrContext) {
-  __webpack_require__(311)
+  __webpack_require__(312)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -48853,15 +48997,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 473 */
+/* 474 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_payment_confirmation_vue__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_payment_confirmation_vue__ = __webpack_require__(74);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4eadc1f0_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_payment_confirmation_vue__ = __webpack_require__(514);
 function injectStyle (ssrContext) {
-  __webpack_require__(294)
+  __webpack_require__(295)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -48890,15 +49034,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 474 */
+/* 475 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_payment_result_vue__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_payment_result_vue__ = __webpack_require__(75);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_512ed9a2_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_payment_result_vue__ = __webpack_require__(515);
 function injectStyle (ssrContext) {
-  __webpack_require__(295)
+  __webpack_require__(296)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -48927,15 +49071,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 475 */
+/* 476 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_statement_review_vue__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_statement_review_vue__ = __webpack_require__(76);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_417b1cce_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_statement_review_vue__ = __webpack_require__(510);
 function injectStyle (ssrContext) {
-  __webpack_require__(290)
+  __webpack_require__(291)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -48964,15 +49108,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 476 */
+/* 477 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_calendar_popup_vue__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_calendar_popup_vue__ = __webpack_require__(77);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_46f1f0c6_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_calendar_popup_vue__ = __webpack_require__(511);
 function injectStyle (ssrContext) {
-  __webpack_require__(291)
+  __webpack_require__(292)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -49001,15 +49145,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 477 */
+/* 478 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_card_vue__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_card_vue__ = __webpack_require__(78);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1174b562_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_card_vue__ = __webpack_require__(499);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1174b562_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_card_vue__ = __webpack_require__(501);
 function injectStyle (ssrContext) {
-  __webpack_require__(280)
+  __webpack_require__(283)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -49038,15 +49182,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 478 */
+/* 479 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_case_managment_incident_vue__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_case_managment_incident_vue__ = __webpack_require__(79);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_6a2f9b1c_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_incident_vue__ = __webpack_require__(523);
 function injectStyle (ssrContext) {
-  __webpack_require__(302)
+  __webpack_require__(303)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -49075,15 +49219,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 479 */
+/* 480 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_case_managment_incidents_vue__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_case_managment_incidents_vue__ = __webpack_require__(80);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_ea87f2aa_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_incidents_vue__ = __webpack_require__(533);
 function injectStyle (ssrContext) {
-  __webpack_require__(310)
+  __webpack_require__(311)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -49112,13 +49256,13 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 480 */
+/* 481 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_case_managment_vue__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_case_managment_vue__ = __webpack_require__(81);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7e4ec5ac_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_vue__ = __webpack_require__(526);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7e4ec5ac_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_case_managment_vue__ = __webpack_require__(525);
 function injectStyle (ssrContext) {
   __webpack_require__(305)
 }
@@ -49149,15 +49293,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 481 */
+/* 482 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_directory_form_vue__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_directory_form_vue__ = __webpack_require__(82);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5de0e08e_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_directory_form_vue__ = __webpack_require__(519);
 function injectStyle (ssrContext) {
-  __webpack_require__(298)
+  __webpack_require__(299)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -49186,7 +49330,7 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 482 */
+/* 483 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -49217,15 +49361,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 483 */
+/* 484 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_encounters_vue__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_encounters_vue__ = __webpack_require__(83);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_12f89366_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_encounters_vue__ = __webpack_require__(500);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_12f89366_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_encounters_vue__ = __webpack_require__(502);
 function injectStyle (ssrContext) {
-  __webpack_require__(281)
+  __webpack_require__(284)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -49254,52 +49398,15 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 484 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_board_block_vue__ = __webpack_require__(82);
-/* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4bbed15f_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_board_block_vue__ = __webpack_require__(513);
-function injectStyle (ssrContext) {
-  __webpack_require__(293)
-}
-var normalizeComponent = __webpack_require__(1)
-/* script */
-
-
-/* template */
-
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_board_block_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4bbed15f_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_board_block_vue__["a" /* default */],
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-
-/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
-
-
-/***/ }),
 /* 485 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_insurance_verification_vue__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_insurance_verification_vue__ = __webpack_require__(85);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3e8d9492_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_insurance_verification_vue__ = __webpack_require__(509);
 function injectStyle (ssrContext) {
-  __webpack_require__(289)
+  __webpack_require__(290)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -49332,9 +49439,9 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_make_appointment_vue__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_make_appointment_vue__ = __webpack_require__(87);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_c26e3770_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_make_appointment_vue__ = __webpack_require__(531);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_c26e3770_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_make_appointment_vue__ = __webpack_require__(530);
 function injectStyle (ssrContext) {
   __webpack_require__(308)
 }
@@ -49369,11 +49476,11 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_detail_referral_vue__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_detail_referral_vue__ = __webpack_require__(88);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0bed27ec_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_detail_referral_vue__ = __webpack_require__(498);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0bed27ec_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_detail_referral_vue__ = __webpack_require__(500);
 function injectStyle (ssrContext) {
-  __webpack_require__(279)
+  __webpack_require__(282)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -49406,9 +49513,9 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_phone_book_vue__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_phone_book_vue__ = __webpack_require__(90);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_a64b9cb4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_phone_book_vue__ = __webpack_require__(528);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_a64b9cb4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_phone_book_vue__ = __webpack_require__(527);
 function injectStyle (ssrContext) {
   __webpack_require__(307)
 }
@@ -49443,11 +49550,11 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_search_patient_vue__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_search_patient_vue__ = __webpack_require__(91);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5c537c35_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_search_patient_vue__ = __webpack_require__(518);
 function injectStyle (ssrContext) {
-  __webpack_require__(297)
+  __webpack_require__(298)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -49480,11 +49587,11 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_update_referral_vue__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_update_referral_vue__ = __webpack_require__(92);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_20cb6802_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_update_referral_vue__ = __webpack_require__(504);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_20cb6802_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_update_referral_vue__ = __webpack_require__(506);
 function injectStyle (ssrContext) {
-  __webpack_require__(284)
+  __webpack_require__(287)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -49517,9 +49624,9 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_patient_info_vue__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_patient_info_vue__ = __webpack_require__(94);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd88d5a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_patient_info_vue__ = __webpack_require__(527);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd88d5a_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_patient_info_vue__ = __webpack_require__(526);
 function injectStyle (ssrContext) {
   __webpack_require__(306)
 }
@@ -49554,11 +49661,11 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_pharmacy_form_vue__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_pharmacy_form_vue__ = __webpack_require__(95);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_25b3d01e_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_pharmacy_form_vue__ = __webpack_require__(506);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_25b3d01e_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_pharmacy_form_vue__ = __webpack_require__(507);
 function injectStyle (ssrContext) {
-  __webpack_require__(286)
+  __webpack_require__(288)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -49591,11 +49698,11 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_pharmacy_vue__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_pharmacy_vue__ = __webpack_require__(96);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_d45b2f92_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_pharmacy_vue__ = __webpack_require__(532);
 function injectStyle (ssrContext) {
-  __webpack_require__(309)
+  __webpack_require__(310)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -49628,11 +49735,11 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_referral_vue__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_referral_vue__ = __webpack_require__(97);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_47152d5e_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_referral_vue__ = __webpack_require__(512);
 function injectStyle (ssrContext) {
-  __webpack_require__(292)
+  __webpack_require__(293)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -49665,11 +49772,11 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_sidebar_vue__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_sidebar_vue__ = __webpack_require__(98);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7dddfed4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__ = __webpack_require__(525);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_084b3bcf_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__ = __webpack_require__(499);
 function injectStyle (ssrContext) {
-  __webpack_require__(304)
+  __webpack_require__(281)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -49687,7 +49794,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_sidebar_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7dddfed4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_084b3bcf_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -49702,11 +49809,11 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_scheduling_vue__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_scheduling_vue__ = __webpack_require__(99);
 /* unused harmony reexport namespace */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1422415f_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_scheduling_vue__ = __webpack_require__(502);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1422415f_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_scheduling_vue__ = __webpack_require__(504);
 function injectStyle (ssrContext) {
-  __webpack_require__(282)
+  __webpack_require__(285)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -49739,9 +49846,9 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_signIn_vue__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_signIn_vue__ = __webpack_require__(100);
 /* unused harmony reexport namespace */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_ae2535ac_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_signIn_vue__ = __webpack_require__(529);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_ae2535ac_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_signIn_vue__ = __webpack_require__(528);
 var normalizeComponent = __webpack_require__(1)
 /* script */
 
@@ -49773,13 +49880,33 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"appointment"},[_c('div',{staticClass:"answering-service"},[_vm._m(0),_c('div',{staticClass:"answering-triage-guide"},[_c('div',{staticStyle:{"height":"40px"}}),_c('span',{staticStyle:{"font-size":"1.5em","font-weight":"700","color":"#1db7e9"}},[_vm._v("Triage Guide")]),_c('div',{staticStyle:{"height":"30px"}}),_c('div',{staticStyle:{"font-size":"20px"}},[_vm._v("I can help you with OnCall Physician or other?")]),_c('div',{staticStyle:{"height":"100px"}}),_c('div',{staticClass:"button-array"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalCall.open()}}},[_vm._v("OnCall")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"}},[_vm._v("Schedule")])]),_c('div',{staticClass:"button-array"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalphone.open()}}},[_vm._v("Urgent")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalTransfer.open()}}},[_vm._v("Transfer")])])]),_c('modal',{ref:"modalprovider"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("South Shore Urology")])])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"padding":"10px","background":"darkcyan","color":"white"}},[_c('span',[_vm._v("Mon - Fri 9am - 4:30 pm")]),_c('span',{staticStyle:{"margin-left":"100px"}},[_vm._v("780 Main Street ")]),_c('span',{staticStyle:{"margin-left":"130px"}},[_vm._v("Office #: 781-331-4600")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"padding":"10px","background":"darkcyan","color":"white"}},[_c('span',[_vm._v("Lunch: 12pm - 1:15pm")]),_c('span',{staticStyle:{"margin-left":"110px"}},[_vm._v("South Weymouth, MA 02190")]),_c('span',{staticStyle:{"margin-left":"40px"}},[_vm._v("Fax #: 781-337-5095")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"padding":"10px","background":"darkcyan","color":"white"}},[_c('span',{staticStyle:{"margin-left":"510px"}},[_vm._v("SSH Ext: x6860")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"margin-top":"30px"}},[_c('span',[_vm._v("The office representitives are unavailable at this time. Is this urgent or can I send a message to the office for you?")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"margin-top":"30px"}},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",staticStyle:{"margin-top":"-5px"},attrs:{"options":["Office Message","Urgent/OnCall","-------","Office Status"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Office Message"}})],1),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$refs.modalprovider.close();}}},[_vm._v("Ok")])])])]),_c('modal',{ref:"modalTransfer"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('svg',{staticClass:"ico-svg ico-search"},[_c('use',{attrs:{"xlink:href":"#search"}})]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.search_keyword),expression:"search_keyword"}],staticClass:"ui-input-search",attrs:{"placeholder":"Search Directory"},domProps:{"value":(_vm.search_keyword)},on:{"input":function($event){if($event.target.composing){ return; }_vm.search_keyword=$event.target.value}}}),_c('span',{staticClass:"inline-present",staticStyle:{"margin-left":"70px","margin-right":"20px"}},[_vm._v("Filter:")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",staticStyle:{"margin-top":"-5px"},attrs:{"options":["Show All","Patient","Provider"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Show All"},model:{value:(_vm.search_filter),callback:function ($$v) {_vm.search_filter=$$v},expression:"search_filter"}}),_c('table',{staticClass:"appointment__table"},[_c('tr',[_c('th',[_vm._v("Name")]),_c('th',[_vm._v("Type")]),_c('th',[_vm._v("Source")]),_c('th',[_vm._v("Telephone")]),_c('th',[_vm._v("Address")]),_c('th',[_vm._v("Provider")]),_c('th',[_vm._v("Provider Contact")]),_c('th',[_vm._v("Provider Status")]),_c('th',[_vm._v("Actions")])]),_vm._l((_vm.data),function(item,index){return (_vm.check(item))?_c('tr',[(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{on:{"click":function($event){$event.preventDefault();_vm.$refs.modaldetail.open();}}},[_vm._v(_vm._s(item.name))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited",on:{"click":function($event){$event.preventDefault();_vm.$refs.modaldetail.open();}}},[_vm._v(_vm._s(item.name))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.type))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.type))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.source))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.source))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.telephone))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.telephone))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.address))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.address))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{on:{"click":function($event){$event.preventDefault();_vm.$refs.modalprovider.open();}}},[_vm._v(_vm._s(item.provider))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited",on:{"click":function($event){$event.preventDefault();_vm.$refs.modalprovider.open();}}},[_vm._v(_vm._s(item.provider))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.providerContact))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.providerContact))]):_vm._e(),(_vm.isGreen(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{staticClass:"green"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isGreen(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited green"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isRed(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{staticClass:"red"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isRed(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited red"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isNormal(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isNormal(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{staticClass:"more-action"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__more"},[_c('use',{attrs:{"xlink:href":"#more"}})])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.showSMSWindow(item)}}},[_vm._v("Text")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Page")])])])]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited more-action"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__more"},[_c('use',{attrs:{"xlink:href":"#more"}})])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.showSMSWindow(item)}}},[_vm._v("Text")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Page")])])])]):_vm._e()]):_vm._e()})],2)],1),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalTransfer.close()}}},[_vm._v("CANCEL")])])])]),_c('modal',{ref:"modaldetail"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Customer Details ")]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("First Name  ")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.first_name}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Last Name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.last_name}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("MI")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.mi}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Location")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.location}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Room #")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.room_no}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Bed")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.bed_no}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Phone")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.phone}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Floor Name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.floor_name}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Location Main Phone")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.location_phone}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("MR #")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.MRN}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("DOB")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.dob}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Town")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.town}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Admission/Registeration Date")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.admission_date}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("City/Town")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.city}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Discharge Date")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.discharge_date}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Attending Provider")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.attending_provider}})])])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$refs.modaldetail.close();}}},[_vm._v("Ok")])])])]),_c('modal',{ref:"modalphone"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Phone Book")]),_c('div',{staticClass:"modal-content-row"},[_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Destination")])]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Urology (469-899-1224)','Radiology (214-212-0912)','Cardiology (972-358-6547)','Anesthesiology (972-891-8656)'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select Phone Number"},on:{"input":function($event){}},model:{value:(_vm.phoneNumber),callback:function ($$v) {_vm.phoneNumber=$$v},expression:"phoneNumber"}})],1),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Type")])]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Transfer','Consult', 'Conference'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select Phone Type"},on:{"input":function($event){}},model:{value:(_vm.phoneType),callback:function ($$v) {_vm.phoneType=$$v},expression:"phoneType"}})],1),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Notes")])]),_c('textarea',{directives:[{name:"model",rawName:"v-model",value:(_vm.phoneNote),expression:"phoneNote"}],staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default mod--sms",domProps:{"value":(_vm.phoneNote)},on:{"input":function($event){if($event.target.composing){ return; }_vm.phoneNote=$event.target.value}}}),_c('span',[_vm._v("tempDNIS")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.tempDNIS),expression:"tempDNIS"}],attrs:{"readonly":"readonly"},domProps:{"value":(_vm.tempDNIS)},on:{"input":function($event){if($event.target.composing){ return; }_vm.tempDNIS=$event.target.value}}})])])]),_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"box"},[_c('div',{staticClass:"tab-holder"},[_c('a',{staticClass:"tab",on:{"click":function($event){_vm.showRecent=false}}},[_vm._v("Recent List")]),_c('a',{staticClass:"tab",on:{"click":function($event){_vm.showRecent=true}}},[_vm._v("Favorite List")])]),_c('div',[(_vm.showRecent)?_c('ul',[_c('li',[_vm._v("972-888-2938")]),_c('li',[_vm._v("Urology (469-899-1224)")]),_c('li',[_vm._v("Front Office")]),_c('li',[_vm._v("Cardiology")])]):_vm._e(),(!_vm.showRecent)?_c('ul',[_c('li',[_vm._v("Urology (469-899-1224)")]),_c('li',[_vm._v("Radiology (214-212-0912)")]),_c('li',[_vm._v("Cardiology (972-358-6547)")]),_c('li',[_vm._v("Anesthesiology (972-891-8656)")])]):_vm._e()])])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalphone.close()}}},[_vm._v("CANCEL")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.submit}},[_vm._v("DIAL")])])])]),_c('modal',{ref:"modalCall"},[_c('div',{staticClass:"modal__content"},[_c('img',{staticStyle:{"width":"840px"},attrs:{"src":"img/on-call-dlg.png"}}),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$refs.modalCall.close()}}},[_vm._v("OK")])])])])],1),_c('div',{staticClass:"content"},[_c('div',{staticClass:"ccase-managment"},[_c('div',{staticClass:"ccase-managment__top_boxes"},[_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==3?5:1,"text":'Past Appointments',"col":'rgb(255,0,0)'}})],1),_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==0?3:2,"text":'Current Appointments',"col":'green'}})],1),_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==3?6:1,"text":'Future Appointments',"col":'grey'}})],1),_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==0?2:3,"text":'Cancelled/No Shows',"col":'pink'}})],1)]),_c('div',{staticClass:"ccase-managment__top_boxes"},[_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==0?3:3,"text":'Bills',"col":'grey'}})],1),_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==0?2:2,"text":'Referrals',"col":'pink'}})],1),_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==0?3:2,"text":'Outreach',"col":'rgb(255,0,0)'}})],1),_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==0?2:4,"text":'Inbound',"col":'green'}})],1)])]),_c('div',{staticClass:"content__box"},[_c('journey-map',{attrs:{"info":_vm.$root._data.Customers[_vm.$root.activePacient]}})],1)])])}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"answering-caller-info"},[_c('div',{staticStyle:{"font-size":"1.5em","font-weight":"700","color":"#1db7e9"}},[_vm._v(" Details")]),_c('div',{staticStyle:{"height":"10px"}}),_c('div',[_vm._v("Practioning Nurse at OmniCare Downtown")]),_c('div',{staticStyle:{"font-size":"1.5em","margin-top":"30px","font-weight":"700","color":"#1db7e9"}},[_vm._v("This week")]),_c('div',{staticStyle:{"margin":"10px 0"}},[_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Start: ")]),_c('span',{staticStyle:{"margin-left":"5px"}},[_vm._v("7:00 AM")]),_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)","margin-left":"25px"}},[_vm._v("End: ")]),_c('span',{staticStyle:{"margin-left":"5px"}},[_vm._v("5:00 PM")])]),_c('div',{staticStyle:{"margin":"10px 0"}},[_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Shift: ")]),_c('span',{staticStyle:{"margin-left":"5px"}},[_vm._v("Day")]),_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)","margin-left":"25px"}},[_vm._v("Role:")]),_c('span',{staticStyle:{"margin-left":"5px"}},[_vm._v("RN")])]),_c('div',[_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Call Order:")]),_c('span',{staticStyle:{"margin-left":"5px"}},[_vm._v("18")])]),_c('div',{staticStyle:{"font-size":"1.5em","margin-top":"30px","font-weight":"700","color":"#1db7e9"}},[_vm._v("Quick Links")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-provider-link",attrs:{"href":"#3"}},[_vm._v("OnCall")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-provider-link",attrs:{"href":"#3"}},[_vm._v("Department")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-provider-link",attrs:{"href":"#3"}},[_vm._v("Employee")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-provider-link",attrs:{"href":"#3"}},[_vm._v("Patient")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-provider-link",attrs:{"href":"#3"}},[_vm._v("Resource Account")]),_c('div'),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-provider-link blue",attrs:{"href":"#3"}},[_vm._v("Other")])])}]
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 499 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.pacients)?_c('aside',{staticClass:"sidebar"},[(_vm.$root._data.isPatient === true || _vm.$root._data.isProvider === true)?_c('div',{staticClass:"sidebar__title"},[_vm._v("Caller Information")]):_vm._e(),(_vm.$root._data.isPatient === true)?_c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Caller Name")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"placeholder":"Johns Jacobs","options":["Johns Jacobs"],"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.getCurrentIndexPacient}})],1),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Caller Phone #")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.$root._data.callerPhone}})]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Call Type")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",attrs:{"placeholder":"Patient","options":['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician'],"searchable":false,"allowEmpty":false,"showLabels":false}})],1)]):_vm._e(),(_vm.$root._data.isProvider === true)?_c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Caller Name")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"placeholder":"Nancy Snyder","options":["Nancy Snyder"],"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.getCurrentIndexPacient}})],1),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Caller Phone #")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.$root._data.callerPhone}})]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Call Type")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",attrs:{"placeholder":"Nurse","options":['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician'],"searchable":false,"allowEmpty":false,"showLabels":false}})],1)]):_vm._e(),_c('div',{staticClass:"sidebar__title"},[_vm._v("Customer Information")]),_c('div',{staticClass:"l-sidebar__userpic"},[_c('div',{staticClass:"sidebar__userpic"},[_c('img',{staticClass:"sidebar__userpic-image",attrs:{"src":_vm.pacients[_vm.currentPacient].PhotoUrl}}),_c('a',{staticClass:"sidebar__userpic-info",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.currentShowSubBox = 'patient-info'}}},[_c('svg',{staticClass:"ico-svg ico-svg__info"},[_c('use',{attrs:{"xlink:href":"#info"}})])])]),(_vm.$root._data.isPatient === true || _vm.$root._data.isProvider === true)?_c('a',{staticClass:"content__top-action content__search-icon",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.showSearchCustomer()}}},[_c('svg',{staticClass:"ico-svg__search-patient"},[_c('use',{attrs:{"xlink:href":"#search"}})])]):_vm._e()]),_c('div',{staticClass:"sidebar__note-userpic"},[_vm._v("Number of Matches ("),_c('b',[_vm._v(_vm._s(_vm.sizePacients))]),_vm._v(")")]),_c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Customer Name")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":_vm.namesPacient,"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientName),callback:function ($$v) {_vm.currentPacientName=$$v},expression:"currentPacientName"}})],1),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Date of Birth")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm._f("moment")(_vm.pacients[_vm.currentPacient].DateOfBirth,"MMM DD, YYYY")))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("MRN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].MRN)+"    ")])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("SSN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].SSN))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Phone Number")]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PhoneNumber))])])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Address")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Address.Line1)+", ")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(" "+_vm._s(_vm.pacients[_vm.currentPacient].Address.Line2))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Primary Care Provider")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Phone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Phone))])])]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Treatment Team")]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].TreatmentTeam[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].TreatmentTeam[0].PhoneNumber))])])]):_vm._e(),(_vm.pacients[_vm.currentPacient].Provider.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Provider")]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Provider[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].Provider[0].PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Provider[0].PhoneNumber))])])])]):_vm._e()]),_c('div',{staticClass:"sidebar__success"},[_c('div',{staticClass:"sub-popup-menu"},[_vm._m(0),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('http://10.1.74.36:2230/EPIC_InCustomer/patient_scheduling/search.html')}}},[_vm._v("Customer Search")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('https://i.ytimg.com/vi/RIsVxJWuQ8Y/maxresdefault.jpg')}}},[_vm._v("Customer Information")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.replaceNewWindow('alert:test')}}},[_vm._v("Appointments Create")])])])])]):_vm._e()}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary mod--block",attrs:{"href":"#3"}},[_vm._v(" Screen pop")])])}]
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 500 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('modal',{ref:"modalphone"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Customer Referral Details ")]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referral Id    ")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].refID}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("External Referral ID")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].refID_External}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referral Auth Start Date")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].startDate}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referral Auth End Date")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].endDate}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Customer Id    ")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].patientID}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Customer Name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].patientName}})]),_c('div',{staticClass:"referral__detail-field-patient-address"},[_c('span',{staticClass:"infoname_address"},[_vm._v("Customer Address")]),_c('input',{staticClass:"infovalue-patient-address",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].patientAddress}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referral Type")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referralType}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referral Status")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referredStatus}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Diagnoses")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].diagnoses}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("procedures")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].procedures}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referred by provider name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referredBy}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referred to provider name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referredTo}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referred to provider address")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referredToAddress}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Referred to facility address")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":this.$root._data.Referrals[this.$root._data.referralIndex].referredToFacility}})])])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":_vm.onClose}},[_vm._v("Ok")])])])])}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 499 */
+/* 501 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -49789,7 +49916,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 500 */
+/* 502 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -49799,7 +49926,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 501 */
+/* 503 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -49809,7 +49936,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 502 */
+/* 504 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -49819,7 +49946,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 503 */
+/* 505 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -49829,7 +49956,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 504 */
+/* 506 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -49839,32 +49966,12 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 505 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"appointment"},[_c('div',{staticClass:"answering-service"},[_vm._m(0),_c('div',{staticClass:"answering-triage-guide"},[_c('div',{staticStyle:{"height":"20px"}}),_c('span',{staticStyle:{"font-size":"1.5em","font-weight":"700","color":"#1db7e9"}},[_vm._v("Triage Guide")]),_c('div',{staticStyle:{"height":"30px"}}),_c('div',{staticStyle:{"font-size":"20px"}},[_vm._v("The office representatives are unavailable at this time. Is this urgent or can I send a message to the office for you?")]),_c('div',{staticStyle:{"height":"50px"}}),_c('div',{staticClass:"button-array"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalbook.open()}}},[_vm._v("Message")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalbook.open()}}},[_vm._v("Page")])]),_c('div',{staticClass:"button-array"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalphone.open()}}},[_vm._v("Urgent")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalTransfer.open()}}},[_vm._v("Transfer")])])]),_c('modal',{ref:"modalprovider"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("South Shore Urology")])])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"padding":"10px","background":"darkcyan","color":"white"}},[_c('span',[_vm._v("Mon - Fri 9am - 4:30 pm")]),_c('span',{staticStyle:{"margin-left":"100px"}},[_vm._v("780 Main Street ")]),_c('span',{staticStyle:{"margin-left":"130px"}},[_vm._v("Office #: 781-331-4600")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"padding":"10px","background":"darkcyan","color":"white"}},[_c('span',[_vm._v("Lunch: 12pm - 1:15pm")]),_c('span',{staticStyle:{"margin-left":"110px"}},[_vm._v("South Weymouth, MA 02190")]),_c('span',{staticStyle:{"margin-left":"40px"}},[_vm._v("Fax #: 781-337-5095")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"padding":"10px","background":"darkcyan","color":"white"}},[_c('span',{staticStyle:{"margin-left":"510px"}},[_vm._v("SSH Ext: x6860")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"margin-top":"30px"}},[_c('span',[_vm._v("The office representitives are unavailable at this time. Is this urgent or can I send a message to the office for you?")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"margin-top":"30px"}},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",staticStyle:{"margin-top":"-5px"},attrs:{"options":["Office Message","Urgent/OnCall","-------","Office Status"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Office Message"}})],1),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$refs.modalprovider.close();}}},[_vm._v("Ok")])])])]),_c('modal',{ref:"modalTransfer"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('svg',{staticClass:"ico-svg ico-search"},[_c('use',{attrs:{"xlink:href":"#search"}})]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.search_keyword),expression:"search_keyword"}],staticClass:"ui-input-search",attrs:{"placeholder":"Search Directory"},domProps:{"value":(_vm.search_keyword)},on:{"input":function($event){if($event.target.composing){ return; }_vm.search_keyword=$event.target.value}}}),_c('span',{staticClass:"inline-present",staticStyle:{"margin-left":"70px","margin-right":"20px"}},[_vm._v("Filter:")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",staticStyle:{"margin-top":"-5px"},attrs:{"options":["Show All","Patient","Provider"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Show All"},model:{value:(_vm.search_filter),callback:function ($$v) {_vm.search_filter=$$v},expression:"search_filter"}}),_c('table',{staticClass:"appointment__table"},[_c('tr',[_c('th',[_vm._v("Name")]),_c('th',[_vm._v("Type")]),_c('th',[_vm._v("Source")]),_c('th',[_vm._v("Telephone")]),_c('th',[_vm._v("Address")]),_c('th',[_vm._v("Provider")]),_c('th',[_vm._v("Provider Contact")]),_c('th',[_vm._v("Provider Status")]),_c('th',[_vm._v("Actions")])]),_vm._l((_vm.data),function(item,index){return (_vm.check(item))?_c('tr',[(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{on:{"click":function($event){$event.preventDefault();_vm.$refs.modaldetail.open();}}},[_vm._v(_vm._s(item.name))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited",on:{"click":function($event){$event.preventDefault();_vm.$refs.modaldetail.open();}}},[_vm._v(_vm._s(item.name))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.type))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.type))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.source))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.source))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.telephone))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.telephone))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.address))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.address))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{on:{"click":function($event){$event.preventDefault();_vm.$refs.modalprovider.open();}}},[_vm._v(_vm._s(item.provider))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited",on:{"click":function($event){$event.preventDefault();_vm.$refs.modalprovider.open();}}},[_vm._v(_vm._s(item.provider))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.providerContact))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.providerContact))]):_vm._e(),(_vm.isGreen(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{staticClass:"green"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isGreen(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited green"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isRed(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{staticClass:"red"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isRed(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited red"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isNormal(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isNormal(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{staticClass:"more-action"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__more"},[_c('use',{attrs:{"xlink:href":"#more"}})])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.showSMSWindow(item)}}},[_vm._v("Text")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Page")])])])]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited more-action"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__more"},[_c('use',{attrs:{"xlink:href":"#more"}})])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.showSMSWindow(item)}}},[_vm._v("Text")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Page")])])])]):_vm._e()]):_vm._e()})],2)],1),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalTransfer.close()}}},[_vm._v("CANCEL")])])])]),_c('modal',{ref:"modaldetail"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Customer Details ")]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("First Name  ")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.first_name}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Last Name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.last_name}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("MI")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.mi}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Location")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.location}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Room #")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.room_no}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Bed")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.bed_no}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Phone")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.phone}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Floor Name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.floor_name}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Location Main Phone")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.location_phone}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("MR #")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.MRN}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("DOB")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.dob}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Town")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.town}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Admission/Registeration Date")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.admission_date}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("City/Town")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.city}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Discharge Date")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.discharge_date}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Attending Provider")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.attending_provider}})])])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$refs.modaldetail.close();}}},[_vm._v("Ok")])])])]),_c('modal',{ref:"modalphone"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Phone Book")]),_c('div',{staticClass:"modal-content-row"},[_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Destination")])]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Urology (469-899-1224)','Radiology (214-212-0912)','Cardiology (972-358-6547)','Anesthesiology (972-891-8656)'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select Phone Number"},on:{"input":function($event){}},model:{value:(_vm.phoneNumber),callback:function ($$v) {_vm.phoneNumber=$$v},expression:"phoneNumber"}})],1),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Type")])]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Transfer','Consult', 'Conference'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select Phone Type"},on:{"input":function($event){}},model:{value:(_vm.phoneType),callback:function ($$v) {_vm.phoneType=$$v},expression:"phoneType"}})],1),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Notes")])]),_c('textarea',{directives:[{name:"model",rawName:"v-model",value:(_vm.phoneNote),expression:"phoneNote"}],staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default mod--sms",domProps:{"value":(_vm.phoneNote)},on:{"input":function($event){if($event.target.composing){ return; }_vm.phoneNote=$event.target.value}}}),_c('span',[_vm._v("tempDNIS")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.tempDNIS),expression:"tempDNIS"}],attrs:{"readonly":"readonly"},domProps:{"value":(_vm.tempDNIS)},on:{"input":function($event){if($event.target.composing){ return; }_vm.tempDNIS=$event.target.value}}})])])]),_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"box"},[_c('div',{staticClass:"tab-holder"},[_c('a',{staticClass:"tab",on:{"click":function($event){_vm.showRecent=false}}},[_vm._v("Recent List")]),_c('a',{staticClass:"tab",on:{"click":function($event){_vm.showRecent=true}}},[_vm._v("Favorite List")])]),_c('div',[(_vm.showRecent)?_c('ul',[_c('li',[_vm._v("972-888-2938")]),_c('li',[_vm._v("Urology (469-899-1224)")]),_c('li',[_vm._v("Front Office")]),_c('li',[_vm._v("Cardiology")])]):_vm._e(),(!_vm.showRecent)?_c('ul',[_c('li',[_vm._v("Urology (469-899-1224)")]),_c('li',[_vm._v("Radiology (214-212-0912)")]),_c('li',[_vm._v("Cardiology (972-358-6547)")]),_c('li',[_vm._v("Anesthesiology (972-891-8656)")])]):_vm._e()])])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalphone.close()}}},[_vm._v("CANCEL")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.submit}},[_vm._v("DIAL")])])])]),_c('modal',{ref:"modalbook"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Send SMS")])])])]),_c('div',{staticClass:"modal__content-row"},[_c('span',{staticClass:"inline-present"},[_vm._v("Provider Name:")]),_c('span',{staticClass:"inline-present",staticStyle:{"margin-left":"10px","margin-top":"-10px","width":"30px"}},[_vm._v("OmniCare Urology")]),_c('span',{staticClass:"inline-present",staticStyle:{"margin-left":"100px"}},[_vm._v("Patient Name:  Johns Jacobs")]),_c('span',{staticClass:"inline-present",staticStyle:{"margin-left":"70px","margin-right":"20px"}},[_vm._v("Template:")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",staticStyle:{"margin-top":"-5px"},attrs:{"options":["Contact Patient","Contact Agent"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Contact Agent"}})],1),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default mod--sms"},[_vm._v(_vm._s(_vm.sms_template))])]),_c('div',{staticClass:"modal__content-row"},[_c('span',{staticStyle:{"margin-right":"50px"}},[_vm._v("Priority: ")]),_c('div',{staticClass:"ui-checkbox",staticStyle:{"margin-right":"50px"}},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showRoutine),expression:"showRoutine"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-routine","name":"checkbox-routine","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showRoutine)?_vm._i(_vm.showRoutine,null)>-1:(_vm.showRoutine)},on:{"change":function($event){var $$a=_vm.showRoutine,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showRoutine=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showRoutine=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showRoutine=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-routine"}},[_vm._v("Routine")])]),_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.shotStat),expression:"shotStat"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-stat","name":"checkbox-stat","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.shotStat)?_vm._i(_vm.shotStat,null)>-1:(_vm.shotStat)},on:{"change":function($event){var $$a=_vm.shotStat,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.shotStat=$$a.concat([$$v]))}else{$$i>-1&&(_vm.shotStat=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.shotStat=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-stat"}},[_vm._v("STAT")])])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"margin-top":"36px"}},[_c('span',{staticStyle:{"margin-right":"50px"}},[_vm._v("Response: ")]),_c('div',{staticClass:"ui-checkbox",staticStyle:{"margin-right":"30px"}},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showCall),expression:"showCall"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-call","name":"checkbox-call","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showCall)?_vm._i(_vm.showCall,null)>-1:(_vm.showCall)},on:{"change":function($event){var $$a=_vm.showCall,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showCall=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showCall=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showCall=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-call"}},[_vm._v("Please Call")])]),_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.shotFYI),expression:"shotFYI"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-fyi","name":"checkbox-fyi","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.shotFYI)?_vm._i(_vm.shotFYI,null)>-1:(_vm.shotFYI)},on:{"change":function($event){var $$a=_vm.shotFYI,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.shotFYI=$$a.concat([$$v]))}else{$$i>-1&&(_vm.shotFYI=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.shotFYI=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-fyi"}},[_vm._v("FYI")])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.sendSMS()}}},[_vm._v("Send")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$refs.modalbook.close()}}},[_vm._v("Cancel")])])])])],1)])}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"answering-caller-info"},[_c('div',{staticStyle:{"font-size":"1.5em","margin-bottom":"20px","font-weight":"700","color":"#1db7e9"}},[_vm._v("Caller Information")]),_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Call from:  ")]),_c('span',{staticStyle:{"margin-left":"10px"}},[_vm._v("203-444-5637")]),_c('div',{staticStyle:{"margin":"15px 0"}},[_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Call To: ")]),_c('span',{staticStyle:{"margin-left":"10px"}},[_vm._v("1-800-456-9876")])]),_c('div',[_vm._v("(OmniCare Urology)")]),_c('div',{staticStyle:{"height":"30px"}}),_c('div',[_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Call matched to:")]),_c('span',{staticStyle:{"margin-left":"10px"}},[_vm._v("Patient")])]),_c('div',{staticStyle:{"margin":"15px 0"}},[_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Number of Matches:")]),_c('span',{staticStyle:{"margin-left":"10px"}},[_vm._v("1")])]),_c('div',[_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Last Action:")]),_c('span',{staticStyle:{"margin-left":"10px"}},[_vm._v("Urology Appointment")])]),_c('div',{staticStyle:{"flex":"1","background":"black","margin":"20px 0"}}),_c('div',{staticStyle:{"font-size":"1.5em","font-weight":"700","color":"#1db7e9"}},[_vm._v(" Details")]),_c('div',{staticStyle:{"height":"10px"}}),_c('div',{staticStyle:{"margin-bottom":"20px"}},[_vm._v("South Shore Urology")]),_c('div',{staticClass:"details-content"},[_c('div',{staticClass:"details-content-urology",staticStyle:{"background":"white","color":"black"}},[_c('div',{staticClass:"urology-item"},[_c('div',[_vm._v("Mon - Fri 9am - 4:30 pm")]),_c('div',[_vm._v("Lunch: 12pm - 1:15pm")])]),_c('div',{staticClass:"urology-item"},[_c('div',[_vm._v("780 Main Street ")]),_c('div',[_vm._v("South Weymouth, MA 02190")])]),_c('div',{staticClass:"urology-item"},[_c('div',[_vm._v("Office #: 781-331-4600")]),_c('div',[_vm._v("Fax #: 781-337-5095")]),_c('div',[_vm._v("SSH Ext: x6860")])])])]),_c('div',{staticStyle:{"font-size":"1.5em","margin-top":"30px","font-weight":"700","color":"#1db7e9"}},[_vm._v("Quick Links")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("2 Pond Park")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Cancer Center")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Consults")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Courtesy Coach")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Emergency Department")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Engineering")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Health Info Mgmt")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Human Resources")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Supply Chain Mgmt")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Neat Line")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Patient Flow/Discharge")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Physician Referral")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link blue",attrs:{"href":"#3"}},[_vm._v("Other")])])}]
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 506 */
+/* 507 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"appointment"},[_c('table',{staticClass:"appointment__table"},[_vm._m(0),_vm._l((_vm.data),function(item,index){return (_vm.check(item))?_c('tr',[_c('td',[_vm._v(_vm._s(item.rxNumber))]),_c('td',[_vm._v(_vm._s(item.physician))]),_c('td',[_vm._v(_vm._s(item.pharmacy))]),_c('td',[_vm._v(_vm._s(item.daySupply))]),_c('td',[_vm._v(_vm._s(item.numberOfRefills))]),_c('td',[_vm._v(_vm._s(item.refillsRemaining))]),_c('td',[_vm._v(_vm._s(item.drugClassification))]),_c('td',[_vm._v(_vm._s(item.insuranceProvider))]),_c('td',{staticClass:"more-action"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__more"},[_c('use',{attrs:{"xlink:href":"#more"}})])]),_vm._m(1,true)])])]):_vm._e()})],2)])}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th',[_vm._v("Rx Number")]),_c('th',[_vm._v("Prescribing Physician")]),_c('th',[_vm._v("Pharmacy")]),_c('th',[_vm._v("Day Supply")]),_c('th',[_vm._v("Number of Refills")]),_c('th',[_vm._v("Refills Remaining")]),_c('th',[_vm._v("Drug Classification")]),_c('th',[_vm._v("Insurance Provider")]),_c('th',[_vm._v("Actions")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Set Auto Refill")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Send Fax Auth")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Verify Insurance")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"}},[_vm._v("Transfer Rx")])])}]
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 507 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"appointment"},[_c('div',{staticClass:"answering-service"},[_vm._m(0),_c('div',{staticClass:"answering-triage-guide"},[_c('div',{staticStyle:{"height":"40px"}}),_c('span',{staticStyle:{"font-size":"1.5em","font-weight":"700","color":"#1db7e9"}},[_vm._v("Triage Guide")]),_c('div',{staticStyle:{"height":"30px"}}),_c('div',{staticStyle:{"font-size":"20px"}},[_vm._v("I can help you with OnCall Physician or other?")]),_c('div',{staticStyle:{"height":"100px"}}),_c('div',{staticClass:"button-array"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalCall.open()}}},[_vm._v("OnCall")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"}},[_vm._v("Schedule")])]),_c('div',{staticClass:"button-array"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalphone.open()}}},[_vm._v("Urgent")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalTransfer.open()}}},[_vm._v("Transfer")])])]),_c('modal',{ref:"modalprovider"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("South Shore Urology")])])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"padding":"10px","background":"darkcyan","color":"white"}},[_c('span',[_vm._v("Mon - Fri 9am - 4:30 pm")]),_c('span',{staticStyle:{"margin-left":"100px"}},[_vm._v("780 Main Street ")]),_c('span',{staticStyle:{"margin-left":"130px"}},[_vm._v("Office #: 781-331-4600")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"padding":"10px","background":"darkcyan","color":"white"}},[_c('span',[_vm._v("Lunch: 12pm - 1:15pm")]),_c('span',{staticStyle:{"margin-left":"110px"}},[_vm._v("South Weymouth, MA 02190")]),_c('span',{staticStyle:{"margin-left":"40px"}},[_vm._v("Fax #: 781-337-5095")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"padding":"10px","background":"darkcyan","color":"white"}},[_c('span',{staticStyle:{"margin-left":"510px"}},[_vm._v("SSH Ext: x6860")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"margin-top":"30px"}},[_c('span',[_vm._v("The office representitives are unavailable at this time. Is this urgent or can I send a message to the office for you?")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"margin-top":"30px"}},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",staticStyle:{"margin-top":"-5px"},attrs:{"options":["Office Message","Urgent/OnCall","-------","Office Status"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Office Message"}})],1),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$refs.modalprovider.close();}}},[_vm._v("Ok")])])])]),_c('modal',{ref:"modalTransfer"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('svg',{staticClass:"ico-svg ico-search"},[_c('use',{attrs:{"xlink:href":"#search"}})]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.search_keyword),expression:"search_keyword"}],staticClass:"ui-input-search",attrs:{"placeholder":"Search Directory"},domProps:{"value":(_vm.search_keyword)},on:{"input":function($event){if($event.target.composing){ return; }_vm.search_keyword=$event.target.value}}}),_c('span',{staticClass:"inline-present",staticStyle:{"margin-left":"70px","margin-right":"20px"}},[_vm._v("Filter:")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",staticStyle:{"margin-top":"-5px"},attrs:{"options":["Show All","Patient","Provider"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Show All"},model:{value:(_vm.search_filter),callback:function ($$v) {_vm.search_filter=$$v},expression:"search_filter"}}),_c('table',{staticClass:"appointment__table"},[_c('tr',[_c('th',[_vm._v("Name")]),_c('th',[_vm._v("Type")]),_c('th',[_vm._v("Source")]),_c('th',[_vm._v("Telephone")]),_c('th',[_vm._v("Address")]),_c('th',[_vm._v("Provider")]),_c('th',[_vm._v("Provider Contact")]),_c('th',[_vm._v("Provider Status")]),_c('th',[_vm._v("Actions")])]),_vm._l((_vm.data),function(item,index){return (_vm.check(item))?_c('tr',[(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{on:{"click":function($event){$event.preventDefault();_vm.$refs.modaldetail.open();}}},[_vm._v(_vm._s(item.name))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited",on:{"click":function($event){$event.preventDefault();_vm.$refs.modaldetail.open();}}},[_vm._v(_vm._s(item.name))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.type))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.type))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.source))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.source))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.telephone))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.telephone))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.address))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.address))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{on:{"click":function($event){$event.preventDefault();_vm.$refs.modalprovider.open();}}},[_vm._v(_vm._s(item.provider))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited",on:{"click":function($event){$event.preventDefault();_vm.$refs.modalprovider.open();}}},[_vm._v(_vm._s(item.provider))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.providerContact))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.providerContact))]):_vm._e(),(_vm.isGreen(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{staticClass:"green"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isGreen(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited green"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isRed(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{staticClass:"red"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isRed(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited red"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isNormal(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isNormal(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{staticClass:"more-action"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__more"},[_c('use',{attrs:{"xlink:href":"#more"}})])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.showSMSWindow(item)}}},[_vm._v("Text")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Page")])])])]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited more-action"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__more"},[_c('use',{attrs:{"xlink:href":"#more"}})])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.showSMSWindow(item)}}},[_vm._v("Text")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Page")])])])]):_vm._e()]):_vm._e()})],2)],1),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalTransfer.close()}}},[_vm._v("CANCEL")])])])]),_c('modal',{ref:"modaldetail"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Customer Details ")]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("First Name  ")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.first_name}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Last Name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.last_name}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("MI")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.mi}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Location")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.location}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Room #")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.room_no}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Bed")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.bed_no}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Phone")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.phone}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Floor Name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.floor_name}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Location Main Phone")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.location_phone}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("MR #")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.MRN}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("DOB")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.dob}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Town")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.town}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Admission/Registeration Date")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.admission_date}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("City/Town")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.city}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Discharge Date")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.discharge_date}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Attending Provider")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.attending_provider}})])])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$refs.modaldetail.close();}}},[_vm._v("Ok")])])])]),_c('modal',{ref:"modalphone"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Phone Book")]),_c('div',{staticClass:"modal-content-row"},[_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Destination")])]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Urology (469-899-1224)','Radiology (214-212-0912)','Cardiology (972-358-6547)','Anesthesiology (972-891-8656)'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select Phone Number"},on:{"input":function($event){}},model:{value:(_vm.phoneNumber),callback:function ($$v) {_vm.phoneNumber=$$v},expression:"phoneNumber"}})],1),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Type")])]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Transfer','Consult', 'Conference'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select Phone Type"},on:{"input":function($event){}},model:{value:(_vm.phoneType),callback:function ($$v) {_vm.phoneType=$$v},expression:"phoneType"}})],1),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Notes")])]),_c('textarea',{directives:[{name:"model",rawName:"v-model",value:(_vm.phoneNote),expression:"phoneNote"}],staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default mod--sms",domProps:{"value":(_vm.phoneNote)},on:{"input":function($event){if($event.target.composing){ return; }_vm.phoneNote=$event.target.value}}}),_c('span',[_vm._v("tempDNIS")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.tempDNIS),expression:"tempDNIS"}],attrs:{"readonly":"readonly"},domProps:{"value":(_vm.tempDNIS)},on:{"input":function($event){if($event.target.composing){ return; }_vm.tempDNIS=$event.target.value}}})])])]),_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"box"},[_c('div',{staticClass:"tab-holder"},[_c('a',{staticClass:"tab",on:{"click":function($event){_vm.showRecent=false}}},[_vm._v("Recent List")]),_c('a',{staticClass:"tab",on:{"click":function($event){_vm.showRecent=true}}},[_vm._v("Favorite List")])]),_c('div',[(_vm.showRecent)?_c('ul',[_c('li',[_vm._v("972-888-2938")]),_c('li',[_vm._v("Urology (469-899-1224)")]),_c('li',[_vm._v("Front Office")]),_c('li',[_vm._v("Cardiology")])]):_vm._e(),(!_vm.showRecent)?_c('ul',[_c('li',[_vm._v("Urology (469-899-1224)")]),_c('li',[_vm._v("Radiology (214-212-0912)")]),_c('li',[_vm._v("Cardiology (972-358-6547)")]),_c('li',[_vm._v("Anesthesiology (972-891-8656)")])]):_vm._e()])])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalphone.close()}}},[_vm._v("CANCEL")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.submit}},[_vm._v("DIAL")])])])]),_c('modal',{ref:"modalCall"},[_c('div',{staticClass:"modal__content"},[_c('img',{staticStyle:{"width":"840px"},attrs:{"src":"img/on-call-dlg.png"}}),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$refs.modalCall.close()}}},[_vm._v("OK")])])])])],1)])}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"answering-caller-info"},[_c('div',{staticStyle:{"font-size":"1.5em","margin-bottom":"20px","font-weight":"700","color":"#1db7e9"}},[_vm._v("Caller Information")]),_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Call from:  ")]),_c('span',{staticStyle:{"margin-left":"10px"}},[_vm._v("253-704-2531")]),_c('div',{staticStyle:{"margin":"15px 0"}},[_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Call To: ")]),_c('span',{staticStyle:{"margin-left":"10px"}},[_vm._v("1-800-456-9876")])]),_c('div',[_vm._v("(South Shore Urology)")]),_c('div',{staticStyle:{"height":"30px"}}),_c('div',[_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Call matched to:")]),_c('span',{staticStyle:{"margin-left":"10px"}},[_vm._v("Provider")])]),_c('div',{staticStyle:{"margin":"15px 0"}},[_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Number of Matches:")]),_c('span',{staticStyle:{"margin-left":"10px"}},[_vm._v("1")])]),_c('div',[_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Last Action:")]),_c('span',{staticStyle:{"margin-left":"10px"}},[_vm._v("OnCall Cardiologist")])]),_c('div',{staticStyle:{"flex":"1","background":"black","margin":"20px 0"}}),_c('div',{staticStyle:{"font-size":"1.5em","font-weight":"700","color":"#1db7e9"}},[_vm._v(" Details")]),_c('div',{staticStyle:{"height":"10px"}}),_c('div',[_vm._v("Practioning Nurse at OmniCare Downtown")]),_c('div',{staticStyle:{"font-size":"1.5em","margin-top":"30px","font-weight":"700","color":"#1db7e9"}},[_vm._v("This week")]),_c('div',{staticStyle:{"margin":"10px 0"}},[_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Start: ")]),_c('span',{staticStyle:{"margin-left":"5px"}},[_vm._v("7:00 AM")]),_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)","margin-left":"25px"}},[_vm._v("End: ")]),_c('span',{staticStyle:{"margin-left":"5px"}},[_vm._v("5:00 PM")])]),_c('div',{staticStyle:{"margin":"10px 0"}},[_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Shift: ")]),_c('span',{staticStyle:{"margin-left":"5px"}},[_vm._v("Day")]),_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)","margin-left":"25px"}},[_vm._v("Role:")]),_c('span',{staticStyle:{"margin-left":"5px"}},[_vm._v("RN")])]),_c('div',[_c('span',{staticStyle:{"color":"rgba(32,32,32,.5)"}},[_vm._v("Call Order:")]),_c('span',{staticStyle:{"margin-left":"5px"}},[_vm._v("18")])]),_c('div',{staticStyle:{"font-size":"1.5em","margin-top":"30px","font-weight":"700","color":"#1db7e9"}},[_vm._v("Quick Links")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-provider-link",attrs:{"href":"#3"}},[_vm._v("OnCall")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-provider-link",attrs:{"href":"#3"}},[_vm._v("Department")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-provider-link",attrs:{"href":"#3"}},[_vm._v("Employee")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-provider-link",attrs:{"href":"#3"}},[_vm._v("Patient")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-provider-link",attrs:{"href":"#3"}},[_vm._v("Resource Account")]),_c('div'),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-provider-link blue",attrs:{"href":"#3"}},[_vm._v("Other")])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
@@ -50043,23 +50150,13 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.pacients)?_c('aside',{staticClass:"sidebar"},[_c('div',{staticClass:"sidebar__title"},[_vm._v("Customer Information")]),_c('div',{staticClass:"l-sidebar__userpic"},[_c('div',{staticClass:"sidebar__userpic"},[_c('img',{staticClass:"sidebar__userpic-image",attrs:{"src":_vm.pacients[_vm.currentPacient].PhotoUrl}}),_c('a',{staticClass:"sidebar__userpic-info",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.currentShowSubBox = 'patient-info'}}},[_c('svg',{staticClass:"ico-svg ico-svg__info"},[_c('use',{attrs:{"xlink:href":"#info"}})])])])]),_c('div',{staticClass:"sidebar__note-userpic"},[_vm._v("Number of Matches ("),_c('b',[_vm._v(_vm._s(_vm.sizePacients))]),_vm._v(")")]),_c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Customer Name")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":_vm.namesPacient,"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientName),callback:function ($$v) {_vm.currentPacientName=$$v},expression:"currentPacientName"}})],1),(_vm.$root.isPatient)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Date of Birth")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm._f("moment")(_vm.pacients[_vm.currentPacient].DateOfBirth,"MMM DD, YYYY")))])]):_vm._e(),(_vm.$root.isPatient)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("MRN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].MRN)+"    ")])]):_vm._e(),(_vm.$root.isPatient)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("SSN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].SSN))])]):_vm._e(),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Phone Number")]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PhoneNumber))])])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Address")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Address.Line1)+", ")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(" "+_vm._s(_vm.pacients[_vm.currentPacient].Address.Line2))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Primary Care Provider")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Phone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Phone))])])]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Treatment Team")]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].TreatmentTeam[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].TreatmentTeam[0].PhoneNumber))])])]):_vm._e(),(_vm.pacients[_vm.currentPacient].Provider.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Provider")]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Provider[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].Provider[0].PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Provider[0].PhoneNumber))])])])]):_vm._e()]),_c('div',{staticClass:"sidebar__success"},[_c('div',{staticClass:"sub-popup-menu"},[_vm._m(0),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('http://10.1.74.36:2230/EPIC_InCustomer/patient_scheduling/search.html')}}},[_vm._v("Customer Search")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('https://i.ytimg.com/vi/RIsVxJWuQ8Y/maxresdefault.jpg')}}},[_vm._v("Customer Information")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.replaceNewWindow('alert:test')}}},[_vm._v("Appointments Create")])])])])]):_vm._e()}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary mod--block",attrs:{"href":"#3"}},[_vm._v(" Screen pop")])])}]
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 526 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment"},[_c('div',{staticClass:"case-managment__top"},[_c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Hospital Name")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":["Mercy Joplin","Johns Jacobs"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Mercy Joplin"}})],1)]),_vm._m(0),_c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Unit")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":["Cardiology","Ophthalmology"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Cardiology"}})],1)]),_vm._m(1),_c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Incident Type")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":["Existing","Missing"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Existing"}})],1)]),_vm._m(2)])])}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Incident ID")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("INC0010032")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Case Manager")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('div',{staticClass:"case-managment__top-item-box-note"},[_vm._v("Katie Holmes, RN")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"case-managment__top-item"},[_c('div',{staticClass:"case-managment__top-item-label"},[_vm._v(" Phone Number#")]),_c('div',{staticClass:"case-managment__top-item-box"},[_c('a',{staticClass:"case-managment__top-item-box-link",attrs:{"href":"tel:1212421234"}},[_vm._v(" +1-(212)-42-1234")])])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 527 */
+/* 526 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50069,7 +50166,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 528 */
+/* 527 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50079,7 +50176,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 529 */
+/* 528 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50089,7 +50186,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 530 */
+/* 529 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50099,12 +50196,22 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 531 */
+/* 530 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"make-appointment"},[_c('h2',{staticClass:"title mod--appointment"},[_vm._v("Make Appointment")]),_c('div',{staticClass:"make-appointment__line-select"},[_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Department")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Department,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Department[0]},on:{"input":function($event){}},model:{value:(_vm.departmentSelect),callback:function ($$v) {_vm.departmentSelect=$$v},expression:"departmentSelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Facility")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Facility,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Facility[0]},on:{"input":function($event){}},model:{value:(_vm.facilitySelect),callback:function ($$v) {_vm.facilitySelect=$$v},expression:"facilitySelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Provider")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Provider,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Provider[0]},on:{"input":function($event){}},model:{value:(_vm.providerSelect),callback:function ($$v) {_vm.providerSelect=$$v},expression:"providerSelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Physician")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--border",attrs:{"disabled":!_vm.$root.userIsVerify,"options":_vm.dropdowns.Physician,"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":_vm.dropdowns.Physician[0]},on:{"input":function($event){}},model:{value:(_vm.physicianSelect),callback:function ($$v) {_vm.physicianSelect=$$v},expression:"physicianSelect"}})],1),_c('div',{staticClass:"make-appointment__line-select-item"},[_c('div',{staticClass:"make-appointment__line-select-note"},[_vm._v("Date Range")]),_c('datepicker',{attrs:{"disabled":!_vm.$root.userIsVerify,"format":_vm.customFormatter},on:{"selected":_vm.onSelectDate},model:{value:(_vm.date),callback:function ($$v) {_vm.date=$$v},expression:"date"}})],1)]),_c('transition',{attrs:{"name":"fade"}},[(_vm.formElementChecked)?_c('div',[_c('div',{staticClass:"make-appointment__date-selected"},[_vm._v("Sunday - Mar 8, 2019")]),_c('form',{attrs:{"action":"#3"}},[_c('fieldset',{staticClass:"form__fieldset"},[_c('legend',{staticClass:"hide"},[_vm._v("Book table")]),_c('table',{staticClass:"make-appointment__table"},[_c('tr',[_c('th',[_vm._v("TIME SLOTS")]),_c('th',[_vm._v("NAME")]),_c('th',{staticClass:"g-align-center"},[_vm._v("FACILITY")]),_c('th',{staticClass:"g-align-center"},[_vm._v("PROVIDER")]),_c('th',{staticClass:"g-align-center"},[_vm._v("PHYSICIAN")]),_c('th',{staticClass:"g-align-center"},[_vm._v("STATUS")]),_c('th',{staticClass:"g-align-center"},[_vm._v("ACTION")])]),_vm._l((_vm.existingApointmentSlots),function(item,index){return _c('tr',{staticClass:"make-appointment__table-tr",class:{'state--hold': item.Status === 'On Hold' }},[_c('td',{staticClass:"make-appointment__table-time"},[_vm._v(_vm._s(_vm._f("moment")(item.StartTime,"HH:mm"))+" - "+_vm._s(_vm._f("moment")(item.EndTime,"HH:mm A")))]),_c('td',[_vm._v(_vm._s(item.Name))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(item.Facility))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(item.Provider))]),_c('td',{staticClass:"g-align-center"},[_vm._v(_vm._s(item.Physician))]),_c('td',{staticClass:"make-appointment__table-status g-align-center"},[_vm._v(_vm._s(item.Status))]),(item.Status === 'On Hold')?_c('td',{staticClass:"g-align-center make-appointment__table-action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-disable-border mod--block",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();}}},[_vm._v("update")])]):_c('td',{staticClass:"g-align-center make-appointment__table-action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border mod--block",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.showModal(index)}}},[_vm._v("book now")])])])})],2)])])]):_vm._e()]),_c('modal',{ref:"modalbook"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Book Now")]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__calendar"},[_c('use',{attrs:{"xlink:href":"#calendar"}})]),_vm._v(_vm._s(_vm._f("moment")(_vm.existingApointmentSlots[_vm.activeBookItem].StartTime,"MMM DD, YYYY"))+" | "+_vm._s(_vm._f("moment")(_vm.existingApointmentSlots[_vm.activeBookItem].StartTime,"HH:mm"))+" - "+_vm._s(_vm._f("moment")(_vm.existingApointmentSlots[_vm.activeBookItem].EndTime,"HH:mm A")))]),_c('div',{staticClass:"modal-appointment__info"},[_c('svg',{staticClass:"ico-svg ico-svg__location"},[_c('use',{attrs:{"xlink:href":"#location"}})]),_vm._v("Schedule appointment with Dr. Steve Clinic Name")]),_c('div',{staticClass:"modal-appointment__info"},[_c('div',{staticClass:"modal-appointment__lang-ico"},[_c('svg',{staticClass:"ico-svg ico-svg__lang"},[_c('use',{attrs:{"xlink:href":"#lang"}})])]),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Language Interpreter Required")]),_c('div',{staticClass:"modal-appointment__lang-toggle",class:{'state--active': !_vm.disableSelectLang},on:{"click":function($event){_vm.disableSelectLang=!_vm.disableSelectLang}}})]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":_vm.bookNowData.InterpreterLanguages,"searchable":false,"allowEmpty":false,"showLabels":false,"disabled":_vm.disableSelectLang,"placeholder":"Select Language"},on:{"input":function($event){}},model:{value:(_vm.langSelected),callback:function ($$v) {_vm.langSelected=$$v},expression:"langSelected"}})],1)])])]),_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__map"},[_c('gmap-map',{staticStyle:{"width":"100%","height":"100px"},attrs:{"center":{lat: 32.9448268, lng: -96.64587949999998},"zoom":14}},[_c('gmap-marker',{key:1,attrs:{"position":{lat: 32.9448268, lng: -96.64587949999998}}})],1)],1)])]),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showEpicTemplate),expression:"showEpicTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-epic","name":"checkbox-epic","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showEpicTemplate)?_vm._i(_vm.showEpicTemplate,null)>-1:(_vm.showEpicTemplate)},on:{"change":function($event){var $$a=_vm.showEpicTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showEpicTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showEpicTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showEpicTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-epic"}},[_vm._v("Add Notes to EPIC")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showEpicTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"}):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showWaitList),expression:"showWaitList"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-waitlist","name":"checkbox-waitlist","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showWaitList)?_vm._i(_vm.showWaitList,null)>-1:(_vm.showWaitList)},on:{"change":function($event){var $$a=_vm.showWaitList,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showWaitList=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showWaitList=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showWaitList=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-waitlist"}},[_vm._v("Waitlist Enabled")])])]),_c('div',{staticClass:"modal-appointment__reason"},[_vm._v("Reason for visit")]),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showSmsTemplate),expression:"showSmsTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-sms","name":"checkbox-sms","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showSmsTemplate)?_vm._i(_vm.showSmsTemplate,null)>-1:(_vm.showSmsTemplate)},on:{"change":function($event){var $$a=_vm.showSmsTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showSmsTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showSmsTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showSmsTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-sms"}},[_vm._v("Sent Text Confirmation")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showSmsTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default mod--sms"},[_vm._v(_vm._s(_vm.bookNowData.SmsConfirmTemplate))]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('div',{staticClass:"modal-appointment__templates-checkbox"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showEmailTemplate),expression:"showEmailTemplate"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-email","name":"checkbox-email","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showEmailTemplate)?_vm._i(_vm.showEmailTemplate,null)>-1:(_vm.showEmailTemplate)},on:{"change":function($event){var $$a=_vm.showEmailTemplate,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showEmailTemplate=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showEmailTemplate=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showEmailTemplate=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-email"}},[_vm._v("Sent Email Confirmation")])])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showEmailTemplate)?_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"},[_vm._v(_vm._s(_vm.bookNowData.EmailConfirmTemplate))]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showSmsRemind),expression:"showSmsRemind"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-smsremind","name":"checkbox-smsremind","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showSmsRemind)?_vm._i(_vm.showSmsRemind,null)>-1:(_vm.showSmsRemind)},on:{"change":function($event){var $$a=_vm.showSmsRemind,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showSmsRemind=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showSmsRemind=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showSmsRemind=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-smsremind"}},[_vm._v("Send SMS reminder")])]),_c('transition',{attrs:{"name":"fade"}},[(_vm.showSmsRemind)?_c('div',{staticClass:"modal-appointment__remind-days"},[_c('input',{staticClass:"ui-input ui-input--skin-default ui-input--theme-default",attrs:{"type":"text","value":"2"}}),_vm._v("days before appointment.")]):_vm._e()])],1),_c('div',{staticClass:"modal-appointment__remind"},[_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showVoiceRemind),expression:"showVoiceRemind"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-voiceremind","name":"checkbox-voiceremind","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showVoiceRemind)?_vm._i(_vm.showVoiceRemind,null)>-1:(_vm.showVoiceRemind)},on:{"change":function($event){var $$a=_vm.showVoiceRemind,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showVoiceRemind=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showVoiceRemind=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showVoiceRemind=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-voiceremind"}},[_vm._v("Send Voice reminder")])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalbook.close()}}},[_vm._v("CANCEL")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.bookModal}},[_vm._v("book")])])])])],1)}
 var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 531 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"content"},[_c('div',{staticClass:"answering-service"},[_vm._m(0),_c('div',{staticClass:"answering-triage-guide"},[_c('div',{staticStyle:{"height":"20px"}}),_c('span',{staticStyle:{"font-size":"1.5em","font-weight":"700","color":"#1db7e9"}},[_vm._v("Triage Guide")]),_c('div',{staticStyle:{"height":"30px"}}),_c('div',{staticStyle:{"font-size":"20px"}},[_vm._v("The office representatives are unavailable at this time. Is this urgent or can I send a message to the office for you?")]),_c('div',{staticStyle:{"height":"50px"}}),_c('div',{staticClass:"button-array"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalbook.open()}}},[_vm._v("Message")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalbook.open()}}},[_vm._v("Page")])]),_c('div',{staticClass:"button-array"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalphone.open()}}},[_vm._v("Urgent")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border triage-button",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalTransfer.open()}}},[_vm._v("Transfer")])])]),_c('modal',{ref:"modalprovider"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("South Shore Urology")])])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"padding":"10px","background":"darkcyan","color":"white"}},[_c('span',[_vm._v("Mon - Fri 9am - 4:30 pm")]),_c('span',{staticStyle:{"margin-left":"100px"}},[_vm._v("780 Main Street ")]),_c('span',{staticStyle:{"margin-left":"130px"}},[_vm._v("Office #: 781-331-4600")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"padding":"10px","background":"darkcyan","color":"white"}},[_c('span',[_vm._v("Lunch: 12pm - 1:15pm")]),_c('span',{staticStyle:{"margin-left":"110px"}},[_vm._v("South Weymouth, MA 02190")]),_c('span',{staticStyle:{"margin-left":"40px"}},[_vm._v("Fax #: 781-337-5095")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"padding":"10px","background":"darkcyan","color":"white"}},[_c('span',{staticStyle:{"margin-left":"510px"}},[_vm._v("SSH Ext: x6860")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"margin-top":"30px"}},[_c('span',[_vm._v("The office representitives are unavailable at this time. Is this urgent or can I send a message to the office for you?")])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"margin-top":"30px"}},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",staticStyle:{"margin-top":"-5px"},attrs:{"options":["Office Message","Urgent/OnCall","-------","Office Status"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Office Message"}})],1),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$refs.modalprovider.close();}}},[_vm._v("Ok")])])])]),_c('modal',{ref:"modalTransfer"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('svg',{staticClass:"ico-svg ico-search"},[_c('use',{attrs:{"xlink:href":"#search"}})]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.search_keyword),expression:"search_keyword"}],staticClass:"ui-input-search",attrs:{"placeholder":"Search Directory"},domProps:{"value":(_vm.search_keyword)},on:{"input":function($event){if($event.target.composing){ return; }_vm.search_keyword=$event.target.value}}}),_c('span',{staticClass:"inline-present",staticStyle:{"margin-left":"70px","margin-right":"20px"}},[_vm._v("Filter:")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",staticStyle:{"margin-top":"-5px"},attrs:{"options":["Show All","Patient","Provider"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Show All"},model:{value:(_vm.search_filter),callback:function ($$v) {_vm.search_filter=$$v},expression:"search_filter"}}),_c('table',{staticClass:"appointment__table"},[_c('tr',[_c('th',[_vm._v("Name")]),_c('th',[_vm._v("Type")]),_c('th',[_vm._v("Source")]),_c('th',[_vm._v("Telephone")]),_c('th',[_vm._v("Address")]),_c('th',[_vm._v("Provider")]),_c('th',[_vm._v("Provider Contact")]),_c('th',[_vm._v("Provider Status")]),_c('th',[_vm._v("Actions")])]),_vm._l((_vm.data),function(item,index){return (_vm.check(item))?_c('tr',[(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{on:{"click":function($event){$event.preventDefault();_vm.$refs.modaldetail.open();}}},[_vm._v(_vm._s(item.name))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited",on:{"click":function($event){$event.preventDefault();_vm.$refs.modaldetail.open();}}},[_vm._v(_vm._s(item.name))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.type))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.type))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.source))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.source))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.telephone))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.telephone))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.address))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.address))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{on:{"click":function($event){$event.preventDefault();_vm.$refs.modalprovider.open();}}},[_vm._v(_vm._s(item.provider))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited",on:{"click":function($event){$event.preventDefault();_vm.$refs.modalprovider.open();}}},[_vm._v(_vm._s(item.provider))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.providerContact))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.providerContact))]):_vm._e(),(_vm.isGreen(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{staticClass:"green"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isGreen(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited green"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isRed(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{staticClass:"red"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isRed(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited red"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isNormal(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.isNormal(item) && _vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited"},[_vm._v(_vm._s(item.providerStatus))]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] !== item.name)?_c('td',{staticClass:"more-action"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__more"},[_c('use',{attrs:{"xlink:href":"#more"}})])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.showSMSWindow(item)}}},[_vm._v("Text")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Page")])])])]):_vm._e(),(_vm.$root.patientNames[_vm.$root.activePacient + 1] === item.name)?_c('td',{staticClass:"highlited more-action"},[_c('div',{staticClass:"sub-popup-menu"},[_c('div',{staticClass:"sub-popup-menu__action"},[_c('svg',{staticClass:"ico-svg ico-svg__more"},[_c('use',{attrs:{"xlink:href":"#more"}})])]),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Transfer")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.showSMSWindow(item)}}},[_vm._v("Text")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#"}},[_vm._v("Page")])])])]):_vm._e()]):_vm._e()})],2)],1),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalTransfer.close()}}},[_vm._v("CANCEL")])])])]),_c('modal',{ref:"modaldetail"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Customer Details ")]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("First Name  ")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.first_name}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Last Name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.last_name}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("MI")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.mi}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Location")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.location}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Room #")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.room_no}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Bed")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.bed_no}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Phone")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.phone}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Floor Name")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.floor_name}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Location Main Phone")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.location_phone}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("MR #")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.MRN}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("DOB")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.dob}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Town")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.town}})])]),_c('div',{staticClass:"referral-view__top"},[_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Admission/Registeration Date")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.admission_date}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("City/Town")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.city}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Discharge Date")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.discharge_date}})]),_c('div',{staticClass:"referral__detail-field"},[_c('span',{staticClass:"infoname"},[_vm._v("Attending Provider")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.attending_provider}})])])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$refs.modaldetail.close();}}},[_vm._v("Ok")])])])]),_c('modal',{ref:"modalphone"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Phone Book")]),_c('div',{staticClass:"modal-content-row"},[_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Destination")])]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Urology (469-899-1224)','Radiology (214-212-0912)','Cardiology (972-358-6547)','Anesthesiology (972-891-8656)'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select Phone Number"},on:{"input":function($event){}},model:{value:(_vm.phoneNumber),callback:function ($$v) {_vm.phoneNumber=$$v},expression:"phoneNumber"}})],1),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Type")])]),_c('div',{staticClass:"modal-appointment__info-lang"},[_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":['Transfer','Consult', 'Conference'],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Select Phone Type"},on:{"input":function($event){}},model:{value:(_vm.phoneType),callback:function ($$v) {_vm.phoneType=$$v},expression:"phoneType"}})],1),_c('div',{staticClass:"modal-appointment__lang-main"},[_c('div',{staticClass:"modal-appointment__lang-title"},[_vm._v("Notes")])]),_c('textarea',{directives:[{name:"model",rawName:"v-model",value:(_vm.phoneNote),expression:"phoneNote"}],staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default mod--sms",domProps:{"value":(_vm.phoneNote)},on:{"input":function($event){if($event.target.composing){ return; }_vm.phoneNote=$event.target.value}}}),_c('span',[_vm._v("tempDNIS")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.tempDNIS),expression:"tempDNIS"}],attrs:{"readonly":"readonly"},domProps:{"value":(_vm.tempDNIS)},on:{"input":function($event){if($event.target.composing){ return; }_vm.tempDNIS=$event.target.value}}})])])]),_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"box"},[_c('div',{staticClass:"tab-holder"},[_c('a',{staticClass:"tab",on:{"click":function($event){_vm.showRecent=false}}},[_vm._v("Recent List")]),_c('a',{staticClass:"tab",on:{"click":function($event){_vm.showRecent=true}}},[_vm._v("Favorite List")])]),_c('div',[(_vm.showRecent)?_c('ul',[_c('li',[_vm._v("972-888-2938")]),_c('li',[_vm._v("Urology (469-899-1224)")]),_c('li',[_vm._v("Front Office")]),_c('li',[_vm._v("Cardiology")])]):_vm._e(),(!_vm.showRecent)?_c('ul',[_c('li',[_vm._v("Urology (469-899-1224)")]),_c('li',[_vm._v("Radiology (214-212-0912)")]),_c('li',[_vm._v("Cardiology (972-358-6547)")]),_c('li',[_vm._v("Anesthesiology (972-891-8656)")])]):_vm._e()])])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalphone.close()}}},[_vm._v("CANCEL")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary",attrs:{"href":"#3"},on:{"click":_vm.submit}},[_vm._v("DIAL")])])])]),_c('modal',{ref:"modalbook"},[_c('div',{staticClass:"modal__content"},[_c('div',{staticClass:"modal__content-row"},[_c('div',{staticClass:"modal__content-col"},[_c('div',{staticClass:"modal-appointment__title"},[_c('div',{staticClass:"title mod--modal-appointment"},[_vm._v("Send SMS")])])])]),_c('div',{staticClass:"modal__content-row"},[_c('span',{staticClass:"inline-present"},[_vm._v("Provider Name:")]),_c('span',{staticClass:"inline-present",staticStyle:{"margin-left":"10px","margin-top":"-10px","width":"30px"}},[_vm._v("OmniCare Urology")]),_c('span',{staticClass:"inline-present",staticStyle:{"margin-left":"100px"}},[_vm._v("Patient Name:  Johns Jacobs")]),_c('span',{staticClass:"inline-present",staticStyle:{"margin-left":"70px","margin-right":"20px"}},[_vm._v("Template:")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",staticStyle:{"margin-top":"-5px"},attrs:{"options":["Contact Patient","Contact Agent"],"searchable":false,"allowEmpty":false,"showLabels":false,"placeholder":"Contact Agent"}})],1),_c('div',{staticClass:"modal-appointment__templates-messages"},[_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default mod--sms"},[_vm._v(_vm._s(_vm.sms_template))])]),_c('div',{staticClass:"modal__content-row"},[_c('span',{staticStyle:{"margin-right":"50px"}},[_vm._v("Priority: ")]),_c('div',{staticClass:"ui-checkbox",staticStyle:{"margin-right":"50px"}},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showRoutine),expression:"showRoutine"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-routine","name":"checkbox-routine","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showRoutine)?_vm._i(_vm.showRoutine,null)>-1:(_vm.showRoutine)},on:{"change":function($event){var $$a=_vm.showRoutine,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showRoutine=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showRoutine=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showRoutine=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-routine"}},[_vm._v("Routine")])]),_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.shotStat),expression:"shotStat"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-stat","name":"checkbox-stat","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.shotStat)?_vm._i(_vm.shotStat,null)>-1:(_vm.shotStat)},on:{"change":function($event){var $$a=_vm.shotStat,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.shotStat=$$a.concat([$$v]))}else{$$i>-1&&(_vm.shotStat=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.shotStat=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-stat"}},[_vm._v("STAT")])])]),_c('div',{staticClass:"modal__content-row",staticStyle:{"margin-top":"36px"}},[_c('span',{staticStyle:{"margin-right":"50px"}},[_vm._v("Response: ")]),_c('div',{staticClass:"ui-checkbox",staticStyle:{"margin-right":"30px"}},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.showCall),expression:"showCall"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-call","name":"checkbox-call","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.showCall)?_vm._i(_vm.showCall,null)>-1:(_vm.showCall)},on:{"change":function($event){var $$a=_vm.showCall,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.showCall=$$a.concat([$$v]))}else{$$i>-1&&(_vm.showCall=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.showCall=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-call"}},[_vm._v("Please Call")])]),_c('div',{staticClass:"ui-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.shotFYI),expression:"shotFYI"}],staticClass:"ui-checkbox__input",attrs:{"id":"checkbox-fyi","name":"checkbox-fyi","type":"checkbox"},domProps:{"checked":Array.isArray(_vm.shotFYI)?_vm._i(_vm.shotFYI,null)>-1:(_vm.shotFYI)},on:{"change":function($event){var $$a=_vm.shotFYI,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.shotFYI=$$a.concat([$$v]))}else{$$i>-1&&(_vm.shotFYI=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.shotFYI=$$c}}}}),_c('label',{staticClass:"ui-checkbox__label",attrs:{"for":"checkbox-fyi"}},[_vm._v("FYI")])])]),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.sendSMS()}}},[_vm._v("Send")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$refs.modalbook.close()}}},[_vm._v("Cancel")])])])])],1),_c('div',{staticClass:"ccase-managment"},[_c('div',{staticClass:"ccase-managment__top_boxes"},[_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==3?5:1,"text":'Past Appointments',"col":'rgb(255,0,0)'}})],1),_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==0?3:2,"text":'Current Appointments',"col":'green'}})],1),_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==3?6:1,"text":'Future Appointments',"col":'grey'}})],1),_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==0?2:3,"text":'Cancelled/No Shows',"col":'pink'}})],1)]),_c('div',{staticClass:"ccase-managment__top_boxes"},[_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==0?3:3,"text":'Bills',"col":'grey'}})],1),_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==0?2:2,"text":'Referrals',"col":'pink'}})],1),_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==0?3:2,"text":'Outreach',"col":'rgb(255,0,0)'}})],1),_c('div',{staticClass:"ccase-managment__top-rect inline-block"},[_c('board-block',{attrs:{"count":_vm.$root.activePacient==0?2:4,"text":'Inbound',"col":'green'}})],1)])]),_c('div',{staticClass:"content__box"},[_c('journey-map',{attrs:{"info":_vm.$root._data.Customers[_vm.$root.activePacient]}})],1)])}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"answering-caller-info"},[_c('div',{staticStyle:{"font-size":"1.5em","font-weight":"700","color":"#1db7e9"}},[_vm._v(" Details")]),_c('div',{staticStyle:{"height":"10px"}}),_c('div',{staticStyle:{"margin-bottom":"20px"}},[_vm._v("South Shore Urology")]),_c('div',{staticClass:"details-content"},[_c('div',{staticClass:"details-content-urology",staticStyle:{"background":"white","color":"black"}},[_c('div',{staticClass:"urology-item"},[_c('div',[_vm._v("Mon - Fri 9am - 4:30 pm")]),_c('div',[_vm._v("Lunch: 12pm - 1:15pm")])]),_c('div',{staticClass:"urology-item"},[_c('div',[_vm._v("780 Main Street ")]),_c('div',[_vm._v("South Weymouth, MA 02190")])]),_c('div',{staticClass:"urology-item"},[_c('div',[_vm._v("Office #: 781-331-4600")]),_c('div',[_vm._v("Fax #: 781-337-5095")]),_c('div',[_vm._v("SSH Ext: x6860")])])])]),_c('div',{staticStyle:{"font-size":"1.5em","margin-top":"30px","font-weight":"700","color":"#1db7e9"}},[_vm._v("Quick Links")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("2 Pond Park")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Cancer Center")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Consults")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Courtesy Coach")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Emergency Department")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Engineering")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Health Info Mgmt")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Human Resources")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Supply Chain Mgmt")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Neat Line")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Patient Flow/Discharge")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link",attrs:{"href":"#3"}},[_vm._v("Physician Referral")]),_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary menu-button quick-link blue",attrs:{"href":"#3"}},[_vm._v("Other")])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
@@ -55611,7 +55718,7 @@ var _getPropsValuesMixin = __webpack_require__(11);
 
 var _getPropsValuesMixin2 = _interopRequireDefault(_getPropsValuesMixin);
 
-var _markerClustererPlus = __webpack_require__(423);
+var _markerClustererPlus = __webpack_require__(424);
 
 var _markerClustererPlus2 = _interopRequireDefault(_markerClustererPlus);
 
@@ -55702,7 +55809,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _mapValues2 = __webpack_require__(129);
+var _mapValues2 = __webpack_require__(131);
 
 var _mapValues3 = _interopRequireDefault(_mapValues2);
 
@@ -58232,1368 +58339,1368 @@ let data= {
       }
     ]
   },
-  // {
-  //   "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
-  //   "Category": "EPIC",
-  //   "Name": "Sarah Jones",
-  //   "DateOfBirth": "1993-07-01 00:00:00",
-  //   "MRN": 7499281,
-  //   "SSN": "***-**-5124",
-  //   "PhoneNumber": "+1 253 704 2531",
-  //   "PhotoUrl": "img/uhaha.png",
-  //   "PrimaryCareProvider": {
-  //     "Name": "Mark Williams, MD",
-  //     "Phone": "+1 208 975 3874"
-  //   },
-  //   "medicalHistory": [
-  //     "> Heart surgery at the age of 21",
-  //     "> Sleeeptalking"
-  //   ],
-  //   "activeProblems": [
-  //     "> Moderate Insomnia",
-  //     "> Severe fever"
-  //   ],
-  //   "allergies": [
-  //     {
-  //       "name": "IODINE",
-  //       "description": "IODINE",
-  //       "dateEntered": "Aug 08, 2018",
-  //       "dateNoted": "Aug 08, 2018",
-  //       "reactions": "itchy rash that comes on slowly",
-  //       "reactionComments": "Direct contact with skin results in small bumps",
-  //       "severity": "Moderate",
-  //       "type": "Intolerance"
-  //     },
-  //     {
-  //       "name": "BEE VENOM",
-  //       "description": "BEE VENOM",
-  //       "dateEntered": "Mar 05, 2017",
-  //       "dateNoted": "Mar 05, 2017",
-  //       "reactions": "nausea and vomiting",
-  //       "reactionComments": "Customer was stung by a bee",
-  //       "severity": "High",
-  //       "type": "Intolerant"
-  //     }
-  //   ],
-  //   "encounters": [
-  //     {
-  //       "type": "Office Visit",
-  //       "date": "Jun 05, 2018",
-  //       "eventType": "Hospital Outpatient",
-  //       "patientClass": "Our Customer",
-  //       "admissionType": "Emergency",
-  //       "dischargeDisposition": "09 - Admitted as an inpatient to this hospital"
-  //     },
-  //     {
-  //       "type": "Orders Only",
-  //       "date": "Mar 15, 2018",
-  //       "eventType": "Admission",
-  //       "patientClass": "In Customer",
-  //       "admissionType": "Elective",
-  //       "dischargeDisposition": "52 - The referring/prescribing/rendering provider is not eligible to refer/prescribe/order/perform the service billed"
-  //     }
-  //   ],
-  //   "Address": {
-  //     "Line1": "1431 T Ave, Fort Worth",
-  //     "Line2": "TX 76179, USA"
-  //   },
-  //   "TreatmentTeam": [
-  //   ],
-  //   "Provider": [
-  //     {
-  //       "Name": "United Healthcare (UHC Parkway, GA,66552)",
-  //       "PhoneNumber": "+1 216 411 8765"
-  //     }
-  //   ],
-  //   "InsuranceVerification": {
-  //     "InsuranceName": "Sarah Jones",
-  //     "GroupNum": "#42AEC",
-  //     "NetworkNum": "#42AEC",
-  //     "PolicyNum": "#055113542",
-  //     "IssueDate": "20-Aug-2016 00:00:00"
-  //   },
-  //   "Vitals": {
-  //     "Height": 160,
-  //     "Weight": 55,
-  //     "RespirationRate": 67,
-  //     "BMI": 22,
-  //     "Pulse": 100,
-  //     "BloodPressureLo": 80,
-  //     "BloodPressureHi": 120
-  //   },
-  //   "Physician": {
-  //     "Name": "Mark Williams, MD",
-  //     "PrimaryPhone": "+1 208 975 3874",
-  //     "Clinic": "Clarit Clinic",
-  //     "Specialty": "PCP",
-  //     "EmergencyPhone": "+1 800 111 2222"
-  //   },
-  //   "Status": {
-  //     "Email": "sarah.jones@gmail.com",
-  //     "Race": "White",
-  //     "Ethnicity": "Not Hispanic Or Latino",
-  //     "Religion": "Christian (non-Catholic, non-Specific)",
-  //     "MaritalStatus": "Married",
-  //     "EmergencyContact": {
-  //       "Relation": "Husband",
-  //       "Name": "Jack Jones",
-  //       "Phone": "+1 (972) 293 9234"
-  //     }
-  //   },
-  //   "Location": {
-  //     "DropdownRecords": [
-  //       {
-  //         "Name": "Customer Geo Location",
-  //         "Address": "1431 T Ave, Fort Worth, TX 76179",
-  //         "Position": {"lat": 31.944827, "lng": -95.645879},
-  //         "Phone": "+1 (253)-704-2531",
-  //         "Hours": "N / A",
-  //         "Markers":[
-  //           {
-  //             "Name": "Customer Geo Location"
-  //           , "Address": "1272 Belt Line Rd, Garland TX 75040"
-  //           , "Position": {"lat": 31.944827, "lng": -95.645879}
-  //           , "Phone": "+1 (253)-704-2531"
-  //           }
-  //         ]
-  //       },
-  //       {
-  //         "Name": "Pharmacies In Area",
-  //         "Address": "1272 Belt Line Rd, Garland TX 75040",
-  //         "Position": {"lat": 31.944827, "lng": -95.645879},
-  //         "Phone": "+1 (972) 496-1933",
-  //         "Hours": "Open 9 AM to 10 PM",
-  //         "Markers":[
-  //           {
-  //             "Name": "CVS Pharmacy"
-  //           , "Address": "1372 Belt Line Rd"
-  //           , "Position": {"lat": 31.944527, "lng": -95.646960}
-  //           , "Phone": "+1 (972) 496-1934" 
-  //           } ,
-  //           {
-  //             "Name": "Walmart Pharmacy"
-  //           , "Address": "101 W Buckingham Rd"
-  //           , "Position": {"lat": 31.932013, "lng": -95.631611}
-  //           , "Phone": "+1 (972) 496-1935" 
-  //           } ,
-  //           {
-  //             "Name": "Walgreens"
-  //           , "Address": "2614 Lavon Dr"
-  //           , "Position": {"lat": 31.939566, "lng": -95.621946}
-  //           , "Phone": "+1 (972) 496-1936" 
-  //           } ,
-  //           {
-  //             "Name": "Walgreens"
-  //           , "Address": "1902 N Jupiter Rd"
-  //           , "Position": {"lat": 32.930183, "lng": -95.682285}
-  //           , "Phone": "+1 (972) 496-1937" 
-  //           } ,
-  //           {
-  //             "Name": "CVS Pharmacy - Target"
-  //           , "Address": "5301 N Garland Ave"
-  //           , "Position": {"lat": 32.965650, "lng": -95.646806}
-  //           , "Phone": "+1 (972) 496-1938" 
-  //           } ,
-  //           {
-  //             "Name": "Walmart Pharmacy"
-  //           , "Address": "5302 N Garland Ave"
-  //           , "Position": {"lat": 32.962346, "lng": -95.642499}
-  //           , "Phone": "+1 (972) 496-1939" 
-  //           }
-  //         ]
-  //       },
-  //       {
-  //         "Name": "Hospitals In Area",
-  //         "Address": "7 Medical Pkwy, Dallas, TX 75234",
-  //         "Position": {"lat": 32.944827, "lng": -95.645879},
-  //         "Phone": "+(972) 898-7000",
-  //         "Hours": "Open 9AM to 9PM",
-  //         "Markers":[
-  //           {
-  //             "Name": "Baylor Scott & White Medical Center"
-  //           , "Address": "2300 Marie Curie Blvd"
-  //           , "Position": {"lat": 32.918755, "lng": -95.661963}
-  //           , "Phone": "+(972) 898-7001"
-  //           } ,
-  //           {
-  //             "Name": "Select Specialty Hospital - Dallas Garland"
-  //           , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
-  //           , "Position": {"lat": 32.918793, "lng": -96.662041}
-  //           , "Phone": "+(972) 898-7002"
-  //           } ,
-  //           {
-  //             "Name": "Children's Health Pediatric Group Garland"
-  //           , "Address": "455 N Garland Ave"
-  //           , "Position": {"lat": 28.548467, "lng": -81.381385}
-  //           , "Phone": "+(972) 898-7003"
-  //           } ,
-  //           {
-  //             "Name": "Sundance Hospital Dallas"
-  //           , "Address": "2696 W Walnut St"
-  //           , "Position": {"lat": 32.913402, "lng": -96.670117}
-  //           , "Phone": "+(972) 898-7004"
-  //           }
-  //         ]
-  //       }
-  //     ]
-  //   },
-  //   "PastAppointments": [
-  //     {
-  //       "Date": "7-15-2018 15:00:00",
-  //       "Time": "12:00:00",
-  //       "Department": "SpinSci Clinic",
-  //       "Provider": "Administrator",
-  //       "VisitType": "Office Visit",
-  //       "VisitReason": "New Customer",
-  //       "Appointment Details": {
-  //         "Interpreter Required": "No",
-  //         "IsRequired": "false",
-  //         "Interpreter Language": "None",
-  //         "Status": "Arrived Late"
-  //       }
-  //     }
-  //   ],
-  //   "CurrentAppointments": [
-  //     {
-  //       "Date": "8-24-2018 15:00:00",
-  //       "Time": "15:00:00",
-  //       "Department": "Urology",
-  //       "Provider": "Dr. Steve Angler",
-  //       "VisitType": "Office Visit",
-  //       "VisitReason": "No Comments",
-  //       "Appointment Details": {
-  //         "Interpreter Required": "No",
-  //         "IsRequired": "false",
-  //         "Interpreter Language": "None",
-  //         "Status": "Arrived Late"
-  //       }
-  //     },
-  //     {
-  //       "Date": "8-22-2018 14:30:00",
-  //       "Time": "13:00:00",
-  //       "Department": "General",
-  //       "Provider": "Dr. John Lee",
-  //       "VisitType": "Office Visit",
-  //       "VisitReason": "Knee Pain",
-  //       "Appointment Details": {
-  //         "Interpreter Required": "Yes",
-  //         "IsRequired": "True",
-  //         "Interpreter Language": "Mandarin",
-  //         "Status": "Checked Out"
-  //       }
-  //     },
-  //     {
-  //       "Date": "10-03-2018 14:00:00",
-  //       "Time": "11:00:00",
-  //       "Department": "Kent Health Center",
-  //       "Provider": "Dr. John Lee",
-  //       "VisitType": "Physical",
-  //       "VisitReason": "No Comments",
-  //       "Appointment Details": {
-  //         "Interpreter Required": "No",
-  //         "IsRequired": "True",
-  //         "Interpreter Language": "None",
-  //         "Status": "Checked Out"
-  //       }
-  //     }
-  //   ],
-  //   "Billing": {
-  //     "Provider": "United HealthCare",
-  //     "Plan": "Choice",
-  //     "Subscriber": "Self",
-  //     "Street": "3153 T Ave",
-  //     "City": "Fort Worth",
-  //     "State": "TX",
-  //     "ZipCode": "75038",
-  //     "GroupNum": "52534422",
-  //     "PolicyNum": "112222456"
-  //   },
-  //   "BillHistory": [
-  //     {
-  //       "name": " JONES,SARAH ",
-  //       "status": "Unpaid",
-  //       "StatementId": "06642326",
-  //       "CustomerName": "Sarah Jones",
-  //       "CustomerId": "28724301",
-  //       "Payer": "United",
-  //       "ClaimType": "eClaims",
-  //       "Date": "12/03/2017",
-  //       "TotalAmount": "848.09",
-  //       "TotalPaidAmount": "1200.00",
-  //       "reviews": [
-  //         {
-  //           "date": "07/07/2017",
-  //           "description": "ENCOUNTER 209233",
-  //           "amount": "",
-  //           "insurance": "",
-  //           "currentBalance": "",
-  //           "lineItem": ""
-  //         },
-  //         {
-  //           "date": "07/07/2017",
-  //           "description": "815235 OFFICE/OUTPATIENT VISIT",
-  //           "amount": "$70.00",
-  //           "insurance": "",
-  //           "currentBalance": "$15.04",
-  //           "lineItem": ""
-  //         },
-  //         {
-  //           "date": "07/07/2017",
-  //           "description": "Adjustment UNITED",
-  //           "amount": "$41.96",
-  //           "insurance": "",
-  //           "currentBalance": "$",
-  //           "lineItem": ""
-  //         },
-  //         {
-  //           "date": "07/07/2017",
-  //           "description": "Payment UNITED",
-  //           "amount": "$0.00",
-  //           "insurance": "",
-  //           "currentBalance": "$",
-  //           "lineItem": ""
-  //         }
-  //       ],
-  //       "total": {
-  //         "amount": "$551.09",
-  //         "insurance": "$0.00",
-  //         "currentBalance": "$38.04",
-  //         "lineItem": "$38.04"
-  //       }
-  //     },
-  //     {
-  //       "status": "Paid",
-  //       "StatementId": "02534126",
-  //       "CustomerName": "Sarah Jones",
-  //       "CustomerId": "28724301",
-  //       "Payer": "United",
-  //       "ClaimType": "eClaims",
-  //       "Date": "11/02/2016",
-  //       "TotalAmount": "848.09",
-  //       "TotalPaidAmount": "1200.00",
-  //       "reviews": [
-  //         {
-  //           "date": "11/11/2017",
-  //           "description": "ENCOUNTER 109523",
-  //           "amount": "",
-  //           "insurance": "",
-  //           "currentBalance": "",
-  //           "lineItem": ""
-  //         },
-  //         {
-  //           "date": "11/11/2017",
-  //           "description": "163235 OFFICE/OUTPATIENT VISIT",
-  //           "amount": "$70.00",
-  //           "insurance": "",
-  //           "currentBalance": "$38.04",
-  //           "lineItem": ""
-  //         },
-  //         {
-  //           "date": "11/11/2017",
-  //           "description": "Adjustment UNITED",
-  //           "amount": "$31.96",
-  //           "insurance": "",
-  //           "currentBalance": "$",
-  //           "lineItem": ""
-  //         },
-  //         {
-  //           "date": "11/11/2017",
-  //           "description": "Payment UNITED",
-  //           "amount": "$0.00",
-  //           "insurance": "",
-  //           "currentBalance": "$",
-  //           "lineItem": ""
-  //         }
-  //       ],
-  //       "total": {
-  //         "amount": "$848.09",
-  //         "insurance": "$0.00",
-  //         "currentBalance": "$38.04",
-  //         "lineItem": "$38.04"
-  //       }
-  //     },
-  //     {
-  //       "status": "Unpaid",
-  //       "StatementId": "02512426",
-  //       "CustomerName": "Sarah Jones",
-  //       "CustomerId": "28724301",
-  //       "Payer": "United",
-  //       "ClaimType": "eClaims",
-  //       "Date": "04/04/2015",
-  //       "TotalAmount": "848.09",
-  //       "TotalPaidAmount": "1100.00",
-  //       "reviews": [
-  //         {
-  //           "date": "03/03/2017",
-  //           "description": "ENCOUNTER 209523",
-  //           "amount": "",
-  //           "insurance": "",
-  //           "currentBalance": "",
-  //           "lineItem": ""
-  //         },
-  //         {
-  //           "date": "02/02/2017",
-  //           "description": "815235 OFFICE/OUTPATIENT VISIT",
-  //           "amount": "$70.00",
-  //           "insurance": "",
-  //           "currentBalance": "$38.04",
-  //           "lineItem": ""
-  //         },
-  //         {
-  //           "date": "01/01/2017",
-  //           "description": "Adjustment UNITED",
-  //           "amount": "$31.96",
-  //           "insurance": "",
-  //           "currentBalance": "$",
-  //           "lineItem": ""
-  //         },
-  //         {
-  //           "date": "01/01/2017",
-  //           "description": "Payment UNITED",
-  //           "amount": "$0.00",
-  //           "insurance": "",
-  //           "currentBalance": "$",
-  //           "lineItem": ""
-  //         }
-  //       ],
-  //       "total": {
-  //         "amount": "$848.09",
-  //         "insurance": "$0.00",
-  //         "currentBalance": "$38.04",
-  //         "lineItem": "$38.04"
-  //       }
-  //     }
-  //   ]
-  // },
-  //   {
-  //     "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=3",
-  //     "Category": "EPIC",
-  //     "Name": "Grace Paz",
-  //     "DateOfBirth": "2007-12-25 00:00:00",
-  //     "MRN": 7499220,    
-  //     "SSN": "***-**-5428",
-  //     "PhoneNumber": "+1 255 703 8801",
-  //     "PhotoUrl": "img/user2.png",
-  //     "PrimaryCareProvider": {
-  //       "Name": "Mark Williams, MD",
-  //       "Phone": "+1 208 975 3874"
-  //     },
-  //     "Address": {
-  //       "Line1": "5234 T Ave",
-  //       "Line2": "Fort Worth, TX 76179, USA"
-  //     },
-  //     "medicalHistory": [
-  //       "> Sleeeptalking",
-  //       "> Hepatitis"
-  //     ],
-  //     "activeProblems": [
-  //       "> Prolonged fever without complication",
-  //       "> Protein-calorie malnutrition, moderate"
-  //     ],
-  //     "allergies": [
-  //       {
-  //         "name": "PENICILLIN",
-  //         "description": "PENICILLIN",
-  //         "dateEntered": "Jul 13, 2018",
-  //         "dateNoted": "Jul 13, 2018",
-  //         "reactions": "Hives and itchy eyes",
-  //         "reactionComments": "Overdose",
-  //         "severity": "Low",
-  //         "type": "Tolerant"
-  //       },
-  //       {
-  //         "name": "BEE VENOM",
-  //         "description": "BEE VENOM",
-  //         "dateEntered": "Mar 05, 2017",
-  //         "dateNoted": "Mar 05, 2017",
-  //         "reactions": "nausea and vomiting",
-  //         "reactionComments": "Customer was stung by a bee",
-  //         "severity": "High",
-  //         "type": "Intolerant"
-  //       }
-  //     ],
-  //     "encounters": [
-  //       {
-  //         "type": "Office Visit",
-  //         "date": "Jun 05, 2018",
-  //         "eventType": "Telephone",
-  //         "patientClass": "Our Customer",
-  //         "admissionType": "Elective",
-  //         "dischargeDisposition": "B2 - Covered visits. INACTIVE"
-  //       },
-  //       {
-  //         "type": "Abstract",
-  //         "date": "Mar 05, 2018",
-  //         "eventType": "History",
-  //         "patientClass": "Our Customer",
-  //         "admissionType": "Elective",
-  //         "dischargeDisposition": "29 - The time limit for filing has expired"
-  //       }
-  //     ],
-  //     "TreatmentTeam": [
-  //       {
-  //         "Name": "David Steve",
-  //         "PhoneNumber": "+1 404 418 1212"
-  //       }
-  //     ],
-  //     "Provider": [
-  //       {
-  //         "Name": "United Healthcare (UHC Parkway, GA,66552)",
-  //         "PhoneNumber": "+1 216 411 8765"
-  //       }
-  //     ],
-  //     "Billing": {
-  //       "Provider": "United HealthCare",
-  //       "Plan": "Choice",
-  //       "Subscriber": "Self",
-  //       "Street": "5234 T Ave",
-  //       "City": "Fort Worth",
-  //       "State": "TX",
-  //       "ZipCode": "75038",
-  //       "GroupNum": "555664422",
-  //       "PolicyNum": "334422456"
-  //     },
-  //     "BillHistory": [
-  //       {
-  //         "name": " JACOBS,JOHN ",
-  //         "status": "Unpaid",
-  //         "StatementId": "06642326",
-  //         "CustomerName": "Grace Paz",
-  //         "CustomerId": "28724351",
-  //         "Payer": "United",
-  //         "ClaimType": "eClaims",
-  //         "Date": "12/03/2017",
-  //         "TotalAmount": "848.09",
-  //         "TotalPaidAmount": "1200.00",
-  //         "reviews": [
-  //           {
-  //             "date": "12/03/2017",
-  //             "description": "ENCOUNTER 209523",
-  //             "amount": "",
-  //             "insurance": "",
-  //             "currentBalance": "",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "12/03/2017",
-  //             "description": "815235 OFFICE/OUTPATIENT VISIT",
-  //             "amount": "$70.00",
-  //             "insurance": "",
-  //             "currentBalance": "$38.04",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "12/03/2017",
-  //             "description": "Adjustment UNITED",
-  //             "amount": "$31.96",
-  //             "insurance": "",
-  //             "currentBalance": "$",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "12/18/2017",
-  //             "description": "Payment UNITED",
-  //             "amount": "$0.00",
-  //             "insurance": "",
-  //             "currentBalance": "$",
-  //             "lineItem": ""
-  //           }
-  //         ],
-  //         "total": {
-  //           "amount": "$848.09",
-  //           "insurance": "$0.00",
-  //           "currentBalance": "$38.04",
-  //           "lineItem": "$38.04"
-  //         }
-  //       },
-  //       {
-  //         "status": "Paid",
-  //         "StatementId": "02534126",
-  //         "CustomerName": "Grace Paz",
-  //         "CustomerId": "28724351",
-  //         "Payer": "United",
-  //         "ClaimType": "eClaims",
-  //         "Date": "11/02/2016",
-  //         "TotalAmount": "848.09",
-  //         "TotalPaidAmount": "1200.00",
-  //         "reviews": [
-  //           {
-  //             "date": "11/03/2017",
-  //             "description": "ENCOUNTER 109523",
-  //             "amount": "",
-  //             "insurance": "",
-  //             "currentBalance": "",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "11/03/2017",
-  //             "description": "115235 OFFICE/OUTPATIENT VISIT",
-  //             "amount": "$70.00",
-  //             "insurance": "",
-  //             "currentBalance": "$38.04",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "11/03/2017",
-  //             "description": "Adjustment UNITED",
-  //             "amount": "$31.96",
-  //             "insurance": "",
-  //             "currentBalance": "$",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "12/14/2017",
-  //             "description": "Payment UNITED",
-  //             "amount": "$0.00",
-  //             "insurance": "",
-  //             "currentBalance": "$",
-  //             "lineItem": ""
-  //           }
-  //         ],
-  //         "total": {
-  //           "amount": "$848.09",
-  //           "insurance": "$0.00",
-  //           "currentBalance": "$38.04",
-  //           "lineItem": "$38.04"
-  //         }
-  //       },
-  //       {
-  //         "status": "Unpaid",
-  //         "StatementId": "02513426",
-  //         "CustomerName": "Grace Paz",
-  //         "CustomerId": "28724351",
-  //         "Payer": "United",
-  //         "ClaimType": "eClaims",
-  //         "Date": "08/02/2015",
-  //         "TotalAmount": "848.09",
-  //         "TotalPaidAmount": "1100.00",
-  //         "reviews": [
-  //           {
-  //             "date": "12/15/2017",
-  //             "description": "ENCOUNTER 209523",
-  //             "amount": "",
-  //             "insurance": "",
-  //             "currentBalance": "",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "12/16/2017",
-  //             "description": "815235 OFFICE/OUTPATIENT VISIT",
-  //             "amount": "$70.00",
-  //             "insurance": "",
-  //             "currentBalance": "$38.04",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "12/15/2017",
-  //             "description": "Adjustment UNITED",
-  //             "amount": "$31.96",
-  //             "insurance": "",
-  //             "currentBalance": "$",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "12/15/2017",
-  //             "description": "Payment UNITED",
-  //             "amount": "$0.00",
-  //             "insurance": "",
-  //             "currentBalance": "$",
-  //             "lineItem": ""
-  //           }
-  //         ],
-  //         "total": {
-  //           "amount": "$848.09",
-  //           "insurance": "$0.00",
-  //           "currentBalance": "$38.04",
-  //           "lineItem": "$38.04"
-  //         }
-  //       }
-  //     ],
+  {
+    "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
+    "Category": "EPIC",
+    "Name": "Sarah Jones",
+    "DateOfBirth": "1993-07-01 00:00:00",
+    "MRN": 7499281,
+    "SSN": "***-**-5124",
+    "PhoneNumber": "+1 253 704 2531",
+    "PhotoUrl": "img/uhaha.png",
+    "PrimaryCareProvider": {
+      "Name": "Mark Williams, MD",
+      "Phone": "+1 208 975 3874"
+    },
+    "medicalHistory": [
+      "> Heart surgery at the age of 21",
+      "> Sleeeptalking"
+    ],
+    "activeProblems": [
+      "> Moderate Insomnia",
+      "> Severe fever"
+    ],
+    "allergies": [
+      {
+        "name": "IODINE",
+        "description": "IODINE",
+        "dateEntered": "Aug 08, 2018",
+        "dateNoted": "Aug 08, 2018",
+        "reactions": "itchy rash that comes on slowly",
+        "reactionComments": "Direct contact with skin results in small bumps",
+        "severity": "Moderate",
+        "type": "Intolerance"
+      },
+      {
+        "name": "BEE VENOM",
+        "description": "BEE VENOM",
+        "dateEntered": "Mar 05, 2017",
+        "dateNoted": "Mar 05, 2017",
+        "reactions": "nausea and vomiting",
+        "reactionComments": "Customer was stung by a bee",
+        "severity": "High",
+        "type": "Intolerant"
+      }
+    ],
+    "encounters": [
+      {
+        "type": "Office Visit",
+        "date": "Jun 05, 2018",
+        "eventType": "Hospital Outpatient",
+        "patientClass": "Our Customer",
+        "admissionType": "Emergency",
+        "dischargeDisposition": "09 - Admitted as an inpatient to this hospital"
+      },
+      {
+        "type": "Orders Only",
+        "date": "Mar 15, 2018",
+        "eventType": "Admission",
+        "patientClass": "In Customer",
+        "admissionType": "Elective",
+        "dischargeDisposition": "52 - The referring/prescribing/rendering provider is not eligible to refer/prescribe/order/perform the service billed"
+      }
+    ],
+    "Address": {
+      "Line1": "1431 T Ave, Fort Worth",
+      "Line2": "TX 76179, USA"
+    },
+    "TreatmentTeam": [
+    ],
+    "Provider": [
+      {
+        "Name": "United Healthcare (UHC Parkway, GA,66552)",
+        "PhoneNumber": "+1 216 411 8765"
+      }
+    ],
+    "InsuranceVerification": {
+      "InsuranceName": "Sarah Jones",
+      "GroupNum": "#42AEC",
+      "NetworkNum": "#42AEC",
+      "PolicyNum": "#055113542",
+      "IssueDate": "20-Aug-2016 00:00:00"
+    },
+    "Vitals": {
+      "Height": 160,
+      "Weight": 55,
+      "RespirationRate": 67,
+      "BMI": 22,
+      "Pulse": 100,
+      "BloodPressureLo": 80,
+      "BloodPressureHi": 120
+    },
+    "Physician": {
+      "Name": "Mark Williams, MD",
+      "PrimaryPhone": "+1 208 975 3874",
+      "Clinic": "Clarit Clinic",
+      "Specialty": "PCP",
+      "EmergencyPhone": "+1 800 111 2222"
+    },
+    "Status": {
+      "Email": "sarah.jones@gmail.com",
+      "Race": "White",
+      "Ethnicity": "Not Hispanic Or Latino",
+      "Religion": "Christian (non-Catholic, non-Specific)",
+      "MaritalStatus": "Married",
+      "EmergencyContact": {
+        "Relation": "Husband",
+        "Name": "Jack Jones",
+        "Phone": "+1 (972) 293 9234"
+      }
+    },
+    "Location": {
+      "DropdownRecords": [
+        {
+          "Name": "Customer Geo Location",
+          "Address": "1431 T Ave, Fort Worth, TX 76179",
+          "Position": {"lat": 31.944827, "lng": -95.645879},
+          "Phone": "+1 (253)-704-2531",
+          "Hours": "N / A",
+          "Markers":[
+            {
+              "Name": "Customer Geo Location"
+            , "Address": "1272 Belt Line Rd, Garland TX 75040"
+            , "Position": {"lat": 31.944827, "lng": -95.645879}
+            , "Phone": "+1 (253)-704-2531"
+            }
+          ]
+        },
+        {
+          "Name": "Pharmacies In Area",
+          "Address": "1272 Belt Line Rd, Garland TX 75040",
+          "Position": {"lat": 31.944827, "lng": -95.645879},
+          "Phone": "+1 (972) 496-1933",
+          "Hours": "Open 9 AM to 10 PM",
+          "Markers":[
+            {
+              "Name": "CVS Pharmacy"
+            , "Address": "1372 Belt Line Rd"
+            , "Position": {"lat": 31.944527, "lng": -95.646960}
+            , "Phone": "+1 (972) 496-1934" 
+            } ,
+            {
+              "Name": "Walmart Pharmacy"
+            , "Address": "101 W Buckingham Rd"
+            , "Position": {"lat": 31.932013, "lng": -95.631611}
+            , "Phone": "+1 (972) 496-1935" 
+            } ,
+            {
+              "Name": "Walgreens"
+            , "Address": "2614 Lavon Dr"
+            , "Position": {"lat": 31.939566, "lng": -95.621946}
+            , "Phone": "+1 (972) 496-1936" 
+            } ,
+            {
+              "Name": "Walgreens"
+            , "Address": "1902 N Jupiter Rd"
+            , "Position": {"lat": 32.930183, "lng": -95.682285}
+            , "Phone": "+1 (972) 496-1937" 
+            } ,
+            {
+              "Name": "CVS Pharmacy - Target"
+            , "Address": "5301 N Garland Ave"
+            , "Position": {"lat": 32.965650, "lng": -95.646806}
+            , "Phone": "+1 (972) 496-1938" 
+            } ,
+            {
+              "Name": "Walmart Pharmacy"
+            , "Address": "5302 N Garland Ave"
+            , "Position": {"lat": 32.962346, "lng": -95.642499}
+            , "Phone": "+1 (972) 496-1939" 
+            }
+          ]
+        },
+        {
+          "Name": "Hospitals In Area",
+          "Address": "7 Medical Pkwy, Dallas, TX 75234",
+          "Position": {"lat": 32.944827, "lng": -95.645879},
+          "Phone": "+(972) 898-7000",
+          "Hours": "Open 9AM to 9PM",
+          "Markers":[
+            {
+              "Name": "Baylor Scott & White Medical Center"
+            , "Address": "2300 Marie Curie Blvd"
+            , "Position": {"lat": 32.918755, "lng": -95.661963}
+            , "Phone": "+(972) 898-7001"
+            } ,
+            {
+              "Name": "Select Specialty Hospital - Dallas Garland"
+            , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
+            , "Position": {"lat": 32.918793, "lng": -96.662041}
+            , "Phone": "+(972) 898-7002"
+            } ,
+            {
+              "Name": "Children's Health Pediatric Group Garland"
+            , "Address": "455 N Garland Ave"
+            , "Position": {"lat": 28.548467, "lng": -81.381385}
+            , "Phone": "+(972) 898-7003"
+            } ,
+            {
+              "Name": "Sundance Hospital Dallas"
+            , "Address": "2696 W Walnut St"
+            , "Position": {"lat": 32.913402, "lng": -96.670117}
+            , "Phone": "+(972) 898-7004"
+            }
+          ]
+        }
+      ]
+    },
+    "PastAppointments": [
+      {
+        "Date": "7-15-2018 15:00:00",
+        "Time": "12:00:00",
+        "Department": "SpinSci Clinic",
+        "Provider": "Administrator",
+        "VisitType": "Office Visit",
+        "VisitReason": "New Customer",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "false",
+          "Interpreter Language": "None",
+          "Status": "Arrived Late"
+        }
+      }
+    ],
+    "CurrentAppointments": [
+      {
+        "Date": "8-24-2018 15:00:00",
+        "Time": "15:00:00",
+        "Department": "Urology",
+        "Provider": "Dr. Steve Angler",
+        "VisitType": "Office Visit",
+        "VisitReason": "No Comments",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "false",
+          "Interpreter Language": "None",
+          "Status": "Arrived Late"
+        }
+      },
+      {
+        "Date": "8-22-2018 14:30:00",
+        "Time": "13:00:00",
+        "Department": "General",
+        "Provider": "Dr. John Lee",
+        "VisitType": "Office Visit",
+        "VisitReason": "Knee Pain",
+        "Appointment Details": {
+          "Interpreter Required": "Yes",
+          "IsRequired": "True",
+          "Interpreter Language": "Mandarin",
+          "Status": "Checked Out"
+        }
+      },
+      {
+        "Date": "10-03-2018 14:00:00",
+        "Time": "11:00:00",
+        "Department": "Kent Health Center",
+        "Provider": "Dr. John Lee",
+        "VisitType": "Physical",
+        "VisitReason": "No Comments",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "True",
+          "Interpreter Language": "None",
+          "Status": "Checked Out"
+        }
+      }
+    ],
+    "Billing": {
+      "Provider": "United HealthCare",
+      "Plan": "Choice",
+      "Subscriber": "Self",
+      "Street": "3153 T Ave",
+      "City": "Fort Worth",
+      "State": "TX",
+      "ZipCode": "75038",
+      "GroupNum": "52534422",
+      "PolicyNum": "112222456"
+    },
+    "BillHistory": [
+      {
+        "name": " JONES,SARAH ",
+        "status": "Unpaid",
+        "StatementId": "06642326",
+        "CustomerName": "Sarah Jones",
+        "CustomerId": "28724301",
+        "Payer": "United",
+        "ClaimType": "eClaims",
+        "Date": "12/03/2017",
+        "TotalAmount": "848.09",
+        "TotalPaidAmount": "1200.00",
+        "reviews": [
+          {
+            "date": "07/07/2017",
+            "description": "ENCOUNTER 209233",
+            "amount": "",
+            "insurance": "",
+            "currentBalance": "",
+            "lineItem": ""
+          },
+          {
+            "date": "07/07/2017",
+            "description": "815235 OFFICE/OUTPATIENT VISIT",
+            "amount": "$70.00",
+            "insurance": "",
+            "currentBalance": "$15.04",
+            "lineItem": ""
+          },
+          {
+            "date": "07/07/2017",
+            "description": "Adjustment UNITED",
+            "amount": "$41.96",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          },
+          {
+            "date": "07/07/2017",
+            "description": "Payment UNITED",
+            "amount": "$0.00",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          }
+        ],
+        "total": {
+          "amount": "$551.09",
+          "insurance": "$0.00",
+          "currentBalance": "$38.04",
+          "lineItem": "$38.04"
+        }
+      },
+      {
+        "status": "Paid",
+        "StatementId": "02534126",
+        "CustomerName": "Sarah Jones",
+        "CustomerId": "28724301",
+        "Payer": "United",
+        "ClaimType": "eClaims",
+        "Date": "11/02/2016",
+        "TotalAmount": "848.09",
+        "TotalPaidAmount": "1200.00",
+        "reviews": [
+          {
+            "date": "11/11/2017",
+            "description": "ENCOUNTER 109523",
+            "amount": "",
+            "insurance": "",
+            "currentBalance": "",
+            "lineItem": ""
+          },
+          {
+            "date": "11/11/2017",
+            "description": "163235 OFFICE/OUTPATIENT VISIT",
+            "amount": "$70.00",
+            "insurance": "",
+            "currentBalance": "$38.04",
+            "lineItem": ""
+          },
+          {
+            "date": "11/11/2017",
+            "description": "Adjustment UNITED",
+            "amount": "$31.96",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          },
+          {
+            "date": "11/11/2017",
+            "description": "Payment UNITED",
+            "amount": "$0.00",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          }
+        ],
+        "total": {
+          "amount": "$848.09",
+          "insurance": "$0.00",
+          "currentBalance": "$38.04",
+          "lineItem": "$38.04"
+        }
+      },
+      {
+        "status": "Unpaid",
+        "StatementId": "02512426",
+        "CustomerName": "Sarah Jones",
+        "CustomerId": "28724301",
+        "Payer": "United",
+        "ClaimType": "eClaims",
+        "Date": "04/04/2015",
+        "TotalAmount": "848.09",
+        "TotalPaidAmount": "1100.00",
+        "reviews": [
+          {
+            "date": "03/03/2017",
+            "description": "ENCOUNTER 209523",
+            "amount": "",
+            "insurance": "",
+            "currentBalance": "",
+            "lineItem": ""
+          },
+          {
+            "date": "02/02/2017",
+            "description": "815235 OFFICE/OUTPATIENT VISIT",
+            "amount": "$70.00",
+            "insurance": "",
+            "currentBalance": "$38.04",
+            "lineItem": ""
+          },
+          {
+            "date": "01/01/2017",
+            "description": "Adjustment UNITED",
+            "amount": "$31.96",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          },
+          {
+            "date": "01/01/2017",
+            "description": "Payment UNITED",
+            "amount": "$0.00",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          }
+        ],
+        "total": {
+          "amount": "$848.09",
+          "insurance": "$0.00",
+          "currentBalance": "$38.04",
+          "lineItem": "$38.04"
+        }
+      }
+    ]
+  },
+    {
+      "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=3",
+      "Category": "EPIC",
+      "Name": "Grace Paz",
+      "DateOfBirth": "2007-12-25 00:00:00",
+      "MRN": 7499220,    
+      "SSN": "***-**-5428",
+      "PhoneNumber": "+1 255 703 8801",
+      "PhotoUrl": "img/user2.png",
+      "PrimaryCareProvider": {
+        "Name": "Mark Williams, MD",
+        "Phone": "+1 208 975 3874"
+      },
+      "Address": {
+        "Line1": "5234 T Ave",
+        "Line2": "Fort Worth, TX 76179, USA"
+      },
+      "medicalHistory": [
+        "> Sleeeptalking",
+        "> Hepatitis"
+      ],
+      "activeProblems": [
+        "> Prolonged fever without complication",
+        "> Protein-calorie malnutrition, moderate"
+      ],
+      "allergies": [
+        {
+          "name": "PENICILLIN",
+          "description": "PENICILLIN",
+          "dateEntered": "Jul 13, 2018",
+          "dateNoted": "Jul 13, 2018",
+          "reactions": "Hives and itchy eyes",
+          "reactionComments": "Overdose",
+          "severity": "Low",
+          "type": "Tolerant"
+        },
+        {
+          "name": "BEE VENOM",
+          "description": "BEE VENOM",
+          "dateEntered": "Mar 05, 2017",
+          "dateNoted": "Mar 05, 2017",
+          "reactions": "nausea and vomiting",
+          "reactionComments": "Customer was stung by a bee",
+          "severity": "High",
+          "type": "Intolerant"
+        }
+      ],
+      "encounters": [
+        {
+          "type": "Office Visit",
+          "date": "Jun 05, 2018",
+          "eventType": "Telephone",
+          "patientClass": "Our Customer",
+          "admissionType": "Elective",
+          "dischargeDisposition": "B2 - Covered visits. INACTIVE"
+        },
+        {
+          "type": "Abstract",
+          "date": "Mar 05, 2018",
+          "eventType": "History",
+          "patientClass": "Our Customer",
+          "admissionType": "Elective",
+          "dischargeDisposition": "29 - The time limit for filing has expired"
+        }
+      ],
+      "TreatmentTeam": [
+        {
+          "Name": "David Steve",
+          "PhoneNumber": "+1 404 418 1212"
+        }
+      ],
+      "Provider": [
+        {
+          "Name": "United Healthcare (UHC Parkway, GA,66552)",
+          "PhoneNumber": "+1 216 411 8765"
+        }
+      ],
+      "Billing": {
+        "Provider": "United HealthCare",
+        "Plan": "Choice",
+        "Subscriber": "Self",
+        "Street": "5234 T Ave",
+        "City": "Fort Worth",
+        "State": "TX",
+        "ZipCode": "75038",
+        "GroupNum": "555664422",
+        "PolicyNum": "334422456"
+      },
+      "BillHistory": [
+        {
+          "name": " JACOBS,JOHN ",
+          "status": "Unpaid",
+          "StatementId": "06642326",
+          "CustomerName": "Grace Paz",
+          "CustomerId": "28724351",
+          "Payer": "United",
+          "ClaimType": "eClaims",
+          "Date": "12/03/2017",
+          "TotalAmount": "848.09",
+          "TotalPaidAmount": "1200.00",
+          "reviews": [
+            {
+              "date": "12/03/2017",
+              "description": "ENCOUNTER 209523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "12/03/2017",
+              "description": "815235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "12/03/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "12/18/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$848.09",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
+          }
+        },
+        {
+          "status": "Paid",
+          "StatementId": "02534126",
+          "CustomerName": "Grace Paz",
+          "CustomerId": "28724351",
+          "Payer": "United",
+          "ClaimType": "eClaims",
+          "Date": "11/02/2016",
+          "TotalAmount": "848.09",
+          "TotalPaidAmount": "1200.00",
+          "reviews": [
+            {
+              "date": "11/03/2017",
+              "description": "ENCOUNTER 109523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "11/03/2017",
+              "description": "115235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "11/03/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "12/14/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$848.09",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
+          }
+        },
+        {
+          "status": "Unpaid",
+          "StatementId": "02513426",
+          "CustomerName": "Grace Paz",
+          "CustomerId": "28724351",
+          "Payer": "United",
+          "ClaimType": "eClaims",
+          "Date": "08/02/2015",
+          "TotalAmount": "848.09",
+          "TotalPaidAmount": "1100.00",
+          "reviews": [
+            {
+              "date": "12/15/2017",
+              "description": "ENCOUNTER 209523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "12/16/2017",
+              "description": "815235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "12/15/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "12/15/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$848.09",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
+          }
+        }
+      ],
 
-  //     "InsuranceVerification": {
-  //       "InsuranceName": "Johns Jacobs",
-  //       "GroupNum": "#555664422",
-  //       "NetworkNum": "#45ABC",
-  //       "PolicyNum": "#334422456",
-  //       "IssueDate": "20-Aug-2016 00:00:00"
-  //     },
-  //     "Vitals": {
-  //       "Height": 133,
-  //       "Weight": 30,
-  //       "RespirationRate": 29,
-  //       "BMI": 17.2,
-  //       "Pulse": 84,
-  //       "BloodPressureLo": 70,
-  //       "BloodPressureHi": 100  
-  //     },
-  //     "Physician": {
-  //       "Name": "Mark Williams, MD",
-  //       "PrimaryPhone": "+1 208 975 3874",
-  //       "Clinic": "Clarit Clinic",
-  //       "Specialty": "PCP",
-  //       "EmergencyPhone": "+1 800 111 2222"
-  //     },
-  //     "Status": {
-  //       "Email": "grace.paz.531@aol.com",
-  //       "Race": "Declined to Specify",
-  //       "Ethnicity": "Declined to Specify",
-  //       "Religion": "Cyberculture Religions",
-  //       "MaritalStatus": "Single",
-  //       "EmergencyContact": {
-  //         "Relation": "Friend",
-  //         "Name": "Mr Nobody",
-  //         "Phone": "+1 (972) 293 9101"
-  //       }
-  //     },
-  //     "Location": {
-  //       "DropdownRecords": [
-  //         {
-  //           "Name": "Customer Geo Location",
-  //           "Address": "5234 T Ave, Fort Worth, TX 76179",
-  //           "Position": {
-  //             "lat": 31.900827,
-  //             "lng": -97.600879
-  //           },
-  //           "Phone": "+1 255 703 8801",
-  //           "Hours": "N / A",
-  //           "Markers": [
-  //             {
-  //               "Name": "Customer Geo Location",
-  //               "Address": "1272 Belt Line Rd, Garland TX 75040",
-  //               "Position": {
-  //                 "lat": 31.900827,
-  //                 "lng": -97.600879
-  //               },
-  //               "Phone": "+1 255 703 8801"
-  //             }
-  //           ]
-  //         },
-  //         {
-  //           "Name": "Pharmacies In Area",
-  //           "Address": "1272 Belt Line Rd, Garland TX 75040",
-  //           "Position": {
-  //             "lat": 31.900827,
-  //             "lng": -97.600879
-  //           },
-  //           "Phone": "+1 (972) 498-1933",
-  //           "Hours": "Open 9 AM to 10 PM",
-  //           "Markers": [
-  //             {
-  //               "Name": "CVS Pharmacy",
-  //               "Address": "1372 Belt Line Rd",
-  //               "Position": {
-  //                 "lat": 31.900827,
-  //                 "lng": -97.600879
-  //               },
-  //               "Phone": "+1 (972) 498-1934"
-  //             },
-  //             {
-  //               "Name": "Walmart Pharmacy",
-  //               "Address": "101 W Buckingham Rd",
-  //               "Position": {
-  //                 "lat": 31.900827,
-  //                 "lng": -97.600879
-  //               },
-  //               "Phone": "+1 (972) 498-1935"
-  //             },
-  //             {
-  //               "Name": "Walgreens",
-  //               "Address": "2614 Lavon Dr",
-  //               "Position": {
-  //                 "lat": 31.900827,
-  //                 "lng": -97.600879
-  //               },
-  //               "Phone": "+1 (972) 498-1936"
-  //             },
-  //             {
-  //               "Name": "Walgreens",
-  //               "Address": "1902 N Jupiter Rd",
-  //               "Position": {
-  //                 "lat": 31.900827,
-  //                 "lng": -97.600879
-  //               },
-  //               "Phone": "+1 (972) 498-1937"
-  //             },
-  //             {
-  //               "Name": "CVS Pharmacy - Target",
-  //               "Address": "5301 N Garland Ave",
-  //               "Position": {
-  //                 "lat": 31.900827,
-  //                 "lng": -97.600879
-  //               },
-  //               "Phone": "+1 (972) 498-1938"
-  //             },
-  //             {
-  //               "Name": "Walmart Pharmacy",
-  //               "Address": "5302 N Garland Ave",
-  //               "Position": {
-  //                 "lat": 31.900827,
-  //                 "lng": -97.600879
-  //               },
-  //               "Phone": "+1 (972) 498-1939"
-  //             }
-  //           ]
-  //         },
-  //         {
-  //           "Name": "Hospitals In Area",
-  //           "Address": "7 Medical Pkwy, Dallas, TX 75234",
-  //           "Position": {
-  //             "lat": 32.944827,
-  //             "lng": -97.600879
-  //           },
-  //           "Phone": "+(972) 988-7000",
-  //           "Hours": "Open 9AM to 9PM",
-  //           "Markers": [
-  //             {
-  //               "Name": "Baylor Scott & White Medical Center",
-  //               "Address": "2300 Marie Curie Blvd",
-  //               "Position": {
-  //                 "lat": 32.918755,
-  //                 "lng": -97.600879
-  //               },
-  //               "Phone": "+(972) 988-7001",
-  //             },
-  //             {
-  //               "Name": "Select Specialty Hospital - Dallas Garland",
-  //               "Address": "2300 Marie Curie Drive Floors 3E & 3W",
-  //               "Position": {
-  //                 "lat": 32.918793,
-  //                 "lng": -97.600879
-  //               },
-  //               "Phone": "+(972) 988-7002",
-  //             },
-  //             {
-  //               "Name": "Children's Health Pediatric Group Garland",
-  //               "Address": "455 N Garland Ave",
-  //               "Position": {
-  //                 "lat": 28.548467,
-  //                 "lng": -81.381385
-  //               },
-  //               "Phone": "+(972) 988-7003",
-  //             },
-  //             {
-  //               "Name": "Sundance Hospital Dallas",
-  //               "Address": "2696 W Walnut St",
-  //               "Position": {
-  //                 "lat": 32.913402,
-  //                 "lng": -96.670117
-  //               },
-  //               "Phone": "+(972) 988-7004",
-  //             }
-  //           ]
-  //         }
-  //       ]
-  //     },
-  //     "PastAppointments": [
-  //       {
-  //         "Date": "7-23-2018 15:00:00",
-  //         "Time": "12:00:00",
-  //         "Department": "SpinSci Clinic",
-  //         "Provider": "Administrator",
-  //         "VisitType": "Office Visit",
-  //         "VisitReason": "New Customer",
-  //         "Appointment Details": {
-  //           "Interpreter Required": "No",
-  //           "IsRequired": "false",
-  //           "Interpreter Language": "None",
-  //           "Status": "Arrived Late"
-  //         }
-  //       }
-  //     ],
-  //     "CurrentAppointments": [
-  //       {
-  //         "Date": "8-23-2018 15:00:00",
-  //         "Time": "12:00:00",
-  //         "Department": "SpinSci Clinic",
-  //         "Provider": "Administrator",
-  //         "VisitType": "Office Visit",
-  //         "VisitReason": "New Customer",
-  //         "Appointment Details": {
-  //           "Interpreter Required": "No",
-  //           "IsRequired": "false",
-  //           "Interpreter Language": "None",
-  //           "Status": "Arrived Late"
-  //         }
-  //       },
-  //       {
-  //         "Date": "8-28-2018 14:30:00",
-  //         "Time": "15:00:00",
-  //         "Department": "SpinSci Clinic",
-  //         "Provider": "Administrator",
-  //         "VisitType": "Office Visit",
-  //         "VisitReason": "Perscription Clarification",
-  //         "Appointment Details": {
-  //           "Interpreter Required": "Yes",
-  //           "IsRequired": "True",
-  //           "Interpreter Language": "Mandarin",
-  //           "Status": "Checked Out"
-  //         }
-  //       },
-  //       {
-  //         "Date": "9-30-2018 15:00:00",
-  //         "Time": "12:00:00",
-  //         "Department": "SpinSci Clinic",
-  //         "Provider": "Administrator",
-  //         "VisitType": "Office Visit",
-  //         "VisitReason": "New Customer",
-  //         "Appointment Details": {
-  //           "Interpreter Required": "No",
-  //           "IsRequired": "false",
-  //           "Interpreter Language": "None",
-  //           "Status": "Arrived Late"
-  //         }
-  //       }
-  //     ]
-  //   },
-  //   {
-  //     "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
-  //     "Category": "EPIC",
-  //     "Name": "Opal Lee",
-  //     "DateOfBirth": "1989-08-29 00:00:00",
-  //     "MRN": 7499281,
-  //     "SSN": "***-**-6789",
-  //     "PhoneNumber": "+1 214 701 5489",
-  //     "PhotoUrl": "img/opal_lee.png",
-  //     "PrimaryCareProvider": {
-  //       "Name": "Mark Williams, MD",
-  //       "Phone": "+1 208 975 3874"
-  //     },
-  //     "medicalHistory": [
-  //       "> Third Trimester Pregnancy: Expecting Twins",
-  //       "> Muscular Dystrophy",
-  //       "> Hemophilia",
-  //     ],
-  //     "activeProblems": [
-  //       "> A Persistent Severe Headache",
-  //       "> Abdominal Pain",
-  //       "> Swelling",
-  //     ],
-  //     "allergies": [
-  //       {
-  //         "name": "IODINE",
-  //         "description": "IODINE",
-  //         "dateEntered": "Aug 08, 2018",
-  //         "dateNoted": "Aug 08, 2018",
-  //         "reactions": "itchy rash that comes on slowly",
-  //         "reactionComments": "Direct contact with skin results in small bumps",
-  //         "severity": "Moderate",
-  //         "type": "Intolerance"
-  //       },
-  //       {
-  //         "name": "PENICILLIN",
-  //         "description": "PENICILLIN",
-  //         "dateEntered": "Jul 13, 2018",
-  //         "dateNoted": "Jul 13, 2018",
-  //         "reactions": "Hives and itchy eyes",
-  //         "reactionComments": "Overdose",
-  //         "severity": "Low",
-  //         "type": "Tolerant"
-  //       }
-  //     ],
-  //     "encounters": [
-  //       {
-  //         "type": "Evaluation",
-  //         "date": "Mar 05, 2017",
-  //         "eventType": "Admission",
-  //         "patientClass": "In Customer",
-  //         "admissionType": "Elective",
-  //         "dischargeDisposition": "30 - Still Customer"
-  //       },
-  //       {
-  //         "type": "Evaluation",
-  //         "date": "Mar 15, 2018",
-  //         "eventType": "Transfer In",
-  //         "patientClass": "In Customer",
-  //         "admissionType": "Elective",
-  //         "dischargeDisposition": "02 - Transferred"
-  //       }
-  //     ],
-  //     "Address": {
-  //       "Line1": "3453 T Ave, San Jose",
-  //       "Line2": "CA 95134"
-  //     },
-  //     "TreatmentTeam": [
-  //     ],
-  //     "Provider": [
-  //       {
-  //         "Name": "United Healthcare (UHC Parkway, GA,66552)",
-  //         "PhoneNumber": "+1 216 411 8765"
-  //       }
-  //     ],
-  //     "InsuranceVerification": {
-  //       "InsuranceName": "Opal Lee",
-  //       "GroupNum": "#45ABC",
-  //       "NetworkNum": "#45ABC",
-  //       "PolicyNum": "#022141242",
-  //       "IssueDate": "20-Aug-2016 00:00:00"
-  //     },
-  //     "Vitals": {
-  //       "Height": 168,
-  //       "Weight": 78,
-  //       "RespirationRate": 58,
-  //       "BMI": 18.9,
-  //       "Pulse": 210,
-  //       "BloodPressureLo": 127,
-  //       "BloodPressureHi": 145
-  //     },
-  //     "Physician": {
-  //       "Name": "Mark Williams, MD",
-  //       "PrimaryPhone": "+1 208 975 3874",
-  //       "Clinic": "Clarit Clinic",
-  //       "Specialty": "PCP",
-  //       "EmergencyPhone": "+1 800 111 2222"
-  //     },
-  //     "Status": {
-  //       "Email": "john.doe@gmail.com",
-  //       "Race": "White",
-  //       "Ethnicity": "Not Hispanic Or Latino",
-  //       "Religion": "Christian (non-Catholic, non-Specific)",
-  //       "MaritalStatus": "Married",
-  //       "EmergencyContact": {
-  //         "Relation": "Wife",
-  //         "Name": "Sarah Doe",
-  //         "Phone": "+1 (972) 293 9101"
-  //       }
-  //     },
-  //     "Location": {
-  //       "DropdownRecords": [
-  //         {
-  //           "Name": "Customer Geo Location",
-  //           "Address": "1431 T Ave, Fort Worth, TX 76179",
-  //           "Position": {"lat": 32.944827, "lng": -96.645879},
-  //           "Phone": "+1 (214)-701-5489",
-  //           "Hours": "N / A",
-  //           "Markers":[
-  //             {
-  //               "Name": "Customer Geo Location"
-  //             , "Address": "1272 Belt Line Rd, Garland TX 75040"
-  //             , "Position": {"lat": 32.944827, "lng": -96.645879}
-  //             , "Phone": "+1 (214)-701-5489"
-  //             }
-  //           ]
-  //         },
-  //         {
-  //           "Name": "Pharmacies In Area",
-  //           "Address": "1272 Belt Line Rd, Garland TX 75040",
-  //           "Position": {"lat": 32.944827, "lng": -96.645879},
-  //           "Phone": "+1 (972) 495-1933",
-  //           "Hours": "Open 9 AM to 10 PM",
-  //           "Markers":[
-  //             {
-  //               "Name": "CVS Pharmacy"
-  //             , "Address": "1372 Belt Line Rd"
-  //             , "Position": {"lat": 32.944527, "lng": -96.646960}
-  //             ,"Phone": "+1 (972) 495-1934"
-  //             } ,
-  //             {
-  //               "Name": "Walmart Pharmacy"
-  //             , "Address": "101 W Buckingham Rd"
-  //             , "Position": {"lat": 32.932013, "lng": -96.631611}
-  //             ,"Phone": "+1 (972) 495-1935"
-  //             } ,
-  //             {
-  //               "Name": "Walgreens"
-  //             , "Address": "2614 Lavon Dr"
-  //             , "Position": {"lat": 32.939566, "lng": -96.621946}
-  //             ,"Phone": "+1 (972) 495-1936"
-  //             } ,
-  //             {
-  //               "Name": "Walgreens"
-  //             , "Address": "1902 N Jupiter Rd"
-  //             , "Position": {"lat": 32.930183, "lng": -96.682285}
-  //             ,"Phone": "+1 (972) 495-1937"
-  //             } ,
-  //             {
-  //               "Name": "CVS Pharmacy - Target"
-  //             , "Address": "5301 N Garland Ave"
-  //             , "Position": {"lat": 32.965650, "lng": -96.646806}
-  //             ,"Phone": "+1 (972) 495-1938"
-  //             } ,
-  //             {
-  //               "Name": "Walmart Pharmacy"
-  //             , "Address": "5302 N Garland Ave"
-  //             , "Position": {"lat": 32.962346, "lng": -96.642499}
-  //             ,"Phone": "+1 (972) 495-1939"
-  //             }
-  //           ]
-  //         },
-  //         {
-  //           "Name": "Hospitals In Area",
-  //           "Address": "7 Medical Pkwy, Dallas, TX 75234",
-  //           "Position": {"lat": 32.944827, "lng": -96.645879},
-  //           "Phone": "+(972) 888-7000",
-  //           "Hours": "Open 9AM to 9PM",
-  //           "Markers":[
-  //             {
-  //               "Name": "Baylor Scott & White Medical Center"
-  //             , "Address": "2300 Marie Curie Blvd"
-  //             , "Position": {"lat": 32.918755, "lng": -96.661963}
-  //             , "Phone": "+(972) 888-7001",
-  //             } ,
-  //             {
-  //               "Name": "Select Specialty Hospital - Dallas Garland"
-  //             , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
-  //             , "Position": {"lat": 32.918793, "lng": -96.662041}
-  //             , "Phone": "+(972) 888-7002",
-  //             } ,
-  //             {
-  //               "Name": "Children's Health Pediatric Group Garland"
-  //             , "Address": "455 N Garland Ave"
-  //             , "Position": {"lat": 28.548467, "lng": -81.381385}
-  //             , "Phone": "+(972) 888-7003",
-  //             } ,
-  //             {
-  //               "Name": "Sundance Hospital Dallas"
-  //             , "Address": "2696 W Walnut St"
-  //             , "Position": {"lat": 32.913402, "lng": -96.670117}
-  //             , "Phone": "+(972) 888-7004",
-  //             }
-  //           ]
-  //         }
-  //       ]
-  //     },
-  //     "PastAppointments": [
-  //       {
-  //         "Date": "7-01-2018 15:00:00",
-  //         "Time": "12:00:00",
-  //         "Department": "General",
-  //         "Provider": "Administrator",
-  //         "VisitType": "Office Visit",
-  //         "VisitReason": "X Ray",
-  //         "Appointment Details": {
-  //           "Interpreter Required": "No",
-  //           "IsRequired": "false",
-  //           "Interpreter Language": "None",
-  //           "Status": "Arrived Late"
-  //         }
-  //       }
-  //     ],
-  //     "CurrentAppointments": [
-  //       {
-  //         "Date": "8-20-2018 15:00:00",
-  //         "Time": "15:00:00",
-  //         "Department": "OBGYN",
-  //         "Provider": "Dr. Steve Angler",
-  //         "VisitType": "Physicals",
-  //         "VisitReason": "Routine Check Up",
-  //         "Appointment Details": {
-  //           "Interpreter Required": "No",
-  //           "IsRequired": "false",
-  //           "Interpreter Language": "None",
-  //           "Status": "Arrived Late"
-  //         }
-  //       },
-  //       {
-  //         "Date": "8-25-2018 14:30:00",
-  //         "Time": "13:00:00",
-  //         "Department": "OBGYN",
-  //         "Provider": "Dr. John Lee",
-  //         "VisitType": "Physicals",
-  //         "VisitReason": "Irregular Nausea",
-  //         "Appointment Details": {
-  //           "Interpreter Required": "Yes",
-  //           "IsRequired": "True",
-  //           "Interpreter Language": "Mandarin",
-  //           "Status": "Checked Out"
-  //         }
-  //       },
-  //       {
-  //         "Date": "9-01-2018 14:00:00",
-  //         "Time": "11:00:00",
-  //         "Department": "OBGYN",
-  //         "Provider": "Dr. Mary John",
-  //         "VisitType": "Physical",
-  //         "VisitReason": "Routine Check Up",
-  //         "Appointment Details": {
-  //           "Interpreter Required": "No",
-  //           "IsRequired": "True",
-  //           "Interpreter Language": "None",
-  //           "Status": "Checked Out"
-  //         }
-  //       },
-  //       {
-  //         "Date": "10-01-2018 14:00:00",
-  //         "Time": "11:00:00",
-  //         "Department": "OBGYN",
-  //         "Provider": "Dr. John Lee",
-  //         "VisitType": "Physical",
-  //         "VisitReason": "Consultation",
-  //         "Appointment Details": {
-  //           "Interpreter Required": "No",
-  //           "IsRequired": "True",
-  //           "Interpreter Language": "None",
-  //           "Status": "Checked Out"
-  //         }
-  //       }
-  //     ],
-  //     "Billing": {
-  //       "Provider": "United HealthCare",
-  //       "Plan": "Choice",
-  //       "Subscriber": "Self",
-  //       "Street": "3153 T Ave",
-  //       "City": "Fort Worth",
-  //       "State": "TX",
-  //       "ZipCode": "75038",
-  //       "GroupNum": "52534422",
-  //       "PolicyNum": "112222456"
-  //     },
-  //     "BillHistory": [
-  //       {
-  //         "name": " JACOBS,JOHN ",
-  //         "status": "Unpaid",
-  //         "StatementId": "06642326",
-  //         "CustomerName": "Johns Jacobs",
-  //         "CustomerId": "28724351",
-  //         "Payer": "United",
-  //         "ClaimType": "eClaims",
-  //         "Date": "12/03/2017",
-  //         "TotalAmount": "848.09",
-  //         "TotalPaidAmount": "1200.00",
-  //         "reviews": [
-  //           {
-  //             "date": "07/07/2017",
-  //             "description": "ENCOUNTER 209523",
-  //             "amount": "",
-  //             "insurance": "",
-  //             "currentBalance": "",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "07/07/2017",
-  //             "description": "815235 OFFICE/OUTPATIENT VISIT",
-  //             "amount": "$70.00",
-  //             "insurance": "",
-  //             "currentBalance": "$38.04",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "07/07/2017",
-  //             "description": "Adjustment UNITED",
-  //             "amount": "$31.96",
-  //             "insurance": "",
-  //             "currentBalance": "$",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "07/07/2017",
-  //             "description": "Payment UNITED",
-  //             "amount": "$0.00",
-  //             "insurance": "",
-  //             "currentBalance": "$",
-  //             "lineItem": ""
-  //           }
-  //         ],
-  //         "total": {
-  //           "amount": "$848.09",
-  //           "insurance": "$0.00",
-  //           "currentBalance": "$38.04",
-  //           "lineItem": "$38.04"
-  //         }
-  //       },
-  //       {
-  //         "status": "Paid",
-  //         "StatementId": "02534126",
-  //         "CustomerName": "Johns Jacobs",
-  //         "CustomerId": "28724351",
-  //         "Payer": "United",
-  //         "ClaimType": "eClaims",
-  //         "Date": "11/02/2016",
-  //         "TotalAmount": "848.09",
-  //         "TotalPaidAmount": "1200.00",
-  //         "reviews": [
-  //           {
-  //             "date": "11/11/2017",
-  //             "description": "ENCOUNTER 109523",
-  //             "amount": "",
-  //             "insurance": "",
-  //             "currentBalance": "",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "11/11/2017",
-  //             "description": "163235 OFFICE/OUTPATIENT VISIT",
-  //             "amount": "$70.00",
-  //             "insurance": "",
-  //             "currentBalance": "$38.04",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "11/11/2017",
-  //             "description": "Adjustment UNITED",
-  //             "amount": "$31.96",
-  //             "insurance": "",
-  //             "currentBalance": "$",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "11/11/2017",
-  //             "description": "Payment UNITED",
-  //             "amount": "$0.00",
-  //             "insurance": "",
-  //             "currentBalance": "$",
-  //             "lineItem": ""
-  //           }
-  //         ],
-  //         "total": {
-  //           "amount": "$848.09",
-  //           "insurance": "$0.00",
-  //           "currentBalance": "$38.04",
-  //           "lineItem": "$38.04"
-  //         }
-  //       },
-  //       {
-  //         "status": "Unpaid",
-  //         "StatementId": "02512426",
-  //         "CustomerName": "Johns Jacobs",
-  //         "CustomerId": "28724351",
-  //         "Payer": "United",
-  //         "ClaimType": "eClaims",
-  //         "Date": "04/04/2015",
-  //         "TotalAmount": "848.09",
-  //         "TotalPaidAmount": "1100.00",
-  //         "reviews": [
-  //           {
-  //             "date": "03/03/2017",
-  //             "description": "ENCOUNTER 209523",
-  //             "amount": "",
-  //             "insurance": "",
-  //             "currentBalance": "",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "02/02/2017",
-  //             "description": "815235 OFFICE/OUTPATIENT VISIT",
-  //             "amount": "$70.00",
-  //             "insurance": "",
-  //             "currentBalance": "$38.04",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "01/01/2017",
-  //             "description": "Adjustment UNITED",
-  //             "amount": "$31.96",
-  //             "insurance": "",
-  //             "currentBalance": "$",
-  //             "lineItem": ""
-  //           },
-  //           {
-  //             "date": "01/01/2017",
-  //             "description": "Payment UNITED",
-  //             "amount": "$0.00",
-  //             "insurance": "",
-  //             "currentBalance": "$",
-  //             "lineItem": ""
-  //           }
-  //         ],
-  //         "total": {
-  //           "amount": "$848.09",
-  //           "insurance": "$0.00",
-  //           "currentBalance": "$38.04",
-  //           "lineItem": "$38.04"
-  //         }
-  //       }
-  //     ]
-  //   }
+      "InsuranceVerification": {
+        "InsuranceName": "Johns Jacobs",
+        "GroupNum": "#555664422",
+        "NetworkNum": "#45ABC",
+        "PolicyNum": "#334422456",
+        "IssueDate": "20-Aug-2016 00:00:00"
+      },
+      "Vitals": {
+        "Height": 133,
+        "Weight": 30,
+        "RespirationRate": 29,
+        "BMI": 17.2,
+        "Pulse": 84,
+        "BloodPressureLo": 70,
+        "BloodPressureHi": 100  
+      },
+      "Physician": {
+        "Name": "Mark Williams, MD",
+        "PrimaryPhone": "+1 208 975 3874",
+        "Clinic": "Clarit Clinic",
+        "Specialty": "PCP",
+        "EmergencyPhone": "+1 800 111 2222"
+      },
+      "Status": {
+        "Email": "grace.paz.531@aol.com",
+        "Race": "Declined to Specify",
+        "Ethnicity": "Declined to Specify",
+        "Religion": "Cyberculture Religions",
+        "MaritalStatus": "Single",
+        "EmergencyContact": {
+          "Relation": "Friend",
+          "Name": "Mr Nobody",
+          "Phone": "+1 (972) 293 9101"
+        }
+      },
+      "Location": {
+        "DropdownRecords": [
+          {
+            "Name": "Customer Geo Location",
+            "Address": "5234 T Ave, Fort Worth, TX 76179",
+            "Position": {
+              "lat": 31.900827,
+              "lng": -97.600879
+            },
+            "Phone": "+1 255 703 8801",
+            "Hours": "N / A",
+            "Markers": [
+              {
+                "Name": "Customer Geo Location",
+                "Address": "1272 Belt Line Rd, Garland TX 75040",
+                "Position": {
+                  "lat": 31.900827,
+                  "lng": -97.600879
+                },
+                "Phone": "+1 255 703 8801"
+              }
+            ]
+          },
+          {
+            "Name": "Pharmacies In Area",
+            "Address": "1272 Belt Line Rd, Garland TX 75040",
+            "Position": {
+              "lat": 31.900827,
+              "lng": -97.600879
+            },
+            "Phone": "+1 (972) 498-1933",
+            "Hours": "Open 9 AM to 10 PM",
+            "Markers": [
+              {
+                "Name": "CVS Pharmacy",
+                "Address": "1372 Belt Line Rd",
+                "Position": {
+                  "lat": 31.900827,
+                  "lng": -97.600879
+                },
+                "Phone": "+1 (972) 498-1934"
+              },
+              {
+                "Name": "Walmart Pharmacy",
+                "Address": "101 W Buckingham Rd",
+                "Position": {
+                  "lat": 31.900827,
+                  "lng": -97.600879
+                },
+                "Phone": "+1 (972) 498-1935"
+              },
+              {
+                "Name": "Walgreens",
+                "Address": "2614 Lavon Dr",
+                "Position": {
+                  "lat": 31.900827,
+                  "lng": -97.600879
+                },
+                "Phone": "+1 (972) 498-1936"
+              },
+              {
+                "Name": "Walgreens",
+                "Address": "1902 N Jupiter Rd",
+                "Position": {
+                  "lat": 31.900827,
+                  "lng": -97.600879
+                },
+                "Phone": "+1 (972) 498-1937"
+              },
+              {
+                "Name": "CVS Pharmacy - Target",
+                "Address": "5301 N Garland Ave",
+                "Position": {
+                  "lat": 31.900827,
+                  "lng": -97.600879
+                },
+                "Phone": "+1 (972) 498-1938"
+              },
+              {
+                "Name": "Walmart Pharmacy",
+                "Address": "5302 N Garland Ave",
+                "Position": {
+                  "lat": 31.900827,
+                  "lng": -97.600879
+                },
+                "Phone": "+1 (972) 498-1939"
+              }
+            ]
+          },
+          {
+            "Name": "Hospitals In Area",
+            "Address": "7 Medical Pkwy, Dallas, TX 75234",
+            "Position": {
+              "lat": 32.944827,
+              "lng": -97.600879
+            },
+            "Phone": "+(972) 988-7000",
+            "Hours": "Open 9AM to 9PM",
+            "Markers": [
+              {
+                "Name": "Baylor Scott & White Medical Center",
+                "Address": "2300 Marie Curie Blvd",
+                "Position": {
+                  "lat": 32.918755,
+                  "lng": -97.600879
+                },
+                "Phone": "+(972) 988-7001",
+              },
+              {
+                "Name": "Select Specialty Hospital - Dallas Garland",
+                "Address": "2300 Marie Curie Drive Floors 3E & 3W",
+                "Position": {
+                  "lat": 32.918793,
+                  "lng": -97.600879
+                },
+                "Phone": "+(972) 988-7002",
+              },
+              {
+                "Name": "Children's Health Pediatric Group Garland",
+                "Address": "455 N Garland Ave",
+                "Position": {
+                  "lat": 28.548467,
+                  "lng": -81.381385
+                },
+                "Phone": "+(972) 988-7003",
+              },
+              {
+                "Name": "Sundance Hospital Dallas",
+                "Address": "2696 W Walnut St",
+                "Position": {
+                  "lat": 32.913402,
+                  "lng": -96.670117
+                },
+                "Phone": "+(972) 988-7004",
+              }
+            ]
+          }
+        ]
+      },
+      "PastAppointments": [
+        {
+          "Date": "7-23-2018 15:00:00",
+          "Time": "12:00:00",
+          "Department": "SpinSci Clinic",
+          "Provider": "Administrator",
+          "VisitType": "Office Visit",
+          "VisitReason": "New Customer",
+          "Appointment Details": {
+            "Interpreter Required": "No",
+            "IsRequired": "false",
+            "Interpreter Language": "None",
+            "Status": "Arrived Late"
+          }
+        }
+      ],
+      "CurrentAppointments": [
+        {
+          "Date": "8-23-2018 15:00:00",
+          "Time": "12:00:00",
+          "Department": "SpinSci Clinic",
+          "Provider": "Administrator",
+          "VisitType": "Office Visit",
+          "VisitReason": "New Customer",
+          "Appointment Details": {
+            "Interpreter Required": "No",
+            "IsRequired": "false",
+            "Interpreter Language": "None",
+            "Status": "Arrived Late"
+          }
+        },
+        {
+          "Date": "8-28-2018 14:30:00",
+          "Time": "15:00:00",
+          "Department": "SpinSci Clinic",
+          "Provider": "Administrator",
+          "VisitType": "Office Visit",
+          "VisitReason": "Perscription Clarification",
+          "Appointment Details": {
+            "Interpreter Required": "Yes",
+            "IsRequired": "True",
+            "Interpreter Language": "Mandarin",
+            "Status": "Checked Out"
+          }
+        },
+        {
+          "Date": "9-30-2018 15:00:00",
+          "Time": "12:00:00",
+          "Department": "SpinSci Clinic",
+          "Provider": "Administrator",
+          "VisitType": "Office Visit",
+          "VisitReason": "New Customer",
+          "Appointment Details": {
+            "Interpreter Required": "No",
+            "IsRequired": "false",
+            "Interpreter Language": "None",
+            "Status": "Arrived Late"
+          }
+        }
+      ]
+    },
+    {
+      "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
+      "Category": "EPIC",
+      "Name": "Opal Lee",
+      "DateOfBirth": "1989-08-29 00:00:00",
+      "MRN": 7499281,
+      "SSN": "***-**-6789",
+      "PhoneNumber": "+1 214 701 5489",
+      "PhotoUrl": "img/opal_lee.png",
+      "PrimaryCareProvider": {
+        "Name": "Mark Williams, MD",
+        "Phone": "+1 208 975 3874"
+      },
+      "medicalHistory": [
+        "> Third Trimester Pregnancy: Expecting Twins",
+        "> Muscular Dystrophy",
+        "> Hemophilia",
+      ],
+      "activeProblems": [
+        "> A Persistent Severe Headache",
+        "> Abdominal Pain",
+        "> Swelling",
+      ],
+      "allergies": [
+        {
+          "name": "IODINE",
+          "description": "IODINE",
+          "dateEntered": "Aug 08, 2018",
+          "dateNoted": "Aug 08, 2018",
+          "reactions": "itchy rash that comes on slowly",
+          "reactionComments": "Direct contact with skin results in small bumps",
+          "severity": "Moderate",
+          "type": "Intolerance"
+        },
+        {
+          "name": "PENICILLIN",
+          "description": "PENICILLIN",
+          "dateEntered": "Jul 13, 2018",
+          "dateNoted": "Jul 13, 2018",
+          "reactions": "Hives and itchy eyes",
+          "reactionComments": "Overdose",
+          "severity": "Low",
+          "type": "Tolerant"
+        }
+      ],
+      "encounters": [
+        {
+          "type": "Evaluation",
+          "date": "Mar 05, 2017",
+          "eventType": "Admission",
+          "patientClass": "In Customer",
+          "admissionType": "Elective",
+          "dischargeDisposition": "30 - Still Customer"
+        },
+        {
+          "type": "Evaluation",
+          "date": "Mar 15, 2018",
+          "eventType": "Transfer In",
+          "patientClass": "In Customer",
+          "admissionType": "Elective",
+          "dischargeDisposition": "02 - Transferred"
+        }
+      ],
+      "Address": {
+        "Line1": "3453 T Ave, San Jose",
+        "Line2": "CA 95134"
+      },
+      "TreatmentTeam": [
+      ],
+      "Provider": [
+        {
+          "Name": "United Healthcare (UHC Parkway, GA,66552)",
+          "PhoneNumber": "+1 216 411 8765"
+        }
+      ],
+      "InsuranceVerification": {
+        "InsuranceName": "Opal Lee",
+        "GroupNum": "#45ABC",
+        "NetworkNum": "#45ABC",
+        "PolicyNum": "#022141242",
+        "IssueDate": "20-Aug-2016 00:00:00"
+      },
+      "Vitals": {
+        "Height": 168,
+        "Weight": 78,
+        "RespirationRate": 58,
+        "BMI": 18.9,
+        "Pulse": 210,
+        "BloodPressureLo": 127,
+        "BloodPressureHi": 145
+      },
+      "Physician": {
+        "Name": "Mark Williams, MD",
+        "PrimaryPhone": "+1 208 975 3874",
+        "Clinic": "Clarit Clinic",
+        "Specialty": "PCP",
+        "EmergencyPhone": "+1 800 111 2222"
+      },
+      "Status": {
+        "Email": "john.doe@gmail.com",
+        "Race": "White",
+        "Ethnicity": "Not Hispanic Or Latino",
+        "Religion": "Christian (non-Catholic, non-Specific)",
+        "MaritalStatus": "Married",
+        "EmergencyContact": {
+          "Relation": "Wife",
+          "Name": "Sarah Doe",
+          "Phone": "+1 (972) 293 9101"
+        }
+      },
+      "Location": {
+        "DropdownRecords": [
+          {
+            "Name": "Customer Geo Location",
+            "Address": "1431 T Ave, Fort Worth, TX 76179",
+            "Position": {"lat": 32.944827, "lng": -96.645879},
+            "Phone": "+1 (214)-701-5489",
+            "Hours": "N / A",
+            "Markers":[
+              {
+                "Name": "Customer Geo Location"
+              , "Address": "1272 Belt Line Rd, Garland TX 75040"
+              , "Position": {"lat": 32.944827, "lng": -96.645879}
+              , "Phone": "+1 (214)-701-5489"
+              }
+            ]
+          },
+          {
+            "Name": "Pharmacies In Area",
+            "Address": "1272 Belt Line Rd, Garland TX 75040",
+            "Position": {"lat": 32.944827, "lng": -96.645879},
+            "Phone": "+1 (972) 495-1933",
+            "Hours": "Open 9 AM to 10 PM",
+            "Markers":[
+              {
+                "Name": "CVS Pharmacy"
+              , "Address": "1372 Belt Line Rd"
+              , "Position": {"lat": 32.944527, "lng": -96.646960}
+              ,"Phone": "+1 (972) 495-1934"
+              } ,
+              {
+                "Name": "Walmart Pharmacy"
+              , "Address": "101 W Buckingham Rd"
+              , "Position": {"lat": 32.932013, "lng": -96.631611}
+              ,"Phone": "+1 (972) 495-1935"
+              } ,
+              {
+                "Name": "Walgreens"
+              , "Address": "2614 Lavon Dr"
+              , "Position": {"lat": 32.939566, "lng": -96.621946}
+              ,"Phone": "+1 (972) 495-1936"
+              } ,
+              {
+                "Name": "Walgreens"
+              , "Address": "1902 N Jupiter Rd"
+              , "Position": {"lat": 32.930183, "lng": -96.682285}
+              ,"Phone": "+1 (972) 495-1937"
+              } ,
+              {
+                "Name": "CVS Pharmacy - Target"
+              , "Address": "5301 N Garland Ave"
+              , "Position": {"lat": 32.965650, "lng": -96.646806}
+              ,"Phone": "+1 (972) 495-1938"
+              } ,
+              {
+                "Name": "Walmart Pharmacy"
+              , "Address": "5302 N Garland Ave"
+              , "Position": {"lat": 32.962346, "lng": -96.642499}
+              ,"Phone": "+1 (972) 495-1939"
+              }
+            ]
+          },
+          {
+            "Name": "Hospitals In Area",
+            "Address": "7 Medical Pkwy, Dallas, TX 75234",
+            "Position": {"lat": 32.944827, "lng": -96.645879},
+            "Phone": "+(972) 888-7000",
+            "Hours": "Open 9AM to 9PM",
+            "Markers":[
+              {
+                "Name": "Baylor Scott & White Medical Center"
+              , "Address": "2300 Marie Curie Blvd"
+              , "Position": {"lat": 32.918755, "lng": -96.661963}
+              , "Phone": "+(972) 888-7001",
+              } ,
+              {
+                "Name": "Select Specialty Hospital - Dallas Garland"
+              , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
+              , "Position": {"lat": 32.918793, "lng": -96.662041}
+              , "Phone": "+(972) 888-7002",
+              } ,
+              {
+                "Name": "Children's Health Pediatric Group Garland"
+              , "Address": "455 N Garland Ave"
+              , "Position": {"lat": 28.548467, "lng": -81.381385}
+              , "Phone": "+(972) 888-7003",
+              } ,
+              {
+                "Name": "Sundance Hospital Dallas"
+              , "Address": "2696 W Walnut St"
+              , "Position": {"lat": 32.913402, "lng": -96.670117}
+              , "Phone": "+(972) 888-7004",
+              }
+            ]
+          }
+        ]
+      },
+      "PastAppointments": [
+        {
+          "Date": "7-01-2018 15:00:00",
+          "Time": "12:00:00",
+          "Department": "General",
+          "Provider": "Administrator",
+          "VisitType": "Office Visit",
+          "VisitReason": "X Ray",
+          "Appointment Details": {
+            "Interpreter Required": "No",
+            "IsRequired": "false",
+            "Interpreter Language": "None",
+            "Status": "Arrived Late"
+          }
+        }
+      ],
+      "CurrentAppointments": [
+        {
+          "Date": "8-20-2018 15:00:00",
+          "Time": "15:00:00",
+          "Department": "OBGYN",
+          "Provider": "Dr. Steve Angler",
+          "VisitType": "Physicals",
+          "VisitReason": "Routine Check Up",
+          "Appointment Details": {
+            "Interpreter Required": "No",
+            "IsRequired": "false",
+            "Interpreter Language": "None",
+            "Status": "Arrived Late"
+          }
+        },
+        {
+          "Date": "8-25-2018 14:30:00",
+          "Time": "13:00:00",
+          "Department": "OBGYN",
+          "Provider": "Dr. John Lee",
+          "VisitType": "Physicals",
+          "VisitReason": "Irregular Nausea",
+          "Appointment Details": {
+            "Interpreter Required": "Yes",
+            "IsRequired": "True",
+            "Interpreter Language": "Mandarin",
+            "Status": "Checked Out"
+          }
+        },
+        {
+          "Date": "9-01-2018 14:00:00",
+          "Time": "11:00:00",
+          "Department": "OBGYN",
+          "Provider": "Dr. Mary John",
+          "VisitType": "Physical",
+          "VisitReason": "Routine Check Up",
+          "Appointment Details": {
+            "Interpreter Required": "No",
+            "IsRequired": "True",
+            "Interpreter Language": "None",
+            "Status": "Checked Out"
+          }
+        },
+        {
+          "Date": "10-01-2018 14:00:00",
+          "Time": "11:00:00",
+          "Department": "OBGYN",
+          "Provider": "Dr. John Lee",
+          "VisitType": "Physical",
+          "VisitReason": "Consultation",
+          "Appointment Details": {
+            "Interpreter Required": "No",
+            "IsRequired": "True",
+            "Interpreter Language": "None",
+            "Status": "Checked Out"
+          }
+        }
+      ],
+      "Billing": {
+        "Provider": "United HealthCare",
+        "Plan": "Choice",
+        "Subscriber": "Self",
+        "Street": "3153 T Ave",
+        "City": "Fort Worth",
+        "State": "TX",
+        "ZipCode": "75038",
+        "GroupNum": "52534422",
+        "PolicyNum": "112222456"
+      },
+      "BillHistory": [
+        {
+          "name": " JACOBS,JOHN ",
+          "status": "Unpaid",
+          "StatementId": "06642326",
+          "CustomerName": "Johns Jacobs",
+          "CustomerId": "28724351",
+          "Payer": "United",
+          "ClaimType": "eClaims",
+          "Date": "12/03/2017",
+          "TotalAmount": "848.09",
+          "TotalPaidAmount": "1200.00",
+          "reviews": [
+            {
+              "date": "07/07/2017",
+              "description": "ENCOUNTER 209523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "07/07/2017",
+              "description": "815235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "07/07/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "07/07/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$848.09",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
+          }
+        },
+        {
+          "status": "Paid",
+          "StatementId": "02534126",
+          "CustomerName": "Johns Jacobs",
+          "CustomerId": "28724351",
+          "Payer": "United",
+          "ClaimType": "eClaims",
+          "Date": "11/02/2016",
+          "TotalAmount": "848.09",
+          "TotalPaidAmount": "1200.00",
+          "reviews": [
+            {
+              "date": "11/11/2017",
+              "description": "ENCOUNTER 109523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "11/11/2017",
+              "description": "163235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "11/11/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "11/11/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$848.09",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
+          }
+        },
+        {
+          "status": "Unpaid",
+          "StatementId": "02512426",
+          "CustomerName": "Johns Jacobs",
+          "CustomerId": "28724351",
+          "Payer": "United",
+          "ClaimType": "eClaims",
+          "Date": "04/04/2015",
+          "TotalAmount": "848.09",
+          "TotalPaidAmount": "1100.00",
+          "reviews": [
+            {
+              "date": "03/03/2017",
+              "description": "ENCOUNTER 209523",
+              "amount": "",
+              "insurance": "",
+              "currentBalance": "",
+              "lineItem": ""
+            },
+            {
+              "date": "02/02/2017",
+              "description": "815235 OFFICE/OUTPATIENT VISIT",
+              "amount": "$70.00",
+              "insurance": "",
+              "currentBalance": "$38.04",
+              "lineItem": ""
+            },
+            {
+              "date": "01/01/2017",
+              "description": "Adjustment UNITED",
+              "amount": "$31.96",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            },
+            {
+              "date": "01/01/2017",
+              "description": "Payment UNITED",
+              "amount": "$0.00",
+              "insurance": "",
+              "currentBalance": "$",
+              "lineItem": ""
+            }
+          ],
+          "total": {
+            "amount": "$848.09",
+            "insurance": "$0.00",
+            "currentBalance": "$38.04",
+            "lineItem": "$38.04"
+          }
+        }
+      ]
+    }
   ],
   "MakeAppointmentDropDownOptions": {
     "Department": [
@@ -59819,42 +59926,42 @@ module.exports = Purify(data)
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tw_svg__ = __webpack_require__(460);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__inst_svg__ = __webpack_require__(446);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fb_svg__ = __webpack_require__(440);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__add_svg__ = __webpack_require__(426);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cached_svg__ = __webpack_require__(431);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__calendar_svg__ = __webpack_require__(432);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__couple_svg__ = __webpack_require__(436);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__clock_svg__ = __webpack_require__(434);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__delete_svg__ = __webpack_require__(437);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dot_v_svg__ = __webpack_require__(438);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__filter_results_button_svg__ = __webpack_require__(441);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__heart_svg__ = __webpack_require__(443);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__info_svg__ = __webpack_require__(445);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__lang_svg__ = __webpack_require__(447);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__location_svg__ = __webpack_require__(448);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__mail_svg__ = __webpack_require__(449);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__medical_svg__ = __webpack_require__(450);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__message_svg__ = __webpack_require__(451);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__more_svg__ = __webpack_require__(452);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pen_svg__ = __webpack_require__(453);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pharmacy_svg__ = __webpack_require__(454);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__phone_svg__ = __webpack_require__(455);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__settings_svg__ = __webpack_require__(458);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__tune_svg__ = __webpack_require__(459);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__update_svg__ = __webpack_require__(461);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__search_svg__ = __webpack_require__(457);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__down_svg__ = __webpack_require__(439);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__plus_round_svg__ = __webpack_require__(456);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__check_svg__ = __webpack_require__(433);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__arrow_l_svg__ = __webpack_require__(428);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__arrow_r_svg__ = __webpack_require__(429);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__close_svg__ = __webpack_require__(435);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__arrow_t_svg__ = __webpack_require__(430);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__arrow_b_svg__ = __webpack_require__(427);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__hospital_svg__ = __webpack_require__(444);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__filter_svg__ = __webpack_require__(442);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tw_svg__ = __webpack_require__(461);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__inst_svg__ = __webpack_require__(447);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fb_svg__ = __webpack_require__(441);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__add_svg__ = __webpack_require__(427);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cached_svg__ = __webpack_require__(432);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__calendar_svg__ = __webpack_require__(433);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__couple_svg__ = __webpack_require__(437);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__clock_svg__ = __webpack_require__(435);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__delete_svg__ = __webpack_require__(438);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dot_v_svg__ = __webpack_require__(439);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__filter_results_button_svg__ = __webpack_require__(442);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__heart_svg__ = __webpack_require__(444);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__info_svg__ = __webpack_require__(446);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__lang_svg__ = __webpack_require__(448);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__location_svg__ = __webpack_require__(449);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__mail_svg__ = __webpack_require__(450);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__medical_svg__ = __webpack_require__(451);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__message_svg__ = __webpack_require__(452);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__more_svg__ = __webpack_require__(453);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pen_svg__ = __webpack_require__(454);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pharmacy_svg__ = __webpack_require__(455);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__phone_svg__ = __webpack_require__(456);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__settings_svg__ = __webpack_require__(459);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__tune_svg__ = __webpack_require__(460);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__update_svg__ = __webpack_require__(462);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__search_svg__ = __webpack_require__(458);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__down_svg__ = __webpack_require__(440);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__plus_round_svg__ = __webpack_require__(457);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__check_svg__ = __webpack_require__(434);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__arrow_l_svg__ = __webpack_require__(429);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__arrow_r_svg__ = __webpack_require__(430);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__close_svg__ = __webpack_require__(436);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__arrow_t_svg__ = __webpack_require__(431);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__arrow_b_svg__ = __webpack_require__(428);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__hospital_svg__ = __webpack_require__(445);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__filter_svg__ = __webpack_require__(443);
 
 
 
