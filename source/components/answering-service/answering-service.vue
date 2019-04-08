@@ -1,26 +1,26 @@
 <template lang="pug">     
-    .appointment
+    .content
         .answering-service
             .answering-caller-info
-                div(style="font-size: 1.5em; margin-bottom: 20px; font-weight: 700; color: #1db7e9;") Caller Information
-                span(style="color: rgba(32,32,32,.5)") Call from:  
-                span(style="margin-left: 10px") 203-444-5637
-                div(style="margin: 15px 0") 
-                    span(style="color: rgba(32,32,32,.5)") Call To: 
-                    span(style="margin-left: 10px") 1-800-456-9876
-                div (OmniCare Urology)
-                div(style="height: 30px")
-                div()
-                    span(style="color: rgba(32,32,32,.5)") Call matched to:
-                    span(style="margin-left: 10px") Patient
-                div(style="margin: 15px 0") 
-                    span(style="color: rgba(32,32,32,.5)") Number of Matches:
-                    span(style="margin-left: 10px") 1
-                div 
-                    span(style="color: rgba(32,32,32,.5)") Last Action:
-                    span(style="margin-left: 10px") Urology Appointment
+                //- div(style="font-size: 1.5em; margin-bottom: 20px; font-weight: 700; color: #1db7e9;") Caller Information
+                //- span(style="color: rgba(32,32,32,.5)") Call from:  
+                //- span(style="margin-left: 10px") 203-444-5637
+                //- div(style="margin: 15px 0") 
+                //-     span(style="color: rgba(32,32,32,.5)") Call To: 
+                //-     span(style="margin-left: 10px") 1-800-456-9876
+                //- div (OmniCare Urology)
+                //- div(style="height: 30px")
+                //- div()
+                //-     span(style="color: rgba(32,32,32,.5)") Call matched to:
+                //-     span(style="margin-left: 10px") Patient
+                //- div(style="margin: 15px 0") 
+                //-     span(style="color: rgba(32,32,32,.5)") Number of Matches:
+                //-     span(style="margin-left: 10px") 1
+                //- div 
+                //-     span(style="color: rgba(32,32,32,.5)") Last Action:
+                //-     span(style="margin-left: 10px") Urology Appointment
 
-                div(style="flex: 1;  background: black; margin: 20px 0;")
+                //- div(style="flex: 1;  background: black; margin: 20px 0;")
                 div(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;")  Details
                 div(style="height: 10px")
                 div(style="margin-bottom: 20px") South Shore Urology
@@ -333,17 +333,42 @@
                     .modal-appointment__row
                         a(href="#3", @click.prevent="sendSMS()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border Send
                         a(href="#3", @click.prevent="$refs.modalbook.close()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border Cancel
-
+        
+        div().ccase-managment
+            .ccase-managment__top_boxes
+                .ccase-managment__top-rect.inline-block
+                    board-block(:count='$root.activePacient==3?5:1', :text="'Past Appointments'", :col="'rgb(255,0,0)'")
+                .ccase-managment__top-rect.inline-block
+                    board-block(:count='$root.activePacient==0?3:2', :text="'Current Appointments'", :col="'green'")
+                .ccase-managment__top-rect.inline-block
+                    board-block(:count='$root.activePacient==3?6:1', :text="'Future Appointments'", :col="'grey'")
+                .ccase-managment__top-rect.inline-block
+                    board-block(:count='$root.activePacient==0?2:3', :text="'Cancelled/No Shows'", :col="'pink'")
+            .ccase-managment__top_boxes
+                .ccase-managment__top-rect.inline-block
+                    board-block(:count='$root.activePacient==0?3:3', :text="'Bills'", :col="'grey'")
+                .ccase-managment__top-rect.inline-block
+                    board-block(:count='$root.activePacient==0?2:2', :text="'Referrals'", :col="'pink'")
+                .ccase-managment__top-rect.inline-block
+                    board-block(:count='$root.activePacient==0?3:2', :text="'Outreach'", :col="'rgb(255,0,0)'")
+                .ccase-managment__top-rect.inline-block
+                    board-block(:count='$root.activePacient==0?2:4', :text="'Inbound'", :col="'green'")
+        .content__box
+            journey-map(:info="$root._data.Customers[$root.activePacient]")
 </template>
 <script>
     import modal from "../modal-component/modal.vue";
     import Multiselect from 'vue-multiselect';
+    import boardBlock from '../home/board-block.vue';
+    import journeyMap from "../journey-map/journey-map.vue";
 
     export default {
         props: ['data'],
         components: {
             modal,
             Multiselect,
+            boardBlock,
+            journeyMap,            
         },
         data() {
             return {
