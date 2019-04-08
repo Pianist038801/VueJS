@@ -19582,11 +19582,16 @@ let App = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
         array.push('add New');
         data.patientNames = array.slice(0);
         const isPatient = tempDNIS === '2142120192';
-        if (!isPatient) {
+        const isProvider = tempDNIS === '9998887777';
+
+        if (isProvider) {
           data.Customers[0].Name = 'Nancy Snyder';
           data.Customers[0].PhotoUrl = 'img/nancy.png';
         }
+
         data.isPatient = isPatient;
+        data.isProvider = isProvider;
+
         appData = Object.assign(appData, data);
 
         if (tempDNIS === "") {

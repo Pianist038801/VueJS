@@ -105,7 +105,7 @@ let App = new Vue({
   },
   mounted() {
     let vm = this;
-    vm.currentShowBox = 'answering-service';
+    vm.currentShowBox = 'home';
     vm.spaceWidget =  window.ciscosparkClient();
     Vue.http.get('demo-credentials.json').then((response) => {
       vm.spaceWidget.init(response.data);
@@ -198,11 +198,17 @@ let App = new Vue({
           array.push('add New')
           data.patientNames = array.slice(0);
           const isPatient = tempDNIS === '2142120192';
-          if (!isPatient) {
+          const isProvider = tempDNIS === '9998887777';
+          if (isProvider) {
             data.Customers[0].Name = 'Nancy Snyder';
             data.Customers[0].PhotoUrl = 'img/nancy.png';
           }
+          if (isProvider || isPatient) {
+            data.Customers = data.Customers.slice(0, 1);
+          }
           data.isPatient = isPatient;
+          data.isProvider = isProvider;
+
           appData = Object.assign(appData, data);
 
           

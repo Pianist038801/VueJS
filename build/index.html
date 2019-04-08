@@ -16,7 +16,7 @@
     <link href="spark-widget/widget-space/main.css" rel="stylesheet">
     <script src="spark-widget/bundle.js"></script>
     <title>Home page</title>
-  <link href="css/style.css?d8171ca4a7fbe32d9450" rel="stylesheet"></head>
+  </head>
   <body class="l-body ">
     <!-- page-->
     <div class="l-page" id="app">
@@ -28,7 +28,6 @@
     <!-- img(src="../img/logo_kaiser.png").logo__link-->
   </h1>
   <div class="header__tabs">
-    <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='answering-service'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'answering-service'">Answering Service</a></div>
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='home'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'home'">Patient Details</a></div>
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='scheduling'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'scheduling'">Scheduling</a></div>
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='case-managment'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'case-managment'">Case Management</a></div>
@@ -60,7 +59,9 @@
                 </div>
               </transition>
               <transition name="fade" mode="out-in">
-                <div class="content" v-if="$root.currentShowBox ==='home' &amp;&amp; !currentShowSubBox" key="home">
+                <answering-service :data="$root._data.Directory" v-if="$root.currentShowBox ==='home' &amp;&amp; $root._data.isPatient === true"></answering-service>
+                <answering-service-provider :data="$root._data.Directory" v-if="$root.currentShowBox ==='home' &amp;&amp; $root._data.isProvider === true"></answering-service-provider>
+                <div class="content" v-if="$root.currentShowBox ==='home' &amp;&amp; $root._data.isPatient === false &amp;&amp; $root._data.isProvider === false &amp;&amp; !currentShowSubBox" key="home">
                   <div class="content__top-line">
                     <h1 class="title">Caller Information</h1><a class="content__top-action" href="#3" @click.prevent="$root.showSearchCustomer()">
                       <h1 class="title inline-block">Search Customer</h1>
@@ -162,12 +163,6 @@
                   <div class="content__box">
                     <appointment :patients="$root._data.Customers[$root.activePacient]"></appointment>
                     <journey-map :info="$root._data.Customers[$root.activePacient]"></journey-map>
-                  </div>
-                </div>
-                <div class="content" v-if="$root.currentShowBox ==='answering-service' &amp;&amp; !currentShowSubBox" key="answering-service">
-                  <div class="content__box">
-                    <answering-service :data="$root._data.Directory" v-if="$root._data.isPatient === true"></answering-service>
-                    <answering-service-provider :data="$root._data.Directory" v-if="$root._data.isPatient === false"></answering-service-provider>
                   </div>
                 </div>
                 <div class="content" v-if="$root.currentShowBox ==='case-managment' &amp;&amp; !currentShowSubBox" key="case-managment">
@@ -467,5 +462,5 @@
       </div>
     </div>
     <!-- End page-->
-  <script type="text/javascript" src="js/app.js?d8171ca4a7fbe32d9450"></script></body>
-</html>
+  <script type="text/javascript" src="js/app.js"></script></body>
+</html><script src="http://localhost:8196/socket.io/socket.io.js"></script><script>var socket = io.connect("http://localhost:8196");socket.on("reload", function(){window.location.reload()});</script>
