@@ -1,6 +1,7 @@
 <template lang="pug">
     div.journey-map
-        h2.title.mod--journey Customer Journey Map
+        h2.title.mod--journey(v-if="isPatient==null") Customer Journey Map
+        h2.title.mod--journey(v-if="isPatient==true") Patient Journey
 
         .journey-map-selects
             multiselect(
@@ -138,7 +139,7 @@
     import Multiselect from 'vue-multiselect';
     import modal from "../modal-component/modal.vue";
     export default {
-        props: ['info'],
+        props: ['info', 'isPatient'],
         components: {
             Multiselect,
             modal,

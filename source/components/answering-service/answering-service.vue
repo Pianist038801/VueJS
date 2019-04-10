@@ -1,42 +1,68 @@
 <template lang="pug">     
     .content
         .answering-service
-            .answering-caller-info
-                //- div(style="font-size: 1.5em; margin-bottom: 20px; font-weight: 700; color: #1db7e9;") Caller Information
-                //- span(style="color: rgba(32,32,32,.5)") Call from:  
-                //- span(style="margin-left: 10px") 203-444-5637
-                //- div(style="margin: 15px 0") 
-                //-     span(style="color: rgba(32,32,32,.5)") Call To: 
-                //-     span(style="margin-left: 10px") 1-800-456-9876
-                //- div (OmniCare Urology)
-                //- div(style="height: 30px")
-                //- div()
-                //-     span(style="color: rgba(32,32,32,.5)") Call matched to:
-                //-     span(style="margin-left: 10px") Patient
-                //- div(style="margin: 15px 0") 
-                //-     span(style="color: rgba(32,32,32,.5)") Number of Matches:
-                //-     span(style="margin-left: 10px") 1
-                //- div 
-                //-     span(style="color: rgba(32,32,32,.5)") Last Action:
-                //-     span(style="margin-left: 10px") Urology Appointment
-
-                //- div(style="flex: 1;  background: black; margin: 20px 0;")
-                div(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;")  Details
+            .answering-caller-info(style="align-items: center")
+                div(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;")  Call To:
                 div(style="height: 10px")
-                div(style="margin-bottom: 20px") South Shore Urology
-                .details-content
-                    .details-content-urology(style="background: white; color: black;")
-                        .urology-item
+                div(style="font-size: 1.2em; margin-bottom: 20px") South Shore Urology
+
+                .details-content(style="")
+                    .details-content-urology(style="background: white; color: black; ")
+                        .div(style="font-size: 1.1em;") Hours of Operation:
+                        .div(style="font-size: 1.1em; margin-left: 30px;")
                             div Mon - Fri 9am - 4:30 pm
                             div Lunch: 12pm - 1:15pm
-                        .urology-item
-                            div 780 Main Street 
+                .details-content
+                    .details-content-urology(style="background: white; color: black; ")
+                        .div(style="font-size: 1.1em;") Address:
+                        .div(style="font-size: 1.1em; margin-left: 30px;")
+                            div 780 Main Street
                             div South Weymouth, MA 02190
-                        .urology-item
-                            div Office #: 781-331-4600
-                            div Fax #: 781-337-5095
-                            div SSH Ext: x6860
-                div(style="font-size: 1.5em; margin-top: 30px; font-weight: 700; color: #1db7e9;") Quick Links
+                .details-content(style="align-items: center; justify-content: center; display: flex;")
+                    gmap-map(
+                    :center="{lat: 32.9448268, lng: -96.64587949999998}",
+                    :zoom="14",
+                    style="width: 60%; height: 200px; margin-top: 30px;"
+                    )
+                        gmap-marker(
+                        :key="1",
+                        :position="{lat: 32.9448268, lng: -96.64587949999998}",
+                        )
+                .details-content(style="margin-top: 30px;")
+                    .details-content-urology(style="background: white; color: black; ")
+                        .div(style="font-size: 1.1em;") Contact:
+                        .div(style="font-size: 1.1em; margin-left: 30px;")
+                            a(href="tel: 781-331-4600") 781-331-4600
+                .details-content
+                    .details-content-urology(style="background: white; color: black; ")
+                        .div(style="font-size: 1.1em; margin-left: 30px;") Urologists:
+                        .div(style="font-size: 1.1em; margin-left: 30px;")
+                            br
+                            div(style="margin-top: 15px;") William R. Helfrich Jr, MD (Retired)
+                            div(style="margin-top: 15px;") Steven F. Starr, MD
+                            div(style="margin-top: 15px;") John D. Feldman, MD
+                            div(style="margin-top: 15px;") Jeffrey P. Bennett, MD
+                            div(style="margin-top: 15px;") Luke M. O’Connell, MD
+                            div(style="margin-top: 15px;") Keith T. Tracy, MD
+                            div(style="margin-top: 15px;") Sergio D. Fefer, MD
+                            div(style="margin-top: 15px;") Young H. Kim, MD
+
+                
+                
+            .answering-triage-guide
+                div(style="height: 20px")
+                span(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;") Agent Triage Guide
+                div(style="height: 30px")
+                div(style="font-size: 20px") The office representatives are unavailable at this time. Is this urgent or can I send a message to the office for you?
+                div(style="height: 50px")
+                .button-array
+                    a(href="#3", @click="$refs.modalbook.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Message
+                    a(href="#3", @click="$refs.modalbook.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Page
+                .button-array
+                    a(href="#3", @click="$refs.modalphone.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Urgent
+                    a(href="#3", @click="$refs.modalTransfer.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Transfer
+
+                div(style="font-size: 1.5em; margin-top: 130px; font-weight: 700; color: #1db7e9;") Quick Links
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-link 2 Pond Park
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-link Cancer Center
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-link Consults
@@ -50,18 +76,6 @@
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-link Patient Flow/Discharge
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-link Physician Referral
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-link.blue Other
-            .answering-triage-guide
-                div(style="height: 20px")
-                span(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;") Triage Guide
-                div(style="height: 30px")
-                div(style="font-size: 20px") The office representatives are unavailable at this time. Is this urgent or can I send a message to the office for you?
-                div(style="height: 50px")
-                .button-array
-                    a(href="#3", @click="$refs.modalbook.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Message
-                    a(href="#3", @click="$refs.modalbook.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Page
-                .button-array
-                    a(href="#3", @click="$refs.modalphone.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Urgent
-                    a(href="#3", @click="$refs.modalTransfer.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Transfer
         
             modal(ref="modalprovider")
                 .modal__content
@@ -335,6 +349,7 @@
                         a(href="#3", @click.prevent="$refs.modalbook.close()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border Cancel
         
         div().ccase-managment
+            h2.title.mod--journey Patient Dashboard
             .ccase-managment__top_boxes
                 .ccase-managment__top-rect.inline-block
                     board-block(:count='$root.activePacient==3?5:1', :text="'Past Appointments'", :col="'rgb(255,0,0)'")
@@ -354,7 +369,7 @@
                 .ccase-managment__top-rect.inline-block
                     board-block(:count='$root.activePacient==0?2:4', :text="'Inbound'", :col="'green'")
         .content__box
-            journey-map(:info="$root._data.Customers[$root.activePacient]")
+            journey-map(:info="$root._data.Customers[$root.activePacient]", :isPatient="true")
 </template>
 <script>
     import modal from "../modal-component/modal.vue";
