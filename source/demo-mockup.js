@@ -1,4 +1,15 @@
 let data= {
+  "chosenProvider": {
+    "name": "Dr.Nancy Snyder",
+    "type": "Provider",
+    "source": "Epic",
+    "telephone": "972-444-5452",
+    "address": "271 Main Street Dallas TX",
+    "provider": "South Shore Medical",
+    "providerContact": "N/A",
+    "providerStatus": "",
+    "role": "Nurse",
+  },
   "dialerInfo": {
     "recordSpec": "Epic",
     "recordImported": "Sept 26, 1:00 PM",
@@ -61,6 +72,17 @@ let data= {
       "providerStatus": "Available",
     },
     {
+      "name": "Dr.Nancy Snyder",
+      "type": "Provider",
+      "source": "Epic",
+      "telephone": "972-444-5452",
+      "address": "271 Main Street Dallas TX",
+      "provider": "South Shore Medical",
+      "providerContact": "N/A",
+      "providerStatus": "",
+      "role": "Nurse",
+    },
+    {
       "name": "Dr.James Do",
       "type": "Provider",
       "source": "Epic",
@@ -69,6 +91,7 @@ let data= {
       "provider": "South Shore Medical",
       "providerContact": "N/A",
       "providerStatus": "",
+      "role": "Specialist",
     },
     {
       "name": "Dr.Joy Rove",
@@ -79,6 +102,7 @@ let data= {
       "provider": "South Shore Medical",
       "providerContact": "N/A",
       "providerStatus": "",
+      "role": "Cardilogist",
     },
     {
       "name": "Dr.Sid Ruiz",
@@ -89,6 +113,7 @@ let data= {
       "provider": "South Shore Medical",
       "providerContact": "N/A",
       "providerStatus": "",
+      "role": "Urologist",
     },
     {
       "name": "Dr.Nate Gove",
@@ -99,6 +124,7 @@ let data= {
       "provider": "South Shore Medical",
       "providerContact": "N/A",
       "providerStatus": "",
+      "role": "Cardilogist",
     },
     {
       "name": "Dr.Phil Ashley",
@@ -109,6 +135,7 @@ let data= {
       "provider": "South Shore Medical",
       "providerContact": "N/A",
       "providerStatus": "",
+      "role": "Cardilogist",
     },
   ],
   "Pharmacy": [

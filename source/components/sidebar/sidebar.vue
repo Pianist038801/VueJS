@@ -1,12 +1,27 @@
 <template lang="pug">
     aside.sidebar(v-if='pacients')
-        .sidebar__title(v-if="$root._data.isPatient === true || $root._data.isProvider === true") Caller Information
+        transition(name="fade", mode='out-in')
+            .content
+                .content__box
+                    search-patient-caller-info(:show="$root.currentShowPatientCallerInfo")
+        transition(name="fade", mode='out-in')
+            .content
+                .content__box
+                    search-provider-caller-info(:show="$root.currentShowProviderCallerInfo")
+        .sidebar__title(v-if="$root._data.isPatient === true") Caller Information
+            a(v-if="$root._data.isPatient === true || $root._data.isProvider === true", href="#3", @click.prevent="$root.showSearchPatientCallerInfo()").content__top-action.caller__search-icon
+                svg.ico-svg__search-patient
+                    use(xlink:href="#search")
+        .sidebar__title(v-if="$root._data.isProvider === true") Caller Information
+            a(v-if="$root._data.isPatient === true || $root._data.isProvider === true", href="#3", @click.prevent="$root.showSearchProviderCallerInfo()").content__top-action.caller__search-icon
+                svg.ico-svg__search-patient
+                    use(xlink:href="#search")
         .l-sidebar__section(v-if="$root._data.isPatient === true")
             .sidebar__section
                 .sidebar__section--note Caller Name
                 multiselect(
-                    placeholder="Johns Jacobs",
-                    :options=["Johns Jacobs"],
+                    :placeholder="$store.state.chosenPatient.name",
+                    :options=[""],
                     @input="getCurrentIndexPacient",
                     :searchable="false",
                     :allowEmpty="false",
@@ -14,11 +29,11 @@
                  ).ui-multiselect.ui-multiselect--default
             .sidebar__section
                 .sidebar__section--note Caller Phone #
-                input(:value="$root._data.callerPhone" readonly).infovalue
+                input(:value="$store.state.chosenPatient.telephone" readonly).infovalue
             .sidebar__section
                 .sidebar__section--note Call Type
                 multiselect(
-                    placeholder="Patient"
+                    :placeholder="$store.state.chosenPatient.type",
                     :options="['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
                     :searchable="false",
                     :allowEmpty="false",
@@ -29,8 +44,8 @@
             .sidebar__section
                 .sidebar__section--note Caller Name
                 multiselect(
-                    placeholder="Nancy Snyder",
-                    :options=["Nancy Snyder"],
+                    :placeholder="$store.state.chosenProvider.name",
+                    :options=[""],
                     @input="getCurrentIndexPacient",
                     :searchable="false",
                     :allowEmpty="false",
@@ -38,11 +53,11 @@
                  ).ui-multiselect.ui-multiselect--default
             .sidebar__section
                 .sidebar__section--note Caller Phone #
-                input(:value="$root._data.callerPhone" readonly).infovalue
+                input(:value="$store.state.chosenProvider.telephone" readonly).infovalue
             .sidebar__section
                 .sidebar__section--note Call Type
                 multiselect(
-                    placeholder="Nurse"
+                    :placeholder="$store.state.chosenProvider.role",
                     :options="['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician']",
                     :searchable="false",
                     :allowEmpty="false",
@@ -150,10 +165,15 @@
 <script>
 
     import Multiselect from '../name-select/src/Multiselect.vue';
+    import searchPatientCallerInfo from "../modal-component/search-patient-caller-info.vue";
+    import searchProviderCallerInfo from "../modal-component/search-provider-caller-info.vue";
+
     export default {
         props: ['pacients', 'active'],
         components: {
             Multiselect,
+            searchPatientCallerInfo,
+            searchProviderCallerInfo,
         },
         data() {
             return {

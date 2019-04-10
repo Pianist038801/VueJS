@@ -4,7 +4,7 @@ import Vue from 'vue';
 import Vuex from 'vuex'
 
 import VueResource from 'vue-resource';
-import VueMoment from 'vue-moment'; 
+import VueMoment from 'vue-moment';
 import {Tabs, Tab} from 'vue-tabs-component';
 import axios from 'axios';
 import Multiselect from '../components/name-select/src/Multiselect.vue';
@@ -53,7 +53,9 @@ import paymentConfirmation from "../components/billing/payment-confirmation.vue"
 import paymentResult from "../components/billing/payment-result.vue";
 import phoneBook from "../components/modal-component/phone-book.vue";
 import blankPage from '../components/empty/blank-page.vue';
-import searchCustomer from "../components/modal-component/search-patient.vue";
+import searchPatient from "../components/modal-component/search-patient.vue";
+import searchPatientCallerInfo from "../components/modal-component/search-patient-caller-info.vue";
+import searchProviderCallerInfo from "../components/modal-component/search-provider-caller-info.vue";
 import updateReferral from "../components/modal-component/update-referral.vue";
 import detailReferral from "../components/modal-component/detail-referral.vue";
 
@@ -71,6 +73,8 @@ let appData = {
   userIsVerify: false,
   currentShowPhoneBook: true,
   currentShowSearchCustomer: false,
+  currentShowPatientCallerInfo: false,
+  currentShowProviderCallerInfo: false,
   currentShowDetailReferral: false,
   currentShowUpdateReferral: false,
   newCallerName: '',
@@ -257,6 +261,12 @@ let App = new Vue({
     showSearchCustomer: function () {
       this.currentShowSearchCustomer = !this.currentShowSearchCustomer
     },
+    showSearchPatientCallerInfo: function () {
+      this.currentShowPatientCallerInfo = !this.currentShowPatientCallerInfo;
+    },
+    showSearchProviderCallerInfo: function () {
+      this.currentShowProviderCallerInfo = !this.currentShowProviderCallerInfo;
+    },
     showDetailReferral: function (index) {
       this.referralIndex = index;
       this.currentShowDetailReferral = !this.currentShowDetailReferral
@@ -318,7 +328,9 @@ let App = new Vue({
     blankPage,
     Multiselect,
     boardBlock,
-    searchCustomer,
+    searchPatient,
+    searchPatientCallerInfo,
+    searchProviderCallerInfo,
     updateReferral,
     detailReferral,
   },

@@ -10,6 +10,28 @@ export default new Vuex.Store({
     pacientName: 'Johns Jacobs',
     referrals: [],
     currentPin: '',
+    chosenProvider: {
+      name: "Dr.Nancy Snyder",
+      type: "Provider",
+      source: "Epic",
+      telephone: "972-444-5452",
+      address: "271 Main Street Dallas TX",
+      provider: "South Shore Medical",
+      providerContact: "N/A",
+      providerStatus: "",
+      role: "Nurse",
+    },
+    chosenPatient: {
+      name: "Johns Jacobs",
+      type: "Patient",
+      source: "Epic",
+      telephone: "972-778-3754",
+      address: "126 Main Street Dallas TX",
+      provider: "South Shore Medical",
+      providerContact: "Dr.Nate Gove",
+      providerStatus: "Not Available",
+      role: "Patient",
+    },
   },
   mutations: {
     setCurrentPin(state, pin) {
@@ -18,6 +40,10 @@ export default new Vuex.Store({
     setReferralData(state, referrals){
       console.log('NEW_REF+', referrals)
       state.referrals = [...referrals]
+    },
+    setCallerProvider(state, info) {
+      state.chosenProvider = info;
+      state.chosenPatient = info;
     },
     setPacientId (state,id) {
       // Vue.set(state, 'paciendId', id);
@@ -44,6 +70,9 @@ export default new Vuex.Store({
     }
   },
   actions: {
+    setCallerProvider({commit, state}, callerInfo) {
+      commit('setCallerProvider', callerInfo);
+    },
     setCurrentPin({commit, state}, pinIndex) {
       commit('setCurrentPin', pinIndex);
     },
