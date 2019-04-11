@@ -1,66 +1,151 @@
 <template lang="pug">
     .appointment
         .answering-service
-            .answering-caller-info
-                //- div(style="font-size: 1.5em; margin-bottom: 20px; font-weight: 700; color: #1db7e9;") Caller Information
-                //- span(style="color: rgba(32,32,32,.5)") Call from:
-                //- span(style="margin-left: 10px") 253-704-2531
-                //- div(style="margin: 15px 0") 
-                //-     span(style="color: rgba(32,32,32,.5)") Call To:
-                //-     span(style="margin-left: 10px") 1-800-456-9876
-                //- div (South Shore Urology)
-                //- div(style="height: 30px")
-                //- div()
-                //-     span(style="color: rgba(32,32,32,.5)") Call matched to:
-                //-     span(style="margin-left: 10px") Provider
-                //- div(style="margin: 15px 0") 
-                //-     span(style="color: rgba(32,32,32,.5)") Number of Matches:
-                //-     span(style="margin-left: 10px") 1
-                //- div 
-                //-     span(style="color: rgba(32,32,32,.5)") Last Action:
-                //-     span(style="margin-left: 10px") OnCall Cardiologist
-                     
-                //- div(style="flex: 1;  background: black; margin: 20px 0;")
-                div(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;")  Details
+            .answering-caller-info(style="align-items: center")
+                div(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;")  Caller:
                 div(style="height: 10px")
-                div Practioning Nurse at OmniCare Downtown
-                div(style="font-size: 1.5em; margin-top: 30px; font-weight: 700; color: #1db7e9;") This week
+                div(style="font-size: 1.2em; margin-bottom: 20px")
+                    div() Nancy Snyder
+                    span(style="font-size: 0.8em;") (Practitioning Nurse at South Shore Hospital)
+                .details-content(style="")
+                    .details-content-urology(style="background: white; color: black; ")
+                        .div(style="font-size: 1.1em;") This week schedule:
+                        .div(style="font-size: 1.1em;")
+                            div(style="margin: 10px 0")
+                                span(style="color: rgba(32,32,32,.5)") Start: 
+                                span(style="margin-left: 5px") 7:00 AM
+                                span(style="color: rgba(32,32,32,.5); margin-left: 25px") End: 
+                                span(style="margin-left: 5px") 5:00 PM
+                            div(style="margin: 10px 0")
+                                span(style="color: rgba(32,32,32,.5)") Shift: 
+                                span(style="margin-left: 5px") Day
+                                span(style="color: rgba(32,32,32,.5); margin-left: 25px") Role:
+                                span(style="margin-left: 5px") RN
+                            div()
+                                span(style="color: rgba(32,32,32,.5)") Call Order:
+                                span(style="margin-left: 5px") 18 
+                .details-content(style="")
+                    .details-content-urology(style="background: white; color: black; ")
+                        .div(style="font-size: 1.1em;") Hours of Operation:
+                        .div(style="font-size: 1.1em; margin-left: 30px;")
+                            div Mon - Fri 9am - 4:30 pm
+                            div Lunch: 12pm - 1:15pm
+                .details-content
+                    .details-content-urology(style="background: white; color: black; ")
+                        .div(style="font-size: 1.1em;") Address:
+                        .div(style="font-size: 1.1em; margin-left: 30px;")
+                            div 780 Main Street
+                            div South Weymouth, MA 02190
+                .details-content(style="align-items: center; justify-content: center; display: flex;")
+                    gmap-map(
+                    :center="{lat: 32.9448268, lng: -96.64587949999998}",
+                    :zoom="14",
+                    style="width: 60%; height: 200px; margin-top: 30px;"
+                    )
+                        gmap-marker(
+                        :key="1",
+                        :position="{lat: 32.9448268, lng: -96.64587949999998}",
+                        )
+                .details-content(style="margin-top: 30px;")
+                    .details-content-urology(style="background: white; color: black; ")
+                        .div(style="font-size: 1.1em;") Contact:
+                        .div(style="font-size: 1.1em; margin-left: 30px;")
+                            a(href="tel: 781-331-4600") 781-331-4600
+                 
                 
-                div(style="margin: 10px 0")
-                    span(style="color: rgba(32,32,32,.5)") Start: 
-                    span(style="margin-left: 5px") 7:00 AM
-                    span(style="color: rgba(32,32,32,.5); margin-left: 25px") End: 
-                    span(style="margin-left: 5px") 5:00 PM
-                div(style="margin: 10px 0")
-                    span(style="color: rgba(32,32,32,.5)") Shift: 
-                    span(style="margin-left: 5px") Day
-                    span(style="color: rgba(32,32,32,.5); margin-left: 25px") Role:
-                    span(style="margin-left: 5px") RN
-                div()
-                    span(style="color: rgba(32,32,32,.5)") Call Order:
-                    span(style="margin-left: 5px") 18
-                div(style="font-size: 1.5em; margin-top: 30px; font-weight: 700; color: #1db7e9;") Quick Links
                 
-                a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link OnCall
-                a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link Department
-                a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link Employee
-                a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link Patient
-                a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link Resource Account
+            .answering-caller-info(style="align-items: center")
+                div(v-if="$root._data.isPatient === true || ($root._data.isProvider === true && $store.state.customerSelected === true)")
+                    div(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;")  Customer:
+                    div(style="height: 10px")
+                    div(style="font-size: 1.2em; margin-bottom: 20px")
+                        div() {{$store.state.chosenCustomer.Name}}
+                        span(style="font-size: 0.8em;") (Cardiologist at South Shore Hospital)
+                    .details-content(style="")
+                        .details-content-urology(style="background: white; color: black; ")
+                            .div(style="font-size: 1.1em;") This week schedule:
+                            .div(style="font-size: 1.1em;")
+                                div(style="margin: 10px 0")
+                                    span(style="color: rgba(32,32,32,.5)") Start: 
+                                    span(style="margin-left: 5px") 7:00 AM
+                                    span(style="color: rgba(32,32,32,.5); margin-left: 25px") End: 
+                                    span(style="margin-left: 5px") 5:00 PM
+                                div(style="margin: 10px 0")
+                                    span(style="color: rgba(32,32,32,.5)") Shift: 
+                                    span(style="margin-left: 5px") Day
+                                    span(style="color: rgba(32,32,32,.5); margin-left: 25px") Role:
+                                    span(style="margin-left: 5px") RN
+                                div()
+                                    span(style="color: rgba(32,32,32,.5)") Call Order:
+                                    span(style="margin-left: 5px") 18 
+                    .details-content(style="")
+                        .details-content-urology(style="background: white; color: black; ")
+                            .div(style="font-size: 1.1em;") Hours of Operation:
+                            .div(style="font-size: 1.1em; margin-left: 30px;")
+                                div Mon - Fri 9am - 4:30 pm
+                                div Lunch: 12pm - 1:15pm
+                    .details-content
+                        .details-content-urology(style="background: white; color: black; ")
+                            .div(style="font-size: 1.1em;") Address:
+                            .div(style="font-size: 1.1em; margin-left: 30px;")
+                                div {{$store.state.chosenCustomer.Address.Line1}},
+                                div {{$store.state.chosenCustomer.Address.Line2}},
+                    .details-content(style="align-items: center; justify-content: center; display: flex;")
+                        gmap-map(
+                        :center="{lat: 30.9448268, lng: -95.64587949999998}",
+                        :zoom="14",
+                        style="width: 60%; height: 200px; margin-top: 30px;"
+                        )
+                            gmap-marker(
+                            :key="1",
+                            :position="{lat: 30.9448268, lng: -95.64587949999998}",
+                            )
+                    .details-content(style="margin-top: 30px;")
+                        .details-content-urology(style="background: white; color: black; ")
+                            .div(style="font-size: 1.1em;") Contact:
+                            .div(style="font-size: 1.1em; margin-left: 30px;")
+                                a(href="tel: 781-331-4600") 781-331-4601
+        //- .answering-service
+        //-     .answering-caller-info
+        //-         div(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;")  Details
+        //-         div(style="height: 10px")
+        //-         div Practioning Nurse at OmniCare Downtown
+        //-         div(style="font-size: 1.5em; margin-top: 30px; font-weight: 700; color: #1db7e9;") This week
+                
+        //-         div(style="margin: 10px 0")
+        //-             span(style="color: rgba(32,32,32,.5)") Start: 
+        //-             span(style="margin-left: 5px") 7:00 AM
+        //-             span(style="color: rgba(32,32,32,.5); margin-left: 25px") End: 
+        //-             span(style="margin-left: 5px") 5:00 PM
+        //-         div(style="margin: 10px 0")
+        //-             span(style="color: rgba(32,32,32,.5)") Shift: 
+        //-             span(style="margin-left: 5px") Day
+        //-             span(style="color: rgba(32,32,32,.5); margin-left: 25px") Role:
+        //-             span(style="margin-left: 5px") RN
+        //-         div()
+        //-             span(style="color: rgba(32,32,32,.5)") Call Order:
+        //-             span(style="margin-left: 5px") 18
+        //-         div(style="font-size: 1.5em; margin-top: 30px; font-weight: 700; color: #1db7e9;") Quick Links
+                
+        //-         a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link OnCall
+        //-         a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link Department
+        //-         a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link Employee
+        //-         a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link Patient
+        //-         a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link Resource Account
 
-                div()
-                a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link.blue Other
-            .answering-triage-guide
-                div(style="height: 40px")
-                span(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;") Triage Guide
-                div(style="height: 30px")
-                div(style="font-size: 20px") I can help you with OnCall Physician or other?
-                div(style="height: 100px")
-                .button-array
-                    a(href="#3", @click="$refs.modalCall.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button OnCall
-                    a(href="#3").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Schedule
-                .button-array
-                    a(href="#3", @click="$refs.modalphone.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Urgent
-                    a(href="#3", @click="$refs.modalTransfer.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Transfer
+        //-         div()
+        //-         a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-provider-link.blue Other
+        //-     .answering-triage-guide
+        div(style="margin-top: 50px")
+            span(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;") Triage Guide
+            div(style="height: 20px")
+            div(style="font-size: 20px") I can help you with OnCall Physician or other?
+            div(style="height: 30px")
+            .button-array
+                a(style="margin-right: 30px;", href="#3", @click="$refs.modalCall.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button OnCall
+                a(style="margin-right: 30px;", href="#3").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Schedule
+                a(style="margin-right: 30px;", href="#3", @click="$refs.modalphone.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Urgent
+                a(style="margin-right: 30px;", href="#3", @click="$refs.modalTransfer.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Transfer            
         
             modal(ref="modalprovider")
                 .modal__content
@@ -291,28 +376,6 @@
                             
                     .modal-appointment__row
                         a(href="#3", @click.prevent="$refs.modalCall.close()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border OK
-        .content
-            div().ccase-managment
-                .ccase-managment__top_boxes
-                    .ccase-managment__top-rect.inline-block
-                        board-block(:count='$root.activePacient==3?5:1', :text="'Past Appointments'", :col="'rgb(255,0,0)'")
-                    .ccase-managment__top-rect.inline-block
-                        board-block(:count='$root.activePacient==0?3:2', :text="'Current Appointments'", :col="'green'")
-                    .ccase-managment__top-rect.inline-block
-                        board-block(:count='$root.activePacient==3?6:1', :text="'Future Appointments'", :col="'grey'")
-                    .ccase-managment__top-rect.inline-block
-                        board-block(:count='$root.activePacient==0?2:3', :text="'Cancelled/No Shows'", :col="'pink'")
-                .ccase-managment__top_boxes
-                    .ccase-managment__top-rect.inline-block
-                        board-block(:count='$root.activePacient==0?3:3', :text="'Bills'", :col="'grey'")
-                    .ccase-managment__top-rect.inline-block
-                        board-block(:count='$root.activePacient==0?2:2', :text="'Referrals'", :col="'pink'")
-                    .ccase-managment__top-rect.inline-block
-                        board-block(:count='$root.activePacient==0?3:2', :text="'Outreach'", :col="'rgb(255,0,0)'")
-                    .ccase-managment__top-rect.inline-block
-                        board-block(:count='$root.activePacient==0?2:4', :text="'Inbound'", :col="'green'")
-            .content__box
-                journey-map(:info="$root._data.Customers[$root.activePacient]")
 </template>
 <script>
     import modal from "../modal-component/modal.vue";

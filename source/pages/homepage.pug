@@ -20,8 +20,8 @@ block content
                                 phone-book(:show="$root.currentShowPhoneBook")
                     transition(name="fade", mode='out-in')
                         //-show modal for phone-book
-                        answering-service(:data="$root._data.Directory", v-if="$root.currentShowBox ==='home' && $root._data.isPatient === true")
-                        answering-service-provider(:data="$root._data.Directory", v-if="$root.currentShowBox ==='home' && $root._data.isProvider === true")
+                        answering-service(:data="$root._data.Directory", v-if="$root.currentShowBox ==='home' && $root._data.isPatient === true && !currentShowSubBox")
+                        answering-service-provider(:data="$root._data.Directory", v-if="$root.currentShowBox ==='home' && $root._data.isProvider === true && !currentShowSubBox")
                         .content(v-if="$root.currentShowBox ==='home' && $root._data.isPatient === false && $root._data.isProvider === false && !currentShowSubBox", key="home")
                             .content__top-line
                                 h1.title Caller Information
@@ -461,10 +461,14 @@ block content
                                 a(href="#3", @click.prevent="$root.currentShowSubBox = null").content__top-action
                                     svg.ico-svg.ico-svg__close 
                                         use(xlink:href="#close")
-                            .content__box
+                            .content__box(v-if="$root._data.isPatient === false && $root._data.isProvider === false")
                                 patient-info(:info="$root._data.Customers[$root.activePacient]")
                                 pharmacy(:info="$root._data.Customers[$root.activePacient]")
                                 journey-map(:info="$root._data.Customers[$root.activePacient]")
+                            .content__box(v-if="$root._data.isPatient === true || $root._data.isProvider === true")
+                                patient-info(:info="$store.state.chosenCustomer")
+                                pharmacy(:info="$store.state.chosenCustomer")
+                                journey-map(:info="$store.state.chosenCustomer")
                     
                         //-show make-appointment
                             Make Appointment
