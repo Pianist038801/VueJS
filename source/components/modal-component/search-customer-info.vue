@@ -7,18 +7,6 @@
                         .title.mod--modal-appointment Search Customer
  
                         .modal-content-row
-  
-                            .modal-appointment__info-lang
-                                multiselect(
-                                v-model="callerType",
-                                :options="['Patient', 'Provider', 'Other']",
-                                @input="",
-                                :searchable="false",
-                                :allowEmpty="false",
-                                :showLabels="false",
-                                placeholder="Select Type"
-                                ).ui-multiselect.ui-multiselect--default
-
                             input(v-model="searchTemp").modal-appointment__info-lang
                             a(href="#3", @click="searchKey=searchTemp==''?-1:searchTemp").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border Search
 

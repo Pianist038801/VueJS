@@ -11,7 +11,7 @@
         transition(name="fade", mode='out-in')
             .content
                 .content__box
-                    search-customer-info(:show="$root.currentShowCustomerInfo")
+                    search-customer-info(:show="$root.currentShowSearchCustomerInfo")
 
         .sidebar__title(v-if="$root._data.isPatient === true") Caller Information
             a(v-if="$root._data.isPatient === true || $root._data.isProvider === true", href="#3", @click.prevent="$root.showSearchPatientCallerInfo()").content__top-action.caller__search-icon
@@ -70,100 +70,193 @@
                 ).ui-multiselect.ui-multiselect--default.inline-block
         .sidebar__divider(v-if="$root._data.isPatient === true || $root._data.isProvider === true")
         .sidebar__title Customer Information
-            a(v-if="$root._data.isPatient === true || $root._data.isProvider === true", href="#3", @click.prevent="$root.showSearchCustomerInfo()").content__top-action.content__search-icon
+            a(v-if="$root._data.isPatient === true || $root._data.isProvider === true", href="#3", @click.prevent="$root.showSearchCustomerInfo()").content__top-action.customer__search-icon
                 svg.ico-svg__search-patient
                     use(xlink:href="#search")
-        .l-sidebar__userpic
-            .sidebar__userpic
-                img.sidebar__userpic-image(:src="pacients[currentPacient].PhotoUrl")
-                a(href="#3", @click.prevent="$root.currentShowSubBox = 'patient-info'").sidebar__userpic-info
-                    svg.ico-svg.ico-svg__info
-                        use(xlink:href="#info")
-        .sidebar__note-userpic Number of Matches (<b>{{sizePacients}}</b>)
-        .l-sidebar__section
-            .sidebar__section
-                .sidebar__section--note Customer Name
+        div(v-if="$root._data.isPatient === false && $root._data.isProvider === false")
+            .l-sidebar__userpic
+                .sidebar__userpic
+                    img.sidebar__userpic-image(:src="pacients[currentPacient].PhotoUrl")
+                    a(href="#3", @click.prevent="$root.currentShowSubBox = 'patient-info'").sidebar__userpic-info
+                        svg.ico-svg.ico-svg__info
+                            use(xlink:href="#info")
+            .sidebar__note-userpic Number of Matches (<b>{{sizePacients}}</b>)
+            .l-sidebar__section
+                .sidebar__section
+                    .sidebar__section--note Customer Name
 
-                //- select(v-model="currentPacientName")
-                    option(v-for="item in pacients", :value="item.Name") {{item.Name}}
-                multiselect(
-                    v-model="currentPacientName",
-                    :options="namesPacient",
-                    @input="getCurrentIndexPacient",
-                    :searchable="false",
-                    :allowEmpty="false",
-                    :showLabels="false"
-                 ).ui-multiselect.ui-multiselect--default
-
-            .sidebar__section
-                .sidebar__section--note Date of Birth
-                .sidebar__section--info {{ pacients[currentPacient].DateOfBirth | moment("MMM DD, YYYY")}}
-            .sidebar__section
-                .sidebar__section--note MRN
-                .sidebar__section--info {{ pacients[currentPacient].MRN }}    
-            .sidebar__section
-                .sidebar__section--note SSN
-                .sidebar__section--info {{ pacients[currentPacient].SSN}}
-            .sidebar__section
-                .sidebar__section--note Phone Number
-                .sidebar__section--info
-                    a(:href="'tel:'+pacients[currentPacient].PhoneNumber.replace(/[^0-9]+/g,'')").sidebar__section--info-link
-                        | {{ pacients[currentPacient].PhoneNumber}}
-            .sidebar__section
-                .sidebar__section--note Address
-                .sidebar__section--info
-                    | {{pacients[currentPacient].Address.Line1}}, 
-                .sidebar__section--info 
-                    | {{pacients[currentPacient].Address.Line2}}
-
-            .sidebar__section
-                .sidebar__section--note Primary Care Provider
-                .sidebar__section--info {{ pacients[currentPacient].PrimaryCareProvider.Name}}
-                .sidebar__section--info
-                    a(:href="'tel:'+pacients[currentPacient].PrimaryCareProvider.Phone.replace(/[^0-9]+/g,'')").sidebar__section--info-link
-                        | {{ pacients[currentPacient].PrimaryCareProvider.Phone}}
-
-            //- show  TreatmentTeam
-            .sidebar__section(v-if="pacients[currentPacient].TreatmentTeam.length")
-                .sidebar__section--note Treatment Team
-                div(v-if="pacients[currentPacient].TreatmentTeam.lenght >1")
+                    //- select(v-model="currentPacientName")
+                        option(v-for="item in pacients", :value="item.Name") {{item.Name}}
                     multiselect(
+                        v-model="currentPacientName",
+                        :options="namesPacient",
+                        @input="getCurrentIndexPacient",
+                        :searchable="false",
+                        :allowEmpty="false",
+                        :showLabels="false"
+                    ).ui-multiselect.ui-multiselect--default
+
+                .sidebar__section
+                    .sidebar__section--note Date of Birth
+                    .sidebar__section--info {{ pacients[currentPacient].DateOfBirth | moment("MMM DD, YYYY")}}
+                .sidebar__section
+                    .sidebar__section--note MRN
+                    .sidebar__section--info {{ pacients[currentPacient].MRN }}    
+                .sidebar__section
+                    .sidebar__section--note SSN
+                    .sidebar__section--info {{ pacients[currentPacient].SSN}}
+                .sidebar__section
+                    .sidebar__section--note Phone Number
+                    .sidebar__section--info
+                        a(:href="'tel:'+pacients[currentPacient].PhoneNumber.replace(/[^0-9]+/g,'')").sidebar__section--info-link
+                            | {{ pacients[currentPacient].PhoneNumber}}
+                .sidebar__section
+                    .sidebar__section--note Address
+                    .sidebar__section--info
+                        | {{pacients[currentPacient].Address.Line1}}, 
+                    .sidebar__section--info 
+                        | {{pacients[currentPacient].Address.Line2}}
+
+                .sidebar__section
+                    .sidebar__section--note Primary Care Provider
+                    .sidebar__section--info {{ pacients[currentPacient].PrimaryCareProvider.Name}}
+                    .sidebar__section--info
+                        a(:href="'tel:'+pacients[currentPacient].PrimaryCareProvider.Phone.replace(/[^0-9]+/g,'')").sidebar__section--info-link
+                            | {{ pacients[currentPacient].PrimaryCareProvider.Phone}}
+
+                //- show  TreatmentTeam
+                .sidebar__section(v-if="pacients[currentPacient].TreatmentTeam.length")
+                    .sidebar__section--note Treatment Team
+                    div(v-if="pacients[currentPacient].TreatmentTeam.lenght >1")
+                        multiselect(
+                            v-model="currentPacientTeam",
+                            :options="pacients",
+                            label="Name",
+                            @input="getCurrentIndexPacient",
+                        )
+                    div(v-else)
+                        .sidebar__section--info-select
+                            | {{ pacients[currentPacient].TreatmentTeam[0].Name}}
+                        .sidebar__section--info
+                            | {{ pacients[currentPacient].TreatmentTeam[0].PhoneNumber}}
+
+                //- show  Provider
+                .sidebar__section(v-if="pacients[currentPacient].Provider.length")
+                    .sidebar__section--note Provider
+                    div(v-if="pacients[currentPacient].TreatmentTeam.lenght >1")
+                        multiselect(
                         v-model="currentPacientTeam",
                         :options="pacients",
                         label="Name",
                         @input="getCurrentIndexPacient",
-                    )
-                div(v-else)
-                    .sidebar__section--info-select
-                        | {{ pacients[currentPacient].TreatmentTeam[0].Name}}
-                    .sidebar__section--info
-                        | {{ pacients[currentPacient].TreatmentTeam[0].PhoneNumber}}
+                        )
+                    div(v-else)
+                        .sidebar__section--info-select
+                            | {{ pacients[currentPacient].Provider[0].Name}}
+                        .sidebar__section--info
+                            a(:href="'tel:'+pacients[currentPacient].Provider[0].PhoneNumber.replace(/[^0-9]+/g,'')").sidebar__section--info-link
+                                | {{ pacients[currentPacient].Provider[0].PhoneNumber}}
 
-            //- show  Provider
-            .sidebar__section(v-if="pacients[currentPacient].Provider.length")
-                .sidebar__section--note Provider
-                div(v-if="pacients[currentPacient].TreatmentTeam.lenght >1")
+            .sidebar__success
+                .sub-popup-menu
+                    .sub-popup-menu__action
+                        a(href="#3").ui-btn.ui-btn--skin-default.ui-btn--theme-primary.mod--block  Screen pop
+                    .sub-popup-menu__list
+                        a(href="#3", @click.prevent="openNewWindow('http://10.1.74.36:2230/EPIC_InCustomer/patient_scheduling/search.html')").sub-popup-menu__item Customer Search
+                        a(href="#3", @click.prevent="openNewWindow('https://i.ytimg.com/vi/RIsVxJWuQ8Y/maxresdefault.jpg')").sub-popup-menu__item Customer Information
+                        a(href="#3", @click.prevent="replaceNewWindow('alert:test')").sub-popup-menu__item Appointments Create
+        div(v-if="$root._data.isPatient === true || ($root._data.isProvider === true && $store.state.customerSelected === true)")
+            .l-sidebar__userpic
+                .sidebar__userpic
+                    img.sidebar__userpic-image(:src="$store.state.chosenCustomer.PhotoUrl")
+                    a(href="#3", @click.prevent="$root.currentShowSubBox = 'patient-info'").sidebar__userpic-info
+                        svg.ico-svg.ico-svg__info
+                            use(xlink:href="#info")
+            .sidebar__note-userpic Number of Matches (<b>{{sizePacients}}</b>)
+            .l-sidebar__section
+                .sidebar__section
+                    .sidebar__section--note Customer Name
+
+                    //- select(v-model="currentPacientName")
+                        option(v-for="item in pacients", :value="item.Name") {{item.Name}}
                     multiselect(
-                    v-model="currentPacientTeam",
-                    :options="pacients",
-                    label="Name",
-                    @input="getCurrentIndexPacient",
-                    )
-                div(v-else)
-                    .sidebar__section--info-select
-                        | {{ pacients[currentPacient].Provider[0].Name}}
-                    .sidebar__section--info
-                        a(:href="'tel:'+pacients[currentPacient].Provider[0].PhoneNumber.replace(/[^0-9]+/g,'')").sidebar__section--info-link
-                            | {{ pacients[currentPacient].Provider[0].PhoneNumber}}
+                        v-model="$store.state.chosenCustomer.Name",
+                        :options="namesPacient",
+                        @input="getCurrentIndexPacient",
+                        :searchable="false",
+                        :allowEmpty="false",
+                        :showLabels="false"
+                    ).ui-multiselect.ui-multiselect--default
 
-        .sidebar__success
-            .sub-popup-menu
-                .sub-popup-menu__action
-                    a(href="#3").ui-btn.ui-btn--skin-default.ui-btn--theme-primary.mod--block  Screen pop
-                .sub-popup-menu__list
-                    a(href="#3", @click.prevent="openNewWindow('http://10.1.74.36:2230/EPIC_InCustomer/patient_scheduling/search.html')").sub-popup-menu__item Customer Search
-                    a(href="#3", @click.prevent="openNewWindow('https://i.ytimg.com/vi/RIsVxJWuQ8Y/maxresdefault.jpg')").sub-popup-menu__item Customer Information
-                    a(href="#3", @click.prevent="replaceNewWindow('alert:test')").sub-popup-menu__item Appointments Create
+                .sidebar__section
+                    .sidebar__section--note Date of Birth
+                    .sidebar__section--info {{ $store.state.chosenCustomer.DateOfBirth | moment("MMM DD, YYYY")}}
+                .sidebar__section
+                    .sidebar__section--note MRN
+                    .sidebar__section--info {{ $store.state.chosenCustomer.MRN }}    
+                .sidebar__section
+                    .sidebar__section--note SSN
+                    .sidebar__section--info {{ $store.state.chosenCustomer.SSN}}
+                .sidebar__section
+                    .sidebar__section--note Phone Number
+                    .sidebar__section--info
+                        a(:href="'tel:'+$store.state.chosenCustomer.PhoneNumber.replace(/[^0-9]+/g,'')").sidebar__section--info-link
+                            | {{ $store.state.chosenCustomer.PhoneNumber}}
+                .sidebar__section
+                    .sidebar__section--note Address
+                    .sidebar__section--info
+                        | {{$store.state.chosenCustomer.Address.Line1}}, 
+                    .sidebar__section--info 
+                        | {{$store.state.chosenCustomer.Address.Line2}}
+
+                .sidebar__section
+                    .sidebar__section--note Primary Care Provider
+                    .sidebar__section--info {{ $store.state.chosenCustomer.PrimaryCareProvider.Name}}
+                    .sidebar__section--info
+                        a(:href="'tel:'+$store.state.chosenCustomer.PrimaryCareProvider.Phone.replace(/[^0-9]+/g,'')").sidebar__section--info-link
+                            | {{ $store.state.chosenCustomer.PrimaryCareProvider.Phone}}
+
+                //- show  TreatmentTeam
+                .sidebar__section(v-if="$store.state.chosenCustomer.TreatmentTeam.length")
+                    .sidebar__section--note Treatment Team
+                    div(v-if="$store.state.chosenCustomer.TreatmentTeam.lenght >1")
+                        multiselect(
+                            v-model="currentPacientTeam",
+                            :options="pacients",
+                            label="Name",
+                            @input="getCurrentIndexPacient",
+                        )
+                    div(v-else)
+                        .sidebar__section--info-select
+                            | {{ $store.state.chosenCustomer.TreatmentTeam[0].Name}}
+                        .sidebar__section--info
+                            | {{ $store.state.chosenCustomer.TreatmentTeam[0].PhoneNumber}}
+
+                //- show  Provider
+                .sidebar__section(v-if="$store.state.chosenCustomer.Provider.length")
+                    .sidebar__section--note Provider
+                    div(v-if="$store.state.chosenCustomer.TreatmentTeam.lenght >1")
+                        multiselect(
+                        v-model="currentPacientTeam",
+                        :options="pacients",
+                        label="Name",
+                        @input="getCurrentIndexPacient",
+                        )
+                    div(v-else)
+                        .sidebar__section--info-select
+                            | {{ $store.state.chosenCustomer.Provider[0].Name}}
+                        .sidebar__section--info
+                            a(:href="'tel:'+$store.state.chosenCustomer.Provider[0].PhoneNumber.replace(/[^0-9]+/g,'')").sidebar__section--info-link
+                                | {{ $store.state.chosenCustomer.Provider[0].PhoneNumber}}
+
+            .sidebar__success
+                .sub-popup-menu
+                    .sub-popup-menu__action
+                        a(href="#3").ui-btn.ui-btn--skin-default.ui-btn--theme-primary.mod--block  Screen pop
+                    .sub-popup-menu__list
+                        a(href="#3", @click.prevent="openNewWindow('http://10.1.74.36:2230/EPIC_InCustomer/patient_scheduling/search.html')").sub-popup-menu__item Customer Search
+                        a(href="#3", @click.prevent="openNewWindow('https://i.ytimg.com/vi/RIsVxJWuQ8Y/maxresdefault.jpg')").sub-popup-menu__item Customer Information
+                        a(href="#3", @click.prevent="replaceNewWindow('alert:test')").sub-popup-menu__item Appointments Create
 
     // End
 </template>

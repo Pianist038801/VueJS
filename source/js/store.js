@@ -53,7 +53,10 @@ export default new Vuex.Store({
           PhoneNumber: "+1 216 411 8765"
         }
       ],
-    }
+      TreatmentTeam: [
+      ],
+    },
+    customerSelected: false,
   },
   mutations: {
     setCurrentPin(state, pin) {
@@ -69,6 +72,7 @@ export default new Vuex.Store({
     },
     setCustomerInfo(state, info) {
       state.chosenCustomer = info;
+      state.customerSelected = true;
     },
     setPacientId (state,id) {
       // Vue.set(state, 'paciendId', id);
