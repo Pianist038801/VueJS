@@ -8,6 +8,11 @@
             .content
                 .content__box
                     search-provider-caller-info(:show="$root.currentShowProviderCallerInfo")
+        transition(name="fade", mode='out-in')
+            .content
+                .content__box
+                    search-customer-info(:show="$root.currentShowCustomerInfo")
+
         .sidebar__title(v-if="$root._data.isPatient === true") Caller Information
             a(v-if="$root._data.isPatient === true || $root._data.isProvider === true", href="#3", @click.prevent="$root.showSearchPatientCallerInfo()").content__top-action.caller__search-icon
                 svg.ico-svg__search-patient
@@ -65,15 +70,15 @@
                 ).ui-multiselect.ui-multiselect--default.inline-block
         .sidebar__divider(v-if="$root._data.isPatient === true || $root._data.isProvider === true")
         .sidebar__title Customer Information
+            a(v-if="$root._data.isPatient === true || $root._data.isProvider === true", href="#3", @click.prevent="$root.showSearchCustomerInfo()").content__top-action.content__search-icon
+                svg.ico-svg__search-patient
+                    use(xlink:href="#search")
         .l-sidebar__userpic
             .sidebar__userpic
                 img.sidebar__userpic-image(:src="pacients[currentPacient].PhotoUrl")
                 a(href="#3", @click.prevent="$root.currentShowSubBox = 'patient-info'").sidebar__userpic-info
                     svg.ico-svg.ico-svg__info
                         use(xlink:href="#info")
-            a(v-if="$root._data.isPatient === true || $root._data.isProvider === true", href="#3", @click.prevent="$root.showSearchCustomer()").content__top-action.content__search-icon
-                svg.ico-svg__search-patient
-                    use(xlink:href="#search")
         .sidebar__note-userpic Number of Matches (<b>{{sizePacients}}</b>)
         .l-sidebar__section
             .sidebar__section
@@ -167,6 +172,7 @@
     import Multiselect from '../name-select/src/Multiselect.vue';
     import searchPatientCallerInfo from "../modal-component/search-patient-caller-info.vue";
     import searchProviderCallerInfo from "../modal-component/search-provider-caller-info.vue";
+    import searchCustomerInfo from "../modal-component/search-customer-info.vue";
 
     export default {
         props: ['pacients', 'active'],
@@ -174,6 +180,7 @@
             Multiselect,
             searchPatientCallerInfo,
             searchProviderCallerInfo,
+            searchCustomerInfo,
         },
         data() {
             return {

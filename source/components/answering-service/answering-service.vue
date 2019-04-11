@@ -4,7 +4,8 @@
             .answering-caller-info(style="align-items: center")
                 div(style="font-size: 1.5em; font-weight: 700; color: #1db7e9;")  Call To:
                 div(style="height: 10px")
-                div(style="font-size: 1.2em; margin-bottom: 20px") South Shore Urology
+                div(style="font-size: 1.2em; margin-bottom: 20px")
+                    a(target="_blank", href="https://www.southshoreurology.com") South Shore Urology
 
                 .details-content(style="")
                     .details-content-urology(style="background: white; color: black; ")
@@ -38,14 +39,22 @@
                         .div(style="font-size: 1.1em; margin-left: 30px;") Urologists:
                         .div(style="font-size: 1.1em; margin-left: 30px;")
                             br
-                            div(style="margin-top: 15px;") William R. Helfrich Jr, MD (Retired)
-                            div(style="margin-top: 15px;") Steven F. Starr, MD
-                            div(style="margin-top: 15px;") John D. Feldman, MD
-                            div(style="margin-top: 15px;") Jeffrey P. Bennett, MD
-                            div(style="margin-top: 15px;") Luke M. O’Connell, MD
-                            div(style="margin-top: 15px;") Keith T. Tracy, MD
-                            div(style="margin-top: 15px;") Sergio D. Fefer, MD
-                            div(style="margin-top: 15px;") Young H. Kim, MD
+                            div(style="margin-top: 10px;")
+                                a(target="_blank", href="https://www.southshoreurology.com/dr-william-helfrich-jr.html") William R. Helfrich Jr, MD (Retired)
+                            div(style="margin-top: 10px;")
+                                a(target="_blank", href="https://www.southshoreurology.com/dr-steven-starr.html") Steven F. Starr, MD
+                            div(style="margin-top: 10px;")
+                                a(target="_blank", href="https://www.southshoreurology.com/dr-john-feldman.html") John D. Feldman, MD
+                            div(style="margin-top: 10px;")
+                                a(target="_blank", href="https://www.southshoreurology.com/dr-jeffrey-bennett.html") Jeffrey P. Bennett, MD
+                            div(style="margin-top: 10px;")
+                                a(target="_blank", href="https://www.southshoreurology.com/dr-luke-oconnell.html") Luke M. O’Connell, MD
+                            div(style="margin-top: 10px;")
+                                a(target="_blank", href="https://www.southshoreurology.com/dr-keith-tracy.html") Keith T. Tracy, MD
+                            div(style="margin-top: 10px;")
+                                a(target="_blank", href="https://www.southshoreurology.com/dr-sergio-fefer.html") Sergio D. Fefer, MD
+                            div(style="margin-top: 10px;")
+                                a(target="_blank", href="https://www.southshoreurology.com/dr-young-kim.html") Young H. Kim, MD
 
                 
                 
@@ -62,7 +71,7 @@
                     a(href="#3", @click="$refs.modalphone.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Urgent
                     a(href="#3", @click="$refs.modalTransfer.open()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.triage-button Transfer
 
-                div(style="font-size: 1.5em; margin-top: 130px; font-weight: 700; color: #1db7e9;") Quick Links
+                div(style="font-size: 1.5em; margin-top: 130px; margin-bottom: 20px; font-weight: 700; color: #1db7e9;") Quick Links
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-link 2 Pond Park
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-link Cancer Center
                 a(href="#3", ).ui-btn.ui-btn--skin-default.ui-btn--theme-primary.menu-button.quick-link Consults

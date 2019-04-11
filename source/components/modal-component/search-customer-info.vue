@@ -4,7 +4,7 @@
             .modal__content-row
                 
                     .modal-appointment__title
-                        .title.mod--modal-appointment Patient Caller
+                        .title.mod--modal-appointment Search Customer
  
                         .modal-content-row
   
@@ -25,20 +25,22 @@
             table.search-patient__table
                 tr
                     th.g-align-center Name
-                    th.g-align-center Type
-                    th.g-align-center Source
-                    th.g-align-center Telephone
+                    th.g-align-center DOB
+                    th.g-align-center MRN
+                    th.g-align-center SSN
+                    th.g-align-center Phone Number
                     th.g-align-center Address
+                    th.g-align-center Primary Care Provider
                     th.g-align-center Provider
-                    th.g-align-center Provider Contact
-                tr(v-for="(patient, index) in $root._data.Directory",v-bind:style="{color: patient==chosen?'red':'black'}", v-if="ifShow(patient)==true" @click="clickRow(patient)")
-                    td.g-align-center {{patient.name}}
-                    td.g-align-center {{patient.type}}
-                    td.g-align-center {{patient.source}}
-                    td.g-align-center {{patient.telephone}}
-                    td.g-align-center {{patient.address}}
-                    td.g-align-center {{patient.provider}}
-                    td.g-align-center {{patient.providerContact}}
+                tr(v-for="(patient, index) in $root._data.possibleCustomers",v-bind:style="{color: patient==chosen?'red':'black'}", v-if="ifShow(patient)==true" @click="clickRow(patient)")
+                    td.g-align-center {{patient.Name}}
+                    td.g-align-center {{patient.DateOfBirth}}
+                    td.g-align-center {{patient.MRN}}
+                    td.g-align-center {{patient.SSN}}
+                    td.g-align-center {{patient.PhoneNumber}}
+                    td.g-align-center {{patient.Address.Line1}}
+                    td.g-align-center {{patient.PrimaryCareProvider.Name}}
+                    td.g-align-center {{patient.Provider[0].Name}} 
 
 
             .modal-appointment__row
@@ -66,22 +68,18 @@
             },
             onSelect(){
                 this.$refs.modalphone.close()
-                if(this.chosen!=null) store.dispatch('setCallerProvider', this.chosen);
+                if(this.chosen!=null) store.dispatch('setCustomerInfo', this.chosen);
             },
             ifShow(patient){
-                if (patient.type === this.callerType) {
-                    const key = this.searchKey.toLowerCase();
-                    
-                    return (patient.name.toLowerCase().indexOf(key) > -1 ||
-                        patient.type.toLowerCase().indexOf(key) > -1 ||
-                        patient.source.toLowerCase().indexOf(key) > -1 ||
-                        patient.address.toLowerCase().indexOf(key) > -1 ||
-                        patient.telephone.toLowerCase().indexOf(key) > -1 ||
-                        patient.provider.toLowerCase().indexOf(key) > -1 ||
-                        patient.providerContact.toLowerCase().indexOf(key) > -1);
-                    return true;
-                }
-                return false;
+                const key = this.searchKey.toLowerCase();
+                return (patient.Name.toLowerCase().indexOf(key) > -1 ||
+                    patient.DateOfBirth.toLowerCase().indexOf(key) > -1 ||
+                    patient.MRN.toLowerCase().indexOf(key) > -1 ||
+                    patient.SSN.toLowerCase().indexOf(key) > -1 ||
+                    patient.PhoneNumber.toLowerCase().indexOf(key) > -1 ||
+                    patient.Address.Line1.toLowerCase().indexOf(key) > -1 ||
+                    patient.Provider[0].Name.toLowerCase().indexOf(key) > -1 ||
+                    patient.PrimaryCareProvider.Name.toLowerCase().indexOf(key) > -1);
             },
             showType() {
                 console.log(searchType);

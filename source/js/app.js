@@ -77,6 +77,7 @@ let appData = {
   currentShowProviderCallerInfo: false,
   currentShowDetailReferral: false,
   currentShowUpdateReferral: false,
+  currentShowSearchCustomerInfo: false,
   newCallerName: '',
   callerName: 'a',
   callerPhone: '',
@@ -193,7 +194,7 @@ let App = new Vue({
             (response1) => {
               
           let data = _mockup;
-          
+          data.possibleCustomers = data.Customers.slice(0);
           let array = ['EPIC']; 
           data.Customers.forEach((item, i) => {
               if(item.Category=='EPIC')
@@ -203,10 +204,10 @@ let App = new Vue({
           data.patientNames = array.slice(0);
           const isPatient = tempDNIS === '2142120192';
           const isProvider = tempDNIS === '9998887777';
-          if (isProvider) {
-            data.Customers[0].Name = 'Nancy Snyder';
-            data.Customers[0].PhotoUrl = 'img/nancy.png';
-          }
+          // if (isProvider) {
+          //   data.Customers[0].Name = 'Nancy Snyder';
+          //   data.Customers[0].PhotoUrl = 'img/nancy.png';
+          // }
           if (isProvider || isPatient) {
             data.Customers = data.Customers.slice(0, 1);
           }
@@ -263,6 +264,9 @@ let App = new Vue({
     },
     showSearchPatientCallerInfo: function () {
       this.currentShowPatientCallerInfo = !this.currentShowPatientCallerInfo;
+    },
+    showSearchCustomerInfo: function () {
+      this.currentShowSearchCustomerInfo = !this.currentShowSearchCustomerInfo;
     },
     showSearchProviderCallerInfo: function () {
       this.currentShowProviderCallerInfo = !this.currentShowProviderCallerInfo;

@@ -32,6 +32,28 @@ export default new Vuex.Store({
       providerStatus: "Not Available",
       role: "Patient",
     },
+    chosenCustomer: {
+      Name: "Johns Jacobs",
+      DateOfBirth: "1981-07-01 00:00:00",
+      MRN: 7499281,
+      SSN: "***-**-6789",
+      PhoneNumber: "+1 214 701 5489",
+      PhotoUrl: "img/user.png",
+      PrimaryCareProvider: {
+        Name: "Mark Williams, MD",
+        Phone: "+1 208 975 3874"
+      },
+      Address: {
+        Line1: "3453 T Ave, Fort Worth",
+        Line2: "TX 76179, USA"
+      },
+      Provider: [
+        {
+          Name: "United Healthcare (UHC Parkway, GA,66552)",
+          PhoneNumber: "+1 216 411 8765"
+        }
+      ],
+    }
   },
   mutations: {
     setCurrentPin(state, pin) {
@@ -44,6 +66,9 @@ export default new Vuex.Store({
     setCallerProvider(state, info) {
       state.chosenProvider = info;
       state.chosenPatient = info;
+    },
+    setCustomerInfo(state, info) {
+      state.chosenCustomer = info;
     },
     setPacientId (state,id) {
       // Vue.set(state, 'paciendId', id);
@@ -70,6 +95,9 @@ export default new Vuex.Store({
     }
   },
   actions: {
+    setCustomerInfo({commit, state}, customerInfo) {
+      commit('setCustomerInfo', customerInfo);
+    },
     setCallerProvider({commit, state}, callerInfo) {
       commit('setCallerProvider', callerInfo);
     },
