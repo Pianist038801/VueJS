@@ -58,6 +58,22 @@ import searchPatientCallerInfo from "../components/modal-component/search-patien
 import searchProviderCallerInfo from "../components/modal-component/search-provider-caller-info.vue";
 import updateReferral from "../components/modal-component/update-referral.vue";
 import detailReferral from "../components/modal-component/detail-referral.vue";
+var firebase = require("firebase/app");
+
+// Add the Firebase products that you want to use
+require("firebase/auth");
+require("firebase/database");
+
+var config = {
+  apiKey: "AIzaSyCT2XVZukLQWSWEsXARA_ibBxV5kgKUiWk",
+  authDomain: "finesse-2346d.firebaseapp.com",
+  databaseURL: "https://finesse-2346d.firebaseio.com",
+  projectId: "finesse-2346d",
+  storageBucket: "finesse-2346d.appspot.com",
+  messagingSenderId: "127662663362"
+};
+firebase.initializeApp(config);
+const db = firebase.database();
 
 let appData = {
   showDialog: false,
@@ -106,7 +122,14 @@ let App = new Vue({
   created(){
     let vm = this;
     vm.activePacient = null;
-    vm.getCallInfoFromURL();
+    db.ref("patient_no").once("value", (snapPatient) => {
+      const patient_no = snapPatient.val();
+      db.ref("provider_no").once("value", (snapProvider) => {
+        const provider_no = snapProvider.val();
+        vm.getCallInfoFromURL(patient_no, provider_no);
+      }
+      );
+    });
   },
   mounted() {
     let vm = this;
@@ -153,7 +176,7 @@ let App = new Vue({
           }
       });
     },
-    getCallInfoFromURL: function() {
+    getCallInfoFromURL: function(patient_no, provider_no) {
       let vm = this;
       //Get TempDNIS from the url
       var url = new URL(window.location.href);
@@ -202,8 +225,8 @@ let App = new Vue({
           });
           array.push('add New')
           data.patientNames = array.slice(0);
-          const isPatient = tempDNIS === '2142120192';
-          const isProvider = tempDNIS === '9998887777';
+          const isPatient = tempDNIS === patient_no;
+          const isProvider = tempDNIS === provider_no;
           // if (isProvider) {
           //   data.Customers[0].Name = 'Nancy Snyder';
           //   data.Customers[0].PhotoUrl = 'img/nancy.png';
