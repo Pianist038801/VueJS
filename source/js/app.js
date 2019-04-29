@@ -196,7 +196,7 @@ let App = new Vue({
       // }
       // )
       // .then(function(response){
-          const response = {data: {
+          let response = {data: {
             "tempDNIS" : "9722345678",
             "status" : "used",
             "destinationNo" : "214-222-3333",
@@ -217,6 +217,7 @@ let App = new Vue({
             (response1) => {
               
           let data = _mockup;
+          console.log('_mockup=', _mockup);
           data.possibleCustomers = data.Customers.slice(0);
           let array = ['EPIC']; 
           data.Customers.forEach((item, i) => {
@@ -225,18 +226,38 @@ let App = new Vue({
           });
           array.push('add New')
           data.patientNames = array.slice(0);
-          const isPatient = tempDNIS === patient_no;
+          const isPatient = tempDNIS === patient_no || tempDNIS === "2148576719";
           const isProvider = tempDNIS === provider_no;
           // if (isProvider) {
           //   data.Customers[0].Name = 'Nancy Snyder';
           //   data.Customers[0].PhotoUrl = 'img/nancy.png';
           // }
           if (isProvider || isPatient) {
-            data.Customers = data.Customers.slice(0, 1);
+            if (tempDNIS === "2148576719") { // Load Adam Profile
+              response = {data: {
+                "tempDNIS" : "9722345678",
+                "status" : "used",
+                "destinationNo" : "214-222-3333",
+                "destinationName" : "Urologist",
+                "patientName" : "Adam Isakson",
+                "patientMRN" : "E234567",
+                "callerName" : "Adam Isakson",
+                "callerPhone" : "972-444-5555",
+                "callerType" : "Patient",
+                "notes" : "",
+                "phantom1" : "",
+                "phantom2" : "",
+                "phantom3" : ""
+              }};
+              data.Customers = data.AdamProfile.slice(0,1);
+            } else {
+              data.Customers = data.Customers.slice(0, 1);
+            }
           }
+
           data.isPatient = isPatient;
           data.isProvider = isProvider;
-
+          data.isAdam = tempDNIS === "2148576719";
           appData = Object.assign(appData, data);
 
           
@@ -252,7 +273,7 @@ let App = new Vue({
             const _patientName = responseData.patientName;
             if(_patientName.indexOf('Sarah') > -1) 
               vm.activePacient = 1;
-            else if(_patientName.indexOf('Johns') > -1) 
+            else if(_patientName.indexOf('Johns') > -1 || _patientName.indexOf('Adam') > -1) 
               vm.activePacient = 0;
             else if(_patientName.indexOf('Grace') > -1) 
               vm.activePacient = 2;

@@ -466,9 +466,12 @@ block content
                                 pharmacy(:info="$root._data.Customers[$root.activePacient]")
                                 journey-map(:info="$root._data.Customers[$root.activePacient]")
                             .content__box(v-if="$root._data.isPatient === true || $root._data.isProvider === true")
-                                patient-info(:info="$store.state.chosenCustomer")
-                                pharmacy(:info="$store.state.chosenCustomer")
-                                journey-map(:info="$store.state.chosenCustomer")
+                                patient-info(v-if="$root._data.isAdam === false", :info="$store.state.chosenCustomer")
+                                pharmacy(v-if="$root._data.isAdam === false", :info="$store.state.chosenCustomer")
+                                journey-map(v-if="$root._data.isAdam === false", :info="$store.state.chosenCustomer")
+                                patient-info(v-if="$root._data.isAdam === true", :info="$root._data.AdamProfile[0]")
+                                pharmacy(v-if="$root._data.isAdam === true", :info="$root._data.AdamProfile[0]")
+                                journey-map(v-if="$root._data.isAdam === true", :info="$root._data.AdamProfile[0]")
                     
                         //-show make-appointment
                             Make Appointment

@@ -440,9 +440,12 @@
                     <journey-map :info="$root._data.Customers[$root.activePacient]"></journey-map>
                   </div>
                   <div class="content__box" v-if="$root._data.isPatient === true || $root._data.isProvider === true">
-                    <patient-info :info="$store.state.chosenCustomer"></patient-info>
-                    <pharmacy :info="$store.state.chosenCustomer"></pharmacy>
-                    <journey-map :info="$store.state.chosenCustomer"></journey-map>
+                    <patient-info v-if="$root._data.isAdam === false" :info="$store.state.chosenCustomer"></patient-info>
+                    <pharmacy v-if="$root._data.isAdam === false" :info="$store.state.chosenCustomer"></pharmacy>
+                    <journey-map v-if="$root._data.isAdam === false" :info="$store.state.chosenCustomer"></journey-map>
+                    <patient-info v-if="$root._data.isAdam === true" :info="$root._data.AdamProfile[0]"></patient-info>
+                    <pharmacy v-if="$root._data.isAdam === true" :info="$root._data.AdamProfile[0]"></pharmacy>
+                    <journey-map v-if="$root._data.isAdam === true" :info="$root._data.AdamProfile[0]"></journey-map>
                   </div>
                 </div>
                 <div class="content" v-if="$root.currentShowSubBox ==='make-appointment'" key="make-appointment">

@@ -25,7 +25,7 @@
             .sidebar__section
                 .sidebar__section--note Caller Name
                 multiselect(
-                    :placeholder="$store.state.chosenPatient.name",
+                    :placeholder="$root._data.isAdam === true ? 'Adam Isakson' : $store.state.chosenPatient.name",
                     :options=[""],
                     @input="getCurrentIndexPacient",
                     :searchable="false",
@@ -168,7 +168,7 @@
         div(v-if="$root._data.isPatient === true || ($root._data.isProvider === true && $store.state.customerSelected === true)")
             .l-sidebar__userpic
                 .sidebar__userpic
-                    img.sidebar__userpic-image(:src="$store.state.chosenCustomer.PhotoUrl")
+                    img.sidebar__userpic-image(:src="$root._data.isAdam === true ? 'img/adam.png' : $store.state.chosenCustomer.PhotoUrl")
                     a(href="#3", @click.prevent="$root.currentShowSubBox = 'patient-info'").sidebar__userpic-info
                         svg.ico-svg.ico-svg__info
                             use(xlink:href="#info")
@@ -180,7 +180,7 @@
                     //- select(v-model="currentPacientName")
                         option(v-for="item in pacients", :value="item.Name") {{item.Name}}
                     multiselect(
-                        v-model="$store.state.chosenCustomer.Name",
+                        v-model="$root._data.isAdam === true ? 'Adam Isakson' : $store.state.chosenCustomer.Name",
                         :options="namesPacient",
                         @input="getCurrentIndexPacient",
                         :searchable="false",
