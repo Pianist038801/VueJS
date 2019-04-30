@@ -3,7 +3,7 @@ header.header
     h1.logo
         img(src="https://drive.google.com/uc?id=1-uD2ofyildDaprkCazv6GnqzX0FH6ndg").logo__link
         // img(src="../img/logo_kaiser.png").logo__link
-    .header__tabs
+    .header__tabs(v-if="$root._data.isAirlineDemo === false")    
         //- .header__tabs-item(:class="{'state--active': $root.currentShowBox ==='answering-service'}", v-if="$root._data.isPatient === true || $root._data.isProvider === true")
         //-     a(href="#", @click.prevent="$root.currentShowBox = 'answering-service'").header__tabs-item-link Answering Service
         .header__tabs-item(:class="{'state--active': $root.currentShowBox ==='home'}")
@@ -23,7 +23,7 @@ header.header
         .header__tabs-item()
             a(href="#", @click.prevent="$root.currentShowBox = 'pharmacy'").header__tabs-item-link Pharmacy
 
-    .header__action
+    .header__action(v-if="$root._data.isAirlineDemo === false")    
         .header__tabs-item()
             a(href="#").header__tabs-item-link Nurse Betsy Swanson
 // End header

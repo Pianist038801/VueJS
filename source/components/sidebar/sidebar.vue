@@ -73,7 +73,7 @@
             a(v-if="$root._data.isPatient === true || $root._data.isProvider === true", href="#3", @click.prevent="$root.showSearchCustomerInfo()").content__top-action.customer__search-icon
                 svg.ico-svg__search-patient
                     use(xlink:href="#search")
-        div(v-if="$root._data.isPatient === false && $root._data.isProvider === false")
+        div(v-if="$root._data.isPatient === false && $root._data.isProvider === false && $root._data.isAirlineDemo === false")
             .l-sidebar__userpic
                 .sidebar__userpic
                     img.sidebar__userpic-image(:src="pacients[currentPacient].PhotoUrl")
@@ -157,6 +157,64 @@
                             a(:href="'tel:'+pacients[currentPacient].Provider[0].PhoneNumber.replace(/[^0-9]+/g,'')").sidebar__section--info-link
                                 | {{ pacients[currentPacient].Provider[0].PhoneNumber}}
 
+            .sidebar__success
+                .sub-popup-menu
+                    .sub-popup-menu__action
+                        a(href="#3").ui-btn.ui-btn--skin-default.ui-btn--theme-primary.mod--block  Screen pop
+                    .sub-popup-menu__list
+                        a(href="#3", @click.prevent="openNewWindow('http://10.1.74.36:2230/EPIC_InCustomer/patient_scheduling/search.html')").sub-popup-menu__item Customer Search
+                        a(href="#3", @click.prevent="openNewWindow('https://i.ytimg.com/vi/RIsVxJWuQ8Y/maxresdefault.jpg')").sub-popup-menu__item Customer Information
+                        a(href="#3", @click.prevent="replaceNewWindow('alert:test')").sub-popup-menu__item Appointments Create
+        div(v-if="$root._data.isAirlineDemo === true")
+            .l-sidebar__userpic
+                .sidebar__userpic
+                    img.sidebar__userpic-image(:src="pacients[currentPacient].PhotoUrl")
+                    a(href="#3", @click.prevent="$root.currentShowSubBox = 'patient-info'").sidebar__userpic-info
+                        svg.ico-svg.ico-svg__info
+                            use(xlink:href="#info")
+            .sidebar__note-userpic Number of Matches (<b>{{sizePacients}}</b>)
+            .l-sidebar__section
+                .sidebar__section
+                    .sidebar__section--note Customer Name
+
+                    //- select(v-model="currentPacientName")
+                        option(v-for="item in pacients", :value="item.Name") {{item.Name}}
+                    multiselect(
+                        v-model="currentPacientName",
+                        :options="namesPacient",
+                        @input="getCurrentIndexPacient",
+                        :searchable="false",
+                        :allowEmpty="false",
+                        :showLabels="false"
+                    ).ui-multiselect.ui-multiselect--default
+
+                .sidebar__section
+                    .sidebar__section--note Verified
+                    .sidebar__section--info Yes
+                .sidebar__section
+                    .sidebar__section--note Account
+                    .sidebar__section--info Cisco Systems INC
+                .sidebar__section
+                    .sidebar__section--note ANI
+                    .sidebar__section--info 6027914431
+                .sidebar__section
+                    .sidebar__section--note CDN
+                    .sidebar__section--info 9191231234 
+                .sidebar__section
+                    .sidebar__section--note Email
+                    .sidebar__section--info bimcdona@cisco.com
+                .sidebar__section
+                    .sidebar__section--note Language
+                    .sidebar__section--info English
+                .sidebar__section
+                    .sidebar__section--note Country
+                    .sidebar__section--info US
+                .sidebar__section
+                    .sidebar__section--note Arranger
+                    .sidebar__section--info FALSE
+                .sidebar__section
+                    .sidebar__section--note Voice Print
+                    .sidebar__section--info Yes
             .sidebar__success
                 .sub-popup-menu
                     .sub-popup-menu__action

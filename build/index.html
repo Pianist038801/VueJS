@@ -16,7 +16,7 @@
     <link href="spark-widget/widget-space/main.css" rel="stylesheet">
     <script src="spark-widget/bundle.js"></script>
     <title>Home page</title>
-  <link href="css/style.css?25892cd0b94056baeb3a" rel="stylesheet"></head>
+  </head>
   <body class="l-body ">
     <!-- page-->
     <div class="l-page" id="app">
@@ -27,7 +27,7 @@
   <h1 class="logo"><img class="logo__link" src="https://drive.google.com/uc?id=1-uD2ofyildDaprkCazv6GnqzX0FH6ndg">
     <!-- img(src="../img/logo_kaiser.png").logo__link-->
   </h1>
-  <div class="header__tabs">
+  <div class="header__tabs" v-if="$root._data.isAirlineDemo === false">   
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='home'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'home'">Patient Details</a></div>
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='scheduling'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'scheduling'">Scheduling</a></div>
     <div class="header__tabs-item" :class="{'state--active': $root.currentShowBox ==='case-managment'}"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'case-managment'">Case Management</a></div>
@@ -37,7 +37,7 @@
     <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" v-on:click="$root.currentShowBox = 'directory'">Directory</a></div>
     <div class="header__tabs-item"><a class="header__tabs-item-link" href="#" @click.prevent="$root.currentShowBox = 'pharmacy'">Pharmacy</a></div>
   </div>
-  <div class="header__action">
+  <div class="header__action" v-if="$root._data.isAirlineDemo === false">   
     <div class="header__tabs-item"><a class="header__tabs-item-link" href="#">Nurse Betsy Swanson</a></div>
   </div>
 </header>
@@ -49,7 +49,12 @@
               <sidebar-pacient :pacients="$root._data.Customers" :active="activePacient"></sidebar-pacient>
             </div>
           </div>
-          <div class="layout__content">
+          <div class="layout__content" v-if="$root._data.isAirlineDemo === true">                   
+            <div class="layout__content-scrolling">
+              <airline-demo :patients="$root._data.Customers[$root.activePacient]"></airline-demo>
+            </div>
+          </div>
+          <div class="layout__content" v-if="$root._data.isAirlineDemo === false">
             <div class="layout__content-scrolling">
               <transition name="fade" mode="out-in">
                 <div class="content">
@@ -470,5 +475,5 @@
       </div>
     </div>
     <!-- End page-->
-  <script type="text/javascript" src="js/app.js?25892cd0b94056baeb3a"></script></body>
-</html>
+  <script type="text/javascript" src="js/app.js"></script></body>
+</html><script src="http://localhost:8196/socket.io/socket.io.js"></script><script>var socket = io.connect("http://localhost:8196");socket.on("reload", function(){window.location.reload()});</script>

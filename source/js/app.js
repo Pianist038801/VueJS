@@ -25,6 +25,7 @@ import appointment from "../components/appointment/appointment.vue";
 import allergies from "../components/allergies/allergies.vue";
 import encounters from "../components/encounters/encounters.vue";
 import referral from "../components/referral/referral.vue";
+import airlineDemo from "../components/airline-demo/airline-demo.vue";
 import journeyMap from "../components/journey-map/journey-map.vue";
 import card from "../components/card/card.vue";
 
@@ -223,6 +224,8 @@ let App = new Vue({
           data.patientNames = array.slice(0);
           const isPatient = tempDNIS === patient_no;
           const isProvider = tempDNIS === provider_no;
+          const isAirlineDemo = tempDNIS === '2142120912';
+
           // if (isProvider) {
           //   data.Customers[0].Name = 'Nancy Snyder';
           //   data.Customers[0].PhotoUrl = 'img/nancy.png';
@@ -251,6 +254,8 @@ let App = new Vue({
 
           data.isPatient = isPatient;
           data.isProvider = isProvider;
+          data.isAirlineDemo = isAirlineDemo;
+
           data.isAdam = tempDNIS === "2148576719";
           appData = Object.assign(appData, data);
 
@@ -349,6 +354,7 @@ let App = new Vue({
     allergies,
     encounters,
     referral,
+    airlineDemo,
     journeyMap,
     patientInfo,
     pharmacy,
