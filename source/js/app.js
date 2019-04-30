@@ -211,13 +211,8 @@ let App = new Vue({
             "phantom2" : "",
             "phantom3" : ""
           }};
-          console.log('Get_CallInfo_Axios_Response=', response);
-          Vue.http.get('data/demo-mockup.json')
-          .then(
-            (response1) => {
-              
+            
           let data = _mockup;
-          console.log('_mockup=', _mockup);
           data.possibleCustomers = data.Customers.slice(0);
           let array = ['EPIC']; 
           data.Customers.forEach((item, i) => {
@@ -226,33 +221,32 @@ let App = new Vue({
           });
           array.push('add New')
           data.patientNames = array.slice(0);
-          const isPatient = tempDNIS === patient_no || tempDNIS === "2148576719";
+          const isPatient = tempDNIS === patient_no;
           const isProvider = tempDNIS === provider_no;
           // if (isProvider) {
           //   data.Customers[0].Name = 'Nancy Snyder';
           //   data.Customers[0].PhotoUrl = 'img/nancy.png';
           // }
+          if (tempDNIS === "2148576719") { // Load Adam Profile
+            response = {data: {
+              "tempDNIS" : "9722345678",
+              "status" : "used",
+              "destinationNo" : "214-222-3333",
+              "destinationName" : "Urologist",
+              "patientName" : "Adam Isakson",
+              "patientMRN" : "E234567",
+              "callerName" : "Adam Isakson",
+              "callerPhone" : "972-444-5555",
+              "callerType" : "Patient",
+              "notes" : "",
+              "phantom1" : "",
+              "phantom2" : "",
+              "phantom3" : ""
+            }};
+            data.Customers = data.AdamProfile.slice(0,1);
+          }
           if (isProvider || isPatient) {
-            if (tempDNIS === "2148576719") { // Load Adam Profile
-              response = {data: {
-                "tempDNIS" : "9722345678",
-                "status" : "used",
-                "destinationNo" : "214-222-3333",
-                "destinationName" : "Urologist",
-                "patientName" : "Adam Isakson",
-                "patientMRN" : "E234567",
-                "callerName" : "Adam Isakson",
-                "callerPhone" : "972-444-5555",
-                "callerType" : "Patient",
-                "notes" : "",
-                "phantom1" : "",
-                "phantom2" : "",
-                "phantom3" : ""
-              }};
-              data.Customers = data.AdamProfile.slice(0,1);
-            } else {
               data.Customers = data.Customers.slice(0, 1);
-            }
           }
 
           data.isPatient = isPatient;
@@ -283,8 +277,8 @@ let App = new Vue({
             vm.callerHospital = responseData.phantom2;
             vm.releaseTempDNIS(tempDNIS);
           }
-            App.$mount('#app');
-          });
+          App.$mount('#app');
+          
          
       // }).catch(function (error) {
       //   // handle error

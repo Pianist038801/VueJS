@@ -6016,9 +6016,9 @@ return sprite$1;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_modal_vue__ = __webpack_require__(146);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1ce5aae4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_modal_vue__ = __webpack_require__(648);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1ce5aae4_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_modal_vue__ = __webpack_require__(649);
 function injectStyle (ssrContext) {
-  __webpack_require__(421)
+  __webpack_require__(422)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -21227,7 +21227,7 @@ let App = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
       // }
       // )
       // .then(function(response){
-      const response = { data: {
+      let response = { data: {
           "tempDNIS": "9722345678",
           "status": "used",
           "destinationNo": "214-222-3333",
@@ -21243,47 +21243,66 @@ let App = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
           "phantom3": ""
         } };
       console.log('Get_CallInfo_Axios_Response=', response);
-      __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].http.get('data/demo-mockup.json').then(response1 => {
 
-        let data = __WEBPACK_IMPORTED_MODULE_9__demo_mockup_js___default.a;
-        data.possibleCustomers = data.Customers.slice(0);
-        let array = ['EPIC'];
-        data.Customers.forEach((item, i) => {
-          if (item.Category == 'EPIC') array.push(item.Name);
-        });
-        array.push('add New');
-        data.patientNames = array.slice(0);
-        const isPatient = tempDNIS === patient_no;
-        const isProvider = tempDNIS === provider_no;
-        // if (isProvider) {
-        //   data.Customers[0].Name = 'Nancy Snyder';
-        //   data.Customers[0].PhotoUrl = 'img/nancy.png';
-        // }
-        if (isProvider || isPatient) {
-          data.Customers = data.Customers.slice(0, 1);
-        }
-        data.isPatient = isPatient;
-        data.isProvider = isProvider;
-
-        appData = Object.assign(appData, data);
-
-        if (tempDNIS === "") {
-          vm.isBlank = true;
-        } else {
-
-          const responseData = response.data;
-          vm.callerName = responseData.callerName;
-          vm.callerPhone = responseData.callerPhone;
-          vm.callerType = responseData.callerType;
-          vm.callerNotes = responseData.notes;
-          const _patientName = responseData.patientName;
-          if (_patientName.indexOf('Sarah') > -1) vm.activePacient = 1;else if (_patientName.indexOf('Johns') > -1) vm.activePacient = 0;else if (_patientName.indexOf('Grace') > -1) vm.activePacient = 2;else vm.activePacient = 3;
-          vm.callerTransferLocation = responseData.phantom1;
-          vm.callerHospital = responseData.phantom2;
-          vm.releaseTempDNIS(tempDNIS);
-        }
-        App.$mount('#app');
+      let data = __WEBPACK_IMPORTED_MODULE_9__demo_mockup_js___default.a;
+      console.log('_mockup=', __WEBPACK_IMPORTED_MODULE_9__demo_mockup_js___default.a);
+      data.possibleCustomers = data.Customers.slice(0);
+      let array = ['EPIC'];
+      data.Customers.forEach((item, i) => {
+        if (item.Category == 'EPIC') array.push(item.Name);
       });
+      array.push('add New');
+      data.patientNames = array.slice(0);
+      const isPatient = tempDNIS === patient_no;
+      const isProvider = tempDNIS === provider_no;
+      // if (isProvider) {
+      //   data.Customers[0].Name = 'Nancy Snyder';
+      //   data.Customers[0].PhotoUrl = 'img/nancy.png';
+      // }
+      if (tempDNIS === "2148576719") {
+        // Load Adam Profile
+        response = { data: {
+            "tempDNIS": "9722345678",
+            "status": "used",
+            "destinationNo": "214-222-3333",
+            "destinationName": "Urologist",
+            "patientName": "Adam Isakson",
+            "patientMRN": "E234567",
+            "callerName": "Adam Isakson",
+            "callerPhone": "972-444-5555",
+            "callerType": "Patient",
+            "notes": "",
+            "phantom1": "",
+            "phantom2": "",
+            "phantom3": ""
+          } };
+        data.Customers = data.AdamProfile.slice(0, 1);
+      }
+      if (isProvider || isPatient) {
+        data.Customers = data.Customers.slice(0, 1);
+      }
+
+      data.isPatient = isPatient;
+      data.isProvider = isProvider;
+      data.isAdam = tempDNIS === "2148576719";
+      appData = Object.assign(appData, data);
+
+      if (tempDNIS === "") {
+        vm.isBlank = true;
+      } else {
+
+        const responseData = response.data;
+        vm.callerName = responseData.callerName;
+        vm.callerPhone = responseData.callerPhone;
+        vm.callerType = responseData.callerType;
+        vm.callerNotes = responseData.notes;
+        const _patientName = responseData.patientName;
+        if (_patientName.indexOf('Sarah') > -1) vm.activePacient = 1;else if (_patientName.indexOf('Johns') > -1 || _patientName.indexOf('Adam') > -1) vm.activePacient = 0;else if (_patientName.indexOf('Grace') > -1) vm.activePacient = 2;else vm.activePacient = 3;
+        vm.callerTransferLocation = responseData.phantom1;
+        vm.callerHospital = responseData.phantom2;
+        vm.releaseTempDNIS(tempDNIS);
+      }
+      App.$mount('#app');
 
       // }).catch(function (error) {
       //   // handle error
@@ -43676,9 +43695,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_search_provider_caller_info_vue__ = __webpack_require__(151);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_37cdce26_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_search_provider_caller_info_vue__ = __webpack_require__(651);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_37cdce26_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_search_provider_caller_info_vue__ = __webpack_require__(652);
 function injectStyle (ssrContext) {
-  __webpack_require__(424)
+  __webpack_require__(425)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -71758,7 +71777,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_13bfbbee_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_placeInput_vue__ = __webpack_require__(645);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_13bfbbee_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_vue_loader_lib_selector_type_template_index_0_placeInput_vue__ = __webpack_require__(646);
 var normalizeComponent = __webpack_require__(1)
 /* script */
 
@@ -71903,9 +71922,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_answering_service_vue__ = __webpack_require__(127);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_170bb762_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_answering_service_vue__ = __webpack_require__(647);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_170bb762_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_answering_service_vue__ = __webpack_require__(648);
 function injectStyle (ssrContext) {
-  __webpack_require__(420)
+  __webpack_require__(421)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -72088,9 +72107,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_statement_review_vue__ = __webpack_require__(133);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_417b1cce_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_statement_review_vue__ = __webpack_require__(653);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_417b1cce_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_statement_review_vue__ = __webpack_require__(654);
 function injectStyle (ssrContext) {
-  __webpack_require__(426)
+  __webpack_require__(427)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -72378,9 +72397,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_encounters_vue__ = __webpack_require__(140);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_12f89366_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_encounters_vue__ = __webpack_require__(644);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_12f89366_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_encounters_vue__ = __webpack_require__(645);
 function injectStyle (ssrContext) {
-  __webpack_require__(418)
+  __webpack_require__(419)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -72415,9 +72434,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_insurance_verification_vue__ = __webpack_require__(142);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3e8d9492_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_insurance_verification_vue__ = __webpack_require__(652);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3e8d9492_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_insurance_verification_vue__ = __webpack_require__(653);
 function injectStyle (ssrContext) {
-  __webpack_require__(425)
+  __webpack_require__(426)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -72637,9 +72656,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_update_referral_vue__ = __webpack_require__(152);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_20cb6802_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_update_referral_vue__ = __webpack_require__(649);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_20cb6802_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_update_referral_vue__ = __webpack_require__(650);
 function injectStyle (ssrContext) {
-  __webpack_require__(422)
+  __webpack_require__(423)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -72711,9 +72730,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_pharmacy_form_vue__ = __webpack_require__(155);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_25b3d01e_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_pharmacy_form_vue__ = __webpack_require__(650);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_25b3d01e_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_pharmacy_form_vue__ = __webpack_require__(651);
 function injectStyle (ssrContext) {
-  __webpack_require__(423)
+  __webpack_require__(424)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -72822,9 +72841,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_sidebar_vue__ = __webpack_require__(158);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_42e1ede8_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__ = __webpack_require__(654);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_11c6621e_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__ = __webpack_require__(644);
 function injectStyle (ssrContext) {
-  __webpack_require__(427)
+  __webpack_require__(418)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -72842,7 +72861,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_sidebar_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_42e1ede8_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_11c6621e_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_sidebar_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -72859,9 +72878,9 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_scheduling_vue__ = __webpack_require__(159);
 /* unused harmony reexport namespace */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1422415f_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_scheduling_vue__ = __webpack_require__(646);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1422415f_hasScoped_false_transformToRequire_img_src_div_data_src_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_scheduling_vue__ = __webpack_require__(647);
 function injectStyle (ssrContext) {
-  __webpack_require__(419)
+  __webpack_require__(420)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -72958,13 +72977,23 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.pacients)?_c('aside',{staticClass:"sidebar"},[_c('transition',{attrs:{"name":"fade","mode":"out-in"}},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"content__box"},[_c('search-patient-caller-info',{attrs:{"show":_vm.$root.currentShowPatientCallerInfo}})],1)])]),_c('transition',{attrs:{"name":"fade","mode":"out-in"}},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"content__box"},[_c('search-provider-caller-info',{attrs:{"show":_vm.$root.currentShowProviderCallerInfo}})],1)])]),_c('transition',{attrs:{"name":"fade","mode":"out-in"}},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"content__box"},[_c('search-customer-info',{attrs:{"show":_vm.$root.currentShowSearchCustomerInfo}})],1)])]),(_vm.$root._data.isPatient === true)?_c('div',{staticClass:"sidebar__title"},[_vm._v("Caller Information"),(_vm.$root._data.isPatient === true || _vm.$root._data.isProvider === true)?_c('a',{staticClass:"content__top-action caller__search-icon",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.showSearchPatientCallerInfo()}}},[_c('svg',{staticClass:"ico-svg__search-patient"},[_c('use',{attrs:{"xlink:href":"#search"}})])]):_vm._e()]):_vm._e(),(_vm.$root._data.isProvider === true)?_c('div',{staticClass:"sidebar__title"},[_vm._v("Caller Information"),(_vm.$root._data.isPatient === true || _vm.$root._data.isProvider === true)?_c('a',{staticClass:"content__top-action caller__search-icon",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.showSearchProviderCallerInfo()}}},[_c('svg',{staticClass:"ico-svg__search-patient"},[_c('use',{attrs:{"xlink:href":"#search"}})])]):_vm._e()]):_vm._e(),(_vm.$root._data.isPatient === true)?_c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Caller Name")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"placeholder":_vm.$root._data.isAdam === true ? 'Adam Isakson' : _vm.$store.state.chosenPatient.name,"options":[""],"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.getCurrentIndexPacient}})],1),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Caller Phone #")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.$store.state.chosenPatient.telephone}})]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Call Type")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",attrs:{"placeholder":_vm.$store.state.chosenPatient.type,"options":['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician'],"searchable":false,"allowEmpty":false,"showLabels":false}})],1)]):_vm._e(),(_vm.$root._data.isProvider === true)?_c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Caller Name")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"placeholder":_vm.$store.state.chosenProvider.name,"options":[""],"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.getCurrentIndexPacient}})],1),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Caller Phone #")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.$store.state.chosenProvider.telephone}})]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Call Type")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",attrs:{"placeholder":_vm.$store.state.chosenProvider.role,"options":['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician'],"searchable":false,"allowEmpty":false,"showLabels":false}})],1)]):_vm._e(),(_vm.$root._data.isPatient === true || _vm.$root._data.isProvider === true)?_c('div',{staticClass:"sidebar__divider"}):_vm._e(),_c('div',{staticClass:"sidebar__title"},[_vm._v("Customer Information"),(_vm.$root._data.isPatient === true || _vm.$root._data.isProvider === true)?_c('a',{staticClass:"content__top-action customer__search-icon",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.showSearchCustomerInfo()}}},[_c('svg',{staticClass:"ico-svg__search-patient"},[_c('use',{attrs:{"xlink:href":"#search"}})])]):_vm._e()]),(_vm.$root._data.isPatient === false && _vm.$root._data.isProvider === false)?_c('div',[_c('div',{staticClass:"l-sidebar__userpic"},[_c('div',{staticClass:"sidebar__userpic"},[_c('img',{staticClass:"sidebar__userpic-image",attrs:{"src":_vm.pacients[_vm.currentPacient].PhotoUrl}}),_c('a',{staticClass:"sidebar__userpic-info",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.currentShowSubBox = 'patient-info'}}},[_c('svg',{staticClass:"ico-svg ico-svg__info"},[_c('use',{attrs:{"xlink:href":"#info"}})])])])]),_c('div',{staticClass:"sidebar__note-userpic"},[_vm._v("Number of Matches ("),_c('b',[_vm._v(_vm._s(_vm.sizePacients))]),_vm._v(")")]),_c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Customer Name")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":_vm.namesPacient,"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientName),callback:function ($$v) {_vm.currentPacientName=$$v},expression:"currentPacientName"}})],1),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Date of Birth")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm._f("moment")(_vm.pacients[_vm.currentPacient].DateOfBirth,"MMM DD, YYYY")))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("MRN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].MRN)+"    ")])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("SSN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].SSN))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Phone Number")]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PhoneNumber))])])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Address")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Address.Line1)+", ")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(" "+_vm._s(_vm.pacients[_vm.currentPacient].Address.Line2))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Primary Care Provider")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Phone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Phone))])])]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Treatment Team")]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].TreatmentTeam[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].TreatmentTeam[0].PhoneNumber))])])]):_vm._e(),(_vm.pacients[_vm.currentPacient].Provider.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Provider")]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Provider[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].Provider[0].PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Provider[0].PhoneNumber))])])])]):_vm._e()]),_c('div',{staticClass:"sidebar__success"},[_c('div',{staticClass:"sub-popup-menu"},[_vm._m(0),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('http://10.1.74.36:2230/EPIC_InCustomer/patient_scheduling/search.html')}}},[_vm._v("Customer Search")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('https://i.ytimg.com/vi/RIsVxJWuQ8Y/maxresdefault.jpg')}}},[_vm._v("Customer Information")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.replaceNewWindow('alert:test')}}},[_vm._v("Appointments Create")])])])])]):_vm._e(),(_vm.$root._data.isPatient === true || (_vm.$root._data.isProvider === true && _vm.$store.state.customerSelected === true))?_c('div',[_c('div',{staticClass:"l-sidebar__userpic"},[_c('div',{staticClass:"sidebar__userpic"},[_c('img',{staticClass:"sidebar__userpic-image",attrs:{"src":_vm.$root._data.isAdam === true ? 'img/adam.png' : _vm.$store.state.chosenCustomer.PhotoUrl}}),_c('a',{staticClass:"sidebar__userpic-info",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.currentShowSubBox = 'patient-info'}}},[_c('svg',{staticClass:"ico-svg ico-svg__info"},[_c('use',{attrs:{"xlink:href":"#info"}})])])])]),_c('div',{staticClass:"sidebar__note-userpic"},[_vm._v("Number of Matches ("),_c('b',[_vm._v(_vm._s(_vm.sizePacients))]),_vm._v(")")]),_c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Customer Name")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":_vm.namesPacient,"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.$root._data.isAdam === true ? 'Adam Isakson' : _vm.$store.state.chosenCustomer.Name),callback:function ($$v) {_vm.$set(_vm.$root._data.isAdam === true ? 'Adam Isakson' : _vm.$store.state.chosenCustomer, "Name", $$v)},expression:"$root._data.isAdam === true ? 'Adam Isakson' : $store.state.chosenCustomer.Name"}})],1),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Date of Birth")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm._f("moment")(_vm.$store.state.chosenCustomer.DateOfBirth,"MMM DD, YYYY")))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("MRN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.MRN)+"    ")])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("SSN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.SSN))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Phone Number")]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.$store.state.chosenCustomer.PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.PhoneNumber))])])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Address")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.Address.Line1)+", ")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(" "+_vm._s(_vm.$store.state.chosenCustomer.Address.Line2))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Primary Care Provider")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.PrimaryCareProvider.Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.$store.state.chosenCustomer.PrimaryCareProvider.Phone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.PrimaryCareProvider.Phone))])])]),(_vm.$store.state.chosenCustomer.TreatmentTeam.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Treatment Team")]),(_vm.$store.state.chosenCustomer.TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.TreatmentTeam[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.TreatmentTeam[0].PhoneNumber))])])]):_vm._e(),(_vm.$store.state.chosenCustomer.Provider.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Provider")]),(_vm.$store.state.chosenCustomer.TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.Provider[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.$store.state.chosenCustomer.Provider[0].PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.Provider[0].PhoneNumber))])])])]):_vm._e()]),_c('div',{staticClass:"sidebar__success"},[_c('div',{staticClass:"sub-popup-menu"},[_vm._m(1),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('http://10.1.74.36:2230/EPIC_InCustomer/patient_scheduling/search.html')}}},[_vm._v("Customer Search")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('https://i.ytimg.com/vi/RIsVxJWuQ8Y/maxresdefault.jpg')}}},[_vm._v("Customer Information")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.replaceNewWindow('alert:test')}}},[_vm._v("Appointments Create")])])])])]):_vm._e()],1):_vm._e()}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary mod--block",attrs:{"href":"#3"}},[_vm._v(" Screen pop")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary mod--block",attrs:{"href":"#3"}},[_vm._v(" Screen pop")])])}]
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 645 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"appointment"},[_c('div',{staticClass:"appointment__top"},[_c('div',{staticClass:"appointment__top-filter"},[_c('svg',{staticClass:"ico-svg ico-svg__filter-results-button"},[_c('use',{attrs:{"xlink:href":"#filter-results-button"}})]),_c('span',[_vm._v("All Encounters")])])]),_c('table',{staticClass:"appointment__table"},[_vm._m(0),_vm._l((_vm.patients.encounters),function(item,index){return _c('tr',[_c('td',[_vm._v(_vm._s(item.type))]),_c('td',[_vm._v(_vm._s(item.date))]),_c('td',[_vm._v(_vm._s(item.eventType))]),_c('td',[_vm._v(_vm._s(item.patientClass))]),_c('td',[_vm._v(_vm._s(item.admissionType))]),_c('td',[_vm._v(_vm._s(item.dischargeDisposition))])])})],2)])}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th',[_vm._v("Type")]),_c('th',[_vm._v("Date")]),_c('th',[_vm._v("Event Type")]),_c('th',[_vm._v("Customer Class")]),_c('th',[_vm._v("Admission Type")]),_c('th',[_vm._v("Discharge Disposition")])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 645 */
+/* 646 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72974,7 +73003,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 646 */
+/* 647 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72984,7 +73013,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 647 */
+/* 648 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72994,7 +73023,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 648 */
+/* 649 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73004,7 +73033,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 649 */
+/* 650 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73014,7 +73043,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 650 */
+/* 651 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73024,7 +73053,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 651 */
+/* 652 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73034,7 +73063,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 652 */
+/* 653 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73044,22 +73073,12 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 653 */
+/* 654 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"statement"},[_c('div',{staticClass:"statement__top-active"},[_c('div',{staticClass:"statement__top-active-left"},[_c('div',{staticClass:"statement__top-active-title"},[_c('div',{staticClass:"span"},[_vm._v("Statement: "+_vm._s(_vm.item.StatementId))])])])]),_c('div',{staticClass:"statement__top-active"},[_c('div',{staticClass:"statement__top-active-left"},[_c('div',{staticClass:"statement__top-active-title"},[_c('div',{staticClass:"title"},[_vm._v("Payment Due Date: "+_vm._s(_vm.item.Date))])])])]),_c('table',{staticClass:"statement__table"},[_vm._m(0),_vm._l((_vm.item.reviews),function(review,index){return _c('tr',[_c('td',[_vm._v(_vm._s(review.date))]),_c('td',[_vm._v(_vm._s(review.description))]),_c('td',[_vm._v(_vm._s(review.amount))]),_c('td',[_vm._v(_vm._s(review.insurance))]),_c('td',[_vm._v(_vm._s(review.currentBalance))]),_c('td',[_vm._v(_vm._s(review.lineItem))])])}),_c('tr',[_c('td'),_c('td',[_vm._v("ENCOUNTER TOTAL")]),_c('td',[_vm._v(_vm._s(_vm.item.total.amount))]),_c('td',[_vm._v(_vm._s(_vm.item.total.insurance))]),_c('td',[_vm._v(_vm._s(_vm.item.total.currentBalance))]),_c('td',[_vm._v(_vm._s(_vm.item.total.lineItem))])])],2),_vm._m(1),_c('textarea',{staticClass:"ui-textarea ui-textarea--skin-default ui-textarea--theme-default"}),_c('modal',{ref:"modalimage"},[_c('div',{staticClass:"modal__content"},[_c('img',{attrs:{"src":"http://uhealthsystem.com/images/content/UMH-statement.jpg"}}),_c('div',{staticClass:"modal-appointment__row"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary-border",attrs:{"href":"#3"},on:{"click":function($event){_vm.$refs.modalimage.close()}}},[_vm._v("Cancel")])])])])],1)}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',[_c('th',[_vm._v("Date")]),_c('th',[_vm._v("Description of Service")]),_c('th',[_vm._v("Amount")]),_c('th',[_vm._v("Insurance")]),_c('th',[_vm._v("Current Balance")]),_c('th',[_vm._v("Line Item Balance")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"statement__top-active"},[_c('div',{staticClass:"statement__top-active-left"},[_c('div',{staticClass:"statement__top-active-title"},[_c('div',{staticClass:"span"},[_vm._v("  Notes")])])])])}]
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 654 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.pacients)?_c('aside',{staticClass:"sidebar"},[_c('transition',{attrs:{"name":"fade","mode":"out-in"}},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"content__box"},[_c('search-patient-caller-info',{attrs:{"show":_vm.$root.currentShowPatientCallerInfo}})],1)])]),_c('transition',{attrs:{"name":"fade","mode":"out-in"}},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"content__box"},[_c('search-provider-caller-info',{attrs:{"show":_vm.$root.currentShowProviderCallerInfo}})],1)])]),_c('transition',{attrs:{"name":"fade","mode":"out-in"}},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"content__box"},[_c('search-customer-info',{attrs:{"show":_vm.$root.currentShowSearchCustomerInfo}})],1)])]),(_vm.$root._data.isPatient === true)?_c('div',{staticClass:"sidebar__title"},[_vm._v("Caller Information"),(_vm.$root._data.isPatient === true || _vm.$root._data.isProvider === true)?_c('a',{staticClass:"content__top-action caller__search-icon",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.showSearchPatientCallerInfo()}}},[_c('svg',{staticClass:"ico-svg__search-patient"},[_c('use',{attrs:{"xlink:href":"#search"}})])]):_vm._e()]):_vm._e(),(_vm.$root._data.isProvider === true)?_c('div',{staticClass:"sidebar__title"},[_vm._v("Caller Information"),(_vm.$root._data.isPatient === true || _vm.$root._data.isProvider === true)?_c('a',{staticClass:"content__top-action caller__search-icon",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.showSearchProviderCallerInfo()}}},[_c('svg',{staticClass:"ico-svg__search-patient"},[_c('use',{attrs:{"xlink:href":"#search"}})])]):_vm._e()]):_vm._e(),(_vm.$root._data.isPatient === true)?_c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Caller Name")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"placeholder":_vm.$store.state.chosenPatient.name,"options":[""],"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.getCurrentIndexPacient}})],1),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Caller Phone #")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.$store.state.chosenPatient.telephone}})]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Call Type")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",attrs:{"placeholder":_vm.$store.state.chosenPatient.type,"options":['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician'],"searchable":false,"allowEmpty":false,"showLabels":false}})],1)]):_vm._e(),(_vm.$root._data.isProvider === true)?_c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Caller Name")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"placeholder":_vm.$store.state.chosenProvider.name,"options":[""],"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.getCurrentIndexPacient}})],1),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Caller Phone #")]),_c('input',{staticClass:"infovalue",attrs:{"readonly":"readonly"},domProps:{"value":_vm.$store.state.chosenProvider.telephone}})]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Call Type")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default inline-block",attrs:{"placeholder":_vm.$store.state.chosenProvider.role,"options":['Customer', 'Parent', 'Family', 'Agent', 'Nurse', 'Physician'],"searchable":false,"allowEmpty":false,"showLabels":false}})],1)]):_vm._e(),(_vm.$root._data.isPatient === true || _vm.$root._data.isProvider === true)?_c('div',{staticClass:"sidebar__divider"}):_vm._e(),_c('div',{staticClass:"sidebar__title"},[_vm._v("Customer Information"),(_vm.$root._data.isPatient === true || _vm.$root._data.isProvider === true)?_c('a',{staticClass:"content__top-action customer__search-icon",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.showSearchCustomerInfo()}}},[_c('svg',{staticClass:"ico-svg__search-patient"},[_c('use',{attrs:{"xlink:href":"#search"}})])]):_vm._e()]),(_vm.$root._data.isPatient === false && _vm.$root._data.isProvider === false)?_c('div',[_c('div',{staticClass:"l-sidebar__userpic"},[_c('div',{staticClass:"sidebar__userpic"},[_c('img',{staticClass:"sidebar__userpic-image",attrs:{"src":_vm.pacients[_vm.currentPacient].PhotoUrl}}),_c('a',{staticClass:"sidebar__userpic-info",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.currentShowSubBox = 'patient-info'}}},[_c('svg',{staticClass:"ico-svg ico-svg__info"},[_c('use',{attrs:{"xlink:href":"#info"}})])])])]),_c('div',{staticClass:"sidebar__note-userpic"},[_vm._v("Number of Matches ("),_c('b',[_vm._v(_vm._s(_vm.sizePacients))]),_vm._v(")")]),_c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Customer Name")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":_vm.namesPacient,"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientName),callback:function ($$v) {_vm.currentPacientName=$$v},expression:"currentPacientName"}})],1),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Date of Birth")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm._f("moment")(_vm.pacients[_vm.currentPacient].DateOfBirth,"MMM DD, YYYY")))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("MRN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].MRN)+"    ")])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("SSN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].SSN))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Phone Number")]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PhoneNumber))])])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Address")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Address.Line1)+", ")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(" "+_vm._s(_vm.pacients[_vm.currentPacient].Address.Line2))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Primary Care Provider")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Phone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].PrimaryCareProvider.Phone))])])]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Treatment Team")]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].TreatmentTeam[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].TreatmentTeam[0].PhoneNumber))])])]):_vm._e(),(_vm.pacients[_vm.currentPacient].Provider.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Provider")]),(_vm.pacients[_vm.currentPacient].TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Provider[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.pacients[_vm.currentPacient].Provider[0].PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.pacients[_vm.currentPacient].Provider[0].PhoneNumber))])])])]):_vm._e()]),_c('div',{staticClass:"sidebar__success"},[_c('div',{staticClass:"sub-popup-menu"},[_vm._m(0),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('http://10.1.74.36:2230/EPIC_InCustomer/patient_scheduling/search.html')}}},[_vm._v("Customer Search")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('https://i.ytimg.com/vi/RIsVxJWuQ8Y/maxresdefault.jpg')}}},[_vm._v("Customer Information")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.replaceNewWindow('alert:test')}}},[_vm._v("Appointments Create")])])])])]):_vm._e(),(_vm.$root._data.isPatient === true || (_vm.$root._data.isProvider === true && _vm.$store.state.customerSelected === true))?_c('div',[_c('div',{staticClass:"l-sidebar__userpic"},[_c('div',{staticClass:"sidebar__userpic"},[_c('img',{staticClass:"sidebar__userpic-image",attrs:{"src":_vm.$store.state.chosenCustomer.PhotoUrl}}),_c('a',{staticClass:"sidebar__userpic-info",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.$root.currentShowSubBox = 'patient-info'}}},[_c('svg',{staticClass:"ico-svg ico-svg__info"},[_c('use',{attrs:{"xlink:href":"#info"}})])])])]),_c('div',{staticClass:"sidebar__note-userpic"},[_vm._v("Number of Matches ("),_c('b',[_vm._v(_vm._s(_vm.sizePacients))]),_vm._v(")")]),_c('div',{staticClass:"l-sidebar__section"},[_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Customer Name")]),_c('multiselect',{staticClass:"ui-multiselect ui-multiselect--default",attrs:{"options":_vm.namesPacient,"searchable":false,"allowEmpty":false,"showLabels":false},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.$store.state.chosenCustomer.Name),callback:function ($$v) {_vm.$set(_vm.$store.state.chosenCustomer, "Name", $$v)},expression:"$store.state.chosenCustomer.Name"}})],1),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Date of Birth")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm._f("moment")(_vm.$store.state.chosenCustomer.DateOfBirth,"MMM DD, YYYY")))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("MRN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.MRN)+"    ")])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("SSN")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.SSN))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Phone Number")]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.$store.state.chosenCustomer.PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.PhoneNumber))])])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Address")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.Address.Line1)+", ")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(" "+_vm._s(_vm.$store.state.chosenCustomer.Address.Line2))])]),_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Primary Care Provider")]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.PrimaryCareProvider.Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.$store.state.chosenCustomer.PrimaryCareProvider.Phone.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.PrimaryCareProvider.Phone))])])]),(_vm.$store.state.chosenCustomer.TreatmentTeam.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Treatment Team")]),(_vm.$store.state.chosenCustomer.TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.TreatmentTeam[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.TreatmentTeam[0].PhoneNumber))])])]):_vm._e(),(_vm.$store.state.chosenCustomer.Provider.length)?_c('div',{staticClass:"sidebar__section"},[_c('div',{staticClass:"sidebar__section--note"},[_vm._v("Provider")]),(_vm.$store.state.chosenCustomer.TreatmentTeam.lenght >1)?_c('div',[_c('multiselect',{attrs:{"options":_vm.pacients,"label":"Name"},on:{"input":_vm.getCurrentIndexPacient},model:{value:(_vm.currentPacientTeam),callback:function ($$v) {_vm.currentPacientTeam=$$v},expression:"currentPacientTeam"}})],1):_c('div',[_c('div',{staticClass:"sidebar__section--info-select"},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.Provider[0].Name))]),_c('div',{staticClass:"sidebar__section--info"},[_c('a',{staticClass:"sidebar__section--info-link",attrs:{"href":'tel:'+_vm.$store.state.chosenCustomer.Provider[0].PhoneNumber.replace(/[^0-9]+/g,'')}},[_vm._v(_vm._s(_vm.$store.state.chosenCustomer.Provider[0].PhoneNumber))])])])]):_vm._e()]),_c('div',{staticClass:"sidebar__success"},[_c('div',{staticClass:"sub-popup-menu"},[_vm._m(1),_c('div',{staticClass:"sub-popup-menu__list"},[_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('http://10.1.74.36:2230/EPIC_InCustomer/patient_scheduling/search.html')}}},[_vm._v("Customer Search")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.openNewWindow('https://i.ytimg.com/vi/RIsVxJWuQ8Y/maxresdefault.jpg')}}},[_vm._v("Customer Information")]),_c('a',{staticClass:"sub-popup-menu__item",attrs:{"href":"#3"},on:{"click":function($event){$event.preventDefault();_vm.replaceNewWindow('alert:test')}}},[_vm._v("Appointments Create")])])])])]):_vm._e()],1):_vm._e()}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary mod--block",attrs:{"href":"#3"}},[_vm._v(" Screen pop")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"sub-popup-menu__action"},[_c('a',{staticClass:"ui-btn ui-btn--skin-default ui-btn--theme-primary mod--block",attrs:{"href":"#3"}},[_vm._v(" Screen pop")])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
@@ -80726,6 +80745,453 @@ var Datepicker = {render: function(){var _vm=this;var _h=_vm.$createElement;var 
 /***/ (function(module, exports) {
 
 let data= {
+  "AdamProfile": [{
+    "screenPopLinkInfo": "http://10.3.74.119/openemr/interface/patient_file/summary/demographics.php?set_pid=1",
+    "Category": "EPIC",
+    "Name": "Adam Isakson",
+    "DateOfBirth": "1981-07-01 00:00:00",
+    "MRN": 7499281,
+    "SSN": "***-**-6789",
+    "PhoneNumber": "+1 214 701 5489",
+    "PhotoUrl": "img/adam.png",
+    "PrimaryCareProvider": {
+      "Name": "Mark Williams, MD",
+      "Phone": "+1 208 975 3874"
+    },
+    "medicalHistory": [
+      "> Cardiac left ventricular ejection fraction 21-40 percent",
+      "> Sleeeptalking"
+    ],
+    "activeProblems": [
+      "> Protein-calorie malnutrition, severe",
+      "> Moderate asthma without complication"
+    ],
+    "allergies": [
+      {
+        "name": "IODINE",
+        "description": "IODINE",
+        "dateEntered": "Aug 08, 2018",
+        "dateNoted": "Aug 08, 2018",
+        "reactions": "Itchy rash that comes on slowly",
+        "reactionComments": "Direct contact with skin results in small bumps",
+        "severity": "Moderate",
+        "type": "Intolerance"
+      },
+      {
+        "name": "PENICILLIN",
+        "description": "PENICILLIN",
+        "dateEntered": "Jul 13, 2018",
+        "dateNoted": "Jul 13, 2018",
+        "reactions": "Hives and itchy eyes",
+        "reactionComments": "Overdose",
+        "severity": "Low",
+        "type": "Tolerant"
+      }
+    ],
+    "encounters": [
+      {
+        "type": "Evaluation",
+        "date": "Mar 05, 2017",
+        "eventType": "Admission",
+        "patientClass": "In Customer",
+        "admissionType": "Elective",
+        "dischargeDisposition": "30 - Still Customer"
+      },
+      {
+        "type": "Evaluation",
+        "date": "Mar 15, 2018",
+        "eventType": "Transfer In",
+        "patientClass": "In Customer",
+        "admissionType": "Elective",
+        "dischargeDisposition": "02 - Transferred"
+      }
+    ],
+    "Address": {
+      "Line1": "3453 T Ave, Fort Worth",
+      "Line2": "TX 76179, USA"
+    },
+    "TreatmentTeam": [
+    ],
+    "Provider": [
+      {
+        "Name": "United Healthcare (UHC Parkway, GA,66552)",
+        "PhoneNumber": "+1 216 411 8765"
+      }
+    ],
+    "InsuranceVerification": {
+      "InsuranceName": "Adam Isakson",
+      "GroupNum": "#45ABC",
+      "NetworkNum": "#45ABC",
+      "PolicyNum": "#022141242",
+      "IssueDate": "20-Aug-2016 00:00:00"
+    },
+    "Vitals": {
+      "Height": 168,
+      "Weight": 78,
+      "RespirationRate": 58,
+      "BMI": 18.9,
+      "Pulse": 210,
+      "BloodPressureLo": 127,
+      "BloodPressureHi": 145
+    },
+    "Physician": {
+      "Name": "Mark Williams, MD",
+      "PrimaryPhone": "+1 208 975 3874",
+      "Clinic": "Clarit Clinic",
+      "Specialty": "PCP",
+      "EmergencyPhone": "+1 800 111 2222"
+    },
+    "Status": {
+      "Email": "adam.isak1@gmail.com",
+      "Race": "White",
+      "Ethnicity": "Not Hispanic Or Latino",
+      "Religion": "Christian (non-Catholic, non-Specific)",
+      "MaritalStatus": "Married",
+      "EmergencyContact": {
+        "Relation": "Wife",
+        "Name": "Sarah Doe",
+        "Phone": "+1 (972) 293 9101"
+      }
+    },
+    "Location": {
+      "DropdownRecords": [
+        {
+          "Name": "Customer Geo Location",
+          "Address": "1431 T Ave, Fort Worth, TX 76179",
+          "Position": {"lat": 32.944827, "lng": -96.645879},
+          "Phone": "+1 (214)-701-5489",
+          "Hours": "N / A",
+          "Markers":[
+            {
+              "Name": "Customer Geo Location"
+            , "Address": "1272 Belt Line Rd, Garland TX 75040"
+            , "Position": {"lat": 32.944827, "lng": -96.645879}
+            , "Phone": "+1 (214)-701-5489"
+            }
+          ]
+        },
+        {
+          "Name": "Pharmacies In Area",
+          "Address": "1272 Belt Line Rd, Garland TX 75040",
+          "Position": {"lat": 32.944827, "lng": -96.645879},
+          "Phone": "+1 (972) 495-1933",
+          "Hours": "Open 9 AM to 10 PM",
+          "Markers":[
+            {
+              "Name": "CVS Pharmacy"
+            , "Address": "1372 Belt Line Rd"
+            , "Position": {"lat": 32.944527, "lng": -96.646960}
+            ,"Phone": "+1 (972) 495-1934"
+            } ,
+            {
+              "Name": "Walmart Pharmacy"
+            , "Address": "101 W Buckingham Rd"
+            , "Position": {"lat": 32.932013, "lng": -96.631611}
+            ,"Phone": "+1 (972) 495-1935"
+            } ,
+            {
+              "Name": "Walgreens"
+            , "Address": "2614 Lavon Dr"
+            , "Position": {"lat": 32.939566, "lng": -96.621946}
+            ,"Phone": "+1 (972) 495-1936"
+            } ,
+            {
+              "Name": "Walgreens"
+            , "Address": "1902 N Jupiter Rd"
+            , "Position": {"lat": 32.930183, "lng": -96.682285}
+            ,"Phone": "+1 (972) 495-1937"
+            } ,
+            {
+              "Name": "CVS Pharmacy - Target"
+            , "Address": "5301 N Garland Ave"
+            , "Position": {"lat": 32.965650, "lng": -96.646806}
+            ,"Phone": "+1 (972) 495-1938"
+            } ,
+            {
+              "Name": "Walmart Pharmacy"
+            , "Address": "5302 N Garland Ave"
+            , "Position": {"lat": 32.962346, "lng": -96.642499}
+            ,"Phone": "+1 (972) 495-1939"
+            }
+          ]
+        },
+        {
+          "Name": "Hospitals In Area",
+          "Address": "7 Medical Pkwy, Dallas, TX 75234",
+          "Position": {"lat": 32.944827, "lng": -96.645879},
+          "Phone": "+(972) 888-7000",
+          "Hours": "Open 9AM to 9PM",
+          "Markers":[
+            {
+              "Name": "Baylor Scott & White Medical Center"
+            , "Address": "2300 Marie Curie Blvd"
+            , "Position": {"lat": 32.918755, "lng": -96.661963}
+            , "Phone": "+(972) 888-7001",
+            } ,
+            {
+              "Name": "Select Specialty Hospital - Dallas Garland"
+            , "Address": "2300 Marie Curie Drive Floors 3E & 3W"
+            , "Position": {"lat": 32.918793, "lng": -96.662041}
+            , "Phone": "+(972) 888-7002",
+            } ,
+            {
+              "Name": "Children's Health Pediatric Group Garland"
+            , "Address": "455 N Garland Ave"
+            , "Position": {"lat": 28.548467, "lng": -81.381385}
+            , "Phone": "+(972) 888-7003",
+            } ,
+            {
+              "Name": "Sundance Hospital Dallas"
+            , "Address": "2696 W Walnut St"
+            , "Position": {"lat": 32.913402, "lng": -96.670117}
+            , "Phone": "+(972) 888-7004",
+            }
+          ]
+        }
+      ]
+    },
+    "PastAppointments": [
+      {
+        "Date": "7-01-2018 15:00:00",
+        "Time": "12:00:00",
+        "Department": "SpinSci Clinic",
+        "Provider": "Administrator",
+        "VisitType": "Office Visit",
+        "VisitReason": "New Customer",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "false",
+          "Interpreter Language": "None",
+          "Status": "Arrived Late"
+        }
+      }
+    ],
+    "CurrentAppointments": [
+      {
+        "Date": "8-20-2018 15:00:00",
+        "Time": "15:00:00",
+        "Department": "Radiology",
+        "Provider": "Dr. Steve Angler",
+        "VisitType": "Office Visit",
+        "VisitReason": "No Comments",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "false",
+          "Interpreter Language": "None",
+          "Status": "Arrived Late"
+        }
+      },
+      {
+        "Date": "8-25-2018 14:30:00",
+        "Time": "13:00:00",
+        "Department": "General",
+        "Provider": "Dr. John Lee",
+        "VisitType": "Office Visit",
+        "VisitReason": "Knee Pain",
+        "Appointment Details": {
+          "Interpreter Required": "Yes",
+          "IsRequired": "True",
+          "Interpreter Language": "Mandarin",
+          "Status": "Checked Out"
+        }
+      },
+      {
+        "Date": "9-01-2018 14:00:00",
+        "Time": "11:00:00",
+        "Department": "Kent Health Center",
+        "Provider": "Dr. Mary John",
+        "VisitType": "Physical",
+        "VisitReason": "No Comments",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "True",
+          "Interpreter Language": "None",
+          "Status": "Checked Out"
+        }
+      },
+      {
+        "Date": "10-01-2018 14:00:00",
+        "Time": "11:00:00",
+        "Department": "Kent Health Center",
+        "Provider": "Dr. John Lee",
+        "VisitType": "Physical",
+        "VisitReason": "No Comments",
+        "Appointment Details": {
+          "Interpreter Required": "No",
+          "IsRequired": "True",
+          "Interpreter Language": "None",
+          "Status": "Checked Out"
+        }
+      }
+    ],
+    "Billing": {
+      "Provider": "United HealthCare",
+      "Plan": "Choice",
+      "Subscriber": "Self",
+      "Street": "3153 T Ave",
+      "City": "Fort Worth",
+      "State": "TX",
+      "ZipCode": "75038",
+      "GroupNum": "52534422",
+      "PolicyNum": "112222456"
+    },
+    "BillHistory": [
+      {
+        "name": " ISAKSON,ADAM ",
+        "status": "Unpaid",
+        "StatementId": "06642326",
+        "CustomerName": "Adam Isakson",
+        "CustomerId": "28724351",
+        "Payer": "United",
+        "ClaimType": "eClaims",
+        "Date": "12/03/2017",
+        "TotalAmount": "848.09",
+        "TotalPaidAmount": "1200.00",
+        "reviews": [
+          {
+            "date": "07/07/2017",
+            "description": "ENCOUNTER 209523",
+            "amount": "",
+            "insurance": "",
+            "currentBalance": "",
+            "lineItem": ""
+          },
+          {
+            "date": "07/07/2017",
+            "description": "815235 OFFICE/OUTPATIENT VISIT",
+            "amount": "$70.00",
+            "insurance": "",
+            "currentBalance": "$38.04",
+            "lineItem": ""
+          },
+          {
+            "date": "07/07/2017",
+            "description": "Adjustment UNITED",
+            "amount": "$31.96",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          },
+          {
+            "date": "07/07/2017",
+            "description": "Payment UNITED",
+            "amount": "$0.00",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          }
+        ],
+        "total": {
+          "amount": "$848.09",
+          "insurance": "$0.00",
+          "currentBalance": "$38.04",
+          "lineItem": "$38.04"
+        }
+      },
+      {
+        "status": "Paid",
+        "StatementId": "02534126",
+        "CustomerName": "Adam Isakson",
+        "CustomerId": "28724351",
+        "Payer": "United",
+        "ClaimType": "eClaims",
+        "Date": "11/02/2016",
+        "TotalAmount": "848.09",
+        "TotalPaidAmount": "1200.00",
+        "reviews": [
+          {
+            "date": "11/11/2017",
+            "description": "ENCOUNTER 109523",
+            "amount": "",
+            "insurance": "",
+            "currentBalance": "",
+            "lineItem": ""
+          },
+          {
+            "date": "11/11/2017",
+            "description": "163235 OFFICE/OUTPATIENT VISIT",
+            "amount": "$70.00",
+            "insurance": "",
+            "currentBalance": "$38.04",
+            "lineItem": ""
+          },
+          {
+            "date": "11/11/2017",
+            "description": "Adjustment UNITED",
+            "amount": "$31.96",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          },
+          {
+            "date": "11/11/2017",
+            "description": "Payment UNITED",
+            "amount": "$0.00",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          }
+        ],
+        "total": {
+          "amount": "$848.09",
+          "insurance": "$0.00",
+          "currentBalance": "$38.04",
+          "lineItem": "$38.04"
+        }
+      },
+      {
+        "status": "Unpaid",
+        "StatementId": "02512426",
+        "CustomerName": "Adam Isakson",
+        "CustomerId": "28724351",
+        "Payer": "United",
+        "ClaimType": "eClaims",
+        "Date": "04/04/2015",
+        "TotalAmount": "848.09",
+        "TotalPaidAmount": "1100.00",
+        "reviews": [
+          {
+            "date": "03/03/2017",
+            "description": "ENCOUNTER 209523",
+            "amount": "",
+            "insurance": "",
+            "currentBalance": "",
+            "lineItem": ""
+          },
+          {
+            "date": "02/02/2017",
+            "description": "815235 OFFICE/OUTPATIENT VISIT",
+            "amount": "$70.00",
+            "insurance": "",
+            "currentBalance": "$38.04",
+            "lineItem": ""
+          },
+          {
+            "date": "01/01/2017",
+            "description": "Adjustment UNITED",
+            "amount": "$31.96",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          },
+          {
+            "date": "01/01/2017",
+            "description": "Payment UNITED",
+            "amount": "$0.00",
+            "insurance": "",
+            "currentBalance": "$",
+            "lineItem": ""
+          }
+        ],
+        "total": {
+          "amount": "$848.09",
+          "insurance": "$0.00",
+          "currentBalance": "$38.04",
+          "lineItem": "$38.04"
+        }
+      }
+    ]
+  }],
   "chosenProvider": {
     "name": "Dr.Nancy Snyder",
     "type": "Provider",
