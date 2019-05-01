@@ -13,7 +13,7 @@
                 .content__box
                     search-customer-info(:show="$root.currentShowSearchCustomerInfo")
 
-        .sidebar__title(v-if="$root._data.isPatient === true") Caller Information
+        .sidebar__title(v-if="$root._data.isPatient === true && $root._data.isAirlineDemo === false") Caller Information
             a(v-if="$root._data.isPatient === true || $root._data.isProvider === true", href="#3", @click.prevent="$root.showSearchPatientCallerInfo()").content__top-action.caller__search-icon
                 svg.ico-svg__search-patient
                     use(xlink:href="#search")
@@ -21,7 +21,7 @@
             a(v-if="$root._data.isPatient === true || $root._data.isProvider === true", href="#3", @click.prevent="$root.showSearchProviderCallerInfo()").content__top-action.caller__search-icon
                 svg.ico-svg__search-patient
                     use(xlink:href="#search")
-        .l-sidebar__section(v-if="$root._data.isPatient === true")
+        .l-sidebar__section(v-if="$root._data.isPatient === true && $root._data.isAirlineDemo === false")
             .sidebar__section
                 .sidebar__section--note Caller Name
                 multiselect(
@@ -70,7 +70,7 @@
                 ).ui-multiselect.ui-multiselect--default.inline-block
         .sidebar__divider(v-if="$root._data.isPatient === true || $root._data.isProvider === true")
         .sidebar__title Customer Information
-            a(v-if="$root._data.isPatient === true || $root._data.isProvider === true", href="#3", @click.prevent="$root.showSearchCustomerInfo()").content__top-action.customer__search-icon
+            a(v-if="($root._data.isPatient === true && $root._data.isAirlineDemo === false) || $root._data.isProvider === true", href="#3", @click.prevent="$root.showSearchCustomerInfo()").content__top-action.customer__search-icon
                 svg.ico-svg__search-patient
                     use(xlink:href="#search")
         div(v-if="$root._data.isPatient === false && $root._data.isProvider === false && $root._data.isAirlineDemo === false")
@@ -223,7 +223,7 @@
                         a(href="#3", @click.prevent="openNewWindow('http://10.1.74.36:2230/EPIC_InCustomer/patient_scheduling/search.html')").sub-popup-menu__item Customer Search
                         a(href="#3", @click.prevent="openNewWindow('https://i.ytimg.com/vi/RIsVxJWuQ8Y/maxresdefault.jpg')").sub-popup-menu__item Customer Information
                         a(href="#3", @click.prevent="replaceNewWindow('alert:test')").sub-popup-menu__item Appointments Create
-        div(v-if="$root._data.isPatient === true || ($root._data.isProvider === true && $store.state.customerSelected === true)")
+        div(v-if="($root._data.isPatient === true && $root._data.isAirlineDemo === false) || ($root._data.isProvider === true && $store.state.customerSelected === true)")
             .l-sidebar__userpic
                 .sidebar__userpic
                     img.sidebar__userpic-image(:src="$root._data.isAdam === true ? 'img/adam.png' : $store.state.chosenCustomer.PhotoUrl")

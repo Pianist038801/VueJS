@@ -1,7 +1,7 @@
 <template lang="pug">
     .content
         .content__top-line
-            h1.title Customer Context
+            h1.title.top Customer Context
         div.customer__context__info
             div Previous Context:
             div April 28, 2019: Voice call  ->  In Trip  ->  routed to agent John
@@ -362,10 +362,16 @@
 <style lang="scss">
     @import '~mixinsSCSS';
 
+    h1.title.top {
+        margin-top: 0;
+
+    }
+
     h1.title {
         margin-bottom: 0;
         margin-top: 50px;
     }
+
     .customer__context__info {
         font-size: 20px;
         color: white;
