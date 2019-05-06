@@ -168,10 +168,13 @@
         div(v-if="$root._data.isAirlineDemo === true")
             .l-sidebar__userpic
                 .sidebar__userpic
-                    img.sidebar__userpic-image(:src="pacients[currentPacient].PhotoUrl")
-                    a(href="#3", @click.prevent="$root.currentShowSubBox = 'patient-info'").sidebar__userpic-info
-                        svg.ico-svg.ico-svg__info
-                            use(xlink:href="#info")
+                    div.sidebar__userpic-image
+                        div.sidebar__initials JC
+                    div.sidebar__userpic-info-airline
+                        span.tooltiptext Verified
+                    //- a(href="#3", @click.prevent="$root.currentShowSubBox = 'patient-info'").sidebar__userpic-info
+                    //-     svg.ico-svg.ico-svg__info
+                    //-         use(xlink:href="#info")
             .sidebar__note-userpic Number of Matches (<b>{{sizePacients}}</b>)
             .l-sidebar__section
                 .sidebar__section

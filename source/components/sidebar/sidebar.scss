@@ -27,6 +27,14 @@
   border: em(6) solid #fff;
   position: relative;
 }
+.sidebar__initials {
+  font-size: em(60);
+  text-align: center;
+  color: rgb(233, 178, 138);
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
 .sidebar__userpic-image {
   width: em(100);
   height: em(100);
@@ -56,7 +64,43 @@
   }
 }
 
+.sidebar__userpic-info-airline {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  border: em(1) solid #fff;
+  background: green;
+  vertical-align: top;
+  position: absolute;
+  bottom: em(6);
+  right: em(-16);
+  width: em(40);
+  height: em(40);
 
+  .tooltiptext {
+    visibility: hidden;
+    width: 60px;
+    background-color: rgb(114, 179, 223);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin: 20px 0 0 20px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+
+  &:hover {
+    .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
 .sidebar__note-userpic {
   text-align: center;
   margin-bottom: em(44);

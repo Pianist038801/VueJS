@@ -127,9 +127,11 @@ let App = new Vue({
       const patient_no = snapPatient.val();
       db.ref("provider_no").once("value", (snapProvider) => {
         const provider_no = snapProvider.val();
-        vm.getCallInfoFromURL(patient_no, provider_no);
-      }
-      );
+        db.ref("airline_demo").once("value", (snapProvider) => {
+          const airline_demo = snapProvider.val();
+          vm.getCallInfoFromURL(patient_no, provider_no, airline_demo.replace(' ', ''));
+        });
+      });
     });
   },
   mounted() {
@@ -177,7 +179,7 @@ let App = new Vue({
           }
       });
     },
-    getCallInfoFromURL: function(patient_no, provider_no) {
+    getCallInfoFromURL: function(patient_no, provider_no, airline_demo) {
       let vm = this;
       //Get TempDNIS from the url
       var url = new URL(window.location.href);
@@ -224,7 +226,13 @@ let App = new Vue({
           data.patientNames = array.slice(0);
           const isPatient = tempDNIS === patient_no;
           const isProvider = tempDNIS === provider_no;
-          const isAirlineDemo = tempDNIS === '2142120912';
+          const air_nos = airline_demo.split(',');
+          let isAirlineDemo = false;
+          for (let i = 0 ; i < air_nos.length; i ++) {
+            if (air_nos[i] === tempDNIS) {
+              isAirlineDemo = true; break;
+            }
+          }
 
           // if (isProvider) {
           //   data.Customers[0].Name = 'Nancy Snyder';
