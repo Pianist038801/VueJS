@@ -22,14 +22,14 @@
                 th Car Rental
                 th Hotel Room
             
-            tr(v-for="(item, index) in $root._data.Trips")
-                td.past {{ item.tripId }}
-                td.past {{ item.startDate }} - {{ item.startTime }} 
-                td.past {{ item.endDate }} - {{ item.endTime }} 
-                td.past {{ item.airTravel }}
-                td.past {{ item.railTravel }}
-                td.past {{ item.carRental }}
-                td.past {{ item.hotelRoom }}
+            tr(v-for="(item, index) in $store.state.trips")
+                td.past {{ item.tripId[0] }}
+                td.past {{ item.startDate[0] }} - {{ item.startTime[0] }} 
+                td.past {{ item.endDate[0] }} - {{ item.endTime[0] }} 
+                td.past {{ item.airTravel[0] }}
+                td.past {{ item.railTravel[0] }}
+                td.past {{ item.carRental[0] }}
+                td.past {{ item.hotelRoom[0] }}
                 td.more-action.past
                     .sub-popup-menu
                         .sub-popup-menu__action
@@ -39,7 +39,7 @@
                             a(href="#3").sub-popup-menu__item Cancel
                             a(href="#3").sub-popup-menu__item New
                             a(href="#3").sub-popup-menu__item Edit
-                            a(href="#3").sub-popup-menu__item Send Reminder
+                            a(href="#3").sub-popup-menu__item Send Email
                             a(href="#3").sub-popup-menu__item Screen Pop
                             
         .content__top-line
@@ -59,19 +59,19 @@
                 th Seat
                 th Price
 
-            tr(v-for="(item, ind) in $root._data.FlightInfo")    
-                td.past {{ item.tripId }}
-                td.past {{ item.startDate }} - {{ item.startTime }} 
-                td.past {{ item.endDate }} - {{ item.endTime }} 
-                td.past {{ item.flightId }}
-                td.past {{ item.airlineCode }}
-                td.past {{ item.flightNo }}
-                td.past {{ item.depart }}
-                td.past {{ item.arrive }}
-                td.past {{ item.status }}
-                td.past {{ item.fareClass }}
-                td.past {{ item.seat }}
-                td.past {{ item.price }}
+            tr(v-for="(item, ind) in $store.state.flightInfo")    
+                td.past {{ item.tripId[0] }}
+                td.past {{ item.startDate[0] }} - {{ item.startTime[0] }} 
+                td.past {{ item.endDate[0] }} - {{ item.endTime[0] }} 
+                td.past {{ item.flightId[0] }}
+                td.past {{ item.airlineCode[0] }}
+                td.past {{ item.flightNo[0] }}
+                td.past {{ item.depart[0] }}
+                td.past {{ item.arrive[0] }}
+                td.past {{ item.status[0] }}
+                td.past {{ item.fareClass[0] }}
+                td.past {{ item.seat[0] }}
+                td.past {{ item.price[0] }}
 
                 td.more-action.past
                     .sub-popup-menu
@@ -82,7 +82,7 @@
                             a(href="#3").sub-popup-menu__item Cancel
                             a(href="#3").sub-popup-menu__item New
                             a(href="#3").sub-popup-menu__item Edit
-                            a(href="#3").sub-popup-menu__item Send Reminder
+                            a(href="#3").sub-popup-menu__item Send Email
                             a(href="#3").sub-popup-menu__item Screen Pop
         
         .content__top-line
@@ -97,14 +97,14 @@
                 th Car Class
                 th Price
             
-            tr(v-for="(item, index) in $root._data.Trips", v-if="item.TripDetail.CarRentalInfo")
-                td.past {{ item.TripDetail.CarRentalInfo.tripId }}
-                td.past {{ item.TripDetail.CarRentalInfo.startDate }} - {{ item.TripDetail.CarRentalInfo.startTime }} 
-                td.past {{ item.TripDetail.CarRentalInfo.endDate }} - {{ item.TripDetail.CarRentalInfo.endTime }} 
-                td.past {{ item.TripDetail.CarRentalInfo.reservationId }}
-                td.past {{ item.TripDetail.CarRentalInfo.carChain }}
-                td.past {{ item.TripDetail.CarRentalInfo.carClass }}
-                td.past {{ item.TripDetail.CarRentalInfo.price }}
+            tr(v-for="(item, index) in $store.state.trips", v-if="item.TripDetail[0].CarRentalInfo")
+                td.past {{ item.TripDetail[0].CarRentalInfo[0].tripId[0] }}
+                td.past {{ item.TripDetail[0].CarRentalInfo[0].startDate[0] }} - {{ item.TripDetail[0].CarRentalInfo[0].startTime[0] }} 
+                td.past {{ item.TripDetail[0].CarRentalInfo[0].endDate[0] }} - {{ item.TripDetail[0].CarRentalInfo[0].endTime[0] }} 
+                td.past {{ item.TripDetail[0].CarRentalInfo[0].reservationId[0] }}
+                td.past {{ item.TripDetail[0].CarRentalInfo[0].carChain[0] }}
+                td.past {{ item.TripDetail[0].CarRentalInfo[0].carClass[0] }}
+                td.past {{ item.TripDetail[0].CarRentalInfo[0].price[0] }}
                 td.more-action.past
                     .sub-popup-menu
                         .sub-popup-menu__action
@@ -114,7 +114,7 @@
                             a(href="#3").sub-popup-menu__item Cancel
                             a(href="#3").sub-popup-menu__item New
                             a(href="#3").sub-popup-menu__item Edit
-                            a(href="#3").sub-popup-menu__item Send Reminder
+                            a(href="#3").sub-popup-menu__item Send Email
                             a(href="#3").sub-popup-menu__item Screen Pop
 
         .content__top-line
@@ -129,14 +129,14 @@
                 th Hotel Room Class
                 th Price
             
-            tr(v-for="(item, index) in $root._data.Trips", v-if="item.TripDetail.HotelInfo")
-                td.past {{ item.TripDetail.HotelInfo.tripId }}
-                td.past {{ item.TripDetail.HotelInfo.startDate }} - {{ item.TripDetail.HotelInfo.startTime }} 
-                td.past {{ item.TripDetail.HotelInfo.endDate }} - {{ item.TripDetail.HotelInfo.endTime }} 
-                td.past {{ item.TripDetail.HotelInfo.reservationId }}
-                td.past {{ item.TripDetail.HotelInfo.hotelChain }}
-                td.past {{ item.TripDetail.HotelInfo.hotelRoomClass }}
-                td.past {{ item.TripDetail.HotelInfo.price }}
+            tr(v-for="(item, index) in $store.state.trips", v-if="item.TripDetail[0].HotelInfo")
+                td.past {{ item.TripDetail[0].HotelInfo[0].tripId[0] }}
+                td.past {{ item.TripDetail[0].HotelInfo[0].startDate[0] }} - {{ item.TripDetail[0].HotelInfo[0].startTime[0] }} 
+                td.past {{ item.TripDetail[0].HotelInfo[0].endDate[0] }} - {{ item.TripDetail[0].HotelInfo[0].endTime[0] }} 
+                td.past {{ item.TripDetail[0].HotelInfo[0].reservationId[0] }}
+                td.past {{ item.TripDetail[0].HotelInfo[0].hotelChain[0] }}
+                td.past {{ item.TripDetail[0].HotelInfo[0].hotelRoomClass[0] }}
+                td.past {{ item.TripDetail[0].HotelInfo[0].price[0] }}
                 td.more-action.past
                     .sub-popup-menu
                         .sub-popup-menu__action
@@ -146,7 +146,7 @@
                             a(href="#3").sub-popup-menu__item Cancel
                             a(href="#3").sub-popup-menu__item New
                             a(href="#3").sub-popup-menu__item Edit
-                            a(href="#3").sub-popup-menu__item Send Reminder
+                            a(href="#3").sub-popup-menu__item Send Email
                             a(href="#3").sub-popup-menu__item Screen Pop
 
      

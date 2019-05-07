@@ -394,9 +394,26 @@
         mounted() {
             let vm = this;
             let customerData = {};
-            console.log ("this is beginning" , this);
             vm.getCurrentIndexPacient();
-            console.log ("this is middle" , this);
+            axios({method: 'get',
+                url: 'http://198.18.134.28:8080/ContextServlet/context?type=selectAni&ani=' + this.$root.$data.aniNumber,
+                responseType: 'xml',
+            })
+            .then(function(response) {
+                if(response.data.error){
+                    console.error('Error in Releasing TempDNIS');
+                }
+                else{
+                    parseString(response.data, function(err, rst) {
+                        console.log('rst=', JSON.stringify(rst));
+                    
+                        vm.$store.dispatch('setContexts', rst.root);
+                        
+                    });
+                    console.log('Converting Context XML to JSON started');
+                }
+            })
+
             axios({method: 'get',
                 url: 'http://198.18.134.28:8080/KnowMe/customer?type=query&ani=' + this.$root.$data.aniNumber,
                 responseType: 'xml',
@@ -429,8 +446,11 @@
 
                         }
                         vm.customerData = customerData;
+                        const trips = rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].Trips[0].Trip;
+                        vm.$store.dispatch('setTrips', trips);
+                        
                     });
-                    console.log('Converting XML to JSON started');
+                    console.log('Converting Customer Info XML to JSON started');
                 }
             })
             .catch(function(err) {

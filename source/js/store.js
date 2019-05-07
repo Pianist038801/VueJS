@@ -6,6 +6,9 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    contexts: [],
+    trips: [],
+    flightInfo: [],
     pacientId: 0,
     pacientName: 'Johns Jacobs',
     referrals: [],
@@ -519,9 +522,26 @@ export default new Vuex.Store({
         state.pacientId = 2;
       if(name=='Opal Lee')
         state.pacientId = 3;
-    }
+    },
+    setTrips (state, _trips) {
+      state.trips = _trips;
+      let flightInfo = [];
+      for(let i = 0; i < _trips.length; i++) {
+        flightInfo = flightInfo.concat(_trips[i].TripDetail[0].FlightInfo);
+      }
+      state.flightInfo = flightInfo;
+    },
+    setContexts (state, _contexts) {
+      state.contexts = _contexts;
+    },
   },
   actions: {
+    setContexts({commit, state}, contexts) {
+      commit('setContexts', contexts);
+    },
+    setTrips({commit, state}, trips) {
+      commit('setTrips', trips);
+    },
     setCustomerInfo({commit, state}, customerInfo) {
       commit('setCustomerInfo', customerInfo);
     },
