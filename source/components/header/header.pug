@@ -1,7 +1,9 @@
 // Begin header
 header.header
-    h1.logo
+    h1.logo(v-if="$root._data.isAirlineDemo === false")
         img(src="https://drive.google.com/uc?id=1-uD2ofyildDaprkCazv6GnqzX0FH6ndg").logo__link
+    h1.logo(v-if="$root._data.isAirlineDemo === true")
+        img(src="../img/airline.png").logo__link__airline
         // img(src="../img/logo_kaiser.png").logo__link
     .header__tabs(v-if="$root._data.isAirlineDemo === false")    
         //- .header__tabs-item(:class="{'state--active': $root.currentShowBox ==='answering-service'}", v-if="$root._data.isPatient === true || $root._data.isProvider === true")

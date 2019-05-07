@@ -34,6 +34,16 @@
   background-size: cover;
 }
 
+.logo__link__airline {
+  text-indent: -9999px;
+  white-space: nowrap;
+  display: inline-flex;
+  width: 350px;
+  // width: em(304);
+  height: em(55);
+  //background:  url('../img/logo_orange.png') 0 0 no-repeat;
+  background-size: cover;
+}
 
 //  .header__tabs
 .header__tabs {

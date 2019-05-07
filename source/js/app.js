@@ -185,7 +185,7 @@ let App = new Vue({
       var url = new URL(window.location.href);
       var tempDNIS = url.searchParams.get("ani");
       tempDNIS = tempDNIS.slice(-10)
-        
+    
       vm.dlgID = url.searchParams.get('dlg');
       vm.extension = url.searchParams.get('ext');
       vm.agentID = url.searchParams.get('agentID');
@@ -216,8 +216,9 @@ let App = new Vue({
           }};
             
           let data = _mockup;
+          data.aniNumber = tempDNIS;
           data.possibleCustomers = data.Customers.slice(0);
-          let array = ['EPIC']; 
+          let array = ['EPIC'];
           data.Customers.forEach((item, i) => {
               if(item.Category=='EPIC')
                   array.push(item.Name);
@@ -396,7 +397,6 @@ let App = new Vue({
     },
   }
 });
-
 
 // ajax send data form to url - get list ID's
 

@@ -169,22 +169,25 @@
             .l-sidebar__userpic
                 .sidebar__userpic
                     div.sidebar__userpic-image
-                        div.sidebar__initials JC
-                    div.sidebar__userpic-info-airline
+                        .sidebar__initials {{customerData.initials}}
+                    div.sidebar__userpic-info-airline(v-if="customerData.verified==='Yes'")
                         span.tooltiptext Verified
+                    div.sidebar__userpic-info-airline.unverified-circle(v-if="customerData.verified==='No'")
+                        span.tooltiptext.unverified-text Unverified
+                    
                     //- a(href="#3", @click.prevent="$root.currentShowSubBox = 'patient-info'").sidebar__userpic-info
                     //-     svg.ico-svg.ico-svg__info
                     //-         use(xlink:href="#info")
-            .sidebar__note-userpic Number of Matches (<b>{{sizePacients}}</b>)
+            .sidebar__note-userpic Number of Matches (<b>{{customerData.count}}</b>)
             .l-sidebar__section
                 .sidebar__section
                     .sidebar__section--note Customer Name
 
                     //- select(v-model="currentPacientName")
-                        option(v-for="item in pacients", :value="item.Name") {{item.Name}}
+                        option(v-for="customerData", :value="customerData.name") {{customerData.name}}
                     multiselect(
-                        v-model="currentPacientName",
-                        :options="namesPacient",
+                        v-model="customerData.name",
+                        :options="[customerData.name]",
                         @input="getCurrentIndexPacient",
                         :searchable="false",
                         :allowEmpty="false",
@@ -193,31 +196,31 @@
 
                 .sidebar__section
                     .sidebar__section--note Verified
-                    .sidebar__section--info Yes
+                    .sidebar__section--info {{customerData.verified}}
                 .sidebar__section
                     .sidebar__section--note Account
-                    .sidebar__section--info Cisco Systems INC
+                    .sidebar__section--info {{customerData.account}}
                 .sidebar__section
                     .sidebar__section--note ANI
-                    .sidebar__section--info 6027914431
+                    .sidebar__section--info {{customerData.ani}}
                 .sidebar__section
                     .sidebar__section--note CDN
-                    .sidebar__section--info 9191231234 
+                    .sidebar__section--info {{customerData.cdn}}
                 .sidebar__section
                     .sidebar__section--note Email
-                    .sidebar__section--info bimcdona@cisco.com
+                    .sidebar__section--info {{customerData.email}}
                 .sidebar__section
                     .sidebar__section--note Language
-                    .sidebar__section--info English
+                    .sidebar__section--info {{customerData.language}}
                 .sidebar__section
                     .sidebar__section--note Country
-                    .sidebar__section--info US
+                    .sidebar__section--info {{customerData.country}}
                 .sidebar__section
                     .sidebar__section--note Arranger
-                    .sidebar__section--info FALSE
+                    .sidebar__section--info {{customerData.arranger}}
                 .sidebar__section
                     .sidebar__section--note Voice Print
-                    .sidebar__section--info Yes
+                    .sidebar__section--info {{customerData.voice}}
             .sidebar__success
                 .sub-popup-menu
                     .sub-popup-menu__action
@@ -327,6 +330,8 @@
     import searchPatientCallerInfo from "../modal-component/search-patient-caller-info.vue";
     import searchProviderCallerInfo from "../modal-component/search-provider-caller-info.vue";
     import searchCustomerInfo from "../modal-component/search-customer-info.vue";
+    var parseString = require('xml2js').parseString;
+    import axios from 'axios';
 
     export default {
         props: ['pacients', 'active'],
@@ -340,6 +345,7 @@
             return {
                 visible: false,
                 patientNames: [],
+                customerData: {},
             }
         },
         methods: {
@@ -387,8 +393,64 @@
         },
         mounted() {
             let vm = this;
-            console.log ("this is" , this);
+            let customerData = {};
+            console.log ("this is beginning" , this);
             vm.getCurrentIndexPacient();
+            console.log ("this is middle" , this);
+            axios({method: 'get',
+                url: 'http://198.18.134.28:8080/KnowMe/customer?type=query&ani=' + this.$root.$data.aniNumber,
+                responseType: 'xml',
+            })
+            .then(function(response) {
+                console.log('LOOKAT ME=', response);
+
+                if(response.data.error){
+                    console.error('Error in Releasing TempDNIS');
+                }
+                else{
+                    parseString(response.data, function(err, rst) {
+                        console.log('rst=', JSON.stringify(rst));
+                        console.log('name=', rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].travelerName[0]);
+                        const initials = rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].travelerName[0].split(' ');
+                        initials[0].charAt(0) + initials[initials.length - 1].charAt(0)
+                        customerData = {
+                            count: 1,
+                            name: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].travelerName[0],
+                            initials: initials[0].charAt(0) + initials[initials.length - 1].charAt(0),
+                            account: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].ClientInfo[0].clientName[0],
+                            ani: rst.KnowMe_TravelerByPhoneNumber.RequestPayLoad[0].TravelerCallInfo[0].ANI[0],
+                            cdn: rst.KnowMe_TravelerByPhoneNumber.RequestPayLoad[0].TravelerCallInfo[0].CDN[0],
+                            email: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].emailId[0],
+                            language: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].languageName[0],
+                            country:  rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].countryCode[0],
+                            arranger: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].arranger[0],
+                            voice: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].voicePrint[0] == "Y" ? "Yes" : "No",
+                            verified: "Yes",
+
+                        }
+                        vm.customerData = customerData;
+                    });
+                    console.log('Converting XML to JSON started');
+                }
+            })
+            .catch(function(err) {
+                console.log('Cisco API NO Patient ERR=', err);
+                customerData = {
+                    count: "0",
+                    name: "",
+                    initials: "",
+                    account: "",
+                    ani: vm.$root.$data.aniNumber,
+                    cdn: "",
+                    email: "",
+                    language: "",
+                    country:  "",
+                    verified: "No",
+                    arranger: "",
+                    voice: "",
+                }
+                vm.customerData = customerData;
+            });
         },
         beforeDestroy() {
 

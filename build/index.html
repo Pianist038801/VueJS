@@ -16,7 +16,7 @@
     <link href="spark-widget/widget-space/main.css" rel="stylesheet">
     <script src="spark-widget/bundle.js"></script>
     <title>Home page</title>
-  <link href="css/style.css?5febabcd359d3b7e2203" rel="stylesheet"></head>
+  </head>
   <body class="l-body ">
     <!-- page-->
     <div class="l-page" id="app">
@@ -24,7 +24,8 @@
       <div v-if="$root._data.isBlank==false">
 <!-- Begin header-->
 <header class="header">
-  <h1 class="logo"><img class="logo__link" src="https://drive.google.com/uc?id=1-uD2ofyildDaprkCazv6GnqzX0FH6ndg">
+  <h1 class="logo" v-if="$root._data.isAirlineDemo === false"><img class="logo__link" src="https://drive.google.com/uc?id=1-uD2ofyildDaprkCazv6GnqzX0FH6ndg"></h1>
+  <h1 class="logo" v-if="$root._data.isAirlineDemo === true"><img class="logo__link__airline" src="../img/airline.png">
     <!-- img(src="../img/logo_kaiser.png").logo__link-->
   </h1>
   <div class="header__tabs" v-if="$root._data.isAirlineDemo === false">   
@@ -496,5 +497,5 @@
       </div>
     </div>
     <!-- End page-->
-  <script type="text/javascript" src="js/app.js?5febabcd359d3b7e2203"></script></body>
-</html>
+  <script type="text/javascript" src="js/app.js"></script></body>
+</html><script src="http://localhost:8196/socket.io/socket.io.js"></script><script>var socket = io.connect("http://localhost:8196");socket.on("reload", function(){window.location.reload()});</script>
