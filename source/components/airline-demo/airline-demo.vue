@@ -3,13 +3,14 @@
         .content__top-line
             h1.title.top Customer Context
         div.customer__context__info
-            div Previous Context:
-            div April 28, 2019: Voice call  ->  In Trip  ->  routed to agent John
-            div April 27, 2019: Voice call  ->  Change Trip  ->  routed to agent John
+            div.context-item(v-for="(item, index) in $store.state.contexts")
+                div {{item.DateTime[0]}}
+                div {{item.Context[0]}}
         .ccase-managment__top
             span().infoname Notes
         .ccase-managment__top__bottom
-            textarea(:value="$root._data.callerNotes" readonly).full-width
+            textarea(v-model="newContext").full-width
+        a(href="#3", @click="addContext").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border.float-right Save
         .content__top-line
             h1.title Trips
         table.appointment__table
@@ -35,11 +36,8 @@
                         .sub-popup-menu__action
                             svg.ico-svg.ico-svg__more
                                 use(xlink:href="#more")
-                        .sub-popup-menu__list                            
-                            a(href="#3").sub-popup-menu__item Cancel
-                            a(href="#3").sub-popup-menu__item New
-                            a(href="#3").sub-popup-menu__item Edit
-                            a(href="#3").sub-popup-menu__item Send Email
+                        .sub-popup-menu__list                           
+                            a(href="#3", @click.prevent="sendEmail(item.tripId[0])").sub-popup-menu__item Send Email
                             a(href="#3").sub-popup-menu__item Screen Pop
                             
         .content__top-line
@@ -78,11 +76,8 @@
                         .sub-popup-menu__action
                             svg.ico-svg.ico-svg__more
                                 use(xlink:href="#more")
-                        .sub-popup-menu__list                            
-                            a(href="#3").sub-popup-menu__item Cancel
-                            a(href="#3").sub-popup-menu__item New
-                            a(href="#3").sub-popup-menu__item Edit
-                            a(href="#3").sub-popup-menu__item Send Email
+                        .sub-popup-menu__list                           
+                            a(href="#3", @click.prevent="sendEmail(item.tripId[0])").sub-popup-menu__item Send Email
                             a(href="#3").sub-popup-menu__item Screen Pop
         
         .content__top-line
@@ -110,11 +105,8 @@
                         .sub-popup-menu__action
                             svg.ico-svg.ico-svg__more
                                 use(xlink:href="#more")
-                        .sub-popup-menu__list                            
-                            a(href="#3").sub-popup-menu__item Cancel
-                            a(href="#3").sub-popup-menu__item New
-                            a(href="#3").sub-popup-menu__item Edit
-                            a(href="#3").sub-popup-menu__item Send Email
+                        .sub-popup-menu__list                           
+                            a(href="#3", @click.prevent="sendEmail(item.TripDetail[0].CarRentalInfo[0].tripId[0])").sub-popup-menu__item Send Email
                             a(href="#3").sub-popup-menu__item Screen Pop
 
         .content__top-line
@@ -142,11 +134,8 @@
                         .sub-popup-menu__action
                             svg.ico-svg.ico-svg__more
                                 use(xlink:href="#more")
-                        .sub-popup-menu__list                            
-                            a(href="#3").sub-popup-menu__item Cancel
-                            a(href="#3").sub-popup-menu__item New
-                            a(href="#3").sub-popup-menu__item Edit
-                            a(href="#3").sub-popup-menu__item Send Email
+                        .sub-popup-menu__list                           
+                            a(href="#3", @click.prevent="sendEmail(item.TripDetail[0].HotelInfo[0].tripId[0])").sub-popup-menu__item Send Email
                             a(href="#3").sub-popup-menu__item Screen Pop
 
      
@@ -309,6 +298,8 @@
 <script>
     import modal from "../modal-component/modal.vue";
     import Multiselect from 'vue-multiselect';
+    import axios from 'axios';
+    var parseString = require('xml2js').parseString;
 
     export default {
         props: ['patients'],
@@ -318,6 +309,7 @@
         },
         data() {
             return {
+                newContext: '',
                 showCalendar: false,
                 departmentSelect: '',
                 facilitySelect: '',
@@ -339,6 +331,52 @@
             }
         },
         methods: {
+            sendEmail(tripId) {
+                const url = 'http://198.18.134.28:8080/KnowMe/customer?type=itinerary&ani=' + this.$root.$data.aniNumber + '&tripid=' + tripId;
+                axios({method: 'get',
+                    url,
+                    responseType: 'xml',
+                })
+                .then(function(response) {
+                    if(response.data.error){
+                    }
+                    else{
+                        alert('Email is successfuly sent');
+                    }
+                })
+            },
+            addContext() {
+                const contextValue = this.newContext.replace(' ', '%20');
+                const vm = this;
+                const url = 'http://198.18.134.28:8080/ContextServlet/context?type=insertContext&ani=' + this.$root.$data.aniNumber + '&callguid=45B2FD800001000000048CCB038512C6&DNIS=9199945256&context=' + contextValue;
+                axios({method: 'get',
+                    url,
+                    responseType: 'xml',
+                })
+                .then(function(response) {
+                    if(response.data.error){
+                    }
+                    else{
+                        vm.getContexts();
+                    }
+                })
+            },
+            getContexts() {
+                const vm = this;
+                axios({method: 'get',
+                    url: 'http://198.18.134.28:8080/ContextServlet/context?type=selectAni&ani=' + this.$root.$data.aniNumber + '&sort=DESC',
+                    responseType: 'xml',
+                })
+                .then(function(response) {
+                    if(response.data.error){
+                    }
+                    else{
+                        parseString(response.data, function(err, rst) {
+                            vm.$store.dispatch('setContexts', rst.root.row);
+                        });
+                    }
+                })
+            },
             open() {},
             showModal(data) {
                 this.currentAppointment = data;
@@ -361,6 +399,9 @@
 </script>
 <style lang="scss">
     @import '~mixinsSCSS';
+    .float-right {
+        float: right;
+    }
 
     h1.title.top {
         margin-top: 0;
@@ -380,6 +421,12 @@
         padding-left: 30px;
         line-height: 40px;
         margin-bottom: 20px;
+        overflow: scroll;
+        height: 200px;
+        
+        .context-item {
+            margin-bottom: 20px;
+        }
     }
 
     .appointment {

@@ -396,7 +396,7 @@
             let customerData = {};
             vm.getCurrentIndexPacient();
             axios({method: 'get',
-                url: 'http://198.18.134.28:8080/ContextServlet/context?type=selectAni&ani=' + this.$root.$data.aniNumber,
+                url: 'http://198.18.134.28:8080/ContextServlet/context?type=selectAni&ani=' + this.$root.$data.aniNumber + '&sort=DESC',
                 responseType: 'xml',
             })
             .then(function(response) {
@@ -404,13 +404,13 @@
                     console.error('Error in Releasing TempDNIS');
                 }
                 else{
+                    console.log('response.data=', response.data);
                     parseString(response.data, function(err, rst) {
-                        console.log('rst=', JSON.stringify(rst));
+                        console.log('parsed=', JSON.stringify(rst));
                     
-                        vm.$store.dispatch('setContexts', rst.root);
+                        vm.$store.dispatch('setContexts', rst.root.row);
                         
                     });
-                    console.log('Converting Context XML to JSON started');
                 }
             })
 
@@ -419,14 +419,13 @@
                 responseType: 'xml',
             })
             .then(function(response) {
-                console.log('LOOKAT ME=', response);
 
                 if(response.data.error){
                     console.error('Error in Releasing TempDNIS');
                 }
                 else{
                     parseString(response.data, function(err, rst) {
-                        console.log('rst=', JSON.stringify(rst));
+                        
                         console.log('name=', rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].travelerName[0]);
                         const initials = rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].travelerName[0].split(' ');
                         initials[0].charAt(0) + initials[initials.length - 1].charAt(0)
