@@ -1,11 +1,25 @@
 <template lang="pug">
     .content
+        span.count-card.one No. of calls today: 1
+        span.count-card.two Total No. of calls: 1
+        span.count-card.three No. of Trips: {{$store.state.trips.length}}
+        span.count-card.four No. of Flights: {{$store.state.flightInfo.length}}
+        span.count-card.five No. of Hotel: {{$store.state.trips.filter(item => item.TripDetail[0].HotelInfo).length}}
+        span.count-card.six No. of Rental: {{$store.state.trips.filter(item => item.TripDetail[0].CarRentalInfo).length}}
+        div(style="height: 30px")
         .content__top-line
             h1.title.top Customer Context
         div.customer__context__info
-            div.context-item(v-for="(item, index) in $store.state.contexts")
-                div {{item.DateTime[0]}}
-                div {{item.Context[0]}}
+            table.appointment__table
+                tr
+                    th.context-cell.no No
+                    th.context-cell.date-time DateTime
+                    th.context-cell.context Context
+                    
+                tr(v-for="(item, index) in $store.state.contexts")
+                    td.context-cell.no {{index + 1}}
+                    td.context-cell.date-time {{item.DateTime[0]}}
+                    td.context-cell.context {{item.Context[0]}}
         .ccase-managment__top
             span().infoname Notes
         .ccase-managment__top__bottom
@@ -57,9 +71,9 @@
                 th Seat
                 th Price
 
-            tr(v-for="(item, ind) in $store.state.flightInfo")    
+            tr(v-for="(item, ind) in $store.state.flightInfo")
                 td.past {{ item.tripId[0] }}
-                td.past {{ item.startDate[0] }} - {{ item.startTime[0] }} 
+                td.past {{ item.startDate[0] }} - {{ item.startTime[0] }}
                 td.past {{ item.endDate[0] }} - {{ item.endTime[0] }} 
                 td.past {{ item.flightId[0] }}
                 td.past {{ item.airlineCode[0] }}
@@ -399,6 +413,56 @@
 </script>
 <style lang="scss">
     @import '~mixinsSCSS';
+
+    .count-card {
+        border-radius: 30px;
+        border: solid 5px pink;
+        padding: 20px;
+        margin-right: 30px;
+        &.one {
+            border-color: pink;
+        }
+        &.two {
+            border-color: cyan;
+        }
+        &.three {
+            border-color: brown;
+        }
+        &.four {
+            border-color: navy;
+        }
+        &.five {
+            border-color: magenta;
+        }
+        &.six {
+            border-color: orchid;
+        }
+
+    }
+
+    .context-cell {
+        border: solid 1px black;
+        &.no {
+            text-align: center;
+            color: black;
+            
+            &::first-line {
+                border-radius: 20px 0 0 0;
+            }
+        }
+        &.date-time {
+            
+            width: 25%;
+            text-align: center;
+            color: white;
+        }
+        &.context {
+            
+            width: 75%;
+            text-align: center;
+            color: yellow;
+        }
+    }
     .float-right {
         float: right;
     }
@@ -418,15 +482,13 @@
         color: white;
         background: rgb(89, 181, 228);
         border-radius: 20px;
-        padding-left: 30px;
+        padding: 30px;
         line-height: 40px;
         margin-bottom: 20px;
         overflow: scroll;
         height: 200px;
         
-        .context-item {
-            margin-bottom: 20px;
-        }
+
     }
 
     .appointment {
