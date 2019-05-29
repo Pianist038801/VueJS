@@ -6,7 +6,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    contexts: [],
+    contexts: [
+      // {
+      //   DateTime: ['S'],
+      //   Context: ['S'],
+      // },
+    ],
     trips: [],
     flightInfo: [],
     pacientId: 0,

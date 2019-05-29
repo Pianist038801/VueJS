@@ -9,13 +9,12 @@
         div(style="height: 30px")
         .content__top-line
             h1.title.top Customer Context
-        div.customer__context__info
+        div.context__container
             table.appointment__table
                 tr
                     th.context-cell.no No
                     th.context-cell.date-time DateTime
                     th.context-cell.context Context
-                    
                 tr(v-for="(item, index) in $store.state.contexts")
                     td.context-cell.no {{index + 1}}
                     td.context-cell.date-time {{item.DateTime[0]}}
@@ -441,26 +440,21 @@
     }
 
     .context-cell {
-        border: solid 1px black;
+        
         &.no {
             text-align: center;
-            color: black;
-            
-            &::first-line {
-                border-radius: 20px 0 0 0;
-            }
         }
         &.date-time {
             
             width: 25%;
             text-align: center;
-            color: white;
+        
         }
         &.context {
             
             width: 75%;
             text-align: center;
-            color: yellow;
+        
         }
     }
     .float-right {
@@ -543,4 +537,24 @@
         }
     }
 
+    .appointment__table__airline {
+        width: 100%;
+        border-spacing: 0;
+        overflow: auto;
+        height: 50px;
+        td, th {
+            padding: em(14 8);
+            text-align: left;
+        }
+        th {
+            border-bottom: 1px solid #ebebeb;
+        }
+    }
+
+    .context__container {
+        height: 300px;
+        overflow: auto;
+        border: solid 1px grey;
+        margin-bottom: 30px;
+    }
 </style>
