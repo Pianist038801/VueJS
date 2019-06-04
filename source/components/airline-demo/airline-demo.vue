@@ -552,7 +552,7 @@
     }
 
     .context__container {
-        height: 300px;
+        max-height: 300px;
         overflow: auto;
         border: solid 1px grey;
         margin-bottom: 30px;

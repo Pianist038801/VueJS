@@ -61,6 +61,8 @@ import updateReferral from "../components/modal-component/update-referral.vue";
 import detailReferral from "../components/modal-component/detail-referral.vue";
 var firebase = require("firebase/app");
 
+var jwt = require('jsonwebtoken');
+
 // Add the Firebase products that you want to use
 require("firebase/auth");
 require("firebase/database");
@@ -348,6 +350,47 @@ let App = new Vue({
       this.currentShowBox = 'payment_result';
       console.log('SDFSDF', item);
       this.paymentResult = item;
+    },
+    showTeamMeeting: function() {
+      var widgetEl = document.getElementById('my-ciscospark-widget');
+      const guestId = 'Y2lzY29zcGFyazovL3VzL09SR0FOSVpBVElPTi9lOTEzNmQ2Mi0yZGVkLTQxOGQtOGRkMy0yYTI2MjRhOGU5Y2E';
+      const guestSecret = '8LT2HtqJDwv35teAiIDxiKVeMqmPg0pRQe5rO0Yk+NE=';
+      const expiresInSeconds = Math.round(Date.now() / 1000) + 30;
+
+      const guestToken = jwt.sign(
+        {
+            sub: 'guest-user-531',
+            name: 'Test User',
+            iss: guestId,
+            exp: expiresInSeconds
+        },
+        Buffer.from(guestSecret, 'base64'),
+        {
+            algorithm: 'HS256',
+            noTimestamp: true
+        }
+      );
+      
+      axios.post('https://api.ciscospark.com/v1/jwt/login', '',
+      { headers: { 'Authorization': 'Bearer ' + guestToken } })
+      .then(response => {
+          if (!response.data || !response.data.token) {
+              debug("no token found in response: " + response);
+              res.send("<h1>App sample could not complete</h1><p>Could not contact Webex Teams API to fetch an access token.</p>");
+              return;
+          }
+          const accessToken = response.data.token;
+          ciscospark.widget(widgetEl).spaceWidget({
+            accessToken,
+            destinationId: 'daiki.i@spinsci.com',
+            destinationType: 'email',
+            spaceActivities: {"files":true,"meet":true,"message":true,"people":true},
+            initialActivity: 'message',
+            secondaryActivitiesFullWidth: false
+          });
+      });
+
+      
     },
     showImage: function () {
       this.showImageModal = this.showImageModal + 1;

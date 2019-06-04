@@ -69,6 +69,7 @@
     "axios": "^0.17.1",
     "express": "^4.16.2",
     "firebase": "^5.9.4",
+    "jsonwebtoken": "^8.5.1",
     "stf-vue-select": "^0.1.6",
     "uuid": "^3.2.1",
     "vue": "^2.4.4",

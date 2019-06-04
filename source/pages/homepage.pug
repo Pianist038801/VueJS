@@ -2,7 +2,6 @@ extends layout/_default
 
 block title
     title Home page
-
 block content
     blank-page(v-if="$root._data.isBlank")
     div(v-if="$root._data.isBlank==false")
@@ -89,7 +88,6 @@ block content
                                     span().infoname Notes
                                 .ccase-managment__top__bottom
                                     textarea(:value="$root._data.callerNotes" readonly).full-width
-                            
                                 .ccase-managment__top_boxes
                                     .ccase-managment__top-rect.inline-block
                                         board-block(:count='$root.activePacient==3?5:1', :text="'Past Appointments'", :col="'rgb(255,0,0)'")
@@ -110,7 +108,7 @@ block content
                                         board-block(:count='$root.activePacient==0?2:4', :text="'Inbound'", :col="'green'")
                             .content__box
                                 journey-map(:info="$root._data.Customers[$root.activePacient]")    
-
+                            div.webex-meeting(id="my-ciscospark-widget", @click.prevent="showTeamMeeting()") Click here to test webex meeting
                         //-show scheduling
                         .content(v-if="$root.currentShowBox ==='scheduling' && !currentShowSubBox", key="scheduling")
                             .content__top-line
@@ -508,6 +506,8 @@ block content
                                 :existing-apointment-slots="$root._data.ExistingAppointmentSlots",
                                 :book-now-data="$root._data.BookNowData"
                                 )
+            
+                
             .dialog-box(v-if="$root.showDialog === true")
                 iframe(
                         src="https://console.dialogflow.com/api-client/demo/embedded/f82ccbf3-f2d2-4edb-b76a-ff14bc0bb697",
