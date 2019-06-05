@@ -143,6 +143,7 @@ let App = new Vue({
     Vue.http.get('demo-credentials.json').then((response) => {
       vm.spaceWidget.init(response.data);
     });
+    
   },
   methods: {
     getCurrentIndexPacient: function(txt) {
@@ -294,7 +295,6 @@ let App = new Vue({
             vm.releaseTempDNIS(tempDNIS);
           }
           App.$mount('#app');
-          
          
       // }).catch(function (error) {
       //   // handle error
@@ -355,7 +355,7 @@ let App = new Vue({
       var widgetEl = document.getElementById('my-ciscospark-widget');
       const guestId = 'Y2lzY29zcGFyazovL3VzL09SR0FOSVpBVElPTi9lOTEzNmQ2Mi0yZGVkLTQxOGQtOGRkMy0yYTI2MjRhOGU5Y2E';
       const guestSecret = '8LT2HtqJDwv35teAiIDxiKVeMqmPg0pRQe5rO0Yk+NE=';
-      const expiresInSeconds = Math.round(Date.now() / 1000) + 30;
+      const expiresInSeconds = Math.round(Date.now() / 1000) + 130;
 
       const guestToken = jwt.sign(
         {
@@ -370,7 +370,7 @@ let App = new Vue({
             noTimestamp: true
         }
       );
-      
+      console.log('guestToken=', guestToken);
       axios.post('https://api.ciscospark.com/v1/jwt/login', '',
       { headers: { 'Authorization': 'Bearer ' + guestToken } })
       .then(response => {
@@ -380,6 +380,7 @@ let App = new Vue({
               return;
           }
           const accessToken = response.data.token;
+          console.log('accessToken=', accessToken);
           ciscospark.widget(widgetEl).spaceWidget({
             accessToken,
             destinationId: 'daiki.i@spinsci.com',

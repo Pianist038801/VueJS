@@ -18,7 +18,7 @@
     <script src="https://code.s4d.io/widget-space/production/bundle.js"></script>
     <script src="spark-widget/bundle.js"></script>
     <title>Home page</title>
-  </head>
+  <link href="css/style.css?c233b084d4a551d98edc" rel="stylesheet"></head>
   <body class="l-body ">
     <!-- page-->
     <div class="l-page" id="app">
@@ -157,7 +157,6 @@
                   <div class="content__box">
                     <journey-map :info="$root._data.Customers[$root.activePacient]">   </journey-map>
                   </div>
-                  <div class="webex-meeting" id="my-ciscospark-widget" @click.prevent="showTeamMeeting()">Click here to test webex meeting</div>
                 </div>
                 <div class="content" v-if="$root.currentShowBox ==='scheduling' &amp;&amp; !currentShowSubBox" key="scheduling">
                   <div class="content__top-line">
@@ -500,5 +499,5 @@
       </div>
     </div>
     <!-- End page-->
-  <script type="text/javascript" src="js/app.js"></script></body>
-</html><script src="http://localhost:8196/socket.io/socket.io.js"></script><script>var socket = io.connect("http://localhost:8196");socket.on("reload", function(){window.location.reload()});</script>
+  <script type="text/javascript" src="js/app.js?c233b084d4a551d98edc"></script></body>
+</html>

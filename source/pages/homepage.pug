@@ -108,7 +108,7 @@ block content
                                         board-block(:count='$root.activePacient==0?2:4', :text="'Inbound'", :col="'green'")
                             .content__box
                                 journey-map(:info="$root._data.Customers[$root.activePacient]")    
-                            div.webex-meeting(id="my-ciscospark-widget", @click.prevent="showTeamMeeting()") Click here to test webex meeting
+                            //- div.webex-meeting(id="my-ciscospark-widget") Click here to test webex meeting
                         //-show scheduling
                         .content(v-if="$root.currentShowBox ==='scheduling' && !currentShowSubBox", key="scheduling")
                             .content__top-line
