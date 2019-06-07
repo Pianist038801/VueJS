@@ -91,6 +91,7 @@
                                 use(xlink:href="#more")
                         .sub-popup-menu__list                           
                             a(href="#3", @click.prevent="sendEmail(item.tripId[0])").sub-popup-menu__item Send Email
+                            a(href="#3", @click.prevent="showMap(item.depart[0], item.arrive[0])").sub-popup-menu__item Show Map
                             a(href="#3").sub-popup-menu__item Screen Pop
         
         .content__top-line
@@ -199,7 +200,25 @@
                                 :key="1",
                                 :position="{lat: 32.9448268, lng: -96.64587949999998}",
                                 )
+        modal(ref="modalMap")
+            .modal__content()
 
+                .modal__content-row
+                    gmap-map(
+                    :center="departureLocation",
+                    :zoom="2",
+                    style="width: 100%; height: 300px"
+                    )
+                        gmap-marker(
+                        :key="1",
+                        :position="departureLocation",
+                        )
+                        gmap-marker(
+                        :key="2",
+                        :position="arriveLocation",
+                        )
+                .modal-appointment__row
+                    a(href="#3", @click.prevent="$refs.modalMap.close()").ui-btn.ui-btn--skin-default.ui-btn--theme-primary-border OK
         modal(ref="modalbook")
             .modal__content(v-if="currentAppointment !== null")
 
@@ -340,7 +359,11 @@
                 calendarClick: false,
                 visible: false,
                 currentAppointment: null,
-                bookNowData: this.$root._data.BookNowData
+                bookNowData: this.$root._data.BookNowData,
+                departure: 'dep',
+                departureLocation: {lat: 31.9448268, lng: -95.64587949999998},
+                arriveLocation: {lat: 30.9448268, lng: -95.64587949999998},
+                arrive: 'arr',
             }
         },
         methods: {
@@ -357,6 +380,49 @@
                         alert('Email is successfuly sent');
                     }
                 })
+            },
+            getLocationFromAddress(address) {
+                switch(address) {
+                    case 'Dallas Texas':
+                        return {
+                            lat: 32.776655,
+                            lng: -96.796989
+                        };
+                    case 'New York New York':
+                        return {
+                            lat: 36.102371,
+                            lng: -115.174553,
+                        }
+                    case 'London England':
+                        return {
+                            lat: 51.507351,
+                            lng: -0.127758
+                        };
+                    case 'San Jose California':
+                        return {
+                            lat: 37.334789,
+                            lng: -121.888138,
+                        }
+                    case 'Charlotte North Carolina':
+                        return {
+                            lat: 35.223789,
+                            lng: -80.841141,
+                        }
+                    case 'Delhi India':
+                        return {
+                            lat: 28.632429,
+                            lng: 77.218788,
+                        } 
+                }
+            },
+            showMap(departure, arrival) {
+                this.$refs.modalMap.open();
+                this.departure = departure;
+                this.arrival = arrival;
+                this.departureLocation = this.getLocationFromAddress(departure);
+                this.arriveLocation = this.getLocationFromAddress(arrival);
+   
+
             },
             addContext() {
                 const contextValue = this.newContext.replace(' ', '%20');

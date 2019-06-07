@@ -208,7 +208,7 @@
 
     Vue.use(VueGoogleMaps, {
         load: {
-            key: 'AIzaSyAUBQL33dcw0SYLkpcIlY2c273TQOwDL7w',
+            key: 'AIzaSyA2UPuNz5H8cncFF1Vh3z-i4i83yAP5fsE',
             libraries: 'places', // This is required if you use the Autocomplete plugin
         }
     });
