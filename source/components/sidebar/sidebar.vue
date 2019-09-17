@@ -195,6 +195,20 @@
                     ).ui-multiselect.ui-multiselect--default
 
                 .sidebar__section
+                    .sidebar__section--note Vip Name
+
+                    //- select(v-model="currentPacientName")
+                        option(v-for="customerData", :value="customerData.name") {{customerData.name}}
+                    multiselect(
+                        v-model="customerData.currentVipName",
+                        :options="customerData.vipName",
+                        @input="getCurrentIndexPacient",
+                        :searchable="false",
+                        :allowEmpty="false",
+                        :showLabels="false"
+                    ).ui-multiselect.ui-multiselect--default
+
+                .sidebar__section
                     .sidebar__section--note Verified
                     .sidebar__section--info {{customerData.verified}}
                 .sidebar__section
@@ -425,10 +439,17 @@
                 }
                 else{
                     parseString(response.data, function(err, rst) {
-                        
-                        console.log('name=', rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].travelerName[0]);
                         const initials = rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].travelerName[0].split(' ');
                         initials[0].charAt(0) + initials[initials.length - 1].charAt(0)
+                        const vipData = rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].ArrangerInfo[0]
+                        console.log('VipData=', vipData)
+                        const vipId = [];
+                        const vipName = [];
+                        for(let i = 1; i <= Object.keys(vipData).length / 2; i++) {
+                            vipId.push(vipData[`taVipId${i}`][0])
+                            vipName.push(vipData[`taVipName${i}`][0])
+                        }
+                        const currentVipName = vipName.length > 0 ? vipName[0] : ''
                         customerData = {
                             count: 1,
                             name: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].travelerName[0],
@@ -442,8 +463,12 @@
                             arranger: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].arranger[0],
                             voice: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].voicePrint[0] == "Y" ? "Yes" : "No",
                             verified: "Yes",
-
+                            vipId,
+                            vipName,
+                            currentVipName,
                         }
+                        console.log('vipId=', vipId)
+                        console.log('vipName=', vipName)
                         vm.customerData = customerData;
                         const trips = rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].Trips[0].Trip;
                         vm.$store.dispatch('setTrips', trips);
