@@ -416,7 +416,24 @@
             getCustomerInfoFromAmex(customerId, isVip) {
                 let vm = this;
                 let customerData = this.customerData ? this.customerData : {};
-
+                this.$root.$data.currentCustomerId = customerId;
+                axios({method: 'get',
+                    url: 'http://198.18.134.28:8080/ContextServlet/context?type=selectAni&ani=' + customerId + '&sort=DESC',
+                    responseType: 'xml',
+                })
+                .then(function(response) {
+                    if(response.data.error){
+                        console.error('Error in Releasing TempDNIS');
+                    }
+                    else{
+                        console.log('response.data=', response.data);
+                        parseString(response.data, function(err, rst) {
+                            console.log('parsed=', JSON.stringify(rst));
+                            vm.$store.dispatch('setContexts', rst.root.row);
+                            
+                        });
+                    }
+                })
                 axios({method: 'get',
                     url: 'http://198.18.134.28:8080/KnowMe/customer?type=query&ani=' + customerId,
                     responseType: 'xml',
@@ -505,25 +522,7 @@
             let vm = this;
             let customerData = {};
             vm.getCurrentIndexPacient();
-            axios({method: 'get',
-                url: 'http://198.18.134.28:8080/ContextServlet/context?type=selectAni&ani=' + this.$root.$data.aniNumber + '&sort=DESC',
-                responseType: 'xml',
-            })
-            .then(function(response) {
-                if(response.data.error){
-                    console.error('Error in Releasing TempDNIS');
-                }
-                else{
-                    console.log('response.data=', response.data);
-                    parseString(response.data, function(err, rst) {
-                        console.log('parsed=', JSON.stringify(rst));
-                        vm.$store.dispatch('setContexts', rst.root.row);
-                        
-                    });
-                }
-            })
             this.getCustomerInfoFromAmex(this.$root.$data.aniNumber)
-            
         },
         beforeDestroy() {
 

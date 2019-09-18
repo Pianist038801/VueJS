@@ -368,7 +368,7 @@
         },
         methods: {
             sendEmail(tripId) {
-                const url = 'http://198.18.134.28:8080/KnowMe/customer?type=itinerary&ani=' + this.$root.$data.aniNumber + '&tripid=' + tripId;
+                const url = 'http://198.18.134.28:8080/KnowMe/customer?type=itinerary&ani=' + this.$root.$data.currentCustomerId + '&tripid=' + tripId;
                 axios({method: 'get',
                     url,
                     responseType: 'xml',
@@ -427,7 +427,7 @@
             addContext() {
                 const contextValue = this.newContext.replace(' ', '%20');
                 const vm = this;
-                const url = 'http://198.18.134.28:8080/ContextServlet/context?type=insertContext&ani=' + this.$root.$data.aniNumber + '&callguid=45B2FD800001000000048CCB038512C6&DNIS=9199945256&context=' + contextValue;
+                const url = 'http://198.18.134.28:8080/ContextServlet/context?type=insertContext&ani=' + this.$root.$data.currentCustomerId + '&callguid=45B2FD800001000000048CCB038512C6&DNIS=9199945256&context=' + contextValue;
                 axios({method: 'get',
                     url,
                     responseType: 'xml',
@@ -443,7 +443,7 @@
             getContexts() {
                 const vm = this;
                 axios({method: 'get',
-                    url: 'http://198.18.134.28:8080/ContextServlet/context?type=selectAni&ani=' + this.$root.$data.aniNumber + '&sort=DESC',
+                    url: 'http://198.18.134.28:8080/ContextServlet/context?type=selectAni&ani=' + this.$root.$data.currentCustomerId + '&sort=DESC',
                     responseType: 'xml',
                 })
                 .then(function(response) {
