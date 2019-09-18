@@ -201,8 +201,8 @@
                         option(v-for="customerData", :value="customerData.name") {{customerData.name}}
                     multiselect(
                         v-model="customerData.currentVipName",
+                        @input="getCurrentVipIndex",
                         :options="customerData.vipName",
-                        @input="getCurrentIndexPacient",
                         :searchable="false",
                         :allowEmpty="false",
                         :showLabels="false"
@@ -376,6 +376,18 @@
                 window.location.href = url;
                 //window.open(url, "CNN_WindowName", strWindowFeatures, true);
             },
+            getCurrentVipIndex() {
+                console.log(this.customerData.currentVipName);
+                var currentVipId = this.customerData.vipId[0];
+                for(let i = 0 ; i < this.customerData.vipName.length; i++) {
+                    if(this.customerData.vipName[i] == this.customerData.currentVipName)
+                    {
+                        currentVipId = this.customerData.vipId[i];
+                        break;
+                    }
+                }
+                this.getCustomerInfoFromAmex(currentVipId, true)
+            },
             getCurrentIndexPacient(){
                 let vm = this;
                 console.log('1_currentID=');
@@ -400,7 +412,91 @@
                         console.log(i);
                     }
                 });
-            }
+            },
+            getCustomerInfoFromAmex(customerId, isVip) {
+                let vm = this;
+                let customerData = this.customerData ? this.customerData : {};
+
+                axios({method: 'get',
+                    url: 'http://198.18.134.28:8080/KnowMe/customer?type=query&ani=' + customerId,
+                    responseType: 'xml',
+                })
+                .then(function(response) {
+
+                    if(response.data.error){
+                        console.error('Error in Releasing TempDNIS');
+                    }
+                    else{
+                        parseString(response.data, function(err, rst) {
+                            const initials = rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].travelerName[0].split(' ');
+                            initials[0].charAt(0) + initials[initials.length - 1].charAt(0)
+                            const vipData = rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].ArrangerInfo[0]
+                            console.log('VipData=', vipData)
+                            const vipId = [];
+                            const vipName = [];
+                            for(let i = 1; i <= Object.keys(vipData).length / 2; i++) {
+                                vipId.push(vipData[`taVipId${i}`][0])
+                                vipName.push(vipData[`taVipName${i}`][0])
+                            }
+                            if(isVip) {
+                                customerData = Object.assign(customerData, {
+                                    account: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].ClientInfo[0].clientName[0],
+                                    ani: rst.KnowMe_TravelerByPhoneNumber.RequestPayLoad[0].TravelerCallInfo[0].ANI[0],
+                                    cdn: rst.KnowMe_TravelerByPhoneNumber.RequestPayLoad[0].TravelerCallInfo[0].CDN[0],
+                                    email: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].emailId[0],
+                                    language: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].languageName[0],
+                                    country:  rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].countryCode[0],
+                                    arranger: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].arranger[0],
+                                    voice: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].voicePrint[0] == "Y" ? "Yes" : "No",
+                                    verified: "Yes",
+                                });
+                            } else {
+                                customerData = {
+                                    count: 1,
+                                    name: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].travelerName[0],
+                                    initials: initials[0].charAt(0) + initials[initials.length - 1].charAt(0),
+                                    account: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].ClientInfo[0].clientName[0],
+                                    ani: rst.KnowMe_TravelerByPhoneNumber.RequestPayLoad[0].TravelerCallInfo[0].ANI[0],
+                                    cdn: rst.KnowMe_TravelerByPhoneNumber.RequestPayLoad[0].TravelerCallInfo[0].CDN[0],
+                                    email: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].emailId[0],
+                                    language: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].languageName[0],
+                                    country:  rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].countryCode[0],
+                                    arranger: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].arranger[0],
+                                    voice: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].voicePrint[0] == "Y" ? "Yes" : "No",
+                                    verified: "Yes",
+                                    vipId: vipId,
+                                    vipName: vipName,
+                                    currentVipName: '',
+                                }
+                            }
+                            
+                            vm.customerData = customerData;
+                            const trips = rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].Trips[0].Trip;
+                            vm.$store.dispatch('setTrips', trips);
+                            
+                        });
+                        console.log('Converting Customer Info XML to JSON started');
+                    }
+                })
+                .catch(function(err) {
+                    console.log('Cisco API NO Patient ERR=', err);
+                    customerData = {
+                        count: "0",
+                        name: "",
+                        initials: "",
+                        account: "",
+                        ani: vm.$root.$data.aniNumber,
+                        cdn: "",
+                        email: "",
+                        language: "",
+                        country:  "",
+                        verified: "No",
+                        arranger: "",
+                        voice: "",
+                    }
+                    vm.customerData = customerData;
+                });
+            },
         },
         created() {
             this.currentPacientName = this.pacients[this.$root.$data.activePacient].Name;
@@ -421,80 +517,13 @@
                     console.log('response.data=', response.data);
                     parseString(response.data, function(err, rst) {
                         console.log('parsed=', JSON.stringify(rst));
-                    
                         vm.$store.dispatch('setContexts', rst.root.row);
                         
                     });
                 }
             })
-
-            axios({method: 'get',
-                url: 'http://198.18.134.28:8080/KnowMe/customer?type=query&ani=' + this.$root.$data.aniNumber,
-                responseType: 'xml',
-            })
-            .then(function(response) {
-
-                if(response.data.error){
-                    console.error('Error in Releasing TempDNIS');
-                }
-                else{
-                    parseString(response.data, function(err, rst) {
-                        const initials = rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].travelerName[0].split(' ');
-                        initials[0].charAt(0) + initials[initials.length - 1].charAt(0)
-                        const vipData = rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].ArrangerInfo[0]
-                        console.log('VipData=', vipData)
-                        const vipId = [];
-                        const vipName = [];
-                        for(let i = 1; i <= Object.keys(vipData).length / 2; i++) {
-                            vipId.push(vipData[`taVipId${i}`][0])
-                            vipName.push(vipData[`taVipName${i}`][0])
-                        }
-                        const currentVipName = vipName.length > 0 ? vipName[0] : ''
-                        customerData = {
-                            count: 1,
-                            name: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].travelerName[0],
-                            initials: initials[0].charAt(0) + initials[initials.length - 1].charAt(0),
-                            account: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].ClientInfo[0].clientName[0],
-                            ani: rst.KnowMe_TravelerByPhoneNumber.RequestPayLoad[0].TravelerCallInfo[0].ANI[0],
-                            cdn: rst.KnowMe_TravelerByPhoneNumber.RequestPayLoad[0].TravelerCallInfo[0].CDN[0],
-                            email: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].emailId[0],
-                            language: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].languageName[0],
-                            country:  rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].countryCode[0],
-                            arranger: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].arranger[0],
-                            voice: rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].TravelerInfo[0].voicePrint[0] == "Y" ? "Yes" : "No",
-                            verified: "Yes",
-                            vipId,
-                            vipName,
-                            currentVipName,
-                        }
-                        console.log('vipId=', vipId)
-                        console.log('vipName=', vipName)
-                        vm.customerData = customerData;
-                        const trips = rst.KnowMe_TravelerByPhoneNumber.ResponsePayLoad[0].Trips[0].Trip;
-                        vm.$store.dispatch('setTrips', trips);
-                        
-                    });
-                    console.log('Converting Customer Info XML to JSON started');
-                }
-            })
-            .catch(function(err) {
-                console.log('Cisco API NO Patient ERR=', err);
-                customerData = {
-                    count: "0",
-                    name: "",
-                    initials: "",
-                    account: "",
-                    ani: vm.$root.$data.aniNumber,
-                    cdn: "",
-                    email: "",
-                    language: "",
-                    country:  "",
-                    verified: "No",
-                    arranger: "",
-                    voice: "",
-                }
-                vm.customerData = customerData;
-            });
+            this.getCustomerInfoFromAmex(this.$root.$data.aniNumber)
+            
         },
         beforeDestroy() {
 
