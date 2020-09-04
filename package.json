@@ -71,7 +71,7 @@
     "stf-vue-select": "^0.1.6",
     "uuid": "^3.2.1",
     "vue": "^2.4.4",
-    "vue-moment": "^2.0.2",
+    "vue-moment": "^4.1.0",
     "vue-multiselect": "^2.0.2",
     "vue-nav-tabs": "^0.5.7",
     "vue-popperjs": "^1.1.6",
