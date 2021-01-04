@@ -66,7 +66,7 @@
     "ws": "3.3.2"
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "express": "^4.16.2",
     "stf-vue-select": "^0.1.6",
     "uuid": "^3.2.1",
