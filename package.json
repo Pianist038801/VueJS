@@ -47,7 +47,7 @@
     "path": "^0.12.7",
     "postcss": "^6.0.10",
     "postcss-loader": "^2.0.6",
-    "pug": "^2.0.0-rc.3",
+    "pug": "^3.0.1",
     "pug-loader": "^2.3.0",
     "reload-html-webpack-plugin": "^0.1.2",
     "rimraf": "^2.6.2",
