@@ -42,7 +42,7 @@
     "ip": "^1.1.5",
     "lodash": "4.17.4",
     "lost": "^8.2.0",
-    "moment-timezone": "^0.5.13",
+    "moment-timezone": "^0.5.35",
     "node-sass": "^4.11.0",
     "path": "^0.12.7",
     "postcss": "^6.0.10",
